@@ -1,0 +1,1 @@
+Machine-readable data contracts for pipeline artifacts.
