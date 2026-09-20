@@ -3,6 +3,9 @@
 A reproducible run should record at least:
 
 - dataset/case manifest version
+- methodology version and primary repository cutoff (`dir-tfg-v1` /
+  `tFG` for the current first-generation procedure)
+- frozen conversation record version and validation status
 - Git commit
 - configuration version
 - model and model version, where applicable

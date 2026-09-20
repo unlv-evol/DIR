@@ -82,6 +82,16 @@ Raw Case Extraction
 cases/raw/<case_id>/
       |
       v
+First-Generation Conversation
+Extraction & Human Validation
+      |
+      v
+Frozen Conversation Record
+      |
+      v
+Historical Repository-State Resolution
+      |
+      v
 Exploratory Pilot Analysis
       |
       v
@@ -144,15 +154,20 @@ be extracted mechanically earlier, but held-out evaluation cases must
 not be used to develop, tune, or revise the method. The pilot protocol
 governs source mapping, screening, and temporal precision.
 
-The approximately 30 pilot cases first support exploratory method
-discovery. Store per-case analyses in `pilot_analysis/cases/`, separate
+The approximately 30 pilot cases first support conversation-side
+extraction and exploratory method discovery. Store per-case analyses in
+`pilot_analysis/cases/`, separate
 from raw, safe, and sealed packages. Never consume `pilot_analysis/` as
 reconstruction input. Researchers may inspect downstream history there
 to discover what mattered and possible retrieval mechanisms, but any
 repository evidence proposed for reconstruction must independently have
-been available by the fixed conversation-start cutoff `tC`. For target
-prompt `i`, conversational cues use only the target prompt and permitted
-earlier turns. Complete individual pilot analyses before synthesizing
+been available by the current primary first-generation cutoff `tFG`.
+Preserve conversation-start `tC` independently for provenance and
+sensitivity analysis; never substitute it when `tFG` is unresolved.
+Freeze the validated conversation-side supplied-C/S/V record before
+repository inspection. For the first-generation target prompt,
+conversational cues use only that prompt and permitted earlier turns.
+Complete individual pilot analyses before synthesizing
 Retrieval Algorithm v1. Avoid detailed taxonomies, confidence schemes,
 and annotation frameworks unless pilot findings motivate them; see the
 pilot protocol.

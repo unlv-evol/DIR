@@ -7,6 +7,10 @@ extracting, and conducting the initial exploratory analysis of
 approximately 30 cases for the **Developer Intent Reconstruction**
 study.
 
+The current first-generation derived methodology is `dir-tfg-v1`.
+Earlier primary-`tC` outputs are legacy records and must not be treated
+as equivalent to current primary-`tFG` records.
+
 The pilot is a **development corpus**, not the complete study dataset
 and not the held-out evaluation corpus. Its first purpose is **method
 discovery**: to identify recurring evidence needs, repository locations,
@@ -92,11 +96,11 @@ CI/check items can be referenced reproducibly.
 
 ------------------------------------------------------------------------
 
-## 2. Stage 1 --- Screen for Manageability, Completeness, and Integrity
+## 2. Stage 1 --- Screen for Availability, Integrity, and Pilot Workload
 
 Apply the pilot screening rules before selecting cases for diversity.
 
-### 2.1 Pilot manageability criteria
+### 2.1 Development-pilot workload / manageability criteria
 
 Current pilot constraints include:
 
@@ -124,8 +128,12 @@ the observed commit count, but `<= 10` commits is a preference: a case
 with more than 10 commits may remain eligible when all hard requirements
 are satisfied. Do not exclude it solely for exceeding that preference.
 
-These are **pilot manageability constraints**, not definitions of a
-small PR and not claims about the full population.
+These are **development-pilot workload constraints**, not scientific
+definitions of valid DIR cases, definitions of a small PR, or claims
+about the full population. Keep cases exceeding a workload limit in the
+screening manifest with their specific failed limit and
+`pilot_manageability_exclusion`; distinguish this from source
+availability/integrity and broader scientific/data eligibility.
 
 Do not relax them merely to obtain 30 cases. If fewer than the desired
 number qualify, report the eligible pool and discuss the methodological
@@ -134,7 +142,7 @@ consequence before changing thresholds.
 Pilot thresholds are not automatically permanent eligibility thresholds
 for later full-scale evaluation.
 
-### 2.2 Completeness
+### 2.2 Scientific/data availability and completeness
 
 A case should provide enough source information to support reproducible
 extraction, including:
@@ -148,6 +156,10 @@ extraction, including:
 -   source C/S/V metadata where available.
 
 Do not infer missing source information merely to make a case eligible.
+Record source availability separately from development-pilot workload
+eligibility. Historical `C_score`, `S_score`, and `V_score` are inherited
+PatchPrompt numerical metadata for pilot diversity and description only;
+they are not supplied information items or retrieval rules.
 
 ### 2.3 Case-integrity validation
 
@@ -275,10 +287,14 @@ At minimum, include:
 
 ``` text
 case_id
+source_case_id
 conversation_id
+conversation_url
 repository
 pr_number
 pr_url
+canonical_pr_url
+Outcome_Class
 C_score
 S_score
 V_score
@@ -290,28 +306,23 @@ pr_commits
 developer_prompts
 assistant_responses
 conversation_words
-code_blocks
-generated_artifact_count
-generated_LOC
-artifact_types
-link_location
-link_user_role
-has_file_path
-has_identifier
-has_code_fragment
-has_error_or_log
-has_test_or_assertion
-has_url
+conversation_start
+temporal_precision
+conversation_temporal_status
+conversation_source
+conversation_retrieval_status
+conversation_parsing_status
+pr_retrieval_status
 complete_conversation_available
-repository_snapshot_status
 data_completeness_status
 case_integrity_status
 duplicate_of
 integrity_notes
-manageable
-selected_for_pilot
+scientific_data_eligible
+pilot_manageability_eligible
+screening_eligible
 exclusion_reason
-study_split
+screening_schema_version
 ```
 
 Also produce a short summary of:
@@ -321,8 +332,16 @@ Also produce a short summary of:
 3.  complexity distribution in the eligible pool; and
 4.  complexity distribution in the selected pilot.
 
-`study_split` records the case's study role without changing its stable
-case identity.
+The manifest may also retain observable structural characteristics
+when reliably obtained; they do not include reconstruction-point
+metadata or speculative repository evidence. A later pilot-selection
+manifest records study role without changing stable case identity.
+`screening_eligible` (where used) means both source/data eligibility
+and pilot workload eligibility passed. Keep the two component judgments
+separate. A failed workload limit receives
+`pilot_manageability_exclusion`, not a claim that the case is
+scientifically invalid. `tFG` and reconstruction-point counts are not
+screening fields; derive them only after raw artifact preservation.
 
 Reconstruction points are not screening metadata. Do not estimate or
 infer them during screening, or use later reconstruction-point
@@ -415,8 +434,8 @@ For each, preserve where available: issue number/URL, title, author,
 created/closed timestamps, body, and comments with authors/timestamps.
 
 Do not manually select only sentences that appear relevant. Preserve
-timestamps so later analysis can determine whether repository-side
-information was available by the conversation-start cutoff (`tC`).
+timestamps so later analysis can evaluate availability by both `tC`
+and the current primary cutoff `tFG`.
 
 ### 5.8 CI/check/build information --- collect only when referenced
 
@@ -454,10 +473,11 @@ temporal protocol.
 
 ### 5.10 Temporal repository identifiers
 
-Record the ChatGPT conversation-start timestamp/date; PR base SHA;
-available head/base/commit SHAs and timestamps that may help reconstruct
-repository state at conversation start; and snapshot-resolution status
-where available.
+Record the ChatGPT conversation-start timestamp/date (`tC`); PR base
+SHA; available head/base/commit SHAs and timestamps that may help
+reconstruct repository state at both `tC` and the later derived `tFG`;
+and snapshot-resolution status where available. Preserve the raw
+identifiers even before the first-generation boundary is identified.
 
 If the exact conversation-start repository state is not automatically
 derivable, do not guess.
@@ -556,25 +576,68 @@ evidence selection, Evidence Engineering, and intent reconstruction.
 
 ------------------------------------------------------------------------
 
-## 9. Stage 4 --- Exploratory 30-Case Forensic Analysis
+## 9. Conversation-First Pilot Analysis and Forensic Discovery
 
-After the selected raw case packages have been created, inspect each
-case using a lightweight and consistent exploratory analysis.
+After the selected raw case packages have been created, complete the
+conversation-side first-generation analysis in §9.1, validate and freeze
+it in §9.2, then inspect repository evidence using §9.3–9.5. Raw
+conversation and generated-artifact preservation precede these derived
+analyses; neither a derived record nor a safe package replaces raw data.
 
-The purpose is to discover what information developers supplied, what
-useful task-relevant information appears missing or insufficient,
-whether that information existed by the conversation-start cutoff
-(`tC`), where such evidence tends to occur, what observable cues could
-lead to it, and what simple retrieval paths could plausibly find it.
+The purpose is to establish what developers actually supplied before
+first generation, then discover what additional task-relevant evidence
+existed in the repository by the first-generation cutoff (`tFG`), where
+it occurred, and how admissible cues could have found it.
 
 This stage is **method discovery**, not the final evidence-selection or
 annotation framework.
 
 Do not force every case to contain useful repository evidence. **"No
-useful project evidence found that was available by `tC`" is a valid
-and important pilot result.**
+useful additional repository evidence found" is a valid pilot result.**
 
-### 9.1 Retrospective discovery versus reconstruction-time admissibility
+### 9.1 First-generation conversation-side extraction
+
+Using the preserved raw conversation and generated artifacts, identify
+the first snippet family, its first generated software artifact, the
+assistant response containing it, and the developer prompt immediately
+triggering that response. The first-generation boundary (`tFG`) is
+immediately **before** that assistant response. Preserve both the
+response ID and its source-supported date/timestamp or unresolved
+status; do not assign `tFG = tC` merely because `tFG` is unknown.
+
+The target prompt and only permitted earlier conversation turns may be
+used to extract the Context, Specificity, and Verification information
+actually supplied before initial generation. Exclude the first
+artifact-bearing response and every later turn. Record each supplied
+item with a stable prompt/response ID and source span. Supplied C/S/V
+are information categories, not the inherited 0–2 numerical scores.
+Do not inspect repository evidence, infer missing information, or use
+PA/PN outcome while producing this conversation-side record. Keep tool
+traces and all later turns in raw provenance; they do not enter visible
+conversation metrics or supplied-C/S/V extraction.
+
+### 9.2 Human validation and frozen conversation-side record
+
+Validate the first family, first artifact-bearing response, target
+prompt, `tFG`, allowed turns, each supplied item and category,
+provenance, and absence of future-information leakage. Validate the
+approximately 30 pilot cases comprehensively where feasible. Preserve
+independent judgments before reconciliation; compute inter-rater
+agreement only for defined categorical judgments, not free-form text.
+Systematic errors require an extraction-version change and assessment
+of which earlier records need regeneration.
+
+After validation, freeze/version a conversation-side record containing
+stable IDs; both independent temporal anchors and their precision,
+status, and source; target prompt and allowed prior turns; supplied
+C/S/V items and provenance; extraction version; validation status; and
+`primary_repository_cutoff = tFG`. Repository inspection may add
+evidence, but may not rewrite what the developer supplied. A genuine
+later correction requires an explicit new record version, preserving
+the previous version. Do not freeze an unvalidated or unresolved
+first-generation boundary as if it were established.
+
+### 9.3 Retrospective discovery versus reconstruction-time admissibility
 
 During exploratory forensic analysis, researchers may inspect historical
 and downstream information such as the historical ChatGPT response, full
@@ -585,38 +648,37 @@ what mattered.
 This retrospective inspection is permitted **only for exploratory
 method discovery and explanation**. It does not make downstream
 information admissible reconstruction evidence. Any repository-side
-evidence proposed for later reconstruction must independently have been
-available no later than the fixed conversation-start cutoff (`tC`), the
-timestamp/date of the first developer prompt. Repository artifacts
-created or changed after `tC` are inadmissible even if they existed
-before a later target prompt. The prompt that generated the code does
-not define the repository-side cutoff. Trace proposed evidence to its
-source artifact and its availability by `tC`.
+evidence proposed for reconstruction must independently have been
+available by `tFG` in the current methodology. Preserve separate
+`available_by_tC` and `available_by_tFG` judgments where determinable.
+Evidence created after `tC` but before `tFG` can pass the current
+temporal test; evidence after `tFG` cannot. When either boundary or
+artifact time is uncertain, record uncertainty rather than guessing.
+Trace proposed evidence to its historical artifact/version. This is a
+versioned change from the former `tC` primary cutoff (§12).
 
 Retrieval paths must also be initiable using admissible conversation
 cues: for target prompt `i`, the target prompt and only permitted earlier
 conversation turns preceding that target prompt may supply cues or
 context. Later turns cannot be used.
 
-### 9.2 Five questions for each case
+### 9.4 Six questions for each case
 
 For each selected case, answer:
 
-1.  **What did the developer ask ChatGPT?** Identify the target prompt
-    and include only permitted earlier conversation turns needed to
-    understand it.
-2.  **What useful information appears missing or insufficient in the
-    prompt/conversation?**
-3.  **Was that information already available in the project by the
-    conversation-start cutoff (`tC`)?** If yes, record where it was
-    found. If not, say so. If availability cannot be established,
-    record it as uncertain.
-4.  **What clue in the prompt/conversation could have led an automated
-    system to that information?**
-5.  **What simple retrieval method could have found it?** Record the
-    short retrieval path and one brief reusable case lesson.
+1.  What did the frozen conversation-side record establish as supplied
+    before first generation?
+2.  What additional task-relevant Context, Specificity, or Verification
+    evidence existed in the repository by `tFG`?
+3.  Where was each item, why was it task-relevant, and did it add beyond
+    the frozen conversation record? A relevant duplicate is not an
+    incremental contribution.
+4.  What target-prompt or permitted earlier-turn cue could initiate
+    retrieval?
+5.  What reproducible operation and path could find it?
+6.  What reusable lesson, including a no-evidence result, follows?
 
-### 9.3 Minimal per-case analysis template
+### 9.5 Minimal per-case analysis template
 
 Store each exploratory analysis separately from the raw case package:
 
@@ -629,27 +691,40 @@ Use:
 ``` text
 CASE: <case_id>
 PR: <URL>
-ChatGPT conversation/date: <URL/date>
+Conversation URL/date: <URL / source-supported date>
+Methodology version: <version>
 
-1. TARGET PROMPT
-<target prompt and only permitted earlier conversation turns>
+TEMPORAL ANCHORS
+tC / conversation start: <value; precision; status; source>
+tFG / first-generation boundary: <value; precision; status; source>
+Primary repository cutoff: tFG
 
-2. WHAT INFORMATION APPEARS TO BE MISSING?
-<short explanation>
+FIRST GENERATION
+First snippet family: <stable ID / unresolved>
+First-generation response: <stable ID / unresolved>
+Target prompt: <stable ID / unresolved>
+Allowed prior turns: <stable IDs>
 
-3. PROJECT EVIDENCE AVAILABLE BY THE CONVERSATION-START CUTOFF (tC)
-Evidence: <artifact or "none found">
-Location: <file / test / issue / configuration / related code / other>
-Why useful: <1-3 sentences>
-Was it available by the conversation-start cutoff (tC)? YES / NO / UNCERTAIN
+FROZEN CONVERSATION-SIDE INFORMATION
+Context supplied: <item IDs, items + prompt/response provenance>
+Specificity supplied: <item IDs, items + provenance>
+Verification supplied: <item IDs, items + provenance>
+Validation status / frozen record version: <status / version>
 
-4. HOW COULD WE FIND IT AUTOMATICALLY?
-Cue from prompt/conversation: <identifier, file path, API name, error, task term, explicit reference, etc.>
-Retrieval method: <simple method>
-Retrieval path: <cue -> search/traversal -> evidence>
+ADDITIONAL REPOSITORY EVIDENCE (repeat per item)
+Evidence ID; artifact/location; historical version/SHA:
+Evidence dimension: Context / Specificity / Verification
+Bounded excerpt or structural fact; why task-relevant:
+Adds beyond frozen conversation: YES / NO / UNCERTAIN
+Available by tC: YES / NO / UNCERTAIN / UNAVAILABLE
+Available by tFG: YES / NO / UNCERTAIN / UNAVAILABLE
+Availability basis/status; provenance:
 
-5. CASE LESSON
-<1-3 sentences describing the reusable retrieval idea, or why no useful project evidence was available by tC>
+AUTOMATED RETRIEVAL
+Admissible cue + target/prior-turn ID; retrieval operation; retrieval path:
+
+CASE LESSON
+<reusable insight, or "No useful additional repository evidence found">
 ```
 
 The `pilot_analysis/` output is researcher interpretation and must not
@@ -670,7 +745,12 @@ The intended sequence is:
 ``` text
 Extract selected pilot cases
         ↓
-Analyze each case with the same lightweight template
+Extract/validate first-generation conversation information
+        ↓
+Freeze the versioned conversation-side record
+        ↓
+Resolve historical repository state and analyze each case
+with the same lightweight template
         ↓
 Complete pilot case lessons
         ↓
@@ -710,40 +790,61 @@ developer prompt associated with each version, evidence supporting
 family membership, and eventual integration relationship as evaluation
 metadata only.
 
-The primary reconstruction point for a snippet family is immediately
-before the assistant response that produced the first artifact in that
-family.
+The primary first-generation reconstruction point for the first
+snippet family is immediately before the assistant response that
+produced its first artifact. Its boundary is `tFG`; preserve `tC`
+independently. Later family members and later reconstruction points may
+be studied under explicitly versioned procedures.
 
 The same developer prompt may initialize more than one snippet family.
 Later family members and later prompts must not become inputs to
 reconstruction of the family's initial request.
 
-Snippet-family construction and reconstruction-point formalization are
-subsequent methodology-development stages, not prerequisites for the
-lightweight forensic analysis.
+Identifying the first family and its first artifact-bearing response is
+a prerequisite for conversation-side extraction. Fuller family
+construction and later reconstruction-point formalization remain
+subsequent methodology-development work.
 
 ------------------------------------------------------------------------
 
 ## 12. Temporal Rule for Later Reconstruction
 
-For conversation `C`:
+For conversation `C`, preserve both anchors:
 
 ``` text
 tC = timestamp/date of the first developer prompt in conversation C
+tFG = boundary immediately before the assistant response containing
+      the first generated artifact in the first snippet family
+primary_repository_cutoff = tFG  # current methodology version
 ```
 
-All repository-side evidence used to reconstruct any prompt in that
-conversation must have been available no later than `tC`. The cutoff
-does not move for later target prompts; repository artifacts created or
-changed after `tC` are inadmissible even if they predate a later prompt.
+For the current first-generation experiment, repository-side evidence
+must have been available no later than `tFG` and otherwise admissible.
+An item may be unavailable by `tC` but available by `tFG`. Preserve
+both availability judgments when supported. `tC` remains historical
+metadata, a conservative sensitivity cutoff, and a diagnostic
+comparison point. Do not silently substitute `tC` if `tFG` is
+unresolved; an explicit future methodology/version decision would be
+required to make `tC` primary again. The former primary-`tC` and
+current primary-`tFG` outputs must carry distinguishable methodology
+versions. Do not overwrite a known `tC` while deriving `tFG`.
+
+Keep timestamp versus date-only precision, temporal status, and source
+separately for each anchor. An exact repository state cannot be claimed
+from a date alone. If source times or ordering are insufficient, mark
+the relevant anchor or evidence availability uncertain, unresolved, or
+unavailable. `tFG = tC` must never be assigned as a fallback.
 
 For target prompt `i`, the target prompt and only permitted earlier
 conversation turns preceding that target prompt may supply
 conversational context or retrieval cues. Later turns are inadmissible.
 
-This conservative rule may exclude legitimate evidence that appeared
-after conversation start but before a later prompt. Preserve and report
-this limitation rather than weakening the cutoff silently.
+Raw historical packages remain lossless but are not reconstruction-safe.
+The current SAFE partition admits only evidence established by `tFG`
+and otherwise allowed; post-`tFG` or outcome-revealing material remains
+SEALED. Preserve the information needed for a later, separately
+versioned `tC` sensitivity partition. The eventual integrated
+implementation is evaluation-only.
 
 The retrospective exploratory analysis in Section 9 does not alter this
 reconstruction-time temporal rule.
@@ -759,16 +860,21 @@ The pilot proceeds broadly as:
 
 1.  screen and select pilot cases;
 2.  extract complete raw case packages;
-3.  conduct the lightweight exploratory forensic analysis;
-4.  compare lessons across the pilot;
-5.  identify recurring retrieval mechanisms;
-6.  design and refine the initial automated method;
-7.  develop and validate later stages such as snippet-family
+3.  identify the first snippet family, first artifact-bearing response,
+    target prompt, and `tFG` from conversation/raw-artifact sources;
+4.  extract supplied C/S/V from allowed conversation only, validate
+    it, and freeze/version the conversation-side record;
+5.  resolve the historical repository state and conduct lightweight
+    exploratory forensic analysis using the frozen record;
+6.  complete case lessons and compare them across the pilot;
+7.  identify recurring retrieval mechanisms and design Retrieval
+    Algorithm v1;
+8.  develop and validate later stages such as snippet-family
     construction, reconstruction points, temporal partitioning,
     localization, retrieval, selection, Evidence Engineering, and
     reconstruction;
-8.  resolve consequential methodological ambiguities; and
-9.  freeze/version the stable methodology before applying it to held-out
+9.  resolve consequential methodological ambiguities; and
+10. freeze/version the stable methodology before applying it to held-out
     evaluation cases.
 
 Raw extraction of additional cases may occur earlier when it is purely
@@ -804,6 +910,8 @@ cases/manifests/pilot_cases.csv
 cases/manifests/selection_summary.md
 cases/raw/<case_id>/
 pilot_analysis/cases/<case_id>.md
+pilot_analysis/conversation/<case_id>/record_<version>.json
+    # derived, validated/frozen when ready; retain older versions
 ```
 
 The screening output should cover the full screened pool and preserve
@@ -819,8 +927,9 @@ case-integrity findings, and important missing-data observations.
 Each raw case package should preserve the complete historical material
 specified in this protocol.
 
-Each `pilot_analysis/cases/<case_id>.md` should contain the lightweight
-five-question exploratory analysis from Section 9.
+Each `pilot_analysis/cases/<case_id>.md` should contain the six-question
+exploratory analysis from §9.4–9.5. Conversation-side records must be
+versioned and frozen before repository evidence analysis.
 
 Reproduction instructions should document the exact commands,
 APIs/libraries, source mappings, and field definitions needed to
@@ -838,6 +947,14 @@ should demonstrate at least:
 -   transparent inclusion/exclusion reasons;
 -   complete conversation preservation;
 -   complete preservation of generated artifacts;
+-   reproducible first-snippet-family, first-generation-response, and
+    target-prompt identification;
+-   supplied-C/S/V items with prompt/response provenance, human
+    validation, and versioned frozen conversation-side records;
+-   independent preservation of `tC` and `tFG` with precision, status,
+    source, and `tFG` as the current primary repository cutoff;
+-   distinguishable old primary-`tC` and current primary-`tFG`
+    methodology versions;
 -   stable identifiers and provenance;
 -   reproducible raw-case packaging;
 -   documented handling of temporal repository identifiers;
@@ -847,7 +964,11 @@ should demonstrate at least:
 -   cross-case synthesis of recurring retrieval mechanisms;
 -   defensible snippet-family construction when that later stage is
     introduced;
--   reproducible conversation-start repository-state handling;
+-   reproducible `tFG` repository-state handling and retained `tC`
+    sensitivity information;
+-   evidence traceability with separate task relevance, incremental
+    contribution beyond frozen conversation, and availability by both
+    temporal anchors where determinable;
 -   safe/sealed temporal partitioning when that later stage is
     introduced;
 -   no use of sealed information during reconstruction-time stages; and

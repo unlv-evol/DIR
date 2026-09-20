@@ -35,8 +35,9 @@ The current implementation priority is the **initial pilot/development
 corpus of approximately 30 cases**.
 
 Work currently follows pilot screening and integrity validation,
-selection, complete raw-case extraction, exploratory 30-case forensic
-analysis, and cross-case method discovery.
+selection, complete raw-case extraction, validated first-generation
+conversation-side extraction and freeze, exploratory 30-case repository
+forensic analysis, and cross-case method discovery.
 
 The existing PatchPrompt-study analysis CSV is a candidate index and
 metadata source for this pilot; the complete raw cases require their

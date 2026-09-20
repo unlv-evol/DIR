@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bounded historical repository evidence",
+  "type": "object",
+  "required": ["schema_version", "methodology_version", "case_id", "evidence_id", "artifact_path_or_stable_identifier", "historical_version_or_SHA", "temporal_basis", "available_by_tC", "available_by_tFG", "evidence_dimension", "bounded_excerpt_or_structural_fact", "task_relevance", "adds_beyond_frozen_conversation", "outcome_revealing", "retrieval_cue", "retrieval_cue_turn_id", "retrieval_operation", "retrieval_path", "provenance", "primary_repository_cutoff"],
+  "properties": {
+    "schema_version": {"const": "1"},
+    "methodology_version": {"const": "dir-tfg-v1"},
+    "case_id": {"type": "string"},
+    "evidence_id": {"type": "string"},
+    "artifact_path_or_stable_identifier": {"type": "string"},
+    "historical_version_or_SHA": {"type": "string"},
+    "temporal_basis": {"type": "object"},
+    "available_by_tC": {"$ref": "#/$defs/availability"},
+    "available_by_tFG": {"$ref": "#/$defs/availability"},
+    "evidence_dimension": {"enum": ["Context", "Specificity", "Verification"]},
+    "bounded_excerpt_or_structural_fact": {"type": "string"},
+    "task_relevance": {"type": "boolean"},
+    "adds_beyond_frozen_conversation": {"type": "boolean"},
+    "outcome_revealing": {"type": "boolean"},
+    "retrieval_cue": {"type": "string"},
+    "retrieval_cue_turn_id": {"type": "string"},
+    "retrieval_operation": {"type": "string"},
+    "retrieval_path": {"type": "string"},
+    "provenance": {"type": "object"},
+    "primary_repository_cutoff": {"const": "tFG"}
+  },
+  "$defs": {"availability": {"enum": ["YES", "NO", "UNCERTAIN", "UNAVAILABLE"]}}
+}

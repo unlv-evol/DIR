@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "developer-intent-reconstruction"
+version = "0.1.0"
+description = "Developer Intent Reconstruction research pipeline"
+requires-python = ">=3.9.6"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]

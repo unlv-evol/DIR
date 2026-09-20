@@ -81,3 +81,24 @@ Suggested fields:
 - **Impact:** Temporal metadata must retain source precision and
   uncertainty.
 - **Owner:** Study team. **Status:** Adopted.
+
+## 2026-09-19 — Versioned first-generation primary cutoff
+
+- **Decision ID:** DIR-005
+- **Decision:** For the current first-generation experiment, preserve
+  conversation-start `tC` and first-generation `tFG` independently;
+  `primary_repository_cutoff = tFG`. A validated, frozen
+  conversation-side supplied-C/S/V record precedes repository forensics.
+  The former primary-`tC` procedure and current `dir-tfg-v1` derived
+  records are methodologically distinct. Never fill an unresolved
+  `tFG` with `tC`.
+- **Alternatives considered:** Continuing to use `tC` as primary or
+  silently substituting it when `tFG` is unavailable.
+- **Rationale/evidence:** Revised pilot protocol, §§9 and 12; explicit
+  first-generation reconstruction design. `tC` remains available for
+  sensitivity analysis or a separately versioned future method.
+- **Impact:** Derived conversation and repository evidence contracts
+  carry both temporal judgments and a methodology version. Screening
+  retains historical `tC`; first-generation fields are derived only
+  after raw artifact preservation.
+- **Owner:** Study team. **Status:** Adopted for current version.

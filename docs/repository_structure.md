@@ -25,6 +25,7 @@ developer-intent-reconstruction/
 │   └── raw/
 ├── pilot_analysis/
 │   ├── README.md
+│   ├── conversation/
 │   ├── cases/
 │   └── synthesis/
 ├── safe/
@@ -81,6 +82,12 @@ thresholds merely to make cases or tests pass.
 ### `schemas/`
 
 Machine-readable data contracts shared across workstreams.
+
+Current derived contracts are `frozen_conversation_v1.schema.json` and
+`repository_evidence_v1.schema.json`, both marked `dir-tfg-v1`. The
+validated frozen conversation record precedes repository evidence
+analysis; neither schema is a raw-package schema. See the pilot
+protocol, §§9 and 12.
 
 Expected schemas may eventually include:
 
@@ -212,8 +219,11 @@ observations after screening has run.
 
 ### `pilot_analysis/`
 
+`pilot_analysis/conversation/<case_id>/record_<version>.json` stores a derived,
+human-validated and versioned conversation-side record before repository
+inspection; it is not raw or reconstruction-safe input by itself.
 `pilot_analysis/cases/<case_id>.md` stores the lightweight, researcher-generated
-forensic analysis of each selected pilot case. After the individual
+repository forensic analysis of each selected pilot case. After the individual
 analyses are complete, `pilot_analysis/synthesis/` stores cross-case
 lessons used to develop Retrieval Algorithm v1. These interpretations
 are separate from complete historical material in `cases/raw/` and
@@ -222,8 +232,8 @@ from later formal independent validation in `annotations/`.
 Pilot analysis may inspect downstream history retrospectively for
 method discovery. It is not reconstruction-safe evidence and must not
 be consumed by the reconstruction pipeline. Proposed repository-side
-evidence must independently have been available by the fixed
-conversation-start cutoff `tC`.
+evidence must independently have been available by the current primary
+cutoff `tFG`; retain `tC` and both availability judgments where known.
 
 ------------------------------------------------------------------------
 
@@ -520,7 +530,8 @@ Original source
 → Case integrity validation and screening
 → Eligible case pool
      ├── Pilot/development cases → Raw case extraction → cases/raw/<case_id>/
-     │       → Exploratory pilot analysis → Cross-case synthesis
+     │       → First-generation conversation extraction/validation/freeze
+     │       → Repository-state resolution → Exploratory pilot analysis → Cross-case synthesis
      │       → Retrieval Algorithm v1 → Formal method development/validation
      │       → Method freeze/version
      └── Held-out evaluation cases ────────────────────────┘

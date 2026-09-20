@@ -64,14 +64,20 @@ only after reconstruction and generation outputs have been frozen.
 
 ## Cross-Cutting Temporal Constraint
 
-For each conversation `C`, define the repository cutoff:
+For each conversation `C`, retain both temporal anchors:
 
 ``` text
 tC = timestamp/date of the first developer prompt in conversation C
+tFG = boundary immediately before the assistant response containing
+      the first generated artifact in the first snippet family
 ```
 
-Repository evidence used for any reconstruction in that conversation
-must have been available no later than `tC`.
+For the current first-generation experiment,
+`primary_repository_cutoff = tFG`. Reconstruction repository evidence
+must have been available by `tFG` and otherwise admissible. Preserve
+availability by `tC` separately for conservative sensitivity analysis.
+An unresolved `tFG` never silently becomes `tC`; the former primary-`tC`
+procedure remains distinguishable by methodology version.
 
 For target prompt `i`, conversational evidence may include only earlier
 observed turns:
@@ -80,11 +86,12 @@ observed turns:
 Conv_pre,i = {I1, ..., I(i-1)}
 ```
 
-Repository evidence is therefore frozen at conversation start, while
-conversational evidence advances only through turns preceding the target
-prompt.
+The conversation-side record of what was supplied before initial
+generation is validated and frozen before repository inspection.
+Conversation cues include the target prompt and only permitted prior
+turns; repository evidence is evaluated against `tFG`.
 
-The target response, later conversation turns, post-cutoff repository
+The first artifact-bearing response, later conversation turns, post-`tFG` repository
 artifacts, later commits/tests/reviews/CI outcomes, final PR diff, merge
 outcome, and eventual integrated implementation are sealed from
 reconstruction.
@@ -95,10 +102,12 @@ C/S/V is used to characterize information explicitly supplied by the
 developer and, where appropriate, to organize information contributed by
 project evidence.
 
-Numerical C/S/V scores: - may be used as pilot-selection metadata to
-obtain variation; - must not be treated as reconstruction inputs; - must
-not control evidence retrieval; and - must not be optimized as a proxy
-for reconstruction quality.
+Historical numerical C/S/V scores may be used only for pilot diversity
+and descriptive analysis; they are not reconstruction inputs or
+retrieval rules. Supplied C/S/V and additional repository C/S/V are
+provenanced information categories, not 0–2 scores. Repository items
+must be both task-relevant and evaluated for whether they add beyond
+the frozen conversation-side record.
 
 ## Relationship to the Pilot
 

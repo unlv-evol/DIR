@@ -2,7 +2,7 @@
 
 ## Research Data Flow Architecture
 
-The architecture supports both the initial 30-case pilot/development corpus and the later larger-scale study. After screening, integrity validation, selection, and raw extraction, all selected pilot cases receive lightweight exploratory forensic analysis. Cross-case synthesis then informs Retrieval Algorithm v1 and subsequent formal method development and validation. Once the methodology is sufficiently stable, it is frozen and versioned before application to held-out evaluation cases.
+The architecture supports both the initial 30-case pilot/development corpus and the later larger-scale study. After screening, integrity validation, selection, and lossless raw extraction, selected pilot cases receive first-generation conversation-side extraction, human validation, and a versioned frozen conversation record before repository forensic analysis. Cross-case synthesis then informs Retrieval Algorithm v1 and subsequent formal method development and validation. Once the methodology is sufficiently stable, it is frozen and versioned before application to held-out evaluation cases.
 
 The architecture also separates raw historical case extraction from temporally admissible reconstruction data and sealed evaluation information. This separation prevents future or outcome-revealing information from influencing evidence retrieval or intent reconstruction.
 
@@ -54,9 +54,26 @@ The architecture also separates raw historical case extraction from temporally a
                        |                         |
                        v                         |
           +-------------------------+             |
+          | First-Generation        |             |
+          | Conversation Extraction |             |
+          +------------+------------+             |
+                       |                         |
+                       v                         |
+          +-------------------------+             |
+          | Human Validation &      |             |
+          | Conversation Freeze     |             |
+          +------------+------------+             |
+                       |                         |
+                       v                         |
+          +-------------------------+             |
+          | Historical Repository   |             |
+          | State Resolution        |             |
+          +------------+------------+             |
+                       |                         |
+                       v                         |
+          +-------------------------+             |
           | Exploratory 30-Case     |             |
-          | Forensic Analysis       |             |
-          | Lightweight discovery   |             |
+          | Repository Forensics    |             |
           +------------+------------+             |
                        |                         |
                        v                         |
@@ -192,7 +209,7 @@ Case integrity is checked before manageability and completeness determine the el
 
 ### 2. Pilot / Development Corpus
 
-Approximately 30 cases are initially selected as the pilot/development corpus. Selection emphasizes diversity in Context, Specificity, and Verification (C/S/V), with secondary structural diversity considered where possible. The first use of these cases is exploratory method discovery: researchers inspect each raw case using the lightweight template in the pilot protocol. Only after completing the individual pilot analyses do they synthesize recurring evidence needs, repository locations, retrieval cues, and retrieval paths into Retrieval Algorithm v1. These interpretations belong in `pilot_analysis/`, not in raw cases or reconstruction inputs.
+Approximately 30 cases are initially selected as the pilot/development corpus. Inherited numerical C/S/V scores support selection diversity only. After raw preservation, identify the first artifact-bearing response and its triggering prompt from conversation/artifact sources, extract supplied C/S/V information from permitted turns, validate it, and freeze the conversation-side record before repository inspection. Complete the individual pilot analyses before synthesizing recurring evidence needs, repository locations, retrieval cues, and retrieval paths into Retrieval Algorithm v1. These interpretations belong in `pilot_analysis/`, not in raw cases or reconstruction inputs; see the pilot protocol, §9.
 
 The pilot corpus is used to:
 
@@ -277,7 +294,11 @@ The raw extraction format is therefore reusable for both pilot and later scale-u
 
 ### 6. Snippet-Family Construction and Reconstruction Points
 
-Generated artifacts may subsequently be organized into snippet families representing successive versions of the same logical artifact.
+The first snippet family and its first artifact-bearing response are
+identified for pilot conversation-side extraction before repository
+forensics. Fuller organization of generated artifacts into snippet
+families representing successive versions of the same logical artifact
+is developed and validated on the pilot before method freeze.
 
 Developer prompts are preserved as potential reconstruction points.
 
@@ -287,7 +308,7 @@ The resulting reconstruction case identifies the task, artifact family, conversa
 
 The raw historical package is not reconstruction-safe input.
 
-Repository-side reconstruction evidence must have been available by the fixed conversation-start cutoff `tC`, the timestamp/date of the first developer prompt. Changes after `tC` remain inadmissible even if they predate a later target prompt. For target prompt `i`, conversational cues may use the target prompt and only permitted earlier turns; later turns are inadmissible. Exploratory pilot analysis does not change either boundary.
+Preserve both conversation-start `tC` and the first-generation boundary `tFG` independently, with source, precision, and status. In the current version, `primary_repository_cutoff = tFG`; only repository evidence established by `tFG` and otherwise admissible may enter SAFE. Record availability by both `tC` and `tFG` where determinable. An unresolved `tFG` does not silently fall back to `tC`. For the first-generation target prompt, conversational cues use that prompt and only permitted earlier turns; the artifact-bearing response and later turns are excluded. The former primary-`tC` and current primary-`tFG` methods must carry different versions. See the pilot protocol, §§9 and 12.
 
 It may contain information that became available only after a reconstruction point, including:
 
