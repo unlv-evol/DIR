@@ -39,7 +39,48 @@ matching summary. The full run writes
 `cases/manifests/screened_cases.csv` and
 `cases/manifests/selection_summary.md`. Review the 1-case cache/output
 before the 5-case run, and inspect both before the full run. The
-summary is screening-only; no pilot cases are selected.
+summary also reports the reviewed pilot selection when the pilot manifest
+exists. Limited smoke runs remain screening-only.
+
+## Reviewed pilot selection
+
+`cases/manifests/pilot_cases.csv` records 30 selected pilot/development
+cases, their screening measures, the same persisted secondary fields,
+and a source-observable reason for each
+choice. The choices were reviewed for C/S/V and conversation/task
+variation; no automatic ranking score or PA/PN outcome balance is used.
+Generated-artifact counts and revision relationships are established
+after raw extraction, not assumed from the screening cache.
+
+The `dir-screening-v3` CSV also persists secondary characteristics for
+every candidate. `conversation_turn_pattern` is based on complete
+visible developer turns. The `prompt_*_signal` fields are conservative
+lexical cues for identifiers, paths, code fragments, errors/logs,
+tests/assertions, and URLs in those turns. `detected` has a literal
+matched cue and developer-turn index in
+`secondary_characteristics_evidence`; `not_detected_by_rule` means only
+that the rule found no cue, not that the characteristic is absent.
+Unparsed conversations use `unavailable`. `help_seeking_context_cues`
+are lexical leads, not assigned task categories. Mostly behavioral
+language, actual help-seeking context, link-sharer role, and the number
+or revision pattern of generated artifacts remain `not_assessed` until
+their respective source evidence is reviewed or raw artifacts are
+preserved. These fields do not change screening eligibility or pilot
+membership.
+
+After editing the pilot manifest or rerunning screening, validate it and
+refresh the selected-pilot section of `selection_summary.md` with:
+
+```bash
+make pilot-summary
+```
+
+The command rejects duplicate, ineligible, or stale case records. A full
+screening rerun also validates the existing pilot manifest and includes
+the selected-pilot section in the summary; limited smoke runs leave the
+selection unchanged. The manifest records study role without changing
+case identity. Raw extraction and first-generation analysis follow this
+selection stage.
 
 HTTP source bodies and parsed conversations are cached under
 `data/intermediate/screening/cache/`. Successfully retrieved resources

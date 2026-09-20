@@ -11,6 +11,8 @@ from datetime import date, datetime
 from pathlib import Path
 from urllib.parse import urlparse
 
+from .screening_secondary import SECONDARY_FIELDS, secondary_characteristics
+
 ALLOWED_CLASSES = {"PA", "PN"}
 GITHUB_PR = re.compile(r"^/([^/]+)/([^/]+)/pull/(\d+)/?$")
 FIELDS = (
@@ -19,7 +21,7 @@ FIELDS = (
     "Outcome_Class", "C_score",
     "S_score", "V_score", "changed_files", "additions", "deletions",
     "changed_lines", "pr_commits", "developer_prompts", "assistant_responses",
-    "conversation_words", "conversation_start", "temporal_precision",
+    "conversation_words", *SECONDARY_FIELDS, "conversation_start", "temporal_precision",
     "conversation_title", "conversation_source", "conversation_archive_status",
     "conversation_retrieval_status", "conversation_parsing_status",
     "conversation_temporal_status", "pr_retrieval_status", "pr_state",
@@ -220,7 +222,7 @@ def screen_rows(source_rows: list[dict], source_dir: Path | None = None) -> list
                                         else None if any(value is None for value in checks.values())
                                         else True)
         row = {
-            "screening_schema_version": "dir-screening-v2",
+            "screening_schema_version": "dir-screening-v3",
             "case_id": cid, "source_case_id": sid,
             "conversation_id": conv_identity or "", "conversation_url": conv_url,
             "repository": pr_identity[0] if pr_identity else "",
@@ -257,6 +259,7 @@ def screen_rows(source_rows: list[dict], source_dir: Path | None = None) -> list
             "screening_eligible": _flag(not reasons), "exclusion_reason": ";".join(reasons),
         }
         row.update({key: _flag(value) for key, value in checks.items()})
+        row.update(secondary_characteristics(conv))
         result.append(row)
     return result
 
@@ -269,7 +272,7 @@ def read_source(path: Path) -> list[dict]:
 def write_manifest(rows: list[dict], path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as stream:
-        writer = csv.DictWriter(stream, fieldnames=FIELDS)
+        writer = csv.DictWriter(stream, fieldnames=FIELDS, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -281,7 +284,7 @@ def screening_summary(source_rows: list[dict], screened: list[dict]) -> str:
     missing = Counter(reason for row in screened for reason in row["exclusion_reason"].split(";")
                       if reason.startswith("missing_"))
     lines = ["# Screening summary", "", "Screening only; no pilot cases selected.",
-             "Screening schema: `dir-screening-v2`; first-generation `tFG` is not derived here.", "",
+             "Screening schema: `dir-screening-v3`; first-generation `tFG` is not derived here.", "",
              f"Source records: {len(source_rows)}",
              f"PA/PN candidates: {len(screened)}",
              f"Confirmed development-pilot screening eligible: {len(eligible)}",

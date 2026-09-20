@@ -1,7 +1,6 @@
 # Screening summary
 
-Screening only; no pilot cases selected.
-Screening schema: `dir-screening-v2`; first-generation `tFG` is not derived here.
+Screening schema: `dir-screening-v3`; first-generation `tFG` is not derived here.
 
 Source records: 265
 PA/PN candidates: 142
@@ -73,3 +72,45 @@ pr_retrieval_status: {'not_found': 2, 'retrieved_authenticated': 140}
 conversation_retrieval_status: {'retrieved_archive': 4, 'retrieved_public': 138}
 conversation_parsing_status: {'parsed': 127, 'parsed_archive': 4, 'unsupported_or_malformed': 11}
 conversation_archive_status: {'not_attempted': 127, 'not_found': 3, 'pr_mismatch': 3, 'recovered': 4, 'summary_only_unresolved': 5}
+
+## Pilot selection
+
+Selected pilot/development cases: 30 of 68 confirmed screening-eligible cases.
+Pilot manifest SHA-256: `313ac1499a1bcecabb23003889a2d3d89cc3c003b7b031cae9c8152a143102da`.
+Selection uses reviewed C/S/V diversity and observed conversation/task characteristics; PA/PN outcome and downstream success are not selection signals.
+Generated-artifact and revision counts are deferred until raw extraction.
+
+### C/S/V distributions
+
+| Score | Eligible pool | Selected pilot |
+| --- | --- | --- |
+| C_score | `{'0': 1, '1': 27, '2': 40}` | `{'0': 1, '1': 8, '2': 21}` |
+| S_score | `{'1': 41, '2': 27}` | `{'1': 14, '2': 16}` |
+| V_score | `{'0': 32, '1': 33, '2': 3}` | `{'0': 12, '1': 15, '2': 3}` |
+
+### Joint C/S/V profiles in selected pilot
+
+- (0, 1, 0): 1
+- (1, 1, 0): 3
+- (1, 1, 1): 1
+- (1, 2, 0): 1
+- (1, 2, 1): 2
+- (1, 2, 2): 1
+- (2, 1, 0): 4
+- (2, 1, 1): 5
+- (2, 2, 0): 3
+- (2, 2, 1): 7
+- (2, 2, 2): 2
+
+### Observed complexity
+
+| Measure | Eligible pool | Selected pilot |
+| --- | --- | --- |
+| changed_files | min 1, median 3, max 10 | min 1, median 3, max 9 |
+| changed_lines | min 2, median 56.5, max 300 | min 2, median 50, max 300 |
+| developer_prompts | min 1, median 1, max 10 | min 1, median 2, max 10 |
+| conversation_words | min 61, median 379, max 2814 | min 62, median 583, max 2814 |
+| pr_commits | min 1, median 4, max 35 | min 1, median 3.5, max 35 |
+
+Single-developer-prompt cases: 12; multi-prompt cases: 18.
+Case-level selection observations and rationales are recorded in `cases/manifests/pilot_cases.csv`.

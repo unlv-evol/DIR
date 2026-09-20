@@ -336,6 +336,11 @@ The manifest may also retain observable structural characteristics
 when reliably obtained; they do not include reconstruction-point
 metadata or speculative repository evidence. A later pilot-selection
 manifest records study role without changing stable case identity.
+Current screening persists lexical prompt signals with matched cues as
+review leads; a rule finding no cue does not establish that the
+characteristic is absent. Artifact counts/revisions, link-sharer role,
+mostly-behavioral judgment, and actual help-seeking context remain
+unassessed until their sources support them; see the screening CLI README.
 `screening_eligible` (where used) means both source/data eligibility
 and pilot workload eligibility passed. Keep the two component judgments
 separate. A failed workload limit receives

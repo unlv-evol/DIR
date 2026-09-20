@@ -18,6 +18,7 @@ from developer_intent.screening_chatgpt import retrieve_share  # noqa: E402
 from developer_intent.screening_config import load_config  # noqa: E402
 from developer_intent.screening_github import retrieve_pr  # noqa: E402
 from developer_intent.screening_http import HttpClient  # noqa: E402
+from developer_intent.pilot_selection import pilot_selection_summary, read_pilot_manifest  # noqa: E402
 
 
 def retrieve_candidates(candidates: list[dict], evidence_dir: Path,
@@ -137,7 +138,6 @@ def main() -> None:
         if archive_counts:
             print(f"Archive fallback: {dict(sorted(archive_counts.items()))}")
     screened = screen_rows(candidates, evidence_dir)
-    write_manifest(screened, output)
     summary = screening_summary(source, screened)
     summary += (f"\nSource CSV SHA-256: "
                 f"`{hashlib.sha256(args.source.read_bytes()).hexdigest()}`\n")
@@ -145,6 +145,12 @@ def main() -> None:
     for field in ("pr_retrieval_status", "conversation_retrieval_status", "conversation_parsing_status",
                   "conversation_archive_status"):
         summary += f"{field}: {dict(sorted(Counter(row[field] for row in screened).items()))}\n"
+    pilot_path = ROOT / "cases/manifests/pilot_cases.csv"
+    if pilot_path.exists() and not args.limit:
+        selected = read_pilot_manifest(pilot_path)
+        summary = summary.replace("Screening only; no pilot cases selected.\n", "")
+        summary += "\n" + pilot_selection_summary(screened, selected, pilot_path)
+    write_manifest(screened, output)
     summary_path.parent.mkdir(parents=True, exist_ok=True)
     summary_path.write_text(summary, encoding="utf-8")
     print(f"Source records: {len(source)}; PA/PN candidates in run: {len(screened)}; "
