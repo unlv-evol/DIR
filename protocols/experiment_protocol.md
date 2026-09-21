@@ -1,6 +1,8 @@
-# Developer Intent Reconstruction Experiment Protocol (Protocol v5 migration)
+# Developer Intent Reconstruction Study — Experiment Protocol
 
-This Markdown is the repository's operational expression of the authoritative `Developer_Intent_Reconstruction_Experiment_Protocol_v5.docx` (Word §§1–17). Keep this filename until a separately approved rename. The current first-generation methodology version is `dir-tfg-v2`; older primary-`tC` records and `dir-tfg-v1` outputs are not equivalent. Existing `dir-screening-v3` manifests, smoke runs, cache, and the approximately-30-case `pilot_cases.csv` are preserved legacy/provisional results. They are not the Protocol v5 eligible corpus, validation sample, or discovery split. Do not regenerate them in place.
+Case Screening, Conversation Extraction, Historical Project Evidence Discovery, and End-to-End Evaluation Protocol
+
+This Markdown is the repository's operational expression of the authoritative `Developer_Intent_Reconstruction_Experiment_Protocol_v5.docx` (Word §§1–17). The current first-generation methodology version is `dir-tfg-v2`; older primary-`tC` records and `dir-tfg-v1` outputs are not equivalent. The former `dir-screening-v3` manifests, smoke runs, and approximately-30-case selection are preserved in Git history; ignored retrieval caches remain local historical source material. They are not the Protocol v5 eligible corpus, validation sample, or discovery split.
 
 ## 1. Population and Stage A screening
 
@@ -8,7 +10,7 @@ The inherited PatchPrompt analysis CSV at `data/raw/final_analysis_dataset_from_
 
 Screen **all** PA/PN candidates for concrete integrity, availability, temporal-anchor, and processability problems. Verify repository/PR/conversation identity; flag duplicates and unresolved mappings. An unrecoverable conversation, unusable temporal anchor, demonstrably unidentifiable first-generation boundary, inaccessible required project history, or demonstrably unreconstructible historical state may prevent eligibility. Distinguish `eligible`, `excluded`, and `pending_resolution`; missing proof is not evidence of a failed criterion. Preserve each decision's source, status, and reason. A link or current PR metadata alone does not prove historical reconstructibility. Stage A may identify a candidate first-generation event without doing full snippet-family construction or repository evidence discovery.
 
-Keep changed-file count (unique PR diff paths), additions, deletions, changed lines (additions + deletions), PR commit count from the PR source/API, developer prompt count (user turns), and complete-conversation word count as **descriptive** measures only. No numerical size, length, prompt, line, file, or commit threshold excludes a valid case. Source C/S/V 0–2 scores are inherited metadata, not the later supplied-information categories. Future Stage A outputs use separate, versioned paths such as `cases/manifests/screened_PA_PN_cases.csv`, `eligible_PA_PN_cases.csv`, and `stage_a_summary.md`; report PA and PN counts before and after screening. The prior `screened_cases.csv` and `selection_summary.md` remain untouched legacy outputs.
+Keep changed-file count (unique PR diff paths), additions, deletions, changed lines (additions + deletions), PR commit count from the PR source/API, developer prompt count (user turns), and complete-conversation word count as **descriptive** measures only. No numerical size, length, prompt, line, file, or commit threshold excludes a valid case. Source C/S/V 0–2 scores are inherited metadata, not the later supplied-information categories. Stage A outputs use separate, versioned paths such as `cases/manifests/screened_PA_PN_cases.csv`, `eligible_PA_PN_cases.csv`, and `stage_a_summary.md`; report PA and PN counts before and after screening. Former `screened_cases.csv` and `selection_summary.md` are recoverable from Git history only.
 
 ## 2. Stage B conversation-only packaging
 

@@ -1,8 +1,8 @@
 # AGENTS.md — Developer Intent Reconstruction
 
-This research repository requires both software correctness and methodological validity. **The Word Protocol v5 is authoritative** for the current experiment. Read `Developer_Intent_Reconstruction_Experiment_Protocol_v5.docx` when accessible, `protocols/pilot_case_selection_and_extraction.md`, `docs/architecture.md`, `docs/repository_structure.md`, `docs/research_questions.md`, `docs/data_dictionary.md`, `decisions/decision_log.md`, relevant schemas/configuration/tests, and this file before changing a pipeline stage. Surface conflicts instead of silently choosing an interpretation.
+This research repository requires both software correctness and methodological validity. **The Word Protocol v5 is authoritative** for the current experiment. Read `Developer_Intent_Reconstruction_Experiment_Protocol_v5.docx` when accessible, `protocols/experiment_protocol.md`, `docs/architecture.md`, `docs/repository_structure.md`, `docs/research_questions.md`, `docs/data_dictionary.md`, `decisions/decision_log.md`, relevant schemas/configuration/tests, and this file before changing a pipeline stage. Surface conflicts instead of silently choosing an interpretation.
 
-Existing `dir-screening-v3` manifests, old smoke runs/cache, and the approximately-30-case `pilot_cases.csv` are legacy/provisional outputs. Preserve them and their provenance. Do not rerun, overwrite, or treat them as Protocol v5 eligibility, validation, discovery, or held-out assignments. Use separately versioned paths for future v5 execution. Never commit real `.env` secrets or emit tokens into logs, CSVs, or caches.
+Former `dir-screening-v3` manifests, smoke runs, and approximately-30-case pilot selection are legacy/provisional results recoverable from Git history. Their ignored retrieval cache remains local source material. Do not treat historical judgments as Protocol v5 eligibility, validation, discovery, or held-out assignments. Use separately versioned paths for v5 execution. Never commit real `.env` secrets or emit tokens into logs, CSVs, or caches.
 
 ## Current stage order
 

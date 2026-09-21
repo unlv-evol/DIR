@@ -28,7 +28,7 @@ Suggested fields:
   cases; see the pilot protocol, §11.
 - **Impact:** Architecture and lineage diagrams must show pilot
   extraction before method freeze.
-- **Owner:** Study team. **Status:** Adopted.
+- **Owner:** Study team. **Status:** SUPERSEDED by DIR-006.
 
 ## 2026-09-19 — Candidate index and source boundaries
 
@@ -51,7 +51,7 @@ Suggested fields:
 - **Impact:** DIR screening derives its required measures from the
   documented PR and conversation sources. Inherited `PR_Size` metadata
   is not used by the current pilot screening procedure.
-- **Owner:** Study team. **Status:** Adopted.
+- **Owner:** Study team. **Status:** Retained source-boundary decision; pilot-selection portion SUPERSEDED by DIR-006.
 
 ## 2026-09-19 — Commit-count preference
 
@@ -64,7 +64,7 @@ Suggested fields:
 - **Rationale/evidence:** The pilot protocol, §2.1, says “preferably.”
 - **Impact:** Screening must distinguish this preference from hard
   limits.
-- **Owner:** Study team. **Status:** Adopted.
+- **Owner:** Study team. **Status:** SUPERSEDED by DIR-006.
 
 ## 2026-09-19 — Date precision and repository state
 
@@ -80,7 +80,7 @@ Suggested fields:
   repository state.
 - **Impact:** Temporal metadata must retain source precision and
   uncertainty.
-- **Owner:** Study team. **Status:** Adopted.
+- **Owner:** Study team. **Status:** Temporal-precision rule retained; pilot-specific framing SUPERSEDED by DIR-006.
 
 ## 2026-09-19 — Versioned first-generation primary cutoff
 
@@ -101,7 +101,7 @@ Suggested fields:
   carry both temporal judgments and a methodology version. Screening
   retains historical `tC`; first-generation fields are derived only
   after raw artifact preservation.
-- **Owner:** Study team. **Status:** Adopted for current version.
+- **Owner:** Study team. **Status:** Primary-`tFG` rule retained under DIR-006; pilot-specific framing SUPERSEDED.
 
 ## 2026-09-21 — Protocol v5 migration supersedes the pilot design
 
@@ -125,13 +125,21 @@ Suggested fields:
   operational protocol and architecture.
 - **Impact:** DIR-001 and DIR-003 describe the superseded pilot design,
   not current eligibility or stage order. Existing `dir-screening-v3`
-  manifests, smoke runs, caches, and `pilot_cases.csv` remain
-  legacy/provisional and unchanged. Future screening is
+  manifests, smoke runs, and `pilot_cases.csv` are legacy/provisional,
+  recoverable from Git history; ignored caches remain local. Current screening is
   `dir-screening-v4` under `dir-tfg-v2` at separate output paths; prior
   `dir-tfg-v1` derived schemas remain legacy. Held-out evidence cannot
   shape Algorithm v1; integrated implementation remains SEALED until
   both current-model outputs are fixed.
-- **Owner:** Study team. **Status:** Adopted; migration in progress.
+- **Owner:** Study team. **Status:** Adopted.
+
+## 2026-09-21 — Retire the superseded pilot workflow from the active tree
+
+- **Decision ID:** DIR-008
+- **Decision:** Rename the operational Markdown to `protocols/experiment_protocol.md` (formerly `protocols/pilot_case_selection_and_extraction.md`). Remove tracked approximately-30-case selection manifests, smoke outputs, selection-only code/tests, and empty placeholders from the active tree. Git history retains those tracked artifacts; preserve ignored retrieval caches and unique external data locally. Keep prior derived schemas as explicit legacy contracts.
+- **Rationale/evidence:** DIR-006 and the Protocol v5 Stage A–L workflow supersede manageability selection. Current Stage A and Stage B resolve neutral IDs from the authoritative source dataset and do not import the pilot-selection utility.
+- **Impact:** Current outputs use versioned v5 paths. Historical judgments must not be reused as v5 eligibility. Retrieval caches and local one-case technical outputs remain outside Git and must not be assumed recoverable from Git history.
+- **Owner:** Study team. **Status:** Adopted for repository cleanup.
 
 ## 2026-09-21 — Authoritative Word Protocol v5 conformance
 

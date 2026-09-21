@@ -1,10 +1,10 @@
 # Data dictionary
 
-This summarizes current contracts; the [Protocol v5 Markdown](../protocols/pilot_case_selection_and_extraction.md) defines the method. The PatchPrompt CSV is a candidate index, not a complete case source. Its `PR_Size` column is inherited metadata and unused for DIR screening.
+This summarizes current contracts; the [Protocol v5 Markdown](../protocols/experiment_protocol.md) defines the method. The PatchPrompt CSV is a candidate index, not a complete case source. Its `PR_Size` column is inherited metadata and unused for DIR screening.
 
 ## Screening
 
-Existing `cases/manifests/screened_cases.csv` is `dir-screening-v3` legacy/provisional output from the former manageability design. Preserve its eligibility judgments as historical results. Its secondary-characteristic signals are descriptive lexical observations, not proof of presence or absence. `pilot_cases.csv` is not the v5 discovery set.
+Former `cases/manifests/screened_cases.csv` is `dir-screening-v3` legacy/provisional output from the former manageability design, recoverable from Git history. Its eligibility judgments are historical only. Its secondary-characteristic signals are descriptive lexical observations, not proof of presence or absence. Former `pilot_cases.csv` is not the v5 discovery set.
 
 Future Stage A records are `dir-screening-v4` under `dir-tfg-v2`, written to distinct `screened_PA_PN_cases.csv` and `eligible_PA_PN_cases.csv` paths. `case_id` is stable; `source_case_id` links to the index. `Outcome_Class` selects the PA/PN population and later split strata, but is not a retrieval cue. `conversation_available`, `temporal_anchor_available`, `first_generation_boundary_identifiable`, `pr_conversation_match`, `duplicate_status`, `project_history_accessible`, and `historical_state_reconstructible` describe processability. `eligible` is `true`, `false`, or blank pending resolution; `eligibility_status`, `exclusion_reason`, `pending_reason`, and `processability_source` explain the judgment. `changed_files`, `additions`, `deletions`, `changed_lines`, `pr_commits`, developer prompts, and conversation words are descriptive and cannot exclude by magnitude alone.
 

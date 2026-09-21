@@ -1,6 +1,6 @@
 # System Architecture — Protocol v5
 
-The operational protocol is [`protocols/pilot_case_selection_and_extraction.md`](../protocols/pilot_case_selection_and_extraction.md). Protocol v5 applies to the PA/PN candidate corpus. Existing `dir-screening-v3` outputs and the old approximately-30-case manifest are legacy/provisional and do not define this flow. This architecture keeps the original boxed diagram style.
+The operational protocol is [`protocols/experiment_protocol.md`](../protocols/experiment_protocol.md). Protocol v5 applies to the PA/PN candidate corpus. Former `dir-screening-v3` outputs and the old approximately-30-case manifest are available through Git history and do not define this flow. This architecture keeps the original boxed diagram style.
 
 ## Research data flow
 
@@ -140,7 +140,7 @@ The operational protocol is [`protocols/pilot_case_selection_and_extraction.md`]
 
 ## Conversation-side isolation
 
-Stage B preserves three layers: retrieved source archive (source bytes and safe retrieval provenance), lossless normalized conversation (all source conversation records, tool traces, first-generation response, later turns, and source locations), and derived Stage C model view (neutral case ID, conversation-addressed turns, temporal and artifact provenance). A restricted case-linkage record retains PR/source identities for integrity and later Stage F work through the same neutral ID; it is never model input. The Stage C supplied-C/S/V extractor does **not** receive the screening row, PA/PN status, repository/PR URL, PR body, commits, reviews, issues, CI, changed files, diff, or eventual implementation. The full normalized record preserves the artifact-bearing response and later turns; the supplied-information window excludes them. Human judgments on the validation sample remain independent until reconciliation; frozen records cannot be rewritten by subsequent project findings. `pilot_analysis/conversation/` can hold validated versioned records; its older `cases/` analyses are legacy/provisional.
+Stage B preserves three layers: retrieved source archive (source bytes and safe retrieval provenance), lossless normalized conversation (all source conversation records, tool traces, first-generation response, later turns, and source locations), and derived Stage C model view (neutral case ID, conversation-addressed turns, temporal and artifact provenance). A restricted case-linkage record retains PR/source identities for integrity and later Stage F work through the same neutral ID; it is never model input. The Stage C supplied-C/S/V extractor does **not** receive the screening row, PA/PN status, repository/PR URL, PR body, commits, reviews, issues, CI, changed files, diff, or eventual implementation. The full normalized record preserves the artifact-bearing response and later turns; the supplied-information window excludes them. Human judgments on the validation sample remain independent until reconciliation; frozen records cannot be rewritten by subsequent project findings. `pilot_analysis/conversation/` can hold validated versioned records; former empty `cases/` and `synthesis/` placeholders are removed.
 
 ## Historical information and temporal boundary
 

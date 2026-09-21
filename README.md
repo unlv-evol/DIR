@@ -16,14 +16,13 @@ separately to avoid duplicating methodological details in this README.
     goal, central research question, RQ1--RQ3, and key research
     constraints.
 -   [`docs/architecture.md`](docs/architecture.md) --- research
-    workflow, data flow, stage boundaries, pilot-to-evaluation
+    workflow, data flow, stage boundaries, discovery-to-evaluation
     progression, and SAFE/SEALED architecture.
 -   [`docs/repository_structure.md`](docs/repository_structure.md) ---
     directory responsibilities, case organization, pipeline components,
     experiments, provenance, and testing structure.
--   [`protocols/pilot_case_selection_and_extraction.md`](protocols/pilot_case_selection_and_extraction.md)
-    --- current protocol for screening, selecting, extracting, and
-    packaging the initial pilot cases.
+-   [`protocols/experiment_protocol.md`](protocols/experiment_protocol.md)
+    --- current Protocol v5 experiment procedure across Stages A–L.
 -   [`decisions/decision_log.md`](decisions/decision_log.md) ---
     methodological and engineering decisions and their rationale.
 -   [`AGENTS.md`](AGENTS.md) --- repository-level instructions for Codex
@@ -39,13 +38,13 @@ split and historical-project evidence analysis. Retrieval Algorithm v1
 is developed only on discovery cases and frozen before held-out use.
 
 The PatchPrompt CSV remains a candidate index, not complete raw-case
-data. The existing `dir-screening-v3` outputs and approximately-30-case
-pilot manifest are preserved legacy/provisional artifacts, not Protocol
-v5 eligibility or split assignments. See the operational protocol for
+data. The former `dir-screening-v3` outputs and approximately-30-case
+pilot manifest are recoverable from Git history, not Protocol v5
+eligibility or split assignments. See the operational protocol for
 versioning and stage rules.
 
 See
-[`protocols/pilot_case_selection_and_extraction.md`](protocols/pilot_case_selection_and_extraction.md)
+[`protocols/experiment_protocol.md`](protocols/experiment_protocol.md)
 for the detailed procedure and
 [`docs/architecture.md`](docs/architecture.md) for how this stage fits
 into the broader study. See
@@ -76,7 +75,7 @@ sealed/evaluation/<case_id>/
 
 The detailed temporal and leakage rules are documented in
 [`docs/architecture.md`](docs/architecture.md),
-[`protocols/pilot_case_selection_and_extraction.md`](protocols/pilot_case_selection_and_extraction.md),
+[`protocols/experiment_protocol.md`](protocols/experiment_protocol.md),
 and [`AGENTS.md`](AGENTS.md).
 
 ## Repository Layout

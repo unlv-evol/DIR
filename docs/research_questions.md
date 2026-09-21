@@ -119,4 +119,4 @@ discovery/held-out split precedes project-evidence analysis. Retrieval
 Algorithm v1 is developed from discovery cases and frozen before held-out
 application. Existing approximately-30-case pilot outputs are
 legacy/provisional, not this validation sample or discovery set. See the
-[operational protocol](../protocols/pilot_case_selection_and_extraction.md).
+[operational protocol](../protocols/experiment_protocol.md).

@@ -40,6 +40,16 @@ def protect_legacy_paths(output: Path, eligible_output: Path, summary_path: Path
             raise ValueError(f"Protocol v5 cannot write into legacy cache: {resolved}")
 
 
+def protect_existing_outputs(output: Path, eligible_output: Path, summary_path: Path) -> None:
+    """Fail before retrieval rather than replacing an earlier v5 research result."""
+    paths = (output.resolve(), eligible_output.resolve(), summary_path.resolve())
+    if len(set(paths)) != len(paths):
+        raise ValueError("Stage A output paths must be distinct")
+    existing = [str(path) for path in paths if path.exists()]
+    if existing:
+        raise FileExistsError("Stage A output exists; archive it before rerunning: " + ", ".join(existing))
+
+
 def retrieve_candidates(candidates: list[dict], evidence_dir: Path,
                         http: HttpClient, token: str | None, refresh: bool) -> None:
     evidence_dir.mkdir(parents=True, exist_ok=True)
@@ -157,7 +167,8 @@ def main() -> None:
     try:
         protect_legacy_paths(output, eligible_output, summary_path, evidence_dir,
                              config.cache_dir, args.source)
-    except ValueError as exc:
+        protect_existing_outputs(output, eligible_output, summary_path)
+    except (ValueError, FileExistsError) as exc:
         parser.error(str(exc))
     if args.live:
         http = HttpClient(config.cache_dir / "http", config.timeout, config.retries)
