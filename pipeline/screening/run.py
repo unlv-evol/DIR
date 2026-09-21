@@ -1,4 +1,4 @@
-"""Run DIR screening; --live retrieves sources, otherwise use cached evidence."""
+"""Run Protocol v5 Stage A screening into new versioned outputs."""
 
 from __future__ import annotations
 
@@ -18,7 +18,26 @@ from developer_intent.screening_chatgpt import retrieve_share  # noqa: E402
 from developer_intent.screening_config import load_config  # noqa: E402
 from developer_intent.screening_github import retrieve_pr  # noqa: E402
 from developer_intent.screening_http import HttpClient  # noqa: E402
-from developer_intent.pilot_selection import pilot_selection_summary, read_pilot_manifest  # noqa: E402
+
+
+def protect_legacy_paths(output: Path, eligible_output: Path, summary_path: Path,
+                         evidence_dir: Path, cache_dir: Path, source: Path) -> None:
+    """Never let a v5 run rewrite v3 results or its evidence cache."""
+    old_manifest_names = {"screened_cases.csv", "pilot_cases.csv", "selection_summary.md"}
+    manifests = (ROOT / "cases/manifests").resolve()
+    old_intermediate = (ROOT / "data/intermediate/screening").resolve()
+    old_cache = old_intermediate / "cache"
+    for path in (output, eligible_output, summary_path):
+        resolved = path.resolve()
+        if (resolved == source.resolve()
+                or (resolved.parent == manifests and resolved.name in old_manifest_names)
+                or resolved == old_intermediate
+                or old_intermediate in resolved.parents):
+            raise ValueError(f"Protocol v5 cannot overwrite legacy/source output: {resolved}")
+    for path in (evidence_dir, cache_dir):
+        resolved = path.resolve()
+        if resolved == old_cache or old_cache in resolved.parents:
+            raise ValueError(f"Protocol v5 cannot write into legacy cache: {resolved}")
 
 
 def retrieve_candidates(candidates: list[dict], evidence_dir: Path,
@@ -99,7 +118,9 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, default=ROOT / "data/raw/final_analysis_dataset_from_patchprompt_study.csv")
     parser.add_argument("--output", type=Path)
-    parser.add_argument("--summary", type=Path, default=ROOT / "cases/manifests/selection_summary.md")
+    parser.add_argument("--eligible-output", type=Path,
+                        default=ROOT / "cases/manifests/eligible_PA_PN_cases.csv")
+    parser.add_argument("--summary", type=Path, default=ROOT / "cases/manifests/stage_a_summary.md")
     parser.add_argument("--cache-dir", type=Path)
     parser.add_argument("--evidence-dir", type=Path)
     parser.add_argument("--archive", type=Path, default=ROOT / "data/raw/allPullRequestSharings.zip",
@@ -119,17 +140,25 @@ def main() -> None:
     if args.check_config:
         print(config.safe_report())
         return
+    output = config.output.resolve()
+    eligible_output = args.eligible_output.resolve()
+    summary_path = args.summary.resolve()
     source = read_source(args.source)
     candidates = [row for row in source if row["Outcome_Class"] in {"PA", "PN"}]
     if args.limit:
         candidates = candidates[:args.limit]
-    output = config.output
-    summary_path = args.summary
     if args.limit and args.output is None:
-        output = ROOT / f"data/intermediate/screening/smoke_{args.limit}.csv"
-        if args.summary == ROOT / "cases/manifests/selection_summary.md":
-            summary_path = ROOT / f"data/intermediate/screening/smoke_{args.limit}_summary.md"
+        output = ROOT / f"data/intermediate/screening_v5/smoke_{args.limit}.csv"
+        if args.eligible_output == ROOT / "cases/manifests/eligible_PA_PN_cases.csv":
+            eligible_output = ROOT / f"data/intermediate/screening_v5/smoke_{args.limit}_eligible.csv"
+        if args.summary == ROOT / "cases/manifests/stage_a_summary.md":
+            summary_path = ROOT / f"data/intermediate/screening_v5/smoke_{args.limit}_summary.md"
     evidence_dir = args.evidence_dir or config.cache_dir / "evidence"
+    try:
+        protect_legacy_paths(output, eligible_output, summary_path, evidence_dir,
+                             config.cache_dir, args.source)
+    except ValueError as exc:
+        parser.error(str(exc))
     if args.live:
         http = HttpClient(config.cache_dir / "http", config.timeout, config.retries)
         retrieve_candidates(candidates, evidence_dir, http, config.github_token, args.refresh)
@@ -145,17 +174,13 @@ def main() -> None:
     for field in ("pr_retrieval_status", "conversation_retrieval_status", "conversation_parsing_status",
                   "conversation_archive_status"):
         summary += f"{field}: {dict(sorted(Counter(row[field] for row in screened).items()))}\n"
-    pilot_path = ROOT / "cases/manifests/pilot_cases.csv"
-    if pilot_path.exists() and not args.limit:
-        selected = read_pilot_manifest(pilot_path)
-        summary = summary.replace("Screening only; no pilot cases selected.\n", "")
-        summary += "\n" + pilot_selection_summary(screened, selected, pilot_path)
     write_manifest(screened, output)
+    write_manifest([row for row in screened if row["eligible"] == "true"], eligible_output)
     summary_path.parent.mkdir(parents=True, exist_ok=True)
     summary_path.write_text(summary, encoding="utf-8")
     print(f"Source records: {len(source)}; PA/PN candidates in run: {len(screened)}; "
-          f"development-pilot screening eligible: "
-          f"{sum(row['screening_eligible'] == 'true' for row in screened)}")
+          f"confirmed eligible: {sum(row['eligible'] == 'true' for row in screened)}; "
+          f"pending: {sum(row['eligibility_status'] == 'pending_resolution' for row in screened)}")
 
 
 if __name__ == "__main__":

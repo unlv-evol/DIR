@@ -1,4 +1,4 @@
-"""Versioned, conversation-only first-generation records for pilot review."""
+"""Versioned, conversation-only first-generation draft records."""
 
 from __future__ import annotations
 
@@ -31,7 +31,8 @@ def visible_events(parsed: dict) -> list[dict]:
 
 def draft_record(case_id: str, parsed: dict, artifacts: list[dict] | None = None,
                  supplied_items: list[dict] | None = None,
-                 record_version: str = "1") -> dict:
+                 record_version: str = "1", methodology_version: str = METHODOLOGY_VERSION,
+                 schema_version: str = "1") -> dict:
     """Create a review draft; never infer an artifact family from text.
 
     `artifacts` must be independently preserved artifact references with
@@ -89,7 +90,7 @@ def draft_record(case_id: str, parsed: dict, artifacts: list[dict] | None = None
             raise ValueError("Supplied item lacks an admissible category and turn provenance")
         item_ids.add(item_id)
         supplied[category].append(deepcopy(item))
-    return {"schema_version": "1", "methodology_version": METHODOLOGY_VERSION,
+    return {"schema_version": schema_version, "methodology_version": methodology_version,
             "record_version": record_version,
             "case_id": case_id, "record_status": "draft", "conversation_start_time": t_c,
             "first_generation_cutoff": t_fg, "primary_repository_cutoff": "tFG",
@@ -104,13 +105,16 @@ def draft_record(case_id: str, parsed: dict, artifacts: list[dict] | None = None
             "context_supplied": supplied["Context"],
             "specificity_supplied": supplied["Specificity"],
             "verification_supplied": supplied["Verification"],
-            "extraction_version": "conversation-extraction-v1",
+            "extraction_version": ("conversation-extraction-v2" if methodology_version == "dir-tfg-v2"
+                                   else "conversation-extraction-v1"),
             "validation_status": "pending", "validation_judgments": []}
 
 
-def freeze_record(draft: dict, independent_judgments: list[dict]) -> dict:
+def freeze_record(draft: dict, independent_judgments: list[dict],
+                  expected_methodology_version: str = METHODOLOGY_VERSION) -> dict:
     """Freeze only a validated first-generation record; preserve judgments."""
-    if (draft.get("record_status") != "draft" or draft.get("methodology_version") != METHODOLOGY_VERSION
+    if (draft.get("record_status") != "draft"
+            or draft.get("methodology_version") != expected_methodology_version
             or not draft.get("record_version")):
         raise ValueError("Expected current-version draft")
     if (not draft.get("first_snippet_family_id") or not draft.get("first_generation_response_id")

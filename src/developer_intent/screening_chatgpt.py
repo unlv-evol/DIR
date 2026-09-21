@@ -232,7 +232,8 @@ def parse_share(body: bytes, content_type: str = "") -> dict:
             "raw_conversation": data}
 
 
-def retrieve_share(url: str, http: HttpClient, *, refresh: bool = False) -> dict:
+def retrieve_share(url: str, http: HttpClient, *, refresh: bool = False,
+                   with_source: bool = False):
     identity = share_id(url)
     result = {"url": url, "canonical_url": "", "share_id": identity or "",
               "retrieval_status": "not_attempted", "parsing_status": "not_attempted",
@@ -240,10 +241,11 @@ def retrieve_share(url: str, http: HttpClient, *, refresh: bool = False) -> dict
               "title": "", "start": "", "precision": "", "turns": [], "notes": ""}
     if not identity:
         result.update(retrieval_status="malformed_url", notes="Invalid public share URL")
-        return result
+        return (result, None) if with_source else result
     canonical = f"https://chatgpt.com/share/{identity}"
     result["canonical_url"] = canonical
     fetch = http.get(canonical, refresh=refresh, accept="text/html, application/json")
+    source_fetch = fetch if fetch.body is not None else None
     result["retrieval_status"] = fetch.status
     if fetch.body is None:
         result["notes"] = fetch.note
@@ -262,6 +264,7 @@ def retrieve_share(url: str, http: HttpClient, *, refresh: bool = False) -> dict
         api = http.get(f"https://chatgpt.com/backend-api/share/{identity}",
                        refresh=refresh, accept="application/json")
         if api.body is not None:
+            source_fetch = api
             try:
                 result.update(parse_share(api.body))
                 result["parsing_status"] = "parsed"
@@ -276,4 +279,4 @@ def retrieve_share(url: str, http: HttpClient, *, refresh: bool = False) -> dict
     parsed_dir.mkdir(parents=True, exist_ok=True)
     (parsed_dir / f"chatgpt_{identity}.json").write_text(
         json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    return result
+    return (result, source_fetch) if with_source else result

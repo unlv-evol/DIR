@@ -19,8 +19,8 @@ generation.
 ## Central Research Question
 
 > Can task-relevant information omitted from a developer's prompt be
-> reconstructed from software evidence that was already available when
-> the prompt was issued, and does providing that reconstructed intent
+> reconstructed from software evidence that was available by the
+> first-generation boundary, and does providing that reconstructed intent
 > enable an LLM to generate code closer to what developers ultimately
 > integrate?
 
@@ -37,7 +37,7 @@ still omit project-specific information needed for the task.
 ## RQ2 -- Repository-Grounded Evidence and Intent Reconstruction
 
 > What additional task-relevant information is available in the software
-> project when a developer prompt is issued, and to what extent can that
+> project by the first-generation boundary, and to what extent can that
 > information be retrieved, identified, engineered, and used to
 > reconstruct the prompt?
 
@@ -102,21 +102,21 @@ C/S/V is used to characterize information explicitly supplied by the
 developer and, where appropriate, to organize information contributed by
 project evidence.
 
-Historical numerical C/S/V scores may be used only for pilot diversity
-and descriptive analysis; they are not reconstruction inputs or
+Historical numerical C/S/V scores may be used for descriptive analysis;
+they are not reconstruction inputs or
 retrieval rules. Supplied C/S/V and additional repository C/S/V are
 provenanced information categories, not 0–2 scores. Repository items
 must be both task-relevant and evaluated for whether they add beyond
 the frozen conversation-side record.
 
-## Relationship to the Pilot
+## Relationship to Protocol v5
 
-The initial approximately 20--30/30 cases are a development and
-validation pilot. They are used to establish and validate the
-extraction, temporal partitioning, snippet-family, localization,
-retrieval, evidence-selection, and reconstruction procedures before
-broader evaluation.
-
-The pilot is not the complete study population. Once the methodology is
-sufficiently stable, the relevant procedures should be frozen/versioned
-and applied to additional eligible cases.
+All PA/PN candidates undergo integrity, availability, and processability
+screening. An approximately 30% PA/PN-stratified sample of eligible cases
+supports independent human validation of conversation-side extraction.
+After conversation records are versioned and frozen, a PA/PN-stratified
+discovery/held-out split precedes project-evidence analysis. Retrieval
+Algorithm v1 is developed from discovery cases and frozen before held-out
+application. Existing approximately-30-case pilot outputs are
+legacy/provisional, not this validation sample or discovery set. See the
+[operational protocol](../protocols/pilot_case_selection_and_extraction.md).

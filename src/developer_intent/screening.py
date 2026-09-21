@@ -1,4 +1,4 @@
-"""Candidate screening; never reads downstream outcome columns."""
+"""Protocol v5 PA/PN screening: integrity, availability, and processability."""
 
 from __future__ import annotations
 
@@ -14,29 +14,30 @@ from urllib.parse import urlparse
 from .screening_secondary import SECONDARY_FIELDS, secondary_characteristics
 
 ALLOWED_CLASSES = {"PA", "PN"}
+METHODOLOGY_VERSION = "dir-tfg-v2"
+SCREENING_SCHEMA_VERSION = "dir-screening-v4"
 GITHUB_PR = re.compile(r"^/([^/]+)/([^/]+)/pull/(\d+)/?$")
+PROCESSABILITY_FIELDS = (
+    "conversation_available", "first_generation_boundary_identifiable", "pr_conversation_match",
+    "project_history_accessible", "historical_state_reconstructible",
+)
 FIELDS = (
-    "screening_schema_version", "case_id", "source_case_id", "conversation_id", "conversation_url",
-    "repository", "pr_number", "pr_url", "canonical_pr_url", "pr_redirect_verified",
-    "Outcome_Class", "C_score",
-    "S_score", "V_score", "changed_files", "additions", "deletions",
-    "changed_lines", "pr_commits", "developer_prompts", "assistant_responses",
-    "conversation_words", *SECONDARY_FIELDS, "conversation_start", "temporal_precision",
-    "conversation_title", "conversation_source", "conversation_archive_status",
-    "conversation_retrieval_status", "conversation_parsing_status",
-    "conversation_temporal_status", "pr_retrieval_status", "pr_state",
-    "pr_created_at", "pr_closed_at", "pr_merged_at",
-    "complete_conversation_available", "required_links_present",
-    "passes_changed_files", "passes_changed_lines", "passes_prompt_count",
-    "passes_conversation_length", "commits_preferred", "case_integrity_status",
-    "duplicate_of", "integrity_notes", "data_completeness_status",
-    "scientific_data_eligible", "pilot_manageability_eligible",
-    "screening_eligible", "exclusion_reason",
+    "screening_schema_version", "methodology_version", "case_id", "source_case_id",
+    "conversation_id", "conversation_url", "repository", "pr_number", "pr_url",
+    "canonical_pr_url", "pr_redirect_verified", "Outcome_Class", "C_score", "S_score", "V_score",
+    "conversation_available", "temporal_anchor_available", "first_generation_boundary_identifiable",
+    "pr_conversation_match", "duplicate_status", "project_history_accessible",
+    "historical_state_reconstructible", "processability_source", "eligible", "eligibility_status",
+    "exclusion_reason", "pending_reason", "case_integrity_status", "duplicate_of", "integrity_notes",
+    "conversation_start", "temporal_precision", "conversation_temporal_status", "conversation_source",
+    "conversation_retrieval_status", "conversation_parsing_status", "conversation_archive_status",
+    "pr_retrieval_status", "changed_files", "additions", "deletions", "changed_lines",
+    "pr_commits", "developer_prompts", "assistant_responses", "conversation_words",
+    *SECONDARY_FIELDS,
 )
 
 
 def case_id(source_case_id: str) -> str:
-    """Stable across input row ordering and study membership."""
     digest = hashlib.sha256(source_case_id.encode("utf-8")).hexdigest()[:12]
     return f"CASE_{digest.upper()}"
 
@@ -51,16 +52,13 @@ def github_identity(url: str) -> tuple[str, str] | None:
 
 def conversation_identity(url: str) -> str | None:
     parsed = urlparse(url)
-    if parsed.scheme != "https" or parsed.netloc.lower() not in {
-        "chat.openai.com", "chatgpt.com"
-    }:
+    if parsed.scheme != "https" or parsed.netloc.lower() not in {"chat.openai.com", "chatgpt.com"}:
         return None
     match = re.fullmatch(r"/share/([0-9a-fA-F-]{36})/?", parsed.path)
     return match[1].lower() if match else None
 
 
 def _verified_pr_alias(pr: dict, source_url: str, pr_number: str) -> bool:
-    """Recheck redirect provenance before accepting a changed repository URL."""
     final = urlparse(pr.get("api_final_url", ""))
     match = re.fullmatch(r"/repositories/(\d+)/pulls/(\d+)/?", final.path)
     canonical = github_identity(pr.get("html_url", ""))
@@ -74,11 +72,7 @@ def _verified_pr_alias(pr: dict, source_url: str, pr_number: str) -> bool:
 
 
 def word_count(turns: list[dict]) -> int:
-    return sum(len(str(turn["text"]).split()) for turn in turns)
-
-
-def _flag(value: bool | None) -> str:
-    return "" if value is None else str(value).lower()
+    return sum(len(turn["text"].split()) for turn in turns)
 
 
 def _valid_start(value: str, precision: str) -> bool:
@@ -87,7 +81,7 @@ def _valid_start(value: str, precision: str) -> bool:
             return date.fromisoformat(value).isoformat() == value
         if precision == "timestamp":
             return datetime.fromisoformat(value).tzinfo is not None
-    except ValueError:
+    except (TypeError, ValueError):
         pass
     return False
 
@@ -96,18 +90,24 @@ def _load_evidence(source_dir: Path | None, source_case_id: str) -> dict:
     if source_dir is None:
         return {}
     path = source_dir / f"{source_case_id}.json"
-    if not path.exists():
-        return {}
-    return json.loads(path.read_text(encoding="utf-8"))
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+
+
+def _processability(evidence: dict) -> tuple[dict, str]:
+    review = evidence.get("processability")
+    if not isinstance(review, dict) or not isinstance(review.get("source"), str) or not review["source"].strip():
+        return {field: "unresolved" for field in PROCESSABILITY_FIELDS}, ""
+    values = {field: review.get(field, "unresolved") for field in PROCESSABILITY_FIELDS}
+    if any(value not in {"yes", "no", "unresolved", "unavailable"} for value in values.values()):
+        raise ValueError("Unsupported processability judgment; use yes/no/unresolved/unavailable")
+    return values, review["source"].strip()
 
 
 def screen_rows(source_rows: list[dict], source_dir: Path | None = None) -> list[dict]:
-    """Screen PA/PN rows from independently supplied source evidence.
+    """Screen PA/PN without size exclusions or unsupported source inferences.
 
-    Evidence JSON may contain `pr` (GitHub PR response), `files` (all PR
-    files), `commits` (all PR commits), and `conversation` with `url`,
-    `start`, `precision`, `complete`, and ordered `turns` (`role`, `text`).
-    Missing evidence stays missing; a partial conversation never passes.
+    Positive processability claims require an explicit `processability.source`
+    in the case evidence JSON. Unreviewed claims remain unresolved.
     """
     seen_pair: dict[tuple[str, str], str] = {}
     seen_conversation: dict[str, str] = {}
@@ -122,11 +122,12 @@ def screen_rows(source_rows: list[dict], source_dir: Path | None = None) -> list
         pr_identity = github_identity(pr_url)
         conv_identity = conversation_identity(conv_url)
         evidence = _load_evidence(source_dir, sid)
-        pr = evidence.get("pr")
+        pr = evidence.get("pr") if isinstance(evidence.get("pr"), dict) else None
         files = evidence.get("files")
         commits = evidence.get("commits")
-        conv = evidence.get("conversation")
-        notes: list[str] = []
+        conv = evidence.get("conversation") if isinstance(evidence.get("conversation"), dict) else None
+        reviewed, review_source = _processability(evidence)
+        notes = []
         duplicate_of = ""
         if not pr_identity or not conv_identity:
             notes.append("invalid_source_link")
@@ -150,115 +151,113 @@ def screen_rows(source_rows: list[dict], source_dir: Path | None = None) -> list
                 notes.append("verified_repository_redirect")
         if conv is not None and conv.get("url") != conv_url:
             notes.append("conversation_link_mismatch")
-        if isinstance(pr, dict) and isinstance(files, list) and isinstance(pr.get("changed_files"), int):
-            if pr["changed_files"] != len({item.get("filename") for item in files if isinstance(item, dict)}):
-                notes.append("pr_file_count_mismatch")
-        if any(note.endswith("mismatch") or note == "invalid_source_link" for note in notes):
-            integrity = "conflict"
-        elif duplicate_of:
-            integrity = "duplicate"
-        elif pr is None or conv is None or not conv.get("start"):
-            integrity = "unresolved"
-        else:
-            integrity = "ok"
-        if integrity == "unresolved":
-            notes.append("source_linkage_not_fully_verified")
-
         changed_files = additions = deletions = changed_lines = None
-        if isinstance(files, list) and pr is not None:
-            names = [item.get("filename") for item in files]
-            if all(names) and all(isinstance(item.get("additions"), int) and
-                                  isinstance(item.get("deletions"), int) for item in files):
-                changed_files = len(set(names))
-                additions = sum(item["additions"] for item in files)
-                deletions = sum(item["deletions"] for item in files)
-                changed_lines = additions + deletions
+        if isinstance(files, list) and pr is not None and all(
+            isinstance(item, dict) and item.get("filename")
+            and isinstance(item.get("additions"), int)
+            and isinstance(item.get("deletions"), int) for item in files
+        ):
+            changed_files = len({item["filename"] for item in files})
+            additions = sum(item["additions"] for item in files)
+            deletions = sum(item["deletions"] for item in files)
+            changed_lines = additions + deletions
+            if isinstance(pr.get("changed_files"), int) and changed_files != pr["changed_files"]:
+                notes.append("pr_file_count_mismatch")
         commit_count = len(commits) if isinstance(commits, list) else (
-            pr.get("commits") if isinstance(pr, dict) and isinstance(pr.get("commits"), int) else None)
-        turns = conv.get("turns") if isinstance(conv, dict) else None
-        complete = bool(conv and conv.get("complete") is True and isinstance(turns, list))
-        prompts = responses = words = None
-        if complete and all(isinstance(t, dict) and t.get("role") in {"user", "assistant"}
-                            and isinstance(t.get("text"), str) for t in turns):
-            prompts = sum(t["role"] == "user" for t in turns)
-            responses = sum(t["role"] == "assistant" for t in turns)
-            words = word_count(turns)
-        else:
-            complete = False
-        start = conv.get("start", "") if isinstance(conv, dict) else ""
-        precision = conv.get("precision", "") if isinstance(conv, dict) else ""
+            pr.get("commits") if pr is not None and isinstance(pr.get("commits"), int) else None)
+        turns = conv.get("turns") if conv is not None else None
+        complete = bool(conv is not None and conv.get("complete") is True
+                        and isinstance(turns, list) and all(
+                            isinstance(turn, dict) and turn.get("role") in {"user", "assistant"}
+                            and isinstance(turn.get("text"), str) for turn in turns))
+        prompts = sum(turn["role"] == "user" for turn in turns) if complete else None
+        responses = sum(turn["role"] == "assistant" for turn in turns) if complete else None
+        words = word_count(turns) if complete else None
+        start = conv.get("start", "") if conv is not None else ""
+        precision = conv.get("precision", "") if conv is not None else ""
         if precision not in {"date", "timestamp"}:
             precision = ""
-        if start and not _valid_start(start, precision):
+        valid_start = bool(start and _valid_start(start, precision))
+        if start and not valid_start:
             notes.append("invalid_conversation_start_or_precision")
             start = ""
-        required_links = bool(pr_identity and conv_identity)
-        checks = {
-            "passes_changed_files": None if changed_files is None else changed_files <= 10,
-            "passes_changed_lines": None if changed_lines is None else changed_lines <= 300,
-            "passes_prompt_count": None if prompts is None else prompts <= 10,
-            "passes_conversation_length": None if words is None else words <= 8000,
-        }
-        missing = []
-        for key, value in (("changed_files", changed_files), ("changed_lines", changed_lines),
-                           ("pr_commits", commit_count), ("developer_prompts", prompts),
-                           ("conversation_words", words), ("conversation_start", start),
-                           ("temporal_precision", precision)):
-            if value is None or value == "":
-                missing.append(key)
-        if not complete:
-            missing.append("complete_conversation")
-        reasons = [key.removeprefix("passes_") + "_limit" for key, value in checks.items()
-                   if value is False]
-        if any(value is False for value in checks.values()):
-            reasons.append("pilot_manageability_exclusion")
-        reasons += ["missing_" + key for key in missing]
-        if not required_links:
-            reasons.append("required_links_missing_or_invalid")
-        if integrity != "ok":
-            reasons.append("integrity_" + integrity)
-        scientific_data_eligible = bool(required_links and integrity == "ok" and not missing)
-        pilot_manageability_eligible = (False if any(value is False for value in checks.values())
-                                        else None if any(value is None for value in checks.values())
-                                        else True)
+        conflict = any(note.endswith("mismatch") or note == "invalid_source_link" for note in notes)
+        integrity = ("conflict" if conflict else "duplicate" if duplicate_of else
+                     "unresolved" if pr is None or conv is None else "ok")
+        conversation_available = ("yes" if complete else "no" if
+                                  reviewed["conversation_available"] == "no" else "unresolved")
+        temporal_anchor_available = "yes" if valid_start else "no" if complete else "unresolved"
+        boundary = reviewed["first_generation_boundary_identifiable"]
+        history = reviewed["project_history_accessible"]
+        reconstructible = reviewed["historical_state_reconstructible"]
+        match = reviewed["pr_conversation_match"]
+        exclusions = []
+        pending = []
+        if conflict:
+            exclusions.append("source_identity_conflict")
+        if duplicate_of:
+            exclusions.append("duplicate_case")
+        if temporal_anchor_available == "no":
+            exclusions.append("unusable_temporal_anchor")
+        for field, value in (("conversation_available", conversation_available),
+                             ("first_generation_boundary_identifiable", boundary),
+                             ("pr_conversation_match", match),
+                             ("project_history_accessible", history),
+                             ("historical_state_reconstructible", reconstructible)):
+            if value == "no":
+                exclusions.append(field + "_failed")
+            elif value in {"unresolved", "unavailable"}:
+                pending.append(field + "_unresolved")
+        if temporal_anchor_available == "unresolved":
+            pending.append("temporal_anchor_unresolved")
+        if not pr_identity or not conv_identity:
+            exclusions.append("required_identity_missing")
+        if pr is None:
+            pending.append("pr_source_unavailable")
+        if exclusions:
+            status, eligible = "excluded", "false"
+        elif pending:
+            status, eligible = "pending_resolution", ""
+        else:
+            status, eligible = "eligible", "true"
         row = {
-            "screening_schema_version": "dir-screening-v3",
+            "screening_schema_version": SCREENING_SCHEMA_VERSION,
+            "methodology_version": METHODOLOGY_VERSION,
             "case_id": cid, "source_case_id": sid,
             "conversation_id": conv_identity or "", "conversation_url": conv_url,
             "repository": pr_identity[0] if pr_identity else "",
             "pr_number": pr_identity[1] if pr_identity else "", "pr_url": pr_url,
-            "canonical_pr_url": pr.get("html_url", "") if isinstance(pr, dict) else "",
-            "pr_redirect_verified": _flag(_verified_pr_alias(pr, pr_url, pr_identity[1])
-                                          if isinstance(pr, dict) and pr_identity else False),
-            "Outcome_Class": source["Outcome_Class"], "C_score": source["Context"],
-            "S_score": source["Specificity"], "V_score": source["Verification"],
-            "changed_files": changed_files, "additions": additions,
-            "deletions": deletions, "changed_lines": changed_lines,
-            "pr_commits": commit_count, "developer_prompts": prompts,
-            "assistant_responses": responses, "conversation_words": words,
-            "conversation_start": start, "temporal_precision": precision,
-            "conversation_title": conv.get("title", "") if isinstance(conv, dict) else "",
-            "conversation_source": conv.get("source_type", "public_share") if isinstance(conv, dict) else "",
-            "conversation_archive_status": evidence.get("conversation_archive_status", "not_attempted"),
-            "conversation_retrieval_status": evidence.get("conversation_retrieval_status", "not_attempted"),
-            "conversation_parsing_status": evidence.get("conversation_parsing_status", "not_attempted"),
-            "conversation_temporal_status": conv.get("temporal_status", "unavailable") if isinstance(conv, dict) else "unavailable",
-            "pr_retrieval_status": evidence.get("pr_retrieval_status", "not_attempted"),
-            "pr_state": pr.get("state", "") if isinstance(pr, dict) else "",
-            "pr_created_at": pr.get("created_at", "") if isinstance(pr, dict) else "",
-            "pr_closed_at": pr.get("closed_at", "") if isinstance(pr, dict) else "",
-            "pr_merged_at": pr.get("merged_at", "") if isinstance(pr, dict) else "",
-            "complete_conversation_available": _flag(complete),
-            "required_links_present": _flag(required_links),
-            "commits_preferred": _flag(None if commit_count is None else commit_count <= 10),
+            "canonical_pr_url": pr.get("html_url", "") if pr else "",
+            "pr_redirect_verified": str(bool(pr and pr_identity and _verified_pr_alias(
+                pr, pr_url, pr_identity[1]))).lower(),
+            "Outcome_Class": source["Outcome_Class"],
+            "C_score": source["Context"], "S_score": source["Specificity"],
+            "V_score": source["Verification"],
+            "conversation_available": conversation_available,
+            "temporal_anchor_available": temporal_anchor_available,
+            "first_generation_boundary_identifiable": boundary,
+            "pr_conversation_match": match,
+            "duplicate_status": "duplicate" if duplicate_of else "unique",
+            "project_history_accessible": history,
+            "historical_state_reconstructible": reconstructible,
+            "processability_source": review_source,
+            "eligible": eligible, "eligibility_status": status,
+            "exclusion_reason": ";".join(dict.fromkeys(exclusions)),
+            "pending_reason": ";".join(dict.fromkeys(pending)),
             "case_integrity_status": integrity, "duplicate_of": duplicate_of,
             "integrity_notes": ";".join(notes),
-            "data_completeness_status": "complete" if not missing else "incomplete",
-            "scientific_data_eligible": _flag(scientific_data_eligible),
-            "pilot_manageability_eligible": _flag(pilot_manageability_eligible),
-            "screening_eligible": _flag(not reasons), "exclusion_reason": ";".join(reasons),
+            "conversation_start": start, "temporal_precision": precision,
+            "conversation_temporal_status": conv.get("temporal_status", "unavailable") if conv else "unavailable",
+            "conversation_source": conv.get("source_type", "") if conv else "",
+            "conversation_retrieval_status": evidence.get("conversation_retrieval_status", "not_attempted"),
+            "conversation_parsing_status": evidence.get("conversation_parsing_status", "not_attempted"),
+            "conversation_archive_status": evidence.get("conversation_archive_status", "not_attempted"),
+            "pr_retrieval_status": evidence.get("pr_retrieval_status", "not_attempted"),
+            "changed_files": changed_files, "additions": additions, "deletions": deletions,
+            "changed_lines": changed_lines, "pr_commits": commit_count,
+            "developer_prompts": prompts, "assistant_responses": responses,
+            "conversation_words": words,
         }
-        row.update({key: _flag(value) for key, value in checks.items()})
         row.update(secondary_characteristics(conv))
         result.append(row)
     return result
@@ -278,45 +277,28 @@ def write_manifest(rows: list[dict], path: Path) -> None:
 
 
 def screening_summary(source_rows: list[dict], screened: list[dict]) -> str:
-    failures = Counter(reason for row in screened for reason in row["exclusion_reason"].split(";")
-                       if reason)
-    eligible = [row for row in screened if row["screening_eligible"] == "true"]
-    missing = Counter(reason for row in screened for reason in row["exclusion_reason"].split(";")
-                      if reason.startswith("missing_"))
-    lines = ["# Screening summary", "", "Screening only; no pilot cases selected.",
-             "Screening schema: `dir-screening-v3`; first-generation `tFG` is not derived here.", "",
-             f"Source records: {len(source_rows)}",
-             f"PA/PN candidates: {len(screened)}",
-             f"Confirmed development-pilot screening eligible: {len(eligible)}",
-             f"Scientific/data eligible: {sum(r['scientific_data_eligible'] == 'true' for r in screened)}",
-             f"Pilot workload eligible: {sum(r['pilot_manageability_eligible'] == 'true' for r in screened)}",
-             f"Pilot workload exceeded: {sum(r['pilot_manageability_eligible'] == 'false' for r in screened)}",
-             f"Pilot workload unresolved: {sum(r['pilot_manageability_eligible'] == '' for r in screened)}",
-             "The final eligible-pool size remains unresolved while required source facts are missing.",
-             f"Detected duplicate candidates: "
-             f"{sum(r['case_integrity_status'] == 'duplicate' for r in screened)}",
-             f"Unresolved source linkage: "
-             f"{sum(r['case_integrity_status'] == 'unresolved' for r in screened)}",
-             f"Candidates with incomplete screening data: "
-             f"{sum(r['data_completeness_status'] != 'complete' for r in screened)}", "",
-             "## Hard-limit failures observed", ""]
-    for field in ("passes_changed_files", "passes_changed_lines", "passes_prompt_count",
-                  "passes_conversation_length"):
-        lines.append(f"- {field}: {sum(r[field] == 'false' for r in screened)} "
-                     f"failed; {sum(r[field] == '' for r in screened)} unresolved")
-    lines += ["", "## PA/PN candidate distribution (descriptive only)", ""]
-    lines += [f"- {key}: {value}" for key, value in sorted(Counter(
-        row["Outcome_Class"] for row in screened).items())]
-    lines += ["",
-             "## Exclusion reasons", ""]
-    lines += [f"- {key}: {value}" for key, value in sorted(failures.items())]
-    lines += ["", "## Missing fields", ""]
-    lines += [f"- {key}: {value}" for key, value in sorted(missing.items())]
-    lines += ["", "## Eligible C/S/V distributions", ""]
-    for field in ("C_score", "S_score", "V_score"):
-        counts = Counter(row[field] for row in eligible)
-        lines.append(f"- {field}: {dict(sorted(counts.items()))}")
-    lines += ["", "## Eligible PA/PN distribution (descriptive only)", ""]
-    lines += [f"- {key}: {value}" for key, value in sorted(Counter(
-        row["Outcome_Class"] for row in eligible).items())]
-    return "\n".join(lines) + "\n"
+    eligible = [row for row in screened if row["eligibility_status"] == "eligible"]
+    counts = Counter(row["eligibility_status"] for row in screened)
+    lines = ["# Protocol v5 Stage A screening summary", "",
+             f"Methodology: `{METHODOLOGY_VERSION}`; screening schema: `{SCREENING_SCHEMA_VERSION}`.",
+             "Historical dir-screening-v3 manifests and pilot selection are not reinterpreted.", "",
+             f"Source records: {len(source_rows)}", f"PA/PN candidates: {len(screened)}",
+             f"Confirmed eligible: {counts['eligible']}", f"Excluded: {counts['excluded']}",
+             f"Pending resolution: {counts['pending_resolution']}", "",
+             "## PA/PN counts before and after screening", "",
+             "| Outcome class | Candidates | Confirmed eligible | Pending | Excluded |",
+             "| --- | ---: | ---: | ---: | ---: |"]
+    for outcome in ("PA", "PN"):
+        group = [row for row in screened if row["Outcome_Class"] == outcome]
+        by_status = Counter(row["eligibility_status"] for row in group)
+        lines.append(f"| {outcome} | {len(group)} | {by_status['eligible']} | "
+                     f"{by_status['pending_resolution']} | {by_status['excluded']} |")
+    lines += ["", "## Exclusion reasons", ""]
+    excluded = Counter(reason for row in screened for reason in row["exclusion_reason"].split(";") if reason)
+    lines += [f"- {key}: {value}" for key, value in sorted(excluded.items())]
+    lines += ["", "## Pending evidence", ""]
+    pending = Counter(reason for row in screened for reason in row["pending_reason"].split(";") if reason)
+    lines += [f"- {key}: {value}" for key, value in sorted(pending.items())]
+    lines += ["", "Size and conversation-length measures are descriptive only.",
+              "No real discovery/held-out assignment is produced by screening.", ""]
+    return "\n".join(lines)

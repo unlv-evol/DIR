@@ -31,19 +31,18 @@ separately to avoid duplicating methodological details in this README.
 
 ## Current Project Stage
 
-The current implementation priority is the **initial pilot/development
-corpus of approximately 30 cases**.
+Protocol v5 is the adopted primary experiment design. It screens all
+PA/PN candidates for integrity, availability, and processability, then
+packages and analyzes conversations in isolation. Conversation-side
+records are validated and frozen before a stratified discovery/held-out
+split and historical-project evidence analysis. Retrieval Algorithm v1
+is developed only on discovery cases and frozen before held-out use.
 
-Work currently follows pilot screening and integrity validation,
-selection, complete raw-case extraction, validated first-generation
-conversation-side extraction and freeze, exploratory 30-case repository
-forensic analysis, and cross-case method discovery.
-
-The existing PatchPrompt-study analysis CSV is a candidate index and
-metadata source for this pilot; the complete raw cases require their
-original sources. Pilot cases are extracted and used to validate the
-method before it is frozen for held-out evaluation. See the pilot
-protocol for the source mapping and stage rules.
+The PatchPrompt CSV remains a candidate index, not complete raw-case
+data. The existing `dir-screening-v3` outputs and approximately-30-case
+pilot manifest are preserved legacy/provisional artifacts, not Protocol
+v5 eligibility or split assignments. See the operational protocol for
+versioning and stage rules.
 
 See
 [`protocols/pilot_case_selection_and_extraction.md`](protocols/pilot_case_selection_and_extraction.md)
@@ -55,13 +54,15 @@ corresponding output locations.
 
 ## Core Validity Boundary
 
-Raw historical cases are stored under:
+Raw historical audit cases, when materialized, are stored under:
 
 ``` text
 cases/raw/<case_id>/
 ```
 
-Reconstruction-time processing must use temporally partitioned inputs:
+Conversation-side analysis first uses isolated packages under
+`cases/conversations/<case_id>/`. Reconstruction-time processing later
+uses temporally partitioned inputs:
 
 ``` text
 safe/reconstruction/<case_id>/

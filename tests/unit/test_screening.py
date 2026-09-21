@@ -1,3 +1,5 @@
+"""Protocol v5 Stage A eligibility and legacy-output separation tests."""
+
 import json
 import sys
 import tempfile
@@ -6,7 +8,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from developer_intent.screening import case_id, screen_rows  # noqa: E402
+from developer_intent.screening import (  # noqa: E402
+    METHODOLOGY_VERSION, SCREENING_SCHEMA_VERSION, case_id, screen_rows,
+    screening_summary, write_manifest,
+)
 
 
 def source(sid="PA-1", outcome="PA", pr="https://github.com/acme/repo/pull/1",
@@ -17,12 +22,13 @@ def source(sid="PA-1", outcome="PA", pr="https://github.com/acme/repo/pull/1",
             "Fraction_Adopted": "100", "Status": "merged"}
 
 
-def evidence(files=10, lines=300, prompts=10, words=100, commits=11):
-    return {
-        "pr": {"html_url": "https://github.com/acme/repo/pull/1", "number": 1},
+def evidence(files=10, lines=300, prompts=10, words=100, commits=11,
+             reviewed=True):
+    facts = {
+        "pr": {"html_url": "https://github.com/acme/repo/pull/1", "number": 1,
+               "commits": commits},
         "files": [{"filename": f"f{i}", "additions": lines if i == 0 else 0,
                    "deletions": 0} for i in range(files)],
-        "commits": [{"sha": str(i)} for i in range(commits)],
         "conversation": {
             "url": "https://chatgpt.com/share/b7853f70-84b8-477b-9879-a93a51215f81",
             "start": "2024-01-01", "precision": "date", "complete": True,
@@ -30,86 +36,106 @@ def evidence(files=10, lines=300, prompts=10, words=100, commits=11):
                       [{"role": "assistant", "text": " ".join(["word"] * (words - prompts))}]),
         },
     }
+    if reviewed:
+        facts["processability"] = {
+            "source": "independent fixture review",
+            "conversation_available": "yes",
+            "first_generation_boundary_identifiable": "yes",
+            "pr_conversation_match": "yes",
+            "project_history_accessible": "yes",
+            "historical_state_reconstructible": "yes",
+        }
+    return facts
 
 
 class ScreeningTests(unittest.TestCase):
     def run_with_evidence(self, row=None, facts=None):
-        row = row or source()
-        facts = facts or evidence()
         with tempfile.TemporaryDirectory() as directory:
-            Path(directory, f"{row['Case ID']}.json").write_text(json.dumps(facts))
-            return screen_rows([row], Path(directory))[0]
+            Path(directory, "PA-1.json").write_text(json.dumps(facts or evidence()))
+            return screen_rows([row or source()], Path(directory))[0]
 
-    def test_pa_pn_only_and_stable_ids(self):
-        rows = [source("PA-1"), source("PN-1", "PN"), source("NE-1", "NE")]
+    def test_population_and_stable_ids(self):
+        rows = [source("PA-1"), source("PN-1", "PN"), source("NE-1", "NE"),
+                source("CL-1", "CL")]
         first = screen_rows(rows)
         second = screen_rows(list(reversed(rows)))
         self.assertEqual(len(first), 2)
         self.assertEqual({r["case_id"] for r in first}, {r["case_id"] for r in second})
         self.assertEqual(case_id("PA-1"), first[0]["case_id"])
 
-    def test_boundaries_and_commit_preference(self):
-        row = self.run_with_evidence()
-        self.assertEqual(row["changed_files"], 10)
-        self.assertEqual(row["changed_lines"], 300)
-        self.assertEqual(row["developer_prompts"], 10)
-        self.assertEqual(row["conversation_words"], 100)
-        self.assertEqual(row["passes_changed_lines"], "true")
-        self.assertEqual(row["commits_preferred"], "false")
-        self.assertEqual(row["screening_eligible"], "true")
-        self.assertEqual(row["scientific_data_eligible"], "true")
-        self.assertEqual(row["pilot_manageability_eligible"], "true")
+    def test_large_measures_are_descriptive_only(self):
+        row = self.run_with_evidence(facts=evidence(files=11, lines=301, prompts=11,
+                                                    words=8001, commits=12))
+        self.assertEqual(row["changed_files"], 11)
+        self.assertEqual(row["changed_lines"], 301)
+        self.assertEqual(row["developer_prompts"], 11)
+        self.assertEqual(row["conversation_words"], 8001)
+        self.assertEqual(row["pr_commits"], 12)
+        self.assertEqual(row["eligible"], "true")
+        self.assertEqual(row["exclusion_reason"], "")
+        self.assertNotIn("pilot_manageability_eligible", row)
 
-    def test_pr_size_and_downstream_outcomes_ignored(self):
+    def test_outcome_and_pr_size_do_not_change_eligibility(self):
         a = source()
         b = dict(a, PR_Size="0", Adopt_Any="0", Fraction_Adopted="0", Status="closed")
         self.assertEqual(self.run_with_evidence(a), self.run_with_evidence(b))
 
-    def test_multiple_failures_and_missing(self):
-        row = self.run_with_evidence(facts=evidence(files=11, lines=301, prompts=11))
-        self.assertEqual(row["screening_eligible"], "false")
-        self.assertIn("changed_files_limit", row["exclusion_reason"])
-        self.assertIn("changed_lines_limit", row["exclusion_reason"])
-        self.assertIn("prompt_count_limit", row["exclusion_reason"])
-        self.assertIn("pilot_manageability_exclusion", row["exclusion_reason"])
-        self.assertEqual(row["scientific_data_eligible"], "true")
-        self.assertEqual(row["pilot_manageability_eligible"], "false")
-        missing = screen_rows([source()])[0]
-        self.assertEqual(missing["passes_changed_files"], "")
-        self.assertEqual(missing["data_completeness_status"], "incomplete")
-        self.assertEqual(missing["case_integrity_status"], "unresolved")
-        self.assertEqual(missing["scientific_data_eligible"], "false")
-        self.assertEqual(missing["pilot_manageability_eligible"], "")
+    def test_unreviewed_processability_is_pending_not_excluded(self):
+        row = self.run_with_evidence(facts=evidence(reviewed=False))
+        self.assertEqual(row["eligibility_status"], "pending_resolution")
+        self.assertEqual(row["eligible"], "")
+        self.assertIn("first_generation_boundary_identifiable_unresolved", row["pending_reason"])
+        self.assertIn("historical_state_reconstructible_unresolved", row["pending_reason"])
+        self.assertEqual(row["exclusion_reason"], "")
 
-    def test_conversation_word_boundary_and_temporal_precision(self):
-        at_limit = self.run_with_evidence(facts=evidence(words=8000))
-        over_limit = self.run_with_evidence(facts=evidence(words=8001))
-        self.assertEqual(at_limit["passes_conversation_length"], "true")
-        self.assertEqual(over_limit["passes_conversation_length"], "false")
-        invalid = evidence()
-        invalid["conversation"]["start"] = "2024-01-01T12:00:00"
-        invalid["conversation"]["precision"] = "timestamp"
-        row = self.run_with_evidence(facts=invalid)
-        self.assertIn("missing_conversation_start", row["exclusion_reason"])
-
-    def test_duplicates_and_conflict(self):
+    def test_concrete_integrity_temporal_and_history_failures(self):
+        mismatch = evidence()
+        mismatch["conversation"]["url"] = "https://chatgpt.com/share/aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+        self.assertIn("source_identity_conflict", self.run_with_evidence(facts=mismatch)["exclusion_reason"])
+        no_time = evidence()
+        no_time["conversation"]["start"] = ""
+        self.assertIn("unusable_temporal_anchor", self.run_with_evidence(facts=no_time)["exclusion_reason"])
+        no_history = evidence()
+        no_history["processability"]["project_history_accessible"] = "no"
+        self.assertIn("project_history_accessible_failed",
+                      self.run_with_evidence(facts=no_history)["exclusion_reason"])
         duplicate = screen_rows([source(), source("PN-1", "PN")])[1]
-        self.assertEqual(duplicate["case_integrity_status"], "duplicate")
-        self.assertEqual(duplicate["duplicate_of"], case_id("PA-1"))
-        facts = evidence()
-        facts["conversation"]["url"] = "https://chatgpt.com/share/aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
-        mismatch = self.run_with_evidence(facts=facts)
-        self.assertEqual(mismatch["case_integrity_status"], "conflict")
-        self.assertEqual(mismatch["screening_eligible"], "false")
+        self.assertEqual(duplicate["duplicate_status"], "duplicate")
+        self.assertEqual(duplicate["eligibility_status"], "excluded")
 
-    def test_incomplete_conversation_never_passes(self):
+    def test_unrecoverable_conversation_and_boundary_failure(self):
+        facts = evidence()
+        facts["conversation"]["complete"] = False
+        facts["processability"]["conversation_available"] = "no"
+        row = self.run_with_evidence(facts=facts)
+        self.assertIn("conversation_available_failed", row["exclusion_reason"])
+        facts = evidence()
+        facts["processability"]["first_generation_boundary_identifiable"] = "no"
+        row = self.run_with_evidence(facts=facts)
+        self.assertIn("first_generation_boundary_identifiable_failed", row["exclusion_reason"])
+
+    def test_positive_review_does_not_replace_incomplete_conversation(self):
         facts = evidence()
         facts["conversation"]["complete"] = False
         row = self.run_with_evidence(facts=facts)
-        self.assertEqual(row["conversation_words"], None)
-        self.assertEqual(row["screening_eligible"], "false")
+        self.assertEqual(row["conversation_available"], "unresolved")
+        self.assertEqual(row["eligibility_status"], "pending_resolution")
+        self.assertNotEqual(row["eligible"], "true")
 
-    def test_verified_pr_alias_preserves_both_urls(self):
+    def test_date_precision_and_distinct_new_output_version(self):
+        row = self.run_with_evidence()
+        self.assertEqual(row["temporal_precision"], "date")
+        self.assertEqual(row["methodology_version"], METHODOLOGY_VERSION)
+        self.assertEqual(row["screening_schema_version"], SCREENING_SCHEMA_VERSION)
+        self.assertNotIn("first_generation_cutoff", row)
+        with tempfile.TemporaryDirectory() as directory:
+            target = Path(directory, "stage_a.csv")
+            write_manifest([row], target)
+            self.assertIn("dir-screening-v4", target.read_text())
+        summary = screening_summary([source()], [row])
+        self.assertIn("| PA | 1 | 1 | 0 | 0 |", summary)
+
+    def test_verified_pr_alias(self):
         facts = evidence()
         canonical = "https://github.com/new-owner/new-repo/pull/1"
         facts["pr"].update(html_url=canonical, canonical_url=canonical,
@@ -118,11 +144,7 @@ class ScreeningTests(unittest.TestCase):
                            api_final_url="https://api.github.com/repositories/123/pulls/1")
         row = self.run_with_evidence(facts=facts)
         self.assertEqual(row["case_integrity_status"], "ok")
-        self.assertEqual(row["pr_url"], source()["PR_Link"])
         self.assertEqual(row["canonical_pr_url"], canonical)
-        self.assertEqual(row["pr_redirect_verified"], "true")
-        facts["pr"]["repository_id"] = 999
-        self.assertEqual(self.run_with_evidence(facts=facts)["case_integrity_status"], "conflict")
 
 
 if __name__ == "__main__":

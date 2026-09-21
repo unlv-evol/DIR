@@ -1,4 +1,4 @@
-"""Validate a reviewed pilot manifest and describe its observed diversity."""
+"""Legacy dir-screening-v3 pilot selection; not Protocol v5 assignment."""
 
 from __future__ import annotations
 

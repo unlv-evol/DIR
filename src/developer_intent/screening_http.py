@@ -8,6 +8,7 @@ import time
 import urllib.error
 import urllib.request
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Callable
 
@@ -20,6 +21,8 @@ class FetchResult:
     http_status: int | None = None
     note: str = ""
     from_cache: bool = False
+    retrieved_at: str = ""
+    content_type: str = ""
 
 
 class HttpClient:
@@ -41,7 +44,9 @@ class HttpClient:
         if not refresh and body_path.exists() and meta_path.exists():
             meta = json.loads(meta_path.read_text(encoding="utf-8"))
             return FetchResult(meta["status"], body_path.read_bytes(), meta["final_url"],
-                               meta["http_status"], from_cache=True)
+                               meta["http_status"], from_cache=True,
+                               retrieved_at=meta.get("retrieved_at", ""),
+                               content_type=meta.get("content_type", ""))
         headers = {"Accept": accept, "User-Agent": "DIR-pilot-screening/1"}
         if token:
             headers["Authorization"] = f"Bearer {token}"
@@ -53,14 +58,21 @@ class HttpClient:
                     status = "retrieved_authenticated" if token else "retrieved_public"
                     final_url = response.geturl()
                     code = response.status
+                    response_headers = getattr(response, "headers", None)
+                    content_type = (response_headers.get("Content-Type", "")
+                                    if response_headers is not None else "")
                     if not 200 <= code < 300:
                         return FetchResult("http_failure", final_url=final_url,
                                            http_status=code, note=f"HTTP {code}")
                     self.cache_dir.mkdir(parents=True, exist_ok=True)
+                    retrieved_at = datetime.now(timezone.utc).isoformat()
                     body_path.write_bytes(body)
                     meta_path.write_text(json.dumps({"status": status, "final_url": final_url,
-                                                     "http_status": code}), encoding="utf-8")
-                    return FetchResult(status, body, final_url, code)
+                                                     "http_status": code,
+                                                     "retrieved_at": retrieved_at,
+                                                     "content_type": content_type}), encoding="utf-8")
+                    return FetchResult(status, body, final_url, code,
+                                       retrieved_at=retrieved_at, content_type=content_type)
             except urllib.error.HTTPError as exc:
                 code = exc.code
                 remaining = exc.headers.get("X-RateLimit-Remaining") if exc.headers else None

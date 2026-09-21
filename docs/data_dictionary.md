@@ -1,61 +1,22 @@
-# Data Dictionary
+# Data dictionary
 
-This document is the human-readable companion to `schemas/`.
+This summarizes current contracts; the [Protocol v5 Markdown](../protocols/pilot_case_selection_and_extraction.md) defines the method. The PatchPrompt CSV is a candidate index, not a complete case source. Its `PR_Size` column is inherited metadata and unused for DIR screening.
 
-Each field should document:
+## Screening
 
-- field name
-- definition
-- data type
-- required/optional status
-- source
-- temporal admissibility
-- whether it is reconstruction-safe or sealed
-- example
-- notes/known limitations
+Existing `cases/manifests/screened_cases.csv` is `dir-screening-v3` legacy/provisional output from the former manageability design. Preserve its eligibility judgments as historical results. Its secondary-characteristic signals are descriptive lexical observations, not proof of presence or absence. `pilot_cases.csv` is not the v5 discovery set.
 
-The JSON schemas are the machine-readable contracts; this document explains them for researchers.
+Future Stage A records are `dir-screening-v4` under `dir-tfg-v2`, written to distinct `screened_PA_PN_cases.csv` and `eligible_PA_PN_cases.csv` paths. `case_id` is stable; `source_case_id` links to the index. `Outcome_Class` selects the PA/PN population and later split strata, but is not a retrieval cue. `conversation_available`, `temporal_anchor_available`, `first_generation_boundary_identifiable`, `pr_conversation_match`, `duplicate_status`, `project_history_accessible`, and `historical_state_reconstructible` describe processability. `eligible` is `true`, `false`, or blank pending resolution; `eligibility_status`, `exclusion_reason`, `pending_reason`, and `processability_source` explain the judgment. `changed_files`, `additions`, `deletions`, `changed_lines`, `pr_commits`, developer prompts, and conversation words are descriptive and cannot exclude by magnitude alone.
 
-For `dir-screening-v3`, secondary-characteristic fields in
-`cases/manifests/screened_cases.csv` are descriptive selection metadata,
-not eligibility rules or reconstruction inputs. `conversation_turn_pattern`
-counts visible developer turns in a complete parsed conversation.
-`prompt_identifier_signal`, `prompt_file_path_signal`,
-`prompt_code_fragment_signal`, `prompt_error_log_signal`,
-`prompt_test_assertion_signal`, and `prompt_url_signal` search only those
-developer turns. `detected` means the documented lexical rule found a
-cue; `not_detected_by_rule` does not establish absence; `unavailable`
-means complete parseable conversation evidence is missing.
-`secondary_characteristics_evidence` stores each detected literal cue
-and its developer-turn index; `secondary_characteristics_basis` records
-the source scope and rule version. `help_seeking_context_cues` are
-lexical leads, not assigned task categories. The actual context,
-mostly-behavioral judgment, link-sharer role, and generated-artifact
-pattern are `not_assessed` until supported source review or raw-artifact
-preservation. The screening CLI README specifies the current rules.
+## Conversation and temporal records
 
-For current first-generation derived records (`dir-tfg-v1`):
+The current conversation-only package is `conversation-only-v1` with methodology `dir-tfg-v2`. It contains neutral case ID, temporal source, complete ordered visible turns, artifact candidates, and stable provenance. Project/outcome metadata is absent by contract. Supplied Context, Specificity, and Verification are source-supported information categories, distinct from inherited numerical `C_score`, `S_score`, and `V_score`.
 
-- `C_score`, `S_score`, `V_score`: inherited numerical PatchPrompt
-  metadata for pilot diversity and description only.
-- `context_supplied[]`, `specificity_supplied[]`,
-  `verification_supplied[]`: information actually present in the target
-  prompt or permitted earlier conversation, with stable-turn
-  provenance; not numerical scores.
-- `evidence_dimension`: Context, Specificity, or Verification category
-  for an additional historical repository item. `task_relevance` and
-  `adds_beyond_frozen_conversation` are separate judgments.
-- `conversation_start_time` (`tC`) and `first_generation_cutoff`
-  (`tFG`): independent value, precision, status, and source records.
-  The current `primary_repository_cutoff` is `tFG`; never fill missing
-  `tFG` from `tC`.
-- `available_by_tC` and `available_by_tFG`: separate historical
-  availability judgments (`YES`, `NO`, `UNCERTAIN`, `UNAVAILABLE`).
-  Source date-only values do not imply an exact time of day.
-- `methodology_version`: `dir-tfg-v1` for current derived records;
-  earlier primary-`tC` outputs are not semantically equivalent.
+For Protocol v5 records, `procedure_validation_status` describes whether the extraction procedure passed sample validation. `case_human_validation_status` distinguishes sampled human validated, sampled adjudicated, not sampled, and unresolved cases. `case_extraction_status` and `case_boundary_status` describe each case separately; `case_processability_status` records the structural check. `record_status = frozen` means an immutable output of the validated procedure, not individual human review.
 
-See the pilot protocol for operational definitions and the two current
-schemas for machine-readable derived contracts. Screening retains
-`conversation_start` as its historical `tC` equivalent; `tFG` is not
-inferred during screening.
+`case-linkage-v1` is restricted administrative metadata keyed by neutral `case_id`; it retains PR and source-conversation identity but is not Stage C input. `chatgpt-source-v1` retains source payload bytes (base64), source SHA-256, source URL, retrieval time/status, and allowlisted HTTP metadata without request credentials. `lossless-conversation-v1` retains original parsed records, tool/other traces, raw conversation structure, visible turns, artifact candidates, and source positions. `conversation-only-v1` is the derived Stage C model view; it excludes administrative/project metadata and tool-directed source records from supplied-C/S/V context. See protocol §2.
+The source archive records `source_origin` (`fresh` or `cached`) and `retrieval_time_status`. New HTTP cache entries retain their actual retrieval timestamp; old entries without one use `unknown_legacy_cache` and a blank `retrieved_at`. `stage_b_status = complete` means the archive checksum, normalized ordering/source positions, and allowlisted model view passed validation. `retrieval_failed`, `normalization_failed`, and `validation_failed` remain distinct incomplete outcomes.
+
+`tC` (first developer prompt) and `tFG` (boundary immediately before the first artifact-bearing assistant response in the first snippet family) retain independent value, precision, status, and source. Current `primary_repository_cutoff` is `tFG`. Missing `tFG` is never filled from `tC`; date-only values do not become exact timestamps. `available_by_tC` and `available_by_tFG` remain separate (`YES`, `NO`, `UNCERTAIN`, `UNAVAILABLE`). Historical availability alone is not retrieval, relevance, or additional evidence.
+
+Existing `frozen_conversation_v1.schema.json` and `repository_evidence_v1.schema.json` describe prior `dir-tfg-v1` derived records. They remain legacy contracts, not v5 validation or evidence schemas. No speculative v5 derived schema is asserted here. See [schemas/README.md](../schemas/README.md).
