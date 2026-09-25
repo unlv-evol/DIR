@@ -1,0 +1,557 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dir_screening_v8.schema.json",
+  "title": "DIR Stage A screened logical record",
+  "description": "Typed dir-screening-v8 logical row after explicit CSV normalization. Stage A source linkage is separate from Stage D semantic correspondence. Methodology dir-tfg-v2.",
+  "type": "object",
+  "required": [
+    "screening_schema_version",
+    "methodology_version",
+    "case_id",
+    "source_case_id",
+    "conversation_id",
+    "conversation_url",
+    "repository",
+    "pr_number",
+    "pr_url",
+    "canonical_pr_url",
+    "pr_redirect_verified",
+    "Outcome_Class",
+    "C_score",
+    "S_score",
+    "V_score",
+    "conversation_available",
+    "temporal_anchor_available",
+    "first_generation_boundary_identifiable",
+    "source_linkage_status",
+    "source_linkage_source",
+    "source_linkage_reason",
+    "pr_conversation_match",
+    "duplicate_status",
+    "project_history_accessible",
+    "historical_state_reconstructible",
+    "processability_source",
+    "eligible",
+    "eligibility_status",
+    "project_history_access_mechanism",
+    "project_history_access_repository",
+    "project_history_access_object",
+    "project_history_access_status",
+    "project_history_access_source",
+    "project_history_access_reason",
+    "stage_b_readiness_status",
+    "stage_b_readiness_reason",
+    "exclusion_reason",
+    "pending_reason",
+    "case_integrity_status",
+    "duplicate_of",
+    "integrity_notes",
+    "conversation_start",
+    "temporal_precision",
+    "conversation_temporal_status",
+    "conversation_source",
+    "conversation_retrieval_status",
+    "conversation_parsing_status",
+    "conversation_archive_status",
+    "pr_retrieval_status",
+    "changed_files",
+    "additions",
+    "deletions",
+    "changed_lines",
+    "pr_commits",
+    "developer_prompts",
+    "assistant_responses",
+    "conversation_words",
+    "conversation_turn_pattern"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "screening_schema_version": {
+      "description": "Stage A CSV contract version.",
+      "x-stage-owner": "Stage A",
+      "type": "string",
+      "enum": [
+        "dir-screening-v8"
+      ]
+    },
+    "methodology_version": {
+      "description": "Scientific methodology version.",
+      "x-stage-owner": "Stage A",
+      "type": "string",
+      "enum": [
+        "dir-tfg-v2"
+      ]
+    },
+    "case_id": {
+      "description": "Stable neutral DIR case identifier.",
+      "x-stage-owner": "Stage A",
+      "type": "string",
+      "pattern": "^CASE_[0-9A-F]{12}$"
+    },
+    "source_case_id": {
+      "description": "Case identifier in the PatchPrompt candidate index.",
+      "x-stage-owner": "Stage A",
+      "type": "string",
+      "minLength": 1
+    },
+    "conversation_id": {
+      "description": "Share identifier extracted from a valid conversation URL.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "conversation_url": {
+      "description": "Original conversation URL from the source index, including invalid values for excluded rows.",
+      "x-stage-owner": "Stage A",
+      "type": "string",
+      "minLength": 1
+    },
+    "repository": {
+      "description": "Owner and repository parsed from the source PR URL.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pr_number": {
+      "description": "PR number parsed from the source PR URL.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "pr_url": {
+      "description": "Original PR URL from the source index, retained even when invalid.",
+      "x-stage-owner": "Stage A",
+      "type": "string",
+      "minLength": 1
+    },
+    "canonical_pr_url": {
+      "description": "Canonical GitHub PR URL returned by the verified PR source.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pr_redirect_verified": {
+      "description": "Whether the GitHub API redirect passed identity verification.",
+      "x-stage-owner": "Stage A",
+      "type": "boolean"
+    },
+    "Outcome_Class": {
+      "description": "Candidate population class from the source index.",
+      "x-stage-owner": "Stage A",
+      "type": "string",
+      "enum": [
+        "PA",
+        "PN"
+      ]
+    },
+    "C_score": {
+      "description": "Inherited PatchPrompt Context score, not supplied Context.",
+      "x-stage-owner": "Stage A",
+      "type": "integer",
+      "enum": [
+        0,
+        1,
+        2
+      ],
+      "minimum": 0
+    },
+    "S_score": {
+      "description": "Inherited PatchPrompt Specificity score, not supplied Specificity.",
+      "x-stage-owner": "Stage A",
+      "type": "integer",
+      "enum": [
+        0,
+        1,
+        2
+      ],
+      "minimum": 0
+    },
+    "V_score": {
+      "description": "Inherited PatchPrompt Verification score, not supplied Verification.",
+      "x-stage-owner": "Stage A",
+      "type": "integer",
+      "enum": [
+        0,
+        1,
+        2
+      ],
+      "minimum": 0
+    },
+    "conversation_available": {
+      "description": "Whether the complete visible conversation is processable.",
+      "x-stage-owner": "Stage A",
+      "type": "string",
+      "enum": [
+        "yes",
+        "no",
+        "unresolved"
+      ]
+    },
+    "temporal_anchor_available": {
+      "description": "Whether the conversation start supplies a usable temporal anchor.",
+      "x-stage-owner": "Stage A",
+      "type": "string",
+      "enum": [
+        "yes",
+        "no",
+        "unresolved"
+      ]
+    },
+    "first_generation_boundary_identifiable": {
+      "description": "Preliminary Stage A processability judgment; Stage C identifies the boundary authoritatively.",
+      "x-stage-owner": "Stage A",
+      "type": "string",
+      "enum": [
+        "yes",
+        "no",
+        "unresolved",
+        "unavailable"
+      ]
+    },
+    "source_linkage_status": {
+      "description": "Stage A administrative source/provenance linkage state; it does not prove semantic task correspondence.",
+      "x-stage-owner": "Stage A",
+      "type": "string",
+      "enum": [
+        "established",
+        "conflicting",
+        "unresolved"
+      ]
+    },
+    "source_linkage_source": {
+      "description": "Administrative provenance used to establish or assess the source PR/conversation association.",
+      "x-stage-owner": "Stage A",
+      "type": "string",
+      "minLength": 1
+    },
+    "source_linkage_reason": {
+      "description": "Reason for a conflicting or unresolved source linkage; blank when established.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pr_conversation_match": {
+      "description": "Semantic task correspondence is intentionally deferred to the Stage D review.",
+      "x-stage-owner": "Stage D",
+      "type": "string",
+      "enum": [
+        "pending_manual_validation"
+      ]
+    },
+    "duplicate_status": {
+      "description": "Duplicate relationship found by Stage A source identity checks.",
+      "x-stage-owner": "Stage A",
+      "type": "string",
+      "enum": [
+        "unique",
+        "duplicate"
+      ]
+    },
+    "project_history_accessible": {
+      "description": "Administrative Git history access judgment, separate from PR API retrieval.",
+      "x-stage-owner": "Stage A",
+      "type": "string",
+      "enum": [
+        "yes",
+        "no",
+        "unresolved"
+      ]
+    },
+    "historical_state_reconstructible": {
+      "description": "Scientific historical-state processability judgment, distinct from present Git access.",
+      "x-stage-owner": "Stage A",
+      "type": "string",
+      "enum": [
+        "yes",
+        "no",
+        "unresolved",
+        "unavailable"
+      ]
+    },
+    "processability_source": {
+      "description": "Source of general processability judgments, when reviewed.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "eligible": {
+      "description": "True for confirmed eligible, false for excluded, null for pending.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "eligibility_status": {
+      "description": "Scientific Stage A judgment.",
+      "x-stage-owner": "Stage A",
+      "type": "string",
+      "enum": [
+        "eligible",
+        "excluded",
+        "pending_resolution"
+      ]
+    },
+    "project_history_access_mechanism": {
+      "description": "Mechanism used for administrative history access probe.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "project_history_access_repository": {
+      "description": "Repository tested by the history access probe.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "project_history_access_object": {
+      "description": "Known PR base commit object tested by the history access probe.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-fA-F]{40,64}$"
+    },
+    "project_history_access_status": {
+      "description": "Detailed Git probe status.",
+      "x-stage-owner": "Stage A",
+      "type": "string",
+      "enum": [
+        "not_attempted",
+        "commit_object_retrieved",
+        "repository_inaccessible",
+        "fetch_failed",
+        "object_verification_failed",
+        "probe_error"
+      ]
+    },
+    "project_history_access_source": {
+      "description": "Source of the tested Git object identifier.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "project_history_access_reason": {
+      "description": "Failure or unresolved explanation from the access probe.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "stage_b_readiness_status": {
+      "description": "Operational permission to attempt Stage B packaging.",
+      "x-stage-owner": "Stage A",
+      "type": "string",
+      "enum": [
+        "ready_for_stage_b",
+        "blocked"
+      ]
+    },
+    "stage_b_readiness_reason": {
+      "description": "Reason for Stage B progression status.",
+      "x-stage-owner": "Stage A",
+      "type": "string"
+    },
+    "exclusion_reason": {
+      "description": "Semicolon-delimited demonstrated exclusion reasons.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pending_reason": {
+      "description": "Semicolon-delimited unresolved scientific checks.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "case_integrity_status": {
+      "description": "Structural identity and duplicate check result, not task correspondence.",
+      "x-stage-owner": "Stage A",
+      "type": "string",
+      "enum": [
+        "ok",
+        "conflict",
+        "duplicate",
+        "unresolved"
+      ]
+    },
+    "duplicate_of": {
+      "description": "Neutral Case ID of first duplicate row.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^CASE_[0-9A-F]{12}$"
+    },
+    "integrity_notes": {
+      "description": "Semicolon-delimited structural integrity observations.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "conversation_start": {
+      "description": "First developer prompt date or timestamp, without fabricated precision.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "temporal_precision": {
+      "description": "Precision of conversation_start.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "date",
+        "timestamp",
+        null
+      ]
+    },
+    "conversation_temporal_status": {
+      "description": "Source-supported temporal resolution status.",
+      "x-stage-owner": "Stage A",
+      "type": "string"
+    },
+    "conversation_source": {
+      "description": "Conversation acquisition source type.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "conversation_retrieval_status": {
+      "description": "Public or archive conversation retrieval result.",
+      "x-stage-owner": "Stage A",
+      "type": "string"
+    },
+    "conversation_parsing_status": {
+      "description": "Structured conversation parsing result.",
+      "x-stage-owner": "Stage A",
+      "type": "string"
+    },
+    "conversation_archive_status": {
+      "description": "PatchTrack archive fallback result.",
+      "x-stage-owner": "Stage A",
+      "type": "string"
+    },
+    "pr_retrieval_status": {
+      "description": "GitHub PR/API retrieval result, not Git history access.",
+      "x-stage-owner": "Stage A",
+      "type": "string"
+    },
+    "changed_files": {
+      "description": "Count of unique PR diff paths, descriptive only.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "additions": {
+      "description": "PR file-list additions, descriptive only.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "deletions": {
+      "description": "PR file-list deletions, descriptive only.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "changed_lines": {
+      "description": "Additions plus deletions, descriptive only.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "pr_commits": {
+      "description": "PR commit count from PR source, descriptive only.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "developer_prompts": {
+      "description": "Number of visible developer turns in complete conversation.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "assistant_responses": {
+      "description": "Number of visible assistant replies in complete conversation.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "conversation_words": {
+      "description": "Word count of complete visible conversation.",
+      "x-stage-owner": "Stage A",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "conversation_turn_pattern": {
+      "description": "Descriptive developer-turn count category, never a decision or retrieval cue.",
+      "x-stage-owner": "Stage A",
+      "type": "string",
+      "enum": [
+        "single_developer_prompt",
+        "multiple_developer_prompts",
+        "unavailable"
+      ]
+    }
+  }
+}

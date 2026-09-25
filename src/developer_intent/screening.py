@@ -11,14 +11,14 @@ from datetime import date, datetime
 from pathlib import Path
 from urllib.parse import urlparse
 
-from .screening_secondary import SECONDARY_FIELDS, secondary_characteristics
+from .screening_checks import correspondence
 
 ALLOWED_CLASSES = {"PA", "PN"}
 METHODOLOGY_VERSION = "dir-tfg-v2"
-SCREENING_SCHEMA_VERSION = "dir-screening-v4"
+SCREENING_SCHEMA_VERSION = "dir-screening-v9"
 GITHUB_PR = re.compile(r"^/([^/]+)/([^/]+)/pull/(\d+)/?$")
 PROCESSABILITY_FIELDS = (
-    "conversation_available", "first_generation_boundary_identifiable", "pr_conversation_match",
+    "conversation_available", "first_generation_boundary_identifiable",
     "project_history_accessible", "historical_state_reconstructible",
 )
 FIELDS = (
@@ -26,14 +26,22 @@ FIELDS = (
     "conversation_id", "conversation_url", "repository", "pr_number", "pr_url",
     "canonical_pr_url", "pr_redirect_verified", "Outcome_Class", "C_score", "S_score", "V_score",
     "conversation_available", "temporal_anchor_available", "first_generation_boundary_identifiable",
+    "source_linkage_status", "source_linkage_source", "source_linkage_reason",
     "pr_conversation_match", "duplicate_status", "project_history_accessible",
     "historical_state_reconstructible", "processability_source", "eligible", "eligibility_status",
+    "pr_conversation_match_source", "pr_conversation_match_reviewer",
+    "pr_conversation_match_timestamp", "pr_conversation_match_version",
+    "pr_conversation_match_evidence_ref", "pr_conversation_match_reason",
+    "project_history_access_mechanism", "project_history_access_repository",
+    "project_history_access_object", "project_history_access_status",
+    "project_history_access_source", "project_history_access_reason",
+    "stage_b_readiness_status", "stage_b_readiness_reason",
     "exclusion_reason", "pending_reason", "case_integrity_status", "duplicate_of", "integrity_notes",
     "conversation_start", "temporal_precision", "conversation_temporal_status", "conversation_source",
     "conversation_retrieval_status", "conversation_parsing_status", "conversation_archive_status",
     "pr_retrieval_status", "changed_files", "additions", "deletions", "changed_lines",
     "pr_commits", "developer_prompts", "assistant_responses", "conversation_words",
-    *SECONDARY_FIELDS,
+    "conversation_turn_pattern",
 )
 
 
@@ -127,6 +135,22 @@ def screen_rows(source_rows: list[dict], source_dir: Path | None = None) -> list
         commits = evidence.get("commits")
         conv = evidence.get("conversation") if isinstance(evidence.get("conversation"), dict) else None
         reviewed, review_source = _processability(evidence)
+        match_review = correspondence(evidence, source, cid)
+        access = evidence.get("history_access")
+        if not isinstance(access, dict):
+            access = {}
+        access_pr_identity = github_identity(pr.get("html_url", "")) if pr else None
+        access_bound = bool(access_pr_identity
+                            and access.get("repository", "").casefold() == access_pr_identity[0].casefold()
+                            and access.get("object") == pr.get("base_sha")
+                            and access.get("mechanism") == "git_fetch_commit_object"
+                            and access.get("source") == "PR base_sha")
+        access_judgment = access.get("judgment")
+        access_verified = (access_bound and (
+            (access_judgment == "yes" and access.get("status") == "commit_object_retrieved")
+            or (access_judgment == "no" and access.get("status") == "repository_inaccessible")))
+        reviewed["project_history_accessible"] = (
+            access_judgment if access_verified else "unresolved")
         notes = []
         duplicate_of = ""
         if not pr_identity or not conv_identity:
@@ -184,19 +208,29 @@ def screen_rows(source_rows: list[dict], source_dir: Path | None = None) -> list
         conflict = any(note.endswith("mismatch") or note == "invalid_source_link" for note in notes)
         integrity = ("conflict" if conflict else "duplicate" if duplicate_of else
                      "unresolved" if pr is None or conv is None else "ok")
+        source_linkage = ("conflicting" if conflict else "unresolved" if pr is None or conv is None
+                          else "established")
+        source_linkage_source = ("PatchPrompt source-index PR/share pair; retrieved PR and "
+                                 "conversation identities" if source_linkage == "established" else
+                                 "PatchPrompt source-index PR/share pair")
+        source_linkage_reason = ("" if source_linkage == "established" else
+                                 ";".join(notes) if conflict else
+                                 "retrieved PR or conversation identity unavailable")
         conversation_available = ("yes" if complete else "no" if
                                   reviewed["conversation_available"] == "no" else "unresolved")
         temporal_anchor_available = "yes" if valid_start else "no" if complete else "unresolved"
         boundary = reviewed["first_generation_boundary_identifiable"]
         history = reviewed["project_history_accessible"]
         reconstructible = reviewed["historical_state_reconstructible"]
-        match = reviewed["pr_conversation_match"]
+        match = match_review["judgment"]
         exclusions = []
         pending = []
         if conflict:
             exclusions.append("source_identity_conflict")
         if duplicate_of:
             exclusions.append("duplicate_case")
+        if source_linkage == "unresolved":
+            pending.append("source_linkage_unresolved")
         if temporal_anchor_available == "no":
             exclusions.append("unusable_temporal_anchor")
         for field, value in (("conversation_available", conversation_available),
@@ -220,6 +254,11 @@ def screen_rows(source_rows: list[dict], source_dir: Path | None = None) -> list
             status, eligible = "pending_resolution", ""
         else:
             status, eligible = "eligible", "true"
+        # Packaging can establish conversation facts needed by Stage C. It does
+        # not settle scientific eligibility or any unresolved tFG-dependent fact.
+        readiness = "ready_for_stage_b" if status == "eligible" else "blocked"
+        readiness_reason = ("scientifically_eligible" if status == "eligible" else
+                            "scientific_screening_not_eligible")
         row = {
             "screening_schema_version": SCREENING_SCHEMA_VERSION,
             "methodology_version": METHODOLOGY_VERSION,
@@ -236,12 +275,29 @@ def screen_rows(source_rows: list[dict], source_dir: Path | None = None) -> list
             "conversation_available": conversation_available,
             "temporal_anchor_available": temporal_anchor_available,
             "first_generation_boundary_identifiable": boundary,
+            "source_linkage_status": source_linkage,
+            "source_linkage_source": source_linkage_source,
+            "source_linkage_reason": source_linkage_reason,
             "pr_conversation_match": match,
             "duplicate_status": "duplicate" if duplicate_of else "unique",
             "project_history_accessible": history,
             "historical_state_reconstructible": reconstructible,
             "processability_source": review_source,
+            "pr_conversation_match_source": match_review["source"],
+            "pr_conversation_match_reviewer": match_review["reviewer"],
+            "pr_conversation_match_timestamp": match_review["timestamp"],
+            "pr_conversation_match_version": match_review["version"],
+            "pr_conversation_match_evidence_ref": match_review["evidence_ref"],
+            "pr_conversation_match_reason": match_review["reason"],
+            "project_history_access_mechanism": access.get("mechanism", ""),
+            "project_history_access_repository": access.get("repository", ""),
+            "project_history_access_object": access.get("object", ""),
+            "project_history_access_status": access.get("status", "not_attempted"),
+            "project_history_access_source": access.get("source", ""),
+            "project_history_access_reason": access.get("reason", ""),
             "eligible": eligible, "eligibility_status": status,
+            "stage_b_readiness_status": readiness,
+            "stage_b_readiness_reason": readiness_reason,
             "exclusion_reason": ";".join(dict.fromkeys(exclusions)),
             "pending_reason": ";".join(dict.fromkeys(pending)),
             "case_integrity_status": integrity, "duplicate_of": duplicate_of,
@@ -257,8 +313,11 @@ def screen_rows(source_rows: list[dict], source_dir: Path | None = None) -> list
             "changed_lines": changed_lines, "pr_commits": commit_count,
             "developer_prompts": prompts, "assistant_responses": responses,
             "conversation_words": words,
+            "conversation_turn_pattern": (
+                "single_developer_prompt" if prompts == 1 else
+                "multiple_developer_prompts" if prompts is not None and prompts > 1 else
+                "unavailable"),
         }
-        row.update(secondary_characteristics(conv))
         result.append(row)
     return result
 
@@ -279,12 +338,15 @@ def write_manifest(rows: list[dict], path: Path) -> None:
 def screening_summary(source_rows: list[dict], screened: list[dict]) -> str:
     eligible = [row for row in screened if row["eligibility_status"] == "eligible"]
     counts = Counter(row["eligibility_status"] for row in screened)
+    readiness = Counter(row["stage_b_readiness_status"] for row in screened)
     lines = ["# Protocol v5 Stage A screening summary", "",
              f"Methodology: `{METHODOLOGY_VERSION}`; screening schema: `{SCREENING_SCHEMA_VERSION}`.",
-             "Historical dir-screening-v3 manifests and pilot selection are not reinterpreted.", "",
              f"Source records: {len(source_rows)}", f"PA/PN candidates: {len(screened)}",
              f"Confirmed eligible: {counts['eligible']}", f"Excluded: {counts['excluded']}",
              f"Pending resolution: {counts['pending_resolution']}", "",
+             "## Stage B progression (not scientific eligibility)", "",
+             f"Ready for Stage B: {readiness['ready_for_stage_b']}",
+             f"Blocked: {readiness['blocked']}", "",
              "## PA/PN counts before and after screening", "",
              "| Outcome class | Candidates | Confirmed eligible | Pending | Excluded |",
              "| --- | ---: | ---: | ---: | ---: |"]
@@ -293,12 +355,25 @@ def screening_summary(source_rows: list[dict], screened: list[dict]) -> str:
         by_status = Counter(row["eligibility_status"] for row in group)
         lines.append(f"| {outcome} | {len(group)} | {by_status['eligible']} | "
                      f"{by_status['pending_resolution']} | {by_status['excluded']} |")
+    lines += ["", "| Outcome class | Ready for Stage B | Blocked |",
+              "| --- | ---: | ---: |"]
+    for outcome in ("PA", "PN"):
+        group = [row for row in screened if row["Outcome_Class"] == outcome]
+        by_readiness = Counter(row["stage_b_readiness_status"] for row in group)
+        lines.append(f"| {outcome} | {by_readiness['ready_for_stage_b']} | "
+                     f"{by_readiness['blocked']} |")
     lines += ["", "## Exclusion reasons", ""]
     excluded = Counter(reason for row in screened for reason in row["exclusion_reason"].split(";") if reason)
     lines += [f"- {key}: {value}" for key, value in sorted(excluded.items())]
     lines += ["", "## Pending evidence", ""]
     pending = Counter(reason for row in screened for reason in row["pending_reason"].split(";") if reason)
     lines += [f"- {key}: {value}" for key, value in sorted(pending.items())]
+    lines += ["", "## Stage A manual PR/conversation correspondence queue", ""]
+    queue = [row for row in screened
+             if row["pr_conversation_match"] == "unresolved"]
+    lines += [f"- {row['case_id']}: pending Stage A manual screening" for row in queue]
+    if not queue:
+        lines.append("- None")
     lines += ["", "Size and conversation-length measures are descriptive only.",
               "No real discovery/held-out assignment is produced by screening.", ""]
     return "\n".join(lines)

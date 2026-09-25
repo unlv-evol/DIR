@@ -38,6 +38,7 @@ class ConversationPackageTests(unittest.TestCase):
     @staticmethod
     def freeze_options(**changes):
         options = {"procedure_validation_status": "validated",
+                   "stage_a_eligibility_status": "eligible",
                    "case_human_validation_status": "not_sampled",
                    "case_extraction_status": "completed",
                    "case_boundary_status": "established",
@@ -131,6 +132,8 @@ class ConversationPackageTests(unittest.TestCase):
         self.assertNotIn("later request", json.dumps(draft))
         self.assertNotIn("artifact", json.dumps(draft["context_supplied"]))
         self.assertEqual(draft["primary_repository_cutoff"], "tFG")
+        self.assertNotIn("pr_conversation_match", draft)
+        self.assertNotIn("correspondence_validation", draft)
         with self.assertRaises(ValueError):
             draft_supplied_record(package, [ref], [{**item, "source_turn_id": "turn_000006"}])
         with self.assertRaises(ValueError):
@@ -150,6 +153,9 @@ class ConversationPackageTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             freeze_validated_record(draft, **self.freeze_options(
                 procedure_validation_status="pending"))
+        with self.assertRaises(ValueError):
+            freeze_validated_record(draft, **self.freeze_options(
+                stage_a_eligibility_status="pending_resolution"))
         frozen = freeze_validated_record(draft, **self.freeze_options())
         self.assertEqual(frozen["record_status"], "frozen")
         self.assertEqual(frozen["validation_status"], "procedure_validated")

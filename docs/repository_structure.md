@@ -1,6 +1,6 @@
 # Repository Structure — Protocol v5
 
-[`docs/architecture.md`](architecture.md) defines stage order; the [operational protocol](../protocols/experiment_protocol.md) defines methodology. This document maps current and planned artifacts to locations. Former committed `dir-screening-v3` outputs and the approximately-30-case selection are recoverable from Git history; they are not Protocol v5 outputs.
+[`docs/architecture.md`](architecture.md) defines stage order; the [operational protocol](../protocols/experiment_protocol.md) defines methodology. This document maps current and planned artifacts to locations.
 
 ```text
 developer-intent-reconstruction/
@@ -15,7 +15,7 @@ developer-intent-reconstruction/
 ├── decisions/
 ├── data/
 │   ├── raw/                         # inherited index/archive, unchanged
-│   ├── intermediate/                # separately versioned run caches
+│   ├── intermediate/                # screening outputs and isolated caches
 │   └── derived/
 │       └── historical_information/  # conceptual H_i(tFG) indexes
 ├── cases/
@@ -52,23 +52,29 @@ developer-intent-reconstruction/
 └── docs/
 ```
 
-Only directories needed for the current implementation stage are created now. `data/derived/historical_information/` is a conceptual future location until Stage F; it is not populated during this migration. No speculative raw or retrieval schema is implied by this tree.
+`data/derived/historical_information/` is a planned Stage F location. No speculative raw or retrieval schema is implied by this tree.
 
 ## Case identity and manifests
 
-Stable `case_id`, conversation, turn, response, and artifact identifiers do not change with study role. Former `cases/manifests/screened_cases.csv`, `pilot_cases.csv`, and `selection_summary.md` were produced under the earlier manageability-screening design (`dir-screening-v3`) and are recoverable from Git history. Earlier tracked smoke files are also recoverable there; the ignored `data/intermediate/screening/cache/` remains local. None is a Protocol v5 eligibility, validation, discovery, or held-out assignment.
+Stable `case_id`, conversation, turn, response, and artifact identifiers do not change with study role.
 
-Stage A writes separately versioned `screened_PA_PN_cases.csv`, `eligible_PA_PN_cases.csv`, and `stage_a_summary.md` after authorized execution. The eligible manifest contains confirmed eligible records; pending processability is reported in the screened manifest rather than silently excluded. Future `discovery_cases.csv` and `heldout_cases.csv` represent the post-freeze stratified split, with no duplicate case directories. Cleanup does not generate real-data manifests.
+Stage A writes versioned `screened_PA_PN_cases.csv`, `eligible_PA_PN_cases.csv`, and `stage_a_summary.md` after authorized execution. The screened manifest has scientific eligibility plus operational Stage B readiness metadata. The eligible manifest contains confirmed eligible records; pending cases remain outside production Stage B. Future `discovery_cases.csv` and `heldout_cases.csv` represent the post-freeze stratified split, with no duplicate case directories.
+
+`cases/manifests/stage_a_correspondence_review.csv` is the restricted, temporary human interface between Stage A automated and manual activities. Completed rows import into canonical `cases/manifests/correspondence_reviews/<case_id>.json`; the CSV does not replace those schema-validated records.
+
+The Stage A run also derives restricted `cases/manifests/case_mapping.csv` deterministically from the PatchPrompt source index and screened rows. It maps neutral Case ID to PR identifier and PA/PN, with complementary source/conversation identifiers. It is a researcher-only deliverable outside the Stage B conversation package; the richer `linkage/*.json` records remain separate. Stage C never receives either mapping.
+
+Restricted Stage A manual PR/conversation judgments are stored as `cases/manifests/correspondence_reviews/<case_id>.json` and retained outside Stage B/C model input. Correspondence `yes` may satisfy that eligibility criterion, `no` excludes, and `unresolved` remains pending. Stage A records source/provenance linkage separately; source-index pairing alone does not automatically establish semantic task correspondence. Stage A also records a separate Git commit-object accessibility probe; it does not inspect historical project evidence or establish reconstructibility at `tFG`.
 
 ## Conversation-only and frozen records
 
-`cases/conversations/<case_id>/` holds only neutral ID, temporal source/precision, complete original-order conversation, and stable turn/artifact references needed for conversation-side extraction. It excludes all repository/PR identity, PA/PN outcome, project history, and final implementation. The Stage C extractor must accept this isolated data type, not a screening row or raw package. `pilot_analysis/conversation/<case_id>/record_<version>.json` is a suitable versioned location for validated conversation-side records; independent validation judgments need their own retained provenance. Former `pilot_analysis/cases/` held only an empty placeholder and is not a Protocol v5 discovery trace.
-The Stage B foundation has three representations: retrieved source archive in the raw provenance layer; lossless normalized conversation under `cases/conversations/<case_id>/`; and a derived Stage C model view there. The restricted case-linkage record belongs under `cases/manifests/` and is never Stage C input. All resolve through the same stable neutral DIR Case ID. The one-case preparation command is implemented; a local ignored technical package may already exist. Freeze records only after procedure validation and case-level boundary/processability checks; retain sampled versus unsampled validation status.
-The one-case Stage B command uses `cases/manifests/linkage_v5/<case_id>.json`, `cases/raw/<case_id>/conversation_source_archive.json`, and `cases/conversations/<case_id>/{normalized_conversation,stage_c_model_view,package_status}.json`. It writes a completion marker last and refuses existing files. See [`pipeline/extraction/README.md`](../pipeline/extraction/README.md). An older HTTP cache entry without its original retrieval time stays explicitly unknown; cache acquisition and the research source archive remain separate.
+`cases/conversations/<case_id>/` holds only neutral ID, temporal source/precision, complete original-order conversation, and stable turn/artifact references needed for conversation-side extraction. It excludes all repository/PR identity, PA/PN outcome, project history, and final implementation. The Stage C extractor must accept this isolated data type, not a screening row or raw package. `pilot_analysis/conversation/<case_id>/record_<version>.json` is a suitable versioned location for validated conversation-side records; independent validation judgments need their own retained provenance.
+The Stage B foundation has three representations: retrieved source archive in the raw provenance layer; lossless normalized conversation under `cases/conversations/<case_id>/`; and a derived Stage C model view there. The restricted case-linkage record belongs under `cases/manifests/` and is never Stage C input. All resolve through the same stable neutral DIR Case ID. The one-case preparation command is implemented. Freeze records only after procedure validation and case-level boundary/processability checks; retain sampled versus unsampled validation status.
+The one-case Stage B command uses `cases/manifests/linkage/<case_id>.json`, `cases/raw/<case_id>/conversation_source_archive.json`, and `cases/conversations/<case_id>/{normalized_conversation,stage_c_model_view,package_status}.json`. It writes a completion marker last and refuses existing files. See [`pipeline/extraction/README.md`](../pipeline/extraction/README.md). A cached HTTP response without a recorded retrieval time stays explicitly unknown; cache acquisition and the research source archive remain separate.
 
 ## Historical information, traces, and evidence
 
-After conversation freeze and the split, compact `H_i(tFG)` indexes in the future `data/derived/historical_information/` location should hold stable historical references, timestamps, boundary SHA/tree, and supported PR/issue/CI/history identifiers. Large payloads are materialized on demand. The exact persistent contract is deferred until that stage. `pipeline/snapshot/` resolves historical states without guessing; `pipeline/retrieval/` records justified operations and traces; `pipeline/selection/` assesses temporal validity, relevance, novelty, C/S/V contribution and uncertainty reduction. `pipeline/evidence_engineering/` performs semantic reduction before deferred materialization and payload reduction. Retrieval Algorithm v1 is derived only from discovery cases and frozen before held-out application. Existing experimental and provenance directories remain available for later runs; no held-out evidence may enter v1 development.
+After conversation freeze and the split, compact `H_i(tFG)` indexes in the future `data/derived/historical_information/` location should hold stable historical references, timestamps, boundary SHA/tree, and supported PR/issue/CI/history identifiers. Large payloads are materialized on demand. The exact persistent contract is deferred until that stage. `pipeline/snapshot/` resolves historical states without guessing; `pipeline/retrieval/` records justified operations and traces; `pipeline/selection/` assesses temporal validity, relevance, novelty, C/S/V contribution and uncertainty reduction. `pipeline/evidence_engineering/` performs semantic reduction before deferred materialization and payload reduction. Retrieval Algorithm v1 is derived only from discovery cases and frozen before held-out application. Experimental and provenance directories remain available for later runs; no held-out evidence may enter v1 development.
 
 ## RAW / SAFE / SEALED
 
@@ -76,4 +82,4 @@ After conversation freeze and the split, compact `H_i(tFG)` indexes in the futur
 
 ## Schemas, configuration, and tests
 
-`schemas/frozen_conversation_v1.schema.json` and `repository_evidence_v1.schema.json` currently describe `dir-tfg-v1` derived records. Preserve them as prior-version contracts; a Protocol v5 record must carry `dir-tfg-v2` and must not be falsely validated against old constants. Add/modify schemas only when the actual producer, consumer, and validation procedure are defined. `config/`, `.env.example`, and `src/developer_intent/screening_config.py` retain secret-safe retrieval configuration. Future v5 screening output/cache paths are distinct from old results. Unit tests run without network; integration and leakage tests should verify isolation, temporal boundaries, and held-out separation as later stages become executable.
+Current Protocol v5 records carry `dir-tfg-v2`. Versioned schemas now validate the stable Stage A screening, researcher-only mapping, and Stage A manual correspondence-review records; the earlier conversation and repository-evidence schemas remain legacy. See [`schemas/README.md`](../schemas/README.md) for producer and validator mappings. `config/`, `.env.example`, and `src/developer_intent/screening_config.py` retain secret-safe retrieval configuration. Stage A writes versioned outputs and uses a dedicated cache. Unit tests run without network; integration and leakage tests should verify isolation, temporal boundaries, and held-out separation as later stages become executable.

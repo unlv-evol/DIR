@@ -50,6 +50,6 @@ def load_config(root: Path, *, cache_dir: Path | None = None,
         github_token=values.get("GITHUB_TOKEN") or None,
         timeout=seconds,
         retries=attempts,
-        cache_dir=cache_dir or root / values.get("DIR_V5_SCREENING_CACHE_DIR", "data/intermediate/screening_v5/cache"),
+        cache_dir=cache_dir or root / values.get("DIR_V5_SCREENING_CACHE_DIR", "data/intermediate/screening/cache/current"),
         output=output or root / values.get("DIR_V5_SCREENING_OUTPUT", "cases/manifests/screened_PA_PN_cases.csv"),
     )

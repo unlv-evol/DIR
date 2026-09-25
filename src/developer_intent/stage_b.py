@@ -11,12 +11,14 @@ from pathlib import Path
 
 from .conversation_package import (PACKAGE_KEYS, build_case_linkage_record,
                                    build_stage_c_model_view, prepare_conversation_layers)
-from .screening import case_id, conversation_identity, github_identity
+from .screening import (SCREENING_SCHEMA_VERSION, case_id, conversation_identity,
+                        github_identity)
 from .screening_chatgpt import retrieve_share
 
 
-def select_linkage(source_rows: list[dict], selected_case_id: str) -> dict:
-    """Select an explicit PA/PN technical test case; make no eligibility claim."""
+def select_linkage(source_rows: list[dict], selected_case_id: str,
+                   screened_rows: list[dict] | None = None) -> dict:
+    """Resolve a neutral ID; an optional v5 manifest authorizes Stage B progression."""
     matches = [row for row in source_rows if row.get("Outcome_Class") in {"PA", "PN"}
                and case_id(row["Case ID"].strip()) == selected_case_id]
     if len(matches) != 1:
@@ -28,19 +30,39 @@ def select_linkage(source_rows: list[dict], selected_case_id: str) -> dict:
     conversation_id = conversation_identity(conversation_url)
     if pr_identity is None or conversation_id is None:
         raise ValueError("Technical smoke case has invalid source identity")
-    return build_case_linkage_record({
+    linkage_input = {
         "case_id": selected_case_id, "source_case_id": row["Case ID"].strip(),
         "pr_url": pr_url, "repository": pr_identity[0], "pr_number": pr_identity[1],
         "conversation_id": conversation_id, "conversation_url": conversation_url,
         "Outcome_Class": row["Outcome_Class"],
         "case_integrity_status": "technical_smoke_unverified",
-    })
+    }
+    if screened_rows is not None:
+        matching = [item for item in screened_rows if item.get("case_id") == selected_case_id]
+        if len(matching) != 1:
+            raise ValueError("Case ID must occur exactly once in the Stage A manifest")
+        screened = matching[0]
+        if (screened.get("screening_schema_version") != SCREENING_SCHEMA_VERSION
+                or screened.get("methodology_version") != "dir-tfg-v2"
+                or screened.get("source_case_id") != row["Case ID"].strip()
+                or screened.get("Outcome_Class") != row["Outcome_Class"]
+                or screened.get("pr_url") != pr_url
+                or screened.get("conversation_url") != conversation_url):
+            raise ValueError("Stage A manifest version or source linkage differs")
+        if (screened.get("stage_b_readiness_status") != "ready_for_stage_b"
+                or screened.get("eligibility_status") != "eligible"):
+            raise ValueError("Case is not scientifically eligible for Stage B")
+        linkage_input.update(screening_schema_version=SCREENING_SCHEMA_VERSION,
+                             eligibility_status=screened["eligibility_status"],
+                             stage_b_readiness_status=screened["stage_b_readiness_status"],
+                             case_integrity_status=screened.get("case_integrity_status", ""))
+    return build_case_linkage_record(linkage_input)
 
 
 def output_paths(root: Path, case_id: str) -> dict[str, Path]:
     """Separate restricted linkage, raw source, and conversation-side files."""
     return {
-        "linkage": root / "cases/manifests/linkage_v5" / f"{case_id}.json",
+        "linkage": root / "cases/manifests/linkage" / f"{case_id}.json",
         "source_archive": root / "cases/raw" / case_id / "conversation_source_archive.json",
         "normalized": root / "cases/conversations" / case_id / "normalized_conversation.json",
         "model_view": root / "cases/conversations" / case_id / "stage_c_model_view.json",
@@ -91,6 +113,9 @@ def prepare_stage_b(linkage: dict, http, *, refresh: bool = False) -> dict:
     result = {"linkage": linkage, "archive": None, "normalized": None,
               "model_view": None,
               "status": {"case_id": case_id, "stage_b_status": "retrieval_failed",
+                         "stage_a_eligibility_status": linkage["stage_a_eligibility_status"],
+                         "stage_b_readiness_status": linkage["stage_b_readiness_status"],
+                         "screening_schema_version": linkage["screening_schema_version"],
                          "retrieval_status": chat["retrieval_status"],
                          "parsing_status": chat["parsing_status"]}}
     if source is None or source.body is None:

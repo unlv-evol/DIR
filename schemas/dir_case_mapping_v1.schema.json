@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dir_case_mapping_v1.schema.json",
+  "title": "DIR researcher-only case mapping logical row",
+  "description": "Typed logical row after explicit CSV parsing. Restricted administrative mapping; not Stage C or reconstruction input, and not evidence or replacement for per-case linkage.",
+  "type": "object",
+  "required": [
+    "mapping_schema_version",
+    "case_id",
+    "pr_url",
+    "Outcome_Class",
+    "source_case_id",
+    "conversation_id",
+    "conversation_url"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "mapping_schema_version": {
+      "const": "dir-case-mapping-v1",
+      "description": "Mapping record contract version.",
+      "x-stage-owner": "Stage A"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^CASE_[0-9A-F]{12}$",
+      "description": "Stable neutral DIR case identifier.",
+      "x-stage-owner": "Stage A"
+    },
+    "pr_url": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Original source-index PR URL, researcher only.",
+      "x-stage-owner": "Stage A"
+    },
+    "Outcome_Class": {
+      "enum": [
+        "PA",
+        "PN"
+      ],
+      "description": "Source population class, researcher only.",
+      "x-stage-owner": "Stage A"
+    },
+    "source_case_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Case identifier in source index.",
+      "x-stage-owner": "Stage A"
+    },
+    "conversation_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Share ID when the source URL has a supported shape.",
+      "x-stage-owner": "Stage A"
+    },
+    "conversation_url": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Original source-index conversation URL.",
+      "x-stage-owner": "Stage A"
+    }
+  }
+}

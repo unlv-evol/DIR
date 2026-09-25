@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "pipeline/extraction"))
 
-from developer_intent.screening import case_id  # noqa: E402
+from developer_intent.screening import SCREENING_SCHEMA_VERSION, case_id  # noqa: E402
 from developer_intent.screening_http import FetchResult, HttpClient  # noqa: E402
 from developer_intent.stage_b import (check_new_outputs, output_paths,  # noqa: E402
                                       persist_stage_b, prepare_stage_b,
@@ -56,10 +56,31 @@ class StageBTests(unittest.TestCase):
     def linkage(self):
         return select_linkage([source_row()], case_id("PA-1"))
 
+    def test_production_stage_b_rejects_pending_scientific_status(self):
+        screened = {"screening_schema_version": SCREENING_SCHEMA_VERSION,
+                    "methodology_version": "dir-tfg-v2",
+                    "case_id": case_id("PA-1"), "source_case_id": "PA-1",
+                    "Outcome_Class": "PA", "pr_url": PR, "conversation_url": SHARE,
+                    "eligibility_status": "pending_resolution",
+                    "stage_b_readiness_status": "ready_for_stage_b"}
+        with self.assertRaisesRegex(ValueError, "not scientifically eligible"):
+            select_linkage([source_row()], case_id("PA-1"), [screened])
+        eligible = {**screened, "eligibility_status": "eligible",
+                    "stage_b_readiness_status": "ready_for_stage_b"}
+        linkage = select_linkage([source_row()], case_id("PA-1"), [eligible])
+        self.assertEqual(linkage["stage_a_eligibility_status"], "eligible")
+        self.assertNotIn("pr_conversation_match", linkage)
+        with self.assertRaisesRegex(ValueError, "not scientifically eligible"):
+            select_linkage([source_row()], case_id("PA-1"),
+                           [{**screened, "stage_b_readiness_status": "blocked",
+                             "eligibility_status": "excluded"}])
+
     def test_explicit_case_selection_and_fresh_persistence(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             linkage = self.linkage()
+            self.assertEqual(output_paths(root, linkage["case_id"])["linkage"],
+                             root / "cases/manifests/linkage" / f"{linkage['case_id']}.json")
             source = FetchResult("retrieved_public", body(), CANONICAL, 200,
                                  retrieved_at="2024-01-03T00:00:00+00:00",
                                  content_type="application/json")

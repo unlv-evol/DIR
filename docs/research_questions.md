@@ -76,8 +76,7 @@ For the current first-generation experiment,
 `primary_repository_cutoff = tFG`. Reconstruction repository evidence
 must have been available by `tFG` and otherwise admissible. Preserve
 availability by `tC` separately for conservative sensitivity analysis.
-An unresolved `tFG` never silently becomes `tC`; the former primary-`tC`
-procedure remains distinguishable by methodology version.
+An unresolved `tFG` never silently becomes `tC`. Record the methodology version and primary cutoff used.
 
 For target prompt `i`, conversational evidence may include only earlier
 observed turns:
@@ -117,6 +116,4 @@ supports independent human validation of conversation-side extraction.
 After conversation records are versioned and frozen, a PA/PN-stratified
 discovery/held-out split precedes project-evidence analysis. Retrieval
 Algorithm v1 is developed from discovery cases and frozen before held-out
-application. Existing approximately-30-case pilot outputs are
-legacy/provisional, not this validation sample or discovery set. See the
-[operational protocol](../protocols/experiment_protocol.md).
+application. See the [operational protocol](../protocols/experiment_protocol.md).

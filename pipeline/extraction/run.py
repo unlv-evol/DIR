@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import sys
 from pathlib import Path
 
@@ -22,6 +23,8 @@ def main() -> None:
     parser.add_argument("--case-id", help="Explicit neutral DIR Case ID, e.g. CASE_<hash>")
     parser.add_argument("--source", type=Path,
                         default=ROOT / "data/raw/final_analysis_dataset_from_patchprompt_study.csv")
+    parser.add_argument("--screened-manifest", type=Path,
+                        help="Current v5 Stage A manifest; require scientific eligibility and ready_for_stage_b")
     parser.add_argument("--cache-dir", type=Path)
     parser.add_argument("--timeout", type=float)
     parser.add_argument("--retries", type=int)
@@ -34,16 +37,23 @@ def main() -> None:
                          retries=args.retries)
     if args.check_config:
         print(config.safe_report())
-        print("Stage B output roots: cases/manifests/linkage_v5, cases/raw, cases/conversations")
+        print("Stage B output roots: cases/manifests/linkage, cases/raw, cases/conversations")
         return
     if not args.case_id or not args.live:
         parser.error("Stage B preparation requires --case-id and --live")
     old_cache = (ROOT / "data/intermediate/screening/cache").resolve()
+    current_cache = old_cache / "current"
     resolved_cache = config.cache_dir.resolve()
-    if resolved_cache == old_cache or old_cache in resolved_cache.parents:
+    if (resolved_cache == old_cache or (old_cache in resolved_cache.parents
+                                        and resolved_cache != current_cache
+                                        and current_cache not in resolved_cache.parents)):
         parser.error("Protocol v5 cannot write into the legacy screening cache")
     try:
-        linkage = select_linkage(read_source(args.source), args.case_id)
+        screened_rows = None
+        if args.screened_manifest is not None:
+            with args.screened_manifest.open(newline="", encoding="utf-8") as stream:
+                screened_rows = list(csv.DictReader(stream))
+        linkage = select_linkage(read_source(args.source), args.case_id, screened_rows)
         paths = output_paths(ROOT, args.case_id)
         check_new_outputs(paths)  # fail before network access
         http = HttpClient(config.cache_dir / "http", config.timeout, config.retries)

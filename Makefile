@@ -7,3 +7,4 @@ test:
 
 check-config:
 	$(PYTHON) -B pipeline/screening/run.py --check-config
+	$(PYTHON) -B pipeline/extraction/run.py --check-config

@@ -37,11 +37,8 @@ records are validated and frozen before a stratified discovery/held-out
 split and historical-project evidence analysis. Retrieval Algorithm v1
 is developed only on discovery cases and frozen before held-out use.
 
-The PatchPrompt CSV remains a candidate index, not complete raw-case
-data. The former `dir-screening-v3` outputs and approximately-30-case
-pilot manifest are recoverable from Git history, not Protocol v5
-eligibility or split assignments. See the operational protocol for
-versioning and stage rules.
+The PatchPrompt CSV is a candidate index, not complete raw-case data.
+See the operational protocol for screening, versioning, and stage rules.
 
 See
 [`protocols/experiment_protocol.md`](protocols/experiment_protocol.md)
@@ -50,6 +47,8 @@ for the detailed procedure and
 into the broader study. See
 [`docs/repository_structure.md`](docs/repository_structure.md) for the
 corresponding output locations.
+
+Current conversation-side deliverables are the Stage A screened and eligible manifests, lossless conversation packages, restricted `case_mapping.csv`, and the documented screening/packaging procedure. See the operational protocol for the distinction between scientific eligibility and Stage B readiness.
 
 ## Core Validity Boundary
 

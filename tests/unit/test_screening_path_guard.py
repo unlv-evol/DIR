@@ -7,10 +7,20 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "pipeline/screening"))
-from run import protect_existing_outputs, protect_legacy_paths  # noqa: E402
+from run import protect_existing_outputs, protect_legacy_paths, protect_limited_outputs  # noqa: E402
 
 
 class ScreeningPathGuardTests(unittest.TestCase):
+    def test_limited_mapping_cannot_write_full_corpus_path(self):
+        with tempfile.TemporaryDirectory() as temp:
+            paths = (Path(temp) / "smoke.csv", Path(temp) / "eligible.csv",
+                     Path(temp) / "summary.md", Path(temp) / "mapping.csv")
+            protect_limited_outputs(1, *paths)
+            protect_limited_outputs(None, *paths)
+            with self.assertRaisesRegex(ValueError, "full-corpus"):
+                protect_limited_outputs(1, *paths[:3],
+                                        ROOT / "cases/manifests/case_mapping.csv")
+
     def test_existing_v5_outputs_fail_before_retrieval(self):
         with tempfile.TemporaryDirectory() as temp:
             base = Path(temp)
@@ -29,6 +39,8 @@ class ScreeningPathGuardTests(unittest.TestCase):
             source = base / "source.csv"
             new_cache = base / "cache"
             protect_legacy_paths(*outputs, new_cache / "evidence", new_cache, source)
+            current = ROOT / "data/intermediate/screening/cache/current"
+            protect_legacy_paths(*outputs, current / "evidence", current, source)
             with self.assertRaises(ValueError):
                 protect_legacy_paths(ROOT / "cases/manifests/screened_cases.csv",
                                      outputs[1], outputs[2], new_cache / "evidence",

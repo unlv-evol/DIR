@@ -35,7 +35,10 @@ def build_case_linkage_record(screened_row: dict) -> dict:
             "pr_number": screened_row.get("pr_number", ""),
             "canonical_pr_url": screened_row.get("canonical_pr_url", ""),
             "case_integrity_status": screened_row.get("case_integrity_status", ""),
-            "integrity_notes": screened_row.get("integrity_notes", "")}
+            "integrity_notes": screened_row.get("integrity_notes", ""),
+            "screening_schema_version": screened_row.get("screening_schema_version", ""),
+            "stage_a_eligibility_status": screened_row.get("eligibility_status", "not_checked_technical_smoke"),
+            "stage_b_readiness_status": screened_row.get("stage_b_readiness_status", "not_checked_technical_smoke")}
 
 
 def build_source_archive(case_id: str, source_payload: bytes, *, source_url: str,
@@ -237,6 +240,7 @@ def draft_supplied_record(package: dict, artifact_refs: list[dict],
 
 def freeze_validated_record(
     draft: dict, *, procedure_validation_status: str,
+    stage_a_eligibility_status: str,
     case_human_validation_status: str, case_extraction_status: str,
     case_boundary_status: str, case_processability_status: str,
     independent_judgments: list[dict] | None = None,
@@ -253,6 +257,7 @@ def freeze_validated_record(
     if (draft.get("methodology_version") != METHODOLOGY_VERSION
             or draft.get("record_status") != "draft"
             or procedure_validation_status != "validated"
+            or stage_a_eligibility_status != "eligible"
             or case_human_validation_status not in human_statuses
             or case_extraction_status != "completed"
             or case_boundary_status != "established"
@@ -279,6 +284,7 @@ def freeze_validated_record(
         frozen = freeze_record(draft, judgments,
                                expected_methodology_version=METHODOLOGY_VERSION)
     frozen.update(procedure_validation_status=procedure_validation_status,
+                  stage_a_eligibility_status=stage_a_eligibility_status,
                   case_human_validation_status=case_human_validation_status,
                   case_extraction_status=case_extraction_status,
                   case_boundary_status=case_boundary_status,

@@ -2,6 +2,18 @@
 
 Record important research and engineering decisions.
 
+- **2026-09-22 — Add a restricted Stage A correspondence CSV interface.**
+  - **Decision:** Export applicable unresolved cases to `cases/manifests/stage_a_correspondence_review.csv`, allow manual editing of the controlled judgment and six provenance fields, and import completed rows into canonical `dir-correspondence-review-v1` JSON. Use the conservative `identifiers_and_source_linkage_only` evidence policy until temporal PR title/body rules are resolved. Blank judgments remain unresolved. This is an operational interface inside the single Stage A and does not change `dir-screening-v9` or `dir-tfg-v2`.
+  - **Rationale:** A deterministic CSV supports practical review while canonical identity-bound JSON preserves validation, auditability, and pipeline consumption.
+
+- **2026-09-22 — Restore semantic correspondence to Stage A.**
+  - **Decision:** Reverse the temporary assignment of semantic PR-conversation correspondence to Stage D. One Stage A now contains automated/administrative screening and restricted manual correspondence screening for 100% of candidate/processable cases reaching that activity. Correspondence `yes` may satisfy the criterion, `no` excludes, and `unresolved` remains pending. Production Stage B accepts only scientifically eligible cases. Stage D returns to approximately 30% PA/PN-stratified validation of Stage C conversation extraction. Use `dir-screening-v9` with unchanged `dir-tfg-v2`; retain `dir-correspondence-review-v1` under `cases/manifests/correspondence_reviews/`.
+  - **Rationale:** PR-conversation correspondence is a corpus/case-validity criterion, whereas Stage D validates the extraction procedure. Source linkage remains distinct from semantic correspondence.
+
+- **2026-09-22 — Stage D owns semantic PR/conversation correspondence (superseded by the decision above).**
+  - **Decision:** Version the Stage A screening contract as `dir-screening-v8` under unchanged methodology `dir-tfg-v2`. Stage A records administrative source linkage as established, conflicting, or unresolved and persists semantic correspondence as `pending_manual_validation`; that intentional deferral does not itself create a Stage A pending reason. Reuse `dir-correspondence-review-v1` unchanged in `annotations/correspondence_reviews/` for a restricted Stage D review of every candidate intended for Stage E. Stage E requires `yes`; `no` excludes and `unresolved` remains outside freeze. The approximately 30% extraction-validation sample remains a separate validation scope.
+  - **Rationale:** Source association and semantic task correspondence are distinct. Deferring the human judgment avoids a separate Stage A review workflow while preserving a testable all-case integrity gate before freeze.
+
 Suggested fields:
 
 - Date
@@ -155,8 +167,7 @@ Suggested fields:
   user's conformance clarification. Systematic extraction defects require a
   versioned procedure revision, affected-population identification,
   regeneration of affected outputs, and revalidation as needed.
-- **Resolved interpretation:** Word references to packaging PR identity
-  apply to the complete research case/linkage record. The Stage C model view
+- **Historical interpretation (SUPERSEDED by DIR-010):** The earlier Word version referred to packaging PR identity through the complete case/linkage record. The revised Word protocol explicitly limits the Stage B conversation package to neutral Case ID, conversation date/time, and complete conversation. The Stage C model view
   remains conversation-only under §3. The same neutral DIR Case ID links the
   restricted record, retrieved source archive, lossless normalized
   conversation, and model view. Preservation in normalized/source layers
@@ -165,3 +176,30 @@ Suggested fields:
   code distinguishes procedure and case statuses; the real split remains
   uncreated.
 - **Owner:** Study team. **Status:** Adopted; clarified by study team.
+
+## 2026-09-21 — Separate Stage B readiness from scientific eligibility
+
+- **Decision ID:** DIR-009
+- **Decision:** Retain Stage A `eligible` / `excluded` / `pending_resolution` judgments and add independently versioned `ready_for_stage_b` / `blocked` progression. An unresolved Stage C first-generation boundary or `tFG`-dependent historical-state judgment does not by itself block conversation packaging. A demonstrated required failure can block and exclude. Stage B completion does not promote eligibility; Stage E/F still require confirmed eligibility and resolved extraction, boundary, validation, and processability checks.
+- **Rationale/evidence:** Protocol v5 assigns first-generation identification to Stage C using the Stage B package. The one-case smoke yielded a complete package while scientific eligibility remained pending.
+- **Impact:** Stage A CSV contract advances to `dir-screening-v5`; earlier `dir-screening-v4` smoke outputs remain unchanged prior-version records. Restricted Stage B linkage/status may carry the pending Stage A judgment, while the Stage C model view does not.
+- **Owner:** Study team. **Status:** Adopted as an operational clarification.
+
+## 2026-09-21 — Revised Word Protocol v5 conversation-side alignment
+
+- **Decision ID:** DIR-010
+- **Decision:** Treat `Developer_Intent_Reconstruction_Experiment_Protocol_v5 (2).docx` as authoritative. Stage A boundary identifiability is a preliminary processability determination; Stage C authoritatively identifies the first family/artifact/response/target prompt and `tFG`. Keep scientific eligibility separate from Stage B readiness, with a strict resolved-case gate before freeze and split. Limit pre-freeze PR/repository access to administrative integrity, mapping, accessibility, duplicate, and processability checks; substantive evidence inspection begins after freeze. Keep `tC` alongside primary `tFG`. Generate researcher-only `case_mapping.csv` deterministically alongside richer restricted per-case linkage; neither enters Stage C.
+- **Rationale/evidence:** Revised Word Protocol v5 §§2–3, 8.4, 15–16 clarifies the conversation-only package, immediate mapping deliverable, and core additional-evidence criteria.
+- **Impact:** Operational documentation clarifies protocol-required versus complementary fields. Source archives, normalized records, model views, retrieval/provenance statuses, and historical schemas remain intact. The former DIR-007 interpretation of PR identity as part of the complete Stage B package is superseded; administrative linkage remains outside that package.
+- **Owner:** Study team. **Status:** Adopted.
+
+## 2026-09-21 — Source-bound Stage A correspondence and history access
+
+- **Decision:** Version the Stage A CSV contract as `dir-screening-v6` while retaining `dir-tfg-v2`. Treat the inherited PR/share pairing and archived grouping as linkage leads rather than independent proof of task correspondence. Require a source- and identity-bound administrative review for `pr_conversation_match`; list unresolved cases for researcher review. Separately probe Git commit-object access using a known PR base SHA without inspecting project content. A successful PR API request cannot establish Git history accessibility, and Git access cannot establish historical reconstructibility at `tFG`.
+- **Impact:** Preserve separate scientific eligibility and Stage B readiness. Positive and negative judgments gain auditable sources and can affect existing pending/exclusion decisions; inconclusive results stay pending. Restricted review records remain outside Stage C input.
+
+## 2026-09-21 — Remove pilot lexical fields from Stage A v7
+
+- **Decision:** Version the Stage A CSV contract as `dir-screening-v7` while keeping methodology `dir-tfg-v2`. Retain only `conversation_turn_pattern` as descriptive metadata from the former pilot secondary-characteristics fields. Retire the complete-conversation lexical signals, cue lists, unassessed placeholders, and lexical-producer provenance from current Stage A outputs.
+- **Rationale/evidence:** Revised Word Protocol v5 §§2–3 and 8.1 assign Stage A to screening, first-generation identification to Stage C, and retrieval-cue derivation to Stage G from frozen permitted inputs. Full-conversation lexical screening could include turns after the target prompt.
+- **Impact:** Historical v6 outputs remain historical. Stage A eligibility and Stage B readiness rules are unchanged; no v6 lexical field is migrated into Stage G.

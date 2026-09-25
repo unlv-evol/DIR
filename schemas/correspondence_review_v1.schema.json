@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "correspondence_review_v1.schema.json",
+  "x-schema-version": "dir-correspondence-review-v1",
+  "title": "DIR Stage A manual semantic task correspondence review",
+  "description": "Schema version dir-correspondence-review-v1. Stage A applies this case-validity review to candidate/processable cases before eligibility is finalized. The version field identifies the review-record revision.",
+  "type": "object",
+  "required": [
+    "case_id",
+    "pr_url",
+    "conversation_url",
+    "judgment",
+    "source",
+    "reviewer",
+    "timestamp",
+    "version",
+    "evidence_ref",
+    "rationale"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "pattern": "^CASE_[0-9A-F]{12}$",
+      "description": "Neutral case ID binding the judgment."
+    },
+    "pr_url": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Exact source-index PR URL."
+    },
+    "conversation_url": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Source conversation URL; identity checked by share ID."
+    },
+    "judgment": {
+      "enum": [
+        "yes",
+        "no",
+        "unresolved"
+      ],
+      "description": "Stage A judgment whether permitted evidence supports that the conversation and PR concern the same development task."
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Method/source; source-index pairing alone cannot establish yes."
+    },
+    "reviewer": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Reviewer or process identifier."
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timezone-aware review timestamp."
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Review record version, as implemented."
+    },
+    "evidence_ref": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Auditable evidence reference."
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Explanation including unresolved reason where applicable."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "judgment": {
+            "const": "yes"
+          }
+        },
+        "required": [
+          "judgment"
+        ]
+      },
+      "then": {
+        "properties": {
+          "source": {
+            "not": {
+              "enum": [
+                "source_index_pair_only",
+                "text_similarity_only",
+                "outcome_class",
+                "final_diff",
+                "integrated_implementation"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

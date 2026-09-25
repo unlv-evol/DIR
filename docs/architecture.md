@@ -1,6 +1,6 @@
 # System Architecture — Protocol v5
 
-The operational protocol is [`protocols/experiment_protocol.md`](../protocols/experiment_protocol.md). Protocol v5 applies to the PA/PN candidate corpus. Former `dir-screening-v3` outputs and the old approximately-30-case manifest are available through Git history and do not define this flow. This architecture keeps the original boxed diagram style.
+The operational protocol is [`protocols/experiment_protocol.md`](../protocols/experiment_protocol.md). Protocol v5 applies to the PA/PN candidate corpus.
 
 ## Research data flow
 
@@ -13,17 +13,24 @@ The operational protocol is [`protocols/experiment_protocol.md`](../protocols/ex
                  +---------------------------------------+
                  | Stage A: Define and Screen the       |
                  | PA/PN Corpus                         |
+                 | Automated / Administrative Screening |
+                 |                 +                    |
+                 | Intermediate Restricted Review CSV   |
+                 |                 +                    |
+                 | Manual PR-Conversation               |
+                 | Correspondence Screening (100%)      |
                  +-------------------+-------------------+
                                      |
                                      v
                  +---------------------------------------+
-                 | Eligible PA/PN Corpus                |
+                 | Scientific: eligible / excluded /    |
+                 | pending_resolution                   |
                  +-------------------+-------------------+
                                      |
                                      v
                  +---------------------------------------+
-                 | Stage B: Package Each Eligible       |
-                 | Conversation                         |
+                 | Stage B: Package Eligible            |
+                 | Conversations                        |
                  +-------------------+-------------------+
                                      |
                                      v
@@ -35,13 +42,13 @@ The operational protocol is [`protocols/experiment_protocol.md`](../protocols/ex
                                      v
                  +---------------------------------------+
                  | Stage D: Human Validation of         |
-                 | Conversation Extraction (~30%)       |
+                 | Conversation Extraction (~30%        |
+                 | PA/PN-stratified sample)             |
                  +-------------------+-------------------+
                                      |
                                      v
                  +---------------------------------------+
-                 | Stage E: Freeze the Conversation-    |
-                 | Side Record; tC and tFG independent  |
+                 | Stage E: Freeze Validated Records    |
                  +-------------------+-------------------+
                                      |
                                      v
@@ -140,7 +147,9 @@ The operational protocol is [`protocols/experiment_protocol.md`](../protocols/ex
 
 ## Conversation-side isolation
 
-Stage B preserves three layers: retrieved source archive (source bytes and safe retrieval provenance), lossless normalized conversation (all source conversation records, tool traces, first-generation response, later turns, and source locations), and derived Stage C model view (neutral case ID, conversation-addressed turns, temporal and artifact provenance). A restricted case-linkage record retains PR/source identities for integrity and later Stage F work through the same neutral ID; it is never model input. The Stage C supplied-C/S/V extractor does **not** receive the screening row, PA/PN status, repository/PR URL, PR body, commits, reviews, issues, CI, changed files, diff, or eventual implementation. The full normalized record preserves the artifact-bearing response and later turns; the supplied-information window excludes them. Human judgments on the validation sample remain independent until reconciliation; frozen records cannot be rewritten by subsequent project findings. `pilot_analysis/conversation/` can hold validated versioned records; former empty `cases/` and `synthesis/` placeholders are removed.
+Stage A contains automated/administrative screening and a separate restricted manual correspondence activity for all candidate/processable cases. Source linkage and semantic task correspondence remain distinct. Correspondence `yes` can satisfy that Stage A criterion, `no` excludes, and `unresolved` remains pending. Stage D validates only Stage C conversation extraction on the approximately 30% PA/PN-stratified sample.
+
+Stage B preserves three layers: retrieved source archive (source bytes and safe retrieval provenance), lossless normalized conversation (all source conversation records, tool traces, first-generation response, later turns, and source locations), and derived Stage C model view (neutral case ID, conversation-addressed turns, temporal and artifact provenance). A restricted case-linkage record retains PR/source identities for integrity and later Stage F work through the same neutral ID; it is never model input. The Stage C supplied-C/S/V extractor does **not** receive the screening row, PA/PN status, repository/PR URL, PR body, commits, reviews, issues, CI, changed files, diff, or eventual implementation. The full normalized record preserves the artifact-bearing response and later turns; the supplied-information window excludes them. Stage A boundary identifiability is preliminary; Stage C authoritatively identifies the first family, artifact, response, target prompt, and `tFG`. The researcher-only `case_mapping.csv` and richer linkage are outside the conversation package. Before freeze, PR/project access is limited to administrative identity, mapping, accessibility, duplicate, and processability checks; substantive project-evidence inspection begins after Stage E freeze. Human judgments on the validation sample remain independent until reconciliation; frozen records cannot be rewritten by subsequent project findings. `pilot_analysis/conversation/` can hold validated versioned records.
 
 ## Historical information and temporal boundary
 
@@ -148,7 +157,7 @@ Preserve `tC` (first developer prompt) and `tFG` (immediately before the first a
 
 ## Discovery, held-out, and evidence flow
 
-A reproducible PA/PN-stratified split follows validation of the extraction procedure and freeze of downstream-processable conversation records. Frozen does not imply individually human validated: sampled and unsampled case statuses remain distinct. Unresolved boundaries and extraction failures remain outside the split until resolved. Discovery cases alone produce traces and Algorithm v1. Held-out project information remains inaccessible to algorithm design and tuning. Each trace connects a prompt/C/S/V cue to a justified search operation, historical artifact, relevant fragment, next operation, and additional evidence or a documented no-evidence stopping result. Evidence retention tests temporal validity, task relevance, novelty beyond the frozen conversation, C/S/V contribution, and uncertainty reduction. Matching the PR or repository alone is insufficient.
+A reproducible PA/PN-stratified split follows validation of the extraction procedure and freeze of downstream-processable conversation records. Frozen does not imply individually human validated: sampled and unsampled case statuses remain distinct. Unresolved boundaries and extraction failures remain outside the split until resolved. Discovery cases alone produce traces and Algorithm v1. Held-out project information remains inaccessible to algorithm design and tuning. Each trace connects a prompt/C/S/V cue to a justified search operation, historical artifact, relevant fragment, next operation, and additional evidence or a documented no-evidence stopping result. Candidate additional evidence must concern the target task, add beyond the frozen conversation, and contribute C/S/V; temporal availability by `tFG` remains mandatory. Uncertainty reduction can be recorded analytically but is not an additional retention gate. Matching the PR or repository alone is insufficient.
 
 Frozen retrieval yields a compact Retrieved Evidence Index. Evidence Engineering first selects and semantically reduces candidates, then materializes large payloads only where needed and reduces their content into `E_i^eng`, preserving gaps and provenance. Reconstruction receives only the original prompt, permitted prior conversation, frozen supplied C/S/V, and engineered evidence. The controlled original and reconstructed conditions use the same current model/configuration. The integrated implementation stays sealed until both outputs are fixed.
 
@@ -160,4 +169,4 @@ Frozen retrieval yields a compact Retrieved Evidence Index. Evidence Engineering
 - `safe/reconstruction/`: only evidence admissible under frozen methodology.
 - `sealed/evaluation/`: post-cutoff/outcome material, including the integrated implementation until final evaluation.
 
-A separately versioned `tC` sensitivity partition can be derived later. Retrospective researcher inspection, when explicitly allowed, never changes automated reconstruction admissibility. The old approximately-30-case pilot selection, eager full PR extraction, and size-threshold exclusions remain historical workflow descriptions only, not Protocol v5 steps.
+A separately versioned `tC` sensitivity partition can be derived later. Retrospective researcher inspection, when explicitly allowed, never changes automated reconstruction admissibility.
