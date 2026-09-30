@@ -21,6 +21,10 @@ PROCESSABILITY_FIELDS = (
     "conversation_available", "first_generation_boundary_identifiable",
     "project_history_accessible", "historical_state_reconstructible",
 )
+DEFERRED_STAGE_B_PENDING_REASONS = frozenset({
+    "first_generation_boundary_identifiable_unresolved",
+    "historical_state_reconstructible_unresolved",
+})
 FIELDS = (
     "screening_schema_version", "methodology_version", "case_id", "source_case_id",
     "conversation_id", "conversation_url", "repository", "pr_number", "pr_url",
@@ -43,6 +47,51 @@ FIELDS = (
     "pr_commits", "developer_prompts", "assistant_responses", "conversation_words",
     "conversation_turn_pattern",
 )
+
+
+def expected_stage_b_readiness(row: dict) -> tuple[str, str]:
+    """Derive packaging readiness without promoting scientific disposition."""
+    pending = {reason for reason in str(row.get("pending_reason") or "").split(";")
+               if reason}
+    blockers = []
+    if row.get("eligibility_status") == "excluded" or row.get("exclusion_reason"):
+        blockers.append("scientifically_excluded")
+    for field, expected in (
+        ("source_linkage_status", "established"),
+        ("pr_conversation_match", "yes"),
+        ("conversation_available", "yes"),
+        ("temporal_anchor_available", "yes"),
+        ("duplicate_status", "unique"),
+        ("project_history_accessible", "yes"),
+        ("case_integrity_status", "ok"),
+    ):
+        if row.get(field) != expected:
+            blockers.append(field)
+    deferred_fields = {
+        "first_generation_boundary_identifiable":
+            "first_generation_boundary_identifiable_unresolved",
+        "historical_state_reconstructible":
+            "historical_state_reconstructible_unresolved",
+    }
+    for field, reason in deferred_fields.items():
+        value = row.get(field)
+        if value == "no":
+            blockers.append(field)
+        elif row.get("eligibility_status") == "eligible" and value != "yes":
+            blockers.append(field)
+        elif reason in pending and value not in {"unresolved", "unavailable"}:
+            blockers.append(field)
+    nondeferred = pending - DEFERRED_STAGE_B_PENDING_REASONS
+    if nondeferred:
+        blockers.extend(sorted(nondeferred))
+    if blockers:
+        return "blocked", "blocked:" + ";".join(dict.fromkeys(blockers))
+    if row.get("eligibility_status") == "eligible":
+        return "ready_for_stage_b", "scientifically_eligible"
+    if (row.get("eligibility_status") == "pending_resolution"
+            and pending and pending <= DEFERRED_STAGE_B_PENDING_REASONS):
+        return "ready_for_stage_b", "pending_only_stage_c_tfg_deferred"
+    return "blocked", "blocked:unsupported_scientific_status"
 
 
 def case_id(source_case_id: str) -> str:
@@ -254,11 +303,6 @@ def screen_rows(source_rows: list[dict], source_dir: Path | None = None) -> list
             status, eligible = "pending_resolution", ""
         else:
             status, eligible = "eligible", "true"
-        # Packaging can establish conversation facts needed by Stage C. It does
-        # not settle scientific eligibility or any unresolved tFG-dependent fact.
-        readiness = "ready_for_stage_b" if status == "eligible" else "blocked"
-        readiness_reason = ("scientifically_eligible" if status == "eligible" else
-                            "scientific_screening_not_eligible")
         row = {
             "screening_schema_version": SCREENING_SCHEMA_VERSION,
             "methodology_version": METHODOLOGY_VERSION,
@@ -296,8 +340,8 @@ def screen_rows(source_rows: list[dict], source_dir: Path | None = None) -> list
             "project_history_access_source": access.get("source", ""),
             "project_history_access_reason": access.get("reason", ""),
             "eligible": eligible, "eligibility_status": status,
-            "stage_b_readiness_status": readiness,
-            "stage_b_readiness_reason": readiness_reason,
+            "stage_b_readiness_status": "",
+            "stage_b_readiness_reason": "",
             "exclusion_reason": ";".join(dict.fromkeys(exclusions)),
             "pending_reason": ";".join(dict.fromkeys(pending)),
             "case_integrity_status": integrity, "duplicate_of": duplicate_of,
@@ -318,6 +362,9 @@ def screen_rows(source_rows: list[dict], source_dir: Path | None = None) -> list
                 "multiple_developer_prompts" if prompts is not None and prompts > 1 else
                 "unavailable"),
         }
+        readiness, readiness_reason = expected_stage_b_readiness(row)
+        row.update(stage_b_readiness_status=readiness,
+                   stage_b_readiness_reason=readiness_reason)
         result.append(row)
     return result
 
@@ -366,11 +413,14 @@ def screening_summary(source_rows: list[dict], screened: list[dict]) -> str:
     excluded = Counter(reason for row in screened for reason in row["exclusion_reason"].split(";") if reason)
     lines += [f"- {key}: {value}" for key, value in sorted(excluded.items())]
     lines += ["", "## Pending evidence", ""]
-    pending = Counter(reason for row in screened for reason in row["pending_reason"].split(";") if reason)
+    pending = Counter(reason for row in screened
+                      if row["eligibility_status"] == "pending_resolution"
+                      for reason in row["pending_reason"].split(";") if reason)
     lines += [f"- {key}: {value}" for key, value in sorted(pending.items())]
     lines += ["", "## Stage A manual PR/conversation correspondence queue", ""]
     queue = [row for row in screened
-             if row["pr_conversation_match"] == "unresolved"]
+             if row["eligibility_status"] == "pending_resolution"
+             and row["pr_conversation_match"] == "unresolved"]
     lines += [f"- {row['case_id']}: pending Stage A manual screening" for row in queue]
     if not queue:
         lines.append("- None")

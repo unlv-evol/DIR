@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "correspondence_evidence_v1.schema.json",
+  "x-schema-version": "dir-correspondence-evidence-v1",
+  "title": "DIR Stage A restricted correspondence evidence packet",
+  "description": "Identity-bound evidence used only for Stage A PR/conversation correspondence review. It is not reconstruction evidence and cannot be supplied to Stage B/C or Stage G.",
+  "type": "object",
+  "required": [
+    "schema_version", "policy", "case_id", "pr_url", "conversation_id",
+    "conversation_url", "support_status", "review_observation",
+    "pr_reference", "conversation_reference", "archive_provenance",
+    "downstream_use"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "dir-correspondence-evidence-v1"},
+    "policy": {"const": "direct_share_reference_and_restricted_task_context_v1"},
+    "case_id": {"type": "string", "pattern": "^CASE_[0-9A-F]{12}$"},
+    "pr_url": {"type": "string", "minLength": 1},
+    "conversation_id": {"type": "string", "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"},
+    "conversation_url": {"type": "string", "minLength": 1},
+    "support_status": {"enum": ["archive_exact_pair", "archive_conflicting_reference", "reviewer_attestation_only"]},
+    "review_observation": {"type": "object"},
+    "pr_reference": {"type": "object"},
+    "conversation_reference": {"type": "object"},
+    "archive_provenance": {"type": "object"},
+    "downstream_use": {"const": "stage_a_correspondence_only_not_reconstruction_evidence"}
+  }
+}

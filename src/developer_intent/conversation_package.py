@@ -29,7 +29,7 @@ def build_case_linkage_record(screened_row: dict) -> dict:
                 "conversation_url", "Outcome_Class")
     if not all(screened_row.get(key) for key in required):
         raise ValueError("Screened case lacks required linkage identity")
-    return {"linkage_version": "case-linkage-v1", "methodology_version": METHODOLOGY_VERSION,
+    return {"linkage_version": "case-linkage-v2", "methodology_version": METHODOLOGY_VERSION,
             **{key: screened_row[key] for key in required},
             "repository": screened_row.get("repository", ""),
             "pr_number": screened_row.get("pr_number", ""),
@@ -38,7 +38,11 @@ def build_case_linkage_record(screened_row: dict) -> dict:
             "integrity_notes": screened_row.get("integrity_notes", ""),
             "screening_schema_version": screened_row.get("screening_schema_version", ""),
             "stage_a_eligibility_status": screened_row.get("eligibility_status", "not_checked_technical_smoke"),
-            "stage_b_readiness_status": screened_row.get("stage_b_readiness_status", "not_checked_technical_smoke")}
+            "stage_b_readiness_status": screened_row.get("stage_b_readiness_status", "not_checked_technical_smoke"),
+            "stage_a_screening_record_ref": screened_row.get("stage_a_screening_record_ref", ""),
+            "source_linkage_status": screened_row.get("source_linkage_status", "not_checked_technical_smoke"),
+            "pr_conversation_match": screened_row.get("pr_conversation_match", "not_checked_technical_smoke"),
+            "correspondence_review_ref": screened_row.get("correspondence_review_ref", "")}
 
 
 def build_source_archive(case_id: str, source_payload: bytes, *, source_url: str,

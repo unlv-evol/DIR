@@ -12,12 +12,13 @@ from pathlib import Path
 from .conversation_package import (PACKAGE_KEYS, build_case_linkage_record,
                                    build_stage_c_model_view, prepare_conversation_layers)
 from .screening import (SCREENING_SCHEMA_VERSION, case_id, conversation_identity,
-                        github_identity)
+                        expected_stage_b_readiness, github_identity)
 from .screening_chatgpt import retrieve_share
 
 
 def select_linkage(source_rows: list[dict], selected_case_id: str,
-                   screened_rows: list[dict] | None = None) -> dict:
+                   screened_rows: list[dict] | None = None, *,
+                   screened_manifest_ref: str = "cases/manifests/screened_PA_PN_cases.csv") -> dict:
     """Resolve a neutral ID; an optional v5 manifest authorizes Stage B progression."""
     matches = [row for row in source_rows if row.get("Outcome_Class") in {"PA", "PN"}
                and case_id(row["Case ID"].strip()) == selected_case_id]
@@ -49,13 +50,24 @@ def select_linkage(source_rows: list[dict], selected_case_id: str,
                 or screened.get("pr_url") != pr_url
                 or screened.get("conversation_url") != conversation_url):
             raise ValueError("Stage A manifest version or source linkage differs")
-        if (screened.get("stage_b_readiness_status") != "ready_for_stage_b"
-                or screened.get("eligibility_status") != "eligible"):
-            raise ValueError("Case is not scientifically eligible for Stage B")
+        expected_readiness, expected_reason = expected_stage_b_readiness(screened)
+        if (screened.get("stage_b_readiness_status") != expected_readiness
+                or screened.get("stage_b_readiness_reason") != expected_reason):
+            raise ValueError("Stage A readiness is inconsistent with packaging prerequisites")
+        if expected_readiness != "ready_for_stage_b":
+            raise ValueError("Case is not operationally ready for Stage B")
         linkage_input.update(screening_schema_version=SCREENING_SCHEMA_VERSION,
                              eligibility_status=screened["eligibility_status"],
                              stage_b_readiness_status=screened["stage_b_readiness_status"],
-                             case_integrity_status=screened.get("case_integrity_status", ""))
+                             case_integrity_status=screened.get("case_integrity_status", ""),
+                             canonical_pr_url=screened.get("canonical_pr_url", ""),
+                             stage_a_screening_record_ref=(
+                                 f"{screened_manifest_ref}#case_id={selected_case_id}"),
+                             source_linkage_status=screened["source_linkage_status"],
+                             pr_conversation_match=screened["pr_conversation_match"],
+                             correspondence_review_ref=(
+                                 "cases/manifests/correspondence_reviews/"
+                                 f"{selected_case_id}.json"))
     return build_case_linkage_record(linkage_input)
 
 

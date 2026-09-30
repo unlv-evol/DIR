@@ -96,8 +96,13 @@ class HistoryTests(unittest.TestCase):
 
     def test_demonstrated_inaccessible_and_inconclusive(self):
         self.assertEqual(self.probe("fatal: repository not found")[0]["judgment"], "no")
-        for failure in ("temporary network error", "timeout"):
-            self.assertEqual(self.probe(failure)[0]["judgment"], "unresolved")
+        network = self.probe("temporary network error")[0]
+        self.assertEqual(network["judgment"], "unresolved")
+        self.assertEqual(network["status"], "fetch_failed")
+        timeout = self.probe("timeout")[0]
+        self.assertEqual(timeout["judgment"], "unresolved")
+        self.assertEqual(timeout["status"], "fetch_timeout")
+        self.assertEqual(timeout["reason"], "commit_fetch_timed_out")
 
     def test_pr_api_and_history_access_do_not_prove_historical_state(self):
         self.assertEqual(history_access({"html_url": PR}, PR)["judgment"], "unresolved")

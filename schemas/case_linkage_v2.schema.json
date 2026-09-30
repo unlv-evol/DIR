@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "case_linkage_v2.schema.json",
+  "title": "DIR restricted case linkage record",
+  "description": "Restricted Stage B administrative crosswalk and Stage A authorization trace. This record is never Stage C or reconstruction input.",
+  "type": "object",
+  "required": [
+    "linkage_version",
+    "methodology_version",
+    "case_id",
+    "source_case_id",
+    "pr_url",
+    "conversation_id",
+    "conversation_url",
+    "Outcome_Class",
+    "repository",
+    "pr_number",
+    "canonical_pr_url",
+    "case_integrity_status",
+    "integrity_notes",
+    "screening_schema_version",
+    "stage_a_eligibility_status",
+    "stage_b_readiness_status",
+    "stage_a_screening_record_ref",
+    "source_linkage_status",
+    "pr_conversation_match",
+    "correspondence_review_ref"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "linkage_version": {"const": "case-linkage-v2"},
+    "methodology_version": {"const": "dir-tfg-v2"},
+    "case_id": {"type": "string", "pattern": "^CASE_[0-9A-F]{12}$"},
+    "source_case_id": {"type": "string", "minLength": 1},
+    "pr_url": {"type": "string", "minLength": 1},
+    "conversation_id": {"type": "string", "minLength": 1},
+    "conversation_url": {"type": "string", "minLength": 1},
+    "Outcome_Class": {"enum": ["PA", "PN"]},
+    "repository": {"type": "string"},
+    "pr_number": {"type": "string"},
+    "canonical_pr_url": {"type": "string"},
+    "case_integrity_status": {"type": "string"},
+    "integrity_notes": {"type": "string"},
+    "screening_schema_version": {"type": "string"},
+    "stage_a_eligibility_status": {
+      "enum": ["eligible", "excluded", "pending_resolution", "not_checked_technical_smoke"]
+    },
+    "stage_b_readiness_status": {
+      "enum": ["ready_for_stage_b", "blocked", "not_checked_technical_smoke"]
+    },
+    "stage_a_screening_record_ref": {"type": "string"},
+    "source_linkage_status": {
+      "enum": ["established", "conflicting", "unresolved", "not_checked_technical_smoke"]
+    },
+    "pr_conversation_match": {
+      "enum": ["yes", "no", "unresolved", "not_checked_technical_smoke"]
+    },
+    "correspondence_review_ref": {"type": "string"}
+  }
+}

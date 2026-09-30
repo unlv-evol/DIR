@@ -12,13 +12,15 @@ from urllib.parse import urlparse
 from uuid import UUID
 
 from .case_mapping import MAPPING_FIELDS, MAPPING_SCHEMA_VERSION
-from .screening import (FIELDS, conversation_identity, github_identity)
+from .screening import (FIELDS, conversation_identity, expected_stage_b_readiness,
+                        github_identity)
 from .screening_checks import correspondence
 
 SCHEMA_DIR = Path(__file__).resolve().parents[2] / "schemas"
 SCREENING_SCHEMA = "dir_screening_v9.schema.json"
 MAPPING_SCHEMA = "dir_case_mapping_v1.schema.json"
 REVIEW_SCHEMA = "correspondence_review_v1.schema.json"
+CORRESPONDENCE_EVIDENCE_SCHEMA = "correspondence_evidence_v1.schema.json"
 NULLABLE = "null"
 
 
@@ -80,7 +82,9 @@ def _validate_properties(record: dict, schema: dict) -> None:
             kinds = [kinds] if isinstance(kinds, str) else kinds
             actual = ("null" if value is None else "boolean" if isinstance(value, bool)
                       else "integer" if isinstance(value, int) else "string"
-                      if isinstance(value, (str, date, datetime)) else "unsupported")
+                      if isinstance(value, (str, date, datetime)) else "object"
+                      if isinstance(value, dict) else "array"
+                      if isinstance(value, list) else "unsupported")
             if actual not in kinds:
                 raise ValueError(f"{field}: expected {kinds}, got {actual}")
         comparable = _json_value(value)
@@ -98,6 +102,53 @@ def _validate_properties(record: dict, schema: dict) -> None:
             raise ValueError(f"{field}: invalid identifier or object reference")
         if spec.get("format") == "date-time":
             _timestamp(comparable, field)
+
+
+def validate_correspondence_evidence(packet: dict) -> None:
+    """Validate the restricted Stage A packet and its leakage boundary."""
+    schema = _schema(CORRESPONDENCE_EVIDENCE_SCHEMA)
+    _validate_properties(packet, schema)
+    if set(packet) != set(schema["required"]):
+        raise ValueError("Correspondence evidence fields differ from v1 contract")
+    if conversation_identity(packet["conversation_url"]) != packet["conversation_id"]:
+        raise ValueError("Correspondence evidence conversation identity mismatch")
+    review = packet["review_observation"]
+    required_review = {"judgment", "reviewer", "reviewed_at", "review_version", "rationale"}
+    if set(review) != required_review or review["judgment"] not in {"yes", "no", "unresolved"}:
+        raise ValueError("Correspondence evidence review observation is invalid")
+    if any(not isinstance(review[key], str) or not review[key] for key in required_review):
+        raise ValueError("Correspondence evidence review observation is incomplete")
+    _timestamp(review["reviewed_at"], "reviewed_at")
+    pr_reference = packet["pr_reference"]
+    expected_pr = {"referenced_conversation_url", "matches_indexed_conversation",
+                   "mention_url", "mention_property", "mention_author", "mention_path",
+                   "restricted_excerpt", "created_at", "temporal_status"}
+    if set(pr_reference) != expected_pr or not isinstance(
+            pr_reference["matches_indexed_conversation"], bool):
+        raise ValueError("Correspondence evidence PR reference is invalid")
+    if pr_reference["temporal_status"] not in {"exact", "derivable", "unresolved", "unavailable"}:
+        raise ValueError("Correspondence evidence temporal status is invalid")
+    conversation = packet["conversation_reference"]
+    if (set(conversation) != {"source", "developer_task_excerpts"}
+            or not isinstance(conversation["developer_task_excerpts"], list)
+            or any(not isinstance(text, str) for text in conversation["developer_task_excerpts"])):
+        raise ValueError("Correspondence evidence conversation reference is invalid")
+    archive = packet["archive_provenance"]
+    if set(archive) != {"archive_file", "archive_sha256", "archive_capture_time", "record_status"}:
+        raise ValueError("Correspondence evidence archive provenance is invalid")
+    if archive["record_status"] not in {"available", "unavailable"}:
+        raise ValueError("Correspondence evidence archive status is invalid")
+    def scan(value):
+        if isinstance(value, dict):
+            if set(value) & FORBIDDEN_KEYS:
+                raise ValueError("Correspondence evidence contains prohibited outcome or response fields")
+            for child in value.values():
+                scan(child)
+        elif isinstance(value, list):
+            for child in value:
+                scan(child)
+    from .correspondence_evidence import FORBIDDEN_KEYS
+    scan(packet)
 
 
 def _parse_csv_row(row: dict, schema: dict) -> dict:
@@ -184,12 +235,10 @@ def _screening_invariants(row: dict) -> None:
     elif status == "excluded":
         if row["eligible"] is not False or not row["exclusion_reason"]:
             raise ValueError("excluded row needs false eligible and exclusion reason")
-    if (row["stage_b_readiness_status"] == "ready_for_stage_b") != (status == "eligible"):
-        raise ValueError("Stage B production readiness requires scientific eligibility")
-    expected_readiness_reason = ("scientifically_eligible" if status == "eligible" else
-                                 "scientific_screening_not_eligible")
-    if row["stage_b_readiness_reason"] != expected_readiness_reason:
-        raise ValueError("Stage B readiness reason differs from scientific status")
+    expected_readiness, expected_readiness_reason = expected_stage_b_readiness(row)
+    if (row["stage_b_readiness_status"] != expected_readiness
+            or row["stage_b_readiness_reason"] != expected_readiness_reason):
+        raise ValueError("Stage B readiness differs from explicit packaging prerequisites")
     if row["source_linkage_status"] == "conflicting" and status != "excluded":
         raise ValueError("Conflicting source linkage must exclude and block")
     if row["pr_conversation_match"] in {"yes", "no"}:

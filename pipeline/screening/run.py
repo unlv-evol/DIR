@@ -22,6 +22,8 @@ from developer_intent.screening_http import HttpClient  # noqa: E402
 from developer_intent.screening_checks import history_access, load_review  # noqa: E402
 from developer_intent.correspondence_workflow import (  # noqa: E402
     DEFAULT_EVIDENCE_POLICY, import_review_csv, review_rows, write_review_csv)
+from developer_intent.correspondence_evidence import prepare_review_evidence  # noqa: E402
+from developer_intent.source_corrections import apply_source_corrections  # noqa: E402
 
 
 def protect_legacy_paths(output: Path, eligible_output: Path, summary_path: Path,
@@ -169,6 +171,8 @@ def sync_correspondence_reviews(candidates: list[dict], evidence_dir: Path,
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, default=ROOT / "data/raw/final_analysis_dataset_from_patchprompt_study.csv")
+    parser.add_argument("--source-correction-dir", type=Path,
+                        default=ROOT / "cases/manifests/source_linkage_corrections")
     parser.add_argument("--output", type=Path)
     parser.add_argument("--eligible-output", type=Path,
                         default=ROOT / "cases/manifests/eligible_PA_PN_cases.csv")
@@ -186,6 +190,14 @@ def main() -> None:
                             help="Write restricted Stage A manual-review CSV and stop")
     operations.add_argument("--import-correspondence-review", type=Path,
                             help="Validate completed review CSV, write canonical JSON, and stop")
+    operations.add_argument("--prepare-correspondence-evidence", type=Path,
+                            help="Create restricted packets from a completed review CSV and stop")
+    parser.add_argument("--correspondence-evidence-dir", type=Path,
+                        default=ROOT / "cases/manifests/correspondence_evidence")
+    parser.add_argument("--prepared-correspondence-review", type=Path,
+                        default=ROOT / "cases/manifests/stage_a_correspondence_review_ready.csv")
+    parser.add_argument("--archive-dir", type=Path,
+                        default=ROOT / "data/raw/allPullRequestSharings")
     parser.add_argument("--correspondence-evidence-policy",
                         default=DEFAULT_EVIDENCE_POLICY,
                         help="Audited review-packet policy; current conservative policy excludes PR text")
@@ -213,7 +225,7 @@ def main() -> None:
     eligible_output = args.eligible_output.resolve()
     summary_path = args.summary.resolve()
     mapping_path = args.case_mapping_output.resolve()
-    source = read_source(args.source)
+    source = apply_source_corrections(read_source(args.source), args.source_correction_dir)
     candidates = [row for row in source if row["Outcome_Class"] in {"PA", "PN"}]
     if args.limit:
         candidates = candidates[:args.limit]
@@ -227,8 +239,21 @@ def main() -> None:
         if args.case_mapping_output == ROOT / "cases/manifests/case_mapping.csv":
             mapping_path = ROOT / f"data/intermediate/screening/smoke_{args.limit}_case_mapping.csv"
     evidence_dir = args.evidence_dir or config.cache_dir / "evidence"
-    if args.live and (args.export_correspondence_review or args.import_correspondence_review):
+    if args.live and (args.export_correspondence_review or args.import_correspondence_review
+                      or args.prepare_correspondence_evidence):
         parser.error("Correspondence CSV operations are offline; do not combine them with --live")
+    if args.prepare_correspondence_evidence:
+        try:
+            counts = prepare_review_evidence(
+                args.prepare_correspondence_evidence, source, args.archive_dir,
+                evidence_dir, args.correspondence_evidence_dir,
+                args.prepared_correspondence_review, ROOT)
+        except (ValueError, FileExistsError, OSError) as exc:
+            parser.error(str(exc))
+        print(f"Restricted correspondence packets: {args.correspondence_evidence_dir}")
+        print(f"Prepared correspondence CSV: {args.prepared_correspondence_review}")
+        print(f"Packet support status: {dict(sorted(counts.items()))}")
+        return
     if args.export_correspondence_review or args.import_correspondence_review:
         sync_correspondence_reviews(candidates, evidence_dir, args.correspondence_review_dir)
         automated = screen_rows(candidates, evidence_dir)
@@ -243,7 +268,7 @@ def main() -> None:
             return
         try:
             counts = import_review_csv(args.import_correspondence_review, automated, source,
-                                       args.correspondence_review_dir)
+                                       args.correspondence_review_dir, ROOT)
         except (ValueError, FileExistsError) as exc:
             parser.error(str(exc))
         print(f"Canonical Stage A correspondence reviews: {args.correspondence_review_dir}")

@@ -29,8 +29,8 @@ The operational protocol is [`protocols/experiment_protocol.md`](../protocols/ex
                                      |
                                      v
                  +---------------------------------------+
-                 | Stage B: Package Eligible            |
-                 | Conversations                        |
+                 | Stage B: Package Operationally       |
+                 | Ready Conversations                  |
                  +-------------------+-------------------+
                                      |
                                      v
@@ -44,6 +44,13 @@ The operational protocol is [`protocols/experiment_protocol.md`](../protocols/ex
                  | Stage D: Human Validation of         |
                  | Conversation Extraction (~30%        |
                  | PA/PN-stratified sample)             |
+                 +-------------------+-------------------+
+                                     |
+                                     v
+                 +---------------------------------------+
+                 | Strict Resolved-Case Gate            |
+                 | Eligibility + boundary + deferred    |
+                 | processability resolved              |
                  +-------------------+-------------------+
                                      |
                                      v
@@ -147,7 +154,7 @@ The operational protocol is [`protocols/experiment_protocol.md`](../protocols/ex
 
 ## Conversation-side isolation
 
-Stage A contains automated/administrative screening and a separate restricted manual correspondence activity for all candidate/processable cases. Source linkage and semantic task correspondence remain distinct. Correspondence `yes` can satisfy that Stage A criterion, `no` excludes, and `unresolved` remains pending. Stage D validates only Stage C conversation extraction on the approximately 30% PA/PN-stratified sample.
+Stage A contains automated/administrative screening and a separate restricted manual correspondence activity for all candidate/processable cases. Source linkage and semantic task correspondence remain distinct. Completed semantic reviews reference checksum-bound restricted correspondence-evidence packets that preserve archive support versus reviewer attestation and cannot enter later model or reconstruction inputs. Correspondence `yes` can satisfy that Stage A criterion, `no` excludes, and `unresolved` remains pending and blocks Stage B. Operational readiness is separate from scientific disposition: a pending case may be packaged only when its sole unresolved reasons are the preliminary first-generation boundary and `tFG`-dependent historical-state judgments. Stage D validates only Stage C conversation extraction on the approximately 30% PA/PN-stratified sample.
 
 Stage B preserves three layers: retrieved source archive (source bytes and safe retrieval provenance), lossless normalized conversation (all source conversation records, tool traces, first-generation response, later turns, and source locations), and derived Stage C model view (neutral case ID, conversation-addressed turns, temporal and artifact provenance). A restricted case-linkage record retains PR/source identities for integrity and later Stage F work through the same neutral ID; it is never model input. The Stage C supplied-C/S/V extractor does **not** receive the screening row, PA/PN status, repository/PR URL, PR body, commits, reviews, issues, CI, changed files, diff, or eventual implementation. The full normalized record preserves the artifact-bearing response and later turns; the supplied-information window excludes them. Stage A boundary identifiability is preliminary; Stage C authoritatively identifies the first family, artifact, response, target prompt, and `tFG`. The researcher-only `case_mapping.csv` and richer linkage are outside the conversation package. Before freeze, PR/project access is limited to administrative identity, mapping, accessibility, duplicate, and processability checks; substantive project-evidence inspection begins after Stage E freeze. Human judgments on the validation sample remain independent until reconciliation; frozen records cannot be rewritten by subsequent project findings. `pilot_analysis/conversation/` can hold validated versioned records.
 

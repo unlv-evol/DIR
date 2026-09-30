@@ -1,45 +1,236 @@
-# AGENTS.md — Developer Intent Reconstruction
+# Developer Intent Reconstruction
 
-This research repository requires both software correctness and methodological validity. **The revised Word Protocol v5 (`Developer_Intent_Reconstruction_Experiment_Protocol_v5 (2).docx`) is authoritative** for the current experiment. Read the revised Word protocol when accessible, `protocols/experiment_protocol.md`, `docs/architecture.md`, `docs/repository_structure.md`, `docs/research_questions.md`, `docs/data_dictionary.md`, `decisions/decision_log.md`, relevant schemas/configuration/tests, and this file before changing a pipeline stage. Surface conflicts instead of silently choosing an interpretation.
+## Purpose
 
-Write Stage A intermediate outputs under `data/intermediate/screening/` and distinguish methodologies with record/schema versions. Preserve acquired source material and retrieval provenance. Never commit real `.env` secrets or emit tokens into logs, CSVs, or caches.
+This repository implements the **Developer Intent Reconstruction**
+research study. Software correctness and methodological validity are
+both required.
 
-## Current stage order
+Before making research-pipeline changes, read the authoritative
+repository documentation relevant to the task.
 
-```text
-PA/PN candidate corpus
-  -> integrity / availability / processability screening
-  -> automated/administrative and manual correspondence screening within Stage A
-  -> scientifically eligible PA/PN cases
-  -> isolated conversation-only packaging
-  -> first-generation + supplied-C/S/V extraction
-  -> independent human validation (~30% PA/PN-stratified sample)
-  -> confirmed eligible, resolved-case gate and versioned conversation-side freeze
-  -> reproducible PA/PN-stratified discovery / held-out split (~70/30)
-  -> H_i(tFG) historical information indexes
-  -> discovery-only evidence-pattern traces
-  -> derive and FREEZE Retrieval Algorithm v1
-  -> frozen retrieval on held-out cases
-  -> Retrieved Evidence Index / Evidence Engineering
-  -> intent reconstruction
-  -> same-current-model original/reconstructed generation
-  -> fix both outputs, reveal integrated implementation, evaluate
+## Required Reading
+
+At minimum, inspect:
+
+-   `README.md`
+-   `docs/architecture.md`
+-   `docs/research_questions.md`
+-   `docs/repository_structure.md`
+-   relevant files under `protocols/`
+-   `decisions/decision_log.md` when present
+
+For pilot screening and extraction, specifically read:
+
+-   `protocols/pilot_case_selection_and_extraction.md`
+
+The `schemas/` directory may be incomplete while data contracts are
+still being designed. Do not assume an empty or placeholder schema is
+authoritative. When persistent objects become stable, prefer
+schema-first changes and keep schemas, producers, consumers,
+documentation, and tests synchronized.
+
+If documentation, protocol, code, and schemas disagree, identify the
+inconsistency before silently choosing an interpretation.
+
+## Core Research Invariants
+
+1.  Preserve temporal admissibility.
+2.  Never use future information during reconstruction.
+3.  Keep reconstruction-safe and sealed evaluation information separate.
+4.  `cases/raw/` contains complete historical case packages and is **not
+    reconstruction-safe input**.
+5.  `safe/reconstruction/` contains only information admissible at the
+    reconstruction point.
+6.  `sealed/evaluation/` contains future/outcome-revealing information.
+7.  Preserve all generated software artifacts, including earlier/revised
+    versions.
+8.  Maintain stable case, conversation, prompt/reconstruction-point,
+    response, artifact, and snippet-family identifiers.
+9.  Record provenance and retrieval paths.
+10. Never guess an unsupported repository snapshot or SHA.
+11. Distinguish historical availability from retrieval success.
+12. Distinguish localization failure, retrieval failure, and
+    evidence-selection failure.
+13. Keep diagnostic search separate from automated retrieval output.
+14. Do not optimize numerical C/S/V scores as a reconstruction
+    objective.
+15. Do not modify research methodology merely to make an implementation
+    work.
+16. Preserve failed and insufficient-evidence cases.
+
+## Temporal Rule
+
+For each conversation `C`, preserve the timestamp/date of the first
+developer prompt:
+
+``` text
+tC = timestamp/date of the first developer prompt in conversation C
 ```
 
-Screen the complete PA/PN candidate corpus. Do not exclude otherwise valid cases because of changed files/lines, prompt count, conversation words, PR size, or commits. These measures can be descriptive. PA/PN defines the source population and later split strata; it is not a retrieval cue or success signal before evaluation. Pending or unverified source facts remain pending, not silently repaired or treated as negative evidence.
-Source linkage and semantic task correspondence are distinct Stage A criteria. Stage A records administrative linkage and performs restricted, identity-bound manual correspondence screening for all candidate/processable cases. Correspondence `yes` may satisfy the criterion, `no` excludes, and `unresolved` remains pending; PA/PN and outcome information cannot influence the judgment. Use `cases/manifests/stage_a_correspondence_review.csv` only as the restricted Stage A human interface. Canonical review records remain `cases/manifests/correspondence_reviews/<case_id>.json`. The conservative review export contains identifiers and source-linkage provenance only; do not add mutable PR text until its temporal policy is resolved. PR API retrieval alone does not establish Git history accessibility; a separate non-substantive commit-object probe may do so, while historical reconstructibility remains `tFG`-relative.
-Stage B readiness is operational metadata, not a competing scientific status. Production Stage B accepts only scientifically eligible cases. A complete package does not establish freeze readiness. Stage A boundary identifiability is preliminary; Stage C authoritatively identifies the first family, artifact, response, target prompt, and `tFG`. The researcher-only case mapping and per-case linkage stay outside the conversation package. Before freeze, PR/repository access is limited to administrative integrity, mapping, accessibility, and processability checks; substantive project evidence enters only after freeze.
-Stage A `conversation_turn_pattern` is descriptive. Do not pass lexical characteristics from complete Stage A conversations to Stage G or use them to precondition retrieval. Stage G derives cues from frozen permitted inputs after the split.
+Stage C determines `tFG`, the boundary immediately before the assistant
+response containing the first generated artifact in the first snippet
+family. Under methodology `dir-tfg-v2`, repository evidence used for the
+primary reconstruction experiment must have been available no later than
+`tFG`. Preserve `tC` independently for provenance, diagnostics, and
+separately versioned sensitivity analysis. Never substitute `tC` for an
+unresolved `tFG`.
 
-## Isolation and temporal rules
+For target prompt `i`, conversational evidence may include only earlier
+observed turns.
 
-Stage C receives only neutral ID, temporal source, complete conversation, and stable turn/artifact provenance. It must not receive PR/repository identity, PA/PN, project history, final diff, or eventual implementation. Extract supplied Context/Specificity/Verification solely from the target developer prompt and permitted earlier turns. Exclude the first artifact-bearing assistant response and all later turns. Freeze the validated conversation account before project-evidence analysis; subsequent repository findings cannot rewrite it without a new record version.
-Stage D assesses only the extraction procedure on an approximately 30% PA/PN-stratified sample. Stage A owns correspondence screening. Track procedure validation, individual extraction validation, extraction completion, and boundary/processability status separately. A frozen v5 record can be unsampled for extraction validation if Stage A eligibility is confirmed, the validated procedure completed successfully, and its boundary and checks are resolved; do not call it individually extraction validated. Unresolved records cannot enter the discovery/held-out split. Keep the restricted PR/case-linkage record separate from the retrieved source archive, lossless normalized conversation, and Stage C model view. All use the same neutral DIR Case ID; PR identity never enters the model view.
+Do not use the target response, later conversation turns, post-cutoff
+repository artifacts, later commits/tests/reviews/CI, final PR diff,
+merge outcome, or eventual integrated implementation during
+reconstruction.
 
-Preserve `tC` (first developer prompt) and `tFG` (immediately before the first generated artifact response in the first snippet family) independently with value, precision, status, and source. Current `primary_repository_cutoff = tFG`; never infer `tFG = tC`, fabricate a time from a date, or guess a repository snapshot. Preserve `available_by_tC` and `available_by_tFG` separately where determinable. Current first-generation methodology is `dir-tfg-v2`.
+## Current Priority
 
-`cases/raw/` is historical audit material and may expose the future; `cases/conversations/` is isolated conversation-only input; `safe/reconstruction/` contains only admitted information; `sealed/evaluation/` holds future/outcome material. Integrated implementation stays sealed until both controlled current-model outputs are fixed. Held-out project evidence must not shape Retrieval Algorithm v1. Historical availability is not successful retrieval, relevance, or additional evidence. Every retained evidence item needs a justified retrieval trace, temporal check, task relevance, novelty beyond frozen conversation, and C/S/V contribution. A no-additional-evidence result is valid. Evidence Engineering follows frozen retrieval and separates semantic reduction from payload reduction.
+The near-term priority is the initial approximately 30-case
+pilot/development corpus.
 
-## Implementation discipline
+Prioritize: 1. reproducible screening; 2. transparent
+eligibility/exclusion reasons; 3. pilot selection support; 4. complete
+raw case extraction; 5. preservation of conversation structure; 6.
+preservation of generated artifacts as first-class objects; 7. stable
+identifiers; 8. temporal repository identifiers; 9. reproducible raw
+case packages; and 10. preparation for safe/sealed partitioning.
 
-Keep the source CSV unchanged. Preserve useful existing retrieval, parsing, caching, configuration, and stable-ID code while versioning changed outputs. Screening may use processability evidence but must not perform full retrieval-method discovery. Historical project indexes use stable references and deferred payload materialization, not indiscriminate copies of trees, diffs, or logs. Do not create speculative schemas or invent methodological thresholds. Keep normal unit tests offline. Check documented producer/consumer contracts and report unresolved methodology rather than coding an unsupported assumption.
+The pilot is a development/validation corpus, not the full study. Pilot
+manageability thresholds are not automatically permanent full-study
+eligibility criteria.
+
+## Raw Case Boundary
+
+Raw cases live under:
+
+``` text
+cases/raw/<case_id>/
+```
+
+Raw extraction should preserve historical information without deciding
+which repository evidence is relevant.
+
+Reconstruction-time stages must consume temporally partitioned safe
+inputs rather than unpartitioned raw cases.
+
+## Pilot Selection
+
+Use C/S/V primarily to obtain variation in the pilot. C/S/V scores are
+selection metadata, not retrieval controls or reconstruction inputs.
+
+Do not select cases based on downstream success, code adoption, merge
+outcome, similarity to final implementation, apparent evidence
+usefulness, or expected support for the hypothesis.
+
+## Generated Artifacts
+
+Generated artifacts are first-class research objects. Preserve each
+artifact independently with source response, order, content,
+type/language where supported, and provenance.
+
+Do not discard earlier versions.
+
+Snippet-family construction occurs later and must remain separate from
+reconstruction-safe input.
+
+## SAFE / SEALED
+
+Temporal partitioning derives:
+
+``` text
+safe/reconstruction/<case_id>/
+sealed/evaluation/<case_id>/
+```
+
+Task-anchor extraction, localization, retrieval, evidence selection,
+Evidence Engineering, and intent reconstruction must not access sealed
+information.
+
+Enforce this boundary programmatically and with leakage tests where
+practical.
+
+## Evidence Pipeline
+
+Keep these stages separable:
+
+``` text
+task anchors
+-> localization
+-> candidate retrieval
+-> evidence selection
+-> Evidence Engineering
+-> intent reconstruction
+-> controlled generation
+-> evaluation
+```
+
+Persist meaningful intermediate outputs so failures can be attributed to
+the correct stage.
+
+Every substantive reconstructed addition must be traceable to admissible
+evidence. Preserve unresolved ambiguity rather than inventing a likely
+requirement.
+
+## Provenance
+
+Where applicable, preserve source dataset version,
+case/conversation/reconstruction-point IDs, repository and
+commit/snapshot, file/span, cutoff, retrieval path, pipeline/code
+version, configuration, model/version, timestamps, checksums, and run
+IDs.
+
+## Implementation Style
+
+Prefer: - small testable functions; - explicit data models; - type
+hints; - deterministic behavior; - clear stage boundaries; - structured
+logging; - informative errors; - configuration over duplicated
+hard-coded research constants; and - reusable library code with thin
+orchestration layers.
+
+Avoid: - hard-coded local paths; - silent exception swallowing; -
+undocumented manual corrections; - outcome-dependent logic; -
+leakage-prone shortcuts; and - broad unrelated refactors.
+
+## Methodological Ambiguity
+
+If an implementation choice could alter the research methodology:
+
+1.  identify the ambiguity;
+2.  explain plausible alternatives;
+3.  state the methodological consequence of each;
+4.  distinguish recommendations from documented protocol; and
+5.  wait for a research decision before implementing a
+    methodology-changing assumption.
+
+Routine engineering choices that do not affect research validity do not
+require escalation.
+
+## Testing
+
+Add appropriate unit, integration, and leakage tests.
+
+For temporal code, test boundary cases.
+
+For safe/sealed processing, test that sealed information cannot enter
+reconstruction inputs.
+
+Do not claim successful validation unless the relevant tests were
+actually run.
+
+## Research Decisions
+
+Methodologically important changes should be documented in
+`decisions/decision_log.md` and, where appropriate, an ADR.
+
+Do not silently encode major methodological decisions only in source
+code.
+
+## Guiding Principle
+
+When convenience conflicts with methodological validity, preserve
+methodological validity.
+
+> At reconstruction time, use only information defined as admissible at
+> that reconstruction point, and keep every substantive addition to
+> reconstructed intent traceable to its source.

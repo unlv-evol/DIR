@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT / "src"))
 from developer_intent.stage_a_contracts import (  # noqa: E402
     validate_correspondence_review, validate_stage_a_outputs)
 from developer_intent.screening import read_source  # noqa: E402
+from developer_intent.source_corrections import apply_source_corrections  # noqa: E402
 
 
 def main() -> None:
@@ -23,12 +24,15 @@ def main() -> None:
     parser.add_argument("--reviews-dir", type=Path)
     parser.add_argument("--source", type=Path,
                         default=ROOT / "data/raw/final_analysis_dataset_from_patchprompt_study.csv")
+    parser.add_argument("--source-correction-dir", type=Path,
+                        default=ROOT / "cases/manifests/source_linkage_corrections")
     args = parser.parse_args()
     screened, eligible, mapping = validate_stage_a_outputs(
         args.screened, args.eligible, args.mapping)
     reviews = 0
     if args.reviews_dir is not None:
-        source_by_case = {row["Case ID"].strip(): row for row in read_source(args.source)}
+        source_rows = apply_source_corrections(read_source(args.source), args.source_correction_dir)
+        source_by_case = {row["Case ID"].strip(): row for row in source_rows}
         for path in sorted(args.reviews_dir.glob("*.json")):
             review = json.loads(path.read_text(encoding="utf-8"))
             source_case_id = next((row["source_case_id"] for row in screened

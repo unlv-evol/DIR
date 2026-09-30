@@ -58,9 +58,13 @@ developer-intent-reconstruction/
 
 Stable `case_id`, conversation, turn, response, and artifact identifiers do not change with study role.
 
-Stage A writes versioned `screened_PA_PN_cases.csv`, `eligible_PA_PN_cases.csv`, and `stage_a_summary.md` after authorized execution. The screened manifest has scientific eligibility plus operational Stage B readiness metadata. The eligible manifest contains confirmed eligible records; pending cases remain outside production Stage B. Future `discovery_cases.csv` and `heldout_cases.csv` represent the post-freeze stratified split, with no duplicate case directories.
+Stage A writes versioned `screened_PA_PN_cases.csv`, `eligible_PA_PN_cases.csv`, and `stage_a_summary.md` after authorized execution. The screened manifest has scientific eligibility plus separate operational Stage B readiness metadata. The eligible manifest contains confirmed eligible records. A pending case may enter Stage B packaging only when its explicit readiness passes and its sole unresolved reasons are the Stage C/`tFG` deferred conditions; it remains absent from the eligible manifest. Future `discovery_cases.csv` and `heldout_cases.csv` represent the post-freeze resolved corpus split, with no duplicate case directories.
 
 `cases/manifests/stage_a_correspondence_review.csv` is the restricted, temporary human interface between Stage A automated and manual activities. Completed rows import into canonical `cases/manifests/correspondence_reviews/<case_id>.json`; the CSV does not replace those schema-validated records.
+
+`cases/manifests/correspondence_evidence/<case_id>.json` contains the checksum-bound, minimal evidence packet supporting a Stage A semantic correspondence judgment. These restricted administrative packets are not conversation packages, SAFE inputs, or downstream reconstruction evidence.
+
+`cases/manifests/source_linkage_corrections/<case_id>.json` stores verified, versioned overlays for demonstrated errors in inherited conversation linkage. The inherited source CSV remains unchanged, and prior review/evidence versions remain in restricted history locations.
 
 The Stage A run also derives restricted `cases/manifests/case_mapping.csv` deterministically from the PatchPrompt source index and screened rows. It maps neutral Case ID to PR identifier and PA/PN, with complementary source/conversation identifiers. It is a researcher-only deliverable outside the Stage B conversation package; the richer `linkage/*.json` records remain separate. Stage C never receives either mapping.
 

@@ -390,6 +390,7 @@
         "commit_object_retrieved",
         "repository_inaccessible",
         "fetch_failed",
+        "fetch_timeout",
         "object_verification_failed",
         "probe_error"
       ]
@@ -411,7 +412,7 @@
       ]
     },
     "stage_b_readiness_status": {
-      "description": "Operational Stage B status; ready only when Stage A scientific eligibility is confirmed.",
+      "description": "Operational packaging status. Ready includes scientifically eligible cases and pending cases whose only unresolved conditions are explicitly deferred to Stage C/tFG.",
       "x-stage-owner": "Stage A",
       "type": "string",
       "enum": [
@@ -420,7 +421,7 @@
       ]
     },
     "stage_b_readiness_reason": {
-      "description": "Reason tying operational Stage B status to the Stage A scientific result.",
+      "description": "Deterministic reason for readiness or the explicit pre-Stage-B blockers.",
       "x-stage-owner": "Stage A",
       "type": "string"
     },

@@ -149,9 +149,13 @@ class ScreeningTests(unittest.TestCase):
                     self.assertIn(reason, row["pending_reason"])
 
     def test_unreviewed_processability_is_pending_not_excluded(self):
-        row = self.run_with_evidence(facts=evidence(reviewed=False))
+        facts = evidence()
+        facts.pop("processability")
+        row = self.run_with_evidence(facts=facts)
         self.assertEqual(row["eligibility_status"], "pending_resolution")
-        self.assertEqual(row["stage_b_readiness_status"], "blocked")
+        self.assertEqual(row["stage_b_readiness_status"], "ready_for_stage_b")
+        self.assertEqual(row["stage_b_readiness_reason"],
+                         "pending_only_stage_c_tfg_deferred")
         self.assertEqual(row["eligible"], "")
         self.assertIn("first_generation_boundary_identifiable_unresolved", row["pending_reason"])
         self.assertIn("historical_state_reconstructible_unresolved", row["pending_reason"])
@@ -186,6 +190,12 @@ class ScreeningTests(unittest.TestCase):
         facts["processability"]["first_generation_boundary_identifiable"] = "no"
         row = self.run_with_evidence(facts=facts)
         self.assertIn("first_generation_boundary_identifiable_failed", row["exclusion_reason"])
+        self.assertEqual(row["stage_b_readiness_status"], "blocked")
+        facts = evidence()
+        facts["processability"]["historical_state_reconstructible"] = "no"
+        row = self.run_with_evidence(facts=facts)
+        self.assertIn("historical_state_reconstructible_failed", row["exclusion_reason"])
+        self.assertEqual(row["stage_b_readiness_status"], "blocked")
 
     def test_positive_review_does_not_replace_incomplete_conversation(self):
         facts = evidence()
@@ -195,18 +205,20 @@ class ScreeningTests(unittest.TestCase):
         self.assertEqual(row["eligibility_status"], "pending_resolution")
         self.assertNotEqual(row["eligible"], "true")
 
-    def test_pending_tfg_and_historical_state_remain_outside_production_stage_b(self):
+    def test_pending_tfg_and_historical_state_may_enter_stage_b(self):
         facts = evidence()
         facts["processability"]["first_generation_boundary_identifiable"] = "unresolved"
         facts["processability"]["historical_state_reconstructible"] = "unresolved"
         row = self.run_with_evidence(facts=facts)
         self.assertEqual(row["eligibility_status"], "pending_resolution")
-        self.assertEqual(row["stage_b_readiness_status"], "blocked")
+        self.assertEqual(row["stage_b_readiness_status"], "ready_for_stage_b")
+        self.assertEqual(row["first_generation_boundary_identifiable"], "unresolved")
+        self.assertEqual(row["historical_state_reconstructible"], "unresolved")
         self.assertEqual(row["temporal_precision"], "date")
         self.assertNotIn("first_generation_cutoff", row)
         summary = screening_summary([source()], [row])
         self.assertIn("Pending resolution: 1", summary)
-        self.assertIn("Ready for Stage B: 0", summary)
+        self.assertIn("Ready for Stage B: 1", summary)
 
     def test_date_precision_and_distinct_new_output_version(self):
         row = self.run_with_evidence()

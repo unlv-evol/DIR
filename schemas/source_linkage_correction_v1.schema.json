@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "source_linkage_correction_v1.schema.json",
+  "x-schema-version": "dir-source-linkage-correction-v1",
+  "title": "DIR verified source-linkage correction",
+  "description": "Versioned overlay that corrects source-index linkage without modifying the inherited source dataset or changing the stable case ID.",
+  "type": "object",
+  "required": [
+    "schema_version", "case_id", "source_case_id", "pr_url",
+    "original_conversation_id", "original_conversation_url",
+    "corrected_conversation_id", "corrected_conversation_url", "reason",
+    "status", "reviewer", "timestamp", "version", "evidence_ref"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "dir-source-linkage-correction-v1"},
+    "case_id": {"type": "string", "pattern": "^CASE_[0-9A-F]{12}$"},
+    "source_case_id": {"type": "string", "minLength": 1},
+    "pr_url": {"type": "string", "minLength": 1},
+    "original_conversation_id": {"type": "string", "minLength": 1},
+    "original_conversation_url": {"type": "string", "minLength": 1},
+    "corrected_conversation_id": {"type": "string", "minLength": 1},
+    "corrected_conversation_url": {"type": "string", "minLength": 1},
+    "reason": {"type": "string", "minLength": 1},
+    "status": {"const": "verified"},
+    "reviewer": {"type": "string", "minLength": 1},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "version": {"type": "string", "minLength": 1},
+    "evidence_ref": {"type": "string", "minLength": 1}
+  }
+}

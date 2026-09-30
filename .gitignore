@@ -230,6 +230,12 @@ cases/manifests/case_mapping.csv
 data/intermediate/screening/smoke_*_case_mapping.csv
 cases/manifests/linkage/*.json
 cases/manifests/correspondence_reviews/*.json
+cases/manifests/correspondence_reviews/*.csv
+cases/manifests/correspondence_reviews/history/
+cases/manifests/correspondence_evidence/*.json
+cases/manifests/correspondence_evidence/revisions/
+cases/manifests/stage_a_correspondence_review_ready.csv
+cases/manifests/source_linkage_corrections/*.json
 cases/manifests/stage_a_correspondence_review.csv
 cases/raw/*/conversation_source_archive.json
 cases/conversations/*/normalized_conversation.json

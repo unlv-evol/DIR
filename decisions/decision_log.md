@@ -2,12 +2,18 @@
 
 Record important research and engineering decisions.
 
+- **2026-09-29 — Restore independent Stage B readiness under primary `tFG`.**
+  - **Decision:** Preserve `tC` and `tFG` independently under unchanged methodology `dir-tfg-v2`; `tFG` remains the primary repository cutoff and historical information is `H_i(tFG)`. Keep `dir-screening-v9`, but restore the DIR-009 distinction between scientific disposition and operational packaging readiness. A pending case may be `ready_for_stage_b` only when established linkage, correspondence `yes`, complete conversation, temporal anchor, uniqueness, Git history access, and integrity pass, and its only pending reasons are preliminary first-generation boundary identifiability and `tFG`-dependent historical-state reconstructibility. Stage B validates this allowlist and preserves pending status. Correspondence unresolved/no, arbitrary pending reasons, exclusions, and other prepackaging failures block Stage B.
+  - **Rationale:** Stage C requires a Stage B conversation package to identify the first-generation boundary and `tFG`; requiring those dependent judgments before packaging created a circular dependency.
+  - **Impact:** No schema or methodology version changes. The strict resolved-case gate remains immediately before Stage E freeze and downstream split: eligibility, extraction, authoritative boundary, deferred processability, procedure validation, and applicable case checks must be resolved there. `AGENTS.md` now agrees with the current primary-`tFG` policy while retaining `tC` for provenance and separately versioned sensitivity analysis.
+  - **Owner:** Study team. **Status:** Adopted.
+
 - **2026-09-22 — Add a restricted Stage A correspondence CSV interface.**
   - **Decision:** Export applicable unresolved cases to `cases/manifests/stage_a_correspondence_review.csv`, allow manual editing of the controlled judgment and six provenance fields, and import completed rows into canonical `dir-correspondence-review-v1` JSON. Use the conservative `identifiers_and_source_linkage_only` evidence policy until temporal PR title/body rules are resolved. Blank judgments remain unresolved. This is an operational interface inside the single Stage A and does not change `dir-screening-v9` or `dir-tfg-v2`.
   - **Rationale:** A deterministic CSV supports practical review while canonical identity-bound JSON preserves validation, auditability, and pipeline consumption.
 
 - **2026-09-22 — Restore semantic correspondence to Stage A.**
-  - **Decision:** Reverse the temporary assignment of semantic PR-conversation correspondence to Stage D. One Stage A now contains automated/administrative screening and restricted manual correspondence screening for 100% of candidate/processable cases reaching that activity. Correspondence `yes` may satisfy the criterion, `no` excludes, and `unresolved` remains pending. Production Stage B accepts only scientifically eligible cases. Stage D returns to approximately 30% PA/PN-stratified validation of Stage C conversation extraction. Use `dir-screening-v9` with unchanged `dir-tfg-v2`; retain `dir-correspondence-review-v1` under `cases/manifests/correspondence_reviews/`.
+  - **Decision:** Reverse the temporary assignment of semantic PR-conversation correspondence to Stage D. One Stage A now contains automated/administrative screening and restricted manual correspondence screening for 100% of candidate/processable cases reaching that activity. Correspondence `yes` may satisfy the criterion, `no` excludes, and `unresolved` remains pending. Stage D returns to approximately 30% PA/PN-stratified validation of Stage C conversation extraction. Use `dir-screening-v9` with unchanged `dir-tfg-v2`; retain `dir-correspondence-review-v1` under `cases/manifests/correspondence_reviews/`. The former statement that production Stage B accepts only scientifically eligible cases is superseded by the 2026-09-29 progression correction below; unresolved correspondence still blocks Stage B.
   - **Rationale:** PR-conversation correspondence is a corpus/case-validity criterion, whereas Stage D validates the extraction procedure. Source linkage remains distinct from semantic correspondence.
 
 - **2026-09-22 — Stage D owns semantic PR/conversation correspondence (superseded by the decision above).**
@@ -203,3 +209,32 @@ Suggested fields:
 - **Decision:** Version the Stage A CSV contract as `dir-screening-v7` while keeping methodology `dir-tfg-v2`. Retain only `conversation_turn_pattern` as descriptive metadata from the former pilot secondary-characteristics fields. Retire the complete-conversation lexical signals, cue lists, unassessed placeholders, and lexical-producer provenance from current Stage A outputs.
 - **Rationale/evidence:** Revised Word Protocol v5 §§2–3 and 8.1 assign Stage A to screening, first-generation identification to Stage C, and retrieval-cue derivation to Stage G from frozen permitted inputs. Full-conversation lexical screening could include turns after the target prompt.
 - **Impact:** Historical v6 outputs remain historical. Stage A eligibility and Stage B readiness rules are unchanged; no v6 lexical field is migrated into Stage G.
+
+## 2026-09-29 — Restricted Stage A correspondence evidence packets
+
+- **Decision:** Record semantic PR/conversation review support in checksum-bound `dir-correspondence-evidence-v1` packets using policy `direct_share_reference_and_restricted_task_context_v1`. Packets contain only identity-bound share references, minimal developer-authored task context, archive provenance where available, and reviewer observation. Preserve `archive_exact_pair`, `archive_conflicting_reference`, and `reviewer_attestation_only` as distinct support states.
+- **Rationale/evidence:** Completed manual rationales relied on direct PR share references and task context, which was broader than the earlier `identifiers_and_source_linkage_only` label. The record must describe the evidence actually reviewed without importing raw mixed PatchTrack records into later stages.
+- **Impact:** Prepared review CSV rows reference packet paths and SHA-256 checksums. Import fails on missing, changed, or identity-mismatched packets. Packets exclude PA/PN, outcomes, final diffs, integrated implementations, and assistant-generated solutions. They are Stage A administrative material only and cannot enter Stage B/C, Stage G, SAFE inputs, or reconstruction evidence without a separate temporal and admissibility determination.
+- **Owner:** Study team. **Status:** Adopted for the completed Stage A correspondence review.
+
+## 2026-09-29 — Versioned correction of a demonstrated conversation-link error
+
+- **Decision:** Correct the inherited conversation linkage for `CASE_B0A21EE800C0` through a verified `dir-source-linkage-correction-v1` overlay while preserving the PatchPrompt CSV, stable case ID, original `review-v1 = no`, and original evidence packet. The corrected conversation is `8cb16814-2855-4fbd-87e5-bde8ba349728`; reacquire it from the preserved PatchTrack archive and issue an identity-bound `review-v2`.
+- **Rationale/evidence:** The PR comment directly references the corrected share, while the inherited candidate points to a different share. The study team independently verified the corrected URL and authorized the correction.
+- **Impact:** Current Stage A and Stage B source resolution apply verified overlays. Correction history remains auditable; no inherited source data is overwritten, and the correction does not itself satisfy unrelated eligibility criteria.
+- **Owner:** Study team. **Status:** Adopted.
+
+## 2026-09-29 — Version Stage B authorization traceability
+
+- **Decision:** Version the restricted Stage B linkage as `case-linkage-v2`.
+  Preserve the Stage A canonical PR URL, reference the exact authorizing Stage A
+  manifest row and canonical correspondence-review JSON, and snapshot only
+  `source_linkage_status = established` and `pr_conversation_match = yes`.
+  Keep review rationale and evidence owned by Stage A and outside Stage C input.
+- **Rationale/evidence:** The one-case Stage B smoke showed that v1 dropped the
+  canonical PR URL and did not make the already-enforced Stage A authorization
+  traceable from the package's restricted linkage record.
+- **Impact:** This is a restricted provenance-contract change only. It does not
+  change eligibility, readiness, correspondence judgments, temporal policy, or
+  the conversation-only Stage C view.
+- **Owner:** Study team. **Status:** Adopted as an engineering correction.

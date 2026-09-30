@@ -63,6 +63,7 @@ class ConversationPackageTests(unittest.TestCase):
                "conversation_url": "https://chatgpt.com/share/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
                "Outcome_Class": "PA", "case_integrity_status": "ok"}
         linkage = build_case_linkage_record(row)
+        self.assertEqual(linkage["linkage_version"], "case-linkage-v2")
         archive, normalized, view = prepare_conversation_layers(
             "CASE_X", conversation_payload(), source_url=row["conversation_url"],
             retrieval_status="retrieved_public", retrieved_at="2024-01-03T00:00:00+00:00",

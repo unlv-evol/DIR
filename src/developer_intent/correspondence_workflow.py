@@ -11,7 +11,8 @@ from .stage_a_contracts import validate_correspondence_review
 
 REVIEW_CSV_VERSION = "dir-correspondence-review-csv-v1"
 DEFAULT_EVIDENCE_POLICY = "identifiers_and_source_linkage_only"
-ALLOWED_EVIDENCE_POLICIES = {DEFAULT_EVIDENCE_POLICY}
+RESTRICTED_TASK_POLICY = "direct_share_reference_and_restricted_task_context_v1"
+ALLOWED_EVIDENCE_POLICIES = {DEFAULT_EVIDENCE_POLICY, RESTRICTED_TASK_POLICY}
 
 REVIEW_CSV_FIELDS = (
     "review_csv_version", "case_id", "pr_url",
@@ -93,7 +94,7 @@ def _read_review_csv(path: Path) -> list[dict]:
 
 
 def import_review_csv(path: Path, screened_rows: list[dict], source_rows: list[dict],
-                      review_dir: Path) -> dict[str, int]:
+                      review_dir: Path, repository_root: Path | None = None) -> dict[str, int]:
     """Validate completed cells and materialize canonical v1 JSON records."""
     screened = {row["case_id"]: row for row in screened_rows}
     sources = {row["Case ID"].strip(): row for row in source_rows}
@@ -115,12 +116,18 @@ def import_review_csv(path: Path, screened_rows: list[dict], source_rows: list[d
                 or row["source_linkage_source"] != case["source_linkage_source"]
                 or row["automated_screening_status"] != "processable_for_correspondence_review"
                 or row["automated_screening_reasons"] != expected_reasons
-                or row["permitted_evidence_policy"] not in ALLOWED_EVIDENCE_POLICIES
-                or row["permitted_evidence_ref"] !=
-                    f"stage-a-restricted-packet:{row['case_id']}"):
+                or row["permitted_evidence_policy"] not in ALLOWED_EVIDENCE_POLICIES):
             raise ValueError(f"Correspondence CSV identity/provenance mismatch: {row['case_id']}")
-        if case.get("source_linkage_status") != "established" or case.get("exclusion_reason"):
-            raise ValueError(f"Case is not applicable for manual correspondence review: {row['case_id']}")
+        if row["permitted_evidence_policy"] == DEFAULT_EVIDENCE_POLICY:
+            if row["permitted_evidence_ref"] != f"stage-a-restricted-packet:{row['case_id']}":
+                raise ValueError(f"Correspondence CSV identity/provenance mismatch: {row['case_id']}")
+        else:
+            if repository_root is None:
+                raise ValueError("Repository root is required for restricted evidence validation")
+            if row["pr_conversation_match_evidence_ref"] != row["permitted_evidence_ref"]:
+                raise ValueError(f"Correspondence evidence references differ: {row['case_id']}")
+            from .correspondence_evidence import validate_packet_reference
+            validate_packet_reference(row["permitted_evidence_ref"], repository_root, row)
         judgment = row["pr_conversation_match"].strip()
         if not judgment:
             skipped += 1
@@ -149,6 +156,11 @@ def import_review_csv(path: Path, screened_rows: list[dict], source_rows: list[d
         validate_correspondence_review(review, source)
         output = review_dir / f"{row['case_id']}.json"
         content = json.dumps(review, indent=2, sort_keys=True) + "\n"
+        applicable = (case.get("source_linkage_status") == "established"
+                      and not case.get("exclusion_reason"))
+        if not applicable and not (output.exists()
+                                   and output.read_text(encoding="utf-8") == content):
+            raise ValueError(f"Case is not applicable for manual correspondence review: {row['case_id']}")
         planned.append((output, content))
     for output, content in planned:
         if output.exists() and output.read_text(encoding="utf-8") != content:

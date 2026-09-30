@@ -50,7 +50,8 @@ def correspondence(facts: dict, source: dict, case_id: str) -> dict:
             "reason": review["rationale"]}
 
 
-def history_access(pr: dict | None, pr_url: str, *, run=subprocess.run) -> dict:
+def history_access(pr: dict | None, pr_url: str, *, run=subprocess.run,
+                   fetch_timeout: int = 900) -> dict:
     """Fetch one known commit into a temporary bare Git store; read no tree or diff."""
     result = {"judgment": "unresolved", "mechanism": "git_fetch_commit_object",
               "repository": "", "object": "", "status": "not_attempted",
@@ -73,7 +74,7 @@ def history_access(pr: dict | None, pr_url: str, *, run=subprocess.run) -> dict:
                 capture_output=True, timeout=30)
             fetched = run(["git", "-C", directory, "-c", "credential.helper=",
                            "fetch", "--no-tags", "--depth=1", remote, sha],
-                          check=False, capture_output=True, timeout=90)
+                          check=False, capture_output=True, timeout=fetch_timeout)
             if fetched.returncode:
                 error = fetched.stderr.decode("utf-8", errors="replace").lower()
                 if ("repository not found" in error or "not a git repository" in error
@@ -89,7 +90,9 @@ def history_access(pr: dict | None, pr_url: str, *, run=subprocess.run) -> dict:
                 result.update(judgment="yes", status="commit_object_retrieved", reason="")
             else:
                 result.update(status="object_verification_failed", reason="fetched_object_not_verified_as_commit")
-    except (OSError, subprocess.TimeoutExpired, subprocess.CalledProcessError):
+    except subprocess.TimeoutExpired:
+        result.update(status="fetch_timeout", reason="commit_fetch_timed_out")
+    except (OSError, subprocess.CalledProcessError):
         result.update(status="probe_error", reason="git_probe_inconclusive")
     return result
 

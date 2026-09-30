@@ -56,24 +56,61 @@ class StageBTests(unittest.TestCase):
     def linkage(self):
         return select_linkage([source_row()], case_id("PA-1"))
 
-    def test_production_stage_b_rejects_pending_scientific_status(self):
-        screened = {"screening_schema_version": SCREENING_SCHEMA_VERSION,
-                    "methodology_version": "dir-tfg-v2",
-                    "case_id": case_id("PA-1"), "source_case_id": "PA-1",
-                    "Outcome_Class": "PA", "pr_url": PR, "conversation_url": SHARE,
-                    "eligibility_status": "pending_resolution",
-                    "stage_b_readiness_status": "ready_for_stage_b"}
-        with self.assertRaisesRegex(ValueError, "not scientifically eligible"):
-            select_linkage([source_row()], case_id("PA-1"), [screened])
-        eligible = {**screened, "eligibility_status": "eligible",
-                    "stage_b_readiness_status": "ready_for_stage_b"}
+    def screened(self, **changes):
+        row = {"screening_schema_version": SCREENING_SCHEMA_VERSION,
+               "methodology_version": "dir-tfg-v2",
+               "case_id": case_id("PA-1"), "source_case_id": "PA-1",
+               "Outcome_Class": "PA", "pr_url": PR, "conversation_url": SHARE,
+               "canonical_pr_url": PR,
+               "eligibility_status": "pending_resolution", "exclusion_reason": "",
+               "pending_reason": ("first_generation_boundary_identifiable_unresolved;"
+                                  "historical_state_reconstructible_unresolved"),
+               "source_linkage_status": "established", "pr_conversation_match": "yes",
+               "conversation_available": "yes", "temporal_anchor_available": "yes",
+               "duplicate_status": "unique", "project_history_accessible": "yes",
+               "case_integrity_status": "ok",
+               "first_generation_boundary_identifiable": "unresolved",
+               "historical_state_reconstructible": "unresolved",
+               "stage_b_readiness_status": "ready_for_stage_b",
+               "stage_b_readiness_reason": "pending_only_stage_c_tfg_deferred"}
+        row.update(changes)
+        return row
+
+    def test_production_stage_b_accepts_only_explicitly_ready_pending_status(self):
+        pending = self.screened()
+        linkage = select_linkage([source_row()], case_id("PA-1"), [pending])
+        self.assertEqual(linkage["linkage_version"], "case-linkage-v2")
+        self.assertEqual(linkage["stage_a_eligibility_status"], "pending_resolution")
+        self.assertEqual(linkage["stage_b_readiness_status"], "ready_for_stage_b")
+        self.assertEqual(linkage["canonical_pr_url"], PR)
+        self.assertEqual(linkage["source_linkage_status"], "established")
+        self.assertEqual(linkage["pr_conversation_match"], "yes")
+        self.assertEqual(
+            linkage["stage_a_screening_record_ref"],
+            f"cases/manifests/screened_PA_PN_cases.csv#case_id={case_id('PA-1')}")
+        self.assertEqual(
+            linkage["correspondence_review_ref"],
+            f"cases/manifests/correspondence_reviews/{case_id('PA-1')}.json")
+        eligible = self.screened(eligibility_status="eligible", pending_reason="",
+                                 first_generation_boundary_identifiable="yes",
+                                 historical_state_reconstructible="yes",
+                                 stage_b_readiness_reason="scientifically_eligible")
         linkage = select_linkage([source_row()], case_id("PA-1"), [eligible])
         self.assertEqual(linkage["stage_a_eligibility_status"], "eligible")
-        self.assertNotIn("pr_conversation_match", linkage)
-        with self.assertRaisesRegex(ValueError, "not scientifically eligible"):
+        arbitrary = self.screened(pending_reason="project_history_accessible_unresolved",
+                                  project_history_accessible="unresolved")
+        with self.assertRaisesRegex(ValueError, "inconsistent"):
+            select_linkage([source_row()], case_id("PA-1"), [arbitrary])
+        unresolved_correspondence = self.screened(
+            pending_reason="pr_conversation_match_unresolved",
+            pr_conversation_match="unresolved")
+        with self.assertRaisesRegex(ValueError, "inconsistent"):
             select_linkage([source_row()], case_id("PA-1"),
-                           [{**screened, "stage_b_readiness_status": "blocked",
-                             "eligibility_status": "excluded"}])
+                           [unresolved_correspondence])
+        excluded_ready = self.screened(eligibility_status="excluded",
+                                       exclusion_reason="duplicate_case")
+        with self.assertRaisesRegex(ValueError, "inconsistent"):
+            select_linkage([source_row()], case_id("PA-1"), [excluded_ready])
 
     def test_explicit_case_selection_and_fresh_persistence(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -108,6 +145,12 @@ class StageBTests(unittest.TestCase):
             self.assertEqual(normalized["visible_turns"][-1]["text"], "later turn")
             self.assertEqual(normalized["artifact_candidates"][0]["source_record_index"], 3)
             self.assertEqual(model["case_id"], linkage["case_id"])
+            self.assertEqual(model["start"], "2024-01-01")
+            self.assertEqual(model["precision"], "date")
+            self.assertFalse(any("tfg" in key.lower() or "first_generation" in key.lower()
+                                 for key in model))
+            self.assertEqual(prepared["status"]["stage_a_eligibility_status"],
+                             linkage["stage_a_eligibility_status"])
             self.assertNotIn(PR, paths["model_view"].read_text())
             self.assertNotIn("owner/repo", paths["model_view"].read_text())
             self.assertNotIn('"Outcome_Class"', paths["model_view"].read_text())

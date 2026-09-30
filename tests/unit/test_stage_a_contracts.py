@@ -93,6 +93,23 @@ class StageAContractTests(unittest.TestCase):
         self.assertEqual(parsed[0]["eligibility_status"], "pending_resolution")
         self.assertIsNone(parsed[0]["conversation_start"])
 
+    def test_pending_with_only_deferred_reasons_is_ready_and_valid(self):
+        baseline = raw_row()
+        deferred = {
+            **baseline,
+            "first_generation_boundary_identifiable": "unresolved",
+            "historical_state_reconstructible": "unresolved",
+            "eligible": "",
+            "eligibility_status": "pending_resolution",
+            "pending_reason": ("first_generation_boundary_identifiable_unresolved;"
+                               "historical_state_reconstructible_unresolved"),
+            "stage_b_readiness_status": "ready_for_stage_b",
+            "stage_b_readiness_reason": "pending_only_stage_c_tfg_deferred",
+        }
+        parsed = parse_screening_row(deferred)
+        self.assertIsNone(parsed["eligible"])
+        self.assertEqual(parsed["historical_state_reconstructible"], "unresolved")
+
     def test_scientific_status_reason_and_probe_invariants(self):
         baseline = raw_row()
         for changes in (

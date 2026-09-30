@@ -8,6 +8,12 @@ Within Stage A, record source-linkage provenance separately from manual semantic
 
 The deterministic `stage_a_correspondence_review.csv` is a restricted interchange artifact. Preserve its `dir-correspondence-review-csv-v1` version, evidence policy/reference, and manual provenance during import. Canonical per-case JSON remains authoritative; identical re-import is idempotent and conflicting records fail closed.
 
+For semantic reviews, preserve the checksum-bound `dir-correspondence-evidence-v1` packet referenced by both CSV evidence-reference fields. Retain its support status rather than treating reviewer attestation as archived proof. These packets are Stage A administrative records and cannot be reused as reconstruction evidence or retrieval input.
+
 Validate Stage A CSVs by checking exact headers, explicitly parsing blank/boolean/integer/temporal cells into logical records, then applying the versioned contracts and cross-field checks in `schemas/` and `src/developer_intent/stage_a_contracts.py`. `pipeline/screening/validate_contracts.py` validates existing outputs without retrieval. A blank eligible field for `pending_resolution` remains null, not false; an explicit `unresolved` judgment remains unresolved.
 
 Retain restricted PR/conversation review records with reviewer, method, time, version, rationale, and evidence reference. Retain Git history access mechanism, tested repository/commit, result, and failure reason separately from PR API retrieval and later historical-state reconstruction.
+
+Reproduce Stage B readiness from explicit Stage A prerequisites rather than scientific status alone. A ready pending row must contain only the two versioned deferred reasons for preliminary boundary identifiability and `tFG`-dependent historical-state reconstructibility. Preserve that pending disposition through Stage B. The strict resolved-case gate is applied immediately before Stage E freeze and downstream assignment.
+
+The restricted `case-linkage-v2` record identifies the exact Stage A manifest row that authorized packaging, snapshots established source linkage and positive correspondence, and references the canonical correspondence-review JSON. Treat those references as the authoritative provenance; do not pass the linkage or review material to Stage C. Stage B HTTP acquisition reuses a complete body-and-metadata cache entry unless `--refresh` is supplied. `--live` permits acquisition when cache data is absent; it does not force a network refresh.
