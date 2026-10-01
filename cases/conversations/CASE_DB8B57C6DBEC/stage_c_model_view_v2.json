@@ -1,0 +1,195 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_DB8B57C6DBEC",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000003_000404_000654_85498ffc5f534334",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence"
+      ],
+      "end_offset": 654,
+      "fence_language": "yaml",
+      "kind": "unclassified_technical",
+      "legacy_artifact_id": "ARTIFACT_000003_001",
+      "order_within_response": 1,
+      "raw_text": "version: '3.8'\nservices:\n  keycloak:\n    image: jboss/keycloak:11.0.0\n    ports:\n      - 8080:8080\n    healthcheck:\n      test: [\"CMD\", \"curl\", \"-f\", \"http://localhost:8080/auth/realms/master\"]\n      interval: 30s\n      timeout: 10s\n      retries: 5\n",
+      "raw_text_sha256": "85498ffc5f534334d70441f6261a4700a4eb8d903aab0a02a74d8038e9bbec5d",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "dddd1f24ba2c75903d8e35cab8cfb3d02bda51209055dd3e86eec760ef2fcf90",
+      "start_offset": 404,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000005_000230_000504_462b3a72e6c12071",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence"
+      ],
+      "end_offset": 504,
+      "fence_language": "yaml",
+      "kind": "unclassified_technical",
+      "legacy_artifact_id": "ARTIFACT_000005_001",
+      "order_within_response": 1,
+      "raw_text": "version: '3.8'\nservices:\n  keycloak:\n    image: jboss/keycloak:11.0.0\n    ports:\n      - 8080:8080\n    healthcheck:\n      test: [\"CMD-SHELL\", \"wget --quiet --tries=1 --spider http://localhost:8080/auth/realms/master\"]\n      interval: 30s\n      timeout: 10s\n      retries: 5\n",
+      "raw_text_sha256": "462b3a72e6c12071f660cb32d740de47e559940cd541d314bcb0e80d86caa01b",
+      "source_event_index": 5,
+      "source_record_index": 5,
+      "source_response_id": "turn_000005",
+      "source_turn_text_sha256": "c9e9ef92dfaa03a42a459cd101f5b6f08101e8335c090a12b431777401b6a9e6",
+      "start_offset": 230,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000005_000952_001184_bddb9eabee94977f",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence"
+      ],
+      "end_offset": 1184,
+      "fence_language": "yaml",
+      "kind": "unclassified_technical",
+      "legacy_artifact_id": "ARTIFACT_000005_002",
+      "order_within_response": 2,
+      "raw_text": "version: '3.8'\nservices:\n  keycloak:\n    image: jboss/keycloak:11.0.0\n    ports:\n      - 8080:8080\n    healthcheck:\n      test: [\"CMD\", \"nc\", \"-z\", \"-w2\", \"localhost\", \"8080\"]\n      interval: 30s\n      timeout: 10s\n      retries: 5\n",
+      "raw_text_sha256": "bddb9eabee94977f6f0068ae097bb32933da0647cc5d735e0b09a8a151d4a970",
+      "source_event_index": 5,
+      "source_record_index": 5,
+      "source_response_id": "turn_000005",
+      "source_turn_text_sha256": "c9e9ef92dfaa03a42a459cd101f5b6f08101e8335c090a12b431777401b6a9e6",
+      "start_offset": 952,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "How can I implement a health check in Docker Compose for Keycloak 21?"
+          ]
+        },
+        "create_time": 1686012141.402883
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To implement a health check for Keycloak 21 in Docker Compose, you can use the `healthcheck` configuration option available in Docker Compose version 2.1 or higher. The `healthcheck` option allows you to define a command or script that Docker will periodically run to check the health of a container.\n\nHere's an example of how you can implement a health check for Keycloak 21 in Docker Compose:\n\n```yaml\nversion: '3.8'\nservices:\n  keycloak:\n    image: jboss/keycloak:11.0.0\n    ports:\n      - 8080:8080\n    healthcheck:\n      test: [\"CMD\", \"curl\", \"-f\", \"http://localhost:8080/auth/realms/master\"]\n      interval: 30s\n      timeout: 10s\n      retries: 5\n```\n\nIn this example:\n\n1. We define a service named `keycloak`.\n2. We specify the Keycloak Docker image (`jboss/keycloak:11.0.0` in this case).\n3. We map the container's port 8080 to the host's port 8080 to access Keycloak.\n4. We define the `healthcheck` configuration block for the `keycloak` service.\n5. In the `test` field, we specify the command `[\"CMD\", \"curl\", \"-f\", \"http://localhost:8080/auth/realms/master\"]`. This command uses `curl` to make an HTTP request to Keycloak's `/auth/realms/master` endpoint. The `-f` flag ensures that `curl` returns a non-zero exit code if the request fails.\n6. We set the `interval` to `30s`, indicating that Docker should run the health check every 30 seconds.\n7. We set the `timeout` to `10s`, specifying the maximum time Docker waits for the health check command to complete.\n8. We set the `retries` to `5`, which means Docker will attempt the health check command up to 5 times before considering the container unhealthy.\n\nWith this configuration, Docker will periodically run the `curl` command to check the health of the Keycloak container. If the command fails (returns a non-zero exit code) or exceeds the specified timeout, Docker will consider the container unhealthy."
+          ]
+        },
+        "create_time": 1686012157.78072
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "What if `curl` is not installed?"
+          ]
+        },
+        "create_time": 1686012211.841295
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "If `curl` is not installed in the Keycloak container, you can use alternative tools like `wget` or `nc` (netcat) to perform the health check. Here's an example of how you can modify the health check command using `wget`:\n\n```yaml\nversion: '3.8'\nservices:\n  keycloak:\n    image: jboss/keycloak:11.0.0\n    ports:\n      - 8080:8080\n    healthcheck:\n      test: [\"CMD-SHELL\", \"wget --quiet --tries=1 --spider http://localhost:8080/auth/realms/master\"]\n      interval: 30s\n      timeout: 10s\n      retries: 5\n```\n\nIn this example, we use the `wget` command with the `--quiet` option to suppress output, `--tries=1` to attempt a single connection, and `--spider` to check the URL without downloading the content. If `wget` encounters an error or fails to establish a connection, it will return a non-zero exit code, indicating an unhealthy state.\n\nAlternatively, you can use `nc` (netcat) to perform a basic TCP connection check. Here's an example:\n\n```yaml\nversion: '3.8'\nservices:\n  keycloak:\n    image: jboss/keycloak:11.0.0\n    ports:\n      - 8080:8080\n    healthcheck:\n      test: [\"CMD\", \"nc\", \"-z\", \"-w2\", \"localhost\", \"8080\"]\n      interval: 30s\n      timeout: 10s\n      retries: 5\n```\n\nIn this case, we use the `nc` command with the `-z` option to scan for open ports, `-w2` to specify a 2-second timeout, and `localhost` and `8080` as the host and port to check. If the connection fails or times out, `nc` will return a non-zero exit code, indicating an unhealthy state.\n\nChoose the approach that works best for your use case based on the tools available in your Keycloak container."
+          ]
+        },
+        "create_time": 1686012227.266998
+      }
+    }
+  ],
+  "source_conversation_sha256": "9b4b5246d29db73d51b837d70481d31f016af477f48d38f89cfb8aaa782890cb",
+  "start": "2023-06-06T00:42:21.402883+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1686012141.402883,
+      "event_index": 2,
+      "role": "user",
+      "source_node_id": "aaa24e58-9463-41fe-b6a0-d7602eab631e",
+      "source_parent_id": "b35fb9e0-4e68-4435-8ebd-b756ef23475a",
+      "source_record_index": 2,
+      "text": "How can I implement a health check in Docker Compose for Keycloak 21?",
+      "turn_id": "turn_000002"
+    },
+    {
+      "create_time": 1686012157.78072,
+      "event_index": 3,
+      "role": "assistant",
+      "source_node_id": "bd37b7f3-3622-44d9-b3c4-1d5bb88ef761",
+      "source_parent_id": "aaa24e58-9463-41fe-b6a0-d7602eab631e",
+      "source_record_index": 3,
+      "text": "To implement a health check for Keycloak 21 in Docker Compose, you can use the `healthcheck` configuration option available in Docker Compose version 2.1 or higher. The `healthcheck` option allows you to define a command or script that Docker will periodically run to check the health of a container.\n\nHere's an example of how you can implement a health check for Keycloak 21 in Docker Compose:\n\n```yaml\nversion: '3.8'\nservices:\n  keycloak:\n    image: jboss/keycloak:11.0.0\n    ports:\n      - 8080:8080\n    healthcheck:\n      test: [\"CMD\", \"curl\", \"-f\", \"http://localhost:8080/auth/realms/master\"]\n      interval: 30s\n      timeout: 10s\n      retries: 5\n```\n\nIn this example:\n\n1. We define a service named `keycloak`.\n2. We specify the Keycloak Docker image (`jboss/keycloak:11.0.0` in this case).\n3. We map the container's port 8080 to the host's port 8080 to access Keycloak.\n4. We define the `healthcheck` configuration block for the `keycloak` service.\n5. In the `test` field, we specify the command `[\"CMD\", \"curl\", \"-f\", \"http://localhost:8080/auth/realms/master\"]`. This command uses `curl` to make an HTTP request to Keycloak's `/auth/realms/master` endpoint. The `-f` flag ensures that `curl` returns a non-zero exit code if the request fails.\n6. We set the `interval` to `30s`, indicating that Docker should run the health check every 30 seconds.\n7. We set the `timeout` to `10s`, specifying the maximum time Docker waits for the health check command to complete.\n8. We set the `retries` to `5`, which means Docker will attempt the health check command up to 5 times before considering the container unhealthy.\n\nWith this configuration, Docker will periodically run the `curl` command to check the health of the Keycloak container. If the command fails (returns a non-zero exit code) or exceeds the specified timeout, Docker will consider the container unhealthy.",
+      "turn_id": "turn_000003"
+    },
+    {
+      "create_time": 1686012211.841295,
+      "event_index": 4,
+      "role": "user",
+      "source_node_id": "aaa28632-a0df-44e8-9531-1eb1e3149f17",
+      "source_parent_id": "bd37b7f3-3622-44d9-b3c4-1d5bb88ef761",
+      "source_record_index": 4,
+      "text": "What if `curl` is not installed?",
+      "turn_id": "turn_000004"
+    },
+    {
+      "create_time": 1686012227.266998,
+      "event_index": 5,
+      "role": "assistant",
+      "source_node_id": "dca5b5af-59fc-4b5c-9541-d12dd77beb15",
+      "source_parent_id": "aaa28632-a0df-44e8-9531-1eb1e3149f17",
+      "source_record_index": 5,
+      "text": "If `curl` is not installed in the Keycloak container, you can use alternative tools like `wget` or `nc` (netcat) to perform the health check. Here's an example of how you can modify the health check command using `wget`:\n\n```yaml\nversion: '3.8'\nservices:\n  keycloak:\n    image: jboss/keycloak:11.0.0\n    ports:\n      - 8080:8080\n    healthcheck:\n      test: [\"CMD-SHELL\", \"wget --quiet --tries=1 --spider http://localhost:8080/auth/realms/master\"]\n      interval: 30s\n      timeout: 10s\n      retries: 5\n```\n\nIn this example, we use the `wget` command with the `--quiet` option to suppress output, `--tries=1` to attempt a single connection, and `--spider` to check the URL without downloading the content. If `wget` encounters an error or fails to establish a connection, it will return a non-zero exit code, indicating an unhealthy state.\n\nAlternatively, you can use `nc` (netcat) to perform a basic TCP connection check. Here's an example:\n\n```yaml\nversion: '3.8'\nservices:\n  keycloak:\n    image: jboss/keycloak:11.0.0\n    ports:\n      - 8080:8080\n    healthcheck:\n      test: [\"CMD\", \"nc\", \"-z\", \"-w2\", \"localhost\", \"8080\"]\n      interval: 30s\n      timeout: 10s\n      retries: 5\n```\n\nIn this case, we use the `nc` command with the `-z` option to scan for open ports, `-w2` to specify a 2-second timeout, and `localhost` and `8080` as the host and port to check. If the connection fails or times out, `nc` will return a non-zero exit code, indicating an unhealthy state.\n\nChoose the approach that works best for your use case based on the tools available in your Keycloak container.",
+      "turn_id": "turn_000005"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_6413F3DD2F91",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000003_000167_000739_184a91917203c10f",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "import_or_include",
+        "declaration",
+        "control_flow",
+        "braces",
+        "statement_terminators",
+        "call_expression"
+      ],
+      "end_offset": 739,
+      "fence_language": "csharp",
+      "kind": "source_code",
+      "legacy_artifact_id": "ARTIFACT_000003_001",
+      "order_within_response": 1,
+      "raw_text": "using System;\nusing System.Security.Cryptography;\nusing System.Text;\n\npublic static class PasswordEncryption\n{\n    public static string EncryptPassword(string userName)\n    {\n        using (SHA256 sha256Hash = SHA256.Create())\n        {\n            byte[] data = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(userName));\n            StringBuilder sBuilder = new StringBuilder();\n            for (int i = 0; i < data.Length; i++)\n            {\n                sBuilder.Append(data[i].ToString(\"x2\"));\n            }\n            return sBuilder.ToString();\n        }\n    }\n}\n",
+      "raw_text_sha256": "184a91917203c10fe0e08d516ca680ae8029f183484b01f8a7c70d8a5c1a1bad",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "d2f7a4fd11eeb623332dfa2585795f1659fe031da2b3816eae71cd727f71609c",
+      "start_offset": 167,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "convert this method to sha-256 encryption\n\n    public static string EncryptPassword(string userName)\n    {\n        using MD5 md5Hash = MD5.Create();\n        byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(userName));\n        StringBuilder sBuilder = new StringBuilder();\n        for (int i = 0; i < data.Length; i++)\n        {\n            sBuilder.Append(data[i].ToString(\"x2\"));\n        }\n        return sBuilder.ToString();\n    }"
+          ]
+        },
+        "create_time": 1709670008.577178
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To convert the provided method to SHA-256 encryption, you can use the `SHA256` class instead of `MD5`. Here's the modified method using SHA-256 encryption:\n\n```csharp\nusing System;\nusing System.Security.Cryptography;\nusing System.Text;\n\npublic static class PasswordEncryption\n{\n    public static string EncryptPassword(string userName)\n    {\n        using (SHA256 sha256Hash = SHA256.Create())\n        {\n            byte[] data = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(userName));\n            StringBuilder sBuilder = new StringBuilder();\n            for (int i = 0; i < data.Length; i++)\n            {\n                sBuilder.Append(data[i].ToString(\"x2\"));\n            }\n            return sBuilder.ToString();\n        }\n    }\n}\n```\n\nThis method now uses SHA-256 to hash the input string `userName` and returns the hashed value as a hexadecimal string."
+          ]
+        },
+        "create_time": 1709670012.845274
+      }
+    }
+  ],
+  "source_conversation_sha256": "dc4b8df0ccc42b2fb169a6fbdd07e4bb987102ed8fd9ebf19d75f2cf2d9e75c2",
+  "start": "2024-03-05T20:20:08.577178+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1709670008.577178,
+      "event_index": 2,
+      "role": "user",
+      "source_node_id": "aaa2bcea-e4e2-462e-9148-23178cc0c89b",
+      "source_parent_id": "233c0dc6-bf15-414d-96fb-cb84146c6e0d",
+      "source_record_index": 2,
+      "text": "convert this method to sha-256 encryption\n\n    public static string EncryptPassword(string userName)\n    {\n        using MD5 md5Hash = MD5.Create();\n        byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(userName));\n        StringBuilder sBuilder = new StringBuilder();\n        for (int i = 0; i < data.Length; i++)\n        {\n            sBuilder.Append(data[i].ToString(\"x2\"));\n        }\n        return sBuilder.ToString();\n    }",
+      "turn_id": "turn_000002"
+    },
+    {
+      "create_time": 1709670012.845274,
+      "event_index": 3,
+      "role": "assistant",
+      "source_node_id": "ad45bf44-8d49-479d-8ebe-c790d8aebd46",
+      "source_parent_id": "aaa2bcea-e4e2-462e-9148-23178cc0c89b",
+      "source_record_index": 3,
+      "text": "To convert the provided method to SHA-256 encryption, you can use the `SHA256` class instead of `MD5`. Here's the modified method using SHA-256 encryption:\n\n```csharp\nusing System;\nusing System.Security.Cryptography;\nusing System.Text;\n\npublic static class PasswordEncryption\n{\n    public static string EncryptPassword(string userName)\n    {\n        using (SHA256 sha256Hash = SHA256.Create())\n        {\n            byte[] data = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(userName));\n            StringBuilder sBuilder = new StringBuilder();\n            for (int i = 0; i < data.Length; i++)\n            {\n                sBuilder.Append(data[i].ToString(\"x2\"));\n            }\n            return sBuilder.ToString();\n        }\n    }\n}\n```\n\nThis method now uses SHA-256 to hash the input string `userName` and returns the hashed value as a hexadecimal string.",
+      "turn_id": "turn_000003"
+    }
+  ]
+}

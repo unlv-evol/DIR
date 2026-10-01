@@ -1,0 +1,126 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_43E88314E461",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000004_000367_000443_82c366a15bca9213",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "braces",
+        "statement_terminators"
+      ],
+      "end_offset": 443,
+      "fence_language": "javascript",
+      "kind": "source_code",
+      "legacy_artifact_id": null,
+      "order_within_response": 1,
+      "raw_text": "    module.exports = {\n      // ...\n      baseUrl: '/',\n      // ...\n    };\n",
+      "raw_text_sha256": "82c366a15bca9213e5be431ef8be5243033b9019696812a93634af19977c6d21",
+      "source_event_index": 4,
+      "source_record_index": 4,
+      "source_response_id": "turn_000004",
+      "source_turn_text_sha256": "0f6ce3f4ce6565788d08c1e68c975566d69340d2d78f25d67c4d6603651a67b4",
+      "start_offset": 367,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000004_000820_001213_8051b97a76b2ff83",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "nested_root_structure",
+        "recognized_software_markup"
+      ],
+      "end_offset": 1213,
+      "fence_language": "html",
+      "kind": "structured_xml_markup",
+      "legacy_artifact_id": null,
+      "order_within_response": 2,
+      "raw_text": "    <!DOCTYPE html>\n    <html>\n      <head>\n        <meta charset=\"UTF-8\">\n        <meta http-equiv=\"refresh\" content=\"0;url=/docs\">\n        <script type=\"text/javascript\">\n          window.location.href = \"/docs\"\n        </script>\n      </head>\n      <body>\n        If you are not redirected automatically, follow this <a href='/docs'>link to the documentation</a>.\n      </body>\n    </html>\n",
+      "raw_text_sha256": "8051b97a76b2ff83717dc57b92af6a7f8f3c7d336968231a7356fee7d475a7ec",
+      "source_event_index": 4,
+      "source_record_index": 4,
+      "source_response_id": "turn_000004",
+      "source_turn_text_sha256": "0f6ce3f4ce6565788d08c1e68c975566d69340d2d78f25d67c4d6603651a67b4",
+      "start_offset": 820,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I have a docusaurus website that I'm hosting with github pages, and I want to change the base URL from \"/python-sdk/\" to \"/\". How can I redirect old URL paths (e.g., \"/python-sdk/docs\" to \"/docs\") to the new path, in case users try to reach the old URL?"
+          ]
+        },
+        "create_time": 1702503818.610726
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To handle redirects from your old URL paths (like \"/python-sdk/docs\") to new paths (like \"/docs\") in a Docusaurus website hosted on GitHub Pages, you can follow these steps:\n\n1. **Update Docusaurus Configuration**: First, change the `baseUrl` in your `docusaurus.config.js` file from `/python-sdk/` to `/`. This will serve your site from the root.\n\n    ```javascript\n    module.exports = {\n      // ...\n      baseUrl: '/',\n      // ...\n    };\n    ```\n\n2. **Create a Redirects Page**: Since GitHub Pages is a static site host and doesn't support server-side redirects, you need to create a client-side solution. You can create a small HTML page that you'll place at the old paths which will redirect users to the new paths.\n\n    Create an HTML file, for example, `redirect.html`, with the following content:\n\n    ```html\n    <!DOCTYPE html>\n    <html>\n      <head>\n        <meta charset=\"UTF-8\">\n        <meta http-equiv=\"refresh\" content=\"0;url=/docs\">\n        <script type=\"text/javascript\">\n          window.location.href = \"/docs\"\n        </script>\n      </head>\n      <body>\n        If you are not redirected automatically, follow this <a href='/docs'>link to the documentation</a>.\n      </body>\n    </html>\n    ```\n\n    This file will redirect users from the old URL to the new one immediately. Adjust the `url` in the `meta` tag and the `window.location.href` to match your new paths.\n\n3. **Deploy Redirects Page**: Place this `redirect.html` file in your GitHub repository in the location corresponding to the old path. For example, if your old URL was `/python-sdk/docs`, you would place `redirect.html` inside a folder structure like `python-sdk/docs/`.\n\n4. **Test the Redirects**: After pushing these changes to your GitHub repository and letting GitHub Pages deploy them, test the redirects by visiting the old URLs. You should be automatically redirected to the new URLs.\n\n5. **Update Internal Links**: Lastly, make sure to update any internal links in your Docusaurus site to point to the new URLs, to avoid relying on redirects more than necessary.\n\nRemember that this solution uses client-side redirects, which are not as efficient as server-side redirects and may not be as SEO-friendly. However, this is a common approach for static sites hosted on platforms like GitHub Pages."
+          ]
+        },
+        "create_time": 1702503851.190978
+      }
+    }
+  ],
+  "source_conversation_sha256": "bb4be858bcc2e86fe836094795eb7ba68b0ab9bd517e133454f5a880fcc515ee",
+  "start": "2023-12-13T21:43:38.610726+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1702503818.610726,
+      "event_index": 3,
+      "role": "user",
+      "source_node_id": "aaa2f86d-ca2c-4cbc-9b26-2936bcde8733",
+      "source_parent_id": "1479fff0-2e49-44e3-916f-ae84b8321e5c",
+      "source_record_index": 3,
+      "text": "I have a docusaurus website that I'm hosting with github pages, and I want to change the base URL from \"/python-sdk/\" to \"/\". How can I redirect old URL paths (e.g., \"/python-sdk/docs\" to \"/docs\") to the new path, in case users try to reach the old URL?",
+      "turn_id": "turn_000003"
+    },
+    {
+      "create_time": 1702503851.190978,
+      "event_index": 4,
+      "role": "assistant",
+      "source_node_id": "daaec49d-aa71-4a08-9552-8d43ff1cef06",
+      "source_parent_id": "aaa2f86d-ca2c-4cbc-9b26-2936bcde8733",
+      "source_record_index": 4,
+      "text": "To handle redirects from your old URL paths (like \"/python-sdk/docs\") to new paths (like \"/docs\") in a Docusaurus website hosted on GitHub Pages, you can follow these steps:\n\n1. **Update Docusaurus Configuration**: First, change the `baseUrl` in your `docusaurus.config.js` file from `/python-sdk/` to `/`. This will serve your site from the root.\n\n    ```javascript\n    module.exports = {\n      // ...\n      baseUrl: '/',\n      // ...\n    };\n    ```\n\n2. **Create a Redirects Page**: Since GitHub Pages is a static site host and doesn't support server-side redirects, you need to create a client-side solution. You can create a small HTML page that you'll place at the old paths which will redirect users to the new paths.\n\n    Create an HTML file, for example, `redirect.html`, with the following content:\n\n    ```html\n    <!DOCTYPE html>\n    <html>\n      <head>\n        <meta charset=\"UTF-8\">\n        <meta http-equiv=\"refresh\" content=\"0;url=/docs\">\n        <script type=\"text/javascript\">\n          window.location.href = \"/docs\"\n        </script>\n      </head>\n      <body>\n        If you are not redirected automatically, follow this <a href='/docs'>link to the documentation</a>.\n      </body>\n    </html>\n    ```\n\n    This file will redirect users from the old URL to the new one immediately. Adjust the `url` in the `meta` tag and the `window.location.href` to match your new paths.\n\n3. **Deploy Redirects Page**: Place this `redirect.html` file in your GitHub repository in the location corresponding to the old path. For example, if your old URL was `/python-sdk/docs`, you would place `redirect.html` inside a folder structure like `python-sdk/docs/`.\n\n4. **Test the Redirects**: After pushing these changes to your GitHub repository and letting GitHub Pages deploy them, test the redirects by visiting the old URLs. You should be automatically redirected to the new URLs.\n\n5. **Update Internal Links**: Lastly, make sure to update any internal links in your Docusaurus site to point to the new URLs, to avoid relying on redirects more than necessary.\n\nRemember that this solution uses client-side redirects, which are not as efficient as server-side redirects and may not be as SEO-friendly. However, this is a common approach for static sites hosted on platforms like GitHub Pages.",
+      "turn_id": "turn_000004"
+    }
+  ]
+}

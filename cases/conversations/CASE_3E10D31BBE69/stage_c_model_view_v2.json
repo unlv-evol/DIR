@@ -1,0 +1,412 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_3E10D31BBE69",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000003_000282_000318_2343dcf0df53874c",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "recognized_fence_label"
+      ],
+      "end_offset": 318,
+      "fence_language": "java",
+      "kind": "source_code",
+      "legacy_artifact_id": null,
+      "order_within_response": 1,
+      "raw_text": "    assertEquals(expected, actual);\n",
+      "raw_text_sha256": "2343dcf0df53874cfd0b6be11cf27a7ba8a7eb75ad843533a26fd7b0008d8561",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "141e023b3433d9a752a8bfa59da0e0459cfd01556192c68e487f89ccd1354d00",
+      "start_offset": 282,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_000361_000400_a7cd0f820839e02d",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "recognized_fence_label"
+      ],
+      "end_offset": 400,
+      "fence_language": "csharp",
+      "kind": "source_code",
+      "legacy_artifact_id": null,
+      "order_within_response": 2,
+      "raw_text": "    Assert.AreEqual(expected, actual);\n",
+      "raw_text_sha256": "a7cd0f820839e02d4689e818f5036a9aa031bcb3cee820cf43e862fb15dea8a0",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "141e023b3433d9a752a8bfa59da0e0459cfd01556192c68e487f89ccd1354d00",
+      "start_offset": 361,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_000442_000481_a7cd0f820839e02d",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "recognized_fence_label"
+      ],
+      "end_offset": 481,
+      "fence_language": "csharp",
+      "kind": "source_code",
+      "legacy_artifact_id": null,
+      "order_within_response": 3,
+      "raw_text": "    Assert.AreEqual(expected, actual);\n",
+      "raw_text_sha256": "a7cd0f820839e02d4689e818f5036a9aa031bcb3cee820cf43e862fb15dea8a0",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "141e023b3433d9a752a8bfa59da0e0459cfd01556192c68e487f89ccd1354d00",
+      "start_offset": 442,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_000618_000654_06ee15605eb3c390",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "recognized_fence_label"
+      ],
+      "end_offset": 654,
+      "fence_language": "csharp",
+      "kind": "source_code",
+      "legacy_artifact_id": null,
+      "order_within_response": 4,
+      "raw_text": "    Assert.Equal(expected, actual);\n",
+      "raw_text_sha256": "06ee15605eb3c390f2d997670d3f784cfc21b3f7ee6678ccd7ce80f76060d095",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "141e023b3433d9a752a8bfa59da0e0459cfd01556192c68e487f89ccd1354d00",
+      "start_offset": 618,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_000705_000744_e9dfb09e466b64ef",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "recognized_fence_label"
+      ],
+      "end_offset": 744,
+      "fence_language": "python",
+      "kind": "source_code",
+      "legacy_artifact_id": null,
+      "order_within_response": 5,
+      "raw_text": "    self.assertEqual(expected, actual)\n",
+      "raw_text_sha256": "e9dfb09e466b64ef01026bf23b5b33e671374d736d4c81dc651b2a9d425b0341",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "141e023b3433d9a752a8bfa59da0e0459cfd01556192c68e487f89ccd1354d00",
+      "start_offset": 705,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_000904_000942_03d5605d8ed15970",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "recognized_fence_label"
+      ],
+      "end_offset": 942,
+      "fence_language": "go",
+      "kind": "source_code",
+      "legacy_artifact_id": null,
+      "order_within_response": 6,
+      "raw_text": "    assert.Equal(t, expected, actual)\n",
+      "raw_text_sha256": "03d5605d8ed15970c45b921a94c1a7fc741150cabe07a1dc061964cc82e0a983",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "141e023b3433d9a752a8bfa59da0e0459cfd01556192c68e487f89ccd1354d00",
+      "start_offset": 904,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_000984_001027_5f6123d6853a7692",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "recognized_fence_label"
+      ],
+      "end_offset": 1027,
+      "fence_language": "php",
+      "kind": "source_code",
+      "legacy_artifact_id": null,
+      "order_within_response": 7,
+      "raw_text": "    $this->assertEquals(expected, actual);\n",
+      "raw_text_sha256": "5f6123d6853a7692ae8735825bb3448e5f0870fea392ffa0e8c2855b04af755b",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "141e023b3433d9a752a8bfa59da0e0459cfd01556192c68e487f89ccd1354d00",
+      "start_offset": 984,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_001069_001104_2c95dd1c7e897ca8",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "recognized_fence_label"
+      ],
+      "end_offset": 1104,
+      "fence_language": "ruby",
+      "kind": "source_code",
+      "legacy_artifact_id": null,
+      "order_within_response": 8,
+      "raw_text": "    expect(actual).to eq(expected)\n",
+      "raw_text_sha256": "2c95dd1c7e897ca885541a579195335cc1e419016ebbf24870931816164b6a9b",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "141e023b3433d9a752a8bfa59da0e0459cfd01556192c68e487f89ccd1354d00",
+      "start_offset": 1069,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_001256_001291_dddf3d0549243523",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "recognized_fence_label"
+      ],
+      "end_offset": 1291,
+      "fence_language": "javascript",
+      "kind": "source_code",
+      "legacy_artifact_id": null,
+      "order_within_response": 9,
+      "raw_text": "    expect(actual).toBe(expected);\n",
+      "raw_text_sha256": "dddf3d0549243523d85130004192179fe5dfcbcc9e26084edbd256cc2d18decd",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "141e023b3433d9a752a8bfa59da0e0459cfd01556192c68e487f89ccd1354d00",
+      "start_offset": 1256,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000005_000259_000319_e94ccad302fd0204",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence"
+      ],
+      "end_offset": 319,
+      "fence_language": "ocaml",
+      "kind": "unclassified_technical",
+      "legacy_artifact_id": null,
+      "order_within_response": 1,
+      "raw_text": "   assert_equal ~printer:[printer_function] expected actual\n",
+      "raw_text_sha256": "e94ccad302fd020474dd78a8cde9da277690c69901331069275510e38ebca1e1",
+      "source_event_index": 5,
+      "source_record_index": 5,
+      "source_response_id": "turn_000005",
+      "source_turn_text_sha256": "e89ea1132f89aa50c6c95e1e70a31e955b783ba5618b1d0666d291a21369fa25",
+      "start_offset": 259,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000005_000723_000753_d77543995ba455ab",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence"
+      ],
+      "end_offset": 753,
+      "fence_language": "elm",
+      "kind": "unclassified_technical",
+      "legacy_artifact_id": null,
+      "order_within_response": 2,
+      "raw_text": "   Test.equal expected actual\n",
+      "raw_text_sha256": "d77543995ba455ab3e445f8129ef6b1947c462977c2709115eb73efdea2c0e3b",
+      "source_event_index": 5,
+      "source_record_index": 5,
+      "source_response_id": "turn_000005",
+      "source_turn_text_sha256": "e89ea1132f89aa50c6c95e1e70a31e955b783ba5618b1d0666d291a21369fa25",
+      "start_offset": 723,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "in unit tests, what comes first in different languages - actual and expected?"
+          ]
+        },
+        "create_time": 1695238980.490186
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "In unit testing, whether you should write the expected value before the actual value often depends on the testing library and language you are using. Here's a breakdown of some of the popular testing libraries and languages and their conventions:\n\n1. **JUnit (Java)**: \n    ```java\n    assertEquals(expected, actual);\n    ```\n\n2. **MSTest (C#)**:\n    ```csharp\n    Assert.AreEqual(expected, actual);\n    ```\n\n3. **NUnit (C#)**:\n    ```csharp\n    Assert.AreEqual(expected, actual);\n    ```\n\n4. **xUnit (C#)**: \n    It's a bit different in xUnit. Instead of an `AreEqual` method, it has an `Equal` method.\n    ```csharp\n    Assert.Equal(expected, actual);\n    ```\n\n5. **Python's `unittest`**:\n    ```python\n    self.assertEqual(expected, actual)\n    ```\n\n6. **Go's `testing` package**:\n    Go doesn't have an assertion library built into its standard library, but a common one used is `testify`.\n    ```go\n    assert.Equal(t, expected, actual)\n    ```\n\n7. **PHPUnit (PHP)**:\n    ```php\n    $this->assertEquals(expected, actual);\n    ```\n\n8. **RSpec (Ruby)**:\n    ```ruby\n    expect(actual).to eq(expected)\n    ```\n    Note that in RSpec, you start with the actual value and compare it to the expected.\n\n9. **Jest (JavaScript/TypeScript)**:\n    ```javascript\n    expect(actual).toBe(expected);\n    ```\n    Similar to RSpec, in Jest you also start with the actual value.\n\nRemember, the primary goal of writing tests is to clearly convey the intent and ensure correctness. Whichever order you choose, it's essential to be consistent throughout your codebase and make sure that other developers can easily understand your tests."
+          ]
+        },
+        "create_time": 1695239012.893493
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "what about OCaml and Elm?"
+          ]
+        },
+        "create_time": 1695239048.705132
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Certainly, let's address both:\n\n1. **OCaml**:\n   OCaml doesn't have a standardized unit testing library in its core, but there are several libraries available for this purpose. One of the popular ones is `OUnit`. In `OUnit`, the typical order is:\n   ```ocaml\n   assert_equal ~printer:[printer_function] expected actual\n   ```\n   Here, `expected` comes before `actual`, and the `printer` argument can be used to specify how the value should be printed if the assertion fails.\n\n2. **Elm**:\n   Elm's primary package for unit testing is `elm-test`. With `elm-test`, the convention is similar to some other languages where you start with the actual value and compare it to the expected. Here's how it typically looks:\n   ```elm\n   Test.equal expected actual\n   ```\n   So, in Elm's `elm-test`, the `expected` value comes first, followed by the `actual`.\n\nIn both OCaml and Elm, like other languages, the important part is to be consistent and clear in your testing practices, ensuring that tests are readable and maintainable."
+          ]
+        },
+        "create_time": 1695239070.406861
+      }
+    }
+  ],
+  "source_conversation_sha256": "0716f37c4ec7b881f3c22d0af3176301536439885ec5052d7be4042accb8c0d7",
+  "start": "2023-09-20T19:43:00.490186+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1695238980.490186,
+      "event_index": 2,
+      "role": "user",
+      "source_node_id": "aaa2105a-7047-46a5-a71a-ed1c4c415790",
+      "source_parent_id": "9bd4acbd-d8dc-4097-a623-be5b76ba980c",
+      "source_record_index": 2,
+      "text": "in unit tests, what comes first in different languages - actual and expected?",
+      "turn_id": "turn_000002"
+    },
+    {
+      "create_time": 1695239012.893493,
+      "event_index": 3,
+      "role": "assistant",
+      "source_node_id": "e32bc4ee-d707-4a47-9eb5-c0594782e654",
+      "source_parent_id": "aaa2105a-7047-46a5-a71a-ed1c4c415790",
+      "source_record_index": 3,
+      "text": "In unit testing, whether you should write the expected value before the actual value often depends on the testing library and language you are using. Here's a breakdown of some of the popular testing libraries and languages and their conventions:\n\n1. **JUnit (Java)**: \n    ```java\n    assertEquals(expected, actual);\n    ```\n\n2. **MSTest (C#)**:\n    ```csharp\n    Assert.AreEqual(expected, actual);\n    ```\n\n3. **NUnit (C#)**:\n    ```csharp\n    Assert.AreEqual(expected, actual);\n    ```\n\n4. **xUnit (C#)**: \n    It's a bit different in xUnit. Instead of an `AreEqual` method, it has an `Equal` method.\n    ```csharp\n    Assert.Equal(expected, actual);\n    ```\n\n5. **Python's `unittest`**:\n    ```python\n    self.assertEqual(expected, actual)\n    ```\n\n6. **Go's `testing` package**:\n    Go doesn't have an assertion library built into its standard library, but a common one used is `testify`.\n    ```go\n    assert.Equal(t, expected, actual)\n    ```\n\n7. **PHPUnit (PHP)**:\n    ```php\n    $this->assertEquals(expected, actual);\n    ```\n\n8. **RSpec (Ruby)**:\n    ```ruby\n    expect(actual).to eq(expected)\n    ```\n    Note that in RSpec, you start with the actual value and compare it to the expected.\n\n9. **Jest (JavaScript/TypeScript)**:\n    ```javascript\n    expect(actual).toBe(expected);\n    ```\n    Similar to RSpec, in Jest you also start with the actual value.\n\nRemember, the primary goal of writing tests is to clearly convey the intent and ensure correctness. Whichever order you choose, it's essential to be consistent throughout your codebase and make sure that other developers can easily understand your tests.",
+      "turn_id": "turn_000003"
+    },
+    {
+      "create_time": 1695239048.705132,
+      "event_index": 4,
+      "role": "user",
+      "source_node_id": "aaa276de-b4d3-4fa3-a805-271b10ecb998",
+      "source_parent_id": "e32bc4ee-d707-4a47-9eb5-c0594782e654",
+      "source_record_index": 4,
+      "text": "what about OCaml and Elm?",
+      "turn_id": "turn_000004"
+    },
+    {
+      "create_time": 1695239070.406861,
+      "event_index": 5,
+      "role": "assistant",
+      "source_node_id": "2025df11-fe1c-41c0-81a6-4811995ccec7",
+      "source_parent_id": "aaa276de-b4d3-4fa3-a805-271b10ecb998",
+      "source_record_index": 5,
+      "text": "Certainly, let's address both:\n\n1. **OCaml**:\n   OCaml doesn't have a standardized unit testing library in its core, but there are several libraries available for this purpose. One of the popular ones is `OUnit`. In `OUnit`, the typical order is:\n   ```ocaml\n   assert_equal ~printer:[printer_function] expected actual\n   ```\n   Here, `expected` comes before `actual`, and the `printer` argument can be used to specify how the value should be printed if the assertion fails.\n\n2. **Elm**:\n   Elm's primary package for unit testing is `elm-test`. With `elm-test`, the convention is similar to some other languages where you start with the actual value and compare it to the expected. Here's how it typically looks:\n   ```elm\n   Test.equal expected actual\n   ```\n   So, in Elm's `elm-test`, the `expected` value comes first, followed by the `actual`.\n\nIn both OCaml and Elm, like other languages, the important part is to be consistent and clear in your testing practices, ensuring that tests are readable and maintainable.",
+      "turn_id": "turn_000005"
+    }
+  ]
+}

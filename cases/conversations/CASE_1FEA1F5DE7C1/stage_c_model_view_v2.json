@@ -1,0 +1,99 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_1FEA1F5DE7C1",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000003_000155_000532_08f8a91266132a5b",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "declaration",
+        "braces",
+        "statement_terminators",
+        "call_expression"
+      ],
+      "end_offset": 532,
+      "fence_language": "typescript",
+      "kind": "source_code",
+      "legacy_artifact_id": "ARTIFACT_000003_001",
+      "order_within_response": 1,
+      "raw_text": "class MyClass {\n    /**\n     * @deprecated This method is deprecated. Use myNewMethod instead.\n     */\n    oldMethod() {\n        // Deprecated method implementation\n    }\n\n    myNewMethod() {\n        // New method implementation\n    }\n}\n\nconst obj = new MyClass();\n\n// Using the deprecated method\nobj.oldMethod(); // This will generate a warning in most IDEs and linting tools\n",
+      "raw_text_sha256": "08f8a91266132a5bd5671b4b2dd5c5e73979da9df54d2e13243a34a84560d03e",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "42d8aca8dce00d6f5b28fa05218180b247d04a44ae9282fc7afe3cd8ef7c4efb",
+      "start_offset": 155,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Give example of standard way of deprecating method in TypeScript"
+          ]
+        },
+        "create_time": 1713266096.891392
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Sure, deprecating a method in TypeScript involves marking it as deprecated using a JSDoc comment with `@deprecated` tag. Here's an example:\n\n```typescript\nclass MyClass {\n    /**\n     * @deprecated This method is deprecated. Use myNewMethod instead.\n     */\n    oldMethod() {\n        // Deprecated method implementation\n    }\n\n    myNewMethod() {\n        // New method implementation\n    }\n}\n\nconst obj = new MyClass();\n\n// Using the deprecated method\nobj.oldMethod(); // This will generate a warning in most IDEs and linting tools\n```\n\nIn this example, the `oldMethod()` is marked as deprecated using the `@deprecated` JSDoc comment. When developers use this method, they will receive a warning indicating that it's deprecated and should be replaced with `myNewMethod()`."
+          ]
+        },
+        "create_time": 1713266101.694532
+      }
+    }
+  ],
+  "source_conversation_sha256": "0c7b56a538b918e3ac78c76289b2185d068b3956a73e1f577ee00cc7cf08a6d3",
+  "start": "2024-04-16T11:14:56.891392+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1713266096.891392,
+      "event_index": 2,
+      "role": "user",
+      "source_node_id": "aaa29788-5ed5-4d79-b997-8e138dc5c394",
+      "source_parent_id": "3ae39290-a224-4b4c-95c5-a89f30023242",
+      "source_record_index": 2,
+      "text": "Give example of standard way of deprecating method in TypeScript",
+      "turn_id": "turn_000002"
+    },
+    {
+      "create_time": 1713266101.694532,
+      "event_index": 3,
+      "role": "assistant",
+      "source_node_id": "7ec29b39-8452-4f31-9ab8-cc360535346c",
+      "source_parent_id": "aaa29788-5ed5-4d79-b997-8e138dc5c394",
+      "source_record_index": 3,
+      "text": "Sure, deprecating a method in TypeScript involves marking it as deprecated using a JSDoc comment with `@deprecated` tag. Here's an example:\n\n```typescript\nclass MyClass {\n    /**\n     * @deprecated This method is deprecated. Use myNewMethod instead.\n     */\n    oldMethod() {\n        // Deprecated method implementation\n    }\n\n    myNewMethod() {\n        // New method implementation\n    }\n}\n\nconst obj = new MyClass();\n\n// Using the deprecated method\nobj.oldMethod(); // This will generate a warning in most IDEs and linting tools\n```\n\nIn this example, the `oldMethod()` is marked as deprecated using the `@deprecated` JSDoc comment. When developers use this method, they will receive a warning indicating that it's deprecated and should be replaced with `myNewMethod()`.",
+      "turn_id": "turn_000003"
+    }
+  ]
+}

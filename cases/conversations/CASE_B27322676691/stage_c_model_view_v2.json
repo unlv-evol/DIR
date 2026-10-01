@@ -1,0 +1,200 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_B27322676691",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000003_000394_000758_033b6c5445f961fe",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "braces",
+        "call_expression"
+      ],
+      "end_offset": 758,
+      "fence_language": "ruby",
+      "kind": "source_code",
+      "legacy_artifact_id": "ARTIFACT_000003_001",
+      "order_within_response": 1,
+      "raw_text": "# Get all comments from the responses table\ncomments = Response.pluck(:comment)\n\n# Define regex pattern for @ followed by digits\npattern = /@(\\d+)/\n\n# Extract all user ID's into an array\nuser_ids = comments.map { |comment| comment.scan(pattern) }.flatten\n\n# Convert all elements to integer (as they will be strings after the regex)\nuser_ids = user_ids.map(&:to_i)\n",
+      "raw_text_sha256": "033b6c5445f961feaf025b4fc379a0adcf43fce4c437d5b9b1864a6faf1f8b24",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "9a586bf279dfe001277f3bf540929dbc1c40dfabb1f06c5a47427bcb6f636408",
+      "start_offset": 394,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000005_000362_000426_decb44634f6b3e1a",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "statement_terminators",
+        "call_expression"
+      ],
+      "end_offset": 426,
+      "fence_language": "sql",
+      "kind": "source_code",
+      "legacy_artifact_id": "ARTIFACT_000005_001",
+      "order_within_response": 1,
+      "raw_text": "SELECT\n  REGEXP_MATCHES(comment, '@(\\d+)', 'g')\nFROM responses;\n",
+      "raw_text_sha256": "decb44634f6b3e1a0062ce7994f5f89ca66679f80addc30b7a22a6e085d98aac",
+      "source_event_index": 5,
+      "source_record_index": 5,
+      "source_response_id": "turn_000005",
+      "source_turn_text_sha256": "8e99cf46b55e300021fef72fa37f5f827650a64088592fb05b0ade6d4e9dc912",
+      "start_offset": 362,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000005_000984_001106_666a9a3093609f59",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "call_expression"
+      ],
+      "end_offset": 1106,
+      "fence_language": "ruby",
+      "kind": "source_code",
+      "legacy_artifact_id": "ARTIFACT_000005_002",
+      "order_within_response": 2,
+      "raw_text": "results = ActiveRecord::Base.connection.execute(\"\n  SELECT\n    REGEXP_MATCHES(comment, '@(\\d+)', 'g')\n  FROM responses\n\")\n",
+      "raw_text_sha256": "666a9a3093609f59e6cd3104bcb24c7532694171733a85f2c7076299e64a59cb",
+      "source_event_index": 5,
+      "source_record_index": 5,
+      "source_response_id": "turn_000005",
+      "source_turn_text_sha256": "8e99cf46b55e300021fef72fa37f5f827650a64088592fb05b0ade6d4e9dc912",
+      "start_offset": 984,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Let's say I have a table called `responses` with a text field called `comment` that can contain strings like these:\n\n\"I got a lot of help from @4154 and @64 this week.\"\n\"@4154 thanks a million!!! Also @12\"\n\nHow would I do a query using Ruby on Rails to return all of the numbers that exist in the table into an array? For example `[4154, 64, 4154, 12]`"
+          ]
+        },
+        "create_time": 1685564084.129139
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "You could do this in several steps in Ruby on Rails using ActiveRecord (the database interface in Rails) and regular expressions.\n\nFirst, you'll need to pull all the comments from your database. Then you'll extract the user ID's using a regex match, and finally, you'll flatten the array (since the match method returns an array of matches).\n\nHere's an example on how you might do it:\n\n```ruby\n# Get all comments from the responses table\ncomments = Response.pluck(:comment)\n\n# Define regex pattern for @ followed by digits\npattern = /@(\\d+)/\n\n# Extract all user ID's into an array\nuser_ids = comments.map { |comment| comment.scan(pattern) }.flatten\n\n# Convert all elements to integer (as they will be strings after the regex)\nuser_ids = user_ids.map(&:to_i)\n```\n\nThis will give you an array of integers like `[4154, 64, 4154, 12]`. \n\nKeep in mind this is a simple example and might not cover more complex use cases. For example, it assumes that the \"@\" character is always immediately followed by the user ID without any space. It also assumes that every string of numbers is a user ID, even if it isn't preceded by the \"@\" character. You would need a more complex regex if your actual use case doesn't meet these assumptions."
+          ]
+        },
+        "create_time": 1685564115.484299
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Is there a way to do this using SQL?"
+          ]
+        },
+        "create_time": 1685564132.376134
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, but SQL is not great at string manipulation, so it's often more efficient and more readable to pull the data into your application and manipulate it there. That being said, if you're using a database that supports regular expressions, such as PostgreSQL or MySQL, it's possible to achieve this in SQL.\n\nThe SQL command may look something like this:\n\n```sql\nSELECT\n  REGEXP_MATCHES(comment, '@(\\d+)', 'g')\nFROM responses;\n```\n\nThis command would return a table with one column of arrays. Each array contains all matches of the regular expression in one comment. It's worth noting that this solution is specific to PostgreSQL, as SQL syntax varies between database management systems.\n\nIf you're trying to do this in MySQL, there is no built-in REGEXP_MATCHES function, but there are alternatives that you can use to achieve similar results.\n\nIf you need to do this directly in ActiveRecord in Rails, you could create a custom SQL query and execute it. Here's an example:\n\n```ruby\nresults = ActiveRecord::Base.connection.execute(\"\n  SELECT\n    REGEXP_MATCHES(comment, '@(\\d+)', 'g')\n  FROM responses\n\")\n```\n\nKeep in mind, this is only recommended when you absolutely need to use SQL and can't use Ruby to manipulate the data, as it is less readable and more prone to SQL injection attacks if not handled properly."
+          ]
+        },
+        "create_time": 1685564162.293776
+      }
+    }
+  ],
+  "source_conversation_sha256": "b33882da2c153712cf429cae36c62f44b3d687bf2294765171a32f8aa3514d32",
+  "start": "2023-05-31T20:14:44.129139+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1685564084.129139,
+      "event_index": 2,
+      "role": "user",
+      "source_node_id": "aaa24704-ad60-4619-9a8a-cc1cfb03e59c",
+      "source_parent_id": "6a6a0107-eb85-4b59-a9e5-76d24571a7c0",
+      "source_record_index": 2,
+      "text": "Let's say I have a table called `responses` with a text field called `comment` that can contain strings like these:\n\n\"I got a lot of help from @4154 and @64 this week.\"\n\"@4154 thanks a million!!! Also @12\"\n\nHow would I do a query using Ruby on Rails to return all of the numbers that exist in the table into an array? For example `[4154, 64, 4154, 12]`",
+      "turn_id": "turn_000002"
+    },
+    {
+      "create_time": 1685564115.484299,
+      "event_index": 3,
+      "role": "assistant",
+      "source_node_id": "0b25837c-73d2-4998-995d-fe61ac973088",
+      "source_parent_id": "aaa24704-ad60-4619-9a8a-cc1cfb03e59c",
+      "source_record_index": 3,
+      "text": "You could do this in several steps in Ruby on Rails using ActiveRecord (the database interface in Rails) and regular expressions.\n\nFirst, you'll need to pull all the comments from your database. Then you'll extract the user ID's using a regex match, and finally, you'll flatten the array (since the match method returns an array of matches).\n\nHere's an example on how you might do it:\n\n```ruby\n# Get all comments from the responses table\ncomments = Response.pluck(:comment)\n\n# Define regex pattern for @ followed by digits\npattern = /@(\\d+)/\n\n# Extract all user ID's into an array\nuser_ids = comments.map { |comment| comment.scan(pattern) }.flatten\n\n# Convert all elements to integer (as they will be strings after the regex)\nuser_ids = user_ids.map(&:to_i)\n```\n\nThis will give you an array of integers like `[4154, 64, 4154, 12]`. \n\nKeep in mind this is a simple example and might not cover more complex use cases. For example, it assumes that the \"@\" character is always immediately followed by the user ID without any space. It also assumes that every string of numbers is a user ID, even if it isn't preceded by the \"@\" character. You would need a more complex regex if your actual use case doesn't meet these assumptions.",
+      "turn_id": "turn_000003"
+    },
+    {
+      "create_time": 1685564132.376134,
+      "event_index": 4,
+      "role": "user",
+      "source_node_id": "aaa2c0a5-903a-4c5d-a94f-8125ec24a7dd",
+      "source_parent_id": "0b25837c-73d2-4998-995d-fe61ac973088",
+      "source_record_index": 4,
+      "text": "Is there a way to do this using SQL?",
+      "turn_id": "turn_000004"
+    },
+    {
+      "create_time": 1685564162.293776,
+      "event_index": 5,
+      "role": "assistant",
+      "source_node_id": "c15470aa-1a69-4f9f-ab2e-e9d6d486c7e0",
+      "source_parent_id": "aaa2c0a5-903a-4c5d-a94f-8125ec24a7dd",
+      "source_record_index": 5,
+      "text": "Yes, but SQL is not great at string manipulation, so it's often more efficient and more readable to pull the data into your application and manipulate it there. That being said, if you're using a database that supports regular expressions, such as PostgreSQL or MySQL, it's possible to achieve this in SQL.\n\nThe SQL command may look something like this:\n\n```sql\nSELECT\n  REGEXP_MATCHES(comment, '@(\\d+)', 'g')\nFROM responses;\n```\n\nThis command would return a table with one column of arrays. Each array contains all matches of the regular expression in one comment. It's worth noting that this solution is specific to PostgreSQL, as SQL syntax varies between database management systems.\n\nIf you're trying to do this in MySQL, there is no built-in REGEXP_MATCHES function, but there are alternatives that you can use to achieve similar results.\n\nIf you need to do this directly in ActiveRecord in Rails, you could create a custom SQL query and execute it. Here's an example:\n\n```ruby\nresults = ActiveRecord::Base.connection.execute(\"\n  SELECT\n    REGEXP_MATCHES(comment, '@(\\d+)', 'g')\n  FROM responses\n\")\n```\n\nKeep in mind, this is only recommended when you absolutely need to use SQL and can't use Ruby to manipulate the data, as it is less readable and more prone to SQL injection attacks if not handled properly.",
+      "turn_id": "turn_000005"
+    }
+  ]
+}

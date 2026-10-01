@@ -1,0 +1,182 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_31B64CD9DDDB",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000003_000680_000738_dfef3e07e420e23a",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "braces",
+        "statement_terminators"
+      ],
+      "end_offset": 738,
+      "fence_language": "css",
+      "kind": "source_code",
+      "legacy_artifact_id": null,
+      "order_within_response": 1,
+      "raw_text": "   input, textarea, select {\n       font-size: 16px;\n   }\n",
+      "raw_text_sha256": "dfef3e07e420e23a4d6932c85a70f0f9c442c963145fd87f7f88f2e6b8503555",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "7b8147cb3a8bb80ad3caac018a55f288f08e898efe2ae1ac6319a858b037ee52",
+      "start_offset": 680,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_000993_001065_d001a3edc5f42e6f",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "recognized_fence_label"
+      ],
+      "end_offset": 1065,
+      "fence_language": "html",
+      "kind": "structured_xml_markup",
+      "legacy_artifact_id": null,
+      "order_within_response": 2,
+      "raw_text": "   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n",
+      "raw_text_sha256": "d001a3edc5f42e6fed6decf829a6127c7ad0861750c7a64b1be5d2ab248b6634",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "7b8147cb3a8bb80ad3caac018a55f288f08e898efe2ae1ac6319a858b037ee52",
+      "start_offset": 993,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_001392_001924_7573f66cb454f390",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "declaration",
+        "braces",
+        "statement_terminators",
+        "call_expression"
+      ],
+      "end_offset": 1924,
+      "fence_language": "javascript",
+      "kind": "source_code",
+      "legacy_artifact_id": null,
+      "order_within_response": 3,
+      "raw_text": "   const viewport = document.querySelector('meta[name=viewport]');\n\n   function disableZoom() {\n       viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');\n   }\n\n   function restoreZoom() {\n       viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');\n   }\n\n   document.querySelectorAll('input, textarea, select').forEach((element) => {\n       element.addEventListener('focus', disableZoom);\n       element.addEventListener('blur', restoreZoom);\n   });\n",
+      "raw_text_sha256": "7573f66cb454f39039b419992ac24a459dbeab99a5aa5bf0215f77519043e192",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "7b8147cb3a8bb80ad3caac018a55f288f08e898efe2ae1ac6319a858b037ee52",
+      "start_offset": 1392,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_002167_002252_17690ce5c1d75b38",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "braces",
+        "call_expression"
+      ],
+      "end_offset": 2252,
+      "fence_language": "css",
+      "kind": "source_code",
+      "legacy_artifact_id": null,
+      "order_within_response": 4,
+      "raw_text": "   @media screen and (max-width: 600px) {\n       /* Adjust styles for mobile */\n   }\n",
+      "raw_text_sha256": "17690ce5c1d75b3885a6721cfe17f1fadd30045ead23a289f7ce8734e86b1a5a",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "7b8147cb3a8bb80ad3caac018a55f288f08e898efe2ae1ac6319a858b037ee52",
+      "start_offset": 2167,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "On mobile, my react web app always zooms into text fields I touch and type into. I want the zoom level to stay the way it was before selecting a text box. How do you fix this?"
+          ]
+        },
+        "create_time": 1702939918.289472
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "The issue you're experiencing with your React web app on mobile devices, where the viewport zooms in when a text field is focused, is a common challenge in responsive web design. This behavior is typically caused by the default viewport settings on mobile browsers, which zoom in on form inputs to improve readability and ease of interaction for the user. \n\nTo prevent this zooming behavior, you can try the following solutions:\n\n1. **Adjust the Font Size:**\n   Mobile browsers often zoom in on form inputs if the font size is below a certain threshold (usually 16px). Try setting the font size of your input fields to at least 16 pixels. This can be done in your CSS:\n\n   ```css\n   input, textarea, select {\n       font-size: 16px;\n   }\n   ```\n\n2. **Viewport Meta Tag:**\n   Ensure your HTML includes a viewport meta tag in the head that sets the width to device-width and the initial scale to 1. This tag instructs the browser on how to control the page's dimensions and scaling.\n\n   ```html\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n   ```\n\n3. **JavaScript Approach:**\n   As a more dynamic solution, you can use JavaScript to detect when an input field is focused and adjust the viewport scale accordingly. This approach involves listening for focus and blur events on input elements and dynamically modifying the viewport content attribute.\n\n   ```javascript\n   const viewport = document.querySelector('meta[name=viewport]');\n\n   function disableZoom() {\n       viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');\n   }\n\n   function restoreZoom() {\n       viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');\n   }\n\n   document.querySelectorAll('input, textarea, select').forEach((element) => {\n       element.addEventListener('focus', disableZoom);\n       element.addEventListener('blur', restoreZoom);\n   });\n   ```\n\n4. **CSS Media Queries:**\n   Using CSS media queries, you can apply specific styles when the user agent is a mobile browser. This method, however, is less reliable as it depends on correctly identifying all mobile browsers.\n\n   ```css\n   @media screen and (max-width: 600px) {\n       /* Adjust styles for mobile */\n   }\n   ```\n\n5. **Testing and Validation:**\n   After implementing these changes, it's important to test your web app across different mobile devices and browsers to ensure the desired behavior is consistent.\n\nRemember that each project might require a slightly different approach based on its specific needs and the range of devices and browsers you want to support."
+          ]
+        },
+        "create_time": 1702939947.760544
+      }
+    }
+  ],
+  "source_conversation_sha256": "d9657b0855a26f071151fb5b030d12008689ea10d8c5703f01241e88b6950967",
+  "start": "2023-12-18T22:51:58.289472+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1702939918.289472,
+      "event_index": 2,
+      "role": "user",
+      "source_node_id": "aaa2adc1-9895-4d41-8df2-d29383f3d909",
+      "source_parent_id": "f47ff41b-d8ea-4ef4-888b-e37a159a3e71",
+      "source_record_index": 2,
+      "text": "On mobile, my react web app always zooms into text fields I touch and type into. I want the zoom level to stay the way it was before selecting a text box. How do you fix this?",
+      "turn_id": "turn_000002"
+    },
+    {
+      "create_time": 1702939947.760544,
+      "event_index": 3,
+      "role": "assistant",
+      "source_node_id": "f6d5623e-8b80-4990-92c2-e4bd4cc52745",
+      "source_parent_id": "aaa2adc1-9895-4d41-8df2-d29383f3d909",
+      "source_record_index": 3,
+      "text": "The issue you're experiencing with your React web app on mobile devices, where the viewport zooms in when a text field is focused, is a common challenge in responsive web design. This behavior is typically caused by the default viewport settings on mobile browsers, which zoom in on form inputs to improve readability and ease of interaction for the user. \n\nTo prevent this zooming behavior, you can try the following solutions:\n\n1. **Adjust the Font Size:**\n   Mobile browsers often zoom in on form inputs if the font size is below a certain threshold (usually 16px). Try setting the font size of your input fields to at least 16 pixels. This can be done in your CSS:\n\n   ```css\n   input, textarea, select {\n       font-size: 16px;\n   }\n   ```\n\n2. **Viewport Meta Tag:**\n   Ensure your HTML includes a viewport meta tag in the head that sets the width to device-width and the initial scale to 1. This tag instructs the browser on how to control the page's dimensions and scaling.\n\n   ```html\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n   ```\n\n3. **JavaScript Approach:**\n   As a more dynamic solution, you can use JavaScript to detect when an input field is focused and adjust the viewport scale accordingly. This approach involves listening for focus and blur events on input elements and dynamically modifying the viewport content attribute.\n\n   ```javascript\n   const viewport = document.querySelector('meta[name=viewport]');\n\n   function disableZoom() {\n       viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');\n   }\n\n   function restoreZoom() {\n       viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');\n   }\n\n   document.querySelectorAll('input, textarea, select').forEach((element) => {\n       element.addEventListener('focus', disableZoom);\n       element.addEventListener('blur', restoreZoom);\n   });\n   ```\n\n4. **CSS Media Queries:**\n   Using CSS media queries, you can apply specific styles when the user agent is a mobile browser. This method, however, is less reliable as it depends on correctly identifying all mobile browsers.\n\n   ```css\n   @media screen and (max-width: 600px) {\n       /* Adjust styles for mobile */\n   }\n   ```\n\n5. **Testing and Validation:**\n   After implementing these changes, it's important to test your web app across different mobile devices and browsers to ensure the desired behavior is consistent.\n\nRemember that each project might require a slightly different approach based on its specific needs and the range of devices and browsers you want to support.",
+      "turn_id": "turn_000003"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_B98070F8A24D",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000004_000544_002630_2621306d189eef2c",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "multiple_dotted_properties"
+      ],
+      "end_offset": 2630,
+      "fence_language": "python",
+      "kind": "configuration_properties",
+      "legacy_artifact_id": "ARTIFACT_000004_001",
+      "order_within_response": 1,
+      "raw_text": "from typing import List\n\nclass StockCreationBodyModel(BaseModel):\n    # ... [rest of your model definition]\n\ndef _fetch_existing_stocks(offer_id: int, stocks_payload: List[serialization.StockCreationBodyModel]) -> List[offers_models.Stock]:\n    criteria = [\n        offers_models.Stock.offerId == offer_id,\n        offers_models.Stock.isSoftDeleted == False,\n    ]\n    # Create tuples of attributes to filter\n    stock_attributes = [(stock.price or decimal.Decimal(0), \n                         stock.beginning_datetime, \n                         stock.booking_limit_datetime, \n                         stock.price_category_id, \n                         stock.quantity) for stock in stocks_payload]\n\n    # Add criteria for each stock attribute\n    for price, beginning, booking_limit, price_category_id, quantity in stock_attributes:\n        criteria.append(\n            (offers_models.Stock.price == price) &\n            (offers_models.Stock.beginningDatetime == beginning) &\n            (offers_models.Stock.bookingLimitDatetime == booking_limit) &\n            (offers_models.Stock.priceCategoryId == price_category_id) &\n            (offers_models.Stock.quantity == quantity)\n        )\n\n    # Perform a single query to fetch all stocks that match any of the criteria\n    return offers_models.Stock.query.filter(or_(*criteria)).all()\n\ndef _stock_exists(existing_stocks, stock_payload) -> bool:\n    for stock in existing_stocks:\n        if (stock.offerId == stock_payload.offer_id and\n            stock.price == (stock_payload.price or decimal.Decimal(0)) and\n            stock.beginningDatetime == stock_payload.beginning_datetime and\n            stock.bookingLimitDatetime == stock_payload.booking_limit_datetime and\n            stock.priceCategoryId == stock_payload.price_category_id and\n            stock.quantity == stock_payload.quantity):\n            return True\n    return False\n\n# ...\nexisting_stocks = _fetch_existing_stocks(body.offer_id, stocks_to_create)\n\nfor stock_to_create in stocks_to_create:\n    if not _stock_exists(existing_stocks, stock_to_create):\n        # ...\n",
+      "raw_text_sha256": "2621306d189eef2cc83650bb47dc2c5983d1b95694cc2e78d33ee322a5a9b9c3",
+      "source_event_index": 4,
+      "source_record_index": 4,
+      "source_response_id": "turn_000004",
+      "source_turn_text_sha256": "f95052a38f0b43bc571806df7c067360ca78e3b1326bc147630d77122c667641",
+      "start_offset": 544,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "please refactor this code to avoid n+1 queries :\n\nclass StockCreationBodyModel(BaseModel):\n    activation_codes: list[str] | None\n    activation_codes_expiration_datetime: datetime | None\n    beginning_datetime: datetime | None\n    booking_limit_datetime: datetime | None\n    price: decimal.Decimal | None\n    price_category_id: int | None\n    quantity: int | None = Field(None, ge=0, le=models.Stock.MAX_STOCK_QUANTITY)\n\ndef _stock_exists(offer_id: int, stock_payload: serialization.StockCreationBodyModel) -> bool:\n    if not stock_payload.price:\n        price_to_check = decimal.Decimal(0)\n    else:\n        price_to_check = stock_payload.price\n    existing_stock = offers_models.Stock.query.filter(\n        offers_models.Stock.offerId == offer_id,\n        offers_models.Stock.isSoftDeleted == False,\n        offers_models.Stock.beginningDatetime == stock_payload.beginning_datetime,\n        offers_models.Stock.bookingLimitDatetime == stock_payload.booking_limit_datetime,\n        offers_models.Stock.price == price_to_check,\n        offers_models.Stock.priceCategoryId == stock_payload.price_category_id,\n        offers_models.Stock.quantity == stock_payload.quantity,\n    ).all()\n    return bool(existing_stock)\n\n# ...\n            for stock_to_create in stocks_to_create:\n                  if not _stock_exists(body.offer_id, stock_to_create):\n                      # ..."
+          ]
+        },
+        "create_time": 1700646588.179225
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To refactor the code and avoid the N+1 query problem, we need to minimize the number of database queries made within a loop. In your current code, the `_stock_exists` function is called inside a loop, which results in a separate database query for each iteration. This is a classic example of an N+1 query issue.\n\nTo solve this, we can fetch all relevant stocks in a single query before the loop and then check for the existence of each stock in Python, rather than with separate SQL queries.\n\nHere's how you can refactor your code:\n\n```python\nfrom typing import List\n\nclass StockCreationBodyModel(BaseModel):\n    # ... [rest of your model definition]\n\ndef _fetch_existing_stocks(offer_id: int, stocks_payload: List[serialization.StockCreationBodyModel]) -> List[offers_models.Stock]:\n    criteria = [\n        offers_models.Stock.offerId == offer_id,\n        offers_models.Stock.isSoftDeleted == False,\n    ]\n    # Create tuples of attributes to filter\n    stock_attributes = [(stock.price or decimal.Decimal(0), \n                         stock.beginning_datetime, \n                         stock.booking_limit_datetime, \n                         stock.price_category_id, \n                         stock.quantity) for stock in stocks_payload]\n\n    # Add criteria for each stock attribute\n    for price, beginning, booking_limit, price_category_id, quantity in stock_attributes:\n        criteria.append(\n            (offers_models.Stock.price == price) &\n            (offers_models.Stock.beginningDatetime == beginning) &\n            (offers_models.Stock.bookingLimitDatetime == booking_limit) &\n            (offers_models.Stock.priceCategoryId == price_category_id) &\n            (offers_models.Stock.quantity == quantity)\n        )\n\n    # Perform a single query to fetch all stocks that match any of the criteria\n    return offers_models.Stock.query.filter(or_(*criteria)).all()\n\ndef _stock_exists(existing_stocks, stock_payload) -> bool:\n    for stock in existing_stocks:\n        if (stock.offerId == stock_payload.offer_id and\n            stock.price == (stock_payload.price or decimal.Decimal(0)) and\n            stock.beginningDatetime == stock_payload.beginning_datetime and\n            stock.bookingLimitDatetime == stock_payload.booking_limit_datetime and\n            stock.priceCategoryId == stock_payload.price_category_id and\n            stock.quantity == stock_payload.quantity):\n            return True\n    return False\n\n# ...\nexisting_stocks = _fetch_existing_stocks(body.offer_id, stocks_to_create)\n\nfor stock_to_create in stocks_to_create:\n    if not _stock_exists(existing_stocks, stock_to_create):\n        # ...\n```\n\nThis refactoring approach fetches all potentially existing stocks in one query and then checks in-memory. It significantly reduces the number of database queries, especially when the number of stocks in `stocks_to_create` is large."
+          ]
+        },
+        "create_time": 1700646627.931547
+      }
+    }
+  ],
+  "source_conversation_sha256": "e50a501d3ac8544432b907c7f8b0ac90f0275f9d34a4393c6a14bc78cf1b529c",
+  "start": "2023-11-22T09:49:48.179225+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1700646588.179225,
+      "event_index": 3,
+      "role": "user",
+      "source_node_id": "aaa230de-629c-437b-b5b2-8c59990be024",
+      "source_parent_id": "64cd60b5-c079-4a1c-ba57-bf42848ea6a8",
+      "source_record_index": 3,
+      "text": "please refactor this code to avoid n+1 queries :\n\nclass StockCreationBodyModel(BaseModel):\n    activation_codes: list[str] | None\n    activation_codes_expiration_datetime: datetime | None\n    beginning_datetime: datetime | None\n    booking_limit_datetime: datetime | None\n    price: decimal.Decimal | None\n    price_category_id: int | None\n    quantity: int | None = Field(None, ge=0, le=models.Stock.MAX_STOCK_QUANTITY)\n\ndef _stock_exists(offer_id: int, stock_payload: serialization.StockCreationBodyModel) -> bool:\n    if not stock_payload.price:\n        price_to_check = decimal.Decimal(0)\n    else:\n        price_to_check = stock_payload.price\n    existing_stock = offers_models.Stock.query.filter(\n        offers_models.Stock.offerId == offer_id,\n        offers_models.Stock.isSoftDeleted == False,\n        offers_models.Stock.beginningDatetime == stock_payload.beginning_datetime,\n        offers_models.Stock.bookingLimitDatetime == stock_payload.booking_limit_datetime,\n        offers_models.Stock.price == price_to_check,\n        offers_models.Stock.priceCategoryId == stock_payload.price_category_id,\n        offers_models.Stock.quantity == stock_payload.quantity,\n    ).all()\n    return bool(existing_stock)\n\n# ...\n            for stock_to_create in stocks_to_create:\n                  if not _stock_exists(body.offer_id, stock_to_create):\n                      # ...",
+      "turn_id": "turn_000003"
+    },
+    {
+      "create_time": 1700646627.931547,
+      "event_index": 4,
+      "role": "assistant",
+      "source_node_id": "749a97f8-1eb1-4c4e-bdbb-92bf38da434b",
+      "source_parent_id": "aaa230de-629c-437b-b5b2-8c59990be024",
+      "source_record_index": 4,
+      "text": "To refactor the code and avoid the N+1 query problem, we need to minimize the number of database queries made within a loop. In your current code, the `_stock_exists` function is called inside a loop, which results in a separate database query for each iteration. This is a classic example of an N+1 query issue.\n\nTo solve this, we can fetch all relevant stocks in a single query before the loop and then check for the existence of each stock in Python, rather than with separate SQL queries.\n\nHere's how you can refactor your code:\n\n```python\nfrom typing import List\n\nclass StockCreationBodyModel(BaseModel):\n    # ... [rest of your model definition]\n\ndef _fetch_existing_stocks(offer_id: int, stocks_payload: List[serialization.StockCreationBodyModel]) -> List[offers_models.Stock]:\n    criteria = [\n        offers_models.Stock.offerId == offer_id,\n        offers_models.Stock.isSoftDeleted == False,\n    ]\n    # Create tuples of attributes to filter\n    stock_attributes = [(stock.price or decimal.Decimal(0), \n                         stock.beginning_datetime, \n                         stock.booking_limit_datetime, \n                         stock.price_category_id, \n                         stock.quantity) for stock in stocks_payload]\n\n    # Add criteria for each stock attribute\n    for price, beginning, booking_limit, price_category_id, quantity in stock_attributes:\n        criteria.append(\n            (offers_models.Stock.price == price) &\n            (offers_models.Stock.beginningDatetime == beginning) &\n            (offers_models.Stock.bookingLimitDatetime == booking_limit) &\n            (offers_models.Stock.priceCategoryId == price_category_id) &\n            (offers_models.Stock.quantity == quantity)\n        )\n\n    # Perform a single query to fetch all stocks that match any of the criteria\n    return offers_models.Stock.query.filter(or_(*criteria)).all()\n\ndef _stock_exists(existing_stocks, stock_payload) -> bool:\n    for stock in existing_stocks:\n        if (stock.offerId == stock_payload.offer_id and\n            stock.price == (stock_payload.price or decimal.Decimal(0)) and\n            stock.beginningDatetime == stock_payload.beginning_datetime and\n            stock.bookingLimitDatetime == stock_payload.booking_limit_datetime and\n            stock.priceCategoryId == stock_payload.price_category_id and\n            stock.quantity == stock_payload.quantity):\n            return True\n    return False\n\n# ...\nexisting_stocks = _fetch_existing_stocks(body.offer_id, stocks_to_create)\n\nfor stock_to_create in stocks_to_create:\n    if not _stock_exists(existing_stocks, stock_to_create):\n        # ...\n```\n\nThis refactoring approach fetches all potentially existing stocks in one query and then checks in-memory. It significantly reduces the number of database queries, especially when the number of stocks in `stocks_to_create` is large.",
+      "turn_id": "turn_000004"
+    }
+  ]
+}

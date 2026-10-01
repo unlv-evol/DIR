@@ -1,0 +1,243 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_3A639B473AED",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000003_000195_001855_65be5216164e29fa",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence"
+      ],
+      "end_offset": 1855,
+      "fence_language": "markdown",
+      "kind": "unclassified_technical",
+      "legacy_artifact_id": "ARTIFACT_000003_001",
+      "order_within_response": 1,
+      "raw_text": "---\nname: Question and support\nabout: Your setup is not working and you need help or you have a question regarding PrivateBin\ntitle: 'Your Title Here'\nlabels: question/support\nassignees: ''\n\n---\n\n## Describe the problem/question\n\nA clear and concise description of what the bug is.\n\n<!-- Please tick this to confirm, you did it.-->\n* [ ] Yes, I have read [the FAQ](https://github.com/PrivateBin/PrivateBin/wiki/FAQ) and I found no solution/answer there.\n\n## What you did\n\nTell us how to reproduce the problem.\n\n1. Step 1\n2. Step 2\n\n### What happens\n\nDescribe what currently happens when you follow the steps mentioned above.\n\n### What should happen\n\nDescribe what you expect to happen when you follow the steps mentioned above.\n\n## Additional information\n\n<!-- Here you can add screenshots. If the issue is e.g. a client-side issue (= an issue, which happens in your browser) press F12 and copy and paste the console output or add a screenshot.\nIf you have access to the server log files, also copy them here. -->\n\n## Basic information\n\n<!-- If you use a public server enter the address of it here. -->\n**Server address**: \n\n<!-- The Operating System of your server -->\n**Server OS**: \n\n<!-- The webserver running on your server, preferably including the version -->\n**Webserver**: \n\n<!-- The version of your browser (when it is a client-side issue) -->\n**Browser**: \n\n<!-- The version of PrivateBin, if you use an unstable version paste the commit hash or the GitHub link to the commit here (you can get it by running `git rev-parse HEAD`) -->\n**PrivateBin version**: \n\nI can reproduce this issue on [https://privatebin.net](https://privatebin.net): Yes / No\n",
+      "raw_text_sha256": "65be5216164e29faa1e877f6841057e073e439fa662d636c9ba4973d1402d253",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "5c7b3f2970e368c7ff475c567e31488cf21b82a1a2bc5f949bb8070d5d29f44e",
+      "start_offset": 195,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000005_000116_001771_023ce59c06f9f1a3",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence"
+      ],
+      "end_offset": 1771,
+      "fence_language": "yaml",
+      "kind": "unclassified_technical",
+      "legacy_artifact_id": "ARTIFACT_000005_001",
+      "order_within_response": 1,
+      "raw_text": "name: Question and support\nabout: Your setup is not working and you need help or you have a question regarding PrivateBin\ntitle: 'Your Title Here'\nlabels: question/support\nassignees: ''\n\n---\n## Describe the problem/question\n\nA clear and concise description of what the bug is.\n\n<!-- Please tick this to confirm, you did it.-->\n* [ ] Yes, I have read [the FAQ](https://github.com/PrivateBin/PrivateBin/wiki/FAQ) and I found no solution/answer there.\n\n## What you did\n\nTell us how to reproduce the problem.\n\n1. Step 1\n2. Step 2\n\n### What happens\n\nDescribe what currently happens when you follow the steps mentioned above.\n\n### What should happen\n\nDescribe what you expect to happen when you follow the steps mentioned above.\n\n## Additional information\n\n<!-- Here you can add screenshots. If the issue is e.g. a client-side issue (= an issue, which happens in your browser) press F12 and copy and paste the console output or add a screenshot.\nIf you have access to the server log files, also copy them here. -->\n\n## Basic information\n\n<!-- If you use a public server enter the address of it here. -->\n**Server address**: \n\n<!-- The Operating System of your server -->\n**Server OS**: \n\n<!-- The webserver running on your server, preferably including the version -->\n**Webserver**: \n\n<!-- The version of your browser (when it is a client-side issue) -->\n**Browser**: \n\n<!-- The version of PrivateBin, if you use an unstable version paste the commit hash or the GitHub link to the commit here (you can get it by running `git rev-parse HEAD`) -->\n**PrivateBin version**: \n\nI can reproduce this issue on [https://privatebin.net](https://privatebin.net): Yes / No\n",
+      "raw_text_sha256": "023ce59c06f9f1a350c6cac0ebc538b60fa72d0ea03790cd74152724b202a0de",
+      "source_event_index": 5,
+      "source_record_index": 5,
+      "source_response_id": "turn_000005",
+      "source_turn_text_sha256": "c270ea522b83354195692863947d9686de46bf284babfa6fd555f486d09004e8",
+      "start_offset": 116,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000007_000124_001686_c63d2d2689157ff3",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence"
+      ],
+      "end_offset": 1686,
+      "fence_language": "yaml",
+      "kind": "unclassified_technical",
+      "legacy_artifact_id": "ARTIFACT_000007_001",
+      "order_within_response": 1,
+      "raw_text": "title: \"[Question and support] \"\nlabels: [\"question/support\"]\nbody:\n  - type: markdown\n    attributes:\n      value: |\n        Describe the problem/question: A clear and concise description of what the bug is.\n  - type: checkboxes\n    attributes:\n      label: Please tick this to confirm\n      options:\n        - label: Yes, I have read [the FAQ](https://github.com/PrivateBin/PrivateBin/wiki/FAQ) and I found no solution/answer there.\n  - type: markdown\n    attributes:\n      value: |\n        ## What you did\n        Tell us how to reproduce the problem.\n\n        1.\n        2.\n  - type: textarea\n    id: what_happens\n    attributes:\n      label: What happens\n  - type: textarea\n    id: what_should_happen\n    attributes:\n      label: What should happen\n  - type: textarea\n    id: additional_info\n    attributes:\n      label: Additional information\n      description: If you have access to the server log files, copy them here.\n  - type: input\n    id: server_address\n    attributes:\n      label: Server address\n  - type: input\n    id: server_os\n    attributes:\n      label: Server OS\n  - type: input\n    id: webserver\n    attributes:\n      label: Webserver\n  - type: input\n    id: browser\n    attributes:\n      label: Browser\n  - type: input\n    id: privatebin_version\n    attributes:\n      label: PrivateBin version\n  - type: radio\n    id: reproduce_issue\n    attributes:\n      label: I can reproduce this issue on [https://privatebin.net](https://privatebin.net)\n      options:\n        - label: Yes\n          value: Yes\n        - label: No\n          value: No\n",
+      "raw_text_sha256": "c63d2d2689157ff3befa5a92c53a7a9fb6e97e6deabf6bcebe85f374e4fbd9b3",
+      "source_event_index": 7,
+      "source_record_index": 7,
+      "source_response_id": "turn_000007",
+      "source_turn_text_sha256": "a3b153f0fef959d66a1d5e73fafa1201c5100c7034f4c0237769665c04c0d04b",
+      "start_offset": 124,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Convert this Markdown file to a GitHub discussion category form:\n\n```md\n---\nname: Question and support\nabout: Your setup is not working and you need help or you have a question regarding\n  PrivateBin\ntitle: ''\nlabels: question/support\nassignees: ''\n\n---\n\n<-- Describe the problem/question: A clear and concise description of what the bug is. -->\n\n<!-- Please tick this to confirm, you did it.-->\n* [ ] Yes I have read [the FAQ](https://github.com/PrivateBin/PrivateBin/wiki/FAQ) and I found no solution/answer there.\n\n## What you did\n<!-- Tell us how to reproduce the problem. -->\n1.\n2.\n\n### What happens\n\n\n### What should happen\n\n\n## Additional information\n<!--\nHere you can add screenshots. If the issue is e.g. a client-side issue (= an issue, which happens in your browser) press F12 and copy and paste the console output or add a screenshot.\nIf you have access to the server log files, also copy them here.\n-->\n\n## Basic information\n\n<!-- If you use a public server enter the address of it here. -->\n**Server address**:\n\n<!-- The Operation System of your server -->\n**Server OS:**\n\n<!-- The webserver running on your server, preferably including the version -->\n**Webserver:**\n\n<!-- The version of your browser (when it is a client-side issue) -->\n**Browser:**\n\n<!-- The version of PrivateBin, if you use an unstable version paste the commit hash or the GitHub link to the commit here (you can get it by running `git rev-parse HEAD`) -->\n**PrivateBin version:**\n\nI can reproduce this issue on <https://privatebin.net>: Yes / No\n```"
+          ]
+        },
+        "create_time": 1691430002.973733
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To convert your Markdown file into a GitHub discussion category form, you can follow the GitHub-flavored Markdown syntax and structure for discussions. Here's the converted version:\n\n```markdown\n---\nname: Question and support\nabout: Your setup is not working and you need help or you have a question regarding PrivateBin\ntitle: 'Your Title Here'\nlabels: question/support\nassignees: ''\n\n---\n\n## Describe the problem/question\n\nA clear and concise description of what the bug is.\n\n<!-- Please tick this to confirm, you did it.-->\n* [ ] Yes, I have read [the FAQ](https://github.com/PrivateBin/PrivateBin/wiki/FAQ) and I found no solution/answer there.\n\n## What you did\n\nTell us how to reproduce the problem.\n\n1. Step 1\n2. Step 2\n\n### What happens\n\nDescribe what currently happens when you follow the steps mentioned above.\n\n### What should happen\n\nDescribe what you expect to happen when you follow the steps mentioned above.\n\n## Additional information\n\n<!-- Here you can add screenshots. If the issue is e.g. a client-side issue (= an issue, which happens in your browser) press F12 and copy and paste the console output or add a screenshot.\nIf you have access to the server log files, also copy them here. -->\n\n## Basic information\n\n<!-- If you use a public server enter the address of it here. -->\n**Server address**: \n\n<!-- The Operating System of your server -->\n**Server OS**: \n\n<!-- The webserver running on your server, preferably including the version -->\n**Webserver**: \n\n<!-- The version of your browser (when it is a client-side issue) -->\n**Browser**: \n\n<!-- The version of PrivateBin, if you use an unstable version paste the commit hash or the GitHub link to the commit here (you can get it by running `git rev-parse HEAD`) -->\n**PrivateBin version**: \n\nI can reproduce this issue on [https://privatebin.net](https://privatebin.net): Yes / No\n```\n\nNote that GitHub Discussions do not directly support custom forms like the one you provided, but you can structure your post using the available Markdown elements to capture the necessary information. Also, make sure to replace `'Your Title Here'` with an appropriate title for your discussion post."
+          ]
+        },
+        "create_time": 1691430016.134775
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "No I meant the YAML-based syntax for discussion category forms."
+          ]
+        },
+        "create_time": 1691430078.316795
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Apologies for the misunderstanding. Here's the YAML-based syntax for your GitHub discussion category form:\n\n```yaml\nname: Question and support\nabout: Your setup is not working and you need help or you have a question regarding PrivateBin\ntitle: 'Your Title Here'\nlabels: question/support\nassignees: ''\n\n---\n## Describe the problem/question\n\nA clear and concise description of what the bug is.\n\n<!-- Please tick this to confirm, you did it.-->\n* [ ] Yes, I have read [the FAQ](https://github.com/PrivateBin/PrivateBin/wiki/FAQ) and I found no solution/answer there.\n\n## What you did\n\nTell us how to reproduce the problem.\n\n1. Step 1\n2. Step 2\n\n### What happens\n\nDescribe what currently happens when you follow the steps mentioned above.\n\n### What should happen\n\nDescribe what you expect to happen when you follow the steps mentioned above.\n\n## Additional information\n\n<!-- Here you can add screenshots. If the issue is e.g. a client-side issue (= an issue, which happens in your browser) press F12 and copy and paste the console output or add a screenshot.\nIf you have access to the server log files, also copy them here. -->\n\n## Basic information\n\n<!-- If you use a public server enter the address of it here. -->\n**Server address**: \n\n<!-- The Operating System of your server -->\n**Server OS**: \n\n<!-- The webserver running on your server, preferably including the version -->\n**Webserver**: \n\n<!-- The version of your browser (when it is a client-side issue) -->\n**Browser**: \n\n<!-- The version of PrivateBin, if you use an unstable version paste the commit hash or the GitHub link to the commit here (you can get it by running `git rev-parse HEAD`) -->\n**PrivateBin version**: \n\nI can reproduce this issue on [https://privatebin.net](https://privatebin.net): Yes / No\n```\n\nYou can copy and paste this YAML-based syntax into a new discussion in your GitHub repository to create the desired category form. Make sure to replace `'Your Title Here'` with an appropriate title for your discussion post."
+          ]
+        },
+        "create_time": 1691430089.854678
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "No, here is an example for such a form syntax:\n```yaml\ntitle: \"[General] \"\nlabels: [\"General Introduction\"]\nbody:\n  - type: markdown\n    attributes:\n      value: |\n        This is text that will show up in the template!\n  - type: textarea\n    id: improvements\n    attributes:\n      label: Top 3 improvements\n      description: \"What are the top 3 improvements we could make to this project?\"\n      value: |\n        1.\n        2.\n        3.\n        ...\n      render: bash\n    validations:\n      required: true\n  - type: markdown\n    attributes:\n      value: |\n        ## Markdown header\n        And some more markdown\n  - type: input\n    id: has-id\n    attributes:\n      label: Suggestions\n      description: A description about suggestions to help you\n    validations:\n      required: true\n  - type: dropdown\n    id: download\n    attributes:\n      label: Which area of this project could be most improved?\n      options:\n        - Documentation\n        - Pull request review time\n        - Bug fix time\n        - Release cadence\n    validations:\n      required: true\n  - type: checkboxes\n    attributes:\n      label: Check that box!\n      options:\n        - label: This one!\n          required: true\n        - label: I won't stop you if you check this one, too\n  - type: markdown\n    attributes:\n      value: |\n        ### The thrilling conclusion\n        _to our template_\n\n```\n\nAnd here is the top-level syntax:\n```yaml\nbody:\n- type: input\n  id: suggestion\n  attributes:\n    label: Suggestion\n    description: \"How might we make this project better?\"\n    placeholder: \"Adding a CODE_OF_CONDUCT.md file would be a great idea.\"\n  validations:\n    required: true\n```\n\n"
+          ]
+        },
+        "create_time": 1691430123.558294
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood! Here's the GitHub discussion category form you provided, converted into the format you're looking for:\n\n```yaml\ntitle: \"[Question and support] \"\nlabels: [\"question/support\"]\nbody:\n  - type: markdown\n    attributes:\n      value: |\n        Describe the problem/question: A clear and concise description of what the bug is.\n  - type: checkboxes\n    attributes:\n      label: Please tick this to confirm\n      options:\n        - label: Yes, I have read [the FAQ](https://github.com/PrivateBin/PrivateBin/wiki/FAQ) and I found no solution/answer there.\n  - type: markdown\n    attributes:\n      value: |\n        ## What you did\n        Tell us how to reproduce the problem.\n\n        1.\n        2.\n  - type: textarea\n    id: what_happens\n    attributes:\n      label: What happens\n  - type: textarea\n    id: what_should_happen\n    attributes:\n      label: What should happen\n  - type: textarea\n    id: additional_info\n    attributes:\n      label: Additional information\n      description: If you have access to the server log files, copy them here.\n  - type: input\n    id: server_address\n    attributes:\n      label: Server address\n  - type: input\n    id: server_os\n    attributes:\n      label: Server OS\n  - type: input\n    id: webserver\n    attributes:\n      label: Webserver\n  - type: input\n    id: browser\n    attributes:\n      label: Browser\n  - type: input\n    id: privatebin_version\n    attributes:\n      label: PrivateBin version\n  - type: radio\n    id: reproduce_issue\n    attributes:\n      label: I can reproduce this issue on [https://privatebin.net](https://privatebin.net)\n      options:\n        - label: Yes\n          value: Yes\n        - label: No\n          value: No\n```\n\nThis YAML structure represents the GitHub discussion category form with different input types and labels as you provided. You can copy and paste this YAML code into your GitHub repository's discussion settings to create the desired form for the \"Question and support\" category. Just make sure to customize the labels and options as needed."
+          ]
+        },
+        "create_time": 1691430135.196039
+      }
+    }
+  ],
+  "source_conversation_sha256": "31e2c68f6a0c0962636c7c15b174dcb5b18a0dad82bc2b8fb3bbfeaddaefd88f",
+  "start": "2023-08-07T17:40:02.973733+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1691430002.973733,
+      "event_index": 2,
+      "role": "user",
+      "source_node_id": "aaa217d7-893c-4cc8-b038-66eb7ff6d35e",
+      "source_parent_id": "9cde1449-1208-4b96-8015-61f345b8c89a",
+      "source_record_index": 2,
+      "text": "Convert this Markdown file to a GitHub discussion category form:\n\n```md\n---\nname: Question and support\nabout: Your setup is not working and you need help or you have a question regarding\n  PrivateBin\ntitle: ''\nlabels: question/support\nassignees: ''\n\n---\n\n<-- Describe the problem/question: A clear and concise description of what the bug is. -->\n\n<!-- Please tick this to confirm, you did it.-->\n* [ ] Yes I have read [the FAQ](https://github.com/PrivateBin/PrivateBin/wiki/FAQ) and I found no solution/answer there.\n\n## What you did\n<!-- Tell us how to reproduce the problem. -->\n1.\n2.\n\n### What happens\n\n\n### What should happen\n\n\n## Additional information\n<!--\nHere you can add screenshots. If the issue is e.g. a client-side issue (= an issue, which happens in your browser) press F12 and copy and paste the console output or add a screenshot.\nIf you have access to the server log files, also copy them here.\n-->\n\n## Basic information\n\n<!-- If you use a public server enter the address of it here. -->\n**Server address**:\n\n<!-- The Operation System of your server -->\n**Server OS:**\n\n<!-- The webserver running on your server, preferably including the version -->\n**Webserver:**\n\n<!-- The version of your browser (when it is a client-side issue) -->\n**Browser:**\n\n<!-- The version of PrivateBin, if you use an unstable version paste the commit hash or the GitHub link to the commit here (you can get it by running `git rev-parse HEAD`) -->\n**PrivateBin version:**\n\nI can reproduce this issue on <https://privatebin.net>: Yes / No\n```",
+      "turn_id": "turn_000002"
+    },
+    {
+      "create_time": 1691430016.134775,
+      "event_index": 3,
+      "role": "assistant",
+      "source_node_id": "b9fe77c4-009a-4938-9269-52a760eb9669",
+      "source_parent_id": "aaa217d7-893c-4cc8-b038-66eb7ff6d35e",
+      "source_record_index": 3,
+      "text": "To convert your Markdown file into a GitHub discussion category form, you can follow the GitHub-flavored Markdown syntax and structure for discussions. Here's the converted version:\n\n```markdown\n---\nname: Question and support\nabout: Your setup is not working and you need help or you have a question regarding PrivateBin\ntitle: 'Your Title Here'\nlabels: question/support\nassignees: ''\n\n---\n\n## Describe the problem/question\n\nA clear and concise description of what the bug is.\n\n<!-- Please tick this to confirm, you did it.-->\n* [ ] Yes, I have read [the FAQ](https://github.com/PrivateBin/PrivateBin/wiki/FAQ) and I found no solution/answer there.\n\n## What you did\n\nTell us how to reproduce the problem.\n\n1. Step 1\n2. Step 2\n\n### What happens\n\nDescribe what currently happens when you follow the steps mentioned above.\n\n### What should happen\n\nDescribe what you expect to happen when you follow the steps mentioned above.\n\n## Additional information\n\n<!-- Here you can add screenshots. If the issue is e.g. a client-side issue (= an issue, which happens in your browser) press F12 and copy and paste the console output or add a screenshot.\nIf you have access to the server log files, also copy them here. -->\n\n## Basic information\n\n<!-- If you use a public server enter the address of it here. -->\n**Server address**: \n\n<!-- The Operating System of your server -->\n**Server OS**: \n\n<!-- The webserver running on your server, preferably including the version -->\n**Webserver**: \n\n<!-- The version of your browser (when it is a client-side issue) -->\n**Browser**: \n\n<!-- The version of PrivateBin, if you use an unstable version paste the commit hash or the GitHub link to the commit here (you can get it by running `git rev-parse HEAD`) -->\n**PrivateBin version**: \n\nI can reproduce this issue on [https://privatebin.net](https://privatebin.net): Yes / No\n```\n\nNote that GitHub Discussions do not directly support custom forms like the one you provided, but you can structure your post using the available Markdown elements to capture the necessary information. Also, make sure to replace `'Your Title Here'` with an appropriate title for your discussion post.",
+      "turn_id": "turn_000003"
+    },
+    {
+      "create_time": 1691430078.316795,
+      "event_index": 4,
+      "role": "user",
+      "source_node_id": "aaa2c82b-21d6-49c9-a56c-690762ef5582",
+      "source_parent_id": "b9fe77c4-009a-4938-9269-52a760eb9669",
+      "source_record_index": 4,
+      "text": "No I meant the YAML-based syntax for discussion category forms.",
+      "turn_id": "turn_000004"
+    },
+    {
+      "create_time": 1691430089.854678,
+      "event_index": 5,
+      "role": "assistant",
+      "source_node_id": "cc439e8d-86f0-464b-87d1-2bb1d2a64c1a",
+      "source_parent_id": "aaa2c82b-21d6-49c9-a56c-690762ef5582",
+      "source_record_index": 5,
+      "text": "Apologies for the misunderstanding. Here's the YAML-based syntax for your GitHub discussion category form:\n\n```yaml\nname: Question and support\nabout: Your setup is not working and you need help or you have a question regarding PrivateBin\ntitle: 'Your Title Here'\nlabels: question/support\nassignees: ''\n\n---\n## Describe the problem/question\n\nA clear and concise description of what the bug is.\n\n<!-- Please tick this to confirm, you did it.-->\n* [ ] Yes, I have read [the FAQ](https://github.com/PrivateBin/PrivateBin/wiki/FAQ) and I found no solution/answer there.\n\n## What you did\n\nTell us how to reproduce the problem.\n\n1. Step 1\n2. Step 2\n\n### What happens\n\nDescribe what currently happens when you follow the steps mentioned above.\n\n### What should happen\n\nDescribe what you expect to happen when you follow the steps mentioned above.\n\n## Additional information\n\n<!-- Here you can add screenshots. If the issue is e.g. a client-side issue (= an issue, which happens in your browser) press F12 and copy and paste the console output or add a screenshot.\nIf you have access to the server log files, also copy them here. -->\n\n## Basic information\n\n<!-- If you use a public server enter the address of it here. -->\n**Server address**: \n\n<!-- The Operating System of your server -->\n**Server OS**: \n\n<!-- The webserver running on your server, preferably including the version -->\n**Webserver**: \n\n<!-- The version of your browser (when it is a client-side issue) -->\n**Browser**: \n\n<!-- The version of PrivateBin, if you use an unstable version paste the commit hash or the GitHub link to the commit here (you can get it by running `git rev-parse HEAD`) -->\n**PrivateBin version**: \n\nI can reproduce this issue on [https://privatebin.net](https://privatebin.net): Yes / No\n```\n\nYou can copy and paste this YAML-based syntax into a new discussion in your GitHub repository to create the desired category form. Make sure to replace `'Your Title Here'` with an appropriate title for your discussion post.",
+      "turn_id": "turn_000005"
+    },
+    {
+      "create_time": 1691430123.558294,
+      "event_index": 6,
+      "role": "user",
+      "source_node_id": "aaa27121-321a-4186-be65-066779dd6e93",
+      "source_parent_id": "cc439e8d-86f0-464b-87d1-2bb1d2a64c1a",
+      "source_record_index": 6,
+      "text": "No, here is an example for such a form syntax:\n```yaml\ntitle: \"[General] \"\nlabels: [\"General Introduction\"]\nbody:\n  - type: markdown\n    attributes:\n      value: |\n        This is text that will show up in the template!\n  - type: textarea\n    id: improvements\n    attributes:\n      label: Top 3 improvements\n      description: \"What are the top 3 improvements we could make to this project?\"\n      value: |\n        1.\n        2.\n        3.\n        ...\n      render: bash\n    validations:\n      required: true\n  - type: markdown\n    attributes:\n      value: |\n        ## Markdown header\n        And some more markdown\n  - type: input\n    id: has-id\n    attributes:\n      label: Suggestions\n      description: A description about suggestions to help you\n    validations:\n      required: true\n  - type: dropdown\n    id: download\n    attributes:\n      label: Which area of this project could be most improved?\n      options:\n        - Documentation\n        - Pull request review time\n        - Bug fix time\n        - Release cadence\n    validations:\n      required: true\n  - type: checkboxes\n    attributes:\n      label: Check that box!\n      options:\n        - label: This one!\n          required: true\n        - label: I won't stop you if you check this one, too\n  - type: markdown\n    attributes:\n      value: |\n        ### The thrilling conclusion\n        _to our template_\n\n```\n\nAnd here is the top-level syntax:\n```yaml\nbody:\n- type: input\n  id: suggestion\n  attributes:\n    label: Suggestion\n    description: \"How might we make this project better?\"\n    placeholder: \"Adding a CODE_OF_CONDUCT.md file would be a great idea.\"\n  validations:\n    required: true\n```\n\n",
+      "turn_id": "turn_000006"
+    },
+    {
+      "create_time": 1691430135.196039,
+      "event_index": 7,
+      "role": "assistant",
+      "source_node_id": "c27ed649-5ed6-4508-8c99-9f5ef0fca347",
+      "source_parent_id": "aaa27121-321a-4186-be65-066779dd6e93",
+      "source_record_index": 7,
+      "text": "Understood! Here's the GitHub discussion category form you provided, converted into the format you're looking for:\n\n```yaml\ntitle: \"[Question and support] \"\nlabels: [\"question/support\"]\nbody:\n  - type: markdown\n    attributes:\n      value: |\n        Describe the problem/question: A clear and concise description of what the bug is.\n  - type: checkboxes\n    attributes:\n      label: Please tick this to confirm\n      options:\n        - label: Yes, I have read [the FAQ](https://github.com/PrivateBin/PrivateBin/wiki/FAQ) and I found no solution/answer there.\n  - type: markdown\n    attributes:\n      value: |\n        ## What you did\n        Tell us how to reproduce the problem.\n\n        1.\n        2.\n  - type: textarea\n    id: what_happens\n    attributes:\n      label: What happens\n  - type: textarea\n    id: what_should_happen\n    attributes:\n      label: What should happen\n  - type: textarea\n    id: additional_info\n    attributes:\n      label: Additional information\n      description: If you have access to the server log files, copy them here.\n  - type: input\n    id: server_address\n    attributes:\n      label: Server address\n  - type: input\n    id: server_os\n    attributes:\n      label: Server OS\n  - type: input\n    id: webserver\n    attributes:\n      label: Webserver\n  - type: input\n    id: browser\n    attributes:\n      label: Browser\n  - type: input\n    id: privatebin_version\n    attributes:\n      label: PrivateBin version\n  - type: radio\n    id: reproduce_issue\n    attributes:\n      label: I can reproduce this issue on [https://privatebin.net](https://privatebin.net)\n      options:\n        - label: Yes\n          value: Yes\n        - label: No\n          value: No\n```\n\nThis YAML structure represents the GitHub discussion category form with different input types and labels as you provided. You can copy and paste this YAML code into your GitHub repository's discussion settings to create the desired form for the \"Question and support\" category. Just make sure to customize the labels and options as needed.",
+      "turn_id": "turn_000007"
+    }
+  ]
+}

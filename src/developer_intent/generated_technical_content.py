@@ -184,16 +184,35 @@ def _fenced_spans(text: str) -> tuple[list[dict], list[tuple[int, int]]]:
         indent, info = match.group(1), match.group(2).strip()
         close_index = None
         ambiguous = False
-        for probe in range(index + 1, len(lines)):
+        probe = index + 1
+        while probe < len(lines):
             nested = _DELIMITER.fullmatch(lines[probe][2])
             if not nested:
+                probe += 1
                 continue
             nested_indent, nested_info = nested.group(1), nested.group(2).strip()
             if nested_indent == indent and not nested_info:
                 close_index = probe
                 break
-            ambiguous = True
-            break
+            if nested_indent == indent:
+                ambiguous = True
+                break
+            # A differently indented delimiter pair is a nested literal region.
+            # Skip it only when its matching closer is unambiguous.
+            nested_close = None
+            for nested_probe in range(probe + 1, len(lines)):
+                possible = _DELIMITER.fullmatch(lines[nested_probe][2])
+                if possible and possible.group(1) == nested_indent \
+                        and not possible.group(2).strip():
+                    nested_close = nested_probe
+                    break
+                if possible and possible.group(1) == indent \
+                        and not possible.group(2).strip():
+                    break
+            if nested_close is None:
+                ambiguous = True
+                break
+            probe = nested_close + 1
         payload_start = line_end
         if ambiguous:
             blocked.append((start, lines[probe][1]))

@@ -1,0 +1,192 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_0ECE0C32A4BB",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000003_000377_000950_66456e025d709dd7",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "multiple_standalone_commands",
+        "strong_shell_operator"
+      ],
+      "end_offset": 950,
+      "fence_language": "jsx",
+      "kind": "shell_sequence",
+      "legacy_artifact_id": "ARTIFACT_000003_001",
+      "order_within_response": 1,
+      "raw_text": "// LoadingContext.js\nimport React, { createContext, useState, useContext } from 'react';\n\nconst LoadingContext = createContext();\n\nexport const LoadingProvider = ({ children }) => {\n  const [isLoading, setLoading] = useState(false);\n\n  const startLoading = () => {\n    setLoading(true);\n  };\n\n  const stopLoading = () => {\n    setLoading(false);\n  };\n\n  return (\n    <LoadingContext.Provider value={{ isLoading, startLoading, stopLoading }}>\n      {children}\n    </LoadingContext.Provider>\n  );\n};\n\nexport const useLoading = () => {\n  return useContext(LoadingContext);\n};\n",
+      "raw_text_sha256": "66456e025d709dd794d9af20afe8a05fcd7448e3df21325e6e5bcdd07d0d0720",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "12ff0b97871c388d6c2710f0ca185bdbf9ea45a2b06da2374940f9377300e95d",
+      "start_offset": 377,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_001027_001270_3a2b4d9ef1f91cb9",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "import_or_include",
+        "declaration",
+        "control_flow",
+        "braces",
+        "statement_terminators"
+      ],
+      "end_offset": 1270,
+      "fence_language": "jsx",
+      "kind": "source_code",
+      "legacy_artifact_id": "ARTIFACT_000003_002",
+      "order_within_response": 2,
+      "raw_text": "// App.js\nimport React from 'react';\nimport { LoadingProvider } from './LoadingContext';\nimport Routes from './Routes';\n\nconst App = () => {\n  return (\n    <LoadingProvider>\n      <Routes />\n    </LoadingProvider>\n  );\n};\n\nexport default App;\n",
+      "raw_text_sha256": "3a2b4d9ef1f91cb9f9cb2df33b25b4956ff464590334ecb5eddea8e2dee8e56b",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "12ff0b97871c388d6c2710f0ca185bdbf9ea45a2b06da2374940f9377300e95d",
+      "start_offset": 1027,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_001334_001862_22def98baab0f151",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "import_or_include",
+        "declaration",
+        "control_flow",
+        "braces",
+        "statement_terminators",
+        "call_expression"
+      ],
+      "end_offset": 1862,
+      "fence_language": "jsx",
+      "kind": "source_code",
+      "legacy_artifact_id": "ARTIFACT_000003_003",
+      "order_within_response": 3,
+      "raw_text": "// YourComponent.js\nimport React, { useEffect } from 'react';\nimport { useLoading } from './LoadingContext';\n\nconst YourComponent = () => {\n  const { startLoading, stopLoading } = useLoading();\n\n  useEffect(() => {\n    // Simulate an asynchronous operation (e.g., API call)\n    startLoading();\n    setTimeout(() => {\n      // Your actual logic here\n      stopLoading();\n    }, 2000);\n  }, [startLoading, stopLoading]);\n\n  return (\n    <div>\n      {/* Your component content */}\n    </div>\n  );\n};\n\nexport default YourComponent;\n",
+      "raw_text_sha256": "22def98baab0f1511bb816e90f31a2fec9b01537396055c4adcb04fa19da0447",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "12ff0b97871c388d6c2710f0ca185bdbf9ea45a2b06da2374940f9377300e95d",
+      "start_offset": 1334,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_002093_002322_3082910bf378909f",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "import_or_include",
+        "declaration",
+        "control_flow",
+        "braces",
+        "statement_terminators",
+        "call_expression"
+      ],
+      "end_offset": 2322,
+      "fence_language": "jsx",
+      "kind": "source_code",
+      "legacy_artifact_id": "ARTIFACT_000003_004",
+      "order_within_response": 4,
+      "raw_text": "// Spinner.js\nimport React from 'react';\n\nconst Spinner = () => {\n  return (\n    <div className=\"spinner\">\n      {/* Your spinner content (e.g., loading animation) */}\n      Loading...\n    </div>\n  );\n};\n\nexport default Spinner;\n",
+      "raw_text_sha256": "3082910bf378909fce6f66bd017649495ed0e4b38ed0d579bb7b492f0bf374c2",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "12ff0b97871c388d6c2710f0ca185bdbf9ea45a2b06da2374940f9377300e95d",
+      "start_offset": 2093,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "is there a way how to show a spinner on react on every page"
+          ]
+        },
+        "create_time": 1709543723.235651
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, you can create a spinner or loading indicator in a React application to show loading state on every page. One common approach is to use a global state management solution, such as React Context or Redux, to manage the loading state across the entire application. Here's a basic example using React Context:\n\n1. **Create a context for managing the loading state:**\n\n```jsx\n// LoadingContext.js\nimport React, { createContext, useState, useContext } from 'react';\n\nconst LoadingContext = createContext();\n\nexport const LoadingProvider = ({ children }) => {\n  const [isLoading, setLoading] = useState(false);\n\n  const startLoading = () => {\n    setLoading(true);\n  };\n\n  const stopLoading = () => {\n    setLoading(false);\n  };\n\n  return (\n    <LoadingContext.Provider value={{ isLoading, startLoading, stopLoading }}>\n      {children}\n    </LoadingContext.Provider>\n  );\n};\n\nexport const useLoading = () => {\n  return useContext(LoadingContext);\n};\n```\n\n2. **Wrap your entire application with the `LoadingProvider`:**\n\n```jsx\n// App.js\nimport React from 'react';\nimport { LoadingProvider } from './LoadingContext';\nimport Routes from './Routes';\n\nconst App = () => {\n  return (\n    <LoadingProvider>\n      <Routes />\n    </LoadingProvider>\n  );\n};\n\nexport default App;\n```\n\n3. **Use the loading context in your components:**\n\n```jsx\n// YourComponent.js\nimport React, { useEffect } from 'react';\nimport { useLoading } from './LoadingContext';\n\nconst YourComponent = () => {\n  const { startLoading, stopLoading } = useLoading();\n\n  useEffect(() => {\n    // Simulate an asynchronous operation (e.g., API call)\n    startLoading();\n    setTimeout(() => {\n      // Your actual logic here\n      stopLoading();\n    }, 2000);\n  }, [startLoading, stopLoading]);\n\n  return (\n    <div>\n      {/* Your component content */}\n    </div>\n  );\n};\n\nexport default YourComponent;\n```\n\n4. **Create a Spinner component:**\n\nYou can create a reusable Spinner component that you can use in different parts of your application. You can find many pre-built spinner components or create a simple one using CSS.\n\n```jsx\n// Spinner.js\nimport React from 'react';\n\nconst Spinner = () => {\n  return (\n    <div className=\"spinner\">\n      {/* Your spinner content (e.g., loading animation) */}\n      Loading...\n    </div>\n  );\n};\n\nexport default Spinner;\n```\n\nNow, whenever you want to indicate a loading state in your components, you can use the `useLoading` hook to access the loading context and show the spinner accordingly."
+          ]
+        },
+        "create_time": 1709543738.260049
+      }
+    }
+  ],
+  "source_conversation_sha256": "0101ff5da2dfc739bc8ba382b5a064b668674e7af03f8aaa3af41b90b10f1f71",
+  "start": "2024-03-04T09:15:23.235651+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1709543723.235651,
+      "event_index": 2,
+      "role": "user",
+      "source_node_id": "aaa2a723-6cdb-497a-bb75-cc6aad3dd333",
+      "source_parent_id": "0491d935-e35f-474b-9690-78b819195965",
+      "source_record_index": 2,
+      "text": "is there a way how to show a spinner on react on every page",
+      "turn_id": "turn_000002"
+    },
+    {
+      "create_time": 1709543738.260049,
+      "event_index": 3,
+      "role": "assistant",
+      "source_node_id": "62502035-4501-4cea-adca-f49ba3616e3a",
+      "source_parent_id": "aaa2a723-6cdb-497a-bb75-cc6aad3dd333",
+      "source_record_index": 3,
+      "text": "Yes, you can create a spinner or loading indicator in a React application to show loading state on every page. One common approach is to use a global state management solution, such as React Context or Redux, to manage the loading state across the entire application. Here's a basic example using React Context:\n\n1. **Create a context for managing the loading state:**\n\n```jsx\n// LoadingContext.js\nimport React, { createContext, useState, useContext } from 'react';\n\nconst LoadingContext = createContext();\n\nexport const LoadingProvider = ({ children }) => {\n  const [isLoading, setLoading] = useState(false);\n\n  const startLoading = () => {\n    setLoading(true);\n  };\n\n  const stopLoading = () => {\n    setLoading(false);\n  };\n\n  return (\n    <LoadingContext.Provider value={{ isLoading, startLoading, stopLoading }}>\n      {children}\n    </LoadingContext.Provider>\n  );\n};\n\nexport const useLoading = () => {\n  return useContext(LoadingContext);\n};\n```\n\n2. **Wrap your entire application with the `LoadingProvider`:**\n\n```jsx\n// App.js\nimport React from 'react';\nimport { LoadingProvider } from './LoadingContext';\nimport Routes from './Routes';\n\nconst App = () => {\n  return (\n    <LoadingProvider>\n      <Routes />\n    </LoadingProvider>\n  );\n};\n\nexport default App;\n```\n\n3. **Use the loading context in your components:**\n\n```jsx\n// YourComponent.js\nimport React, { useEffect } from 'react';\nimport { useLoading } from './LoadingContext';\n\nconst YourComponent = () => {\n  const { startLoading, stopLoading } = useLoading();\n\n  useEffect(() => {\n    // Simulate an asynchronous operation (e.g., API call)\n    startLoading();\n    setTimeout(() => {\n      // Your actual logic here\n      stopLoading();\n    }, 2000);\n  }, [startLoading, stopLoading]);\n\n  return (\n    <div>\n      {/* Your component content */}\n    </div>\n  );\n};\n\nexport default YourComponent;\n```\n\n4. **Create a Spinner component:**\n\nYou can create a reusable Spinner component that you can use in different parts of your application. You can find many pre-built spinner components or create a simple one using CSS.\n\n```jsx\n// Spinner.js\nimport React from 'react';\n\nconst Spinner = () => {\n  return (\n    <div className=\"spinner\">\n      {/* Your spinner content (e.g., loading animation) */}\n      Loading...\n    </div>\n  );\n};\n\nexport default Spinner;\n```\n\nNow, whenever you want to indicate a loading state in your components, you can use the `useLoading` hook to access the loading context and show the spinner accordingly.",
+      "turn_id": "turn_000003"
+    }
+  ]
+}

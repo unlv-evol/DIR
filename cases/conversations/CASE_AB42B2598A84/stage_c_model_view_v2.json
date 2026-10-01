@@ -1,0 +1,100 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_AB42B2598A84",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000003_001242_001891_6f1b7b81bbd8cf3b",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "import_or_include",
+        "declaration",
+        "braces",
+        "statement_terminators",
+        "call_expression"
+      ],
+      "end_offset": 1891,
+      "fence_language": "csharp",
+      "kind": "source_code",
+      "legacy_artifact_id": "ARTIFACT_000003_001",
+      "order_within_response": 1,
+      "raw_text": "using System.IO;\nusing System.Text.Json;\nusing Xunit;\n\npublic class MyTestData\n{\n    public string Property1 { get; set; }\n    public int Property2 { get; set; }\n}\n\npublic class MyTests\n{\n    [Fact]\n    public void TestUsingJsonData()\n    {\n        // Assuming the JSON file is named \"testData.json\" and is located in the root of the test project\n        string jsonString = File.ReadAllText(\"testData.json\");\n\n        // Deserialize the JSON string into the MyTestData object\n        MyTestData testData = JsonSerializer.Deserialize<MyTestData>(jsonString);\n\n        // Use the testData in your test\n        // ... your test logic here ...\n    }\n}\n",
+      "raw_text_sha256": "6f1b7b81bbd8cf3bd499b9376296fc185cdc59b2f4ba7ac54e0d88d82c32f7ec",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "eba4ebfa88d22ea5046b95d10286bf00bf2e8eac6e35af3829bf61ee24350338",
+      "start_offset": 1242,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "How do I use a .json file with test data in a xunit test?"
+          ]
+        },
+        "create_time": 1704714488.393214
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Using a `.json` file with test data in an xUnit test involves a few steps. Here's a general approach you can follow:\n\n1. **Create or Obtain the JSON File:**\n   Ensure you have a `.json` file with the test data you want to use. This file should be properly formatted JSON.\n\n2. **Add the JSON File to Your Project:**\n   Add the JSON file to your test project. Make sure to set the file's properties in your project so that it is copied to the output directory when the project is built. In Visual Studio, you can set the “Copy to Output Directory” property of the file to “Copy if newer” or “Copy always”.\n\n3. **Read the JSON File in Your Test:**\n   In your test method, you'll need to read the JSON file. You can do this using standard file reading methods in .NET, like `File.ReadAllText`.\n\n4. **Deserialize the JSON Data:**\n   Use a JSON deserializer to convert the JSON data into a usable object in your test. If you're using .NET Core or .NET 5+, you can use `System.Text.Json.JsonSerializer`; otherwise, you might use Newtonsoft.Json (Json.NET).\n\n5. **Use the Data in Your Test:**\n   Once you have the data deserialized into an object, use it as needed in your test.\n\nHere's a basic example of what this might look like in C#:\n\n```csharp\nusing System.IO;\nusing System.Text.Json;\nusing Xunit;\n\npublic class MyTestData\n{\n    public string Property1 { get; set; }\n    public int Property2 { get; set; }\n}\n\npublic class MyTests\n{\n    [Fact]\n    public void TestUsingJsonData()\n    {\n        // Assuming the JSON file is named \"testData.json\" and is located in the root of the test project\n        string jsonString = File.ReadAllText(\"testData.json\");\n\n        // Deserialize the JSON string into the MyTestData object\n        MyTestData testData = JsonSerializer.Deserialize<MyTestData>(jsonString);\n\n        // Use the testData in your test\n        // ... your test logic here ...\n    }\n}\n```\n\nIn this example, `testData.json` should be a JSON file structured to match the `MyTestData` class. This file is read and deserialized into an instance of `MyTestData`, which you can then use in your test logic."
+          ]
+        },
+        "create_time": 1704714533.299044
+      }
+    }
+  ],
+  "source_conversation_sha256": "25260a0ecb32733a93666d8a3882e78387a117c86e233f9d764f928107d85f57",
+  "start": "2024-01-08T11:48:08.393214+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1704714488.393214,
+      "event_index": 2,
+      "role": "user",
+      "source_node_id": "aaa2eeb7-b2bb-4433-a34b-5c335a848bcf",
+      "source_parent_id": "52117045-5d2c-4a5f-984c-a1cd19eb5d3d",
+      "source_record_index": 2,
+      "text": "How do I use a .json file with test data in a xunit test?",
+      "turn_id": "turn_000002"
+    },
+    {
+      "create_time": 1704714533.299044,
+      "event_index": 3,
+      "role": "assistant",
+      "source_node_id": "d69cf35d-0d9d-460a-b203-18fb98c7254e",
+      "source_parent_id": "aaa2eeb7-b2bb-4433-a34b-5c335a848bcf",
+      "source_record_index": 3,
+      "text": "Using a `.json` file with test data in an xUnit test involves a few steps. Here's a general approach you can follow:\n\n1. **Create or Obtain the JSON File:**\n   Ensure you have a `.json` file with the test data you want to use. This file should be properly formatted JSON.\n\n2. **Add the JSON File to Your Project:**\n   Add the JSON file to your test project. Make sure to set the file's properties in your project so that it is copied to the output directory when the project is built. In Visual Studio, you can set the “Copy to Output Directory” property of the file to “Copy if newer” or “Copy always”.\n\n3. **Read the JSON File in Your Test:**\n   In your test method, you'll need to read the JSON file. You can do this using standard file reading methods in .NET, like `File.ReadAllText`.\n\n4. **Deserialize the JSON Data:**\n   Use a JSON deserializer to convert the JSON data into a usable object in your test. If you're using .NET Core or .NET 5+, you can use `System.Text.Json.JsonSerializer`; otherwise, you might use Newtonsoft.Json (Json.NET).\n\n5. **Use the Data in Your Test:**\n   Once you have the data deserialized into an object, use it as needed in your test.\n\nHere's a basic example of what this might look like in C#:\n\n```csharp\nusing System.IO;\nusing System.Text.Json;\nusing Xunit;\n\npublic class MyTestData\n{\n    public string Property1 { get; set; }\n    public int Property2 { get; set; }\n}\n\npublic class MyTests\n{\n    [Fact]\n    public void TestUsingJsonData()\n    {\n        // Assuming the JSON file is named \"testData.json\" and is located in the root of the test project\n        string jsonString = File.ReadAllText(\"testData.json\");\n\n        // Deserialize the JSON string into the MyTestData object\n        MyTestData testData = JsonSerializer.Deserialize<MyTestData>(jsonString);\n\n        // Use the testData in your test\n        // ... your test logic here ...\n    }\n}\n```\n\nIn this example, `testData.json` should be a JSON file structured to match the `MyTestData` class. This file is read and deserialized into an instance of `MyTestData`, which you can then use in your test logic.",
+      "turn_id": "turn_000003"
+    }
+  ]
+}

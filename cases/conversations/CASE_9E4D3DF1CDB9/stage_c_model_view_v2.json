@@ -1,0 +1,169 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_9E4D3DF1CDB9",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000003_000151_000176_1f005585c7b14e7c",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence"
+      ],
+      "end_offset": 176,
+      "fence_language": "regex",
+      "kind": "unclassified_technical",
+      "legacy_artifact_id": "ARTIFACT_000003_001",
+      "order_within_response": 1,
+      "raw_text": "^[0-9A-HJKMNP-TV-Z]{26}$\n",
+      "raw_text_sha256": "1f005585c7b14e7c5a4576b7080896217acfe8fb3629f9542d986f7de3b2f7b0",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "29b2c661d4c93c2826c8e62ad6dcfaae91b5f707f0a11b32c50ef44dcfa47827",
+      "start_offset": 151,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000005_000398_000439_1602d8700c7fc052",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence"
+      ],
+      "end_offset": 439,
+      "fence_language": "regex",
+      "kind": "unclassified_technical",
+      "legacy_artifact_id": "ARTIFACT_000005_001",
+      "order_within_response": 1,
+      "raw_text": "^[0123456789ABCDEFGHJKMNPQRSTVWXYZ]{26}$\n",
+      "raw_text_sha256": "1602d8700c7fc052aa6cc033408c2a6b0072951e4952d823e7a1b0faafca7c68",
+      "source_event_index": 5,
+      "source_record_index": 5,
+      "source_response_id": "turn_000005",
+      "source_turn_text_sha256": "098ac79e2ee7f8306c5c1aa538cb3431dace089dfcb0da49eecd92330f40ac2c",
+      "start_offset": 398,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hello can you give me a regex to match ULID format ?"
+          ]
+        },
+        "create_time": 1689283033.705425
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Certainly! The following regular expression can be used to match the ULID (Universally Unique Lexicographically Sortable Identifier) format:\n\n```regex\n^[0-9A-HJKMNP-TV-Z]{26}$\n```\n\nExplanation:\n- `^` asserts the start of the string.\n- `[0-9A-HJKMNP-TV-Z]` matches any character in the range 0-9, A-H, J-K, M-N, P-T, or V-Z.\n- `{26}` specifies that the preceding character class should occur exactly 26 times (the length of a ULID).\n- `$` asserts the end of the string.\n\nNote that ULIDs are case-sensitive and use a modified base32 encoding, excluding the characters I, L, O, and Q to avoid confusion with numerals."
+          ]
+        },
+        "create_time": 1689283041.868937
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "This one is correct ? [0-7][0-9A-HJKMNP-TV-Z]{25}"
+          ]
+        },
+        "create_time": 1689283098.722824
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Apologies for the confusion. The regular expression you provided, `[0-7][0-9A-HJKMNP-TV-Z]{25}`, does not match the correct ULID format. ULIDs consist of 26 characters, where the first character is a time-based component represented in base-32 and the remaining 25 characters are random components also represented in base-32.\n\nThe correct regular expression to match the ULID format is:\n\n```regex\n^[0123456789ABCDEFGHJKMNPQRSTVWXYZ]{26}$\n```\n\nExplanation:\n- `^` asserts the start of the string.\n- `[0123456789ABCDEFGHJKMNPQRSTVWXYZ]` matches any character in the range 0-9, A-Z excluding I, L, O, and U.\n- `{26}` specifies that the preceding character class should occur exactly 26 times (the length of a ULID).\n- `$` asserts the end of the string.\n\nAgain, please note that ULIDs are case-sensitive and exclude the characters I, L, O, and U from the character set."
+          ]
+        },
+        "create_time": 1689283107.20942
+      }
+    }
+  ],
+  "source_conversation_sha256": "0fc185eea0dc17fc25d2cb7f1b2a4a18f4f0d1fd1f381577585385119cc605d5",
+  "start": "2023-07-13T21:17:13.705425+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1689283033.705425,
+      "event_index": 2,
+      "role": "user",
+      "source_node_id": "aaa2edd1-e3ce-44b5-9b0f-f3d1ef49ab87",
+      "source_parent_id": "02039c59-dd2e-4abf-83fd-92eeece41b51",
+      "source_record_index": 2,
+      "text": "Hello can you give me a regex to match ULID format ?",
+      "turn_id": "turn_000002"
+    },
+    {
+      "create_time": 1689283041.868937,
+      "event_index": 3,
+      "role": "assistant",
+      "source_node_id": "bd4bb49b-1338-4ef3-a72f-0f88720e0f9d",
+      "source_parent_id": "aaa2edd1-e3ce-44b5-9b0f-f3d1ef49ab87",
+      "source_record_index": 3,
+      "text": "Certainly! The following regular expression can be used to match the ULID (Universally Unique Lexicographically Sortable Identifier) format:\n\n```regex\n^[0-9A-HJKMNP-TV-Z]{26}$\n```\n\nExplanation:\n- `^` asserts the start of the string.\n- `[0-9A-HJKMNP-TV-Z]` matches any character in the range 0-9, A-H, J-K, M-N, P-T, or V-Z.\n- `{26}` specifies that the preceding character class should occur exactly 26 times (the length of a ULID).\n- `$` asserts the end of the string.\n\nNote that ULIDs are case-sensitive and use a modified base32 encoding, excluding the characters I, L, O, and Q to avoid confusion with numerals.",
+      "turn_id": "turn_000003"
+    },
+    {
+      "create_time": 1689283098.722824,
+      "event_index": 4,
+      "role": "user",
+      "source_node_id": "aaa23db5-9d98-4992-8742-d09e3c3cd1e3",
+      "source_parent_id": "bd4bb49b-1338-4ef3-a72f-0f88720e0f9d",
+      "source_record_index": 4,
+      "text": "This one is correct ? [0-7][0-9A-HJKMNP-TV-Z]{25}",
+      "turn_id": "turn_000004"
+    },
+    {
+      "create_time": 1689283107.20942,
+      "event_index": 5,
+      "role": "assistant",
+      "source_node_id": "baa35509-1709-4a66-b4ee-4e45b4d7a0ab",
+      "source_parent_id": "aaa23db5-9d98-4992-8742-d09e3c3cd1e3",
+      "source_record_index": 5,
+      "text": "Apologies for the confusion. The regular expression you provided, `[0-7][0-9A-HJKMNP-TV-Z]{25}`, does not match the correct ULID format. ULIDs consist of 26 characters, where the first character is a time-based component represented in base-32 and the remaining 25 characters are random components also represented in base-32.\n\nThe correct regular expression to match the ULID format is:\n\n```regex\n^[0123456789ABCDEFGHJKMNPQRSTVWXYZ]{26}$\n```\n\nExplanation:\n- `^` asserts the start of the string.\n- `[0123456789ABCDEFGHJKMNPQRSTVWXYZ]` matches any character in the range 0-9, A-Z excluding I, L, O, and U.\n- `{26}` specifies that the preceding character class should occur exactly 26 times (the length of a ULID).\n- `$` asserts the end of the string.\n\nAgain, please note that ULIDs are case-sensitive and exclude the characters I, L, O, and U from the character set.",
+      "turn_id": "turn_000005"
+    }
+  ]
+}

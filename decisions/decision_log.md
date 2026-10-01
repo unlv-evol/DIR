@@ -333,3 +333,10 @@ Suggested fields:
 - **Rationale/evidence:** The development pilot showed that column-zero Markdown fences omitted valid indented fences and that fence-only extraction omitted generated declarative resources such as Android XML. The approved corpus audit supported standalone fences with arbitrary horizontal indentation and found no reviewed inline/prose false positives under the strict delimiter-line rule.
 - **Impact:** Stage B gains deterministic line parsing and conservative XML, source, shell, configuration, and bounded JSON classification. Stage C remains responsible for scientific first-family selection, target prompt, boundary, and `tFG`. Full-corpus V2 materialization and migration reporting remain separate checkpoints.
 - **Owner:** Study team. **Status:** Adopted for first-phase implementation.
+
+## 2026-10-01 — Correct balanced nested-fence parsing in Stage B V2
+
+- **Context:** The first fail-closed corpus materialization stopped because one V1 outer fenced candidate contained a balanced, differently indented Markdown fence pair inside a source-language string. The V2 parser selected the inner example rather than preserving the exact V1 outer span.
+- **Decision:** While seeking an outer fence closer, treat a differently indented delimiter as a nested literal region only when it has an unambiguous same-indentation, unlabeled closer before the outer closer. Skip that balanced nested pair and retain the first compatible outer closer. An unmatched or ambiguous nested region remains fail closed. Apply this rule uniformly and restart corpus materialization from clean V1 inputs.
+- **Impact:** The correction restores exact V1 migration for the affected case without case-specific logic, threshold tuning, or changes to candidate identity, Stage C semantics, temporal methodology, or scientific eligibility. The migration report records the committed V2 baseline and correction label `unambiguous-nested-markdown-fence-pairing-v1`.
+- **Owner:** Study team. **Status:** Adopted as an engineering correction required by corpus validation.

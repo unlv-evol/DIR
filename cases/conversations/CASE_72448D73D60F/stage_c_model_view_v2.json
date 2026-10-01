@@ -1,0 +1,177 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_72448D73D60F",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000003_000467_000505_4f02242557382a4b",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "recognized_fence_label"
+      ],
+      "end_offset": 505,
+      "fence_language": "bash",
+      "kind": "shell_sequence",
+      "legacy_artifact_id": null,
+      "order_within_response": 1,
+      "raw_text": "     git mv old_filename new_filename\n",
+      "raw_text_sha256": "4f02242557382a4b93eec0ffd3b92ec71e4f0c0f654d3cf79808dcf148f4cbbe",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "8e219be0f56c03c167f6e2d6eba9cbfe3f2d61cd18e96e85baaf2f58e7f5a69e",
+      "start_offset": 467,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_000735_000803_08eb0fa088914078",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "recognized_fence_label"
+      ],
+      "end_offset": 803,
+      "fence_language": "bash",
+      "kind": "shell_sequence",
+      "legacy_artifact_id": null,
+      "order_within_response": 2,
+      "raw_text": "     git commit -m \"Renamed file from old_filename to new_filename\"\n",
+      "raw_text_sha256": "08eb0fa08891407807723e75cc299345701a4fbcec9dd2ff07d78e6455f42ca9",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "8e219be0f56c03c167f6e2d6eba9cbfe3f2d61cd18e96e85baaf2f58e7f5a69e",
+      "start_offset": 735,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_000888_000926_1105a256f237de67",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "recognized_fence_label"
+      ],
+      "end_offset": 926,
+      "fence_language": "bash",
+      "kind": "shell_sequence",
+      "legacy_artifact_id": null,
+      "order_within_response": 3,
+      "raw_text": "     git push origin your-branch-name\n",
+      "raw_text_sha256": "1105a256f237de679ab6587d63525923d9001c7705902e44f5170bf0136bd6df",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "8e219be0f56c03c167f6e2d6eba9cbfe3f2d61cd18e96e85baaf2f58e7f5a69e",
+      "start_offset": 888,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_001276_001326_fbce12643ee2ccfa",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "recognized_fence_label"
+      ],
+      "end_offset": 1326,
+      "fence_language": "bash",
+      "kind": "shell_sequence",
+      "legacy_artifact_id": null,
+      "order_within_response": 4,
+      "raw_text": "     git commit -m \"Your commit message\" -- -M50%\n",
+      "raw_text_sha256": "fbce12643ee2ccfa2562c2d302d7b9072a8151373bc0b554fab1931f4b7157bf",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "8e219be0f56c03c167f6e2d6eba9cbfe3f2d61cd18e96e85baaf2f58e7f5a69e",
+      "start_offset": 1276,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "in a github PR, I have renamed a file. in the diff viewer, it's showing one file deleted and another added, but i instead want to show the file as renamed. "
+          ]
+        },
+        "create_time": 1700100764.435001
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To have GitHub recognize a file rename in a Pull Request (PR) and display it correctly in the diff viewer, you need to ensure that the rename operation is understood by Git as a move, rather than a delete and add operation. Here's how you can achieve this:\n\n1. **Use Git Rename Command:**\n   - If you haven't committed the changes yet, you can use the Git command to rename the file. This is typically done using the `git mv` command. Here's an example:\n     ```bash\n     git mv old_filename new_filename\n     ```\n   - This command tells Git that you're renaming a file, which helps it track the file as a move instead of a delete/add operation.\n\n2. **Commit and Push:**\n   - After renaming the file, commit your changes:\n     ```bash\n     git commit -m \"Renamed file from old_filename to new_filename\"\n     ```\n   - Then push the commit to the branch that's part of the PR:\n     ```bash\n     git push origin your-branch-name\n     ```\n\n3. **Similarity Threshold:**\n   - Sometimes, if you've made significant changes to the file content along with the rename, Git might not recognize it as a rename. In such cases, you can adjust the similarity threshold. A lower threshold might help Git to detect it as a rename.\n   - You can set this threshold when committing:\n     ```bash\n     git commit -m \"Your commit message\" -- -M50%\n     ```\n     Here, `50%` is the similarity index. You can adjust this percentage based on your needs.\n\n4. **Check the Pull Request:**\n   - After pushing your changes, check the PR on GitHub. The file should now be shown as renamed rather than deleted and added.\n\n5. **If Changes Are Already Committed:**\n   - If you have already committed the delete and add, you might need to adjust the commit history. This can be complex and may involve commands like `git rebase` or `git reset`. It's important to be cautious with these commands, especially if you're working on a shared branch.\n\nRemember, for GitHub to recognize a file as renamed, the contents of the file should also be somewhat similar. If the file is completely different, Git might still consider it as a delete and add, even if you use `git mv`."
+          ]
+        },
+        "create_time": 1700100793.571477
+      }
+    }
+  ],
+  "source_conversation_sha256": "3bb298271646d62667ffa308d40434506d83e10182e1d2da57a447ee341835a4",
+  "start": "2023-11-16T02:12:44.435001+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1700100764.435001,
+      "event_index": 2,
+      "role": "user",
+      "source_node_id": "aaa29fa8-b681-46da-82ea-801fd443c969",
+      "source_parent_id": "d2e3da39-5e76-4de9-b533-88bf61aa0a28",
+      "source_record_index": 2,
+      "text": "in a github PR, I have renamed a file. in the diff viewer, it's showing one file deleted and another added, but i instead want to show the file as renamed. ",
+      "turn_id": "turn_000002"
+    },
+    {
+      "create_time": 1700100793.571477,
+      "event_index": 3,
+      "role": "assistant",
+      "source_node_id": "a15495a0-6bd8-4eb5-8a32-bf31b003b5da",
+      "source_parent_id": "aaa29fa8-b681-46da-82ea-801fd443c969",
+      "source_record_index": 3,
+      "text": "To have GitHub recognize a file rename in a Pull Request (PR) and display it correctly in the diff viewer, you need to ensure that the rename operation is understood by Git as a move, rather than a delete and add operation. Here's how you can achieve this:\n\n1. **Use Git Rename Command:**\n   - If you haven't committed the changes yet, you can use the Git command to rename the file. This is typically done using the `git mv` command. Here's an example:\n     ```bash\n     git mv old_filename new_filename\n     ```\n   - This command tells Git that you're renaming a file, which helps it track the file as a move instead of a delete/add operation.\n\n2. **Commit and Push:**\n   - After renaming the file, commit your changes:\n     ```bash\n     git commit -m \"Renamed file from old_filename to new_filename\"\n     ```\n   - Then push the commit to the branch that's part of the PR:\n     ```bash\n     git push origin your-branch-name\n     ```\n\n3. **Similarity Threshold:**\n   - Sometimes, if you've made significant changes to the file content along with the rename, Git might not recognize it as a rename. In such cases, you can adjust the similarity threshold. A lower threshold might help Git to detect it as a rename.\n   - You can set this threshold when committing:\n     ```bash\n     git commit -m \"Your commit message\" -- -M50%\n     ```\n     Here, `50%` is the similarity index. You can adjust this percentage based on your needs.\n\n4. **Check the Pull Request:**\n   - After pushing your changes, check the PR on GitHub. The file should now be shown as renamed rather than deleted and added.\n\n5. **If Changes Are Already Committed:**\n   - If you have already committed the delete and add, you might need to adjust the commit history. This can be complex and may involve commands like `git rebase` or `git reset`. It's important to be cautious with these commands, especially if you're working on a shared branch.\n\nRemember, for GitHub to recognize a file as renamed, the contents of the file should also be somewhat similar. If the file is completely different, Git might still consider it as a delete and add, even if you use `git mv`.",
+      "turn_id": "turn_000003"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_F13F98792012",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000003_000000_001388_0451d5e46f3dc4b2",
+      "completeness": "fragment",
+      "container": "none",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "declaration",
+        "control_flow",
+        "braces",
+        "statement_terminators",
+        "call_expression"
+      ],
+      "end_offset": 1388,
+      "fence_language": null,
+      "kind": "source_code",
+      "legacy_artifact_id": null,
+      "order_within_response": 1,
+      "raw_text": "You are an agent that writes JavaScript functions.\nBefore writing any code think step by step about what you want to implement.\nCall the writeFunction function to submit the code of your JavaScript function.\nIf the first try doesn't succeed, try again. Do not create mock functionality.\n\nYour task is to write the body of an async JavaScript function.\nFunction namepace: \"math.factorial\"\nArguments: { number: number }.\nDescription: \"Calculate the factorial of a number\"\nYou must refer to function arguments as if they were locally defined variables, remember you're writing just the body of the function.\nUse only the function arguments above, do not add new ones.\nSince you are writing the body of the function, remember to use the return keyword if needed.\nWhen using libraries, use the require function to import them.\nDo not require libraries aside from 'fs' and 'axios'\nDo not use external APIs that require authentication or an API key.\nDo not recursively call the \"math.factorial\" function.\nExample function body:\nconst fs = require('fs');\nreturn fs.readFileSync(path, encoding);\n\n---\n\nGiven the constraints, we need to write a function that calculates the factorial of a number using recursion. However, we are explicitly told not to recursively call the \"math.factorial\" function. This means we should create an inner helper function for the recursion.\n\nLet's write the function:",
+      "raw_text_sha256": "0451d5e46f3dc4b204c06fc6e1bf750c6e93472df1e011f4ebf333da36122b0e",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "17126e84ef1b0f9dc0b705ecc450203541a96f566bb8dc435470e1d6f7ac2f64",
+      "start_offset": 0,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_001404_001766_f8c1187aeedded3d",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "declaration",
+        "control_flow",
+        "braces",
+        "statement_terminators",
+        "call_expression"
+      ],
+      "end_offset": 1766,
+      "fence_language": "javascript",
+      "kind": "source_code",
+      "legacy_artifact_id": "ARTIFACT_000003_001",
+      "order_within_response": 2,
+      "raw_text": "// Check if the number is valid and non-negative\nif (number < 0) {\n    throw new Error(\"Number must be non-negative\");\n}\n\n// Define the recursive helper function\nfunction factorialHelper(n) {\n    if (n === 0) {\n        return 1;\n    }\n    return n * factorialHelper(n - 1);\n}\n\n// Call the helper function with the provided number\nreturn factorialHelper(number);\n",
+      "raw_text_sha256": "f8c1187aeedded3dfd163acdfd47847e7f268aeaa74019610de693ca356029d1",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "17126e84ef1b0f9dc0b705ecc450203541a96f566bb8dc435470e1d6f7ac2f64",
+      "start_offset": 1404,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Follow these prompts to complete the task of writing the javascript function \"math.factorial\" using recursion.\n\nINITIAL_PROMP = `You are an agent that writes JavaScript functions.\\n` +\n`Before writing any code think step by step about what you want to implement.\\n` +\n`Call the writeFunction function to submit the code of your JavaScript function.\\n` +\n`If the first try doesn't succeed, try again. Do not create mock functionality.\\n`;\n\nexport const GOAL_PROMPT = (namespace: string, description: string, args: string) => \n  `Your task is to write the body of an async JavaScript function.\\nFunction namepace: \"${namespace}\"\\nArguments: ${args}.\\nDescription: \"${description}\"\\n` +\n  `You must refer to function arguments as if they were locally defined variables, remember you're writing just the body of the function.\\n` +\n  `Use only the function arguments above, do not add new ones.\\n` +\n  `Since you are writing the body of the function, remember to use the return keyword if needed.\\n` +\n  `When using libraries, use the require function to import them.\\n` +\n  `Do not require libraries aside from 'fs' and 'axios'\\n` +\n  `Do not use external APIs that require authentication or an API key.\\n` +\n  `Do not recursively call the \"${namespace}\" function.\\n` +\n  `Example function body:\\n` +\n  `const fs = require('fs');\\n` +\n  `return fs.readFileSync(path, encoding);\\n`;\n\nSchema:\n```json\n{\n  \"name\": \"math.factorial\",\n  \"description\": \"Calculate the factorial of a number\",\n  \"arguments\": \"{ number: number }\",\n  \"code\": \"./math.factorial.js\"\n}\n```"
+          ]
+        },
+        "create_time": 1695643141.55749
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "You are an agent that writes JavaScript functions.\nBefore writing any code think step by step about what you want to implement.\nCall the writeFunction function to submit the code of your JavaScript function.\nIf the first try doesn't succeed, try again. Do not create mock functionality.\n\nYour task is to write the body of an async JavaScript function.\nFunction namepace: \"math.factorial\"\nArguments: { number: number }.\nDescription: \"Calculate the factorial of a number\"\nYou must refer to function arguments as if they were locally defined variables, remember you're writing just the body of the function.\nUse only the function arguments above, do not add new ones.\nSince you are writing the body of the function, remember to use the return keyword if needed.\nWhen using libraries, use the require function to import them.\nDo not require libraries aside from 'fs' and 'axios'\nDo not use external APIs that require authentication or an API key.\nDo not recursively call the \"math.factorial\" function.\nExample function body:\nconst fs = require('fs');\nreturn fs.readFileSync(path, encoding);\n\n---\n\nGiven the constraints, we need to write a function that calculates the factorial of a number using recursion. However, we are explicitly told not to recursively call the \"math.factorial\" function. This means we should create an inner helper function for the recursion.\n\nLet's write the function:\n\n```javascript\n// Check if the number is valid and non-negative\nif (number < 0) {\n    throw new Error(\"Number must be non-negative\");\n}\n\n// Define the recursive helper function\nfunction factorialHelper(n) {\n    if (n === 0) {\n        return 1;\n    }\n    return n * factorialHelper(n - 1);\n}\n\n// Call the helper function with the provided number\nreturn factorialHelper(number);\n```\n\nThis function first checks if the provided number is non-negative. If it is negative, it throws an error. Then, it defines a helper function `factorialHelper` that calculates the factorial using recursion. Finally, it calls this helper function with the provided number and returns the result."
+          ]
+        },
+        "create_time": 1695643169.0326
+      }
+    }
+  ],
+  "source_conversation_sha256": "975420538ab175fd260d1c76043f1acf49b286610f44a457472b831c2bb5190a",
+  "start": "2023-09-25T11:59:01.557490+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1695643141.55749,
+      "event_index": 2,
+      "role": "user",
+      "source_node_id": "aaa24f05-d4a9-4647-9b5b-8235869bd439",
+      "source_parent_id": "5879fb85-8e88-4c39-8951-571fd0c610c4",
+      "source_record_index": 2,
+      "text": "Follow these prompts to complete the task of writing the javascript function \"math.factorial\" using recursion.\n\nINITIAL_PROMP = `You are an agent that writes JavaScript functions.\\n` +\n`Before writing any code think step by step about what you want to implement.\\n` +\n`Call the writeFunction function to submit the code of your JavaScript function.\\n` +\n`If the first try doesn't succeed, try again. Do not create mock functionality.\\n`;\n\nexport const GOAL_PROMPT = (namespace: string, description: string, args: string) => \n  `Your task is to write the body of an async JavaScript function.\\nFunction namepace: \"${namespace}\"\\nArguments: ${args}.\\nDescription: \"${description}\"\\n` +\n  `You must refer to function arguments as if they were locally defined variables, remember you're writing just the body of the function.\\n` +\n  `Use only the function arguments above, do not add new ones.\\n` +\n  `Since you are writing the body of the function, remember to use the return keyword if needed.\\n` +\n  `When using libraries, use the require function to import them.\\n` +\n  `Do not require libraries aside from 'fs' and 'axios'\\n` +\n  `Do not use external APIs that require authentication or an API key.\\n` +\n  `Do not recursively call the \"${namespace}\" function.\\n` +\n  `Example function body:\\n` +\n  `const fs = require('fs');\\n` +\n  `return fs.readFileSync(path, encoding);\\n`;\n\nSchema:\n```json\n{\n  \"name\": \"math.factorial\",\n  \"description\": \"Calculate the factorial of a number\",\n  \"arguments\": \"{ number: number }\",\n  \"code\": \"./math.factorial.js\"\n}\n```",
+      "turn_id": "turn_000002"
+    },
+    {
+      "create_time": 1695643169.0326,
+      "event_index": 3,
+      "role": "assistant",
+      "source_node_id": "d66c3680-32b8-43de-bc24-2890075932da",
+      "source_parent_id": "aaa24f05-d4a9-4647-9b5b-8235869bd439",
+      "source_record_index": 3,
+      "text": "You are an agent that writes JavaScript functions.\nBefore writing any code think step by step about what you want to implement.\nCall the writeFunction function to submit the code of your JavaScript function.\nIf the first try doesn't succeed, try again. Do not create mock functionality.\n\nYour task is to write the body of an async JavaScript function.\nFunction namepace: \"math.factorial\"\nArguments: { number: number }.\nDescription: \"Calculate the factorial of a number\"\nYou must refer to function arguments as if they were locally defined variables, remember you're writing just the body of the function.\nUse only the function arguments above, do not add new ones.\nSince you are writing the body of the function, remember to use the return keyword if needed.\nWhen using libraries, use the require function to import them.\nDo not require libraries aside from 'fs' and 'axios'\nDo not use external APIs that require authentication or an API key.\nDo not recursively call the \"math.factorial\" function.\nExample function body:\nconst fs = require('fs');\nreturn fs.readFileSync(path, encoding);\n\n---\n\nGiven the constraints, we need to write a function that calculates the factorial of a number using recursion. However, we are explicitly told not to recursively call the \"math.factorial\" function. This means we should create an inner helper function for the recursion.\n\nLet's write the function:\n\n```javascript\n// Check if the number is valid and non-negative\nif (number < 0) {\n    throw new Error(\"Number must be non-negative\");\n}\n\n// Define the recursive helper function\nfunction factorialHelper(n) {\n    if (n === 0) {\n        return 1;\n    }\n    return n * factorialHelper(n - 1);\n}\n\n// Call the helper function with the provided number\nreturn factorialHelper(number);\n```\n\nThis function first checks if the provided number is non-negative. If it is negative, it throws an error. Then, it defines a helper function `factorialHelper` that calculates the factorial using recursion. Finally, it calls this helper function with the provided number and returns the result.",
+      "turn_id": "turn_000003"
+    }
+  ]
+}

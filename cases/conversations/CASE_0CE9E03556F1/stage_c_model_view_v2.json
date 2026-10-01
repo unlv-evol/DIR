@@ -1,0 +1,255 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_0CE9E03556F1",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000003_000221_000241_64096931097fbc5a",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence"
+      ],
+      "end_offset": 241,
+      "fence_language": null,
+      "kind": "unclassified_technical",
+      "legacy_artifact_id": null,
+      "order_within_response": 1,
+      "raw_text": "   git fetch origin\n",
+      "raw_text_sha256": "64096931097fbc5ae27a8e773dd2ebbeff9e37ce3a8caa8198f08f2aefa78467",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "2a8f674f5e8b4b4f097c68e3cfd8648eb6c8020094e72a10b141acfcad34e842",
+      "start_offset": 221,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_000315_000345_1838db70dcfd528b",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "strong_shell_operator"
+      ],
+      "end_offset": 345,
+      "fence_language": null,
+      "kind": "shell_sequence",
+      "legacy_artifact_id": null,
+      "order_within_response": 2,
+      "raw_text": "   git checkout <your-branch>\n",
+      "raw_text_sha256": "1838db70dcfd528b87bb91de3eef33a12be25e64abe1c21fe0df7be34ffab878",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "2a8f674f5e8b4b4f097c68e3cfd8648eb6c8020094e72a10b141acfcad34e842",
+      "start_offset": 315,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_000393_000424_7ddd39de2ae3b01a",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence"
+      ],
+      "end_offset": 424,
+      "fence_language": null,
+      "kind": "unclassified_technical",
+      "legacy_artifact_id": null,
+      "order_within_response": 3,
+      "raw_text": "   git rebase -i origin/master\n",
+      "raw_text_sha256": "7ddd39de2ae3b01a7bdfb745639055054b957c22da59c9fd773b5a118a04ec87",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "2a8f674f5e8b4b4f097c68e3cfd8648eb6c8020094e72a10b141acfcad34e842",
+      "start_offset": 393,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_000906_001035_4ee357484275b7c8",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "multiple_standalone_commands",
+        "strong_shell_operator"
+      ],
+      "end_offset": 1035,
+      "fence_language": null,
+      "kind": "shell_sequence",
+      "legacy_artifact_id": null,
+      "order_within_response": 4,
+      "raw_text": "   git add <file1> <file2> ...  # Stage the modified files\n   git rm <file3> <file4> ...   # Remove any files you want to delete\n",
+      "raw_text_sha256": "4ee357484275b7c8f16f743e601a7321a69f883e8ee1ccb6e03b40756aa4e0a5",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "2a8f674f5e8b4b4f097c68e3cfd8648eb6c8020094e72a10b141acfcad34e842",
+      "start_offset": 906,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_001089_001111_cc238d6052586d39",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence"
+      ],
+      "end_offset": 1111,
+      "fence_language": null,
+      "kind": "unclassified_technical",
+      "legacy_artifact_id": null,
+      "order_within_response": 5,
+      "raw_text": "   git commit --amend\n",
+      "raw_text_sha256": "cc238d6052586d3945185e2c4f1eacca27ffba27d8e64885b4c868e713c68fc1",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "2a8f674f5e8b4b4f097c68e3cfd8648eb6c8020094e72a10b141acfcad34e842",
+      "start_offset": 1089,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_001241_001267_ae323d894c26fddf",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence"
+      ],
+      "end_offset": 1267,
+      "fence_language": null,
+      "kind": "unclassified_technical",
+      "legacy_artifact_id": null,
+      "order_within_response": 6,
+      "raw_text": "    git rebase --continue\n",
+      "raw_text_sha256": "ae323d894c26fddf7555ca90fcf8d385eef9881af80e85ac859401dde09909ae",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "2a8f674f5e8b4b4f097c68e3cfd8648eb6c8020094e72a10b141acfcad34e842",
+      "start_offset": 1241,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_001476_001518_cef6a94aff4f7c5c",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "strong_shell_operator"
+      ],
+      "end_offset": 1518,
+      "fence_language": null,
+      "kind": "shell_sequence",
+      "legacy_artifact_id": null,
+      "order_within_response": 7,
+      "raw_text": "    git push --force origin <your-branch>\n",
+      "raw_text_sha256": "cef6a94aff4f7c5ceafaeaefb0b33f5b61766b3fd6871e50615cebf280526b89",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "2a8f674f5e8b4b4f097c68e3cfd8648eb6c8020094e72a10b141acfcad34e842",
+      "start_offset": 1476,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "i have git branch\ni make mistake when run git pull origin master\nbecause\nother team member make\n\ngit reset --hard eb03ab7090faa328380cfd82552fa67c42eac00a\ngit push --force origin  master\n\nnow i have wrong commits\nhow to rebase my commits after master  eb03ab7090faa328380cfd82552fa67c42eac00a?"
+          ]
+        },
+        "create_time": 1686830411.965943
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To rebase your commits after the `eb03ab7090faa328380cfd82552fa67c42eac00a` commit on the master branch, you can follow these steps:\n\n1. Make sure you have the latest changes from the remote repository by running:\n   ```\n   git fetch origin\n   ```\n\n2. Switch to your branch where you have the wrong commits:\n   ```\n   git checkout <your-branch>\n   ```\n\n3. Start the interactive rebase:\n   ```\n   git rebase -i origin/master\n   ```\n\n4. An editor will open with a list of commits. Locate the commit you want to edit, which should be the first commit after the `eb03ab7090faa328380cfd82552fa67c42eac00a` commit. Change the word \"pick\" to \"edit\" for that commit.\n\n5. Save and close the editor.\n\n6. Git will now start the rebase process and pause at the commit you marked for editing. You can now modify or remove the changes in that commit as needed.\n\n7. After making the necessary changes, stage them:\n   ```\n   git add <file1> <file2> ...  # Stage the modified files\n   git rm <file3> <file4> ...   # Remove any files you want to delete\n   ```\n\n8. Amend the commit with your changes:\n   ```\n   git commit --amend\n   ```\n\n9. Git will prompt you to modify the commit message. Save and close the editor.\n\n10. Continue the rebase process:\n    ```\n    git rebase --continue\n    ```\n\n11. Git will apply the remaining commits after your edited commit.\n\n12. Once the rebase is complete, you can push the changes to the remote repository using the `--force` option if necessary:\n    ```\n    git push --force origin <your-branch>\n    ```\n\nPlease note that force-pushing can be disruptive, especially if other team members have already based their work on the previous state of your branch. Make sure to communicate with your team and consider the implications before using the `--force` option."
+          ]
+        },
+        "create_time": 1686830433.229427
+      }
+    }
+  ],
+  "source_conversation_sha256": "0cdef8776f6d1380fcb208c63d44d8bc7b1ec657861f1746dd9c652822ff0d0b",
+  "start": "2023-06-15T12:00:11.965943+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1686830411.965943,
+      "event_index": 2,
+      "role": "user",
+      "source_node_id": "aaa2edb8-5cba-48a0-8e32-d6573a18fdf6",
+      "source_parent_id": "3e630d14-7b11-402b-a47f-611278fbcf04",
+      "source_record_index": 2,
+      "text": "i have git branch\ni make mistake when run git pull origin master\nbecause\nother team member make\n\ngit reset --hard eb03ab7090faa328380cfd82552fa67c42eac00a\ngit push --force origin  master\n\nnow i have wrong commits\nhow to rebase my commits after master  eb03ab7090faa328380cfd82552fa67c42eac00a?",
+      "turn_id": "turn_000002"
+    },
+    {
+      "create_time": 1686830433.229427,
+      "event_index": 3,
+      "role": "assistant",
+      "source_node_id": "1106c952-01b6-47d0-ac64-66d1822a5f80",
+      "source_parent_id": "aaa2edb8-5cba-48a0-8e32-d6573a18fdf6",
+      "source_record_index": 3,
+      "text": "To rebase your commits after the `eb03ab7090faa328380cfd82552fa67c42eac00a` commit on the master branch, you can follow these steps:\n\n1. Make sure you have the latest changes from the remote repository by running:\n   ```\n   git fetch origin\n   ```\n\n2. Switch to your branch where you have the wrong commits:\n   ```\n   git checkout <your-branch>\n   ```\n\n3. Start the interactive rebase:\n   ```\n   git rebase -i origin/master\n   ```\n\n4. An editor will open with a list of commits. Locate the commit you want to edit, which should be the first commit after the `eb03ab7090faa328380cfd82552fa67c42eac00a` commit. Change the word \"pick\" to \"edit\" for that commit.\n\n5. Save and close the editor.\n\n6. Git will now start the rebase process and pause at the commit you marked for editing. You can now modify or remove the changes in that commit as needed.\n\n7. After making the necessary changes, stage them:\n   ```\n   git add <file1> <file2> ...  # Stage the modified files\n   git rm <file3> <file4> ...   # Remove any files you want to delete\n   ```\n\n8. Amend the commit with your changes:\n   ```\n   git commit --amend\n   ```\n\n9. Git will prompt you to modify the commit message. Save and close the editor.\n\n10. Continue the rebase process:\n    ```\n    git rebase --continue\n    ```\n\n11. Git will apply the remaining commits after your edited commit.\n\n12. Once the rebase is complete, you can push the changes to the remote repository using the `--force` option if necessary:\n    ```\n    git push --force origin <your-branch>\n    ```\n\nPlease note that force-pushing can be disruptive, especially if other team members have already based their work on the previous state of your branch. Make sure to communicate with your team and consider the implications before using the `--force` option.",
+      "turn_id": "turn_000003"
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_B0A21EE800C0",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000003_000193_001053_5422a4842ec9ba07",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "multiple_standalone_commands",
+        "environment_assignment_execution"
+      ],
+      "end_offset": 1053,
+      "fence_language": "yaml",
+      "kind": "shell_sequence",
+      "legacy_artifact_id": "ARTIFACT_000003_001",
+      "order_within_response": 1,
+      "raw_text": "name: Block Merge on Label\n\non:\n  pull_request:\n    types:\n      - labeled\n      - unlabeled\n\njobs:\n  block_merge:\n    runs-on: ubuntu-latest\n\n    steps:\n    - name: Check for blocking labels\n      id: check_labels\n      run: |\n        BLOCKING_LABELS=(\"do NOT merge yet\" \"s: on hold\")\n        PR_LABELS=$(jq -r '.pull_request.labels[].name' \"$GITHUB_EVENT_PATH\")\n        \n        for LABEL in \"${BLOCKING_LABELS[@]}\"; do\n          if [[ \"$PR_LABELS\" == *\"$LABEL\"* ]]; then\n            echo \"This PR has a blocking label: $LABEL\"\n            exit 1\n          fi\n        done\n        \n        echo \"No blocking labels found\"\n      env:\n        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}\n\n    - name: Unblock Merge\n      if: ${{ steps.check_labels.outcome == 'success' }}\n      run: |\n        echo \"The PR does not have any blocking labels. Merging is allowed.\"\n\n",
+      "raw_text_sha256": "5422a4842ec9ba072d07f8df7ff6f051f649adb1f4bce0b84ada69a63af236e8",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "d88b60176db624c7e0d80dd0c68ae8515e6e48e44620e29f55f6b69371981d35",
+      "start_offset": 193,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000005_000200_000914_005361853ced94a3",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "multiple_standalone_commands",
+        "environment_assignment_execution"
+      ],
+      "end_offset": 914,
+      "fence_language": "yaml",
+      "kind": "shell_sequence",
+      "legacy_artifact_id": "ARTIFACT_000005_001",
+      "order_within_response": 1,
+      "raw_text": "name: Block Merge on Label\n\non:\n  pull_request:\n    types:\n      - labeled\n      - unlabeled\n\njobs:\n  block_merge:\n    runs-on: ubuntu-latest\n\n    steps:\n    - name: Check for blocking label\n      id: check_label\n      run: |\n        PR_LABELS=$(jq -r '.pull_request.labels[].name' \"$GITHUB_EVENT_PATH\")\n        if [[ $PR_LABELS == *\"s: on hold\"* ]]; then\n          echo \"This PR has the 's: on hold' label.\"\n          exit 1\n        fi\n        echo \"No blocking labels found\"\n      env:\n        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}\n\n    - name: Unblock Merge\n      if: ${{ steps.check_label.outcome == 'success' }}\n      run: |\n        echo \"The PR does not have the 's: on hold' label. Merging is allowed.\"\n",
+      "raw_text_sha256": "005361853ced94a3693ad82b636e065e6ab6ecc4e2fead85cbe0ce3168c2bd8c",
+      "source_event_index": 5,
+      "source_record_index": 5,
+      "source_response_id": "turn_000005",
+      "source_turn_text_sha256": "d3e663e05d346c31d964785a68dfa2efea2e942a06a8e01d75793adf3f485e25",
+      "start_offset": 200,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Write a GitHub Action yml file that blocks the PR from merging when there is a label named \"do NOT merge yet\" or \"s: on hold\""
+          ]
+        },
+        "create_time": 1695033154.847554
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To create a GitHub Actions workflow that blocks a pull request from merging when it has a label named \"do NOT merge yet\" or \"s: on hold,\" you can use the following YAML configuration:\n\n```yaml\nname: Block Merge on Label\n\non:\n  pull_request:\n    types:\n      - labeled\n      - unlabeled\n\njobs:\n  block_merge:\n    runs-on: ubuntu-latest\n\n    steps:\n    - name: Check for blocking labels\n      id: check_labels\n      run: |\n        BLOCKING_LABELS=(\"do NOT merge yet\" \"s: on hold\")\n        PR_LABELS=$(jq -r '.pull_request.labels[].name' \"$GITHUB_EVENT_PATH\")\n        \n        for LABEL in \"${BLOCKING_LABELS[@]}\"; do\n          if [[ \"$PR_LABELS\" == *\"$LABEL\"* ]]; then\n            echo \"This PR has a blocking label: $LABEL\"\n            exit 1\n          fi\n        done\n        \n        echo \"No blocking labels found\"\n      env:\n        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}\n\n    - name: Unblock Merge\n      if: ${{ steps.check_labels.outcome == 'success' }}\n      run: |\n        echo \"The PR does not have any blocking labels. Merging is allowed.\"\n\n```\n\nThis workflow is triggered whenever a pull request is labeled or unlabeled. It checks if the labels include any of the specified blocking labels. If any of the blocking labels are found, the workflow will exit with a non-zero status code, preventing the PR from being merged. If no blocking labels are found, the workflow allows the PR to be merged.\n\nMake sure to save this YAML file in the `.github/workflows` directory in your repository. When you create a pull request with the \"do NOT merge yet\" or \"s: on hold\" label, the workflow will block the PR from being merged."
+          ]
+        },
+        "create_time": 1695033165.973662
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "How can I check \"s: on hold\" with \"contains\" using \"github.event.pull_request.labels.*.name\""
+          ]
+        },
+        "create_time": 1695034263.423839
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To check if the `s: on hold` label is present using the `contains` operator within a GitHub Actions workflow, you can use the `github.event.pull_request.labels.*.name` expression as follows:\n\n```yaml\nname: Block Merge on Label\n\non:\n  pull_request:\n    types:\n      - labeled\n      - unlabeled\n\njobs:\n  block_merge:\n    runs-on: ubuntu-latest\n\n    steps:\n    - name: Check for blocking label\n      id: check_label\n      run: |\n        PR_LABELS=$(jq -r '.pull_request.labels[].name' \"$GITHUB_EVENT_PATH\")\n        if [[ $PR_LABELS == *\"s: on hold\"* ]]; then\n          echo \"This PR has the 's: on hold' label.\"\n          exit 1\n        fi\n        echo \"No blocking labels found\"\n      env:\n        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}\n\n    - name: Unblock Merge\n      if: ${{ steps.check_label.outcome == 'success' }}\n      run: |\n        echo \"The PR does not have the 's: on hold' label. Merging is allowed.\"\n```\n\nIn this workflow, we use `jq` to extract the labels from the pull request event payload and then check if the label \"s: on hold\" is present in the `PR_LABELS` variable using the `*` operator for substring matching. If the label is found, the workflow exits with a non-zero status code to block the PR from being merged. If the label is not found, the PR can be merged.\n\nSave this YAML file in the `.github/workflows` directory of your repository, and it will take effect when a pull request is labeled or unlabeled with \"s: on hold.\""
+          ]
+        },
+        "create_time": 1695034274.716996
+      }
+    }
+  ],
+  "source_conversation_sha256": "f3308f3c8d5812f302749e11b2b60317ba81baf91c6762bb44806e374ffb6239",
+  "start": "2023-09-18T10:32:34.847554+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1695033154.847554,
+      "event_index": 2,
+      "role": "user",
+      "source_node_id": "aaa23d6a-0d1e-4385-8350-be677a5fbc91",
+      "source_parent_id": "60a3f091-6812-4569-a3e5-0b71dc089599",
+      "source_record_index": 2,
+      "text": "Write a GitHub Action yml file that blocks the PR from merging when there is a label named \"do NOT merge yet\" or \"s: on hold\"",
+      "turn_id": "turn_000002"
+    },
+    {
+      "create_time": 1695033165.973662,
+      "event_index": 3,
+      "role": "assistant",
+      "source_node_id": "ac7bf246-0d31-4436-bd18-5dd29810f008",
+      "source_parent_id": "aaa23d6a-0d1e-4385-8350-be677a5fbc91",
+      "source_record_index": 3,
+      "text": "To create a GitHub Actions workflow that blocks a pull request from merging when it has a label named \"do NOT merge yet\" or \"s: on hold,\" you can use the following YAML configuration:\n\n```yaml\nname: Block Merge on Label\n\non:\n  pull_request:\n    types:\n      - labeled\n      - unlabeled\n\njobs:\n  block_merge:\n    runs-on: ubuntu-latest\n\n    steps:\n    - name: Check for blocking labels\n      id: check_labels\n      run: |\n        BLOCKING_LABELS=(\"do NOT merge yet\" \"s: on hold\")\n        PR_LABELS=$(jq -r '.pull_request.labels[].name' \"$GITHUB_EVENT_PATH\")\n        \n        for LABEL in \"${BLOCKING_LABELS[@]}\"; do\n          if [[ \"$PR_LABELS\" == *\"$LABEL\"* ]]; then\n            echo \"This PR has a blocking label: $LABEL\"\n            exit 1\n          fi\n        done\n        \n        echo \"No blocking labels found\"\n      env:\n        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}\n\n    - name: Unblock Merge\n      if: ${{ steps.check_labels.outcome == 'success' }}\n      run: |\n        echo \"The PR does not have any blocking labels. Merging is allowed.\"\n\n```\n\nThis workflow is triggered whenever a pull request is labeled or unlabeled. It checks if the labels include any of the specified blocking labels. If any of the blocking labels are found, the workflow will exit with a non-zero status code, preventing the PR from being merged. If no blocking labels are found, the workflow allows the PR to be merged.\n\nMake sure to save this YAML file in the `.github/workflows` directory in your repository. When you create a pull request with the \"do NOT merge yet\" or \"s: on hold\" label, the workflow will block the PR from being merged.",
+      "turn_id": "turn_000003"
+    },
+    {
+      "create_time": 1695034263.423839,
+      "event_index": 4,
+      "role": "user",
+      "source_node_id": "aaa2185d-661c-4830-adc4-358a0604fe9c",
+      "source_parent_id": "ac7bf246-0d31-4436-bd18-5dd29810f008",
+      "source_record_index": 4,
+      "text": "How can I check \"s: on hold\" with \"contains\" using \"github.event.pull_request.labels.*.name\"",
+      "turn_id": "turn_000004"
+    },
+    {
+      "create_time": 1695034274.716996,
+      "event_index": 5,
+      "role": "assistant",
+      "source_node_id": "615ec2a3-a87f-46b0-b295-7ea2475cc591",
+      "source_parent_id": "aaa2185d-661c-4830-adc4-358a0604fe9c",
+      "source_record_index": 5,
+      "text": "To check if the `s: on hold` label is present using the `contains` operator within a GitHub Actions workflow, you can use the `github.event.pull_request.labels.*.name` expression as follows:\n\n```yaml\nname: Block Merge on Label\n\non:\n  pull_request:\n    types:\n      - labeled\n      - unlabeled\n\njobs:\n  block_merge:\n    runs-on: ubuntu-latest\n\n    steps:\n    - name: Check for blocking label\n      id: check_label\n      run: |\n        PR_LABELS=$(jq -r '.pull_request.labels[].name' \"$GITHUB_EVENT_PATH\")\n        if [[ $PR_LABELS == *\"s: on hold\"* ]]; then\n          echo \"This PR has the 's: on hold' label.\"\n          exit 1\n        fi\n        echo \"No blocking labels found\"\n      env:\n        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}\n\n    - name: Unblock Merge\n      if: ${{ steps.check_label.outcome == 'success' }}\n      run: |\n        echo \"The PR does not have the 's: on hold' label. Merging is allowed.\"\n```\n\nIn this workflow, we use `jq` to extract the labels from the pull request event payload and then check if the label \"s: on hold\" is present in the `PR_LABELS` variable using the `*` operator for substring matching. If the label is found, the workflow exits with a non-zero status code to block the PR from being merged. If the label is not found, the PR can be merged.\n\nSave this YAML file in the `.github/workflows` directory of your repository, and it will take effect when a pull request is labeled or unlabeled with \"s: on hold.\"",
+      "turn_id": "turn_000005"
+    }
+  ]
+}

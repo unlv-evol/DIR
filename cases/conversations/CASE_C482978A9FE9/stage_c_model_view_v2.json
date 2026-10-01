@@ -1,0 +1,376 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_C482978A9FE9",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000004_000122_000155_0d97abd0d1cdfa3c",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence"
+      ],
+      "end_offset": 155,
+      "fence_language": null,
+      "kind": "unclassified_technical",
+      "legacy_artifact_id": null,
+      "order_within_response": 1,
+      "raw_text": "   start https://www.example.com\n",
+      "raw_text_sha256": "0d97abd0d1cdfa3cb092df043c0fd5df50bcd50c6eac2f602fef3bc2eabeb6e3",
+      "source_event_index": 4,
+      "source_record_index": 4,
+      "source_response_id": "turn_000004",
+      "source_turn_text_sha256": "6931c604a069be878b7eddf158b6d309ea2e9573c2dad3880c8f30c6451451a3",
+      "start_offset": 122,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000004_000191_000234_8c12f74a0814f85b",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence"
+      ],
+      "end_offset": 234,
+      "fence_language": null,
+      "kind": "unclassified_technical",
+      "legacy_artifact_id": null,
+      "order_within_response": 2,
+      "raw_text": "   Start-Process \"https://www.example.com\"\n",
+      "raw_text_sha256": "8c12f74a0814f85b6be0aca7f1bc161fa4d3069cb39b45359987ee3389399b2f",
+      "source_event_index": 4,
+      "source_record_index": 4,
+      "source_response_id": "turn_000004",
+      "source_turn_text_sha256": "6931c604a069be878b7eddf158b6d309ea2e9573c2dad3880c8f30c6451451a3",
+      "start_offset": 191,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000006_000485_001131_40dab8780e5fb2da",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "declaration",
+        "control_flow",
+        "braces",
+        "statement_terminators",
+        "call_expression"
+      ],
+      "end_offset": 1131,
+      "fence_language": "cpp",
+      "kind": "source_code",
+      "legacy_artifact_id": "ARTIFACT_000006_001",
+      "order_within_response": 1,
+      "raw_text": "void open_url(const std::string &url) {\n    std::string executable;\n\n#if defined(_WIN32) || defined(_WIN64)\n    executable = \"start \\\"\\\"\";\n#elif defined(__linux__)\n    executable = \"xdg-open\";\n#elif defined(__APPLE__)\n    executable = \"open\";\n#elif defined(__ANDROID__)\n    executable = \"am start -a android.intent.action.VIEW -d\";\n#endif\n\n    const std::string command = executable + \" \\\"\" + url + \"\\\"\";\n\n    const int exitcode = std::system(command.c_str());\n    if (exitcode != 0) {\n        // debugmsg(\"Failed to open URL: %s\\nAttemped command was: %s\", url, command);\n        // Replace debugmsg with your debugging/logging function\n    }\n}\n",
+      "raw_text_sha256": "40dab8780e5fb2da8158c3f177cba609b9e7fc627e9e62e0e1290d6f44c3b197",
+      "source_event_index": 6,
+      "source_record_index": 6,
+      "source_response_id": "turn_000006",
+      "source_turn_text_sha256": "ada52f0f364a5e0be944184ca78f29af08311b276b5000fa80b7718783e7889f",
+      "start_offset": 485,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000008_000299_000693_083e7b3e886d3652",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence"
+      ],
+      "end_offset": 693,
+      "fence_language": "cmd",
+      "kind": "unclassified_technical",
+      "legacy_artifact_id": "ARTIFACT_000008_001",
+      "order_within_response": 1,
+      "raw_text": "start \"\" \"cataclysmbnteam/Cataclysm-BN/issues/new?labels=bug&template=bug_report.yml&versions-and-configuration=-%20OS%3A%20Windows%0A%20%20%20%20-%20OS%20Version%3A%2010.0%202009%0A-%20Game%20Version%3A%20e01f656%20%5B64-bit%5D%0A-%20Graphics%20Version%3A%20Tiles%0A-%20Game%20Language%3A%20English%20%5Ben_US%5D%0A-%20Mods%20loaded%3A%20%5B%0A%20%20%20%20Bright%20Nights%20%5Bbn%5D%0A%5D%0A\"\n",
+      "raw_text_sha256": "083e7b3e886d3652ae1db40d7553c94a7117ae2aebe627d307e633f50ab45e53",
+      "source_event_index": 8,
+      "source_record_index": 8,
+      "source_response_id": "turn_000008",
+      "source_turn_text_sha256": "f930ac87c2e0208531d42432f76b02f801611aa384dfa027a37e7927ef135053",
+      "start_offset": 299,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000008_000893_001306_10c3b1a0d49f25c8",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence"
+      ],
+      "end_offset": 1306,
+      "fence_language": "cmd",
+      "kind": "unclassified_technical",
+      "legacy_artifact_id": "ARTIFACT_000008_002",
+      "order_within_response": 2,
+      "raw_text": "start \"\" \"https://github.com/cataclysmbnteam/Cataclysm-BN/issues/new?labels=bug&template=bug_report.yml&versions-and-configuration=-%20OS%3A%20Windows%0A%20%20%20%20-%20OS%20Version%3A%2010.0%202009%0A-%20Game%20Version%3A%20e01f656%20%5B64-bit%5D%0A-%20Graphics%20Version%3A%20Tiles%0A-%20Game%20Language%3A%20English%20%5Ben_US%5D%0A-%20Mods%20loaded%3A%20%5B%0A%20%20%20%20Bright%20Nights%20%5Bbn%5D%0A%5D%0A\"\n",
+      "raw_text_sha256": "10c3b1a0d49f25c89530e5b4cf7249e59466fc5f48aef0c3d156cd21437d436c",
+      "source_event_index": 8,
+      "source_record_index": 8,
+      "source_response_id": "turn_000008",
+      "source_turn_text_sha256": "f930ac87c2e0208531d42432f76b02f801611aa384dfa027a37e7927ef135053",
+      "start_offset": 893,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000010_000235_000305_d0a8790c3134bfe0",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "recognized_fence_label"
+      ],
+      "end_offset": 305,
+      "fence_language": "cpp",
+      "kind": "source_code",
+      "legacy_artifact_id": "ARTIFACT_000010_001",
+      "order_within_response": 1,
+      "raw_text": "#if defined(_WIN32) || defined(_WIN64)\n    executable = \"start \\\"\\\"\";\n",
+      "raw_text_sha256": "d0a8790c3134bfe01c6d8701a89e752216145f72288b568bef74007e6a536a19",
+      "source_event_index": 10,
+      "source_record_index": 10,
+      "source_response_id": "turn_000010",
+      "source_turn_text_sha256": "ef02fbf22ddc86829996fdbd96793a5dc4ddcd507466033de606d020ccfb3693",
+      "start_offset": 235,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "how do i open a url in windows 10 command-line? (CMD or powershell)"
+          ]
+        },
+        "create_time": 1694390687.774569
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To open a URL from the Windows Command Prompt (CMD) or PowerShell, you can use the following commands:\n\n1. In CMD:\n   ```\n   start https://www.example.com\n   ```\n   \n2. In PowerShell:\n   ```\n   Start-Process \"https://www.example.com\"\n   ```\n\nBoth commands will launch the default web browser and navigate to the specified URL."
+          ]
+        },
+        "create_time": 1694390692.102398
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "void open_url( const std::string &url )\n{\n    static const std::string executable =\n#if defined(_WIN32)\n        \"explorer\";\n#elif defined(_WIN64)\n        \"start\";\n#elif defined(__linux__)\n        \"xdg-open\";\n#elif defined(__APPLE__)\n        \"open\";\n#elif defined(__ANDROID__)\n        \"am start -a android.intent.action.VIEW -d\";\n#endif\n    const std::string command = executable + \" \\\"\" + url + \"\\\"\";\n\n    const int exitcode = std::system( command.data() );\n    if( exitcode != 0 ) {\n        debugmsg( \"Failed to open URL: %s\\nAttemped command was: %s\", url, command );\n    }\n}\nthis failed, does std::system in windows use CMD or powershell?"
+          ]
+        },
+        "create_time": 1694390728.205018
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "`std::system` on Windows generally uses `cmd.exe` to execute the given command string. Your code snippet has a few issues that could make it fail on Windows:\n\n1. For `_WIN64`, you're using `\"start\"`, but you should use `\"start \\\"\\\"\"` to avoid treating the URL as the title of the new Command Prompt window.\n\n2. For `_WIN32`, you're using `\"explorer\"` which should work, but make sure to compile for the correct architecture (`_WIN32` or `_WIN64`).\n\nHere's a corrected version:\n\n```cpp\nvoid open_url(const std::string &url) {\n    std::string executable;\n\n#if defined(_WIN32) || defined(_WIN64)\n    executable = \"start \\\"\\\"\";\n#elif defined(__linux__)\n    executable = \"xdg-open\";\n#elif defined(__APPLE__)\n    executable = \"open\";\n#elif defined(__ANDROID__)\n    executable = \"am start -a android.intent.action.VIEW -d\";\n#endif\n\n    const std::string command = executable + \" \\\"\" + url + \"\\\"\";\n\n    const int exitcode = std::system(command.c_str());\n    if (exitcode != 0) {\n        // debugmsg(\"Failed to open URL: %s\\nAttemped command was: %s\", url, command);\n        // Replace debugmsg with your debugging/logging function\n    }\n}\n```\n\nMake sure you are using the right compile-time definitions (`_WIN32` or `_WIN64`) for your build."
+          ]
+        },
+        "create_time": 1694390743.858276
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "will running \n```\nstart \"cataclysmbnteam/Cataclysm-BN/issues/new?labels=bug&template=bug_report.yml&versions-and-configuration=-%20OS%3A%20Windows%0A%20%20%20%20-%20OS%20Version%3A%2010.0%202009%0A-%20Game%20Version%3A%20e01f656%20%5B64-bit%5D%0A-%20Graphics%20Version%3A%20Tiles%0A-%20Game%20Language%3A%20English%20%5Ben_US%5D%0A-%20Mods%20loaded%3A%20%5B%0A%20%20%20%20Bright%20Nights%20%5Bbn%5D%0A%5D%0A\"\n```\nin CMD.exe open correct url?"
+          ]
+        },
+        "create_time": 1694390788.493605
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "No, running that command in CMD.exe will not open the correct URL. The reason is that the `start` command in CMD.exe treats the first argument in quotes as the title for the new Command Prompt window that gets opened.\n\nYou can get around this by providing an empty title argument like this:\n\n```cmd\nstart \"\" \"cataclysmbnteam/Cataclysm-BN/issues/new?labels=bug&template=bug_report.yml&versions-and-configuration=-%20OS%3A%20Windows%0A%20%20%20%20-%20OS%20Version%3A%2010.0%202009%0A-%20Game%20Version%3A%20e01f656%20%5B64-bit%5D%0A-%20Graphics%20Version%3A%20Tiles%0A-%20Game%20Language%3A%20English%20%5Ben_US%5D%0A-%20Mods%20loaded%3A%20%5B%0A%20%20%20%20Bright%20Nights%20%5Bbn%5D%0A%5D%0A\"\n```\n\nHowever, this command will still fail because the URL is incomplete (it lacks the `https://` prefix and the domain name).\n\nA complete and correct command should look something like this:\n\n```cmd\nstart \"\" \"https://github.com/cataclysmbnteam/Cataclysm-BN/issues/new?labels=bug&template=bug_report.yml&versions-and-configuration=-%20OS%3A%20Windows%0A%20%20%20%20-%20OS%20Version%3A%2010.0%202009%0A-%20Game%20Version%3A%20e01f656%20%5B64-bit%5D%0A-%20Graphics%20Version%3A%20Tiles%0A-%20Game%20Language%3A%20English%20%5Ben_US%5D%0A-%20Mods%20loaded%3A%20%5B%0A%20%20%20%20Bright%20Nights%20%5Bbn%5D%0A%5D%0A\"\n```"
+          ]
+        },
+        "create_time": 1694390814.778995
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "i don't understand why https is omitted, this is the exact code and the only usage:\n\n```c++\n            constexpr const char *const bug_report_url =\n                \"https://github.com/cataclysmbnteam/Cataclysm-BN/issues/new\"\n                \"?labels=bug\"\n                \"&template=bug_report.yml\"\n                \"&versions-and-configuration=\";\n\n            const std::string report = game_info::game_report();\n            const std::string url = bug_report_url + encode_url( report );\n\n            open_url( url );\n```\n```c++\nvoid open_url( const std::string &url )\n{\n    static const std::string executable =\n#if defined(_WIN32)\n        \"explorer\";\n#elif defined(_WIN64)\n        \"start\";\n#elif defined(__linux__)\n        \"xdg-open\";\n#elif defined(__APPLE__)\n        \"open\";\n#elif defined(__ANDROID__)\n        \"am start -a android.intent.action.VIEW -d\";\n#endif\n    const std::string command = executable + \" \\\"\" + url + \"\\\"\";\n\n    const int exitcode = std::system( command.data() );\n    if( exitcode != 0 ) {\n        debugmsg( \"Failed to open URL: %s\\nAttemped command was: %s\", url, command );\n    }\n}\n```"
+          ]
+        },
+        "create_time": 1694390890.795905
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "The issue is likely in the `open_url` function's handling for Windows. The code for `_WIN64` should not be `\"start\"` but `\"start \\\"\\\"\"` to handle the argument correctly. Here's the modified portion of your `open_url` function:\n\n```cpp\n#if defined(_WIN32) || defined(_WIN64)\n    executable = \"start \\\"\\\"\";\n```\n\nThis change makes sure that `start` does not mistake your URL for the title of the window.\n\nAdditionally, please ensure that the `#if defined(_WIN32) || defined(_WIN64)` is correct based on your build target, as `_WIN32` will also be defined for 64-bit builds. So having separate blocks for `_WIN32` and `_WIN64` may not behave as expected. Just having one block to handle Windows should be enough."
+          ]
+        },
+        "create_time": 1694390901.00216
+      }
+    }
+  ],
+  "source_conversation_sha256": "efe21f7f4a94bc3fa836c885dde6d0eb2380e4d752f1850adb82183f85eb3a96",
+  "start": "2023-09-11T00:04:47.774569+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1694390687.774569,
+      "event_index": 3,
+      "role": "user",
+      "source_node_id": "aaa2d5e6-b437-43ee-8f8b-85a620ad1e6f",
+      "source_parent_id": "ed0d30ee-69fe-4893-9584-0479118eaa79",
+      "source_record_index": 3,
+      "text": "how do i open a url in windows 10 command-line? (CMD or powershell)",
+      "turn_id": "turn_000003"
+    },
+    {
+      "create_time": 1694390692.102398,
+      "event_index": 4,
+      "role": "assistant",
+      "source_node_id": "bc49a754-325a-4f9e-a3a3-d0c27d990309",
+      "source_parent_id": "aaa2d5e6-b437-43ee-8f8b-85a620ad1e6f",
+      "source_record_index": 4,
+      "text": "To open a URL from the Windows Command Prompt (CMD) or PowerShell, you can use the following commands:\n\n1. In CMD:\n   ```\n   start https://www.example.com\n   ```\n   \n2. In PowerShell:\n   ```\n   Start-Process \"https://www.example.com\"\n   ```\n\nBoth commands will launch the default web browser and navigate to the specified URL.",
+      "turn_id": "turn_000004"
+    },
+    {
+      "create_time": 1694390728.205018,
+      "event_index": 5,
+      "role": "user",
+      "source_node_id": "aaa2f4d1-7fdc-4ec4-b400-ee8a967945cc",
+      "source_parent_id": "bc49a754-325a-4f9e-a3a3-d0c27d990309",
+      "source_record_index": 5,
+      "text": "void open_url( const std::string &url )\n{\n    static const std::string executable =\n#if defined(_WIN32)\n        \"explorer\";\n#elif defined(_WIN64)\n        \"start\";\n#elif defined(__linux__)\n        \"xdg-open\";\n#elif defined(__APPLE__)\n        \"open\";\n#elif defined(__ANDROID__)\n        \"am start -a android.intent.action.VIEW -d\";\n#endif\n    const std::string command = executable + \" \\\"\" + url + \"\\\"\";\n\n    const int exitcode = std::system( command.data() );\n    if( exitcode != 0 ) {\n        debugmsg( \"Failed to open URL: %s\\nAttemped command was: %s\", url, command );\n    }\n}\nthis failed, does std::system in windows use CMD or powershell?",
+      "turn_id": "turn_000005"
+    },
+    {
+      "create_time": 1694390743.858276,
+      "event_index": 6,
+      "role": "assistant",
+      "source_node_id": "b860d97d-0a18-4d2d-bde3-96a52f5f90ea",
+      "source_parent_id": "aaa2f4d1-7fdc-4ec4-b400-ee8a967945cc",
+      "source_record_index": 6,
+      "text": "`std::system` on Windows generally uses `cmd.exe` to execute the given command string. Your code snippet has a few issues that could make it fail on Windows:\n\n1. For `_WIN64`, you're using `\"start\"`, but you should use `\"start \\\"\\\"\"` to avoid treating the URL as the title of the new Command Prompt window.\n\n2. For `_WIN32`, you're using `\"explorer\"` which should work, but make sure to compile for the correct architecture (`_WIN32` or `_WIN64`).\n\nHere's a corrected version:\n\n```cpp\nvoid open_url(const std::string &url) {\n    std::string executable;\n\n#if defined(_WIN32) || defined(_WIN64)\n    executable = \"start \\\"\\\"\";\n#elif defined(__linux__)\n    executable = \"xdg-open\";\n#elif defined(__APPLE__)\n    executable = \"open\";\n#elif defined(__ANDROID__)\n    executable = \"am start -a android.intent.action.VIEW -d\";\n#endif\n\n    const std::string command = executable + \" \\\"\" + url + \"\\\"\";\n\n    const int exitcode = std::system(command.c_str());\n    if (exitcode != 0) {\n        // debugmsg(\"Failed to open URL: %s\\nAttemped command was: %s\", url, command);\n        // Replace debugmsg with your debugging/logging function\n    }\n}\n```\n\nMake sure you are using the right compile-time definitions (`_WIN32` or `_WIN64`) for your build.",
+      "turn_id": "turn_000006"
+    },
+    {
+      "create_time": 1694390788.493605,
+      "event_index": 7,
+      "role": "user",
+      "source_node_id": "aaa20863-916c-4a92-8ff8-106407c3bfaf",
+      "source_parent_id": "b860d97d-0a18-4d2d-bde3-96a52f5f90ea",
+      "source_record_index": 7,
+      "text": "will running \n```\nstart \"cataclysmbnteam/Cataclysm-BN/issues/new?labels=bug&template=bug_report.yml&versions-and-configuration=-%20OS%3A%20Windows%0A%20%20%20%20-%20OS%20Version%3A%2010.0%202009%0A-%20Game%20Version%3A%20e01f656%20%5B64-bit%5D%0A-%20Graphics%20Version%3A%20Tiles%0A-%20Game%20Language%3A%20English%20%5Ben_US%5D%0A-%20Mods%20loaded%3A%20%5B%0A%20%20%20%20Bright%20Nights%20%5Bbn%5D%0A%5D%0A\"\n```\nin CMD.exe open correct url?",
+      "turn_id": "turn_000007"
+    },
+    {
+      "create_time": 1694390814.778995,
+      "event_index": 8,
+      "role": "assistant",
+      "source_node_id": "464179a9-6afa-4ac9-81f2-a300dc33f3d7",
+      "source_parent_id": "aaa20863-916c-4a92-8ff8-106407c3bfaf",
+      "source_record_index": 8,
+      "text": "No, running that command in CMD.exe will not open the correct URL. The reason is that the `start` command in CMD.exe treats the first argument in quotes as the title for the new Command Prompt window that gets opened.\n\nYou can get around this by providing an empty title argument like this:\n\n```cmd\nstart \"\" \"cataclysmbnteam/Cataclysm-BN/issues/new?labels=bug&template=bug_report.yml&versions-and-configuration=-%20OS%3A%20Windows%0A%20%20%20%20-%20OS%20Version%3A%2010.0%202009%0A-%20Game%20Version%3A%20e01f656%20%5B64-bit%5D%0A-%20Graphics%20Version%3A%20Tiles%0A-%20Game%20Language%3A%20English%20%5Ben_US%5D%0A-%20Mods%20loaded%3A%20%5B%0A%20%20%20%20Bright%20Nights%20%5Bbn%5D%0A%5D%0A\"\n```\n\nHowever, this command will still fail because the URL is incomplete (it lacks the `https://` prefix and the domain name).\n\nA complete and correct command should look something like this:\n\n```cmd\nstart \"\" \"https://github.com/cataclysmbnteam/Cataclysm-BN/issues/new?labels=bug&template=bug_report.yml&versions-and-configuration=-%20OS%3A%20Windows%0A%20%20%20%20-%20OS%20Version%3A%2010.0%202009%0A-%20Game%20Version%3A%20e01f656%20%5B64-bit%5D%0A-%20Graphics%20Version%3A%20Tiles%0A-%20Game%20Language%3A%20English%20%5Ben_US%5D%0A-%20Mods%20loaded%3A%20%5B%0A%20%20%20%20Bright%20Nights%20%5Bbn%5D%0A%5D%0A\"\n```",
+      "turn_id": "turn_000008"
+    },
+    {
+      "create_time": 1694390890.795905,
+      "event_index": 9,
+      "role": "user",
+      "source_node_id": "aaa218dc-b515-4bdb-8ba1-bc3bd5f30c35",
+      "source_parent_id": "464179a9-6afa-4ac9-81f2-a300dc33f3d7",
+      "source_record_index": 9,
+      "text": "i don't understand why https is omitted, this is the exact code and the only usage:\n\n```c++\n            constexpr const char *const bug_report_url =\n                \"https://github.com/cataclysmbnteam/Cataclysm-BN/issues/new\"\n                \"?labels=bug\"\n                \"&template=bug_report.yml\"\n                \"&versions-and-configuration=\";\n\n            const std::string report = game_info::game_report();\n            const std::string url = bug_report_url + encode_url( report );\n\n            open_url( url );\n```\n```c++\nvoid open_url( const std::string &url )\n{\n    static const std::string executable =\n#if defined(_WIN32)\n        \"explorer\";\n#elif defined(_WIN64)\n        \"start\";\n#elif defined(__linux__)\n        \"xdg-open\";\n#elif defined(__APPLE__)\n        \"open\";\n#elif defined(__ANDROID__)\n        \"am start -a android.intent.action.VIEW -d\";\n#endif\n    const std::string command = executable + \" \\\"\" + url + \"\\\"\";\n\n    const int exitcode = std::system( command.data() );\n    if( exitcode != 0 ) {\n        debugmsg( \"Failed to open URL: %s\\nAttemped command was: %s\", url, command );\n    }\n}\n```",
+      "turn_id": "turn_000009"
+    },
+    {
+      "create_time": 1694390901.00216,
+      "event_index": 10,
+      "role": "assistant",
+      "source_node_id": "e5696a3c-f6b4-4b34-ab47-7d8ff950036f",
+      "source_parent_id": "aaa218dc-b515-4bdb-8ba1-bc3bd5f30c35",
+      "source_record_index": 10,
+      "text": "The issue is likely in the `open_url` function's handling for Windows. The code for `_WIN64` should not be `\"start\"` but `\"start \\\"\\\"\"` to handle the argument correctly. Here's the modified portion of your `open_url` function:\n\n```cpp\n#if defined(_WIN32) || defined(_WIN64)\n    executable = \"start \\\"\\\"\";\n```\n\nThis change makes sure that `start` does not mistake your URL for the title of the window.\n\nAdditionally, please ensure that the `#if defined(_WIN32) || defined(_WIN64)` is correct based on your build target, as `_WIN32` will also be defined for 64-bit builds. So having separate blocks for `_WIN32` and `_WIN64` may not behave as expected. Just having one block to handle Windows should be enough.",
+      "turn_id": "turn_000010"
+    }
+  ]
+}

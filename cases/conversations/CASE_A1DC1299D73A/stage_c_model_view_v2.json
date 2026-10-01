@@ -1,0 +1,100 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_A1DC1299D73A",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000003_000168_001212_a3a6b16717426048",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "declaration",
+        "control_flow",
+        "braces",
+        "statement_terminators",
+        "call_expression"
+      ],
+      "end_offset": 1212,
+      "fence_language": "jsx",
+      "kind": "source_code",
+      "legacy_artifact_id": "ARTIFACT_000003_001",
+      "order_within_response": 1,
+      "raw_text": "const markers = [\n    { name: 'cone', icon: cone },\n    { name: 'pothole', icon: pothole },\n    { name: 'roadDamage', icon: roadDamage },\n    { name: 'carAccident', icon: carAccident },\n    { name: 'warningSign', icon: warning },\n    { name: 'etc', icon: MoreHoriz },\n];\n\nreturn (\n    <>\n        {markers.map((marker, index) => (\n            <Fab\n                key={index}\n                className={`${styles['CreatePost__fab']} ${selectedMarker === marker.name ? styles['CreatePost__active'] : ''}`}\n                size=\"large\"\n                aria-label={marker.name}\n                onClick={() => markerClick(marker.name)}\n            >\n                {typeof marker.icon === 'string' ? (\n                    <img\n                        className={styles['CreatePost__images']}\n                        src={marker.icon}\n                        alt=\"\"\n                    />\n                ) : (\n                    <marker.icon className={styles['CreatePost__images']} />\n                )}\n            </Fab>\n        ))}\n    </>\n);\n",
+      "raw_text_sha256": "a3a6b16717426048cb3111a053e14f0bcc9d1b4add9eb7cdb2f5d0c54a0316af",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "9c4d2f0c4ba2a1daa1c414a26d460a29c0f5aa25f6a4792d34874779dae49a47",
+      "start_offset": 168,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "My CreatePost component has redundant MUI FAB components. I want to map which marker is pressed that should change the background color and set as the selected marker. Can this be done? Here is the portion of the redundant code below:\n<Fab\n                                className={`${styles['CreatePost__fab']} ${marker === 'cone' ? styles['CreatePost__active'] : ''}`}\n                                size=\"large\"\n                                aria-label=\"cone\"\n                                onClick={() => markerClick('cone')}\n                            >\n                                <img\n                                    className={styles['CreatePost__images']}\n                                    src={cone}\n                                    alt=\"\"\n                                />\n                            </Fab>\n                            <Fab\n                                className={`${styles['CreatePost__fab']} ${marker === 'pothole' ? styles['CreatePost__active'] : ''}`}\n                                size=\"large\"\n                                aria-label=\"pothole\"\n                                onClick={() => markerClick('pothole')}\n                            >\n                                <img\n                                    className={styles['CreatePost__images']}\n                                    src={pothole}\n                                    alt=\"\"\n                                />\n                            </Fab>\n                            <Fab\n                                className={`${styles['CreatePost__fab']} ${marker === 'roadDamage' ? styles['CreatePost__active'] : ''}`}\n                                size=\"large\"\n                                aria-label=\"roadDamage\"\n                                onClick={() => markerClick('roadDamage')}\n                            >\n                                <img\n                                    className={styles['CreatePost__images']}\n                                    src={roadDamage}\n                                    alt=\"\"\n                                />\n                            </Fab>\n                            <Fab\n                                className={`${styles['CreatePost__fab']} ${marker === 'carAccident' ? styles['CreatePost__active'] : ''}`}\n                                size=\"large\"\n                                aria-label=\"carAccident\"\n                                onClick={() => markerClick('carAccident')}\n                            >\n                                <img\n                                    className={styles['CreatePost__images2']}\n                                    src={carAccident}\n                                    alt=\"\"\n                                />\n                            </Fab>\n                            <Fab\n                                className={`${styles['CreatePost__fab']} ${marker === 'warningSign' ? styles['CreatePost__active'] : ''}`}\n                                size=\"large\"\n                                aria-label=\"warningSign\"\n                                onClick={() => markerClick('warningSign')}\n                            >\n                                <img\n                                    className={styles['CreatePost__images']}\n                                    src={warning}\n                                    alt=\"\"\n                                />\n                            </Fab>\n                            <Fab\n                                className={`${styles['CreatePost__fab']} ${marker === 'etc' ? styles['CreatePost__active'] : ''}`}\n                                size=\"large\"\n                                aria-label=\"etc\"\n                                onClick={() => markerClick('etc')}\n                            >\n                                <MoreHoriz className={styles['CreatePost__images']} />\n                            </Fab>"
+          ]
+        },
+        "create_time": 1712869391.627538
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "You can avoid redundancy in your code by dynamically rendering the FAB components using an array of markers and mapping through them. Here's how you can do it:\n\n```jsx\nconst markers = [\n    { name: 'cone', icon: cone },\n    { name: 'pothole', icon: pothole },\n    { name: 'roadDamage', icon: roadDamage },\n    { name: 'carAccident', icon: carAccident },\n    { name: 'warningSign', icon: warning },\n    { name: 'etc', icon: MoreHoriz },\n];\n\nreturn (\n    <>\n        {markers.map((marker, index) => (\n            <Fab\n                key={index}\n                className={`${styles['CreatePost__fab']} ${selectedMarker === marker.name ? styles['CreatePost__active'] : ''}`}\n                size=\"large\"\n                aria-label={marker.name}\n                onClick={() => markerClick(marker.name)}\n            >\n                {typeof marker.icon === 'string' ? (\n                    <img\n                        className={styles['CreatePost__images']}\n                        src={marker.icon}\n                        alt=\"\"\n                    />\n                ) : (\n                    <marker.icon className={styles['CreatePost__images']} />\n                )}\n            </Fab>\n        ))}\n    </>\n);\n```\n\nThis code dynamically renders the FAB components based on the `markers` array. It maps through each marker and renders a FAB component for each one. The `selectedMarker` state variable is used to determine whether a marker is active, and the `markerClick` function is called when a FAB component is clicked."
+          ]
+        },
+        "create_time": 1712869397.338142
+      }
+    }
+  ],
+  "source_conversation_sha256": "dd58768c5b39953ad2bac6689da206becfc4763f91ad4597c5400a4b0807ec74",
+  "start": "2024-04-11T21:03:11.627538+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1712869391.627538,
+      "event_index": 2,
+      "role": "user",
+      "source_node_id": "aaa23146-3838-4ae1-98bf-f75b6bd98043",
+      "source_parent_id": "ef07d182-97fb-45b4-89a2-e8e27dd517dd",
+      "source_record_index": 2,
+      "text": "My CreatePost component has redundant MUI FAB components. I want to map which marker is pressed that should change the background color and set as the selected marker. Can this be done? Here is the portion of the redundant code below:\n<Fab\n                                className={`${styles['CreatePost__fab']} ${marker === 'cone' ? styles['CreatePost__active'] : ''}`}\n                                size=\"large\"\n                                aria-label=\"cone\"\n                                onClick={() => markerClick('cone')}\n                            >\n                                <img\n                                    className={styles['CreatePost__images']}\n                                    src={cone}\n                                    alt=\"\"\n                                />\n                            </Fab>\n                            <Fab\n                                className={`${styles['CreatePost__fab']} ${marker === 'pothole' ? styles['CreatePost__active'] : ''}`}\n                                size=\"large\"\n                                aria-label=\"pothole\"\n                                onClick={() => markerClick('pothole')}\n                            >\n                                <img\n                                    className={styles['CreatePost__images']}\n                                    src={pothole}\n                                    alt=\"\"\n                                />\n                            </Fab>\n                            <Fab\n                                className={`${styles['CreatePost__fab']} ${marker === 'roadDamage' ? styles['CreatePost__active'] : ''}`}\n                                size=\"large\"\n                                aria-label=\"roadDamage\"\n                                onClick={() => markerClick('roadDamage')}\n                            >\n                                <img\n                                    className={styles['CreatePost__images']}\n                                    src={roadDamage}\n                                    alt=\"\"\n                                />\n                            </Fab>\n                            <Fab\n                                className={`${styles['CreatePost__fab']} ${marker === 'carAccident' ? styles['CreatePost__active'] : ''}`}\n                                size=\"large\"\n                                aria-label=\"carAccident\"\n                                onClick={() => markerClick('carAccident')}\n                            >\n                                <img\n                                    className={styles['CreatePost__images2']}\n                                    src={carAccident}\n                                    alt=\"\"\n                                />\n                            </Fab>\n                            <Fab\n                                className={`${styles['CreatePost__fab']} ${marker === 'warningSign' ? styles['CreatePost__active'] : ''}`}\n                                size=\"large\"\n                                aria-label=\"warningSign\"\n                                onClick={() => markerClick('warningSign')}\n                            >\n                                <img\n                                    className={styles['CreatePost__images']}\n                                    src={warning}\n                                    alt=\"\"\n                                />\n                            </Fab>\n                            <Fab\n                                className={`${styles['CreatePost__fab']} ${marker === 'etc' ? styles['CreatePost__active'] : ''}`}\n                                size=\"large\"\n                                aria-label=\"etc\"\n                                onClick={() => markerClick('etc')}\n                            >\n                                <MoreHoriz className={styles['CreatePost__images']} />\n                            </Fab>",
+      "turn_id": "turn_000002"
+    },
+    {
+      "create_time": 1712869397.338142,
+      "event_index": 3,
+      "role": "assistant",
+      "source_node_id": "2bac0809-6d02-4aa5-a901-35199072ac2d",
+      "source_parent_id": "aaa23146-3838-4ae1-98bf-f75b6bd98043",
+      "source_record_index": 3,
+      "text": "You can avoid redundancy in your code by dynamically rendering the FAB components using an array of markers and mapping through them. Here's how you can do it:\n\n```jsx\nconst markers = [\n    { name: 'cone', icon: cone },\n    { name: 'pothole', icon: pothole },\n    { name: 'roadDamage', icon: roadDamage },\n    { name: 'carAccident', icon: carAccident },\n    { name: 'warningSign', icon: warning },\n    { name: 'etc', icon: MoreHoriz },\n];\n\nreturn (\n    <>\n        {markers.map((marker, index) => (\n            <Fab\n                key={index}\n                className={`${styles['CreatePost__fab']} ${selectedMarker === marker.name ? styles['CreatePost__active'] : ''}`}\n                size=\"large\"\n                aria-label={marker.name}\n                onClick={() => markerClick(marker.name)}\n            >\n                {typeof marker.icon === 'string' ? (\n                    <img\n                        className={styles['CreatePost__images']}\n                        src={marker.icon}\n                        alt=\"\"\n                    />\n                ) : (\n                    <marker.icon className={styles['CreatePost__images']} />\n                )}\n            </Fab>\n        ))}\n    </>\n);\n```\n\nThis code dynamically renders the FAB components based on the `markers` array. It maps through each marker and renders a FAB component for each one. The `selectedMarker` state variable is used to determine whether a marker is active, and the `markerClick` function is called when a FAB component is clicked.",
+      "turn_id": "turn_000003"
+    }
+  ]
+}

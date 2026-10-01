@@ -1,0 +1,179 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_8A756AAC10B8",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000003_000187_000289_795225d70ff3d7af",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence"
+      ],
+      "end_offset": 289,
+      "fence_language": null,
+      "kind": "unclassified_technical",
+      "legacy_artifact_id": "ARTIFACT_000003_001",
+      "order_within_response": 1,
+      "raw_text": "my_package/\n    ├── my_module.py\n    ├── tests/\n        ├── __init__.py\n        └── test_my_module.py\n",
+      "raw_text_sha256": "795225d70ff3d7af8b338d996b9df906fba0cbecb66430ec7ad0b9f872d926cd",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "80879f4300b313222c15fc254ad703511010625b3512b2ffd16762897c825879",
+      "start_offset": 187,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_000368_000416_dd0905105bb9ab4f",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "declaration",
+        "control_flow",
+        "call_expression"
+      ],
+      "end_offset": 416,
+      "fence_language": "python",
+      "kind": "source_code",
+      "legacy_artifact_id": "ARTIFACT_000003_002",
+      "order_within_response": 2,
+      "raw_text": "# my_module.py\n\ndef add(a, b):\n    return a + b\n",
+      "raw_text_sha256": "dd0905105bb9ab4f0fee3330b4e2eff53688eb774f6cb25b6806fae03368c8a9",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "80879f4300b313222c15fc254ad703511010625b3512b2ffd16762897c825879",
+      "start_offset": 368,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_000558_000712_a10bb4c7a29032d1",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "import_or_include",
+        "declaration",
+        "call_expression"
+      ],
+      "end_offset": 712,
+      "fence_language": "python",
+      "kind": "source_code",
+      "legacy_artifact_id": "ARTIFACT_000003_003",
+      "order_within_response": 3,
+      "raw_text": "# test_my_module.py\n\nfrom my_package.my_module import add\n\ndef test_add():\n    assert add(2, 3) == 5\n    assert add(0, 0) == 0\n    assert add(-1, 1) == 0\n",
+      "raw_text_sha256": "a10bb4c7a29032d128b3135b04b0a7d0e1be5acfcb41f99a66bd0936e2874773",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "80879f4300b313222c15fc254ad703511010625b3512b2ffd16762897c825879",
+      "start_offset": 558,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_001370_001377_8004a972c3d5c274",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence"
+      ],
+      "end_offset": 1377,
+      "fence_language": null,
+      "kind": "unclassified_technical",
+      "legacy_artifact_id": "ARTIFACT_000003_004",
+      "order_within_response": 4,
+      "raw_text": "pytest\n",
+      "raw_text_sha256": "8004a972c3d5c274d8c808e8d8afe03b9aca8af8eebf3df4298f114d8008b754",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "80879f4300b313222c15fc254ad703511010625b3512b2ffd16762897c825879",
+      "start_offset": 1370,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "minimal example for a pytest test in the directory structure of a python package"
+          ]
+        },
+        "create_time": 1706099386.015073
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Sure, here's a minimal example of a pytest test within the directory structure of a Python package:\n\nLet's assume you have the following directory structure for your Python package:\n\n```\nmy_package/\n    ├── my_module.py\n    ├── tests/\n        ├── __init__.py\n        └── test_my_module.py\n```\n\nInside the `my_module.py`, you have a simple function to test:\n\n```python\n# my_module.py\n\ndef add(a, b):\n    return a + b\n```\n\nNow, you want to write a pytest test for this `add` function. Create a `test_my_module.py` file inside the `tests` directory:\n\n```python\n# test_my_module.py\n\nfrom my_package.my_module import add\n\ndef test_add():\n    assert add(2, 3) == 5\n    assert add(0, 0) == 0\n    assert add(-1, 1) == 0\n```\n\nHere's what this example does:\n\n1. The test file is named `test_my_module.py`, and it's located within the `tests` directory.\n2. We import the `add` function from `my_package.my_module`, assuming that your package is properly structured and that `my_module.py` contains the `add` function.\n3. We define a test function called `test_add`, where we use assertions to check if the `add` function behaves as expected for various inputs.\n\nTo run the tests using pytest, make sure you have pytest installed (you can install it using `pip install pytest`). Then, from the root directory of your package (where the `my_package` directory is located), run:\n\n```\npytest\n```\n\nThis command will discover and run all the tests in the `tests` directory and its subdirectories. In this case, it will execute the `test_add` function in `test_my_module.py` and report the results."
+          ]
+        },
+        "create_time": 1706099392.633607
+      }
+    }
+  ],
+  "source_conversation_sha256": "f635329fa5e4bcb88d43ddd87aad3679c92847b778fccd3ff8e3fe47dbcbe1f4",
+  "start": "2024-01-24T12:29:46.015073+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1706099386.015073,
+      "event_index": 2,
+      "role": "user",
+      "source_node_id": "aaa2fe37-d3db-4582-a62b-d165c3c2719f",
+      "source_parent_id": "38f0656f-ff26-4065-b01c-7d03ddef04ab",
+      "source_record_index": 2,
+      "text": "minimal example for a pytest test in the directory structure of a python package",
+      "turn_id": "turn_000002"
+    },
+    {
+      "create_time": 1706099392.633607,
+      "event_index": 3,
+      "role": "assistant",
+      "source_node_id": "34ae1fb4-316b-49bc-9ac3-3dd87cc61c03",
+      "source_parent_id": "aaa2fe37-d3db-4582-a62b-d165c3c2719f",
+      "source_record_index": 3,
+      "text": "Sure, here's a minimal example of a pytest test within the directory structure of a Python package:\n\nLet's assume you have the following directory structure for your Python package:\n\n```\nmy_package/\n    ├── my_module.py\n    ├── tests/\n        ├── __init__.py\n        └── test_my_module.py\n```\n\nInside the `my_module.py`, you have a simple function to test:\n\n```python\n# my_module.py\n\ndef add(a, b):\n    return a + b\n```\n\nNow, you want to write a pytest test for this `add` function. Create a `test_my_module.py` file inside the `tests` directory:\n\n```python\n# test_my_module.py\n\nfrom my_package.my_module import add\n\ndef test_add():\n    assert add(2, 3) == 5\n    assert add(0, 0) == 0\n    assert add(-1, 1) == 0\n```\n\nHere's what this example does:\n\n1. The test file is named `test_my_module.py`, and it's located within the `tests` directory.\n2. We import the `add` function from `my_package.my_module`, assuming that your package is properly structured and that `my_module.py` contains the `add` function.\n3. We define a test function called `test_add`, where we use assertions to check if the `add` function behaves as expected for various inputs.\n\nTo run the tests using pytest, make sure you have pytest installed (you can install it using `pip install pytest`). Then, from the root directory of your package (where the `my_package` directory is located), run:\n\n```\npytest\n```\n\nThis command will discover and run all the tests in the `tests` directory and its subdirectories. In this case, it will execute the `test_add` function in `test_my_module.py` and report the results.",
+      "turn_id": "turn_000003"
+    }
+  ]
+}

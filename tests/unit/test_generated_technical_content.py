@@ -108,6 +108,12 @@ class GeneratedTechnicalContentTests(unittest.TestCase):
         self.assertEqual(candidates("```\nordinary prose only\n"), [])
         self.assertEqual(candidates("```\n"), [])
         self.assertEqual(candidates("```python\nx=1\n  ```js\ny=2\n```\n"), [])
+        nested_text = "```python\ntext = '''\n  ```\n  example\n  ```\n'''\n```\n"
+        nested = candidates(nested_text)
+        self.assertEqual(len(nested), 1)
+        self.assertEqual(nested[0]["start"], len("```python\n"))
+        self.assertIn("  ```\n  example\n  ```",
+                      nested_text[nested[0]["start"]:nested[0]["end"]])
         data = normalized([("user", "ask"), ("assistant", "```python\nprint(1)\n"),
                            ("assistant", "```\n")])
         view = build_v2_model_view(data)

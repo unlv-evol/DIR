@@ -1,0 +1,134 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_D88ECC0E2921",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000004_001118_001774_835e4d5bcfa4399a",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "import_or_include",
+        "declaration",
+        "control_flow",
+        "braces",
+        "statement_terminators",
+        "call_expression"
+      ],
+      "end_offset": 1774,
+      "fence_language": "jsx",
+      "kind": "source_code",
+      "legacy_artifact_id": "ARTIFACT_000004_001",
+      "order_within_response": 1,
+      "raw_text": "import { useEffect } from 'react';\n\n/**\n * Hook that alerts clicks outside of the passed ref\n */\nfunction useOutsideClick(ref, callback) {\n  useEffect(() => {\n    /**\n     * Alert if clicked on outside of element\n     */\n    function handleClickOutside(event) {\n      if (ref.current && !ref.current.contains(event.target)) {\n        callback();\n      }\n    }\n\n    // Bind the event listener\n    document.addEventListener(\"mousedown\", handleClickOutside);\n    return () => {\n      // Unbind the event listener on clean up\n      document.removeEventListener(\"mousedown\", handleClickOutside);\n    };\n  }, [ref, callback]);\n}\n\nexport default useOutsideClick;\n",
+      "raw_text_sha256": "835e4d5bcfa4399a6a0aa7be9139454585dfaf389aacef3d5b4030f83b492196",
+      "source_event_index": 4,
+      "source_record_index": 4,
+      "source_response_id": "turn_000004",
+      "source_turn_text_sha256": "0663a7cc12d160be2cad0e96c568ac162f2e4021639cb1dbf15223ec1820d73b",
+      "start_offset": 1118,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000004_001842_002206_6e84612f31ba7d5f",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "import_or_include",
+        "declaration",
+        "control_flow",
+        "braces",
+        "statement_terminators",
+        "call_expression"
+      ],
+      "end_offset": 2206,
+      "fence_language": "jsx",
+      "kind": "source_code",
+      "legacy_artifact_id": "ARTIFACT_000004_002",
+      "order_within_response": 2,
+      "raw_text": "import React, { useRef } from 'react';\nimport useOutsideClick from './useOutsideClick';\n\nfunction MyComponent() {\n  const wrapperRef = useRef(null);\n  \n  const handleOutsideClick = () => {\n    console.log('You clicked outside of me!');\n  };\n\n  useOutsideClick(wrapperRef, handleOutsideClick);\n\n  return <div ref={wrapperRef}>Click outside of this element</div>;\n}\n",
+      "raw_text_sha256": "6e84612f31ba7d5fa2c75b8cfae321a501a735501803cfe295554414278383e8",
+      "source_event_index": 4,
+      "source_record_index": 4,
+      "source_response_id": "turn_000004",
+      "source_turn_text_sha256": "0663a7cc12d160be2cad0e96c568ac162f2e4021639cb1dbf15223ec1820d73b",
+      "start_offset": 1842,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "How do you detect that the outside of a specified element is clicked in React?"
+          ]
+        },
+        "create_time": 1707631532.914164
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "In React, detecting clicks outside of a specified element is a common requirement, especially for closing modal windows, dropdown menus, or other interactive components when the user clicks elsewhere on the page. This functionality isn't built directly into React, but you can achieve it with a custom hook or a simple event listener setup. Here’s a basic approach to implement it:\n\n1. **Create a custom hook (`useOutsideClick`)**: This hook will listen for clicks on the document and determine if the click occurred outside of the specified element.\n\n2. **Use a ref**: The React ref is used to reference the DOM element you want to detect outside clicks for. This ref is passed to the custom hook.\n\n3. **Add event listeners**: Within the hook, add event listeners to the document for detecting clicks. When a click occurs, check if it was outside the specified element.\n\n4. **Invoke a callback**: If the click was outside the specified element, invoke a callback function. This callback can be used to perform any action, like closing a modal or a dropdown.\n\nHere is an example implementation of such a hook:\n\n```jsx\nimport { useEffect } from 'react';\n\n/**\n * Hook that alerts clicks outside of the passed ref\n */\nfunction useOutsideClick(ref, callback) {\n  useEffect(() => {\n    /**\n     * Alert if clicked on outside of element\n     */\n    function handleClickOutside(event) {\n      if (ref.current && !ref.current.contains(event.target)) {\n        callback();\n      }\n    }\n\n    // Bind the event listener\n    document.addEventListener(\"mousedown\", handleClickOutside);\n    return () => {\n      // Unbind the event listener on clean up\n      document.removeEventListener(\"mousedown\", handleClickOutside);\n    };\n  }, [ref, callback]);\n}\n\nexport default useOutsideClick;\n```\n\nAnd here’s how you might use this hook in a component:\n\n```jsx\nimport React, { useRef } from 'react';\nimport useOutsideClick from './useOutsideClick';\n\nfunction MyComponent() {\n  const wrapperRef = useRef(null);\n  \n  const handleOutsideClick = () => {\n    console.log('You clicked outside of me!');\n  };\n\n  useOutsideClick(wrapperRef, handleOutsideClick);\n\n  return <div ref={wrapperRef}>Click outside of this element</div>;\n}\n```\n\nIn this setup, `MyComponent` uses the `useOutsideClick` hook to detect clicks outside of its div element. When a click outside occurs, `handleOutsideClick` is called, logging a message to the console.\n\nThis approach allows you to easily add outside click detection to any component by using the `useOutsideClick` hook and passing a ref to the element you want to monitor."
+          ]
+        },
+        "create_time": 1707631549.34114
+      }
+    }
+  ],
+  "source_conversation_sha256": "64504efe802b936db7ee7ff0d15b49ee73e307a30bb15ab9cede4d3dba49e249",
+  "start": "2024-02-11T06:05:32.914164+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1707631532.914164,
+      "event_index": 3,
+      "role": "user",
+      "source_node_id": "aaa274fb-a263-4871-a313-ffd9ffb2901d",
+      "source_parent_id": "9eaef031-4366-45ec-8d7b-7adba8d8e2f0",
+      "source_record_index": 3,
+      "text": "How do you detect that the outside of a specified element is clicked in React?",
+      "turn_id": "turn_000003"
+    },
+    {
+      "create_time": 1707631549.34114,
+      "event_index": 4,
+      "role": "assistant",
+      "source_node_id": "0c370b78-bf91-49cd-9f2b-f24936e79f3e",
+      "source_parent_id": "aaa274fb-a263-4871-a313-ffd9ffb2901d",
+      "source_record_index": 4,
+      "text": "In React, detecting clicks outside of a specified element is a common requirement, especially for closing modal windows, dropdown menus, or other interactive components when the user clicks elsewhere on the page. This functionality isn't built directly into React, but you can achieve it with a custom hook or a simple event listener setup. Here’s a basic approach to implement it:\n\n1. **Create a custom hook (`useOutsideClick`)**: This hook will listen for clicks on the document and determine if the click occurred outside of the specified element.\n\n2. **Use a ref**: The React ref is used to reference the DOM element you want to detect outside clicks for. This ref is passed to the custom hook.\n\n3. **Add event listeners**: Within the hook, add event listeners to the document for detecting clicks. When a click occurs, check if it was outside the specified element.\n\n4. **Invoke a callback**: If the click was outside the specified element, invoke a callback function. This callback can be used to perform any action, like closing a modal or a dropdown.\n\nHere is an example implementation of such a hook:\n\n```jsx\nimport { useEffect } from 'react';\n\n/**\n * Hook that alerts clicks outside of the passed ref\n */\nfunction useOutsideClick(ref, callback) {\n  useEffect(() => {\n    /**\n     * Alert if clicked on outside of element\n     */\n    function handleClickOutside(event) {\n      if (ref.current && !ref.current.contains(event.target)) {\n        callback();\n      }\n    }\n\n    // Bind the event listener\n    document.addEventListener(\"mousedown\", handleClickOutside);\n    return () => {\n      // Unbind the event listener on clean up\n      document.removeEventListener(\"mousedown\", handleClickOutside);\n    };\n  }, [ref, callback]);\n}\n\nexport default useOutsideClick;\n```\n\nAnd here’s how you might use this hook in a component:\n\n```jsx\nimport React, { useRef } from 'react';\nimport useOutsideClick from './useOutsideClick';\n\nfunction MyComponent() {\n  const wrapperRef = useRef(null);\n  \n  const handleOutsideClick = () => {\n    console.log('You clicked outside of me!');\n  };\n\n  useOutsideClick(wrapperRef, handleOutsideClick);\n\n  return <div ref={wrapperRef}>Click outside of this element</div>;\n}\n```\n\nIn this setup, `MyComponent` uses the `useOutsideClick` hook to detect clicks outside of its div element. When a click outside occurs, `handleOutsideClick` is called, logging a message to the console.\n\nThis approach allows you to easily add outside click detection to any component by using the `useOutsideClick` hook and passing a ref to the element you want to monitor.",
+      "turn_id": "turn_000004"
+    }
+  ]
+}

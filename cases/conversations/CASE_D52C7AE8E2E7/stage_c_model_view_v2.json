@@ -1,0 +1,123 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_D52C7AE8E2E7",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000003_000647_000678_eaf811f7ddb849a3",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "recognized_fence_label"
+      ],
+      "end_offset": 678,
+      "fence_language": "go",
+      "kind": "source_code",
+      "legacy_artifact_id": null,
+      "order_within_response": 1,
+      "raw_text": "   type MyAlias = ExistingType\n",
+      "raw_text_sha256": "eaf811f7ddb849a385a336c236ed18a2d309a5e154fb156b40c25136d07b3871",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "da9a165ccec86cdd05a1adb69629fdef84bb96ab736ae0baf469a179a4af65f3",
+      "start_offset": 647,
+      "status": "candidate_requires_semantic_review"
+    },
+    {
+      "candidate_id": "GTC_000003_000841_000876_897c444d4ae7f5cf",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "recognized_fence_label"
+      ],
+      "end_offset": 876,
+      "fence_language": "go",
+      "kind": "source_code",
+      "legacy_artifact_id": null,
+      "order_within_response": 2,
+      "raw_text": "   type MyDefinedType ExistingType\n",
+      "raw_text_sha256": "897c444d4ae7f5cf7947eb648690bd8d53e92b59584f1653bdcf95c907ae0a87",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "da9a165ccec86cdd05a1adb69629fdef84bb96ab736ae0baf469a179a4af65f3",
+      "start_offset": 841,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "In golang some types  can be defined using = in the type definition. If I were to call these \"aliased types\", what you call types which reference another type but don't use =?"
+          ]
+        },
+        "create_time": 1701794080.580538
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "In Go (Golang), when you define a type using the `=` symbol, it's called an \"alias declaration\" or simply an \"alias.\" This means the new type is essentially an alternate name for an existing type, and they are interchangeable.\n\nFor types that reference another type but don't use `=`, they are typically called \"defined types\" or \"new types.\" In this case, the new type has the same underlying structure as the original type, but they are not interchangeable. This is used to create a distinct type with the same underlying data representation but with different methods or behaviors.\n\nHere's a quick illustration:\n\n1. **Aliased Type**: \n   ```go\n   type MyAlias = ExistingType\n   ```\n   Here, `MyAlias` is just another name for `ExistingType`. They are the same type and can be used interchangeably.\n\n2. **Defined (or New) Type**:\n   ```go\n   type MyDefinedType ExistingType\n   ```\n   In this case, `MyDefinedType` is a new type. It has the same underlying data structure as `ExistingType`, but it is a distinct type. You cannot use one in place of the other without an explicit conversion.\n\nDefined types are useful when you want to add specific methods to a type or when you want to make sure that your type is not accidentally used in place of another type, even if they have the same underlying structure."
+          ]
+        },
+        "create_time": 1701794102.796881
+      }
+    }
+  ],
+  "source_conversation_sha256": "14769ab264ae274ce1b770febb60067158d70341f627dde5e533eff952f27a39",
+  "start": "2023-12-05T16:34:40.580538+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1701794080.580538,
+      "event_index": 2,
+      "role": "user",
+      "source_node_id": "aaa29472-938c-4125-b612-e79366eaec0f",
+      "source_parent_id": "6095ac89-a580-4985-a349-43ed9278fa46",
+      "source_record_index": 2,
+      "text": "In golang some types  can be defined using = in the type definition. If I were to call these \"aliased types\", what you call types which reference another type but don't use =?",
+      "turn_id": "turn_000002"
+    },
+    {
+      "create_time": 1701794102.796881,
+      "event_index": 3,
+      "role": "assistant",
+      "source_node_id": "593226d5-8a4b-4963-86df-ff974adb762b",
+      "source_parent_id": "aaa29472-938c-4125-b612-e79366eaec0f",
+      "source_record_index": 3,
+      "text": "In Go (Golang), when you define a type using the `=` symbol, it's called an \"alias declaration\" or simply an \"alias.\" This means the new type is essentially an alternate name for an existing type, and they are interchangeable.\n\nFor types that reference another type but don't use `=`, they are typically called \"defined types\" or \"new types.\" In this case, the new type has the same underlying structure as the original type, but they are not interchangeable. This is used to create a distinct type with the same underlying data representation but with different methods or behaviors.\n\nHere's a quick illustration:\n\n1. **Aliased Type**: \n   ```go\n   type MyAlias = ExistingType\n   ```\n   Here, `MyAlias` is just another name for `ExistingType`. They are the same type and can be used interchangeably.\n\n2. **Defined (or New) Type**:\n   ```go\n   type MyDefinedType ExistingType\n   ```\n   In this case, `MyDefinedType` is a new type. It has the same underlying data structure as `ExistingType`, but it is a distinct type. You cannot use one in place of the other without an explicit conversion.\n\nDefined types are useful when you want to add specific methods to a type or when you want to make sure that your type is not accidentally used in place of another type, even if they have the same underlying structure.",
+      "turn_id": "turn_000003"
+    }
+  ]
+}

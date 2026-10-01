@@ -1,0 +1,96 @@
+{
+  "candidate_producer_version": "generated-technical-content-v2",
+  "case_id": "CASE_34D14D6B0BB7",
+  "complete": true,
+  "generated_technical_content_candidates": [
+    {
+      "candidate_id": "GTC_000003_000088_002153_7be022cdf5590444",
+      "completeness": "complete",
+      "container": "markdown_fence",
+      "continuation_status": "none",
+      "detector": {
+        "name": "generated-technical-content-v2",
+        "version": "2"
+      },
+      "detector_evidence": [
+        "complete_standalone_markdown_fence",
+        "multiple_dotted_properties"
+      ],
+      "end_offset": 2153,
+      "fence_language": "python",
+      "kind": "configuration_properties",
+      "legacy_artifact_id": "ARTIFACT_000003_001",
+      "order_within_response": 1,
+      "raw_text": "import os\nfrom collections import OrderedDict\n\nclass LRUFileCache:\n    def __init__(self, file_path: str, max_size: int):\n        self.file_path = file_path\n        self.max_size = max_size\n        self.current_size = 0\n        self.files = OrderedDict()  # {filename: size}\n\n        # initialize the file cache\n        for file in os.listdir(file_path):\n            file_full_path = os.path.join(file_path, file)\n            file_size = os.path.getsize(file_full_path)\n            self.current_size += file_size\n            self.files[file] = file_size\n\n    def _evict_files(self):\n        while self.current_size > self.max_size:\n            _, evicted_size = self.files.popitem(last=False)  # pop the least recently accessed item\n            self.current_size -= evicted_size\n\n    def read_file(self, filename: str) -> str:\n        file_full_path = os.path.join(self.file_path, filename)\n        if not os.path.exists(file_full_path):\n            raise ValueError(f\"{filename} doesn't exist!\")\n\n        with open(file_full_path, 'r') as f:\n            content = f.read()\n\n        # Move accessed file to the end to maintain LRU order\n        file_size = self.files.pop(filename)\n        self.files[filename] = file_size\n\n        return content\n\n    def create_file(self, filename: str, content: str):\n        file_full_path = os.path.join(self.file_path, filename)\n        with open(file_full_path, 'w') as f:\n            f.write(content)\n\n        file_size = os.path.getsize(file_full_path)\n        self.current_size += file_size\n        self.files[filename] = file_size\n\n        self._evict_files()\n\n    def delete_file(self, filename: str):\n        if filename in self.files:\n            file_full_path = os.path.join(self.file_path, filename)\n            os.remove(file_full_path)\n            size = self.files.pop(filename)\n            self.current_size -= size\n\n# Usage\nfile_cache = LRUFileCache(\"path/to/files\", 5000)  # max_size in bytes, for example: 5 KB\nfile_cache.create_file(\"sample.txt\", \"Hello World\")\ncontent = file_cache.read_file(\"sample.txt\")\n",
+      "raw_text_sha256": "7be022cdf55904445b2eb43fa5afdd3a0871c1105c4ec1b7333d02ee46830ab6",
+      "source_event_index": 3,
+      "source_record_index": 3,
+      "source_response_id": "turn_000003",
+      "source_turn_text_sha256": "04b76d1ed2d60acacd2a1f08aacdb3ce129b4dc2248f8d42499117a8b067a4e5",
+      "start_offset": 88,
+      "status": "candidate_requires_semantic_review"
+    }
+  ],
+  "methodology_version": "dir-tfg-v2",
+  "package_version": "conversation-only-v2",
+  "precision": "timestamp",
+  "reconstruction_safe": false,
+  "records": [
+    {},
+    {},
+    {
+      "message": {
+        "author": {
+          "role": "user"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "help me write a python class. It takes a file_path and max_size for init.\nthere is APIs to read or create new files under the file_path. When the total size exceeds max_size, evict the least recent accessed file (LRU policy)."
+          ]
+        },
+        "create_time": 1696873975.102066
+      }
+    },
+    {
+      "message": {
+        "author": {
+          "role": "assistant"
+        },
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Certainly! Below is a Python class that fulfills the described requirements:\n\n```python\nimport os\nfrom collections import OrderedDict\n\nclass LRUFileCache:\n    def __init__(self, file_path: str, max_size: int):\n        self.file_path = file_path\n        self.max_size = max_size\n        self.current_size = 0\n        self.files = OrderedDict()  # {filename: size}\n\n        # initialize the file cache\n        for file in os.listdir(file_path):\n            file_full_path = os.path.join(file_path, file)\n            file_size = os.path.getsize(file_full_path)\n            self.current_size += file_size\n            self.files[file] = file_size\n\n    def _evict_files(self):\n        while self.current_size > self.max_size:\n            _, evicted_size = self.files.popitem(last=False)  # pop the least recently accessed item\n            self.current_size -= evicted_size\n\n    def read_file(self, filename: str) -> str:\n        file_full_path = os.path.join(self.file_path, filename)\n        if not os.path.exists(file_full_path):\n            raise ValueError(f\"{filename} doesn't exist!\")\n\n        with open(file_full_path, 'r') as f:\n            content = f.read()\n\n        # Move accessed file to the end to maintain LRU order\n        file_size = self.files.pop(filename)\n        self.files[filename] = file_size\n\n        return content\n\n    def create_file(self, filename: str, content: str):\n        file_full_path = os.path.join(self.file_path, filename)\n        with open(file_full_path, 'w') as f:\n            f.write(content)\n\n        file_size = os.path.getsize(file_full_path)\n        self.current_size += file_size\n        self.files[filename] = file_size\n\n        self._evict_files()\n\n    def delete_file(self, filename: str):\n        if filename in self.files:\n            file_full_path = os.path.join(self.file_path, filename)\n            os.remove(file_full_path)\n            size = self.files.pop(filename)\n            self.current_size -= size\n\n# Usage\nfile_cache = LRUFileCache(\"path/to/files\", 5000)  # max_size in bytes, for example: 5 KB\nfile_cache.create_file(\"sample.txt\", \"Hello World\")\ncontent = file_cache.read_file(\"sample.txt\")\n```\n\nHere's how the class works:\n\n- It uses an `OrderedDict` to keep track of the files and their sizes. When a file is accessed (read or created), it is moved to the end of the `OrderedDict`. The least recently accessed file is always at the beginning.\n  \n- When the total size exceeds `max_size`, the `_evict_files` method is called, which keeps evicting the least recently accessed files until the current size is within limits.\n\n- The `read_file` method lets you read a file's content. After reading, the file is considered accessed and is moved to the end of the `OrderedDict`.\n  \n- The `create_file` method lets you create (or overwrite) a file with the specified content. After creation, the file is considered accessed.\n\n- The `delete_file` method lets you delete a file from the directory and cache.\n\nNote: Ensure to handle possible exceptions when interacting with file operations in a real-world use case. This example is kept simple for clarity."
+          ]
+        },
+        "create_time": 1696874030.509201
+      }
+    }
+  ],
+  "source_conversation_sha256": "19241af4d2e8bdcd1899af0170c6208662b8adaf076a5453348d45dbead0d5aa",
+  "start": "2023-10-09T17:52:55.102066+00:00",
+  "temporal_source": "first developer turn in parsed conversation",
+  "temporal_status": "derivable",
+  "visible_turns": [
+    {
+      "create_time": 1696873975.102066,
+      "event_index": 2,
+      "role": "user",
+      "source_node_id": "aaa21f7f-c29b-4e72-b860-a7e8019248d4",
+      "source_parent_id": "5bc774eb-1849-4a3d-b22b-320416e7903a",
+      "source_record_index": 2,
+      "text": "help me write a python class. It takes a file_path and max_size for init.\nthere is APIs to read or create new files under the file_path. When the total size exceeds max_size, evict the least recent accessed file (LRU policy).",
+      "turn_id": "turn_000002"
+    },
+    {
+      "create_time": 1696874030.509201,
+      "event_index": 3,
+      "role": "assistant",
+      "source_node_id": "d9de9993-9729-49bd-bb2c-ed181a802fef",
+      "source_parent_id": "aaa21f7f-c29b-4e72-b860-a7e8019248d4",
+      "source_record_index": 3,
+      "text": "Certainly! Below is a Python class that fulfills the described requirements:\n\n```python\nimport os\nfrom collections import OrderedDict\n\nclass LRUFileCache:\n    def __init__(self, file_path: str, max_size: int):\n        self.file_path = file_path\n        self.max_size = max_size\n        self.current_size = 0\n        self.files = OrderedDict()  # {filename: size}\n\n        # initialize the file cache\n        for file in os.listdir(file_path):\n            file_full_path = os.path.join(file_path, file)\n            file_size = os.path.getsize(file_full_path)\n            self.current_size += file_size\n            self.files[file] = file_size\n\n    def _evict_files(self):\n        while self.current_size > self.max_size:\n            _, evicted_size = self.files.popitem(last=False)  # pop the least recently accessed item\n            self.current_size -= evicted_size\n\n    def read_file(self, filename: str) -> str:\n        file_full_path = os.path.join(self.file_path, filename)\n        if not os.path.exists(file_full_path):\n            raise ValueError(f\"{filename} doesn't exist!\")\n\n        with open(file_full_path, 'r') as f:\n            content = f.read()\n\n        # Move accessed file to the end to maintain LRU order\n        file_size = self.files.pop(filename)\n        self.files[filename] = file_size\n\n        return content\n\n    def create_file(self, filename: str, content: str):\n        file_full_path = os.path.join(self.file_path, filename)\n        with open(file_full_path, 'w') as f:\n            f.write(content)\n\n        file_size = os.path.getsize(file_full_path)\n        self.current_size += file_size\n        self.files[filename] = file_size\n\n        self._evict_files()\n\n    def delete_file(self, filename: str):\n        if filename in self.files:\n            file_full_path = os.path.join(self.file_path, filename)\n            os.remove(file_full_path)\n            size = self.files.pop(filename)\n            self.current_size -= size\n\n# Usage\nfile_cache = LRUFileCache(\"path/to/files\", 5000)  # max_size in bytes, for example: 5 KB\nfile_cache.create_file(\"sample.txt\", \"Hello World\")\ncontent = file_cache.read_file(\"sample.txt\")\n```\n\nHere's how the class works:\n\n- It uses an `OrderedDict` to keep track of the files and their sizes. When a file is accessed (read or created), it is moved to the end of the `OrderedDict`. The least recently accessed file is always at the beginning.\n  \n- When the total size exceeds `max_size`, the `_evict_files` method is called, which keeps evicting the least recently accessed files until the current size is within limits.\n\n- The `read_file` method lets you read a file's content. After reading, the file is considered accessed and is moved to the end of the `OrderedDict`.\n  \n- The `create_file` method lets you create (or overwrite) a file with the specified content. After creation, the file is considered accessed.\n\n- The `delete_file` method lets you delete a file from the directory and cache.\n\nNote: Ensure to handle possible exceptions when interacting with file operations in a real-world use case. This example is kept simple for clarity.",
+      "turn_id": "turn_000003"
+    }
+  ]
+}
