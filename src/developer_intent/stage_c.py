@@ -19,7 +19,7 @@ METHODOLOGY_VERSION = "dir-tfg-v2"
 SCHEMA_VERSION = "conversation-draft-v3"
 EXTRACTION_VERSION = "conversation-extraction-v4"
 PREVIOUS_EXTRACTION_VERSION = "conversation-extraction-v3"
-PASS_1_PROMPT_VERSION = "dir-stage-c-first-generation-v2"
+PASS_1_PROMPT_VERSION = "dir-stage-c-first-generation-v3"
 PASS_2_PROMPT_VERSION = "dir-stage-c-csv-extraction-v2"
 PACKAGE_KEYS = {"package_version", "methodology_version", "case_id", "start", "precision",
                 "temporal_status", "temporal_source", "source_conversation_sha256",
@@ -334,7 +334,7 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
                     config: StageCModelConfig, *, input_ref: str,
                     diagnostics: list[dict] | None = None) -> dict:
     validate_model_view(package, case_id)
-    p1_prompt, p1_hash = load_prompt(root, "prompts/stage_c/first_generation_v2.md")
+    p1_prompt, p1_hash = load_prompt(root, "prompts/stage_c/first_generation_v3.md")
     p2_prompt, p2_hash = load_prompt(root, "prompts/stage_c/csv_extraction_v2.md")
     pass1_schema = load_contract(root, "stage_c_pass1_v2.schema.json")
     pass2_schema = load_contract(root, "stage_c_pass2_v1.schema.json")

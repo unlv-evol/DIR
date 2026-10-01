@@ -37,7 +37,7 @@ class StageCModelConfig:
             f"Reasoning effort: {self.reasoning_effort or 'missing'}",
             "Structured Outputs: enabled",
             "Model tools: disabled",
-            "Pass 1 prompt version: dir-stage-c-first-generation-v2",
+            "Pass 1 prompt version: dir-stage-c-first-generation-v3",
             "Pass 2 prompt version: dir-stage-c-csv-extraction-v2",
             "Methodology version: dir-tfg-v2",
             "Extraction version: conversation-extraction-v4",

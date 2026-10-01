@@ -1,6 +1,7 @@
 """Offline Stage C two-pass extraction, temporal, provenance, and leakage tests."""
 
 import copy
+import hashlib
 import json
 import subprocess
 import sys
@@ -220,6 +221,65 @@ class StageCTests(unittest.TestCase):
         self.assertEqual(fg["artifact_refs"], ["ARTIFACT_000003_001"])
         self.assertEqual(len(fg["candidate_artifact_ids"]), 2)
 
+    def test_response_local_family_with_related_later_artifacts(self):
+        pkg = package()
+        pkg["visible_turns"] = [
+            turn(0, "user", "Initial context", 1704067200),
+            turn(1, "assistant", "No artifact yet", 1704067210),
+            turn(5, "user", "Generate the implementation", 1704067250),
+            turn(6, "assistant", "First implementation", 1704067260),
+            turn(7, "user", "Show it another way", 1704067270),
+            turn(8, "assistant", "Related demonstration", 1704067280),
+            turn(9, "user", "Show a refinement", 1704067290),
+            turn(10, "assistant", "Related refinement", 1704067300),
+        ]
+        pkg["records"] = [{"message": {"role": item["role"], "content": item["text"]}}
+                          for item in pkg["visible_turns"]]
+        pkg["artifact_candidates"] = [
+            {"artifact_id": "ARTIFACT_000006_001", "source_response_id": "turn_000006",
+             "response_event_index": 6, "source_record_index": 3,
+             "order_within_response": 1, "content": "FirstA();", "fence_label": "csharp",
+             "status": "candidate_requires_review"},
+            {"artifact_id": "ARTIFACT_000006_002", "source_response_id": "turn_000006",
+             "response_event_index": 6, "source_record_index": 3,
+             "order_within_response": 2, "content": "FirstB();", "fence_label": "csharp",
+             "status": "candidate_requires_review"},
+            {"artifact_id": "ARTIFACT_000008_001", "source_response_id": "turn_000008",
+             "response_event_index": 8, "source_record_index": 5,
+             "order_within_response": 1, "content": "Demo();", "fence_label": "csharp",
+             "status": "candidate_requires_review"},
+            {"artifact_id": "ARTIFACT_000010_001", "source_response_id": "turn_000010",
+             "response_event_index": 10, "source_record_index": 7,
+             "order_within_response": 1, "content": "Refine();", "fence_label": "csharp",
+             "status": "candidate_requires_review"},
+        ]
+        selected_ids = ["ARTIFACT_000006_001", "ARTIFACT_000006_002"]
+        candidates = [item["artifact_id"] for item in pkg["artifact_candidates"]]
+        selection = pass1(
+            pkg, artifact_ids=selected_ids, response_turn_id="turn_000006",
+            target_prompt_id="turn_000005", candidate_artifact_ids=candidates)
+
+        fg, admissible, tfg = resolve_first_generation(pkg, selection)
+
+        self.assertEqual(fg["artifact_refs"], selected_ids)
+        self.assertEqual(fg["family_id_provenance"]["canonical_input"]["artifact_ids"],
+                         selected_ids)
+        self.assertEqual(fg["boundary"], "exclusive_before:turn_000006")
+        self.assertEqual(tfg["value"], "2024-01-01T00:01:00+00:00")
+        self.assertEqual([item["turn_id"] for item in admissible],
+                         ["turn_000000", "turn_000001", "turn_000005"])
+
+        rejected = pass1(
+            pkg, artifact_ids=candidates, response_turn_id="turn_000006",
+            target_prompt_id="turn_000005", candidate_artifact_ids=candidates)
+        with self.assertRaisesRegex(ValueError, "does not belong"):
+            resolve_first_generation(pkg, rejected)
+
+    def test_historical_pass1_v2_prompt_is_immutable(self):
+        prompt = (ROOT / "prompts/stage_c/first_generation_v2.md").read_bytes()
+        self.assertEqual(hashlib.sha256(prompt).hexdigest(),
+                         "4fddb8abb38270bbb59cd1baa83fdcc1c9c7146c36964a830a31631e604ebfe4")
+
     def test_ambiguous_and_no_artifact_are_explicit_and_skip_pass2(self):
         for status in ("ambiguous", "unresolved"):
             pkg = package()
@@ -245,7 +305,7 @@ class StageCTests(unittest.TestCase):
                 validate_model_view({**pkg, key: "secret"}, CASE)
 
     def test_prompts_state_stage_c_leakage_boundaries(self):
-        pass1_prompt = (ROOT / "prompts/stage_c/first_generation_v2.md").read_text()
+        pass1_prompt = (ROOT / "prompts/stage_c/first_generation_v3.md").read_text()
         pass2_prompt = (ROOT / "prompts/stage_c/csv_extraction_v2.md").read_text()
         for prohibited in ("PA/PN", "outcomes", "final implementation", "repository"):
             self.assertIn(prohibited, pass1_prompt)
@@ -359,7 +419,7 @@ class StageCTests(unittest.TestCase):
         self.assertFalse(diagnostic["validation"]["accepted"])
         self.assertEqual(diagnostic["request_provenance"]["tools_enabled"], [])
         self.assertEqual(diagnostic["request_provenance"]["prompt_version"],
-                         "dir-stage-c-first-generation-v2")
+                         "dir-stage-c-first-generation-v3")
         self.assertEqual(diagnostic["request_provenance"]["schema_version"],
                          "stage-c-pass1-v2")
         validate_stage_c_record(record)
