@@ -30,6 +30,7 @@ developer-intent-reconstruction/
 ├── pipeline/
 │   ├── screening/
 │   ├── extraction/                 # conversation-first acquisition foundation
+│   ├── stage_c/                    # two-pass conversation extraction CLI
 │   ├── partitioning/
 │   ├── family_construction/
 │   ├── snapshot/
@@ -76,6 +77,10 @@ Restricted Stage A manual PR/conversation judgments are stored as `cases/manifes
 The Stage B foundation has three representations: retrieved source archive in the raw provenance layer; lossless normalized conversation under `cases/conversations/<case_id>/`; and a derived Stage C model view there. The restricted case-linkage record belongs under `cases/manifests/` and is never Stage C input. All resolve through the same stable neutral DIR Case ID. The one-case preparation command is implemented. Freeze records only after procedure validation and case-level boundary/processability checks; retain sampled versus unsampled validation status.
 The one-case Stage B command uses `cases/manifests/linkage/<case_id>.json`, `cases/raw/<case_id>/conversation_source_archive.json`, and `cases/conversations/<case_id>/{normalized_conversation,stage_c_model_view,package_status}.json`. It writes a completion marker last and refuses existing files. See [`pipeline/extraction/README.md`](../pipeline/extraction/README.md). A cached HTTP response without a recorded retrieval time stays explicitly unknown; cache acquisition and the research source archive remain separate.
 
+Stage B corpus orchestration writes operational `cases/manifests/stage_b_summary.{csv,md}`. Explicit legacy imports retain prior incomplete attempts under `cases/manifests/stage_b_attempts/<case_id>/<checksum>/` before creating the validated package; valid packages are never replaced.
+
+Stage C reads only `cases/conversations/<case_id>/stage_c_model_view.json` and writes `stage_c_extraction_v3.json` beside it. Version-controlled Pass 1 and Pass 2 prompts live under `prompts/stage_c/`; their strict response schemas and the final `conversation-draft-v3` contract live under `schemas/`. Runtime configuration is centralized in `src/developer_intent/stage_c_config.py`; extraction, validation, deterministic family identity, temporal derivation, and the tool-free OpenAI Responses adapter live in `src/developer_intent/stage_c.py`. The Post-Stage-C processability/eligibility workflow follows Stage C and precedes Stage D but is not implemented here.
+
 ## Historical information, traces, and evidence
 
 After conversation freeze and the split, compact `H_i(tFG)` indexes in the future `data/derived/historical_information/` location should hold stable historical references, timestamps, boundary SHA/tree, and supported PR/issue/CI/history identifiers. Large payloads are materialized on demand. The exact persistent contract is deferred until that stage. `pipeline/snapshot/` resolves historical states without guessing; `pipeline/retrieval/` records justified operations and traces; `pipeline/selection/` assesses temporal validity, relevance, novelty, C/S/V contribution and uncertainty reduction. `pipeline/evidence_engineering/` performs semantic reduction before deferred materialization and payload reduction. Retrieval Algorithm v1 is derived only from discovery cases and frozen before held-out application. Experimental and provenance directories remain available for later runs; no held-out evidence may enter v1 development.
@@ -86,4 +91,4 @@ After conversation freeze and the split, compact `H_i(tFG)` indexes in the futur
 
 ## Schemas, configuration, and tests
 
-Current Protocol v5 records carry `dir-tfg-v2`. Versioned schemas now validate the stable Stage A screening, researcher-only mapping, and Stage A manual correspondence-review records; the earlier conversation and repository-evidence schemas remain legacy. See [`schemas/README.md`](../schemas/README.md) for producer and validator mappings. `config/`, `.env.example`, and `src/developer_intent/screening_config.py` retain secret-safe retrieval configuration. Stage A writes versioned outputs and uses a dedicated cache. Unit tests run without network; integration and leakage tests should verify isolation, temporal boundaries, and held-out separation as later stages become executable.
+Current Protocol v5 records carry `dir-tfg-v2`. Versioned schemas validate Stage A contracts, restricted linkage, both Stage C model responses, and the final Stage C draft. Earlier `dir-tfg-v1` conversation and repository-evidence schemas remain legacy. `.env.example`, `stage_c_config.py`, and the existing screening configuration keep secrets out of versioned artifacts. Unit tests run without network; later integration and leakage tests verify frozen and held-out boundaries.

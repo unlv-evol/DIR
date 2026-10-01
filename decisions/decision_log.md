@@ -238,3 +238,54 @@ Suggested fields:
   change eligibility, readiness, correspondence judgments, temporal policy, or
   the conversation-only Stage C view.
 - **Owner:** Study team. **Status:** Adopted as an engineering correction.
+
+## 2026-09-30 — Two-pass production Stage C contract
+
+- **Decision:** Implement Stage C as two independent, tool-free OpenAI Responses
+  API calls using one environment-configured research model. Pass 1 receives the
+  complete isolated Stage B view and selects the first family, artifact-bearing
+  response, triggering prompt, and boundary. Deterministic code validates those
+  references, derives `tFG`, and constructs Pass 2 input from all and only turns
+  strictly before the boundary. Pass 2 extracts textual C/S/V with turn, role,
+  and evidence provenance. Use `conversation-draft-v2` and
+  `conversation-extraction-v2` under unchanged `dir-tfg-v2`.
+- **Decision:** Place the unlettered Post-Stage-C processability/eligibility
+  workflow before Stage D. It resolves boundary identifiability, evaluates
+  `H_i(tFG)`, resolves historical reconstructibility, and determines final
+  eligibility. Stage C never updates eligibility.
+- **Rationale/evidence:** The authoritative production Stage C instruction and
+  Protocol v5 require a structural hindsight barrier and independent temporal
+  provenance. C/S/V are information categories, not PatchPrompt scores.
+- **Impact:** Prompts and schemas are version-controlled; runtime configuration
+  is externalized; model tools are disabled; Stage D samples only the resolved
+  scientifically eligible corpus. Repository acquisition remains unimplemented.
+- **Owner:** Study team. **Status:** Adopted for implementation; live smoke pending review.
+
+## 2026-09-30 — Deterministic Stage C first-family identity
+
+- **Decision:** Version Pass 1 as `dir-stage-c-first-generation-v2` and the final draft/extraction contracts as `conversation-draft-v3` / `conversation-extraction-v3`. The model supplies the semantic selection and descriptive `family_label`; deterministic code derives `family_id` as `FGF_` plus 24 lowercase hexadecimal characters from SHA-256 over compact, key-sorted UTF-8 JSON containing the case ID and canonically ordered selected artifact IDs. Canonical order is response event, order within response, then artifact ID. The case ID is included so identifiers remain globally unique outside a case record.
+- **Impact:** Model wording, rationale, execution time, and randomness cannot change family identity. Existing v2 development results are retained unchanged and may produce separate v3 records through an offline deterministic migration that preserves the original record hash, model family value, and model provenance. Pass 2 and all substantive Stage C, C/S/V, boundary, and temporal rules are unchanged.
+- **Observation:** Wave 1 classified the admissible assistant recommendation that custom errors should extend native `Error` as Verification. This is defensible under the current definition and will be examined across later pilot cases; no prompt or classification rule changes now.
+- **Owner:** Study team. **Status:** Adopted before development Wave 2.
+
+## 2026-09-30 — Explicit offline legacy raw-source import for Stage B
+
+- **Decision:** Admit preserved legacy public ChatGPT responses only through an explicit offline Stage B import. Require paired raw body and metadata, canonical-key and conversation-identity agreement, public/HTTP-200 status, current-parser completeness, and normal package validation. Record imported archives as `chatgpt-source-v2` with `source_origin = legacy_cache_import`, raw hashes and paths, null retrieval time, `unknown_legacy_cache`, and a separate import timestamp. Derived evidence and parsed-cache objects cannot replace raw bytes.
+- **Decision:** Provide resumable offline orchestration for all Stage-A-ready cases and an operational `stage-b-summary-v1` report. Preserve existing valid packages; retain replaced incomplete attempts by checksum. Stage B readiness for Stage C remains operational and does not change scientific eligibility.
+- **Impact:** Stage C contracts, model configuration, C/S/V definitions, `dir-tfg-v2`, and temporal policy are unchanged. Legacy imports are distinguishable from fresh and current-cache acquisition.
+- **Owner:** Study team. **Status:** Adopted for Stage B materialization.
+
+## 2026-09-30 — Provenance-based Stage B model-view isolation
+
+- **Decision:** Determine Stage B isolation through the allowlisted model-view structure and exact deterministic derivation from the normalized source conversation. Prohibit independent injection of linkage, repository, PR, outcome, or source-administration metadata. Preserve unmodified user/assistant text even when it contains an identical repository name, URL, PR reference, path, or identifier.
+- **Rationale:** Lexical equality between source-authored conversation text and an administrative value does not establish leakage. The deterministic source-to-normalized-to-model-view derivation provides the required provenance check and detects added fields, changed text, and altered artifact content.
+- **Impact:** This corrects validation of the existing `conversation-only-v1` representation; it does not change Stage C inputs, temporal policy, methodology, or any Stage C contract version.
+- **Owner:** Study team. **Status:** Adopted before corpus-wide Stage B materialization.
+
+## 2026-09-30 — Original archived HTTP recovery for Stage B
+
+- **Decision:** Admit an identity-matched original historical HTTP response preserved as `ChatgptSharing.HTMLContent` in `data/raw/allPullRequestSharings.zip` through an explicit offline pathway. Require exact share ID and PR association, HTTP 200, nonempty HTML, and current-parser completeness. Select the earliest qualifying archive filename timestamp, with lexical member/source/sharing indexes as deterministic tie-breaks. Never substitute the derived `Conversations` list, screening evidence, parsed caches, correspondence material, or Stage A evidence.
+- **Decision:** Version this materially different provenance as `chatgpt-source-v3` with `source_origin = archived_http_response`. Preserve ZIP/member/content hashes, all qualifying candidates, raw archival dates, parser/normalization versions, null `retrieved_at`, `unknown_archive_timezone`, and a separate import time. Keep `case-linkage-v2`, `lossless-conversation-v1`, `conversation-only-v1`, `dir-tfg-v2`, and Stage C contracts unchanged.
+- **Rationale:** The five remaining Stage B cases have complete historical structured responses in the replication ZIP. Newer cached pages either lack conversation content or are absent. Control cases reproduce identical canonical model-visible semantic projections from archived HTTP bytes.
+- **Impact:** Stage B can recover those sources without network access or derived-data substitution. Completion remains operational and does not change scientific eligibility or run Stage C.
+- **Owner:** Study team. **Status:** Adopted for the five-case recovery.

@@ -41,16 +41,16 @@ The operational protocol is [`protocols/experiment_protocol.md`](../protocols/ex
                                      |
                                      v
                  +---------------------------------------+
-                 | Stage D: Human Validation of         |
-                 | Conversation Extraction (~30%        |
-                 | PA/PN-stratified sample)             |
+                 | Post-Stage-C Processability /        |
+                 | Eligibility Resolution               |
+                 | Boundary + H_i(tFG) checks            |
                  +-------------------+-------------------+
                                      |
                                      v
                  +---------------------------------------+
-                 | Strict Resolved-Case Gate            |
-                 | Eligibility + boundary + deferred    |
-                 | processability resolved              |
+                 | Stage D: Human Validation of         |
+                 | Conversation Extraction (~30%        |
+                 | eligible PA/PN-stratified sample)    |
                  +-------------------+-------------------+
                                      |
                                      v
@@ -156,7 +156,9 @@ The operational protocol is [`protocols/experiment_protocol.md`](../protocols/ex
 
 Stage A contains automated/administrative screening and a separate restricted manual correspondence activity for all candidate/processable cases. Source linkage and semantic task correspondence remain distinct. Completed semantic reviews reference checksum-bound restricted correspondence-evidence packets that preserve archive support versus reviewer attestation and cannot enter later model or reconstruction inputs. Correspondence `yes` can satisfy that Stage A criterion, `no` excludes, and `unresolved` remains pending and blocks Stage B. Operational readiness is separate from scientific disposition: a pending case may be packaged only when its sole unresolved reasons are the preliminary first-generation boundary and `tFG`-dependent historical-state judgments. Stage D validates only Stage C conversation extraction on the approximately 30% PA/PN-stratified sample.
 
-Stage B preserves three layers: retrieved source archive (source bytes and safe retrieval provenance), lossless normalized conversation (all source conversation records, tool traces, first-generation response, later turns, and source locations), and derived Stage C model view (neutral case ID, conversation-addressed turns, temporal and artifact provenance). A restricted case-linkage record retains PR/source identities for integrity and later Stage F work through the same neutral ID; it is never model input. The Stage C supplied-C/S/V extractor does **not** receive the screening row, PA/PN status, repository/PR URL, PR body, commits, reviews, issues, CI, changed files, diff, or eventual implementation. The full normalized record preserves the artifact-bearing response and later turns; the supplied-information window excludes them. Stage A boundary identifiability is preliminary; Stage C authoritatively identifies the first family, artifact, response, target prompt, and `tFG`. The researcher-only `case_mapping.csv` and richer linkage are outside the conversation package. Before freeze, PR/project access is limited to administrative identity, mapping, accessibility, duplicate, and processability checks; substantive project-evidence inspection begins after Stage E freeze. Human judgments on the validation sample remain independent until reconciliation; frozen records cannot be rewritten by subsequent project findings. `pilot_analysis/conversation/` can hold validated versioned records.
+Stage B preserves three layers: retrieved source archive (source bytes and safe retrieval provenance), lossless normalized conversation (all source conversation records, tool traces, first-generation response, later turns, and source locations), and derived Stage C model view (neutral case ID, conversation-addressed turns, temporal and artifact provenance). Source acquisition distinguishes fresh retrieval, current-cache reuse, explicit offline legacy raw-source import, and explicit offline archived HTTP response import. Archived HTTP import uses only identity-matched raw `HTMLContent` in the PatchTrack replication ZIP, selects the earliest qualifying snapshot deterministically, and never substitutes the derived `Conversations` list or screening evidence. Unknown or timezone-naive historical retrieval times remain distinct from import time. Corpus orchestration preserves valid packages and reports operational Stage C readiness without changing scientific eligibility. A restricted case-linkage record retains PR/source identities through the same neutral ID; it is never model input. Isolation is provenance-based: the model view must equal the deterministic derivative of the normalized source conversation and cannot carry independently injected administrative fields. Repository or PR strings already present in source conversation text remain unchanged. Stage C uses two independent, tool-free OpenAI Responses API passes. Pass 1 receives the complete model view and selects the first family, artifact, response, target prompt, and boundary. Deterministic code validates those references, derives `tFG`, and constructs the strictly pre-boundary conversation. Pass 2 receives only that reduced conversation and extracts textual C/S/V. All pre-boundary user and assistant turns are admissible, with their roles preserved; the first-generation response and every later turn are excluded. Neither pass receives screening data, PA/PN, independently injected repository/PR metadata, outcomes, or external tools.
+
+Immediately after Stage C, the unlettered Post-Stage-C workflow resolves first-generation boundary identifiability, reconstructs or evaluates `H_i(tFG)` through controlled DIR acquisition, resolves historical-state reconstructibility and remaining deferred criteria, and determines final scientific eligibility. Stage C does not update eligibility. Stage D then samples approximately 30% of the scientifically eligible PA/PN corpus to validate Stage C extraction. Full evidence-discovery indexes and retrieval work remain governed by the later frozen/split workflow.
 
 ## Historical information and temporal boundary
 

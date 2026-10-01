@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "stage_b_summary_v1.schema.json",
+  "title": "DIR Stage B operational summary row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["summary_version", "case_id", "source_id", "stage_a_scientific_status", "ready_for_stage_b", "stage_b_package_status", "source_origin", "retrieval_time_status", "raw_source_sha256", "normalized_conversation_status", "model_view_status", "package_validation_status", "tC", "failure_reason", "ready_for_stage_c"],
+  "properties": {
+    "summary_version": {"const": "stage-b-summary-v1"},
+    "case_id": {"type": "string", "pattern": "^CASE_[0-9A-F]{12}$"},
+    "source_id": {"type": "string", "minLength": 1},
+    "stage_a_scientific_status": {"enum": ["eligible", "pending_resolution"]},
+    "ready_for_stage_b": {"const": "true"},
+    "stage_b_package_status": {"enum": ["complete", "existing_valid", "unresolved_no_source", "failed"]},
+    "source_origin": {"type": "string"},
+    "retrieval_time_status": {"type": "string"},
+    "raw_source_sha256": {"type": "string"},
+    "normalized_conversation_status": {"type": "string"},
+    "model_view_status": {"type": "string"},
+    "package_validation_status": {"type": "string"},
+    "tC": {"type": "string"},
+    "failure_reason": {"type": "string"},
+    "ready_for_stage_c": {"enum": ["true", "false"]}
+  }
+}

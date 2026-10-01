@@ -48,7 +48,9 @@ def build_case_linkage_record(screened_row: dict) -> dict:
 def build_source_archive(case_id: str, source_payload: bytes, *, source_url: str,
                          retrieval_status: str, retrieved_at: str,
                          content_type: str = "", http_status: int | None = None,
-                         final_url: str = "", source_origin: str = "unknown") -> dict:
+                         final_url: str = "", source_origin: str = "unknown",
+                         legacy_import: dict | None = None,
+                         archived_http_import: dict | None = None) -> dict:
     """Preserve source bytes and allowlisted provenance, never request credentials."""
     if not case_id or not isinstance(source_payload, bytes) or not source_payload:
         raise ValueError("Source archive requires case ID and retrieved payload")
@@ -62,8 +64,11 @@ def build_source_archive(case_id: str, source_payload: bytes, *, source_url: str
                 or (share_id(final_url) is None and not re.fullmatch(
                     r"/backend-api/share/[0-9a-fA-F-]{36}", parsed_final.path))):
             raise ValueError("Final source URL cannot contain credentials")
-    if source_origin not in {"fresh", "cached", "unknown"}:
+    if source_origin not in {"fresh", "cached", "unknown", "legacy_cache_import",
+                             "archived_http_response"}:
         raise ValueError("Unsupported source origin")
+    if legacy_import is not None and archived_http_import is not None:
+        raise ValueError("A source archive cannot have two import provenance classes")
     if retrieved_at:
         try:
             if datetime.fromisoformat(retrieved_at.replace("Z", "+00:00")).tzinfo is None:
@@ -75,7 +80,10 @@ def build_source_archive(case_id: str, source_payload: bytes, *, source_url: str
                      "next_data_html" if b"__NEXT_DATA__" in source_payload else
                      "react_router_html" if b"streamController.enqueue(" in source_payload else
                      "unrecognized")
-    return {"archive_version": "chatgpt-source-v1", "case_id": case_id,
+    archive_version = ("chatgpt-source-v3" if archived_http_import else
+                       "chatgpt-source-v2" if legacy_import else "chatgpt-source-v1")
+    archive = {"archive_version": archive_version,
+            "case_id": case_id,
             "source_url": source_url, "final_url": final_url,
             "retrieved_at": retrieved_at, "retrieval_status": retrieval_status,
             "retrieval_time_status": "recorded" if retrieved_at else "unknown_legacy_cache",
@@ -85,6 +93,15 @@ def build_source_archive(case_id: str, source_payload: bytes, *, source_url: str
             "parser_version": "screening-chatgpt-structured-v1",
             "source_sha256": hashlib.sha256(source_payload).hexdigest(),
             "source_payload_base64": base64.b64encode(source_payload).decode("ascii")}
+    if legacy_import:
+        archive["retrieved_at"] = None
+        archive["retrieval_time_status"] = "unknown_legacy_cache"
+        archive["legacy_import"] = deepcopy(legacy_import)
+    if archived_http_import:
+        archive["retrieved_at"] = None
+        archive["retrieval_time_status"] = "unknown_archive_timezone"
+        archive["archived_http_import"] = deepcopy(archived_http_import)
+    return archive
 
 
 def normalize_conversation(case_id: str, parsed_conversation: dict,
@@ -102,7 +119,9 @@ def normalize_conversation(case_id: str, parsed_conversation: dict,
     if not events or not any(event["role"] == "user" for event in events):
         raise ValueError("No visible developer turns")
     if source_archive is not None and (source_archive.get("case_id") != case_id
-                                       or source_archive.get("archive_version") != "chatgpt-source-v1"):
+                                       or source_archive.get("archive_version") not in
+                                       {"chatgpt-source-v1", "chatgpt-source-v2",
+                                        "chatgpt-source-v3"}):
         raise ValueError("Source archive and normalized conversation identity differ")
     original = parsed_conversation["records"]
     turns = []
@@ -166,13 +185,16 @@ def prepare_conversation_layers(case_id: str, source_payload: bytes, *,
                                 retrieved_at: str, content_type: str = "",
                                 http_status: int | None = None,
                                 final_url: str = "",
-                                source_origin: str = "unknown") -> tuple[dict, dict | None, dict | None]:
+                                source_origin: str = "unknown",
+                                legacy_import: dict | None = None,
+                                archived_http_import: dict | None = None) -> tuple[dict, dict | None, dict | None]:
     """Build archive, normalized record, and isolated model view from one source."""
     archive = build_source_archive(case_id, source_payload, source_url=source_url,
                                    retrieval_status=retrieval_status,
                                    retrieved_at=retrieved_at, content_type=content_type,
                                    http_status=http_status, final_url=final_url,
-                                   source_origin=source_origin)
+                                   source_origin=source_origin, legacy_import=legacy_import,
+                                   archived_http_import=archived_http_import)
     try:
         parsed = parse_share(source_payload, content_type)
     except ValueError as exc:

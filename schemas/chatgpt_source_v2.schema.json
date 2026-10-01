@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "chatgpt_source_v2.schema.json",
+  "title": "DIR Stage B imported ChatGPT source archive",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["archive_version", "case_id", "source_url", "final_url", "retrieved_at", "retrieval_status", "retrieval_time_status", "source_origin", "http_status", "content_type", "source_format", "parser_version", "source_sha256", "source_payload_base64", "legacy_import", "normalization_status"],
+  "properties": {
+    "archive_version": {"const": "chatgpt-source-v2"},
+    "case_id": {"type": "string", "pattern": "^CASE_[0-9A-F]{12}$"},
+    "retrieved_at": {"type": "null"},
+    "retrieval_status": {"const": "retrieved_public"},
+    "retrieval_time_status": {"const": "unknown_legacy_cache"},
+    "source_origin": {"const": "legacy_cache_import"},
+    "http_status": {"const": 200},
+    "content_type": {"type": "string", "maxLength": 0},
+    "source_url": {"type": "string", "minLength": 1},
+    "final_url": {"type": "string", "minLength": 1},
+    "source_format": {"enum": ["structured_json", "next_data_html", "react_router_html", "unrecognized"]},
+    "parser_version": {"const": "screening-chatgpt-structured-v1"},
+    "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "source_payload_base64": {"type": "string", "minLength": 1},
+    "normalization_status": {"const": "parsed"},
+    "legacy_import": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["legacy_body_path", "legacy_metadata_path", "raw_body_sha256", "canonical_conversation_url", "legacy_final_url", "legacy_http_status", "legacy_retrieval_status", "imported_at"],
+      "properties": {
+        "legacy_body_path": {"type": "string", "minLength": 1},
+        "legacy_metadata_path": {"type": "string", "minLength": 1},
+        "raw_body_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "canonical_conversation_url": {"type": "string", "minLength": 1},
+        "legacy_final_url": {"type": "string", "minLength": 1},
+        "legacy_http_status": {"const": 200},
+        "legacy_retrieval_status": {"const": "retrieved_public"},
+        "imported_at": {"type": "string", "format": "date-time"}
+      }
+    }
+  }
+}

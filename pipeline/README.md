@@ -1,1 +1,1 @@
-Reusable implementation of the research pipeline.
+Reusable implementation of the research pipeline. Current executable components are Stage A screening, Stage B conversation packaging, and the one-case two-pass Stage C conversation extraction CLI. Post-Stage-C historical processability resolution and later stages remain unimplemented.

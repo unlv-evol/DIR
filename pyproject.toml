@@ -7,7 +7,7 @@ name = "developer-intent-reconstruction"
 version = "0.1.0"
 description = "Developer Intent Reconstruction research pipeline"
 requires-python = ">=3.9.6"
-dependencies = []
+dependencies = ["openai==2.48.0"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

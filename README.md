@@ -48,7 +48,7 @@ into the broader study. See
 [`docs/repository_structure.md`](docs/repository_structure.md) for the
 corresponding output locations.
 
-Current conversation-side deliverables are the Stage A screened and eligible manifests, lossless conversation packages, restricted `case_mapping.csv`, and the documented screening/packaging procedure. See the operational protocol for the distinction between scientific eligibility and Stage B readiness.
+Current conversation-side infrastructure includes Stage A screening, Stage B lossless packaging, and a two-pass Stage C extraction pipeline. Stage C uses only the isolated conversation view, derives `tFG` after validated first-generation selection, and extracts textual supplied C/S/V from strictly pre-boundary turns. Final eligibility is resolved by the documented Post-Stage-C workflow before Stage D.
 
 ## Core Validity Boundary
 

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "stage_c_pass2_v1.schema.json",
+  "title": "DIR Stage C Pass 2 structured response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "context_supplied", "specificity_supplied", "verification_supplied", "failure_reason"],
+  "$defs": {
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "category", "text", "source_turns", "source_roles", "evidence"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "category": {"enum": ["context", "specificity", "verification"]},
+        "text": {"type": "string", "minLength": 1},
+        "source_turns": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "source_roles": {"type": "array", "items": {"enum": ["user", "assistant"]}, "minItems": 1},
+        "evidence": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1}
+      }
+    }
+  },
+  "properties": {
+    "status": {"enum": ["complete", "ambiguous", "unresolved", "failed"]},
+    "context_supplied": {"type": "array", "items": {"$ref": "#/$defs/item"}},
+    "specificity_supplied": {"type": "array", "items": {"$ref": "#/$defs/item"}},
+    "verification_supplied": {"type": "array", "items": {"$ref": "#/$defs/item"}},
+    "failure_reason": {"type": "string"}
+  }
+}

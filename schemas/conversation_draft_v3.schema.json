@@ -1,0 +1,421 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "conversation_draft_v3.schema.json",
+  "title": "DIR Protocol v5 Stage C extraction record with deterministic family identity",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "methodology_version",
+    "extraction_version",
+    "record_status",
+    "case_id",
+    "input",
+    "first_generation",
+    "temporal",
+    "admissible_prior_turns",
+    "context_supplied",
+    "specificity_supplied",
+    "verification_supplied",
+    "model_provenance",
+    "scientific_status",
+    "record_derivation",
+    "status"
+  ],
+  "$defs": {
+    "anchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "precision",
+        "status",
+        "source",
+        "derivation_rule"
+      ],
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "precision": {
+          "enum": [
+            "",
+            "date",
+            "timestamp"
+          ]
+        },
+        "status": {
+          "enum": [
+            "exact",
+            "derivable",
+            "unresolved",
+            "unavailable"
+          ]
+        },
+        "source": {
+          "type": "string"
+        },
+        "derivation_rule": {
+          "type": "string"
+        }
+      }
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "category",
+        "text",
+        "source_turns",
+        "source_roles",
+        "evidence"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "context",
+            "specificity",
+            "verification"
+          ]
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_turns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "source_roles": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "user",
+              "assistant"
+            ]
+          },
+          "minItems": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "family_identity_provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "algorithm",
+        "canonicalization",
+        "canonical_input",
+        "digest_hex",
+        "digest_prefix_length",
+        "case_id_included"
+      ],
+      "properties": {
+        "algorithm": {
+          "const": "sha256"
+        },
+        "canonicalization": {
+          "const": "json-sort-keys-compact-utf8"
+        },
+        "canonical_input": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "artifact_ids",
+            "case_id"
+          ],
+          "properties": {
+            "artifact_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "case_id": {
+              "type": "string",
+              "pattern": "^CASE_[0-9A-F]{12}$"
+            }
+          }
+        },
+        "digest_hex": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "digest_prefix_length": {
+          "const": 24
+        },
+        "case_id_included": {
+          "const": true
+        }
+      }
+    }
+  },
+  "properties": {
+    "schema_version": {
+      "const": "conversation-draft-v3"
+    },
+    "methodology_version": {
+      "const": "dir-tfg-v2"
+    },
+    "extraction_version": {
+      "const": "conversation-extraction-v3"
+    },
+    "record_status": {
+      "const": "draft"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^CASE_[0-9A-F]{12}$"
+    },
+    "input": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stage_b_model_view_ref",
+        "sha256"
+      ],
+      "properties": {
+        "stage_b_model_view_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "first_generation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "family_id",
+        "family_label",
+        "family_id_provenance",
+        "artifact_refs",
+        "response_turn_id",
+        "response_event_index",
+        "target_prompt_id",
+        "target_prompt_event_index",
+        "boundary",
+        "candidate_artifact_ids",
+        "rationale",
+        "ambiguity_reason"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "complete",
+            "ambiguous",
+            "unresolved",
+            "failed"
+          ]
+        },
+        "family_id": {
+          "type": "string",
+          "pattern": "^(|FGF_[0-9a-f]{24})$"
+        },
+        "artifact_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "response_turn_id": {
+          "type": "string"
+        },
+        "response_event_index": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "target_prompt_id": {
+          "type": "string"
+        },
+        "target_prompt_event_index": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "boundary": {
+          "type": "string"
+        },
+        "candidate_artifact_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rationale": {
+          "type": "string"
+        },
+        "ambiguity_reason": {
+          "type": "string"
+        },
+        "family_label": {
+          "type": "string"
+        },
+        "family_id_provenance": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/family_identity_provenance"
+            },
+            {
+              "type": "object",
+              "maxProperties": 0
+            }
+          ]
+        }
+      }
+    },
+    "temporal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tC",
+        "tFG",
+        "primary_repository_cutoff"
+      ],
+      "properties": {
+        "tC": {
+          "$ref": "#/$defs/anchor"
+        },
+        "tFG": {
+          "$ref": "#/$defs/anchor"
+        },
+        "primary_repository_cutoff": {
+          "const": "tFG"
+        }
+      }
+    },
+    "admissible_prior_turns": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "context_supplied": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "specificity_supplied": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "verification_supplied": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "model_provenance": {
+      "type": "object"
+    },
+    "scientific_status": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "eligibility_updated",
+        "post_stage_c_resolution_required"
+      ],
+      "properties": {
+        "eligibility_updated": {
+          "const": false
+        },
+        "post_stage_c_resolution_required": {
+          "const": true
+        }
+      }
+    },
+    "status": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stage_c_status",
+        "parser_status",
+        "validation_status",
+        "failure_reason"
+      ],
+      "properties": {
+        "stage_c_status": {
+          "enum": [
+            "complete",
+            "ambiguous",
+            "unresolved",
+            "failed"
+          ]
+        },
+        "parser_status": {
+          "enum": [
+            "parsed",
+            "not_run",
+            "malformed"
+          ]
+        },
+        "validation_status": {
+          "enum": [
+            "validated",
+            "not_validated",
+            "failed"
+          ]
+        },
+        "failure_reason": {
+          "type": "string"
+        }
+      }
+    },
+    "record_derivation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "source_record_ref",
+        "source_record_sha256",
+        "original_model_family_value"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "fresh",
+            "deterministic_migration_from_v2"
+          ]
+        },
+        "source_record_ref": {
+          "type": "string"
+        },
+        "source_record_sha256": {
+          "type": "string",
+          "pattern": "^(|[0-9a-f]{64})$"
+        },
+        "original_model_family_value": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

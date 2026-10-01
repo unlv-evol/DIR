@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "stage_c_pass1_v1.schema.json",
+  "title": "DIR Stage C Pass 1 structured response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "family_id", "artifact_ids", "response_turn_id", "target_prompt_id", "candidate_artifact_ids", "rationale", "ambiguity_reason"],
+  "properties": {
+    "status": {"enum": ["complete", "ambiguous", "unresolved", "failed"]},
+    "family_id": {"type": "string"},
+    "artifact_ids": {"type": "array", "items": {"type": "string"}},
+    "response_turn_id": {"type": "string"},
+    "target_prompt_id": {"type": "string"},
+    "candidate_artifact_ids": {"type": "array", "items": {"type": "string"}},
+    "rationale": {"type": "string"},
+    "ambiguity_reason": {"type": "string"}
+  }
+}

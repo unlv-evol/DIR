@@ -229,6 +229,7 @@ data/intermediate/screening/cache/
 cases/manifests/case_mapping.csv
 data/intermediate/screening/smoke_*_case_mapping.csv
 cases/manifests/linkage/*.json
+cases/manifests/stage_b_attempts/
 cases/manifests/correspondence_reviews/*.json
 cases/manifests/correspondence_reviews/*.csv
 cases/manifests/correspondence_reviews/history/
@@ -241,6 +242,8 @@ cases/raw/*/conversation_source_archive.json
 cases/conversations/*/normalized_conversation.json
 cases/conversations/*/stage_c_model_view.json
 cases/conversations/*/package_status.json
+cases/conversations/*/stage_c_extraction.json
+cases/conversations/*/stage_c_extraction_v3.json
 
 
 /data/raw/allPullRequestSharings/

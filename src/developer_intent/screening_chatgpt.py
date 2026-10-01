@@ -249,7 +249,7 @@ def retrieve_share(url: str, http: HttpClient, *, refresh: bool = False,
     result["retrieval_status"] = fetch.status
     if fetch.body is None:
         result["notes"] = fetch.note
-        return result
+        return (result, None) if with_source else result
     for body in (fetch.body,):
         try:
             parsed = parse_share(body)

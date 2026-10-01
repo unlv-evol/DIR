@@ -159,6 +159,29 @@ class ShareTests(unittest.TestCase):
         self.assertEqual(result["turns"], [])
         self.assertEqual(share_id(SHARE), "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee")
 
+    def test_with_source_contract_on_success_and_no_body(self):
+        canonical = SHARE
+        successful_source = FetchResult(
+            "retrieved_public", json.dumps(self.payload()).encode(), canonical, 200,
+            retrieved_at="2024-01-02T00:00:00+00:00", content_type="application/json")
+        result_only = retrieve_share(SHARE, FakeHttp({canonical: successful_source}))
+        self.assertIsInstance(result_only, dict)
+        result, source = retrieve_share(
+            SHARE, FakeHttp({canonical: successful_source}), with_source=True)
+        self.assertEqual(result["parsing_status"], "parsed")
+        self.assertIs(source, successful_source)
+
+        failure = FetchResult("network_failure", note="URLError")
+        result_only = retrieve_share(SHARE, FakeHttp({canonical: failure}))
+        self.assertIsInstance(result_only, dict)
+        self.assertEqual(result_only["retrieval_status"], "network_failure")
+        self.assertEqual(result_only["notes"], "URLError")
+        result, source = retrieve_share(
+            SHARE, FakeHttp({canonical: failure}), with_source=True)
+        self.assertEqual(result["retrieval_status"], "network_failure")
+        self.assertEqual(result["notes"], "URLError")
+        self.assertIsNone(source)
+
 
 class GitHubTests(unittest.TestCase):
     def pr_payload(self):

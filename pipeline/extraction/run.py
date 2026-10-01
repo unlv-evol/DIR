@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import json
 import sys
 from pathlib import Path
 
@@ -14,8 +15,12 @@ from developer_intent.screening import read_source  # noqa: E402
 from developer_intent.screening_config import load_config  # noqa: E402
 from developer_intent.screening_http import HttpClient  # noqa: E402
 from developer_intent.stage_b import (check_new_outputs, output_paths,  # noqa: E402
-                                      persist_stage_b, prepare_stage_b,
+                                      PATCHTRACK_ARCHIVE_SHA256,
+                                      existing_package_status, persist_stage_b, prepare_stage_b,
+                                      prepare_stage_b_from_archived_http,
+                                      prepare_stage_b_from_legacy, preserve_incomplete_outputs,
                                       select_linkage)
+from developer_intent.stage_b_corpus import run_offline_corpus, write_summary  # noqa: E402
 from developer_intent.source_corrections import apply_source_corrections  # noqa: E402
 
 
@@ -35,6 +40,24 @@ def main() -> None:
                         help="Re-fetch HTTP source; never overwrites existing Stage B outputs")
     parser.add_argument("--live", action="store_true",
                         help="Permit public ChatGPT retrieval when a reusable cache entry is absent")
+    parser.add_argument("--import-legacy-cache", action="store_true",
+                        help="Offline import from the validated legacy raw cache; never use network")
+    parser.add_argument("--import-archived-http", action="store_true",
+                        help="Offline import of original HTMLContent from the replication ZIP")
+    parser.add_argument("--archive-path", type=Path,
+                        default=ROOT / "data/raw/allPullRequestSharings.zip")
+    parser.add_argument("--legacy-cache-dir", type=Path,
+                        default=ROOT / "data/intermediate/screening/cache/http")
+    parser.add_argument("--expected-model-view-sha256",
+                        help="Optional development cross-check for one imported case")
+    parser.add_argument("--all-ready", action="store_true",
+                        help="Process every ready_for_stage_b row deterministically")
+    parser.add_argument("--offline", action="store_true",
+                        help="For --all-ready, use existing/current/legacy sources without network")
+    parser.add_argument("--summary-csv", type=Path,
+                        default=ROOT / "cases/manifests/stage_b_summary.csv")
+    parser.add_argument("--summary-md", type=Path,
+                        default=ROOT / "cases/manifests/stage_b_summary.md")
     parser.add_argument("--check-config", action="store_true", help="Print safe configuration only")
     args = parser.parse_args()
     config = load_config(ROOT, cache_dir=args.cache_dir, timeout=args.timeout,
@@ -43,8 +66,29 @@ def main() -> None:
         print(config.safe_report())
         print("Stage B output roots: cases/manifests/linkage, cases/raw, cases/conversations")
         return
-    if not args.case_id or not args.live:
-        parser.error("Stage B preparation requires --case-id and --live")
+    if args.all_ready:
+        if (args.case_id or not args.offline or args.live or args.import_legacy_cache
+                or args.import_archived_http):
+            parser.error("--all-ready requires --offline and cannot be combined with one-case modes")
+        if args.screened_manifest is None:
+            parser.error("--all-ready requires --screened-manifest")
+        with args.screened_manifest.open(newline="", encoding="utf-8") as stream:
+            screened_rows = list(csv.DictReader(stream))
+        source = apply_source_corrections(read_source(args.source), args.source_correction_dir)
+        try:
+            manifest_ref = args.screened_manifest.resolve().relative_to(ROOT).as_posix()
+        except ValueError:
+            manifest_ref = str(args.screened_manifest.resolve())
+        rows = run_offline_corpus(ROOT, source, screened_rows,
+                                  config.cache_dir / "http", args.legacy_cache_dir,
+                                  manifest_ref)
+        write_summary(args.summary_csv, args.summary_md, rows)
+        print(f"Stage B offline corpus rows: {len(rows)}")
+        print(f"summary: {args.summary_csv}")
+        return
+    modes = sum((args.live, args.import_legacy_cache, args.import_archived_http))
+    if not args.case_id or modes != 1:
+        parser.error("Stage B requires --case-id with exactly one source mode")
     old_cache = (ROOT / "data/intermediate/screening/cache").resolve()
     current_cache = old_cache / "current"
     resolved_cache = config.cache_dir.resolve()
@@ -67,9 +111,23 @@ def main() -> None:
         linkage = select_linkage(source, args.case_id, screened_rows,
                                  screened_manifest_ref=manifest_ref)
         paths = output_paths(ROOT, args.case_id)
-        check_new_outputs(paths)  # fail before network access
-        http = HttpClient(config.cache_dir / "http", config.timeout, config.retries)
-        prepared = prepare_stage_b(linkage, http, refresh=args.refresh)
+        state = existing_package_status(ROOT, args.case_id)
+        if state == "existing_valid":
+            parser.error(f"Existing valid Stage B package is preserved: {args.case_id}")
+        if args.import_archived_http:
+            prepared = prepare_stage_b_from_archived_http(
+                linkage, args.archive_path,
+                expected_archive_sha256=PATCHTRACK_ARCHIVE_SHA256)
+        elif args.import_legacy_cache:
+            prepared = prepare_stage_b_from_legacy(
+                linkage, args.legacy_cache_dir,
+                expected_model_view_sha256=args.expected_model_view_sha256)
+        else:
+            check_new_outputs(paths)  # fail before network access
+            http = HttpClient(config.cache_dir / "http", config.timeout, config.retries)
+            prepared = prepare_stage_b(linkage, http, refresh=args.refresh)
+        if state == "incomplete":
+            preserve_incomplete_outputs(ROOT, args.case_id)
         persist_stage_b(ROOT, prepared)
     except (ValueError, FileExistsError) as exc:
         parser.error(str(exc))
