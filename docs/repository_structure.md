@@ -22,6 +22,7 @@ developer-intent-reconstruction/
 │   ├── README.md
 │   ├── manifests/                   # stable IDs and study-role assignments
 │   ├── conversations/               # isolated conversation-only packages
+│   ├── reconstruction/              # Post-C acquisition records, not Stage C input
 │   └── raw/                         # historical audit packages, never SAFE
 ├── pilot_analysis/
 │   └── conversation/               # location for versioned conversation records
@@ -31,6 +32,7 @@ developer-intent-reconstruction/
 │   ├── screening/
 │   ├── extraction/                 # conversation-first acquisition foundation
 │   ├── stage_c/                    # two-pass conversation extraction CLI
+│   ├── post_stage_c/               # offline eligibility/reconstruction contracts
 │   ├── partitioning/
 │   ├── family_construction/
 │   ├── snapshot/
@@ -79,11 +81,13 @@ The one-case Stage B command uses `cases/manifests/linkage/<case_id>.json`, `cas
 
 Stage B corpus orchestration writes operational `cases/manifests/stage_b_summary.{csv,md}`. Explicit legacy imports retain prior incomplete attempts under `cases/manifests/stage_b_attempts/<case_id>/<checksum>/` before creating the validated package; valid packages are never replaced.
 
-Current Stage C execution reads `cases/conversations/<case_id>/stage_c_model_view_v2.json` and writes `stage_c_extraction_v6.json` beside immutable historical outputs. Version-controlled prompts live under `prompts/stage_c/`; response and final-record schemas live under `schemas/`. Extraction-v6 uses `stage-c-pass2-v2` positional provenance and `conversation-draft-v4` with an independent Pass 2 outcome. Runtime configuration is centralized in `src/developer_intent/stage_c_config.py`; extraction, validation, deterministic family identity, temporal derivation, and the tool-free OpenAI Responses adapter live in `src/developer_intent/stage_c.py`. The Post-Stage-C processability/eligibility workflow follows Stage C and precedes Stage D but is not implemented here.
+Current Stage C execution reads `cases/conversations/<case_id>/stage_c_model_view_v2.json` and writes `stage_c_extraction_v6.json` beside immutable historical outputs. Version-controlled prompts live under `prompts/stage_c/`; response and final-record schemas live under `schemas/`. Extraction-v6 uses `stage-c-pass2-v2` positional provenance and `conversation-draft-v4` with an independent Pass 2 outcome. Runtime configuration is centralized in `src/developer_intent/stage_c_config.py`; extraction, validation, deterministic family identity, temporal derivation, and the tool-free OpenAI Responses adapter live in `src/developer_intent/stage_c.py`.
+
+The offline Post-Stage-C initializer writes `cases/manifests/post_stage_c_eligibility.csv` and `post_stage_c_reconstruction_pilot.csv`. Future acquisition records live at `cases/reconstruction/<case_id>/historical_state_acquisition_v1.json`; compact component indexes live under `data/derived/historical_information/<case_id>/`. These records are researcher-side processability and provenance artifacts, never Stage C model input.
 
 ## Historical information, traces, and evidence
 
-After conversation freeze and the split, compact `H_i(tFG)` indexes in the future `data/derived/historical_information/` location should hold stable historical references, timestamps, boundary SHA/tree, and supported PR/issue/CI/history identifiers. Large payloads are materialized on demand. The exact persistent contract is deferred until that stage. `pipeline/snapshot/` resolves historical states without guessing; `pipeline/retrieval/` records justified operations and traces; `pipeline/selection/` assesses temporal validity, relevance, novelty, C/S/V contribution and uncertainty reduction. `pipeline/evidence_engineering/` performs semantic reduction before deferred materialization and payload reduction. Retrieval Algorithm v1 is derived only from discovery cases and frozen before held-out application. Experimental and provenance directories remain available for later runs; no held-out evidence may enter v1 development.
+Compact `historical-information-index-v1` records under `data/derived/historical_information/` hold stable historical references, timestamps, the focal-PR base boundary SHA/tree, and separately statused PR/issue/CI/discussion/history identifiers. Large payloads are materialized on demand. `pipeline/snapshot/` resolves historical states without guessing; `pipeline/retrieval/` records justified operations and traces; `pipeline/selection/` assesses temporal validity, relevance, novelty, C/S/V contribution and uncertainty reduction. `pipeline/evidence_engineering/` performs semantic reduction before deferred materialization and payload reduction. Retrieval Algorithm v1 is derived only from discovery cases and frozen before held-out application. Experimental and provenance directories remain available for later runs; no held-out evidence may enter v1 development.
 
 ## RAW / SAFE / SEALED
 

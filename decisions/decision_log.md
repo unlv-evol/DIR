@@ -386,3 +386,19 @@ Suggested fields:
 - **Audit evidence:** All 107 accepted extraction-v5 records and all 447 accepted C/S/V items satisfy the clarified positional rule; zero accepted items had a cardinality or positional-role mismatch.
 - **Impact:** Historical v4/v5 records and rejected diagnostics remain immutable. The four affected cases are not repaired or promoted and require separately authorized fresh v6 execution. Historical v1/v2 execution mappings remain available; the new `v3` execution contract reads the same `conversation-only-v2` model view and writes `stage_c_extraction_v6.json` without overwriting v5.
 - **Owner:** Study team. **Status:** Adopted as a provenance serialization and observability correction.
+
+## 2026-10-01 — Freeze the Post-Stage-C historical reconstruction contract
+
+- **Decision:** Under unchanged `dir-tfg-v2`, define `H_i(tFG)` as the repository, PR, issue/work-item, CI, discussion/review, and temporal-provenance information demonstrably available at or before authoritative `tFG`. Freeze the core repository target as the historically evidenced focal-PR base state applicable at `tFG`; a Stage A base SHA is a candidate, not historical authority. Keep target identity, historical applicability, present materializability, and component availability separate.
+- **Decision:** Exact timestamps use `historical_timestamp <= tFG`; date-only same-day ordering remains unresolved without independent evidence. `historical_state_reconstructible = no` requires affirmative scientific evidence. Repository deletion/private transition, missing authentication, rate limits, transport failure, timeout, and present retrieval failure remain unresolved absent such evidence. Missing nonrepository `H_i(tFG)` components do not automatically fail the core repository state.
+- **Versioning:** Add `post-stage-c-reconstruction-v1`, `post-stage-c-eligibility-v1`, `post-stage-c-eligibility-manifest-v1`, `historical-state-acquisition-v1`, and `historical-information-index-v1`. Preserve legacy `dir-tfg-v1` contracts unchanged.
+- **Impact:** Initialize only the 111 Stage C processable authority rows, resolve their first-generation criterion deterministically, and retain pending final eligibility until historical acquisition resolves the remaining criterion. Stage D still requires final eligibility. No acquisition, pilot execution, or eligibility decision is authorized by this contract implementation.
+- **Owner:** Study team. **Status:** Adopted for offline implementation before the reconstruction pilot.
+
+## 2026-10-01 — Freeze the historical target-identity evidence hierarchy
+
+- **Decision:** Determine the focal PR base applicable at `tFG` using, in order: direct historical PR-state evidence; derivable immutable historical relationships; adequately corroborated contemporaneous provider evidence; present-day PR metadata; and present-day Git object/ref evidence. The last two levels are supporting only. Git-object validation and present materialization answer different questions from historical applicability.
+- **Conflict rule:** Retain all claims. Stronger historical SHA A is not displaced by later current SHA B. Unresolved disagreement among comparably authoritative historical claims is ambiguous; fetchability cannot decide it. Missing historical evidence remains unresolved rather than scientific `no`.
+- **Adjudication:** Humans may apply the hierarchy, compare provenance, and verify derivations. They may not invent values, use final outcomes or implementation, use post-`tFG` substantive evidence to infer identity, or select by fetchability.
+- **Impact:** Extend the existing `historical-state-acquisition-v1` and `historical-information-index-v1` representations without changing `dir-tfg-v2`, the 111-case Post-C population, the eight-case pilot, or Stage D entry semantics.
+- **Owner:** Study team. **Status:** Adopted before live reconstruction.

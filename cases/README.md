@@ -8,6 +8,8 @@ The one-case Stage B command writes linkage under `cases/manifests/linkage/`, so
 
 `cases/raw/<case_id>/` remains historical audit material and may expose future or outcome information. It is not reconstruction-safe. Historical project indexes retain reproducible boundary references and defer large payload materialization. `safe/reconstruction/<case_id>/` holds admitted inputs; `sealed/evaluation/<case_id>/` holds outcome material and the integrated implementation until evaluation.
 
+`cases/reconstruction/<case_id>/` is reserved for versioned researcher-side Post-Stage-C acquisition records. These records document attempts to reconstruct the historically evidenced focal-PR base state and are not Stage C inputs or automatically SAFE evidence. The historical project-information index remains separate under `data/derived/historical_information/<case_id>/`.
+
 See [the architecture](../docs/architecture.md) and [protocol](../protocols/experiment_protocol.md).
 
 `cases/manifests/case_mapping.csv` is a generated, researcher-only Case ID / PR / PA-PN mapping. It is separate from richer `linkage/*.json` records and never enters the Stage C model view.

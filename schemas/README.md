@@ -19,6 +19,11 @@ Protocol v5 currently uses methodology `dir-tfg-v2`. A schema version identifies
 | Stage C extraction draft | `conversation_draft_v3.schema.json` | `conversation-draft-v3` | `dir-tfg-v2` | `stage_c.extract_stage_c` | `stage_c.validate_stage_c_record` |
 | Stage C Pass 2 model response with positional provenance | `stage_c_pass2_v2.schema.json` | `stage-c-pass2-v2` | `dir-tfg-v2` | tool-free OpenAI Responses Pass 2 v3 | JSON Schema plus `stage_c.validate_pass2` cardinality/role validation |
 | Stage C extraction-v6 draft | `conversation_draft_v4.schema.json` | `conversation-draft-v4` | `dir-tfg-v2` | `stage_c.extract_stage_c` | `stage_c.validate_stage_c_record` |
+| Post-Stage-C eligibility manifest row | `post_stage_c_eligibility_v1.schema.json` | `post-stage-c-eligibility-manifest-v1` | `dir-tfg-v2` | `post_stage_c.initialize_eligibility_rows` | `post_stage_c.validate_eligibility_row` |
+| Historical repository-state acquisition | `historical_state_acquisition_v1.schema.json` | `historical-state-acquisition-v1` | `dir-tfg-v2` | future bounded Post-C acquisition | schema plus Post-C deterministic validation |
+| Historical project-information index | `historical_information_index_v1.schema.json` | `historical-information-index-v1` | `dir-tfg-v2` | future bounded Post-C indexing | schema plus temporal/component validation |
+
+The acquisition and historical-index contracts retain multiple target-identity claims under the frozen five-level evidence hierarchy. Present-day PR and Git evidence remain supporting only. Comparable historical conflicts stay ambiguous, and adjudication is limited to hierarchy rank, provenance quality, or deterministic derivation.
 
 `stage_a_correspondence_review.csv` is a `dir-correspondence-review-csv-v1` interchange interface, not a replacement scientific contract. Its importer validates identity and manual provenance, then emits the canonical v1 JSON above. A completed review using `direct_share_reference_and_restricted_task_context_v1` must reference a checksum-bound restricted evidence packet. The packet is Stage A administrative material only and is prohibited from Stage B/C model input, Stage G retrieval, and reconstruction evidence. No screening, mapping, methodology, or canonical review schema version changes are introduced by this interface.
 

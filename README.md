@@ -48,7 +48,7 @@ into the broader study. See
 [`docs/repository_structure.md`](docs/repository_structure.md) for the
 corresponding output locations.
 
-Current conversation-side infrastructure includes Stage A screening, Stage B lossless packaging, and a two-pass Stage C extraction pipeline. Stage C uses only the isolated conversation view, derives `tFG` after validated first-generation selection, and extracts textual supplied C/S/V from strictly pre-boundary turns. Final eligibility is resolved by the documented Post-Stage-C workflow before Stage D.
+Current conversation-side infrastructure includes Stage A screening, Stage B lossless packaging, a two-pass Stage C extraction pipeline, and the offline Post-Stage-C reconstruction/eligibility contracts. Stage C uses only the isolated conversation view, derives `tFG` after validated first-generation selection, and extracts textual supplied C/S/V from strictly pre-boundary turns. The Post-C layer binds authoritative Stage C records, resolves the boundary criterion, and initializes historical-state reconstruction without making a final eligibility decision. Live historical acquisition remains a separate reviewed step before Stage D.
 
 ## Core Validity Boundary
 
