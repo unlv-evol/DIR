@@ -20,6 +20,8 @@ python3 pipeline/stage_c/run.py --case-id CASE_XXXXXXXXXXXX --live
 
 An explicitly authorized development retry can use `--development-run-id retry_01` to write a separate suffixed artifact without changing `conversation-extraction-v4`. The same normal two-pass pipeline and no-overwrite guard apply.
 
+`DIR_STAGE_C_MAX_RETRIES` configures the OpenAI SDK's bounded transport/provider retry allowance; the current execution configuration is `2`, and valid values are integers from `0` through `5`. Stage C passes this value explicitly to the SDK and records it as `sdk_max_retries` in future output provenance. Stage C has no application-level retry loop: a completed invocation that fails semantic, deterministic, provenance, or human validation remains a failed attempt. A separately authorized run with a distinct development-run ID is a new controlled execution, not an SDK retry. The SDK retry allowance does not establish the number of HTTP attempts, which is not claimed unless independently observable.
+
 Input and output:
 
 ```text

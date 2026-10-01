@@ -16,8 +16,14 @@ class StageCModelConfig:
     model: str
     reasoning_mode: str
     reasoning_effort: str
+    max_retries: int = 2
     structured_outputs: bool = True
     tools_enabled: tuple[str, ...] = ()
+
+    def __post_init__(self) -> None:
+        if (isinstance(self.max_retries, bool) or not isinstance(self.max_retries, int)
+                or not 0 <= self.max_retries <= 5):
+            raise ValueError("DIR_STAGE_C_MAX_RETRIES must be an integer from 0 through 5")
 
     @property
     def structurally_valid(self) -> bool:
@@ -35,6 +41,7 @@ class StageCModelConfig:
             f"Configured model: {self.model or 'missing'}",
             f"Reasoning mode: {self.reasoning_mode or 'missing'}",
             f"Reasoning effort: {self.reasoning_effort or 'missing'}",
+            f"OpenAI SDK max retries: {self.max_retries}",
             "Structured Outputs: enabled",
             "Model tools: disabled",
             "Pass 1 prompt version: dir-stage-c-first-generation-v3",
@@ -53,10 +60,16 @@ def load_stage_c_config(root: Path, *, env_file: Path | None = None,
     local = _read_env(env_file or root / ".env")
     env = dict(os.environ if environ is None else environ)
     values = {**local, **env}
+    raw_max_retries = values.get("DIR_STAGE_C_MAX_RETRIES", "2").strip()
+    try:
+        max_retries = int(raw_max_retries)
+    except ValueError as exc:
+        raise ValueError("DIR_STAGE_C_MAX_RETRIES must be an integer from 0 through 5") from exc
     return StageCModelConfig(
         api_key=values.get("OPENAI_API_KEY") or None,
         base_url=values.get("OPENAI_API_BASE_URL") or None,
         model=values.get("DIR_STAGE_C_MODEL", "").strip(),
         reasoning_mode=values.get("DIR_STAGE_C_REASONING_MODE", "standard").strip(),
         reasoning_effort=values.get("DIR_STAGE_C_REASONING_EFFORT", "medium").strip(),
+        max_retries=max_retries,
     )

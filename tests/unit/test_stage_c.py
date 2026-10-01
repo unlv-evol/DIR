@@ -8,6 +8,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src"))
@@ -158,6 +159,7 @@ class StageCTests(unittest.TestCase):
         self.assertFalse(record["scientific_status"]["eligibility_updated"])
         self.assertTrue(record["first_generation"]["family_id"].startswith("FGF_"))
         self.assertEqual(record["first_generation"]["family_label"], "first generated family")
+        self.assertEqual(record["model_provenance"]["sdk_max_retries"], 2)
 
     def test_one_prompt_first_generated_response(self):
         pkg = package(multiple=False)
@@ -395,6 +397,7 @@ class StageCTests(unittest.TestCase):
                          "dir-stage-c-csv-extraction-v2")
         self.assertEqual(record["model_provenance"]["structured_output_schema_versions"],
                          ["stage-c-pass1-v2", "stage-c-pass2-v1"])
+        self.assertEqual(record["model_provenance"]["sdk_max_retries"], 2)
         self.assertEqual(len(record["model_provenance"]["invocations"]), 2)
         self.assertEqual(record["context_supplied"], [])
         self.assertEqual(record["specificity_supplied"], [])
@@ -418,6 +421,7 @@ class StageCTests(unittest.TestCase):
         self.assertEqual(diagnostic["parsing"]["parsed_payload_retained"], parsed)
         self.assertFalse(diagnostic["validation"]["accepted"])
         self.assertEqual(diagnostic["request_provenance"]["tools_enabled"], [])
+        self.assertEqual(diagnostic["request_provenance"]["sdk_max_retries"], 2)
         self.assertEqual(diagnostic["request_provenance"]["prompt_version"],
                          "dir-stage-c-first-generation-v3")
         self.assertEqual(diagnostic["request_provenance"]["schema_version"],
@@ -471,11 +475,13 @@ class StageCTests(unittest.TestCase):
         rejected = pass1(pkg, artifact_ids=[later["artifact_id"]],
                          candidate_artifact_ids=[later["artifact_id"]])
         diagnostics = []
-        record = extract_stage_c(ROOT, CASE, pkg, MockClient([rejected]), CONFIG,
+        client = MockClient([rejected])
+        record = extract_stage_c(ROOT, CASE, pkg, client, CONFIG,
                                  input_ref="input.json", diagnostics=diagnostics)
         self._assert_rejected_pass1(record, diagnostics[0], "parsed", "failed", parsed=True)
         self.assertIn("does not belong", record["status"]["failure_reason"])
         self.assertEqual(diagnostics[0]["rejected_parsed_payload"], rejected)
+        self.assertEqual(len(client.calls), 1)
 
     def test_pass1_invalid_target_and_artifact_id_are_rejected_and_retained(self):
         pkg = package()
@@ -533,13 +539,22 @@ class StageCTests(unittest.TestCase):
         invalid["verification_supplied"][0]["source_turns"] = []
         invalid["verification_supplied"][0]["source_roles"] = []
         diagnostics = []
-        record = extract_stage_c(ROOT, CASE, pkg, MockClient([pass1(pkg), invalid]),
+        client = MockClient([pass1(pkg), invalid])
+        record = extract_stage_c(ROOT, CASE, pkg, client,
                                  CONFIG, input_ref="input.json", diagnostics=diagnostics)
         self._assert_rejected_pass2(record, "parsed", "failed")
         self.assertIn("provenance is incomplete", record["status"]["failure_reason"])
         self.assertEqual(diagnostics[0]["pass"], "pass_2")
         self.assertFalse(diagnostics[0]["authoritative"])
         self.assertEqual(diagnostics[0]["rejected_parsed_payload"], invalid)
+        self.assertEqual(len(client.calls), 2)
+
+    def test_openai_client_receives_configured_sdk_retry_limit(self):
+        config = StageCModelConfig("secret", None, "gpt-5.6-sol", "standard", "medium",
+                                   max_retries=5)
+        with patch("openai.OpenAI") as constructor:
+            OpenAIStageCClient(config)
+        constructor.assert_called_once_with(api_key="secret", max_retries=5)
 
     def test_responses_api_adapter_is_independent_structured_and_tool_free(self):
         calls = []
@@ -574,6 +589,7 @@ class StageCTests(unittest.TestCase):
         config = load_stage_c_config(ROOT, env_file=ROOT / ".env.test-does-not-exist", environ={})
         self.assertFalse(config.structurally_valid)
         self.assertFalse(config.live_permitted)
+        self.assertEqual(config.max_retries, 2)
         report = config.safe_report()
         self.assertIn("OPENAI_API_KEY: missing", report)
         self.assertNotIn("sk-", report)
@@ -583,13 +599,29 @@ class StageCTests(unittest.TestCase):
         self.assertTrue(configured.live_permitted)
         self.assertNotIn("sk-hidden", configured.safe_report())
 
+    def test_sdk_retry_configuration_accepts_only_bounded_integers(self):
+        for value in (0, 1, 2, 5):
+            config = load_stage_c_config(
+                ROOT, env_file=ROOT / ".env.test-does-not-exist",
+                environ={"DIR_STAGE_C_MODEL": "gpt-5.6-sol",
+                         "DIR_STAGE_C_MAX_RETRIES": str(value)})
+            self.assertEqual(config.max_retries, value)
+        for value in ("-1", "6", "not-an-integer"):
+            with self.assertRaisesRegex(ValueError, "integer from 0 through 5"):
+                load_stage_c_config(
+                    ROOT, env_file=ROOT / ".env.test-does-not-exist",
+                    environ={"DIR_STAGE_C_MODEL": "gpt-5.6-sol",
+                             "DIR_STAGE_C_MAX_RETRIES": value})
+
     def test_check_config_makes_no_api_call_and_redacts(self):
         result = subprocess.run([sys.executable, "pipeline/stage_c/run.py", "--check-config"],
                                 cwd=ROOT, check=True, capture_output=True, text=True,
                                 env={"PATH": str(Path(sys.executable).parent),
                                      "DIR_STAGE_C_MODEL": "gpt-5.6-sol",
+                                     "DIR_STAGE_C_MAX_RETRIES": "2",
                                      "OPENAI_API_KEY": "sk-never-print"})
         self.assertIn("Configured model: gpt-5.6-sol", result.stdout)
+        self.assertIn("OpenAI SDK max retries: 2", result.stdout)
         self.assertNotIn("sk-never-print", result.stdout)
 
     def test_final_validation_and_atomic_no_overwrite(self):

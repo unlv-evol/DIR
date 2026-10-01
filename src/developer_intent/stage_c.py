@@ -260,7 +260,8 @@ def rejected_output_diagnostic(case_id: str, pass_name: str, config: StageCModel
         "request_provenance": {
             "provider": "openai", "api": "responses", "requested_model": config.model,
             "reasoning_mode": config.reasoning_mode,
-            "reasoning_effort": config.reasoning_effort, "tools_enabled": [],
+            "reasoning_effort": config.reasoning_effort,
+            "sdk_max_retries": config.max_retries, "tools_enabled": [],
             "prompt_version": prompt_version, "prompt_sha256": prompt_sha256,
             "schema_version": schema_version, "schema_sha256": canonical_hash(schema),
             "input_sha256": input_hash,
@@ -286,7 +287,8 @@ class OpenAIStageCClient:
             from openai import OpenAI
         except ImportError as exc:
             raise RuntimeError("Install the project OpenAI SDK dependency before --live") from exc
-        options: dict[str, Any] = {"api_key": config.api_key}
+        options: dict[str, Any] = {"api_key": config.api_key,
+                                   "max_retries": config.max_retries}
         if config.base_url:
             options["base_url"] = config.base_url
         self.client = OpenAI(**options)
@@ -459,6 +461,7 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
             "provider": "openai", "api": "responses", "requested_model": config.model,
             "returned_models": [m for m in (meta1.get("returned_model"), meta2.get("returned_model")) if m],
             "reasoning_mode": config.reasoning_mode, "reasoning_effort": config.reasoning_effort,
+            "sdk_max_retries": config.max_retries,
             "tools_enabled": [], "structured_outputs": True,
             "structured_output_schema_versions": ["stage-c-pass1-v2", "stage-c-pass2-v1"],
             "pass_1_prompt_version": PASS_1_PROMPT_VERSION,
@@ -611,6 +614,7 @@ def failed_record(case_id: str, input_ref: str, input_hash: str,
                                     if item.get("returned_model")],
                 "reasoning_mode": config.reasoning_mode,
                 "reasoning_effort": config.reasoning_effort,
+                "sdk_max_retries": config.max_retries,
                 "structured_outputs": True,
                 "structured_output_schema_versions": ["stage-c-pass1-v2", "stage-c-pass2-v1"],
                 "pass_1_prompt_version": PASS_1_PROMPT_VERSION,
