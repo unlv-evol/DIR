@@ -50,9 +50,10 @@ def main() -> None:
     except (OSError, json.JSONDecodeError) as exc:
         parser.error(f"Cannot read Stage C input: {exc}")
     input_ref = input_path.relative_to(ROOT).as_posix()
+    diagnostics: list[dict] = []
     try:
         record = extract_stage_c(ROOT, args.case_id, package, OpenAIStageCClient(config),
-                                 config, input_ref=input_ref)
+                                 config, input_ref=input_ref, diagnostics=diagnostics)
     except Exception as exc:  # preserve an explicit failure without silently repairing it
         detail = f"{type(exc).__name__}: {exc}"
         if config.api_key:
@@ -60,6 +61,9 @@ def main() -> None:
         record = failed_record(args.case_id, input_ref, canonical_hash(package), config,
                                detail, package=package)
     persist_stage_c(output_path, record)
+    if diagnostics:
+        diagnostic_path = output_path.with_suffix(".diagnostic.json")
+        persist_stage_c(diagnostic_path, diagnostics[0])
     print(f"Stage C {args.case_id}: {record['status']['stage_c_status']}")
     print(f"output: {output_path}")
 

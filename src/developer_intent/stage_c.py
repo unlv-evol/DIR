@@ -37,11 +37,14 @@ class StageCInvocationFailure(RuntimeError):
     """Carry truthful request provenance when a model result cannot be returned."""
 
     def __init__(self, message: str, metadata: dict, *, parser_status: str,
-                 validation_status: str):
+                 validation_status: str, response_received: bool = False,
+                 structured_content_status: str = "unavailable"):
         super().__init__(message)
         self.metadata = metadata
         self.parser_status = parser_status
         self.validation_status = validation_status
+        self.response_received = response_received
+        self.structured_content_status = structured_content_status
 
 
 def canonical_hash(value: Any) -> str:
@@ -237,6 +240,43 @@ def _failure_detail(exc: Exception, config: StageCModelConfig) -> str:
     return detail.replace(config.api_key, "[REDACTED]") if config.api_key else detail
 
 
+def rejected_output_diagnostic(case_id: str, pass_name: str, config: StageCModelConfig,
+                               prompt_version: str, prompt_sha256: str,
+                               schema_version: str, schema: dict, input_hash: str,
+                               reason: str, *, invocation: dict | None = None,
+                               parser_status: str, validation_status: str,
+                               response_received: bool,
+                               structured_content_status: str,
+                               parsed_payload: dict | None = None) -> dict:
+    """Build a non-authoritative sidecar for one rejected model result."""
+    return {
+        "diagnostic_version": "stage-c-rejected-output-v1",
+        "authoritative": False,
+        "disposition": "rejected_model_output",
+        "case_id": case_id,
+        "extraction_version": EXTRACTION_VERSION,
+        "pass": pass_name,
+        "failure_reason": reason,
+        "request_provenance": {
+            "provider": "openai", "api": "responses", "requested_model": config.model,
+            "reasoning_mode": config.reasoning_mode,
+            "reasoning_effort": config.reasoning_effort, "tools_enabled": [],
+            "prompt_version": prompt_version, "prompt_sha256": prompt_sha256,
+            "schema_version": schema_version, "schema_sha256": canonical_hash(schema),
+            "input_sha256": input_hash,
+        },
+        "response_provenance": {
+            "response_received": response_received,
+            "structured_content_status": structured_content_status,
+            "invocation": deepcopy(invocation) if invocation else {},
+        },
+        "parsing": {"status": parser_status,
+                    "parsed_payload_retained": parsed_payload is not None},
+        "validation": {"status": validation_status, "accepted": False},
+        "rejected_parsed_payload": deepcopy(parsed_payload),
+    }
+
+
 class OpenAIStageCClient:
     """Thin Responses API adapter; each call is independent and tool-free."""
     def __init__(self, config: StageCModelConfig):
@@ -270,32 +310,85 @@ class OpenAIStageCClient:
         except Exception as exc:
             raise StageCInvocationFailure(
                 f"OpenAI Responses API invocation failed: {type(exc).__name__}: {exc}",
-                metadata, parser_status="not_run", validation_status="not_validated") from exc
+                metadata, parser_status="not_run", validation_status="not_validated",
+                response_received=False, structured_content_status="unavailable") from exc
         metadata.update(response_id=getattr(response, "id", ""),
                         returned_model=getattr(response, "model", ""),
                         usage=_usage(response))
         if getattr(response, "status", "completed") != "completed":
             raise StageCInvocationFailure(
                 f"OpenAI response was not complete: {getattr(response, 'status', '')}",
-                metadata, parser_status="not_run", validation_status="not_validated")
+                metadata, parser_status="not_run", validation_status="not_validated",
+                response_received=True, structured_content_status="incomplete_response")
         try:
             parsed = json.loads(response.output_text)
         except (AttributeError, json.JSONDecodeError) as exc:
             raise StageCInvocationFailure(
                 "OpenAI Structured Output was malformed", metadata,
-                parser_status="malformed", validation_status="not_validated") from exc
+                parser_status="malformed", validation_status="not_validated",
+                response_received=True, structured_content_status="malformed") from exc
         return parsed, metadata
 
 
 def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
-                    config: StageCModelConfig, *, input_ref: str) -> dict:
+                    config: StageCModelConfig, *, input_ref: str,
+                    diagnostics: list[dict] | None = None) -> dict:
     validate_model_view(package, case_id)
     p1_prompt, p1_hash = load_prompt(root, "prompts/stage_c/first_generation_v2.md")
     p2_prompt, p2_hash = load_prompt(root, "prompts/stage_c/csv_extraction_v2.md")
-    pass1, meta1 = client.invoke(p1_prompt, package, "dir_stage_c_pass1_v2",
-                                 load_contract(root, "stage_c_pass1_v2.schema.json"))
-    validate_pass1(pass1)
-    first_generation, admissible, tfg = resolve_first_generation(package, pass1)
+    pass1_schema = load_contract(root, "stage_c_pass1_v2.schema.json")
+    pass2_schema = load_contract(root, "stage_c_pass2_v1.schema.json")
+    input_hash = canonical_hash(package)
+
+    def retain(diagnostic: dict) -> None:
+        if diagnostics is not None:
+            diagnostics.append(diagnostic)
+
+    try:
+        pass1, meta1 = client.invoke(p1_prompt, package, "dir_stage_c_pass1_v2",
+                                     pass1_schema)
+    except StageCInvocationFailure as exc:
+        reason = _failure_detail(exc, config)
+        retain(rejected_output_diagnostic(
+            case_id, "pass_1", config, PASS_1_PROMPT_VERSION, p1_hash,
+            "stage-c-pass1-v2", pass1_schema, input_hash, reason,
+            invocation=exc.metadata, parser_status=exc.parser_status,
+            validation_status=exc.validation_status,
+            response_received=exc.response_received,
+            structured_content_status=exc.structured_content_status))
+        return failed_record(
+            case_id, input_ref, input_hash, config, reason, package=package,
+            invocations=[exc.metadata], pass_1_prompt_sha256=p1_hash,
+            pass_2_prompt_sha256=p2_hash, parser_status=exc.parser_status,
+            validation_status=exc.validation_status)
+    except Exception as exc:
+        reason = _failure_detail(exc, config)
+        retain(rejected_output_diagnostic(
+            case_id, "pass_1", config, PASS_1_PROMPT_VERSION, p1_hash,
+            "stage-c-pass1-v2", pass1_schema, input_hash, reason,
+            parser_status="not_run", validation_status="not_validated",
+            response_received=False, structured_content_status="unavailable"))
+        return failed_record(
+            case_id, input_ref, input_hash, config, reason, package=package,
+            invocations=[{}], pass_1_prompt_sha256=p1_hash,
+            pass_2_prompt_sha256=p2_hash, parser_status="not_run",
+            validation_status="not_validated")
+    try:
+        validate_pass1(pass1)
+        first_generation, admissible, tfg = resolve_first_generation(package, pass1)
+    except ValueError as exc:
+        reason = _failure_detail(exc, config)
+        retain(rejected_output_diagnostic(
+            case_id, "pass_1", config, PASS_1_PROMPT_VERSION, p1_hash,
+            "stage-c-pass1-v2", pass1_schema, input_hash, reason,
+            invocation=meta1, parser_status="parsed", validation_status="failed",
+            response_received=True, structured_content_status="parsed",
+            parsed_payload=pass1))
+        return failed_record(
+            case_id, input_ref, input_hash, config, reason, package=package,
+            invocations=[meta1], pass_1_prompt_sha256=p1_hash,
+            pass_2_prompt_sha256=p2_hash, parser_status="parsed",
+            validation_status="failed")
     pass2 = {"status": "not_run", "context_supplied": [], "specificity_supplied": [],
              "verification_supplied": [], "failure_reason": "first_generation_not_complete"}
     meta2: dict = {}
@@ -303,19 +396,31 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
         payload = {"case_id": case_id, "admissible_prior_turns": admissible}
         try:
             pass2, meta2 = client.invoke(p2_prompt, payload, "dir_stage_c_pass2_v1",
-                                         load_contract(root, "stage_c_pass2_v1.schema.json"))
+                                         pass2_schema)
         except StageCInvocationFailure as exc:
+            reason = _failure_detail(exc, config)
+            retain(rejected_output_diagnostic(
+                case_id, "pass_2", config, PASS_2_PROMPT_VERSION, p2_hash,
+                "stage-c-pass2-v1", pass2_schema, canonical_hash(payload), reason,
+                invocation=exc.metadata, parser_status=exc.parser_status,
+                validation_status=exc.validation_status,
+                response_received=exc.response_received,
+                structured_content_status=exc.structured_content_status))
             return failed_record(
-                case_id, input_ref, canonical_hash(package), config,
-                _failure_detail(exc, config), package=package,
+                case_id, input_ref, input_hash, config, reason, package=package,
                 first_generation=first_generation, admissible=admissible, tfg=tfg,
                 invocations=[meta1, exc.metadata], pass_1_prompt_sha256=p1_hash,
                 pass_2_prompt_sha256=p2_hash, parser_status=exc.parser_status,
                 validation_status=exc.validation_status)
         except Exception as exc:
+            reason = _failure_detail(exc, config)
+            retain(rejected_output_diagnostic(
+                case_id, "pass_2", config, PASS_2_PROMPT_VERSION, p2_hash,
+                "stage-c-pass2-v1", pass2_schema, canonical_hash(payload), reason,
+                parser_status="not_run", validation_status="not_validated",
+                response_received=False, structured_content_status="unavailable"))
             return failed_record(
-                case_id, input_ref, canonical_hash(package), config,
-                _failure_detail(exc, config), package=package,
+                case_id, input_ref, input_hash, config, reason, package=package,
                 first_generation=first_generation, admissible=admissible, tfg=tfg,
                 invocations=[meta1, {}], pass_1_prompt_sha256=p1_hash,
                 pass_2_prompt_sha256=p2_hash, parser_status="not_run",
@@ -323,9 +428,15 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
         try:
             validate_pass2(pass2, admissible)
         except ValueError as exc:
+            reason = _failure_detail(exc, config)
+            retain(rejected_output_diagnostic(
+                case_id, "pass_2", config, PASS_2_PROMPT_VERSION, p2_hash,
+                "stage-c-pass2-v1", pass2_schema, canonical_hash(payload), reason,
+                invocation=meta2, parser_status="parsed", validation_status="failed",
+                response_received=True, structured_content_status="parsed",
+                parsed_payload=pass2))
             return failed_record(
-                case_id, input_ref, canonical_hash(package), config,
-                _failure_detail(exc, config), package=package,
+                case_id, input_ref, input_hash, config, reason, package=package,
                 first_generation=first_generation, admissible=admissible, tfg=tfg,
                 invocations=[meta1, meta2], pass_1_prompt_sha256=p1_hash,
                 pass_2_prompt_sha256=p2_hash, parser_status="parsed",
@@ -337,7 +448,7 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
     record = {
         "schema_version": SCHEMA_VERSION, "methodology_version": METHODOLOGY_VERSION,
         "extraction_version": EXTRACTION_VERSION, "record_status": "draft", "case_id": case_id,
-        "input": {"stage_b_model_view_ref": input_ref, "sha256": canonical_hash(package)},
+        "input": {"stage_b_model_view_ref": input_ref, "sha256": input_hash},
         "first_generation": first_generation,
         "temporal": {"tC": _tc(package), "tFG": tfg, "primary_repository_cutoff": "tFG"},
         "admissible_prior_turns": admissible,
@@ -353,7 +464,7 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
             "pass_1_prompt_version": PASS_1_PROMPT_VERSION,
             "pass_2_prompt_version": PASS_2_PROMPT_VERSION,
             "pass_1_prompt_sha256": p1_hash, "pass_2_prompt_sha256": p2_hash,
-            "input_sha256": canonical_hash(package), "invocations": [meta1, meta2],
+            "input_sha256": input_hash, "invocations": [meta1, meta2],
         },
         "scientific_status": {"eligibility_updated": False,
                               "post_stage_c_resolution_required": True},

@@ -33,4 +33,6 @@ Pass 2 prompt v2 preserves source modality. Diagnostic observations remain descr
 
 If an invoked Pass 2 result is rejected, the failed draft preserves available invocation and request provenance but emits no accepted C/S/V items from that result. Parsing and deterministic validation statuses remain separate.
 
+Pass 1 failures follow the same fail-closed rule. Parsed rejected Pass 1 or Pass 2 model output is written, when available, to a separate `stage_c_extraction_v4*.diagnostic.json` sidecar marked non-authoritative. Rejected values never populate the accepted family, boundary, `tFG`, or C/S/V fields. The sidecar retains only response and non-secret request provenance needed to reproduce and diagnose the failure.
+
 Existing output is never overwritten. Pre-correction v2 development records can be rebuilt without a model call using `migrate_family_id.py`; the v2 record remains unchanged and the migrated v3 record records its source hash and original model family value. Existing `stage_c_extraction_v3.json` development records remain immutable; revised prompt-v2 runs write `stage_c_extraction_v4.json` beside them. Stage C does not update scientific eligibility. Its result is consumed by the Post-Stage-C processability/eligibility workflow before Stage D.

@@ -341,6 +341,100 @@ class StageCTests(unittest.TestCase):
         self.assertEqual(record["verification_supplied"], [])
         validate_stage_c_record(record)
 
+    def _assert_rejected_pass1(self, record, diagnostic, parser_status,
+                               validation_status, *, parsed):
+        self.assertEqual(record["status"]["stage_c_status"], "failed")
+        self.assertEqual(record["status"]["parser_status"], parser_status)
+        self.assertEqual(record["status"]["validation_status"], validation_status)
+        self.assertEqual(record["first_generation"]["family_id"], "")
+        self.assertEqual(record["first_generation"]["boundary"], "unresolved")
+        self.assertEqual(record["temporal"]["tFG"]["status"], "unresolved")
+        self.assertEqual(record["context_supplied"], [])
+        self.assertEqual(record["specificity_supplied"], [])
+        self.assertEqual(record["verification_supplied"], [])
+        self.assertFalse(diagnostic["authoritative"])
+        self.assertEqual(diagnostic["disposition"], "rejected_model_output")
+        self.assertEqual(diagnostic["pass"], "pass_1")
+        self.assertEqual(diagnostic["parsing"]["parsed_payload_retained"], parsed)
+        self.assertFalse(diagnostic["validation"]["accepted"])
+        self.assertEqual(diagnostic["request_provenance"]["tools_enabled"], [])
+        self.assertEqual(diagnostic["request_provenance"]["prompt_version"],
+                         "dir-stage-c-first-generation-v2")
+        self.assertEqual(diagnostic["request_provenance"]["schema_version"],
+                         "stage-c-pass1-v2")
+        validate_stage_c_record(record)
+
+    def test_pass1_api_failure_preserves_non_authoritative_diagnostic(self):
+        metadata = {"response_id": "", "returned_model": "",
+                    "invocation_timestamp": "2026-09-30T00:00:00+00:00", "usage": {}}
+        failure = StageCInvocationFailure("API failed with secret", metadata,
+                                          parser_status="not_run",
+                                          validation_status="not_validated")
+        diagnostics = []
+        record = extract_stage_c(ROOT, CASE, package(), MockClient([failure]), CONFIG,
+                                 input_ref="input.json", diagnostics=diagnostics)
+        self._assert_rejected_pass1(record, diagnostics[0], "not_run", "not_validated",
+                                    parsed=False)
+        self.assertFalse(diagnostics[0]["response_provenance"]["response_received"])
+        self.assertNotIn("secret", json.dumps([record, diagnostics]))
+
+    def test_pass1_malformed_response_preserves_response_provenance(self):
+        metadata = {"response_id": "response-1", "returned_model": "gpt-5.6-sol",
+                    "invocation_timestamp": "2026-09-30T00:00:00+00:00", "usage": {}}
+        failure = StageCInvocationFailure(
+            "malformed", metadata, parser_status="malformed",
+            validation_status="not_validated", response_received=True,
+            structured_content_status="malformed")
+        diagnostics = []
+        record = extract_stage_c(ROOT, CASE, package(), MockClient([failure]), CONFIG,
+                                 input_ref="input.json", diagnostics=diagnostics)
+        self._assert_rejected_pass1(record, diagnostics[0], "malformed", "not_validated",
+                                    parsed=False)
+        self.assertTrue(diagnostics[0]["response_provenance"]["response_received"])
+        self.assertEqual(diagnostics[0]["response_provenance"]["invocation"], metadata)
+
+    def test_pass1_parsed_structural_failure_retains_rejected_payload(self):
+        diagnostics = []
+        rejected = {"status": "complete"}
+        record = extract_stage_c(ROOT, CASE, package(), MockClient([rejected]), CONFIG,
+                                 input_ref="input.json", diagnostics=diagnostics)
+        self._assert_rejected_pass1(record, diagnostics[0], "parsed", "failed", parsed=True)
+        self.assertEqual(diagnostics[0]["rejected_parsed_payload"], rejected)
+
+    def test_pass1_cross_response_artifact_is_rejected_and_retained(self):
+        pkg = package()
+        later = {**pkg["artifact_candidates"][0],
+                 "artifact_id": "ARTIFACT_000001_001",
+                 "source_response_id": "turn_000001", "response_event_index": 1,
+                 "source_record_index": 1}
+        pkg["artifact_candidates"].append(later)
+        rejected = pass1(pkg, artifact_ids=[later["artifact_id"]],
+                         candidate_artifact_ids=[later["artifact_id"]])
+        diagnostics = []
+        record = extract_stage_c(ROOT, CASE, pkg, MockClient([rejected]), CONFIG,
+                                 input_ref="input.json", diagnostics=diagnostics)
+        self._assert_rejected_pass1(record, diagnostics[0], "parsed", "failed", parsed=True)
+        self.assertIn("does not belong", record["status"]["failure_reason"])
+        self.assertEqual(diagnostics[0]["rejected_parsed_payload"], rejected)
+
+    def test_pass1_invalid_target_and_artifact_id_are_rejected_and_retained(self):
+        pkg = package()
+        for rejected in (pass1(pkg, target_prompt_id="turn_000000"),
+                         pass1(pkg, artifact_ids=["missing-artifact"])):
+            diagnostics = []
+            record = extract_stage_c(ROOT, CASE, pkg, MockClient([rejected]), CONFIG,
+                                     input_ref="input.json", diagnostics=diagnostics)
+            self._assert_rejected_pass1(record, diagnostics[0], "parsed", "failed",
+                                        parsed=True)
+            self.assertEqual(diagnostics[0]["rejected_parsed_payload"], rejected)
+
+    def test_successful_pass1_emits_no_rejected_diagnostic(self):
+        pkg = package(); diagnostics = []
+        record = extract_stage_c(ROOT, CASE, pkg, MockClient([pass1(pkg), pass2()]), CONFIG,
+                                 input_ref="input.json", diagnostics=diagnostics)
+        self.assertEqual(record["status"]["stage_c_status"], "complete")
+        self.assertEqual(diagnostics, [])
+
     def test_pass2_api_failure_preserves_invocation_provenance(self):
         metadata = {"response_id": "", "returned_model": "",
                     "invocation_timestamp": "2026-09-30T00:01:00+00:00", "usage": {}}
@@ -378,10 +472,14 @@ class StageCTests(unittest.TestCase):
         invalid = pass2()
         invalid["verification_supplied"][0]["source_turns"] = []
         invalid["verification_supplied"][0]["source_roles"] = []
+        diagnostics = []
         record = extract_stage_c(ROOT, CASE, pkg, MockClient([pass1(pkg), invalid]),
-                                 CONFIG, input_ref="input.json")
+                                 CONFIG, input_ref="input.json", diagnostics=diagnostics)
         self._assert_rejected_pass2(record, "parsed", "failed")
         self.assertIn("provenance is incomplete", record["status"]["failure_reason"])
+        self.assertEqual(diagnostics[0]["pass"], "pass_2")
+        self.assertFalse(diagnostics[0]["authoritative"])
+        self.assertEqual(diagnostics[0]["rejected_parsed_payload"], invalid)
 
     def test_responses_api_adapter_is_independent_structured_and_tool_free(self):
         calls = []

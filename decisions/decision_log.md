@@ -304,3 +304,10 @@ Suggested fields:
 - **Rationale/evidence:** The `CASE_193801513E85` v4 development run correctly rejected an item with incomplete provenance, but the generic failure record then erased the known Pass 1/Pass 2 invocation configuration and could not satisfy the extraction/prompt-version consistency check.
 - **Impact:** Successful extraction validation and item provenance requirements are unchanged. This is a failure-record construction correction within the existing `conversation-draft-v3` shape; it neither accepts the rejected model payload nor changes Stage C methodology.
 - **Owner:** Study team. **Status:** Adopted as an engineering correction during the Stage C development pilot.
+
+## 2026-09-30 — Preserve rejected Stage C model proposals outside authoritative fields
+
+- **Decision:** Generalize failure provenance to Pass 1 and Pass 2. Preserve available invocation/response metadata in the failed draft and retain a parsed rejected proposal only in a separate `stage-c-rejected-output-v1` diagnostic sidecar marked non-authoritative. Never copy rejected family, response, target, boundary, temporal, or C/S/V values into authoritative extraction fields.
+- **Rationale/evidence:** `CASE_C482978A9FE9` correctly failed because a selected artifact did not belong to the selected response, but the generic Pass 1 failure path discarded the parsed proposal and provider provenance needed to diagnose the model output.
+- **Impact:** The scientific `conversation-draft-v3` contract, prompts, extraction version, temporal method, and fail-closed validators remain unchanged. Diagnostics contain no credentials or complete request objects and are ignored generated development artifacts.
+- **Owner:** Study team. **Status:** Adopted as an execution/provenance correction.

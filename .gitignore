@@ -246,6 +246,7 @@ cases/conversations/*/stage_c_extraction.json
 cases/conversations/*/stage_c_extraction_v3.json
 cases/conversations/*/stage_c_extraction_v4.json
 cases/conversations/*/stage_c_extraction_v4_*.json
+cases/conversations/*/stage_c_extraction_v4*.diagnostic.json
 
 
 /data/raw/allPullRequestSharings/
