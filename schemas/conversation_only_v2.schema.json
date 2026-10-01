@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://developer-intent-reconstruction.local/schemas/conversation_only_v2.schema.json",
+  "title": "Stage B conversation-only-v2 model view",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "package_version", "candidate_producer_version", "methodology_version", "case_id",
+    "start", "precision", "temporal_status", "temporal_source",
+    "source_conversation_sha256", "visible_turns", "generated_technical_content_candidates",
+    "records", "complete", "reconstruction_safe"
+  ],
+  "properties": {
+    "package_version": {"const": "conversation-only-v2"},
+    "candidate_producer_version": {"const": "generated-technical-content-v2"},
+    "methodology_version": {"const": "dir-tfg-v2"},
+    "case_id": {"type": "string", "pattern": "^CASE_[0-9A-F]{12}$"},
+    "start": {"type": "string"},
+    "precision": {"type": "string"},
+    "temporal_status": {"type": "string"},
+    "temporal_source": {"type": "string"},
+    "source_conversation_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "visible_turns": {"type": "array", "minItems": 1, "items": {"type": "object"}},
+    "generated_technical_content_candidates": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/candidate"}
+    },
+    "records": {"type": "array"},
+    "complete": {"const": true},
+    "reconstruction_safe": {"const": false}
+  },
+  "$defs": {
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "candidate_id", "legacy_artifact_id", "kind", "container", "source_response_id",
+        "source_event_index", "source_record_index", "order_within_response", "start_offset",
+        "end_offset", "raw_text", "raw_text_sha256", "source_turn_text_sha256", "detector",
+        "detector_evidence", "completeness", "continuation_status", "fence_language", "status"
+      ],
+      "properties": {
+        "candidate_id": {"type": "string", "pattern": "^GTC_[0-9]{6}_[0-9]{6}_[0-9]{6}_[0-9a-f]{16}$"},
+        "legacy_artifact_id": {"type": ["string", "null"], "pattern": "^ARTIFACT_[0-9]{6}_[0-9]{3}$"},
+        "kind": {"enum": ["source_code", "structured_xml_markup", "shell_sequence", "configuration_properties", "structured_json", "unclassified_technical"]},
+        "container": {"enum": ["markdown_fence", "none"]},
+        "source_response_id": {"type": "string", "minLength": 1},
+        "source_event_index": {"type": "integer", "minimum": 0},
+        "source_record_index": {"type": "integer", "minimum": 0},
+        "order_within_response": {"type": "integer", "minimum": 1},
+        "start_offset": {"type": "integer", "minimum": 0},
+        "end_offset": {"type": "integer", "minimum": 1},
+        "raw_text": {"type": "string", "minLength": 1},
+        "raw_text_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "source_turn_text_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "detector": {
+          "type": "object", "additionalProperties": false,
+          "required": ["name", "version"],
+          "properties": {
+            "name": {"const": "generated-technical-content-v2"},
+            "version": {"const": "2"}
+          }
+        },
+        "detector_evidence": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "completeness": {"enum": ["complete", "fragment", "open_ended"]},
+        "continuation_status": {"enum": ["none", "begins_mid_structure", "ends_mid_structure", "both"]},
+        "fence_language": {"type": ["string", "null"]},
+        "status": {"const": "candidate_requires_semantic_review"}
+      }
+    }
+  }
+}

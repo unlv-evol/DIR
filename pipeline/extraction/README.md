@@ -60,4 +60,16 @@ cases/conversations/<case_id>/stage_c_model_view.json
 cases/conversations/<case_id>/package_status.json
 ```
 
+The first V2 implementation builds a coexisting `conversation-only-v2` view from the unchanged normalized conversation. It never overwrites `stage_c_model_view.json` (V1). For controlled offline review, write only to a noncanonical destination:
+
+```bash
+python3 pipeline/extraction/build_v2.py \
+  --case-id CASE_XXXXXXXXXXXX \
+  --output-dir /tmp/dir-stage-b-v2
+```
+
+The output filename is `stage_c_model_view_v2.json`. Its `generated-technical-content-v2` candidates use uniform `GTC_*` identifiers and exact turn spans. Declarative resources and explicit incomplete fragments may be candidates; candidate status does not establish Stage C scientific selection. A nullable `legacy_artifact_id` records exact V1 equivalence. Full-corpus V2 materialization requires a separate checkpoint.
+
+V2 detection is deterministic and ordered: complete standalone Markdown fences, incomplete valid fences, XML/HTML/SVG/resources, bounded JSON within a fence, shell, configuration, then source code. Fence delimiters may have arbitrary horizontal indentation but must occupy a standalone line; complete pairs require the identical indentation string within one response. XML qualification requires markup-dominated content (at least 60% of nonblank lines) plus nested structure, two paired/self-closing elements, repeated Android strings, or recognized software markup; a trailing partial element is retained as a fragment. Unfenced source code requires at least three nonblank lines, at least two independent syntax-feature groups, and code-like syntax on at least 60% of lines. Shell requires two standalone recognized commands, or one with a strong operator/redirection/continuation or environment-assignment execution. Configuration requires two uppercase environment assignments, two dotted properties, or an INI section with an assignment. Standalone heuristic JSON and YAML discovery are disabled. Overlapping lower-precedence matches within a bounded fence do not create duplicates.
+
 Inspect `package_status.json` first. `complete` is written last, only after checksum, ordering, provenance, and model-view isolation checks pass. Retrieval/normalization failures retain only available diagnostic outputs and a non-complete status. An absent status file indicates interrupted persistence. Source archive and normalized conversation are not reconstruction-safe. The linkage file must never be passed to Stage C. Generated files are ignored by Git by default; review them before any data-management decision.

@@ -25,6 +25,8 @@ def main() -> None:
                         help="Print non-secret effective configuration; make no API call")
     parser.add_argument("--development-run-id",
                         help="Optional lowercase retry/run suffix; does not change extraction version")
+    parser.add_argument("--input-version", choices=("v1", "v2"), default="v1",
+                        help="Select immutable V1 input or coexisting V2 candidate input")
     args = parser.parse_args()
     config = load_stage_c_config(ROOT)
     if args.check_config:
@@ -36,13 +38,15 @@ def main() -> None:
         parser.error("Stage C model configuration is invalid or DIR_STAGE_C_MODEL is missing")
     if not config.api_key:
         parser.error("OPENAI_API_KEY is missing")
-    input_path = ROOT / "cases/conversations" / args.case_id / "stage_c_model_view.json"
+    input_name = "stage_c_model_view_v2.json" if args.input_version == "v2" else "stage_c_model_view.json"
+    input_path = ROOT / "cases/conversations" / args.case_id / input_name
     if args.development_run_id and not re.fullmatch(r"[a-z0-9]+(?:_[a-z0-9]+)*",
                                                     args.development_run_id):
         parser.error("--development-run-id must contain lowercase letters, digits, and underscores")
     suffix = f"_{args.development_run_id}" if args.development_run_id else ""
+    output_version = "v5" if args.input_version == "v2" else "v4"
     output_path = (ROOT / "cases/conversations" / args.case_id
-                   / f"stage_c_extraction_v4{suffix}.json")
+                   / f"stage_c_extraction_{output_version}{suffix}.json")
     if output_path.exists():
         parser.error(f"Stage C output exists; no overwrite: {output_path}")
     try:
@@ -58,8 +62,11 @@ def main() -> None:
         detail = f"{type(exc).__name__}: {exc}"
         if config.api_key:
             detail = detail.replace(config.api_key, "[REDACTED]")
+        version_kwargs = ({"extraction_version": "conversation-extraction-v5",
+                           "pass_1_prompt_version": "dir-stage-c-first-generation-v4"}
+                          if args.input_version == "v2" else {})
         record = failed_record(args.case_id, input_ref, canonical_hash(package), config,
-                               detail, package=package)
+                               detail, package=package, **version_kwargs)
     persist_stage_c(output_path, record)
     if diagnostics:
         diagnostic_path = output_path.with_suffix(".diagnostic.json")

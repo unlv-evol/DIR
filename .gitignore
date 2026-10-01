@@ -241,9 +241,12 @@ cases/manifests/stage_a_correspondence_review.csv
 cases/raw/*/conversation_source_archive.json
 cases/conversations/*/normalized_conversation.json
 cases/conversations/*/stage_c_model_view.json
+cases/conversations/*/stage_c_model_view_v2.json
 cases/conversations/*/package_status.json
 cases/conversations/*/stage_c_extraction.json
 cases/conversations/*/stage_c_extraction_v3.json
+cases/conversations/*/stage_c_extraction_v5.json
+cases/conversations/*/stage_c_extraction_v5_*.json
 cases/conversations/*/stage_c_extraction_v4.json
 cases/conversations/*/stage_c_extraction_v4_*.json
 cases/conversations/*/stage_c_extraction_v4*.diagnostic.json

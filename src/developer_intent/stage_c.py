@@ -14,17 +14,25 @@ from typing import Any
 
 from .screening_chatgpt import _date_value
 from .stage_c_config import StageCModelConfig
+from .generated_technical_content import validate_v2_model_view
 
 METHODOLOGY_VERSION = "dir-tfg-v2"
 SCHEMA_VERSION = "conversation-draft-v3"
 EXTRACTION_VERSION = "conversation-extraction-v4"
 PREVIOUS_EXTRACTION_VERSION = "conversation-extraction-v3"
 PASS_1_PROMPT_VERSION = "dir-stage-c-first-generation-v3"
+V2_EXTRACTION_VERSION = "conversation-extraction-v5"
+V2_PASS_1_PROMPT_VERSION = "dir-stage-c-first-generation-v4"
 PASS_2_PROMPT_VERSION = "dir-stage-c-csv-extraction-v2"
 PACKAGE_KEYS = {"package_version", "methodology_version", "case_id", "start", "precision",
                 "temporal_status", "temporal_source", "source_conversation_sha256",
                 "visible_turns", "artifact_candidates", "records", "complete",
                 "reconstruction_safe"}
+V2_PACKAGE_KEYS = {"package_version", "candidate_producer_version", "methodology_version",
+                   "case_id", "start", "precision", "temporal_status", "temporal_source",
+                   "source_conversation_sha256", "visible_turns",
+                   "generated_technical_content_candidates", "records", "complete",
+                   "reconstruction_safe"}
 FORBIDDEN_KEYS = {"pr_url", "repository", "Outcome_Class", "eligible", "eligibility_status",
                   "final_diff", "integrated_implementation"}
 CATEGORIES = ("context", "specificity", "verification")
@@ -56,19 +64,23 @@ def deterministic_family_identity(case_id: str, selected_artifacts: list[dict]) 
     """Derive globally unique identity from one validated, canonically ordered artifact set."""
     if not isinstance(case_id, str) or not CASE_ID.fullmatch(case_id) or not selected_artifacts:
         raise ValueError("Family identity requires a case and validated selected artifacts")
-    required = ("artifact_id", "response_event_index", "order_within_response")
+    def identity(item: dict) -> str:
+        return item.get("artifact_id", item.get("candidate_id", ""))
+
+    def event(item: dict) -> Any:
+        return item.get("response_event_index", item.get("source_event_index"))
+
+    required = ("order_within_response",)
     if any(not isinstance(item, dict) or not all(key in item for key in required)
-           or not isinstance(item["artifact_id"], str) or not item["artifact_id"]
-           or not isinstance(item["response_event_index"], int)
-           or item["response_event_index"] < 0
+           or not isinstance(identity(item), str) or not identity(item)
+           or not isinstance(event(item), int) or event(item) < 0
            or not isinstance(item["order_within_response"], int)
            or item["order_within_response"] < 1
            for item in selected_artifacts):
         raise ValueError("Family identity cannot use malformed artifact references")
     ordered = sorted(selected_artifacts,
-                     key=lambda item: (item["response_event_index"],
-                                       item["order_within_response"], item["artifact_id"]))
-    artifact_ids = [item["artifact_id"] for item in ordered]
+                     key=lambda item: (event(item), item["order_within_response"], identity(item)))
+    artifact_ids = [identity(item) for item in ordered]
     if len(set(artifact_ids)) != len(artifact_ids):
         raise ValueError("Family identity cannot use duplicate artifact references")
     canonical_value = {"artifact_ids": artifact_ids, "case_id": case_id}
@@ -93,10 +105,14 @@ def load_prompt(root: Path, relative: str) -> tuple[str, str]:
 
 
 def validate_model_view(package: dict, case_id: str) -> None:
-    if (set(package) != PACKAGE_KEYS or package.get("package_version") != "conversation-only-v1"
+    version = package.get("package_version")
+    expected_keys = PACKAGE_KEYS if version == "conversation-only-v1" else V2_PACKAGE_KEYS
+    if (set(package) != expected_keys or version not in {"conversation-only-v1", "conversation-only-v2"}
             or package.get("methodology_version") != METHODOLOGY_VERSION
             or package.get("case_id") != case_id or package.get("complete") is not True):
         raise ValueError("Stage C requires one complete dir-tfg-v2 Stage B model view")
+    if version == "conversation-only-v2":
+        validate_v2_model_view(package)
     text = json.dumps(package, ensure_ascii=False)
     if any(key in package for key in FORBIDDEN_KEYS) or any(f'"{key}"' in text for key in FORBIDDEN_KEYS):
         raise ValueError("Stage C input contains prohibited administrative or repository data")
@@ -144,7 +160,12 @@ def resolve_first_generation(package: dict, selection: dict) -> tuple[dict, list
               "rationale": selection["rationale"], "ambiguity_reason": selection["ambiguity_reason"]}
         return fg, [], unresolved_tfg
     turns = {turn["turn_id"]: turn for turn in package["visible_turns"]}
-    artifacts = {item["artifact_id"]: item for item in package["artifact_candidates"]}
+    v2 = package.get("package_version") == "conversation-only-v2"
+    candidate_key = "candidate_id" if v2 else "artifact_id"
+    event_key = "source_event_index" if v2 else "response_event_index"
+    candidates_key = ("generated_technical_content_candidates" if v2 else
+                      "artifact_candidates")
+    artifacts = {item[candidate_key]: item for item in package[candidates_key]}
     if any(artifact_id not in artifacts for artifact_id in selection["candidate_artifact_ids"]):
         raise ValueError("Pass 1 cited an unknown candidate artifact")
     response = turns.get(selection["response_turn_id"])
@@ -160,9 +181,9 @@ def resolve_first_generation(package: dict, selection: dict) -> tuple[dict, list
             raise ValueError("Pass 1 artifact does not belong to selected response")
         selected.append(artifact)
     family_id, family_id_provenance = deterministic_family_identity(package["case_id"], selected)
-    selected = sorted(selected, key=lambda item: (item["response_event_index"],
+    selected = sorted(selected, key=lambda item: (item[event_key],
                                                    item["order_within_response"],
-                                                   item["artifact_id"]))
+                                                   item[candidate_key]))
     prior_users = [turn for turn in package["visible_turns"]
                    if turn["event_index"] < response["event_index"] and turn["role"] == "user"]
     if not prior_users or prior_users[-1]["turn_id"] != target["turn_id"]:
@@ -178,7 +199,7 @@ def resolve_first_generation(package: dict, selection: dict) -> tuple[dict, list
     fg = {"status": "complete", "family_id": family_id,
           "family_label": selection["family_label"],
           "family_id_provenance": family_id_provenance,
-          "artifact_refs": [item["artifact_id"] for item in selected],
+          "artifact_refs": [item[candidate_key] for item in selected],
           "response_turn_id": response["turn_id"], "response_event_index": response["event_index"],
           "target_prompt_id": target["turn_id"], "target_prompt_event_index": target["event_index"],
           "boundary": f"exclusive_before:{response['turn_id']}",
@@ -336,11 +357,18 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
                     config: StageCModelConfig, *, input_ref: str,
                     diagnostics: list[dict] | None = None) -> dict:
     validate_model_view(package, case_id)
-    p1_prompt, p1_hash = load_prompt(root, "prompts/stage_c/first_generation_v3.md")
+    v2_input = package["package_version"] == "conversation-only-v2"
+    extraction_version = V2_EXTRACTION_VERSION if v2_input else EXTRACTION_VERSION
+    pass_1_prompt_version = V2_PASS_1_PROMPT_VERSION if v2_input else PASS_1_PROMPT_VERSION
+    pass_1_prompt_path = ("prompts/stage_c/first_generation_v4.md" if v2_input else
+                          "prompts/stage_c/first_generation_v3.md")
+    p1_prompt, p1_hash = load_prompt(root, pass_1_prompt_path)
     p2_prompt, p2_hash = load_prompt(root, "prompts/stage_c/csv_extraction_v2.md")
     pass1_schema = load_contract(root, "stage_c_pass1_v2.schema.json")
     pass2_schema = load_contract(root, "stage_c_pass2_v1.schema.json")
     input_hash = canonical_hash(package)
+    failure_versions = {"extraction_version": extraction_version,
+                        "pass_1_prompt_version": pass_1_prompt_version}
 
     def retain(diagnostic: dict) -> None:
         if diagnostics is not None:
@@ -352,7 +380,7 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
     except StageCInvocationFailure as exc:
         reason = _failure_detail(exc, config)
         retain(rejected_output_diagnostic(
-            case_id, "pass_1", config, PASS_1_PROMPT_VERSION, p1_hash,
+            case_id, "pass_1", config, pass_1_prompt_version, p1_hash,
             "stage-c-pass1-v2", pass1_schema, input_hash, reason,
             invocation=exc.metadata, parser_status=exc.parser_status,
             validation_status=exc.validation_status,
@@ -362,11 +390,11 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
             case_id, input_ref, input_hash, config, reason, package=package,
             invocations=[exc.metadata], pass_1_prompt_sha256=p1_hash,
             pass_2_prompt_sha256=p2_hash, parser_status=exc.parser_status,
-            validation_status=exc.validation_status)
+            validation_status=exc.validation_status, **failure_versions)
     except Exception as exc:
         reason = _failure_detail(exc, config)
         retain(rejected_output_diagnostic(
-            case_id, "pass_1", config, PASS_1_PROMPT_VERSION, p1_hash,
+            case_id, "pass_1", config, pass_1_prompt_version, p1_hash,
             "stage-c-pass1-v2", pass1_schema, input_hash, reason,
             parser_status="not_run", validation_status="not_validated",
             response_received=False, structured_content_status="unavailable"))
@@ -374,14 +402,14 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
             case_id, input_ref, input_hash, config, reason, package=package,
             invocations=[{}], pass_1_prompt_sha256=p1_hash,
             pass_2_prompt_sha256=p2_hash, parser_status="not_run",
-            validation_status="not_validated")
+            validation_status="not_validated", **failure_versions)
     try:
         validate_pass1(pass1)
         first_generation, admissible, tfg = resolve_first_generation(package, pass1)
     except ValueError as exc:
         reason = _failure_detail(exc, config)
         retain(rejected_output_diagnostic(
-            case_id, "pass_1", config, PASS_1_PROMPT_VERSION, p1_hash,
+            case_id, "pass_1", config, pass_1_prompt_version, p1_hash,
             "stage-c-pass1-v2", pass1_schema, input_hash, reason,
             invocation=meta1, parser_status="parsed", validation_status="failed",
             response_received=True, structured_content_status="parsed",
@@ -390,7 +418,7 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
             case_id, input_ref, input_hash, config, reason, package=package,
             invocations=[meta1], pass_1_prompt_sha256=p1_hash,
             pass_2_prompt_sha256=p2_hash, parser_status="parsed",
-            validation_status="failed")
+            validation_status="failed", **failure_versions)
     pass2 = {"status": "not_run", "context_supplied": [], "specificity_supplied": [],
              "verification_supplied": [], "failure_reason": "first_generation_not_complete"}
     meta2: dict = {}
@@ -413,7 +441,7 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
                 first_generation=first_generation, admissible=admissible, tfg=tfg,
                 invocations=[meta1, exc.metadata], pass_1_prompt_sha256=p1_hash,
                 pass_2_prompt_sha256=p2_hash, parser_status=exc.parser_status,
-                validation_status=exc.validation_status)
+                validation_status=exc.validation_status, **failure_versions)
         except Exception as exc:
             reason = _failure_detail(exc, config)
             retain(rejected_output_diagnostic(
@@ -426,7 +454,7 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
                 first_generation=first_generation, admissible=admissible, tfg=tfg,
                 invocations=[meta1, {}], pass_1_prompt_sha256=p1_hash,
                 pass_2_prompt_sha256=p2_hash, parser_status="not_run",
-                validation_status="not_validated")
+                validation_status="not_validated", **failure_versions)
         try:
             validate_pass2(pass2, admissible)
         except ValueError as exc:
@@ -442,14 +470,14 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
                 first_generation=first_generation, admissible=admissible, tfg=tfg,
                 invocations=[meta1, meta2], pass_1_prompt_sha256=p1_hash,
                 pass_2_prompt_sha256=p2_hash, parser_status="parsed",
-                validation_status="failed")
+                validation_status="failed", **failure_versions)
     final_status = ("complete" if first_generation["status"] == "complete"
                     and pass2["status"] == "complete" and tfg["value"] else
                     first_generation["status"] if first_generation["status"] != "complete"
                     else "unresolved")
     record = {
         "schema_version": SCHEMA_VERSION, "methodology_version": METHODOLOGY_VERSION,
-        "extraction_version": EXTRACTION_VERSION, "record_status": "draft", "case_id": case_id,
+        "extraction_version": extraction_version, "record_status": "draft", "case_id": case_id,
         "input": {"stage_b_model_view_ref": input_ref, "sha256": input_hash},
         "first_generation": first_generation,
         "temporal": {"tC": _tc(package), "tFG": tfg, "primary_repository_cutoff": "tFG"},
@@ -464,7 +492,7 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
             "sdk_max_retries": config.max_retries,
             "tools_enabled": [], "structured_outputs": True,
             "structured_output_schema_versions": ["stage-c-pass1-v2", "stage-c-pass2-v1"],
-            "pass_1_prompt_version": PASS_1_PROMPT_VERSION,
+            "pass_1_prompt_version": pass_1_prompt_version,
             "pass_2_prompt_version": PASS_2_PROMPT_VERSION,
             "pass_1_prompt_sha256": p1_hash, "pass_2_prompt_sha256": p2_hash,
             "input_sha256": input_hash, "invocations": [meta1, meta2],
@@ -489,7 +517,8 @@ def validate_stage_c_record(record: dict) -> None:
     if (record["schema_version"] != SCHEMA_VERSION
             or record["methodology_version"] != METHODOLOGY_VERSION
             or record["extraction_version"] not in {PREVIOUS_EXTRACTION_VERSION,
-                                                     EXTRACTION_VERSION}
+                                                     EXTRACTION_VERSION,
+                                                     V2_EXTRACTION_VERSION}
             or record["record_status"] != "draft"
             or record["temporal"]["primary_repository_cutoff"] != "tFG"
             or record["scientific_status"] != {"eligibility_updated": False,
@@ -500,6 +529,12 @@ def validate_stage_c_record(record: dict) -> None:
                       else PASS_2_PROMPT_VERSION)
     if record.get("model_provenance", {}).get("pass_2_prompt_version") != expected_pass2:
         raise ValueError("Stage C extraction and Pass 2 prompt versions disagree")
+    expected_pass1 = ({V2_EXTRACTION_VERSION: V2_PASS_1_PROMPT_VERSION,
+                       EXTRACTION_VERSION: PASS_1_PROMPT_VERSION}.get(
+                           record["extraction_version"]))
+    if (expected_pass1 is not None
+            and record.get("model_provenance", {}).get("pass_1_prompt_version") != expected_pass1):
+        raise ValueError("Stage C extraction and Pass 1 prompt versions disagree")
     validate_pass2({"status": "complete", "failure_reason": "",
                     "context_supplied": record["context_supplied"],
                     "specificity_supplied": record["specificity_supplied"],
@@ -590,7 +625,9 @@ def failed_record(case_id: str, input_ref: str, input_hash: str,
                   tfg: dict | None = None, invocations: list[dict] | None = None,
                   pass_1_prompt_sha256: str = "", pass_2_prompt_sha256: str = "",
                   parser_status: str = "not_run",
-                  validation_status: str = "not_validated") -> dict:
+                  validation_status: str = "not_validated",
+                  extraction_version: str = EXTRACTION_VERSION,
+                  pass_1_prompt_version: str = PASS_1_PROMPT_VERSION) -> dict:
     anchor = {"value": "", "precision": "", "status": "unresolved", "source": "unresolved",
               "derivation_rule": "exclusive_before_selected_response"}
     failed_fg = {"status": "failed", "family_id": "", "artifact_refs": [],
@@ -600,7 +637,7 @@ def failed_record(case_id: str, input_ref: str, input_hash: str,
                  "boundary": "unresolved", "candidate_artifact_ids": [],
                  "rationale": "", "ambiguity_reason": reason}
     record = {"schema_version": SCHEMA_VERSION, "methodology_version": METHODOLOGY_VERSION,
-            "extraction_version": EXTRACTION_VERSION, "record_status": "draft", "case_id": case_id,
+            "extraction_version": extraction_version, "record_status": "draft", "case_id": case_id,
             "input": {"stage_b_model_view_ref": input_ref, "sha256": input_hash},
             "first_generation": deepcopy(first_generation) if first_generation else failed_fg,
             "temporal": {"tC": _tc(package) if package else dict(anchor),
@@ -617,7 +654,7 @@ def failed_record(case_id: str, input_ref: str, input_hash: str,
                 "sdk_max_retries": config.max_retries,
                 "structured_outputs": True,
                 "structured_output_schema_versions": ["stage-c-pass1-v2", "stage-c-pass2-v1"],
-                "pass_1_prompt_version": PASS_1_PROMPT_VERSION,
+                "pass_1_prompt_version": pass_1_prompt_version,
                 "pass_2_prompt_version": PASS_2_PROMPT_VERSION,
                 "pass_1_prompt_sha256": pass_1_prompt_sha256,
                 "pass_2_prompt_sha256": pass_2_prompt_sha256,
