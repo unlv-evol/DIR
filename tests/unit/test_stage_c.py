@@ -21,6 +21,7 @@ from developer_intent.stage_c import (OpenAIStageCClient, StageCInvocationFailur
                                       validate_pass1, validate_pass2,
                                       validate_stage_c_record)
 from developer_intent.stage_c_config import StageCModelConfig, load_stage_c_config  # noqa: E402
+from pipeline.stage_c.run import stage_c_paths  # noqa: E402
 
 CASE = "CASE_ABCDEF123456"
 
@@ -424,6 +425,7 @@ class StageCTests(unittest.TestCase):
         self.assertEqual(diagnostic["request_provenance"]["sdk_max_retries"], 2)
         self.assertEqual(diagnostic["request_provenance"]["prompt_version"],
                          "dir-stage-c-first-generation-v3")
+        self.assertEqual(diagnostic["extraction_version"], "conversation-extraction-v4")
         self.assertEqual(diagnostic["request_provenance"]["schema_version"],
                          "stage-c-pass1-v2")
         validate_stage_c_record(record)
@@ -599,6 +601,25 @@ class StageCTests(unittest.TestCase):
         self.assertTrue(configured.live_permitted)
         self.assertNotIn("sk-hidden", configured.safe_report())
 
+    def test_safe_report_is_version_contract_aware(self):
+        for version, package_version, prompt_version, extraction_version, output in (
+                ("v1", "conversation-only-v1", "dir-stage-c-first-generation-v3",
+                 "conversation-extraction-v4", "v4"),
+                ("v2", "conversation-only-v2", "dir-stage-c-first-generation-v4",
+                 "conversation-extraction-v5", "v5")):
+            with self.subTest(version=version):
+                report = CONFIG.safe_report(version)
+                for expected in (f"Input version: {version}",
+                                 f"Input package: {package_version}",
+                                 f"Pass 1 prompt version: {prompt_version}",
+                                 f"Extraction version: {extraction_version}",
+                                 f"Output contract: {output}",
+                                 "Configured model: gpt-5.6-sol",
+                                 "Reasoning effort: medium",
+                                 "OpenAI SDK max retries: 2",
+                                 "Model tools: disabled"):
+                    self.assertIn(expected, report)
+
     def test_sdk_retry_configuration_accepts_only_bounded_integers(self):
         for value in (0, 1, 2, 5):
             config = load_stage_c_config(
@@ -613,16 +634,36 @@ class StageCTests(unittest.TestCase):
                     environ={"DIR_STAGE_C_MODEL": "gpt-5.6-sol",
                              "DIR_STAGE_C_MAX_RETRIES": value})
 
-    def test_check_config_makes_no_api_call_and_redacts(self):
-        result = subprocess.run([sys.executable, "pipeline/stage_c/run.py", "--check-config"],
-                                cwd=ROOT, check=True, capture_output=True, text=True,
-                                env={"PATH": str(Path(sys.executable).parent),
-                                     "DIR_STAGE_C_MODEL": "gpt-5.6-sol",
-                                     "DIR_STAGE_C_MAX_RETRIES": "2",
-                                     "OPENAI_API_KEY": "sk-never-print"})
-        self.assertIn("Configured model: gpt-5.6-sol", result.stdout)
-        self.assertIn("OpenAI SDK max retries: 2", result.stdout)
-        self.assertNotIn("sk-never-print", result.stdout)
+    def test_check_config_makes_no_api_call_and_reports_selected_contract(self):
+        expected = {"v1": ("conversation-only-v1", "dir-stage-c-first-generation-v3",
+                           "conversation-extraction-v4"),
+                    "v2": ("conversation-only-v2", "dir-stage-c-first-generation-v4",
+                           "conversation-extraction-v5")}
+        for version, values in expected.items():
+            result = subprocess.run(
+                [sys.executable, "pipeline/stage_c/run.py", "--check-config",
+                 "--input-version", version], cwd=ROOT, check=True,
+                capture_output=True, text=True,
+                env={"PATH": str(Path(sys.executable).parent),
+                     "DIR_STAGE_C_MODEL": "gpt-5.6-sol",
+                     "DIR_STAGE_C_MAX_RETRIES": "2",
+                     "OPENAI_API_KEY": "sk-never-print"})
+            for value in values:
+                self.assertIn(value, result.stdout)
+            self.assertIn("Configured model: gpt-5.6-sol", result.stdout)
+            self.assertIn("OpenAI SDK max retries: 2", result.stdout)
+            self.assertNotIn("sk-never-print", result.stdout)
+
+    def test_runner_paths_separate_v1_v2_and_development_outputs(self):
+        v1_input, v1_output = stage_c_paths(ROOT, CASE, "v1")
+        v2_input, v2_output = stage_c_paths(ROOT, CASE, "v2")
+        _, v2_retry = stage_c_paths(ROOT, CASE, "v2", "wave_1")
+        self.assertEqual(v1_input.name, "stage_c_model_view.json")
+        self.assertEqual(v2_input.name, "stage_c_model_view_v2.json")
+        self.assertEqual(v1_output.name, "stage_c_extraction_v4.json")
+        self.assertEqual(v2_output.name, "stage_c_extraction_v5.json")
+        self.assertEqual(v2_retry.name, "stage_c_extraction_v5_wave_1.json")
+        self.assertNotEqual(v1_output, v2_output)
 
     def test_final_validation_and_atomic_no_overwrite(self):
         pkg = package(); record = extract_stage_c(ROOT, CASE, pkg,

@@ -10,6 +10,36 @@ from .screening_config import _read_env
 
 
 @dataclass(frozen=True)
+class StageCVersionContract:
+    input_version: str
+    package_version: str
+    input_filename: str
+    pass_1_prompt_version: str
+    extraction_version: str
+    output_version: str
+    candidate_prefix: str
+
+
+STAGE_C_VERSION_CONTRACTS = {
+    "v1": StageCVersionContract(
+        "v1", "conversation-only-v1", "stage_c_model_view.json",
+        "dir-stage-c-first-generation-v3", "conversation-extraction-v4", "v4",
+        "ARTIFACT_"),
+    "v2": StageCVersionContract(
+        "v2", "conversation-only-v2", "stage_c_model_view_v2.json",
+        "dir-stage-c-first-generation-v4", "conversation-extraction-v5", "v5",
+        "GTC_"),
+}
+
+
+def stage_c_version_contract(input_version: str) -> StageCVersionContract:
+    try:
+        return STAGE_C_VERSION_CONTRACTS[input_version]
+    except KeyError as exc:
+        raise ValueError(f"Unsupported Stage C input version: {input_version}") from exc
+
+
+@dataclass(frozen=True)
 class StageCModelConfig:
     api_key: str | None
     base_url: str | None
@@ -34,20 +64,26 @@ class StageCModelConfig:
     def live_permitted(self) -> bool:
         return self.structurally_valid and bool(self.api_key)
 
-    def safe_report(self) -> str:
+    def safe_report(self, input_version: str = "v1") -> str:
+        contract = stage_c_version_contract(input_version)
         return "\n".join([
             "Provider: openai",
             "API family: responses",
+            f"Input version: {contract.input_version}",
+            f"Input package: {contract.package_version}",
+            f"Input file: {contract.input_filename}",
             f"Configured model: {self.model or 'missing'}",
             f"Reasoning mode: {self.reasoning_mode or 'missing'}",
             f"Reasoning effort: {self.reasoning_effort or 'missing'}",
             f"OpenAI SDK max retries: {self.max_retries}",
             "Structured Outputs: enabled",
             "Model tools: disabled",
-            "Pass 1 prompt version: dir-stage-c-first-generation-v3",
+            f"Pass 1 prompt version: {contract.pass_1_prompt_version}",
             "Pass 2 prompt version: dir-stage-c-csv-extraction-v2",
             "Methodology version: dir-tfg-v2",
-            "Extraction version: conversation-extraction-v4",
+            f"Extraction version: {contract.extraction_version}",
+            f"Output contract: {contract.output_version}",
+            f"Candidate namespace: {contract.candidate_prefix}*",
             f"OPENAI_API_KEY: {'present' if self.api_key else 'missing'}",
             f"Configuration structurally valid: {'yes' if self.structurally_valid else 'no'}",
             f"Credentials present: {'yes' if self.api_key else 'no'}",

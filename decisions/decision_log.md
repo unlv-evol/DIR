@@ -340,3 +340,9 @@ Suggested fields:
 - **Decision:** While seeking an outer fence closer, treat a differently indented delimiter as a nested literal region only when it has an unambiguous same-indentation, unlabeled closer before the outer closer. Skip that balanced nested pair and retain the first compatible outer closer. An unmatched or ambiguous nested region remains fail closed. Apply this rule uniformly and restart corpus materialization from clean V1 inputs.
 - **Impact:** The correction restores exact V1 migration for the affected case without case-specific logic, threshold tuning, or changes to candidate identity, Stage C semantics, temporal methodology, or scientific eligibility. The migration report records the committed V2 baseline and correction label `unambiguous-nested-markdown-fence-pairing-v1`.
 - **Owner:** Study team. **Status:** Adopted as an engineering correction required by corpus validation.
+
+## 2026-10-01 — Approve the first controlled Stage C V2 wave
+
+- **Decision:** Use a separate V2 development manifest for four ordered cases: `CASE_C482978A9FE9`, `CASE_AADA2C787EEE`, `CASE_5A3A043A5011`, and `CASE_E8F12807DBDC`. Preserve the eight completed V1 cases classified `PRESERVE_V1_NO_V2_RERUN`, including `CASE_5C203B1DBF11` after same-response human impact review.
+- **Impact:** The manifest records planned V2 execution only. It does not establish a family, boundary, `tFG`, or scientific eligibility, and it does not alter the historical V1 pilot manifest. The auxiliary `candidate_artifact_ids` prompt wording remains a nonblocking future clarification candidate.
+- **Owner:** Study team. **Status:** Adopted for pre-API preparation; live execution remains separately authorized.

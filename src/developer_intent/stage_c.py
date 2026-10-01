@@ -13,16 +13,18 @@ from pathlib import Path
 from typing import Any
 
 from .screening_chatgpt import _date_value
-from .stage_c_config import StageCModelConfig
+from .stage_c_config import StageCModelConfig, stage_c_version_contract
 from .generated_technical_content import validate_v2_model_view
 
 METHODOLOGY_VERSION = "dir-tfg-v2"
 SCHEMA_VERSION = "conversation-draft-v3"
-EXTRACTION_VERSION = "conversation-extraction-v4"
+V1_CONTRACT = stage_c_version_contract("v1")
+V2_CONTRACT = stage_c_version_contract("v2")
+EXTRACTION_VERSION = V1_CONTRACT.extraction_version
 PREVIOUS_EXTRACTION_VERSION = "conversation-extraction-v3"
-PASS_1_PROMPT_VERSION = "dir-stage-c-first-generation-v3"
-V2_EXTRACTION_VERSION = "conversation-extraction-v5"
-V2_PASS_1_PROMPT_VERSION = "dir-stage-c-first-generation-v4"
+PASS_1_PROMPT_VERSION = V1_CONTRACT.pass_1_prompt_version
+V2_EXTRACTION_VERSION = V2_CONTRACT.extraction_version
+V2_PASS_1_PROMPT_VERSION = V2_CONTRACT.pass_1_prompt_version
 PASS_2_PROMPT_VERSION = "dir-stage-c-csv-extraction-v2"
 PACKAGE_KEYS = {"package_version", "methodology_version", "case_id", "start", "precision",
                 "temporal_status", "temporal_source", "source_conversation_sha256",
@@ -264,7 +266,8 @@ def _failure_detail(exc: Exception, config: StageCModelConfig) -> str:
 def rejected_output_diagnostic(case_id: str, pass_name: str, config: StageCModelConfig,
                                prompt_version: str, prompt_sha256: str,
                                schema_version: str, schema: dict, input_hash: str,
-                               reason: str, *, invocation: dict | None = None,
+                               reason: str, *, extraction_version: str,
+                               invocation: dict | None = None,
                                parser_status: str, validation_status: str,
                                response_received: bool,
                                structured_content_status: str,
@@ -275,7 +278,7 @@ def rejected_output_diagnostic(case_id: str, pass_name: str, config: StageCModel
         "authoritative": False,
         "disposition": "rejected_model_output",
         "case_id": case_id,
-        "extraction_version": EXTRACTION_VERSION,
+        "extraction_version": extraction_version,
         "pass": pass_name,
         "failure_reason": reason,
         "request_provenance": {
@@ -382,6 +385,7 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
         retain(rejected_output_diagnostic(
             case_id, "pass_1", config, pass_1_prompt_version, p1_hash,
             "stage-c-pass1-v2", pass1_schema, input_hash, reason,
+            extraction_version=extraction_version,
             invocation=exc.metadata, parser_status=exc.parser_status,
             validation_status=exc.validation_status,
             response_received=exc.response_received,
@@ -396,6 +400,7 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
         retain(rejected_output_diagnostic(
             case_id, "pass_1", config, pass_1_prompt_version, p1_hash,
             "stage-c-pass1-v2", pass1_schema, input_hash, reason,
+            extraction_version=extraction_version,
             parser_status="not_run", validation_status="not_validated",
             response_received=False, structured_content_status="unavailable"))
         return failed_record(
@@ -411,6 +416,7 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
         retain(rejected_output_diagnostic(
             case_id, "pass_1", config, pass_1_prompt_version, p1_hash,
             "stage-c-pass1-v2", pass1_schema, input_hash, reason,
+            extraction_version=extraction_version,
             invocation=meta1, parser_status="parsed", validation_status="failed",
             response_received=True, structured_content_status="parsed",
             parsed_payload=pass1))
@@ -432,6 +438,7 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
             retain(rejected_output_diagnostic(
                 case_id, "pass_2", config, PASS_2_PROMPT_VERSION, p2_hash,
                 "stage-c-pass2-v1", pass2_schema, canonical_hash(payload), reason,
+                extraction_version=extraction_version,
                 invocation=exc.metadata, parser_status=exc.parser_status,
                 validation_status=exc.validation_status,
                 response_received=exc.response_received,
@@ -447,6 +454,7 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
             retain(rejected_output_diagnostic(
                 case_id, "pass_2", config, PASS_2_PROMPT_VERSION, p2_hash,
                 "stage-c-pass2-v1", pass2_schema, canonical_hash(payload), reason,
+                extraction_version=extraction_version,
                 parser_status="not_run", validation_status="not_validated",
                 response_received=False, structured_content_status="unavailable"))
             return failed_record(
@@ -462,6 +470,7 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
             retain(rejected_output_diagnostic(
                 case_id, "pass_2", config, PASS_2_PROMPT_VERSION, p2_hash,
                 "stage-c-pass2-v1", pass2_schema, canonical_hash(payload), reason,
+                extraction_version=extraction_version,
                 invocation=meta2, parser_status="parsed", validation_status="failed",
                 response_received=True, structured_content_status="parsed",
                 parsed_payload=pass2))

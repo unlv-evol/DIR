@@ -13,7 +13,17 @@ sys.path.insert(0, str(ROOT / "src"))
 
 from developer_intent.stage_c import (OpenAIStageCClient, canonical_hash, extract_stage_c,  # noqa: E402
                                       failed_record, persist_stage_c)
-from developer_intent.stage_c_config import load_stage_c_config  # noqa: E402
+from developer_intent.stage_c_config import (load_stage_c_config,  # noqa: E402
+                                              stage_c_version_contract)
+
+
+def stage_c_paths(root: Path, case_id: str, input_version: str,
+                  development_run_id: str | None = None) -> tuple[Path, Path]:
+    contract = stage_c_version_contract(input_version)
+    suffix = f"_{development_run_id}" if development_run_id else ""
+    case_dir = root / "cases/conversations" / case_id
+    return (case_dir / contract.input_filename,
+            case_dir / f"stage_c_extraction_{contract.output_version}{suffix}.json")
 
 
 def main() -> None:
@@ -30,7 +40,7 @@ def main() -> None:
     args = parser.parse_args()
     config = load_stage_c_config(ROOT)
     if args.check_config:
-        print(config.safe_report())
+        print(config.safe_report(args.input_version))
         return
     if not args.case_id or not args.live:
         parser.error("Stage C extraction requires --case-id and explicit --live authorization")
@@ -38,15 +48,12 @@ def main() -> None:
         parser.error("Stage C model configuration is invalid or DIR_STAGE_C_MODEL is missing")
     if not config.api_key:
         parser.error("OPENAI_API_KEY is missing")
-    input_name = "stage_c_model_view_v2.json" if args.input_version == "v2" else "stage_c_model_view.json"
-    input_path = ROOT / "cases/conversations" / args.case_id / input_name
     if args.development_run_id and not re.fullmatch(r"[a-z0-9]+(?:_[a-z0-9]+)*",
                                                     args.development_run_id):
         parser.error("--development-run-id must contain lowercase letters, digits, and underscores")
-    suffix = f"_{args.development_run_id}" if args.development_run_id else ""
-    output_version = "v5" if args.input_version == "v2" else "v4"
-    output_path = (ROOT / "cases/conversations" / args.case_id
-                   / f"stage_c_extraction_{output_version}{suffix}.json")
+    contract = stage_c_version_contract(args.input_version)
+    input_path, output_path = stage_c_paths(
+        ROOT, args.case_id, args.input_version, args.development_run_id)
     if output_path.exists():
         parser.error(f"Stage C output exists; no overwrite: {output_path}")
     try:
@@ -62,9 +69,8 @@ def main() -> None:
         detail = f"{type(exc).__name__}: {exc}"
         if config.api_key:
             detail = detail.replace(config.api_key, "[REDACTED]")
-        version_kwargs = ({"extraction_version": "conversation-extraction-v5",
-                           "pass_1_prompt_version": "dir-stage-c-first-generation-v4"}
-                          if args.input_version == "v2" else {})
+        version_kwargs = {"extraction_version": contract.extraction_version,
+                          "pass_1_prompt_version": contract.pass_1_prompt_version}
         record = failed_record(args.case_id, input_ref, canonical_hash(package), config,
                                detail, package=package, **version_kwargs)
     persist_stage_c(output_path, record)

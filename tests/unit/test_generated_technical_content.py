@@ -16,7 +16,8 @@ from developer_intent.generated_technical_content import (  # noqa: E402
     validate_v2_model_view,
 )
 from developer_intent.stage_c import (  # noqa: E402
-    deterministic_family_identity, extract_stage_c, resolve_first_generation,
+    StageCInvocationFailure, deterministic_family_identity, extract_stage_c,
+    resolve_first_generation,
     validate_model_view,
 )
 from developer_intent.stage_c_config import StageCModelConfig  # noqa: E402
@@ -256,9 +257,40 @@ class GeneratedTechnicalContentTests(unittest.TestCase):
         self.assertEqual(record["extraction_version"], "conversation-extraction-v5")
         self.assertEqual(record["model_provenance"]["pass_1_prompt_version"],
                          "dir-stage-c-first-generation-v4")
+        self.assertEqual(record["model_provenance"]["requested_model"], "offline-test")
+        self.assertEqual(record["model_provenance"]["reasoning_effort"], "medium")
+        self.assertEqual(record["model_provenance"]["sdk_max_retries"], 2)
+        self.assertEqual(record["model_provenance"]["tools_enabled"], [])
+        self.assertTrue(all(value.startswith("GTC_")
+                            for value in record["first_generation"]["artifact_refs"]))
         self.assertIn("generated_technical_content_candidates", client.calls[0][0])
         self.assertEqual(client.calls[1][1]["admissible_prior_turns"],
                          [view["visible_turns"][0]])
+
+    def test_stage_c_v2_rejection_uses_v5_diagnostic_provenance(self):
+        data = normalized([("user", "make it"),
+                           ("assistant", "```python\nprint(1)\n```")])
+        view = build_v2_model_view(data)
+        failure = StageCInvocationFailure(
+            "offline failure", {"response_id": "", "returned_model": "", "usage": {}},
+            parser_status="not_run", validation_status="not_validated")
+
+        class Client:
+            def invoke(self, *args, **kwargs):
+                raise failure
+
+        diagnostics = []
+        config = StageCModelConfig(None, None, "offline-test", "standard", "medium")
+        record = extract_stage_c(ROOT, data["case_id"], view, Client(), config,
+                                 input_ref="stage_c_model_view_v2.json",
+                                 diagnostics=diagnostics)
+        self.assertEqual(record["extraction_version"], "conversation-extraction-v5")
+        self.assertEqual(record["model_provenance"]["pass_1_prompt_version"],
+                         "dir-stage-c-first-generation-v4")
+        self.assertEqual(diagnostics[0]["extraction_version"],
+                         "conversation-extraction-v5")
+        self.assertEqual(diagnostics[0]["request_provenance"]["prompt_version"],
+                         "dir-stage-c-first-generation-v4")
 
     def test_real_case_fixtures_do_not_modify_canonical_files(self):
         expectations = {
