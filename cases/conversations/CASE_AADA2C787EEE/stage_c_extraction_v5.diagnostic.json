@@ -1,0 +1,108 @@
+{
+  "authoritative": false,
+  "case_id": "CASE_AADA2C787EEE",
+  "diagnostic_version": "stage-c-rejected-output-v1",
+  "disposition": "rejected_model_output",
+  "extraction_version": "conversation-extraction-v5",
+  "failure_reason": "ValueError: Pass 2 item provenance is incomplete",
+  "parsing": {
+    "parsed_payload_retained": true,
+    "status": "parsed"
+  },
+  "pass": "pass_2",
+  "rejected_parsed_payload": {
+    "context_supplied": [
+      {
+        "category": "context",
+        "evidence": [
+          "<string name=\"app_name\">My Planet</string>",
+          "<string name=\"action_settings\">Settings</string>",
+          "<string name=\"my_survey\">mySurvey</string>"
+        ],
+        "id": "context_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000004"
+        ],
+        "text": "The supplied content is an XML-style collection of named application string resources whose values are primarily English user-interface text for the My Planet/myPlanet application."
+      }
+    ],
+    "failure_reason": "",
+    "specificity_supplied": [
+      {
+        "category": "specificity",
+        "evidence": [
+          "convert to somali",
+          "<string name=\"app_name\">My Planet</string>\n    <string name=\"app_project_name\">myPlanet</string>\n    <string name=\"action_settings\">Settings</string>"
+        ],
+        "id": "specificity_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002",
+          "turn_000004"
+        ],
+        "text": "Translate the supplied text into Somali."
+      }
+    ],
+    "status": "complete",
+    "verification_supplied": [
+      {
+        "category": "verification",
+        "evidence": [
+          "convert to somali"
+        ],
+        "id": "verification_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "The translated output is expected to be in Somali."
+      }
+    ]
+  },
+  "request_provenance": {
+    "api": "responses",
+    "input_sha256": "1c7557ff604d167a5548275f291282359f859d649b7b67e89d4c181590ab3ee0",
+    "prompt_sha256": "f8c9df630f7b185fff387f9a311993a205d5c398f6c61e7f6caca67f5067b019",
+    "prompt_version": "dir-stage-c-csv-extraction-v2",
+    "provider": "openai",
+    "reasoning_effort": "medium",
+    "reasoning_mode": "standard",
+    "requested_model": "gpt-5.6-sol",
+    "schema_sha256": "9d481f52cea16dd739a65eede0b566e290142cbba97321d5373383360e6e3633",
+    "schema_version": "stage-c-pass2-v1",
+    "sdk_max_retries": 2,
+    "tools_enabled": []
+  },
+  "response_provenance": {
+    "invocation": {
+      "invocation_timestamp": "2026-10-01T07:52:06.035955+00:00",
+      "response_id": "resp_0eb08181dc5373bc006abe1126594087d1b1ee1c53cd382191",
+      "returned_model": "gpt-5.6-sol",
+      "usage": {
+        "input_tokens": 3670,
+        "input_tokens_details": {
+          "cache_write_tokens": 3667,
+          "cached_tokens": 0
+        },
+        "output_tokens": 393,
+        "output_tokens_details": {
+          "reasoning_tokens": 110
+        },
+        "total_tokens": 4063
+      }
+    },
+    "response_received": true,
+    "structured_content_status": "parsed"
+  },
+  "validation": {
+    "accepted": false,
+    "status": "failed"
+  }
+}

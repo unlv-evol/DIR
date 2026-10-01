@@ -346,3 +346,19 @@ Suggested fields:
 - **Decision:** Use a separate V2 development manifest for four ordered cases: `CASE_C482978A9FE9`, `CASE_AADA2C787EEE`, `CASE_5A3A043A5011`, and `CASE_E8F12807DBDC`. Preserve the eight completed V1 cases classified `PRESERVE_V1_NO_V2_RERUN`, including `CASE_5C203B1DBF11` after same-response human impact review.
 - **Impact:** The manifest records planned V2 execution only. It does not establish a family, boundary, `tFG`, or scientific eligibility, and it does not alter the historical V1 pilot manifest. The auxiliary `candidate_artifact_ids` prompt wording remains a nonblocking future clarification candidate.
 - **Owner:** Study team. **Status:** Adopted for pre-API preparation; live execution remains separately authorized.
+
+## 2026-10-01 — Complete Stage C V2 Phase 1
+
+- **Decision:** Accept the Phase 1 V2 results for `CASE_C482978A9FE9` and
+  `CASE_AADA2C787EEE`. C482 selected an earlier first-generation response than
+  its V1 result. AADA recovered from the V1 zero-candidate representation.
+- **Execution record:** AADA's first V2 Pass 2 result failed deterministic
+  provenance validation because its source-turn and source-role arrays were
+  structurally incomplete. One controlled rerun under the unchanged prompt,
+  schema, validator, Stage B package, and methodology was accepted.
+- **Preservation:** Retain the failed AADA canonical record, its
+  non-authoritative diagnostic, and the accepted retry as separate artifacts.
+  The versioned Phase 1 summary records their paths and hashes.
+- **Scope:** These two development cases do not establish V2 performance. No
+  Phase 2 case was executed, and scientific eligibility remains unchanged.
+- **Owner:** Study team. **Status:** Phase 1 checkpoint accepted.
