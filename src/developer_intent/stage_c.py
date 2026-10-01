@@ -17,9 +17,10 @@ from .stage_c_config import StageCModelConfig
 
 METHODOLOGY_VERSION = "dir-tfg-v2"
 SCHEMA_VERSION = "conversation-draft-v3"
-EXTRACTION_VERSION = "conversation-extraction-v3"
+EXTRACTION_VERSION = "conversation-extraction-v4"
+PREVIOUS_EXTRACTION_VERSION = "conversation-extraction-v3"
 PASS_1_PROMPT_VERSION = "dir-stage-c-first-generation-v2"
-PASS_2_PROMPT_VERSION = "dir-stage-c-csv-extraction-v1"
+PASS_2_PROMPT_VERSION = "dir-stage-c-csv-extraction-v2"
 PACKAGE_KEYS = {"package_version", "methodology_version", "case_id", "start", "precision",
                 "temporal_status", "temporal_source", "source_conversation_sha256",
                 "visible_turns", "artifact_candidates", "records", "complete",
@@ -30,6 +31,17 @@ CATEGORIES = ("context", "specificity", "verification")
 FAMILY_ID_PREFIX = "FGF_"
 FAMILY_ID_DIGEST_LENGTH = 24
 CASE_ID = re.compile(r"CASE_[0-9A-F]{12}\Z")
+
+
+class StageCInvocationFailure(RuntimeError):
+    """Carry truthful request provenance when a model result cannot be returned."""
+
+    def __init__(self, message: str, metadata: dict, *, parser_status: str,
+                 validation_status: str):
+        super().__init__(message)
+        self.metadata = metadata
+        self.parser_status = parser_status
+        self.validation_status = validation_status
 
 
 def canonical_hash(value: Any) -> str:
@@ -220,6 +232,11 @@ def _usage(response: Any) -> dict:
     return dict(usage) if isinstance(usage, dict) else {}
 
 
+def _failure_detail(exc: Exception, config: StageCModelConfig) -> str:
+    detail = f"{type(exc).__name__}: {exc}"
+    return detail.replace(config.api_key, "[REDACTED]") if config.api_key else detail
+
+
 class OpenAIStageCClient:
     """Thin Responses API adapter; each call is independent and tool-free."""
     def __init__(self, config: StageCModelConfig):
@@ -237,25 +254,36 @@ class OpenAIStageCClient:
 
     def invoke(self, prompt: str, payload: dict, schema_name: str, schema: dict) -> tuple[dict, dict]:
         invoked_at = datetime.now(timezone.utc).isoformat()
-        response = self.client.responses.create(
-            model=self.config.model,
-            reasoning={"mode": self.config.reasoning_mode,
-                       "effort": self.config.reasoning_effort},
-            instructions=prompt,
-            input=json.dumps(payload, ensure_ascii=False, sort_keys=True),
-            tools=[],
-            text={"format": {"type": "json_schema", "name": schema_name,
-                             "strict": True, "schema": schema}},
-        )
+        metadata = {"response_id": "", "returned_model": "",
+                    "invocation_timestamp": invoked_at, "usage": {}}
+        try:
+            response = self.client.responses.create(
+                model=self.config.model,
+                reasoning={"mode": self.config.reasoning_mode,
+                           "effort": self.config.reasoning_effort},
+                instructions=prompt,
+                input=json.dumps(payload, ensure_ascii=False, sort_keys=True),
+                tools=[],
+                text={"format": {"type": "json_schema", "name": schema_name,
+                                 "strict": True, "schema": schema}},
+            )
+        except Exception as exc:
+            raise StageCInvocationFailure(
+                f"OpenAI Responses API invocation failed: {type(exc).__name__}: {exc}",
+                metadata, parser_status="not_run", validation_status="not_validated") from exc
+        metadata.update(response_id=getattr(response, "id", ""),
+                        returned_model=getattr(response, "model", ""),
+                        usage=_usage(response))
         if getattr(response, "status", "completed") != "completed":
-            raise RuntimeError(f"OpenAI response was not complete: {getattr(response, 'status', '')}")
+            raise StageCInvocationFailure(
+                f"OpenAI response was not complete: {getattr(response, 'status', '')}",
+                metadata, parser_status="not_run", validation_status="not_validated")
         try:
             parsed = json.loads(response.output_text)
         except (AttributeError, json.JSONDecodeError) as exc:
-            raise ValueError("OpenAI Structured Output was malformed") from exc
-        metadata = {"response_id": getattr(response, "id", ""),
-                    "returned_model": getattr(response, "model", ""),
-                    "invocation_timestamp": invoked_at, "usage": _usage(response)}
+            raise StageCInvocationFailure(
+                "OpenAI Structured Output was malformed", metadata,
+                parser_status="malformed", validation_status="not_validated") from exc
         return parsed, metadata
 
 
@@ -263,7 +291,7 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
                     config: StageCModelConfig, *, input_ref: str) -> dict:
     validate_model_view(package, case_id)
     p1_prompt, p1_hash = load_prompt(root, "prompts/stage_c/first_generation_v2.md")
-    p2_prompt, p2_hash = load_prompt(root, "prompts/stage_c/csv_extraction_v1.md")
+    p2_prompt, p2_hash = load_prompt(root, "prompts/stage_c/csv_extraction_v2.md")
     pass1, meta1 = client.invoke(p1_prompt, package, "dir_stage_c_pass1_v2",
                                  load_contract(root, "stage_c_pass1_v2.schema.json"))
     validate_pass1(pass1)
@@ -273,9 +301,35 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
     meta2: dict = {}
     if first_generation["status"] == "complete":
         payload = {"case_id": case_id, "admissible_prior_turns": admissible}
-        pass2, meta2 = client.invoke(p2_prompt, payload, "dir_stage_c_pass2_v1",
-                                     load_contract(root, "stage_c_pass2_v1.schema.json"))
-        validate_pass2(pass2, admissible)
+        try:
+            pass2, meta2 = client.invoke(p2_prompt, payload, "dir_stage_c_pass2_v1",
+                                         load_contract(root, "stage_c_pass2_v1.schema.json"))
+        except StageCInvocationFailure as exc:
+            return failed_record(
+                case_id, input_ref, canonical_hash(package), config,
+                _failure_detail(exc, config), package=package,
+                first_generation=first_generation, admissible=admissible, tfg=tfg,
+                invocations=[meta1, exc.metadata], pass_1_prompt_sha256=p1_hash,
+                pass_2_prompt_sha256=p2_hash, parser_status=exc.parser_status,
+                validation_status=exc.validation_status)
+        except Exception as exc:
+            return failed_record(
+                case_id, input_ref, canonical_hash(package), config,
+                _failure_detail(exc, config), package=package,
+                first_generation=first_generation, admissible=admissible, tfg=tfg,
+                invocations=[meta1, {}], pass_1_prompt_sha256=p1_hash,
+                pass_2_prompt_sha256=p2_hash, parser_status="not_run",
+                validation_status="not_validated")
+        try:
+            validate_pass2(pass2, admissible)
+        except ValueError as exc:
+            return failed_record(
+                case_id, input_ref, canonical_hash(package), config,
+                _failure_detail(exc, config), package=package,
+                first_generation=first_generation, admissible=admissible, tfg=tfg,
+                invocations=[meta1, meta2], pass_1_prompt_sha256=p1_hash,
+                pass_2_prompt_sha256=p2_hash, parser_status="parsed",
+                validation_status="failed")
     final_status = ("complete" if first_generation["status"] == "complete"
                     and pass2["status"] == "complete" and tfg["value"] else
                     first_generation["status"] if first_generation["status"] != "complete"
@@ -320,12 +374,18 @@ def validate_stage_c_record(record: dict) -> None:
     _validate_keys(record, required, "Stage C record")
     if (record["schema_version"] != SCHEMA_VERSION
             or record["methodology_version"] != METHODOLOGY_VERSION
-            or record["extraction_version"] != EXTRACTION_VERSION
+            or record["extraction_version"] not in {PREVIOUS_EXTRACTION_VERSION,
+                                                     EXTRACTION_VERSION}
             or record["record_status"] != "draft"
             or record["temporal"]["primary_repository_cutoff"] != "tFG"
             or record["scientific_status"] != {"eligibility_updated": False,
                                                 "post_stage_c_resolution_required": True}):
         raise ValueError("Stage C record version, temporal policy, or scientific status is invalid")
+    expected_pass2 = ("dir-stage-c-csv-extraction-v1"
+                      if record["extraction_version"] == PREVIOUS_EXTRACTION_VERSION
+                      else PASS_2_PROMPT_VERSION)
+    if record.get("model_provenance", {}).get("pass_2_prompt_version") != expected_pass2:
+        raise ValueError("Stage C extraction and Pass 2 prompt versions disagree")
     validate_pass2({"status": "complete", "failure_reason": "",
                     "context_supplied": record["context_supplied"],
                     "specificity_supplied": record["specificity_supplied"],
@@ -395,7 +455,7 @@ def migrate_v2_record(record: dict, package: dict, *, source_record_ref: str) ->
     family_id, provenance = deterministic_family_identity(record["case_id"], selected)
     migrated = deepcopy(record)
     migrated["schema_version"] = SCHEMA_VERSION
-    migrated["extraction_version"] = EXTRACTION_VERSION
+    migrated["extraction_version"] = PREVIOUS_EXTRACTION_VERSION
     migrated["first_generation"]["family_label"] = old_fg.get("family_id", "")
     migrated["first_generation"]["family_id"] = family_id
     migrated["first_generation"]["family_id_provenance"] = provenance
@@ -411,29 +471,50 @@ def migrate_v2_record(record: dict, package: dict, *, source_record_ref: str) ->
 
 
 def failed_record(case_id: str, input_ref: str, input_hash: str,
-                  config: StageCModelConfig, reason: str, *, package: dict | None = None) -> dict:
+                  config: StageCModelConfig, reason: str, *, package: dict | None = None,
+                  first_generation: dict | None = None, admissible: list[dict] | None = None,
+                  tfg: dict | None = None, invocations: list[dict] | None = None,
+                  pass_1_prompt_sha256: str = "", pass_2_prompt_sha256: str = "",
+                  parser_status: str = "not_run",
+                  validation_status: str = "not_validated") -> dict:
     anchor = {"value": "", "precision": "", "status": "unresolved", "source": "unresolved",
               "derivation_rule": "exclusive_before_selected_response"}
-    return {"schema_version": SCHEMA_VERSION, "methodology_version": METHODOLOGY_VERSION,
+    failed_fg = {"status": "failed", "family_id": "", "artifact_refs": [],
+                 "family_label": "", "family_id_provenance": {},
+                 "response_turn_id": "", "response_event_index": None,
+                 "target_prompt_id": "", "target_prompt_event_index": None,
+                 "boundary": "unresolved", "candidate_artifact_ids": [],
+                 "rationale": "", "ambiguity_reason": reason}
+    record = {"schema_version": SCHEMA_VERSION, "methodology_version": METHODOLOGY_VERSION,
             "extraction_version": EXTRACTION_VERSION, "record_status": "draft", "case_id": case_id,
             "input": {"stage_b_model_view_ref": input_ref, "sha256": input_hash},
-            "first_generation": {"status": "failed", "family_id": "", "artifact_refs": [],
-                "family_label": "", "family_id_provenance": {},
-                "response_turn_id": "", "response_event_index": None, "target_prompt_id": "",
-                "target_prompt_event_index": None, "boundary": "unresolved",
-                "candidate_artifact_ids": [], "rationale": "", "ambiguity_reason": reason},
+            "first_generation": deepcopy(first_generation) if first_generation else failed_fg,
             "temporal": {"tC": _tc(package) if package else dict(anchor),
-                         "tFG": dict(anchor), "primary_repository_cutoff": "tFG"},
-            "admissible_prior_turns": [], "context_supplied": [], "specificity_supplied": [],
+                         "tFG": deepcopy(tfg) if tfg else dict(anchor),
+                         "primary_repository_cutoff": "tFG"},
+            "admissible_prior_turns": deepcopy(admissible) if admissible else [],
+            "context_supplied": [], "specificity_supplied": [],
             "verification_supplied": [], "model_provenance": {"provider": "openai",
                 "api": "responses", "requested_model": config.model, "tools_enabled": [],
-                "structured_outputs": True},
+                "returned_models": [item.get("returned_model") for item in (invocations or [])
+                                    if item.get("returned_model")],
+                "reasoning_mode": config.reasoning_mode,
+                "reasoning_effort": config.reasoning_effort,
+                "structured_outputs": True,
+                "structured_output_schema_versions": ["stage-c-pass1-v2", "stage-c-pass2-v1"],
+                "pass_1_prompt_version": PASS_1_PROMPT_VERSION,
+                "pass_2_prompt_version": PASS_2_PROMPT_VERSION,
+                "pass_1_prompt_sha256": pass_1_prompt_sha256,
+                "pass_2_prompt_sha256": pass_2_prompt_sha256,
+                "input_sha256": input_hash, "invocations": invocations or []},
             "scientific_status": {"eligibility_updated": False,
                                   "post_stage_c_resolution_required": True},
             "record_derivation": {"mode": "fresh", "source_record_ref": "",
                                   "source_record_sha256": "", "original_model_family_value": ""},
-            "status": {"stage_c_status": "failed", "parser_status": "malformed",
-                       "validation_status": "failed", "failure_reason": reason}}
+            "status": {"stage_c_status": "failed", "parser_status": parser_status,
+                       "validation_status": validation_status, "failure_reason": reason}}
+    validate_stage_c_record(record)
+    return record
 
 
 def persist_stage_c(path: Path, record: dict) -> None:

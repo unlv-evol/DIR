@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -22,6 +23,8 @@ def main() -> None:
                         help="Authorize two independent OpenAI Responses API calls for one case")
     parser.add_argument("--check-config", action="store_true",
                         help="Print non-secret effective configuration; make no API call")
+    parser.add_argument("--development-run-id",
+                        help="Optional lowercase retry/run suffix; does not change extraction version")
     args = parser.parse_args()
     config = load_stage_c_config(ROOT)
     if args.check_config:
@@ -34,7 +37,12 @@ def main() -> None:
     if not config.api_key:
         parser.error("OPENAI_API_KEY is missing")
     input_path = ROOT / "cases/conversations" / args.case_id / "stage_c_model_view.json"
-    output_path = ROOT / "cases/conversations" / args.case_id / "stage_c_extraction_v3.json"
+    if args.development_run_id and not re.fullmatch(r"[a-z0-9]+(?:_[a-z0-9]+)*",
+                                                    args.development_run_id):
+        parser.error("--development-run-id must contain lowercase letters, digits, and underscores")
+    suffix = f"_{args.development_run_id}" if args.development_run_id else ""
+    output_path = (ROOT / "cases/conversations" / args.case_id
+                   / f"stage_c_extraction_v4{suffix}.json")
     if output_path.exists():
         parser.error(f"Stage C output exists; no overwrite: {output_path}")
     try:

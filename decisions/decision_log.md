@@ -289,3 +289,18 @@ Suggested fields:
 - **Rationale:** The five remaining Stage B cases have complete historical structured responses in the replication ZIP. Newer cached pages either lack conversation content or are absent. Control cases reproduce identical canonical model-visible semantic projections from archived HTTP bytes.
 - **Impact:** Stage B can recover those sources without network access or derived-data substitution. Completion remains operational and does not change scientific eligibility or run Stage C.
 - **Owner:** Study team. **Status:** Adopted for the five-case recovery.
+
+## 2026-09-30 — Preserve modality in Stage C supplied C/S/V extraction
+
+- **Decision:** Version Pass 2 as `dir-stage-c-csv-extraction-v2` and the extraction procedure as `conversation-extraction-v4`. Preserve descriptive versus normative modality: symptoms, failures, historical behavior, and environment/branch/platform differences remain Context unless an admissible source explicitly supplies a desired condition, expected behavior, correctness condition, check/test/assertion, acceptance or verification activity, or prescriptive guidance. Keep observation and expectation atomic when both are present. Retain the Context, Specificity, and Verification categories.
+- **Versioning:** Keep `dir-tfg-v2` because the first-generation boundary and temporal method did not change. Keep `stage-c-pass2-v1` and `conversation-draft-v3` because their JSON shapes and field meanings remain compatible. Record the behavioral change through prompt version/hash and `conversation-extraction-v4`; revised outputs use `stage_c_extraction_v4.json` beside preserved v3 development records.
+- **Rationale/evidence:** During the Stage C development pilot, `CASE_193801513E85` transformed descriptive branch/local diagnostic observations into the unsupported normative claim that a fix “should account for” them. The v1 prompt generally prohibited inference but did not explicitly forbid this modality shift.
+- **Impact:** Existing outputs for the first three development cases remain immutable. The revised procedure must be validated on those cases before continuing the frozen pilot order. Pass 1, deterministic family identity, `tC`, `tFG`, Stage A, and Stage B are unchanged.
+- **Owner:** Study team. **Status:** Adopted as a Stage C development-pilot methodology refinement.
+
+## 2026-09-30 — Preserve Stage C provenance for rejected Pass 2 results
+
+- **Decision:** When Pass 2 has been invoked but its returned result fails API completion, parsing, structured-contract validation, or deterministic provenance validation, preserve the available invocation, prompt, schema, model, reasoning, and tools-policy provenance in the failed draft. Keep parsing and validation outcomes separate and emit no accepted C/S/V items from the rejected result.
+- **Rationale/evidence:** The `CASE_193801513E85` v4 development run correctly rejected an item with incomplete provenance, but the generic failure record then erased the known Pass 1/Pass 2 invocation configuration and could not satisfy the extraction/prompt-version consistency check.
+- **Impact:** Successful extraction validation and item provenance requirements are unchanged. This is a failure-record construction correction within the existing `conversation-draft-v3` shape; it neither accepts the rejected model payload nor changes Stage C methodology.
+- **Owner:** Study team. **Status:** Adopted as an engineering correction during the Stage C development pilot.

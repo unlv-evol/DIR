@@ -18,13 +18,19 @@ Future authorized one-case live extraction:
 python3 pipeline/stage_c/run.py --case-id CASE_XXXXXXXXXXXX --live
 ```
 
+An explicitly authorized development retry can use `--development-run-id retry_01` to write a separate suffixed artifact without changing `conversation-extraction-v4`. The same normal two-pass pipeline and no-overwrite guard apply.
+
 Input and output:
 
 ```text
 cases/conversations/<case_id>/stage_c_model_view.json
-cases/conversations/<case_id>/stage_c_extraction_v3.json
+cases/conversations/<case_id>/stage_c_extraction_v4.json
 ```
 
-The output is a `conversation-draft-v3` record under methodology `dir-tfg-v2` and extraction procedure `conversation-extraction-v3`. Pass 1 v2 returns a descriptive `family_label`; validated selected artifact IDs are ordered by response event, order within response, and artifact ID. Deterministic code hashes compact, key-sorted UTF-8 JSON containing the case ID and ordered artifact IDs with SHA-256 and uses the first 24 lowercase hexadecimal characters as `FGF_<digest>`. Including the case ID makes the identifier globally usable. The label does not affect identity, boundaries, time, or eligibility.
+The output is a `conversation-draft-v3` record under temporal methodology `dir-tfg-v2` and extraction procedure `conversation-extraction-v4`. Pass 1 v2 returns a descriptive `family_label`; validated selected artifact IDs are ordered by response event, order within response, and artifact ID. Deterministic code hashes compact, key-sorted UTF-8 JSON containing the case ID and ordered artifact IDs with SHA-256 and uses the first 24 lowercase hexadecimal characters as `FGF_<digest>`. Including the case ID makes the identifier globally usable. The label does not affect identity, boundaries, time, or eligibility.
 
-Existing output is never overwritten. Pre-correction v2 development records can be rebuilt without a model call using `migrate_family_id.py`; the v2 record remains unchanged and the migrated v3 record records its source hash and original model family value. Stage C does not update scientific eligibility. Its result is consumed by the Post-Stage-C processability/eligibility workflow before Stage D.
+Pass 2 prompt v2 preserves source modality. Diagnostic observations remain descriptive Context unless a permitted source explicitly frames them as desired or expected behavior, a correctness condition, a check/test/assertion, an acceptance or verification activity, or prescriptive guidance. It does not turn an observed branch, platform, or environment difference into a requirement on a future fix. Explicit user expectations and explicit pre-boundary assistant prescriptions remain eligible Verification with their original roles. The Pass 2 response structure remains `stage-c-pass2-v1`, and the final JSON shape remains `conversation-draft-v3`; the procedure change is recorded as `conversation-extraction-v4` and by the prompt version/hash.
+
+If an invoked Pass 2 result is rejected, the failed draft preserves available invocation and request provenance but emits no accepted C/S/V items from that result. Parsing and deterministic validation statuses remain separate.
+
+Existing output is never overwritten. Pre-correction v2 development records can be rebuilt without a model call using `migrate_family_id.py`; the v2 record remains unchanged and the migrated v3 record records its source hash and original model family value. Existing `stage_c_extraction_v3.json` development records remain immutable; revised prompt-v2 runs write `stage_c_extraction_v4.json` beside them. Stage C does not update scientific eligibility. Its result is consumed by the Post-Stage-C processability/eligibility workflow before Stage D.

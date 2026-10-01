@@ -11,7 +11,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src"))
 
-from developer_intent.stage_c import (OpenAIStageCClient, canonical_hash, extract_stage_c,  # noqa: E402
+from developer_intent.stage_c import (OpenAIStageCClient, StageCInvocationFailure,  # noqa: E402
+                                      canonical_hash, extract_stage_c,
                                       deterministic_family_identity, failed_record,
                                       load_contract, migrate_v2_record, persist_stage_c,
                                       resolve_first_generation, validate_model_view,
@@ -245,7 +246,7 @@ class StageCTests(unittest.TestCase):
 
     def test_prompts_state_stage_c_leakage_boundaries(self):
         pass1_prompt = (ROOT / "prompts/stage_c/first_generation_v2.md").read_text()
-        pass2_prompt = (ROOT / "prompts/stage_c/csv_extraction_v1.md").read_text()
+        pass2_prompt = (ROOT / "prompts/stage_c/csv_extraction_v2.md").read_text()
         for prohibited in ("PA/PN", "outcomes", "final implementation", "repository"):
             self.assertIn(prohibited, pass1_prompt)
             self.assertIn(prohibited, pass2_prompt)
@@ -254,6 +255,32 @@ class StageCTests(unittest.TestCase):
                          "later conversation turns", "zero, one, or multiple items",
                          "supporting evidence"):
             self.assertIn(required, pass2_prompt)
+
+    def test_pass2_v2_preserves_modality_and_diagnostic_observations(self):
+        prompt = (ROOT / "prompts/stage_c/csv_extraction_v2.md").read_text()
+        for observation in ("Symptoms", "failures", "historical behavior",
+                            "environment", "branch", "platform differences",
+                            "diagnostic observations"):
+            self.assertIn(observation, prompt)
+        for explicit in ("desired condition", "expected outcome or behavior",
+                         "correctness condition", "check or test", "assertion",
+                         "acceptance condition", "verification activity",
+                         "prescriptive guidance"):
+            self.assertIn(explicit, prompt)
+        for unsupported in ("fix must", "solution should"):
+            self.assertIn(unsupported, prompt)
+        self.assertIn("works on the feature branch but produces null on main", prompt)
+        self.assertIn("not supported Verification", prompt)
+        self.assertIn("I expect X to return Y", prompt)
+        self.assertIn("should contain the supplied value rather than null", prompt)
+        self.assertIn("assistant prescriptions", prompt)
+        self.assertIn("keep them separate", prompt)
+
+    def test_pass2_v2_keeps_desired_behavior_and_assistant_prescription_permitted(self):
+        prompt = (ROOT / "prompts/stage_c/csv_extraction_v2.md").read_text()
+        self.assertIn("Explicit statements", prompt)
+        self.assertIn("may be Verification", prompt)
+        self.assertIn("assistant provenance", prompt)
 
     def test_structured_contracts_reject_malformed_responses(self):
         with self.assertRaises(ValueError): validate_pass1({"status": "complete"})
@@ -273,6 +300,8 @@ class StageCTests(unittest.TestCase):
         legacy = copy.deepcopy(current)
         legacy["schema_version"] = "conversation-draft-v2"
         legacy["extraction_version"] = "conversation-extraction-v2"
+        legacy["model_provenance"]["pass_2_prompt_version"] = \
+            "dir-stage-c-csv-extraction-v1"
         legacy["first_generation"]["family_id"] = "model_wording"
         legacy["first_generation"].pop("family_label")
         legacy["first_generation"].pop("family_id_provenance")
@@ -294,6 +323,65 @@ class StageCTests(unittest.TestCase):
         self.assertFalse(record["scientific_status"]["eligibility_updated"])
         self.assertEqual(record["temporal"]["tC"]["value"], "2024-01-01T00:00:00+00:00")
         self.assertEqual(record["temporal"]["tFG"]["status"], "unresolved")
+        self.assertEqual(record["model_provenance"]["pass_2_prompt_version"],
+                         "dir-stage-c-csv-extraction-v2")
+        validate_stage_c_record(record)
+
+    def _assert_rejected_pass2(self, record, parser_status, validation_status):
+        self.assertEqual(record["status"]["stage_c_status"], "failed")
+        self.assertEqual(record["status"]["parser_status"], parser_status)
+        self.assertEqual(record["status"]["validation_status"], validation_status)
+        self.assertEqual(record["model_provenance"]["pass_2_prompt_version"],
+                         "dir-stage-c-csv-extraction-v2")
+        self.assertEqual(record["model_provenance"]["structured_output_schema_versions"],
+                         ["stage-c-pass1-v2", "stage-c-pass2-v1"])
+        self.assertEqual(len(record["model_provenance"]["invocations"]), 2)
+        self.assertEqual(record["context_supplied"], [])
+        self.assertEqual(record["specificity_supplied"], [])
+        self.assertEqual(record["verification_supplied"], [])
+        validate_stage_c_record(record)
+
+    def test_pass2_api_failure_preserves_invocation_provenance(self):
+        metadata = {"response_id": "", "returned_model": "",
+                    "invocation_timestamp": "2026-09-30T00:01:00+00:00", "usage": {}}
+        failure = StageCInvocationFailure("API unavailable for secret", metadata,
+                                          parser_status="not_run",
+                                          validation_status="not_validated")
+        pkg = package()
+        record = extract_stage_c(ROOT, CASE, pkg, MockClient([pass1(pkg), failure]),
+                                 CONFIG, input_ref="input.json")
+        self._assert_rejected_pass2(record, "not_run", "not_validated")
+        self.assertEqual(record["model_provenance"]["invocations"][1], metadata)
+        self.assertNotIn("secret", json.dumps(record))
+
+    def test_pass2_parse_failure_preserves_invocation_provenance(self):
+        metadata = {"response_id": "response-2", "returned_model": "gpt-5.6-sol",
+                    "invocation_timestamp": "2026-09-30T00:01:00+00:00", "usage": {}}
+        failure = StageCInvocationFailure("malformed structured output", metadata,
+                                          parser_status="malformed",
+                                          validation_status="not_validated")
+        pkg = package()
+        record = extract_stage_c(ROOT, CASE, pkg, MockClient([pass1(pkg), failure]),
+                                 CONFIG, input_ref="input.json")
+        self._assert_rejected_pass2(record, "malformed", "not_validated")
+
+    def test_pass2_structural_failure_emits_no_rejected_items(self):
+        pkg = package()
+        record = extract_stage_c(ROOT, CASE, pkg,
+                                 MockClient([pass1(pkg), {"status": "complete"}]),
+                                 CONFIG, input_ref="input.json")
+        self._assert_rejected_pass2(record, "parsed", "failed")
+        self.assertIn("structured-output contract", record["status"]["failure_reason"])
+
+    def test_pass2_provenance_failure_emits_no_rejected_items(self):
+        pkg = package()
+        invalid = pass2()
+        invalid["verification_supplied"][0]["source_turns"] = []
+        invalid["verification_supplied"][0]["source_roles"] = []
+        record = extract_stage_c(ROOT, CASE, pkg, MockClient([pass1(pkg), invalid]),
+                                 CONFIG, input_ref="input.json")
+        self._assert_rejected_pass2(record, "parsed", "failed")
+        self.assertIn("provenance is incomplete", record["status"]["failure_reason"])
 
     def test_responses_api_adapter_is_independent_structured_and_tool_free(self):
         calls = []
@@ -351,6 +439,10 @@ class StageCTests(unittest.TestCase):
             MockClient([pass1(pkg), pass2()]), CONFIG, input_ref="input.json")
         validate_stage_c_record(record)
         self.assertEqual(record["methodology_version"], "dir-tfg-v2")
+        self.assertEqual(record["schema_version"], "conversation-draft-v3")
+        self.assertEqual(record["extraction_version"], "conversation-extraction-v4")
+        self.assertEqual(record["model_provenance"]["pass_2_prompt_version"],
+                         "dir-stage-c-csv-extraction-v2")
         self.assertEqual(record["model_provenance"]["requested_model"], "gpt-5.6-sol")
         self.assertEqual(record["model_provenance"]["tools_enabled"], [])
         self.assertEqual(len(record["model_provenance"]["invocations"]), 2)

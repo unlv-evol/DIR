@@ -176,7 +176,10 @@
       "const": "dir-tfg-v2"
     },
     "extraction_version": {
-      "const": "conversation-extraction-v3"
+      "enum": [
+        "conversation-extraction-v3",
+        "conversation-extraction-v4"
+      ]
     },
     "record_status": {
       "const": "draft"
