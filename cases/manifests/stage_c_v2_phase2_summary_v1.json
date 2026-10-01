@@ -1,0 +1,100 @@
+{
+  "api_accounting": {
+    "application_level_retries": 0,
+    "controlled_reruns": 0,
+    "logical_model_invocations": 4,
+    "recorded_tokens": 20377,
+    "sdk_retry_allowance_per_invocation": 2,
+    "transport_attempts": "not_observed"
+  },
+  "cases": [
+    {
+      "accepted_output": {
+        "path": "cases/conversations/CASE_5A3A043A5011/stage_c_extraction_v5.json",
+        "run_id": "canonical_v5_20261001T081233Z",
+        "sha256": "8c5084c136868670d443bb6686cc4587701e00d4c1dfe051f82de3de22dd7d3f",
+        "status": "complete"
+      },
+      "api_accounting": {
+        "application_level_retries": 0,
+        "controlled_reruns": 0,
+        "logical_model_invocations": 2,
+        "sdk_retry_allowance_per_invocation": 2,
+        "total_tokens": 14557
+      },
+      "case_id": "CASE_5A3A043A5011",
+      "csv_item_counts": {
+        "context": 4,
+        "specificity": 2,
+        "verification": 1
+      },
+      "human_audit_status": "accepted",
+      "migration_impact_category": "earlier_response_addition",
+      "representation_impact": {
+        "v1_earliest_represented_content": "Later Promise-returning handler and TypeScript/ESLint refinement.",
+        "v1_earliest_represented_response": "turn_000005",
+        "v2_selected_content": "Stable listener-function identity alternatives.",
+        "v2_selected_response": "turn_000003"
+      },
+      "result": {
+        "boundary": "exclusive_before:turn_000003",
+        "family_id": "FGF_11f134041d770eecbd370d4b",
+        "selected_artifact_ids": [
+          "GTC_000003_000265_000524_b56aaa1048d326b2",
+          "GTC_000003_000632_000899_9d49db9dd1f1a04e",
+          "GTC_000003_001004_001225_bbf67d2bad0d7f85"
+        ],
+        "selected_response": "turn_000003",
+        "target_prompt": "turn_000002",
+        "tC": "2023-08-13T08:05:19.653407+00:00",
+        "tFG": "2023-08-13T08:05:30.672917+00:00"
+      }
+    },
+    {
+      "accepted_output": {
+        "path": "cases/conversations/CASE_E8F12807DBDC/stage_c_extraction_v5.json",
+        "run_id": "canonical_v5_20261001T081744Z",
+        "sha256": "266f564be4e3400ab082793a8d476f607ac5fec96dc8e439c414095c5d33af9a",
+        "status": "complete"
+      },
+      "api_accounting": {
+        "application_level_retries": 0,
+        "controlled_reruns": 0,
+        "logical_model_invocations": 2,
+        "sdk_retry_allowance_per_invocation": 2,
+        "total_tokens": 5820
+      },
+      "case_id": "CASE_E8F12807DBDC",
+      "csv_item_counts": {
+        "context": 1,
+        "specificity": 1,
+        "verification": 0
+      },
+      "human_audit_status": "accepted",
+      "migration_impact_category": "earlier_response_addition",
+      "representation_impact": {
+        "v1_earliest_represented_content": "Later !array-specific example.",
+        "v1_earliest_represented_response": "turn_000005",
+        "v2_selected_content": "General null-or-empty examples for multiple value types.",
+        "v2_selected_response": "turn_000003"
+      },
+      "result": {
+        "boundary": "exclusive_before:turn_000003",
+        "family_id": "FGF_3b0a38932949841dcf581917",
+        "selected_artifact_ids": [
+          "GTC_000003_000190_000351_77efd3a1f91a7c38",
+          "GTC_000003_000395_000572_3ae62da86cc3461d",
+          "GTC_000003_000617_000826_29f5ab18c77a29d9",
+          "GTC_000003_000891_001058_2454da05a74b0cd6"
+        ],
+        "selected_response": "turn_000003",
+        "target_prompt": "turn_000002",
+        "tC": "2023-11-29T15:29:58.598890+00:00",
+        "tFG": "2023-11-29T15:30:05.280608+00:00"
+      }
+    }
+  ],
+  "phase": "stage-c-v2-phase2",
+  "phase_scope": "Two development cases; this checkpoint is not a performance estimate.",
+  "summary_version": "stage-c-v2-phase2-summary-v1"
+}

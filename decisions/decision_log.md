@@ -362,3 +362,19 @@ Suggested fields:
 - **Scope:** These two development cases do not establish V2 performance. No
   Phase 2 case was executed, and scientific eligibility remains unchanged.
 - **Owner:** Study team. **Status:** Phase 1 checkpoint accepted.
+
+## 2026-10-01 — Complete Stage C V2 Phase 2
+
+- **Decision:** Accept the Phase 2 V2 results for `CASE_5A3A043A5011` and
+  `CASE_E8F12807DBDC`. Stage C grouped three response-local listener-removal
+  alternatives for 5A and four response-local TypeScript null-or-empty examples
+  for E8 into one semantic family per case.
+- **Representation impact:** Both cases selected turn 3, earlier than the
+  earliest V1 Stage B represented response at turn 5. Neither case has an
+  accepted V1 Stage C scientific result, so this is a representation-impact
+  comparison rather than a V1-versus-V2 scientific-result comparison.
+- **Execution:** Both cases completed without a controlled rerun. No remaining
+  recovered-zero case was executed during Phase 2.
+- **Scope:** These development observations do not establish general
+  multi-candidate performance or change scientific eligibility.
+- **Owner:** Study team. **Status:** Phase 2 checkpoint accepted.
