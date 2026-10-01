@@ -20,7 +20,9 @@ from developer_intent.stage_c import (OpenAIStageCClient, StageCInvocationFailur
                                       resolve_first_generation, validate_model_view,
                                       validate_pass1, validate_pass2,
                                       validate_stage_c_record)
-from developer_intent.stage_c_config import StageCModelConfig, load_stage_c_config  # noqa: E402
+from developer_intent.stage_c_config import (StageCModelConfig, load_stage_c_config,  # noqa: E402
+                                              stage_c_version_contract)
+from developer_intent.generated_technical_content import build_v2_model_view  # noqa: E402
 from pipeline.stage_c.run import stage_c_paths  # noqa: E402
 
 CASE = "CASE_ABCDEF123456"
@@ -87,6 +89,35 @@ def pass2(**changes):
              "failure_reason": ""}
     value.update(changes)
     return value
+
+
+def v2_package():
+    turns = [turn(0, "user", "Use xUnit and keep the API stable.",
+                  "2024-01-01T00:00:00Z"),
+             turn(1, "assistant", "```csharp\nRun();\n```", "2024-01-01T00:01:00Z"),
+             turn(2, "user", "Later request", "2024-01-01T00:02:00Z")]
+    normalized = {"normalized_version": "lossless-conversation-v1",
+        "methodology_version": "dir-tfg-v2", "case_id": CASE,
+        "start": "2024-01-01T00:00:00Z", "precision": "timestamp",
+        "temporal_status": "exact", "temporal_source": "first developer turn",
+        "source_archive_sha256": "", "source_conversation_sha256": "a" * 64,
+        "visible_turns": turns, "artifact_candidates": [],
+        "records": [{"message": {"author": {"role": t["role"]},
+                                  "content": {"parts": [t["text"]]}}} for t in turns],
+        "tool_trace": [], "other_records": [], "raw_conversation": {},
+        "normalization_limitations": [], "complete": True,
+        "reconstruction_safe": False}
+    return build_v2_model_view(normalized)
+
+
+def pass1_v2(pkg):
+    artifact = pkg["generated_technical_content_candidates"][0]
+    return {"status": "complete", "family_label": "first generated family",
+            "artifact_ids": [artifact["candidate_id"]],
+            "response_turn_id": artifact["source_response_id"],
+            "target_prompt_id": "turn_000000",
+            "candidate_artifact_ids": [artifact["candidate_id"]],
+            "rationale": "Earliest coherent generated artifact.", "ambiguity_reason": ""}
 
 
 class MockClient:
@@ -194,6 +225,46 @@ class StageCTests(unittest.TestCase):
                 "source_turns": ["turn_000000", "turn_000001"],
                 "source_roles": ["user", "assistant"], "evidence": ["xUnit", "loaded from JSON"]}
         validate_pass2(pass2(context_supplied=[item]), prior)
+
+    def test_positional_provenance_cardinality_and_roles(self):
+        pkg = package(); _, prior, _ = resolve_first_generation(pkg, pass1(pkg))
+        valid = [
+            (["turn_000000"], ["user"], ["xUnit"]),
+            (["turn_000000", "turn_000002"], ["user", "user"],
+             ["xUnit", "keep the API stable"]),
+            (["turn_000000", "turn_000001", "turn_000002"],
+             ["user", "assistant", "user"],
+             ["xUnit", "loaded from JSON", "keep the API stable"]),
+        ]
+        for turns, roles, evidence in valid:
+            item = {"id": "C2", "category": "context", "text": "supported",
+                    "source_turns": turns, "source_roles": roles, "evidence": evidence}
+            validate_pass2(pass2(context_supplied=[item]), prior)
+        for roles in (["user"], ["user", "user", "user"]):
+            item = {"id": "C2", "category": "context", "text": "bad",
+                    "source_turns": ["turn_000000", "turn_000002"],
+                    "source_roles": roles, "evidence": ["xUnit"]}
+            with self.assertRaisesRegex(ValueError, "cardinality mismatch"):
+                validate_pass2(pass2(context_supplied=[item]), prior)
+        wrong_role = {"id": "C2", "category": "context", "text": "bad",
+                      "source_turns": ["turn_000000", "turn_000001"],
+                      "source_roles": ["user", "user"], "evidence": ["xUnit"]}
+        with self.assertRaisesRegex(ValueError, "incorrect role"):
+            validate_pass2(pass2(context_supplied=[wrong_role]), prior)
+
+    def test_evidence_and_temporal_leakage_remain_rejected(self):
+        pkg = package(); _, prior, _ = resolve_first_generation(pkg, pass1(pkg))
+        altered = {"id": "C2", "category": "context", "text": "bad",
+                   "source_turns": ["turn_000000"], "source_roles": ["user"],
+                   "evidence": ["xunit"]}
+        with self.assertRaisesRegex(ValueError, "not attributable"):
+            validate_pass2(pass2(context_supplied=[altered]), prior)
+        for leaked, role in (("turn_000003", "assistant"), ("turn_000004", "user")):
+            item = {"id": "C2", "category": "context", "text": "bad",
+                    "source_turns": [leaked], "source_roles": [role],
+                    "evidence": ["Run"]}
+            with self.assertRaisesRegex(ValueError, "inadmissible turn"):
+                validate_pass2(pass2(context_supplied=[item]), prior)
 
     def test_invalid_and_post_boundary_sources_rejected(self):
         pkg = package(); _, prior, _ = resolve_first_generation(pkg, pass1(pkg))
@@ -349,12 +420,21 @@ class StageCTests(unittest.TestCase):
         with self.assertRaises(ValueError): validate_pass1({"status": "complete"})
         with self.assertRaises(ValueError): validate_pass2({"status": "complete"}, [])
         for name in ("stage_c_pass1_v2.schema.json", "stage_c_pass2_v1.schema.json",
-                     "conversation_draft_v3.schema.json"):
+                     "stage_c_pass2_v2.schema.json", "conversation_draft_v3.schema.json",
+                     "conversation_draft_v4.schema.json"):
             schema = load_contract(ROOT, name)
             self.assertFalse(schema["additionalProperties"])
         pass1_schema = load_contract(ROOT, "stage_c_pass1_v2.schema.json")
         self.assertIn("family_label", pass1_schema["required"])
         self.assertNotIn("family_id", pass1_schema["properties"])
+        pass2_v2 = load_contract(ROOT, "stage_c_pass2_v2.schema.json")
+        item = pass2_v2["$defs"]["item"]["properties"]
+        self.assertIn("parallel", item["source_turns"]["description"])
+        self.assertIn("source_roles[i]", item["source_roles"]["description"])
+        draft_v4 = load_contract(ROOT, "conversation_draft_v4.schema.json")
+        self.assertIn("pass_2_outcome", draft_v4["required"])
+        self.assertEqual(draft_v4["properties"]["schema_version"]["const"],
+                         "conversation-draft-v4")
 
     def test_v2_migration_preserves_model_provenance_and_model_family_value(self):
         pkg = package()
@@ -606,7 +686,9 @@ class StageCTests(unittest.TestCase):
                 ("v1", "conversation-only-v1", "dir-stage-c-first-generation-v3",
                  "conversation-extraction-v4", "v4"),
                 ("v2", "conversation-only-v2", "dir-stage-c-first-generation-v4",
-                 "conversation-extraction-v5", "v5")):
+                 "conversation-extraction-v5", "v5"),
+                ("v3", "conversation-only-v2", "dir-stage-c-first-generation-v4",
+                 "conversation-extraction-v6", "v6")):
             with self.subTest(version=version):
                 report = CONFIG.safe_report(version)
                 for expected in (f"Input version: {version}",
@@ -638,7 +720,9 @@ class StageCTests(unittest.TestCase):
         expected = {"v1": ("conversation-only-v1", "dir-stage-c-first-generation-v3",
                            "conversation-extraction-v4"),
                     "v2": ("conversation-only-v2", "dir-stage-c-first-generation-v4",
-                           "conversation-extraction-v5")}
+                           "conversation-extraction-v5"),
+                    "v3": ("conversation-only-v2", "dir-stage-c-first-generation-v4",
+                           "conversation-extraction-v6")}
         for version, values in expected.items():
             result = subprocess.run(
                 [sys.executable, "pipeline/stage_c/run.py", "--check-config",
@@ -654,16 +738,48 @@ class StageCTests(unittest.TestCase):
             self.assertIn("OpenAI SDK max retries: 2", result.stdout)
             self.assertNotIn("sk-never-print", result.stdout)
 
-    def test_runner_paths_separate_v1_v2_and_development_outputs(self):
+    def test_runner_paths_separate_historical_and_v6_outputs(self):
         v1_input, v1_output = stage_c_paths(ROOT, CASE, "v1")
         v2_input, v2_output = stage_c_paths(ROOT, CASE, "v2")
         _, v2_retry = stage_c_paths(ROOT, CASE, "v2", "wave_1")
+        v3_input, v3_output = stage_c_paths(ROOT, CASE, "v3")
         self.assertEqual(v1_input.name, "stage_c_model_view.json")
         self.assertEqual(v2_input.name, "stage_c_model_view_v2.json")
         self.assertEqual(v1_output.name, "stage_c_extraction_v4.json")
         self.assertEqual(v2_output.name, "stage_c_extraction_v5.json")
         self.assertEqual(v2_retry.name, "stage_c_extraction_v5_wave_1.json")
+        self.assertEqual(v3_input.name, "stage_c_model_view_v2.json")
+        self.assertEqual(v3_output.name, "stage_c_extraction_v6.json")
         self.assertNotEqual(v1_output, v2_output)
+
+    def test_v6_persists_noncomplete_pass2_outcome(self):
+        pkg = v2_package()
+        unresolved = pass2(status="unresolved", failure_reason="insufficient supplied detail",
+                           context_supplied=[], specificity_supplied=[],
+                           verification_supplied=[])
+        record = extract_stage_c(
+            ROOT, CASE, pkg, MockClient([pass1_v2(pkg), unresolved]), CONFIG,
+            input_ref="stage_c_model_view_v2.json",
+            version_contract=stage_c_version_contract("v3"))
+        self.assertEqual(record["schema_version"], "conversation-draft-v4")
+        self.assertEqual(record["extraction_version"], "conversation-extraction-v6")
+        self.assertEqual(record["pass_2_outcome"], {
+            "status": "unresolved", "failure_reason": "insufficient supplied detail"})
+        self.assertEqual(record["model_provenance"]["pass_2_prompt_version"],
+                         "dir-stage-c-csv-extraction-v3")
+        self.assertEqual(record["model_provenance"]["structured_output_schema_versions"],
+                         ["stage-c-pass1-v2", "stage-c-pass2-v2"])
+        validate_stage_c_record(record)
+
+    def test_historical_version_contracts_remain_unchanged(self):
+        expected = {
+            "v1": ("conversation-extraction-v4", "conversation-draft-v3", "v4"),
+            "v2": ("conversation-extraction-v5", "conversation-draft-v3", "v5"),
+        }
+        for name, values in expected.items():
+            contract = stage_c_version_contract(name)
+            self.assertEqual((contract.extraction_version, contract.draft_schema_version,
+                              contract.output_version), values)
 
     def test_final_validation_and_atomic_no_overwrite(self):
         pkg = package(); record = extract_stage_c(ROOT, CASE, pkg,

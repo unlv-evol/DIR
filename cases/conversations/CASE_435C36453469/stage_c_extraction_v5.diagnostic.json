@@ -1,0 +1,103 @@
+{
+  "authoritative": false,
+  "case_id": "CASE_435C36453469",
+  "diagnostic_version": "stage-c-rejected-output-v1",
+  "disposition": "rejected_model_output",
+  "extraction_version": "conversation-extraction-v5",
+  "failure_reason": "ValueError: Pass 2 evidence is not attributable to its cited turns",
+  "parsing": {
+    "parsed_payload_retained": true,
+    "status": "parsed"
+  },
+  "pass": "pass_2",
+  "rejected_parsed_payload": {
+    "context_supplied": [
+      {
+        "category": "context",
+        "evidence": [
+          "const firstLetter = this.selectedCreatorFilter;\ndisplayedCreator =\n  this.model.creators.find(creator =>\n    creator.toUpperCase().startsWith(firstLetter)\n  ) ?? displayedCreator; // Fall back to the original if needed"
+        ],
+        "id": "context_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "The displayed creator is chosen by finding the first creator whose uppercased name starts with `this.selectedCreatorFilter`, with nullish fallback to the original `displayedCreator`."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "This has a bug, where \"Émile\" is not selected as the displayed creator when \"E\" is the selected filter letter."
+        ],
+        "id": "context_2",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "In the reported behavior, `Émile` is not selected as the displayed creator when the selected filter letter is `E`."
+      }
+    ],
+    "failure_reason": "",
+    "specificity_supplied": [
+      {
+        "category": "specificity",
+        "evidence": [
+          "This has a bug, where \"Émile\" is not selected as the displayed creator when \"E\" is the selected filter letter."
+        ],
+        "id": "specificity_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "The reported issue is specifically the creator-selection case involving the creator name `Émile` and the selected filter letter `E`."
+      }
+    ],
+    "status": "complete",
+    "verification_supplied": []
+  },
+  "request_provenance": {
+    "api": "responses",
+    "input_sha256": "d95c155bed12229652b000b02767b8215f536895e09b3e5b4e6266e7da1e9342",
+    "prompt_sha256": "f8c9df630f7b185fff387f9a311993a205d5c398f6c61e7f6caca67f5067b019",
+    "prompt_version": "dir-stage-c-csv-extraction-v2",
+    "provider": "openai",
+    "reasoning_effort": "medium",
+    "reasoning_mode": "standard",
+    "requested_model": "gpt-5.6-sol",
+    "schema_sha256": "9d481f52cea16dd739a65eede0b566e290142cbba97321d5373383360e6e3633",
+    "schema_version": "stage-c-pass2-v1",
+    "sdk_max_retries": 2,
+    "tools_enabled": []
+  },
+  "response_provenance": {
+    "invocation": {
+      "invocation_timestamp": "2026-10-01T09:07:57.325200+00:00",
+      "response_id": "resp_0641f590c0c36a2c006abe22f1836087d19bd1bc64dc16078d",
+      "returned_model": "gpt-5.6-sol",
+      "usage": {
+        "input_tokens": 1009,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 515,
+        "output_tokens_details": {
+          "reasoning_tokens": 176
+        },
+        "total_tokens": 1524
+      }
+    },
+    "response_received": true,
+    "structured_content_status": "parsed"
+  },
+  "validation": {
+    "accepted": false,
+    "status": "failed"
+  }
+}

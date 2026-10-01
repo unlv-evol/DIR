@@ -1,0 +1,221 @@
+{
+  "authoritative": false,
+  "case_id": "CASE_488C3B9CF30B",
+  "diagnostic_version": "stage-c-rejected-output-v1",
+  "disposition": "rejected_model_output",
+  "extraction_version": "conversation-extraction-v5",
+  "failure_reason": "ValueError: Pass 2 evidence is not attributable to its cited turns",
+  "parsing": {
+    "parsed_payload_retained": true,
+    "status": "parsed"
+  },
+  "pass": "pass_2",
+  "rejected_parsed_payload": {
+    "context_supplied": [
+      {
+        "category": "context",
+        "evidence": [
+          "「if フラグ:\\n  関数()\\n\\ndef 関数():\\n  破壊的変更」",
+          "「関数(フラグ)\\n\\ndef 関数(フラグ):\\n  if フラグ:\\n    破壊的変更」"
+        ],
+        "id": "context_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "比較対象は、呼び出し側で真偽フラグを判定し、真の場合だけ破壊的変更を行う引数なし関数を呼ぶ方式と、真偽フラグを関数へ渡し、関数内部で判定して破壊的変更を行う方式である。"
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "「このアプローチでは、`関数`は常に同じ動作をします（この場合は『破壊的変更』）。`フラグ`の値に基づいて関数を呼び出すかどうかを決定します。」",
+          "「この方法の利点は、関数が単一の責任を持ち、外部条件に依存しないことです。これは、単一責任の原則に従い、再利用しやすい関数を作成するのに役立ちます。」"
+        ],
+        "id": "context_2",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000003"
+        ],
+        "text": "先の回答では、呼び出し側で判定する方式は、関数が常に同じ動作をし、単一の責任を持って外部条件に依存しないため、再利用しやすいと説明されている。"
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "「ここでは、`関数`は引数として`フラグ`を受け取り、その値に基づいて異なる動作をします。」",
+          "「このアプローチの利点は、関数の振る舞いを柔軟に変更できることです。しかし、関数が外部の条件に依存するため、再利用しにくくなる可能性があります。」"
+        ],
+        "id": "context_3",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000003"
+        ],
+        "text": "先の回答では、関数内部で判定する方式は、フラグに基づき振る舞いを柔軟に変更できる一方、外部条件への依存により再利用しにくくなる可能性があると説明されている。"
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "「音声合成のためのWebAPIを作っている場合」"
+        ],
+        "id": "context_4",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000004"
+        ],
+        "text": "検討対象の具体的な技術状況は、音声合成用Web APIである。"
+      }
+    ],
+    "failure_reason": "",
+    "specificity_supplied": [
+      {
+        "category": "specificity",
+        "evidence": [
+          "「フラグが必ずbooleanである場合」"
+        ],
+        "id": "specificity_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000004"
+        ],
+        "text": "フラグは必ずbooleanであるという前提で比較する。"
+      },
+      {
+        "category": "specificity",
+        "evidence": [
+          "「どういうときにどちらを採用するべきでしょうか。」"
+        ],
+        "id": "specificity_2",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000004"
+        ],
+        "text": "それぞれの方式を採用すべき状況を説明する。"
+      },
+      {
+        "category": "specificity",
+        "evidence": [
+          "「音声合成のためのWebAPIを作っている場合に起きそうな具体例を添えて教えてください。」"
+        ],
+        "id": "specificity_3",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000004"
+        ],
+        "text": "音声合成用Web APIで起こりそうな具体例を添える。"
+      }
+    ],
+    "status": "complete",
+    "verification_supplied": [
+      {
+        "category": "verification",
+        "evidence": [
+          "「フラグが必ずbooleanである場合、どういうときにどちらを採用するべきでしょうか。」"
+        ],
+        "id": "verification_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000004"
+        ],
+        "text": "回答は、booleanフラグを前提として、両方式を採用する条件を区別して示す必要がある。"
+      },
+      {
+        "category": "verification",
+        "evidence": [
+          "「音声合成のためのWebAPIを作っている場合に起きそうな具体例を添えて教えてください。」"
+        ],
+        "id": "verification_2",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000004"
+        ],
+        "text": "回答には、音声合成用Web APIで起こりそうな具体例が含まれる必要がある。"
+      },
+      {
+        "category": "verification",
+        "evidence": [
+          "「単一の責任を持つ再利用可能な関数を作成したい場合は、最初のアプローチが良いでしょう。」",
+          "「しかし、関数の振る舞いを動的に変更する必要がある場合は、第二のアプローチが適しているかもしれません。」"
+        ],
+        "id": "verification_3",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000003"
+        ],
+        "text": "先の回答が示した選択指針では、単一責任で再利用可能な関数にしたい場合は呼び出し側で判定する方式を選び、関数の振る舞いを動的に変更する必要がある場合は関数内部で判定する方式を選ぶ。"
+      },
+      {
+        "category": "verification",
+        "evidence": [
+          "「一般的に、関数が外部の状態や条件に依存しないようにすることは、コードの可読性や保守性を高めるために望ましいです。」",
+          "「したがって、特別な理由がない限り、最初のアプローチがよりクリーンで理解しやすいと考えられます。」"
+        ],
+        "id": "verification_4",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000003"
+        ],
+        "text": "先の回答は、特別な理由がなければ、外部の状態や条件への依存を避ける呼び出し側判定方式のほうが、可読性・保守性の面で望ましいという一般的指針を示している。"
+      }
+    ]
+  },
+  "request_provenance": {
+    "api": "responses",
+    "input_sha256": "ef8327c58dceb45f7cbc5ffae2908a71863f7a4b77398c251f9a9f5c3aa854ab",
+    "prompt_sha256": "f8c9df630f7b185fff387f9a311993a205d5c398f6c61e7f6caca67f5067b019",
+    "prompt_version": "dir-stage-c-csv-extraction-v2",
+    "provider": "openai",
+    "reasoning_effort": "medium",
+    "reasoning_mode": "standard",
+    "requested_model": "gpt-5.6-sol",
+    "schema_sha256": "9d481f52cea16dd739a65eede0b566e290142cbba97321d5373383360e6e3633",
+    "schema_version": "stage-c-pass2-v1",
+    "sdk_max_retries": 2,
+    "tools_enabled": []
+  },
+  "response_provenance": {
+    "invocation": {
+      "invocation_timestamp": "2026-10-01T08:44:28.175503+00:00",
+      "response_id": "resp_00c0fba11e4e436a006abe1d6c814087d18a3bde952fb1af87",
+      "returned_model": "gpt-5.6-sol",
+      "usage": {
+        "input_tokens": 1845,
+        "input_tokens_details": {
+          "cache_write_tokens": 1842,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1798,
+        "output_tokens_details": {
+          "reasoning_tokens": 345
+        },
+        "total_tokens": 3643
+      }
+    },
+    "response_received": true,
+    "structured_content_status": "parsed"
+  },
+  "validation": {
+    "accepted": false,
+    "status": "failed"
+  }
+}

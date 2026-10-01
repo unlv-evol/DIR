@@ -1,0 +1,138 @@
+{
+  "authoritative": false,
+  "case_id": "CASE_31385155F1C4",
+  "diagnostic_version": "stage-c-rejected-output-v1",
+  "disposition": "rejected_model_output",
+  "extraction_version": "conversation-extraction-v5",
+  "failure_reason": "ValueError: Pass 2 evidence is not attributable to its cited turns",
+  "parsing": {
+    "parsed_payload_retained": true,
+    "status": "parsed"
+  },
+  "pass": "pass_2",
+  "rejected_parsed_payload": {
+    "context_supplied": [
+      {
+        "category": "context",
+        "evidence": [
+          "func extractStatusFromResponse(response string) string {"
+        ],
+        "id": "context_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000003"
+        ],
+        "text": "The code under review is a Go function named `extractStatusFromResponse` that accepts a response string and returns a string."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "patterns := []*regexp.Regexp{",
+          "regexp.MustCompile(`\\\"code\\\"\\s*:\\s*(\\d+)`),",
+          "regexp.MustCompile(`(\\d+)\\s+Not Found`),",
+          "regexp.MustCompile(`(\\d+)\\s+page not found`),",
+          "regexp.MustCompile(`HTTP\\/\\d\\.\\d\\s+(\\d+)`),",
+          "regexp.MustCompile(`\\\"statusCode\\\"\\s*:\\s*(\\d+)`),",
+          "return matches[1] // Return the first captured group, which should be the status code."
+        ],
+        "id": "context_2",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000003"
+        ],
+        "text": "The function checks an ordered list of regular expressions for numeric values associated with JSON `code`, `Not Found`, `page not found`, an HTTP status line, or JSON `statusCode`, and returns the first captured match."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "// Returns \"200\" if none of the pre-defined internal regexes matches any return values.",
+          "return \"200\""
+        ],
+        "id": "context_3",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000003"
+        ],
+        "text": "If none of the predefined regular expressions matches, the function returns the string `200`."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "// TODO: Remove this function after the node responds back to us with a statusCode alongside with the response and the signature."
+        ],
+        "id": "context_4",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000003"
+        ],
+        "text": "The function is marked as temporary pending a node response that includes a status code alongside the response and signature."
+      }
+    ],
+    "failure_reason": "",
+    "specificity_supplied": [
+      {
+        "category": "specificity",
+        "evidence": [
+          "As a backend engineer reviewing this code, what kind of feedback what you have on the design of this function?"
+        ],
+        "id": "specificity_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000003"
+        ],
+        "text": "Provide backend-engineering feedback focused on the design of the supplied function."
+      }
+    ],
+    "status": "complete",
+    "verification_supplied": []
+  },
+  "request_provenance": {
+    "api": "responses",
+    "input_sha256": "a1d28e36c51942033506f02809a010a1e19ca7b2143b19e482ca9cbba221ec95",
+    "prompt_sha256": "f8c9df630f7b185fff387f9a311993a205d5c398f6c61e7f6caca67f5067b019",
+    "prompt_version": "dir-stage-c-csv-extraction-v2",
+    "provider": "openai",
+    "reasoning_effort": "medium",
+    "reasoning_mode": "standard",
+    "requested_model": "gpt-5.6-sol",
+    "schema_sha256": "9d481f52cea16dd739a65eede0b566e290142cbba97321d5373383360e6e3633",
+    "schema_version": "stage-c-pass2-v1",
+    "sdk_max_retries": 2,
+    "tools_enabled": []
+  },
+  "response_provenance": {
+    "invocation": {
+      "invocation_timestamp": "2026-10-01T09:06:25.229948+00:00",
+      "response_id": "resp_091114ee8d16ea3b006abe2291964487d1b1ca39df834fdc21",
+      "returned_model": "gpt-5.6-sol",
+      "usage": {
+        "input_tokens": 1262,
+        "input_tokens_details": {
+          "cache_write_tokens": 1259,
+          "cached_tokens": 0
+        },
+        "output_tokens": 857,
+        "output_tokens_details": {
+          "reasoning_tokens": 321
+        },
+        "total_tokens": 2119
+      }
+    },
+    "response_received": true,
+    "structured_content_status": "parsed"
+  },
+  "validation": {
+    "accepted": false,
+    "status": "failed"
+  }
+}

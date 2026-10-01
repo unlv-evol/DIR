@@ -1,0 +1,231 @@
+{
+  "authoritative": false,
+  "case_id": "CASE_27C861787A74",
+  "diagnostic_version": "stage-c-rejected-output-v1",
+  "disposition": "rejected_model_output",
+  "extraction_version": "conversation-extraction-v5",
+  "failure_reason": "ValueError: Pass 2 item provenance is incomplete",
+  "parsing": {
+    "parsed_payload_retained": true,
+    "status": "parsed"
+  },
+  "pass": "pass_2",
+  "rejected_parsed_payload": {
+    "context_supplied": [
+      {
+        "category": "context",
+        "evidence": [
+          "You're fresh out of learning UI/UX Design, you want to get your hands dirty with almost real-world example problems to harness your design skills and build up a portfolio.",
+          "I am creating an Open source unlimited collection of UI/UX design problem statements for freshers  to try."
+        ],
+        "id": "ctx_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "The project is an open-source, unlimited collection of UI/UX design problem statements intended for freshers to practice design skills and build portfolios."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "{ id: 1, name: 'E-commerce', emoji: '🛒' },\n    { id: 2, name: 'Healthcare', emoji: '🏥' },\n    { id: 3, name: 'Education', emoji: '📚' },\n    { id: 4, name: 'Finance', emoji: '💰' },\n    { id: 5, name: 'Social Media', emoji: '📱' },\n    { id: 6, name: 'Travel and Hospitality', emoji: '✈️' },\n    { id: 7, name: 'Entertainment', emoji: '🎥' },\n    { id: 8, name: 'News and Media', emoji: '📰' },\n    { id: 9, name: 'Real Estate', emoji: '🏠' },\n    { id: 10, name: 'Food and Dining', emoji: '🍔' },\n    { id: 11, name: 'Transportation', emoji: '🚗' },\n    { id: 12, name: 'Fitness and Wellness', emoji: '💪' },\n    { id: 13, name: 'Government and Civic', emoji: '🏛️' },\n    { id: 14, name: 'Nonprofits and Charities', emoji: '🤝' },\n    { id: 15, name: 'Gaming', emoji: '🎮' },\n    { id: 16, name: 'Automotive', emoji: '🚗' },\n    { id: 17, name: 'Industrial and Manufacturing', emoji: '🏭' },\n    { id: 18, name: 'Agriculture', emoji: '🌾' }"
+        ],
+        "id": "ctx_2",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "The supplied category catalog contains 18 categories identified by numeric IDs: E-commerce (1), Healthcare (2), Education (3), Finance (4), Social Media (5), Travel and Hospitality (6), Entertainment (7), News and Media (8), Real Estate (9), Food and Dining (10), Transportation (11), Fitness and Wellness (12), Government and Civic (13), Nonprofits and Charities (14), Gaming (15), Automotive (16), Industrial and Manufacturing (17), and Agriculture (18)."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "{\n      title: 'Precision Farming Interface',\n      description:\n        'Design an intuitive interface for a precision farming platform that assists farmers in optimizing crop yield, irrigation, and pest control using IoT sensors and data analytics.',\n      categories: [18]\n    }",
+          "where catergories array is categoryId"
+        ],
+        "id": "ctx_3",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "The example problem-object structure uses the fields `title`, `description`, and `categories`; `categories` is an array of category IDs."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "title: 'Precision Farming Interface'",
+          "title: 'Livestock Management App'",
+          "title: 'Crop Disease Detection'",
+          "title: 'Agricultural Weather Dashboard'",
+          "title: 'Farm Equipment Rental Platform'",
+          "Here are more UI/UX design problem statements in the \"Agriculture\" category, as well as additional problems in various other categories:",
+          "**E-commerce Category (ID: 1):**",
+          "**Healthcare Category (ID: 2):**"
+        ],
+        "id": "ctx_4",
+        "source_roles": [
+          "user",
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000002",
+          "turn_000005"
+        ],
+        "text": "Previously supplied examples include agriculture problems plus additional agriculture, e-commerce, and healthcare problem statements."
+      }
+    ],
+    "failure_reason": "",
+    "specificity_supplied": [
+      {
+        "category": "specificity",
+        "evidence": [
+          "generate more list for me with these categories."
+        ],
+        "id": "spec_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000004"
+        ],
+        "text": "Generate additional UI/UX design problem statements using the supplied categories."
+      },
+      {
+        "category": "specificity",
+        "evidence": [
+          "where catergories array is categoryId",
+          "reference the category id as seen in the example structure"
+        ],
+        "id": "spec_2",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002",
+          "turn_000004"
+        ],
+        "text": "Represent category associations by the numeric category IDs used in the example structure."
+      },
+      {
+        "category": "specificity",
+        "evidence": [
+          "generate it in a json format up to 50"
+        ],
+        "id": "spec_3",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000006"
+        ],
+        "text": "Return the generated list in JSON format."
+      },
+      {
+        "category": "specificity",
+        "evidence": [
+          "generate it in a json format up to 50"
+        ],
+        "id": "spec_4",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000006"
+        ],
+        "text": "Generate no more than 50 entries."
+      }
+    ],
+    "status": "complete",
+    "verification_supplied": [
+      {
+        "category": "verification",
+        "evidence": [
+          "generate it in a json format up to 50"
+        ],
+        "id": "ver_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000006"
+        ],
+        "text": "The output must be validly presented in JSON format."
+      },
+      {
+        "category": "verification",
+        "evidence": [
+          "where catergories array is categoryId",
+          "reference the category id as seen in the example structure"
+        ],
+        "id": "ver_2",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002",
+          "turn_000004"
+        ],
+        "text": "Each category reference must use the corresponding numeric category ID in the example structure rather than only a category name."
+      },
+      {
+        "category": "verification",
+        "evidence": [
+          "generate it in a json format up to 50"
+        ],
+        "id": "ver_3",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000006"
+        ],
+        "text": "The generated list must not exceed 50 entries."
+      }
+    ]
+  },
+  "request_provenance": {
+    "api": "responses",
+    "input_sha256": "73d58880538a5f5b78f4f99f672a58a14ea62e47f1ffcb1eb522643093bfcbd6",
+    "prompt_sha256": "f8c9df630f7b185fff387f9a311993a205d5c398f6c61e7f6caca67f5067b019",
+    "prompt_version": "dir-stage-c-csv-extraction-v2",
+    "provider": "openai",
+    "reasoning_effort": "medium",
+    "reasoning_mode": "standard",
+    "requested_model": "gpt-5.6-sol",
+    "schema_sha256": "9d481f52cea16dd739a65eede0b566e290142cbba97321d5373383360e6e3633",
+    "schema_version": "stage-c-pass2-v1",
+    "sdk_max_retries": 2,
+    "tools_enabled": []
+  },
+  "response_provenance": {
+    "invocation": {
+      "invocation_timestamp": "2026-10-01T08:43:08.432321+00:00",
+      "response_id": "resp_06d177947e55c50d006abe1d1cc1a887d188bfff8b8ef4d892",
+      "returned_model": "gpt-5.6-sol",
+      "usage": {
+        "input_tokens": 3251,
+        "input_tokens_details": {
+          "cache_write_tokens": 3248,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1576,
+        "output_tokens_details": {
+          "reasoning_tokens": 180
+        },
+        "total_tokens": 4827
+      }
+    },
+    "response_received": true,
+    "structured_content_status": "parsed"
+  },
+  "validation": {
+    "accepted": false,
+    "status": "failed"
+  }
+}

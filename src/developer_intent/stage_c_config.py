@@ -15,7 +15,10 @@ class StageCVersionContract:
     package_version: str
     input_filename: str
     pass_1_prompt_version: str
+    pass_2_prompt_version: str
+    pass_2_schema_version: str
     extraction_version: str
+    draft_schema_version: str
     output_version: str
     candidate_prefix: str
 
@@ -23,11 +26,18 @@ class StageCVersionContract:
 STAGE_C_VERSION_CONTRACTS = {
     "v1": StageCVersionContract(
         "v1", "conversation-only-v1", "stage_c_model_view.json",
-        "dir-stage-c-first-generation-v3", "conversation-extraction-v4", "v4",
+        "dir-stage-c-first-generation-v3", "dir-stage-c-csv-extraction-v2",
+        "stage-c-pass2-v1", "conversation-extraction-v4", "conversation-draft-v3", "v4",
         "ARTIFACT_"),
     "v2": StageCVersionContract(
         "v2", "conversation-only-v2", "stage_c_model_view_v2.json",
-        "dir-stage-c-first-generation-v4", "conversation-extraction-v5", "v5",
+        "dir-stage-c-first-generation-v4", "dir-stage-c-csv-extraction-v2",
+        "stage-c-pass2-v1", "conversation-extraction-v5", "conversation-draft-v3", "v5",
+        "GTC_"),
+    "v3": StageCVersionContract(
+        "v3", "conversation-only-v2", "stage_c_model_view_v2.json",
+        "dir-stage-c-first-generation-v4", "dir-stage-c-csv-extraction-v3",
+        "stage-c-pass2-v2", "conversation-extraction-v6", "conversation-draft-v4", "v6",
         "GTC_"),
 }
 
@@ -79,9 +89,11 @@ class StageCModelConfig:
             "Structured Outputs: enabled",
             "Model tools: disabled",
             f"Pass 1 prompt version: {contract.pass_1_prompt_version}",
-            "Pass 2 prompt version: dir-stage-c-csv-extraction-v2",
+            f"Pass 2 prompt version: {contract.pass_2_prompt_version}",
+            f"Pass 2 schema version: {contract.pass_2_schema_version}",
             "Methodology version: dir-tfg-v2",
             f"Extraction version: {contract.extraction_version}",
+            f"Draft schema: {contract.draft_schema_version}",
             f"Output contract: {contract.output_version}",
             f"Candidate namespace: {contract.candidate_prefix}*",
             f"OPENAI_API_KEY: {'present' if self.api_key else 'missing'}",

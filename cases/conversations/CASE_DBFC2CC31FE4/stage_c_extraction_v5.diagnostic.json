@@ -1,0 +1,104 @@
+{
+  "authoritative": false,
+  "case_id": "CASE_DBFC2CC31FE4",
+  "diagnostic_version": "stage-c-rejected-output-v1",
+  "disposition": "rejected_model_output",
+  "extraction_version": "conversation-extraction-v5",
+  "failure_reason": "ValueError: Pass 2 evidence is not attributable to its cited turns",
+  "parsing": {
+    "parsed_payload_retained": true,
+    "status": "parsed"
+  },
+  "pass": "pass_2",
+  "rejected_parsed_payload": {
+    "context_supplied": [
+      {
+        "category": "context",
+        "evidence": [
+          "# Lint disabled because of actionlint's implicit `________________` replacement\n# shellcheck disable=SC2193\nif [[ ${{ matrix.os }} == windows-* ]]; then\n  mv \"${CUDA_ROOT}/bin/\"*.dll download/cuda/bin/\n  # remove CUDA to reduce disk usage\n  rm -rf \"${CUDA_ROOT}\""
+        ],
+        "id": "context_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "GitHub Actions形式のシェルコードで、`actionlint`による暗黙の`________________`置換を理由として、`if [[ ${{ matrix.os }} == windows-* ]]; then`の直前でShellCheckの`SC2193`が無効化されている。条件成立時にはCUDAのDLLを`download/cuda/bin/`へ移動し、`CUDA_ROOT`を削除する。"
+      }
+    ],
+    "failure_reason": "",
+    "specificity_supplied": [
+      {
+        "category": "specificity",
+        "evidence": [
+          "このSC2193のshellcheck disableをしないように、コードを修正する方法はありますか？"
+        ],
+        "id": "specificity_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "提示された条件分岐のコードを修正し、`SC2193`のShellCheck無効化を使わないようにしたい。"
+      }
+    ],
+    "status": "complete",
+    "verification_supplied": [
+      {
+        "category": "verification",
+        "evidence": [
+          "このSC2193のshellcheck disableをしないように、コードを修正する方法はありますか？"
+        ],
+        "id": "verification_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "修正後のコードでは、`# shellcheck disable=SC2193`を使用しないことが期待されている。"
+      }
+    ]
+  },
+  "request_provenance": {
+    "api": "responses",
+    "input_sha256": "d3a75d3b76d963423363bb323df506d8afb8b2ae06e5eeb13b575ac706defc7b",
+    "prompt_sha256": "f8c9df630f7b185fff387f9a311993a205d5c398f6c61e7f6caca67f5067b019",
+    "prompt_version": "dir-stage-c-csv-extraction-v2",
+    "provider": "openai",
+    "reasoning_effort": "medium",
+    "reasoning_mode": "standard",
+    "requested_model": "gpt-5.6-sol",
+    "schema_sha256": "9d481f52cea16dd739a65eede0b566e290142cbba97321d5373383360e6e3633",
+    "schema_version": "stage-c-pass2-v1",
+    "sdk_max_retries": 2,
+    "tools_enabled": []
+  },
+  "response_provenance": {
+    "invocation": {
+      "invocation_timestamp": "2026-10-01T14:38:59.067079+00:00",
+      "response_id": "resp_0c42883b8e84d4d6006abe7083540887d1996beead6715007b",
+      "returned_model": "gpt-5.6-sol",
+      "usage": {
+        "input_tokens": 1036,
+        "input_tokens_details": {
+          "cache_write_tokens": 1033,
+          "cached_tokens": 0
+        },
+        "output_tokens": 539,
+        "output_tokens_details": {
+          "reasoning_tokens": 116
+        },
+        "total_tokens": 1575
+      }
+    },
+    "response_received": true,
+    "structured_content_status": "parsed"
+  },
+  "validation": {
+    "accepted": false,
+    "status": "failed"
+  }
+}

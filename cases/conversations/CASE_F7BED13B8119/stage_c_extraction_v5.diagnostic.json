@@ -1,0 +1,243 @@
+{
+  "authoritative": false,
+  "case_id": "CASE_F7BED13B8119",
+  "diagnostic_version": "stage-c-rejected-output-v1",
+  "disposition": "rejected_model_output",
+  "extraction_version": "conversation-extraction-v5",
+  "failure_reason": "ValueError: Pass 2 item provenance is incomplete",
+  "parsing": {
+    "parsed_payload_retained": true,
+    "status": "parsed"
+  },
+  "pass": "pass_2",
+  "rejected_parsed_payload": {
+    "context_supplied": [
+      {
+        "category": "context",
+        "evidence": [
+          "pre-commitでbashスクリプトを実行するようにしたところ、windowsには環境がなくて実行できないことがわかりました。"
+        ],
+        "id": "ctx-1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "pre-commitフックからbashスクリプトを実行する構成にしたが、Windowsには実行環境がなく、実行できないことが判明している。"
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "WindowsはデフォルトではUNIX系のシェルスクリプト（bashやshなど）をネイティブにはサポートしていません。WindowsのネイティブなシェルはPowerShellやコマンドプロンプト（cmd）です。"
+        ],
+        "id": "ctx-2",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000005"
+        ],
+        "text": "WindowsはデフォルトではbashやshなどのUNIX系シェルスクリプトをネイティブサポートせず、ネイティブなシェルはPowerShellまたはcmdである。"
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "Windowsでも動作するシェルスクリプトを書くには、PowerShellやcmdのスクリプトを書く必要があります。ただし、これらのスクリプトはUNIX系のシステムでは動作しません。"
+        ],
+        "id": "ctx-3",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000005"
+        ],
+        "text": "PowerShellまたはcmdのスクリプトはWindowsでは動作するが、UNIX系システムでは動作しない。"
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "PythonやNode.jsもそのランタイムがインストールされていない環境だと問題になります。",
+          "PythonやNode.jsのランタイムがインストールされていない環境では、それらの言語で書かれたスクリプトは動作しません。"
+        ],
+        "id": "ctx-4",
+        "source_roles": [
+          "user",
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000006",
+          "turn_000007"
+        ],
+        "text": "PythonまたはNode.jsによるスクリプトは、対応するランタイムがインストールされていない環境では問題となる。"
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "pythonはpython3がインストールされているときに問題になります。",
+          "Python2とPython3の間には互換性の問題があり、Python2で書かれたスクリプトはPython3のランタイムでは必ずしも動作しない可能性があります。"
+        ],
+        "id": "ctx-5",
+        "source_roles": [
+          "user",
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000006",
+          "turn_000007"
+        ],
+        "text": "Pythonについては、pythonではなくpython3がインストールされている環境で問題が生じる。加えて、Python 2用スクリプトはPython 3ランタイムで必ずしも動作しない。"
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "Dockerを使用すると、スクリプトが実行される環境を完全に制御することができます。",
+          "ユーザーはDockerをインストールして設定する必要があります。第二に、Dockerイメージの作成と管理は追加の作業を必要とします。"
+        ],
+        "id": "ctx-6",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000007"
+        ],
+        "text": "Dockerを使えば依存関係を含む実行環境を制御できる一方、ユーザーによるDockerのインストールと設定、およびイメージの作成・管理が必要になる。"
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "シェルスクリプトをPOSIX準拠のシェル（`/bin/sh`）で書くことで、多くのUNIX系システムで動作するスクリプトを作成することができます。Windowsユーザーには、Windows Subsystem for Linux（WSL）をインストールするか、Git Bashを使用するように指示することができます。ただし、これもユーザーに追加の手順を要求することになります。"
+        ],
+        "id": "ctx-7",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000007"
+        ],
+        "text": "POSIX準拠の/bin/shで書く方法は多くのUNIX系システムを対象にできるが、WindowsではWSLのインストールまたはGit Bashの使用という追加手順が必要になる。"
+      }
+    ],
+    "failure_reason": "",
+    "specificity_supplied": [
+      {
+        "category": "specificity",
+        "evidence": [
+          "pre-commitでbashスクリプトを実行するようにしたところ"
+        ],
+        "id": "spec-1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "対象はpre-commitから実行されるスクリプトである。"
+      },
+      {
+        "category": "specificity",
+        "evidence": [
+          "windowsには環境がなくて実行できないことがわかりました。どの環境でもだいたい動くようにするにはどうすればよいでしょうか。"
+        ],
+        "id": "spec-2",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "Windowsを含む、概ねどの環境でも動作する方法を求めている。"
+      },
+      {
+        "category": "specificity",
+        "evidence": [
+          "PythonやNode.jsもそのランタイムがインストールされていない環境だと問題になります。",
+          "ユーザーはDockerをインストールして設定する必要があります。",
+          "Windowsユーザーには、Windows Subsystem for Linux（WSL）をインストールするか、Git Bashを使用するように指示することができます。ただし、これもユーザーに追加の手順を要求することになります。",
+          "ユーザーに追加の手順を要求しない方法を教えてください。"
+        ],
+        "id": "spec-3",
+        "source_roles": [
+          "user",
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000006",
+          "turn_000007",
+          "turn_000008"
+        ],
+        "text": "利用者にランタイム、Docker、WSL、Git Bashなどの追加導入・設定手順を要求しない方法が求められている。"
+      }
+    ],
+    "status": "complete",
+    "verification_supplied": [
+      {
+        "category": "verification",
+        "evidence": [
+          "どの環境でもだいたい動くようにするにはどうすればよいでしょうか。"
+        ],
+        "id": "ver-1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "提案される方法は、Windowsを含む概ねどの環境でもpre-commit処理を動作させられることが期待される。"
+      },
+      {
+        "category": "verification",
+        "evidence": [
+          "ユーザーに追加の手順を要求しない方法を教えてください。"
+        ],
+        "id": "ver-2",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000008"
+        ],
+        "text": "提案される方法は、ユーザーに追加の導入や設定手順を要求しないことが受け入れ条件である。"
+      }
+    ]
+  },
+  "request_provenance": {
+    "api": "responses",
+    "input_sha256": "b222954fdcd36f3c30867af6cbb846f7af703f833e685f4f0b6f7891a2087e5e",
+    "prompt_sha256": "f8c9df630f7b185fff387f9a311993a205d5c398f6c61e7f6caca67f5067b019",
+    "prompt_version": "dir-stage-c-csv-extraction-v2",
+    "provider": "openai",
+    "reasoning_effort": "medium",
+    "reasoning_mode": "standard",
+    "requested_model": "gpt-5.6-sol",
+    "schema_sha256": "9d481f52cea16dd739a65eede0b566e290142cbba97321d5373383360e6e3633",
+    "schema_version": "stage-c-pass2-v1",
+    "sdk_max_retries": 2,
+    "tools_enabled": []
+  },
+  "response_provenance": {
+    "invocation": {
+      "invocation_timestamp": "2026-10-01T14:41:36.257958+00:00",
+      "response_id": "resp_09a71710b6ac0ba1006abe7120916c87d1a676b76fe402e12b",
+      "returned_model": "gpt-5.6-sol",
+      "usage": {
+        "input_tokens": 2810,
+        "input_tokens_details": {
+          "cache_write_tokens": 2807,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1874,
+        "output_tokens_details": {
+          "reasoning_tokens": 296
+        },
+        "total_tokens": 4684
+      }
+    },
+    "response_received": true,
+    "structured_content_status": "parsed"
+  },
+  "validation": {
+    "accepted": false,
+    "status": "failed"
+  }
+}

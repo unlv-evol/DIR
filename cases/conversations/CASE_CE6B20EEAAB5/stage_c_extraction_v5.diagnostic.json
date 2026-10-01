@@ -1,0 +1,251 @@
+{
+  "authoritative": false,
+  "case_id": "CASE_CE6B20EEAAB5",
+  "diagnostic_version": "stage-c-rejected-output-v1",
+  "disposition": "rejected_model_output",
+  "extraction_version": "conversation-extraction-v5",
+  "failure_reason": "ValueError: Pass 2 item provenance is incomplete",
+  "parsing": {
+    "parsed_payload_retained": true,
+    "status": "parsed"
+  },
+  "pass": "pass_2",
+  "rejected_parsed_payload": {
+    "context_supplied": [
+      {
+        "category": "context",
+        "evidence": [
+          "generator client {\n  provider = \"prisma-client-js\"\n}\n\ndatasource db {\n  provider  = \"postgresql\"",
+          "It seems to define a database structure for a fitness application."
+        ],
+        "id": "context_1",
+        "source_roles": [
+          "user",
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000006",
+          "turn_000007"
+        ],
+        "text": "The task concerns exercise data for a fitness application backed by a Prisma schema using PostgreSQL and the Prisma JavaScript client."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "model Exercise {\n  id        Int       @id @unique @default(autoincrement())\n  name      String    @db.Char(100)\n  note      String?\n  sets      Set[]\n  body_part BodyPart\n  category  Category\n  workout   Workout[]\n  User      User?     @relation(fields: [userId], references: [id])\n  userId    Int?\n}"
+        ],
+        "id": "context_2",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000006"
+        ],
+        "text": "The Prisma Exercise model contains an integer ID, name, optional note, sets, body part, category, workout relationships, and an optional user relationship."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "[\n  {\n    \"id\": 1,\n    \"name\": \"Arnold Dumbbell Press\",\n    \"note\": \"targets shoulders and triceps.\",\n    \"body_part\": \"SHOULDERS\",\n    \"category\": \"DUMBBELL\"\n  }",
+          "{\n    \"id\": 40,\n    \"name\": \"Leg Raise\",\n    \"note\": \"targets the lower abdominals.\",\n    \"body_part\": \"CORE\",\n    \"category\": \"BODYWEIGHT\"\n  }\n]"
+        ],
+        "id": "context_3",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000010"
+        ],
+        "text": "The supplied mock exercise file is a JSON array containing 40 existing entries with IDs 1 through 40; each provided entry has id, name, note, body_part, and category fields."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "visit https://fitnessprogramer.com/exercises/",
+          "Sorry, but I can't browse the web."
+        ],
+        "id": "context_4",
+        "source_roles": [
+          "user",
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000002",
+          "turn_000003"
+        ],
+        "text": "The user initially identified the exercise listing at fitnessprogramer.com/exercises, while the assistant stated that it could not browse the web."
+      }
+    ],
+    "failure_reason": "",
+    "specificity_supplied": [
+      {
+        "category": "specificity",
+        "evidence": [
+          "Next, I'm going to give you a mock data file and you add 100 more data entries",
+          "I'll assist you in generating 100 additional data entries"
+        ],
+        "id": "specificity_1",
+        "source_roles": [
+          "user",
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000008",
+          "turn_000009"
+        ],
+        "text": "Add exactly 100 more entries to the supplied mock data."
+      },
+      {
+        "category": "specificity",
+        "evidence": [
+          "with no duplicate",
+          "without duplicates"
+        ],
+        "id": "specificity_2",
+        "source_roles": [
+          "user",
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000008",
+          "turn_000009"
+        ],
+        "text": "The 100 additional entries must contain no duplicates."
+      },
+      {
+        "category": "specificity",
+        "evidence": [
+          "{\n    \"id\": 1,\n    \"name\": \"Arnold Dumbbell Press\",\n    \"note\": \"targets shoulders and triceps.\",\n    \"body_part\": \"SHOULDERS\",\n    \"category\": \"DUMBBELL\"\n  }"
+        ],
+        "id": "specificity_3",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000010"
+        ],
+        "text": "The exercise records use the fields id, name, note, body_part, and category in the supplied mock-data representation."
+      }
+    ],
+    "status": "complete",
+    "verification_supplied": [
+      {
+        "category": "verification",
+        "evidence": [
+          "add 100 more data entries",
+          "generating 100 additional data entries"
+        ],
+        "id": "verification_1",
+        "source_roles": [
+          "user",
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000008",
+          "turn_000009"
+        ],
+        "text": "Correctness requires 100 additional data entries."
+      },
+      {
+        "category": "verification",
+        "evidence": [
+          "with no duplicate",
+          "without duplicates"
+        ],
+        "id": "verification_2",
+        "source_roles": [
+          "user",
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000008",
+          "turn_000009"
+        ],
+        "text": "The additional entries must not be duplicates."
+      },
+      {
+        "category": "verification",
+        "evidence": [
+          "enum BodyPart {\n  LEGS\n  ARMS\n  CHEST\n  BACK\n  SHOULDERS\n  CORE\n  FULL_BODY\n  OTHER\n}"
+        ],
+        "id": "verification_3",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000006"
+        ],
+        "text": "Each body_part value must be one of LEGS, ARMS, CHEST, BACK, SHOULDERS, CORE, FULL_BODY, or OTHER."
+      },
+      {
+        "category": "verification",
+        "evidence": [
+          "enum Category {\n  BARBELL\n  DUMBBELL\n  MACHINE\n  ASSISTED_BODYWEIGHT\n  WEIGHTED_BODYWEIGHT\n  BODYWEIGHT\n  DURATION\n  CARDIO\n  REPS_ONLY\n  OTHER\n}"
+        ],
+        "id": "verification_4",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000006"
+        ],
+        "text": "Each category value must be one of BARBELL, DUMBBELL, MACHINE, ASSISTED_BODYWEIGHT, WEIGHTED_BODYWEIGHT, BODYWEIGHT, DURATION, CARDIO, REPS_ONLY, or OTHER."
+      },
+      {
+        "category": "verification",
+        "evidence": [
+          "id        Int       @id @unique @default(autoincrement())\n  name      String    @db.Char(100)\n  note      String?",
+          "\"note\": null"
+        ],
+        "id": "verification_5",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000006",
+          "turn_000010"
+        ],
+        "text": "Exercise IDs are unique integers, names are strings limited by the schema to Char(100), and notes may be null."
+      }
+    ]
+  },
+  "request_provenance": {
+    "api": "responses",
+    "input_sha256": "29046dd0fd1a13d98e1e14e48ead44a693de194ce910d26e3fe80b284ca416e5",
+    "prompt_sha256": "f8c9df630f7b185fff387f9a311993a205d5c398f6c61e7f6caca67f5067b019",
+    "prompt_version": "dir-stage-c-csv-extraction-v2",
+    "provider": "openai",
+    "reasoning_effort": "medium",
+    "reasoning_mode": "standard",
+    "requested_model": "gpt-5.6-sol",
+    "schema_sha256": "9d481f52cea16dd739a65eede0b566e290142cbba97321d5373383360e6e3633",
+    "schema_version": "stage-c-pass2-v1",
+    "sdk_max_retries": 2,
+    "tools_enabled": []
+  },
+  "response_provenance": {
+    "invocation": {
+      "invocation_timestamp": "2026-10-01T14:37:46.837517+00:00",
+      "response_id": "resp_06512b357e80f8f1006abe703b627887d1803561dda2e6cdf0",
+      "returned_model": "gpt-5.6-sol",
+      "usage": {
+        "input_tokens": 7567,
+        "input_tokens_details": {
+          "cache_write_tokens": 7564,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1689,
+        "output_tokens_details": {
+          "reasoning_tokens": 382
+        },
+        "total_tokens": 9256
+      }
+    },
+    "response_received": true,
+    "structured_content_status": "parsed"
+  },
+  "validation": {
+    "accepted": false,
+    "status": "failed"
+  }
+}

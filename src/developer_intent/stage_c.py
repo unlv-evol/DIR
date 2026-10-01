@@ -13,13 +13,16 @@ from pathlib import Path
 from typing import Any
 
 from .screening_chatgpt import _date_value
-from .stage_c_config import StageCModelConfig, stage_c_version_contract
+from .stage_c_config import (StageCModelConfig, StageCVersionContract,
+                             stage_c_version_contract)
 from .generated_technical_content import validate_v2_model_view
 
 METHODOLOGY_VERSION = "dir-tfg-v2"
 SCHEMA_VERSION = "conversation-draft-v3"
+V6_SCHEMA_VERSION = "conversation-draft-v4"
 V1_CONTRACT = stage_c_version_contract("v1")
 V2_CONTRACT = stage_c_version_contract("v2")
+V3_CONTRACT = stage_c_version_contract("v3")
 EXTRACTION_VERSION = V1_CONTRACT.extraction_version
 PREVIOUS_EXTRACTION_VERSION = "conversation-extraction-v3"
 PASS_1_PROMPT_VERSION = V1_CONTRACT.pass_1_prompt_version
@@ -210,12 +213,16 @@ def resolve_first_generation(package: dict, selection: dict) -> tuple[dict, list
     return fg, admissible, tfg
 
 
-def validate_pass2(value: dict, admissible: list[dict]) -> None:
+def validate_pass2(value: dict, admissible: list[dict], *,
+                   require_noncomplete_reason: bool = False) -> None:
     keys = {"status", "context_supplied", "specificity_supplied",
             "verification_supplied", "failure_reason"}
     _validate_keys(value, keys, "Pass 2")
     if value["status"] not in {"complete", "ambiguous", "unresolved", "failed"}:
         raise ValueError("Pass 2 status is invalid")
+    if (require_noncomplete_reason and value["status"] != "complete"
+            and not value["failure_reason"]):
+        raise ValueError("Non-complete Pass 2 output requires a failure_reason")
     turns = {turn["turn_id"]: turn for turn in admissible}
     seen = set()
     for category in CATEGORIES:
@@ -228,9 +235,10 @@ def validate_pass2(value: dict, admissible: list[dict]) -> None:
             if item["category"] != category or not item["id"] or item["id"] in seen or not item["text"]:
                 raise ValueError("Pass 2 item identity/category is invalid")
             seen.add(item["id"])
-            if (not item["source_turns"] or len(item["source_turns"]) != len(item["source_roles"])
-                    or not item["evidence"]):
+            if not item["source_turns"] or not item["source_roles"] or not item["evidence"]:
                 raise ValueError("Pass 2 item provenance is incomplete")
+            if len(item["source_turns"]) != len(item["source_roles"]):
+                raise ValueError("Pass 2 source_turns/source_roles cardinality mismatch")
             source_text = []
             for turn_id, role in zip(item["source_turns"], item["source_roles"]):
                 turn = turns.get(turn_id)
@@ -358,20 +366,36 @@ class OpenAIStageCClient:
 
 def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
                     config: StageCModelConfig, *, input_ref: str,
-                    diagnostics: list[dict] | None = None) -> dict:
+                    diagnostics: list[dict] | None = None,
+                    version_contract: StageCVersionContract | None = None) -> dict:
     validate_model_view(package, case_id)
     v2_input = package["package_version"] == "conversation-only-v2"
-    extraction_version = V2_EXTRACTION_VERSION if v2_input else EXTRACTION_VERSION
-    pass_1_prompt_version = V2_PASS_1_PROMPT_VERSION if v2_input else PASS_1_PROMPT_VERSION
+    contract = version_contract or (V2_CONTRACT if v2_input else V1_CONTRACT)
+    if contract.package_version != package["package_version"]:
+        raise ValueError("Stage C execution contract does not match the input package")
+    extraction_version = contract.extraction_version
+    schema_version = contract.draft_schema_version
+    pass_1_prompt_version = contract.pass_1_prompt_version
+    pass_2_prompt_version = contract.pass_2_prompt_version
+    pass_2_schema_version = contract.pass_2_schema_version
     pass_1_prompt_path = ("prompts/stage_c/first_generation_v4.md" if v2_input else
                           "prompts/stage_c/first_generation_v3.md")
+    pass_2_prompt_path = ("prompts/stage_c/csv_extraction_v3.md"
+                          if pass_2_prompt_version == "dir-stage-c-csv-extraction-v3"
+                          else "prompts/stage_c/csv_extraction_v2.md")
+    pass_2_schema_path = ("stage_c_pass2_v2.schema.json"
+                          if pass_2_schema_version == "stage-c-pass2-v2"
+                          else "stage_c_pass2_v1.schema.json")
     p1_prompt, p1_hash = load_prompt(root, pass_1_prompt_path)
-    p2_prompt, p2_hash = load_prompt(root, "prompts/stage_c/csv_extraction_v2.md")
+    p2_prompt, p2_hash = load_prompt(root, pass_2_prompt_path)
     pass1_schema = load_contract(root, "stage_c_pass1_v2.schema.json")
-    pass2_schema = load_contract(root, "stage_c_pass2_v1.schema.json")
+    pass2_schema = load_contract(root, pass_2_schema_path)
     input_hash = canonical_hash(package)
     failure_versions = {"extraction_version": extraction_version,
-                        "pass_1_prompt_version": pass_1_prompt_version}
+                        "pass_1_prompt_version": pass_1_prompt_version,
+                        "pass_2_prompt_version": pass_2_prompt_version,
+                        "pass_2_schema_version": pass_2_schema_version,
+                        "schema_version": schema_version}
 
     def retain(diagnostic: dict) -> None:
         if diagnostics is not None:
@@ -431,13 +455,14 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
     if first_generation["status"] == "complete":
         payload = {"case_id": case_id, "admissible_prior_turns": admissible}
         try:
-            pass2, meta2 = client.invoke(p2_prompt, payload, "dir_stage_c_pass2_v1",
+            pass2, meta2 = client.invoke(p2_prompt, payload,
+                                         pass_2_schema_version.replace("-", "_"),
                                          pass2_schema)
         except StageCInvocationFailure as exc:
             reason = _failure_detail(exc, config)
             retain(rejected_output_diagnostic(
-                case_id, "pass_2", config, PASS_2_PROMPT_VERSION, p2_hash,
-                "stage-c-pass2-v1", pass2_schema, canonical_hash(payload), reason,
+                case_id, "pass_2", config, pass_2_prompt_version, p2_hash,
+                pass_2_schema_version, pass2_schema, canonical_hash(payload), reason,
                 extraction_version=extraction_version,
                 invocation=exc.metadata, parser_status=exc.parser_status,
                 validation_status=exc.validation_status,
@@ -452,8 +477,8 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
         except Exception as exc:
             reason = _failure_detail(exc, config)
             retain(rejected_output_diagnostic(
-                case_id, "pass_2", config, PASS_2_PROMPT_VERSION, p2_hash,
-                "stage-c-pass2-v1", pass2_schema, canonical_hash(payload), reason,
+                case_id, "pass_2", config, pass_2_prompt_version, p2_hash,
+                pass_2_schema_version, pass2_schema, canonical_hash(payload), reason,
                 extraction_version=extraction_version,
                 parser_status="not_run", validation_status="not_validated",
                 response_received=False, structured_content_status="unavailable"))
@@ -464,12 +489,13 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
                 pass_2_prompt_sha256=p2_hash, parser_status="not_run",
                 validation_status="not_validated", **failure_versions)
         try:
-            validate_pass2(pass2, admissible)
+            validate_pass2(pass2, admissible,
+                           require_noncomplete_reason=schema_version == V6_SCHEMA_VERSION)
         except ValueError as exc:
             reason = _failure_detail(exc, config)
             retain(rejected_output_diagnostic(
-                case_id, "pass_2", config, PASS_2_PROMPT_VERSION, p2_hash,
-                "stage-c-pass2-v1", pass2_schema, canonical_hash(payload), reason,
+                case_id, "pass_2", config, pass_2_prompt_version, p2_hash,
+                pass_2_schema_version, pass2_schema, canonical_hash(payload), reason,
                 extraction_version=extraction_version,
                 invocation=meta2, parser_status="parsed", validation_status="failed",
                 response_received=True, structured_content_status="parsed",
@@ -485,7 +511,7 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
                     first_generation["status"] if first_generation["status"] != "complete"
                     else "unresolved")
     record = {
-        "schema_version": SCHEMA_VERSION, "methodology_version": METHODOLOGY_VERSION,
+        "schema_version": schema_version, "methodology_version": METHODOLOGY_VERSION,
         "extraction_version": extraction_version, "record_status": "draft", "case_id": case_id,
         "input": {"stage_b_model_view_ref": input_ref, "sha256": input_hash},
         "first_generation": first_generation,
@@ -500,9 +526,9 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
             "reasoning_mode": config.reasoning_mode, "reasoning_effort": config.reasoning_effort,
             "sdk_max_retries": config.max_retries,
             "tools_enabled": [], "structured_outputs": True,
-            "structured_output_schema_versions": ["stage-c-pass1-v2", "stage-c-pass2-v1"],
+            "structured_output_schema_versions": ["stage-c-pass1-v2", pass_2_schema_version],
             "pass_1_prompt_version": pass_1_prompt_version,
-            "pass_2_prompt_version": PASS_2_PROMPT_VERSION,
+            "pass_2_prompt_version": pass_2_prompt_version,
             "pass_1_prompt_sha256": p1_hash, "pass_2_prompt_sha256": p2_hash,
             "input_sha256": input_hash, "invocations": [meta1, meta2],
         },
@@ -513,6 +539,9 @@ def extract_stage_c(root: Path, case_id: str, package: dict, client: Any,
         "status": {"stage_c_status": final_status, "parser_status": "parsed",
                    "validation_status": "validated", "failure_reason": ""},
     }
+    if schema_version == V6_SCHEMA_VERSION:
+        record["pass_2_outcome"] = {
+            "status": pass2["status"], "failure_reason": pass2["failure_reason"]}
     validate_stage_c_record(record)
     return record
 
@@ -522,23 +551,29 @@ def validate_stage_c_record(record: dict) -> None:
                 "case_id", "input", "first_generation", "temporal", "admissible_prior_turns",
                 "context_supplied", "specificity_supplied", "verification_supplied",
                 "model_provenance", "scientific_status", "record_derivation", "status"}
+    if record.get("schema_version") == V6_SCHEMA_VERSION:
+        required.add("pass_2_outcome")
     _validate_keys(record, required, "Stage C record")
-    if (record["schema_version"] != SCHEMA_VERSION
+    allowed = {
+        SCHEMA_VERSION: {PREVIOUS_EXTRACTION_VERSION, EXTRACTION_VERSION,
+                         V2_EXTRACTION_VERSION},
+        V6_SCHEMA_VERSION: {V3_CONTRACT.extraction_version},
+    }
+    if (record.get("schema_version") not in allowed
             or record["methodology_version"] != METHODOLOGY_VERSION
-            or record["extraction_version"] not in {PREVIOUS_EXTRACTION_VERSION,
-                                                     EXTRACTION_VERSION,
-                                                     V2_EXTRACTION_VERSION}
+            or record["extraction_version"] not in allowed[record["schema_version"]]
             or record["record_status"] != "draft"
             or record["temporal"]["primary_repository_cutoff"] != "tFG"
             or record["scientific_status"] != {"eligibility_updated": False,
                                                 "post_stage_c_resolution_required": True}):
         raise ValueError("Stage C record version, temporal policy, or scientific status is invalid")
-    expected_pass2 = ("dir-stage-c-csv-extraction-v1"
-                      if record["extraction_version"] == PREVIOUS_EXTRACTION_VERSION
-                      else PASS_2_PROMPT_VERSION)
+    expected_pass2 = ({PREVIOUS_EXTRACTION_VERSION: "dir-stage-c-csv-extraction-v1",
+                       V3_CONTRACT.extraction_version: V3_CONTRACT.pass_2_prompt_version}
+                      .get(record["extraction_version"], PASS_2_PROMPT_VERSION))
     if record.get("model_provenance", {}).get("pass_2_prompt_version") != expected_pass2:
         raise ValueError("Stage C extraction and Pass 2 prompt versions disagree")
-    expected_pass1 = ({V2_EXTRACTION_VERSION: V2_PASS_1_PROMPT_VERSION,
+    expected_pass1 = ({V3_CONTRACT.extraction_version: V3_CONTRACT.pass_1_prompt_version,
+                       V2_EXTRACTION_VERSION: V2_PASS_1_PROMPT_VERSION,
                        EXTRACTION_VERSION: PASS_1_PROMPT_VERSION}.get(
                            record["extraction_version"]))
     if (expected_pass1 is not None
@@ -549,6 +584,15 @@ def validate_stage_c_record(record: dict) -> None:
                     "specificity_supplied": record["specificity_supplied"],
                     "verification_supplied": record["verification_supplied"]},
                    record["admissible_prior_turns"])
+    if record["schema_version"] == V6_SCHEMA_VERSION:
+        outcome = record["pass_2_outcome"]
+        if (not isinstance(outcome, dict)
+                or set(outcome) != {"status", "failure_reason"}
+                or outcome["status"] not in {"complete", "ambiguous", "unresolved",
+                                              "failed", "not_run"}
+                or not isinstance(outcome["failure_reason"], str)
+                or (outcome["status"] != "complete" and not outcome["failure_reason"])):
+            raise ValueError("Stage C Pass 2 outcome is invalid or incomplete")
     if record["first_generation"]["response_turn_id"] in {
             turn["turn_id"] for turn in record["admissible_prior_turns"]}:
         raise ValueError("First-generation response leaked into admissible prior turns")
@@ -636,7 +680,11 @@ def failed_record(case_id: str, input_ref: str, input_hash: str,
                   parser_status: str = "not_run",
                   validation_status: str = "not_validated",
                   extraction_version: str = EXTRACTION_VERSION,
-                  pass_1_prompt_version: str = PASS_1_PROMPT_VERSION) -> dict:
+                  pass_1_prompt_version: str = PASS_1_PROMPT_VERSION,
+                  pass_2_prompt_version: str = PASS_2_PROMPT_VERSION,
+                  pass_2_schema_version: str = "stage-c-pass2-v1",
+                  schema_version: str = SCHEMA_VERSION,
+                  pass_2_outcome: dict | None = None) -> dict:
     anchor = {"value": "", "precision": "", "status": "unresolved", "source": "unresolved",
               "derivation_rule": "exclusive_before_selected_response"}
     failed_fg = {"status": "failed", "family_id": "", "artifact_refs": [],
@@ -645,7 +693,7 @@ def failed_record(case_id: str, input_ref: str, input_hash: str,
                  "target_prompt_id": "", "target_prompt_event_index": None,
                  "boundary": "unresolved", "candidate_artifact_ids": [],
                  "rationale": "", "ambiguity_reason": reason}
-    record = {"schema_version": SCHEMA_VERSION, "methodology_version": METHODOLOGY_VERSION,
+    record = {"schema_version": schema_version, "methodology_version": METHODOLOGY_VERSION,
             "extraction_version": extraction_version, "record_status": "draft", "case_id": case_id,
             "input": {"stage_b_model_view_ref": input_ref, "sha256": input_hash},
             "first_generation": deepcopy(first_generation) if first_generation else failed_fg,
@@ -662,9 +710,9 @@ def failed_record(case_id: str, input_ref: str, input_hash: str,
                 "reasoning_effort": config.reasoning_effort,
                 "sdk_max_retries": config.max_retries,
                 "structured_outputs": True,
-                "structured_output_schema_versions": ["stage-c-pass1-v2", "stage-c-pass2-v1"],
+                "structured_output_schema_versions": ["stage-c-pass1-v2", pass_2_schema_version],
                 "pass_1_prompt_version": pass_1_prompt_version,
-                "pass_2_prompt_version": PASS_2_PROMPT_VERSION,
+                "pass_2_prompt_version": pass_2_prompt_version,
                 "pass_1_prompt_sha256": pass_1_prompt_sha256,
                 "pass_2_prompt_sha256": pass_2_prompt_sha256,
                 "input_sha256": input_hash, "invocations": invocations or []},
@@ -674,6 +722,11 @@ def failed_record(case_id: str, input_ref: str, input_hash: str,
                                   "source_record_sha256": "", "original_model_family_value": ""},
             "status": {"stage_c_status": "failed", "parser_status": parser_status,
                        "validation_status": validation_status, "failure_reason": reason}}
+    if schema_version == V6_SCHEMA_VERSION:
+        record["pass_2_outcome"] = deepcopy(pass_2_outcome) if pass_2_outcome else {
+            "status": "failed" if first_generation else "not_run",
+            "failure_reason": reason if first_generation else "pass_1_not_complete",
+        }
     validate_stage_c_record(record)
     return record
 

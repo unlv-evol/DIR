@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "conversation_draft_v3.schema.json",
-  "title": "DIR Protocol v5 Stage C extraction record with deterministic family identity",
+  "$id": "conversation_draft_v4.schema.json",
+  "title": "DIR Protocol v5 Stage C extraction record with positional provenance and Pass 2 outcome",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -17,6 +17,7 @@
     "context_supplied",
     "specificity_supplied",
     "verification_supplied",
+    "pass_2_outcome",
     "model_provenance",
     "scientific_status",
     "record_derivation",
@@ -92,7 +93,8 @@
           "items": {
             "type": "string"
           },
-          "minItems": 1
+          "minItems": 1,
+          "description": "Positional source-turn references; parallel to source_roles with equal length."
         },
         "source_roles": {
           "type": "array",
@@ -102,7 +104,8 @@
               "assistant"
             ]
           },
-          "minItems": 1
+          "minItems": 1,
+          "description": "Actual originating roles parallel to source_turns; source_roles[i] is the role of source_turns[i], including repeated roles."
         },
         "evidence": {
           "type": "array",
@@ -170,17 +173,13 @@
   },
   "properties": {
     "schema_version": {
-      "const": "conversation-draft-v3"
+      "const": "conversation-draft-v4"
     },
     "methodology_version": {
       "const": "dir-tfg-v2"
     },
     "extraction_version": {
-      "enum": [
-        "conversation-extraction-v3",
-        "conversation-extraction-v4",
-        "conversation-extraction-v5"
-      ]
+      "const": "conversation-extraction-v6"
     },
     "record_status": {
       "const": "draft"
@@ -418,6 +417,29 @@
         },
         "original_model_family_value": {
           "type": "string"
+        }
+      }
+    },
+    "pass_2_outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "failure_reason"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "complete",
+            "ambiguous",
+            "unresolved",
+            "failed",
+            "not_run"
+          ]
+        },
+        "failure_reason": {
+          "type": "string",
+          "description": "Empty only for a complete Pass 2 outcome; preserves the model or pipeline reason for every non-complete outcome."
         }
       }
     }

@@ -35,8 +35,8 @@ def main() -> None:
                         help="Print non-secret effective configuration; make no API call")
     parser.add_argument("--development-run-id",
                         help="Optional lowercase retry/run suffix; does not change extraction version")
-    parser.add_argument("--input-version", choices=("v1", "v2"), default="v1",
-                        help="Select immutable V1 input or coexisting V2 candidate input")
+    parser.add_argument("--input-version", choices=("v1", "v2", "v3"), default="v1",
+                        help="Select an immutable historical or current execution contract")
     args = parser.parse_args()
     config = load_stage_c_config(ROOT)
     if args.check_config:
@@ -64,13 +64,17 @@ def main() -> None:
     diagnostics: list[dict] = []
     try:
         record = extract_stage_c(ROOT, args.case_id, package, OpenAIStageCClient(config),
-                                 config, input_ref=input_ref, diagnostics=diagnostics)
+                                 config, input_ref=input_ref, diagnostics=diagnostics,
+                                 version_contract=contract)
     except Exception as exc:  # preserve an explicit failure without silently repairing it
         detail = f"{type(exc).__name__}: {exc}"
         if config.api_key:
             detail = detail.replace(config.api_key, "[REDACTED]")
         version_kwargs = {"extraction_version": contract.extraction_version,
-                          "pass_1_prompt_version": contract.pass_1_prompt_version}
+                          "pass_1_prompt_version": contract.pass_1_prompt_version,
+                          "pass_2_prompt_version": contract.pass_2_prompt_version,
+                          "pass_2_schema_version": contract.pass_2_schema_version,
+                          "schema_version": contract.draft_schema_version}
         record = failed_record(args.case_id, input_ref, canonical_hash(package), config,
                                detail, package=package, **version_kwargs)
     persist_stage_c(output_path, record)

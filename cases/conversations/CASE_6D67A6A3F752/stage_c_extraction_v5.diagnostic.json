@@ -1,0 +1,284 @@
+{
+  "authoritative": false,
+  "case_id": "CASE_6D67A6A3F752",
+  "diagnostic_version": "stage-c-rejected-output-v1",
+  "disposition": "rejected_model_output",
+  "extraction_version": "conversation-extraction-v5",
+  "failure_reason": "ValueError: Pass 2 evidence is not attributable to its cited turns",
+  "parsing": {
+    "parsed_payload_retained": true,
+    "status": "parsed"
+  },
+  "pass": "pass_2",
+  "rejected_parsed_payload": {
+    "context_supplied": [
+      {
+        "category": "context",
+        "evidence": [
+          "This is a regex in Go, what is it doing?",
+          "Is this the correct way to validate a hostname?"
+        ],
+        "id": "ctx_1",
+        "source_roles": [
+          "user",
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002",
+          "turn_000004"
+        ],
+        "text": "The task concerns hostname validation using a regular expression in Go."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "\"^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]).)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9-]*[A-Za-z0-9])$\""
+        ],
+        "id": "ctx_2",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "The supplied regular expression is `^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]).)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9-]*[A-Za-z0-9])$`."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "This regular expression (regex) is used to match a string that adheres to the format of a DNS hostname (not including the trailing dot), which may also include subdomains."
+        ],
+        "id": "ctx_3",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000003"
+        ],
+        "text": "The assistant characterized the supplied expression as matching DNS hostnames without a trailing dot, including hostnames with subdomains."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "This pattern ensures that if a dash is used, it must be surrounded by alphanumeric characters (which is a requirement in domain names).",
+          "It doesn't allow for trailing dots, leading or trailing dashes, or multiple consecutive dots."
+        ],
+        "id": "ctx_4",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000003"
+        ],
+        "text": "The supplied expression accepts labels made from alphanumeric characters and internal hyphens, while excluding leading or trailing hyphens, trailing dots, and multiple consecutive dots."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "The regex pattern you provided is a decent way to validate a large subset of hostnames, but it's not perfect. There are edge cases and specifics that it does not cover."
+        ],
+        "id": "ctx_5",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000005"
+        ],
+        "text": "The assistant described the supplied expression as a reasonable but incomplete validator for a large subset of hostnames."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "The provided regex does not account for these restrictions."
+        ],
+        "id": "ctx_6",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000005"
+        ],
+        "text": "The supplied expression does not enforce total hostname or individual-label length limits."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "These domain names can include characters outside the traditional a-z, 0-9, and hyphen. Your regex does not account for these characters."
+        ],
+        "id": "ctx_7",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000005"
+        ],
+        "text": "The supplied expression does not directly support internationalized domain-name characters outside ASCII letters, digits, and hyphens."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "While underscores (_) are not permitted in hostnames according to the specification, some systems do use them and they are often permitted in practice. If you need to allow for these, your regex would need to change."
+        ],
+        "id": "ctx_8",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000005"
+        ],
+        "text": "The supplied expression does not allow underscores; the assistant noted that specifications prohibit them in hostnames but some systems use and permit them in practice."
+      }
+    ],
+    "failure_reason": "",
+    "specificity_supplied": [
+      {
+        "category": "specificity",
+        "evidence": [
+          "Is this the correct way to validate a hostname?",
+          "Show me the correct regex then"
+        ],
+        "id": "spec_1",
+        "source_roles": [
+          "user",
+          "user"
+        ],
+        "source_turns": [
+          "turn_000004",
+          "turn_000006"
+        ],
+        "text": "The user wants a correct regular expression for validating a hostname."
+      },
+      {
+        "category": "specificity",
+        "evidence": [
+          "This is a regex in Go, what is it doing?"
+        ],
+        "id": "spec_2",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "The requested regular expression is intended for Go."
+      },
+      {
+        "category": "specificity",
+        "evidence": [
+          "IDNs are converted to Punycode for DNS lookups, so you could argue that you should only need to validate the Punycode version, but that depends on your specific application.",
+          "If you need to allow for these, your regex would need to change.",
+          "So, to fully validate a hostname, you'd need to take these things into account, and possibly others depending on your exact use case."
+        ],
+        "id": "spec_3",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000005"
+        ],
+        "text": "Whether to accept underscores or internationalized names depends on the application's exact use case."
+      }
+    ],
+    "status": "complete",
+    "verification_supplied": [
+      {
+        "category": "verification",
+        "evidence": [
+          "The total length of a full domain name (including dots) is limited to 253 characters, and individual labels (each part between the dots) are limited to 63 characters.",
+          "So, to fully validate a hostname, you'd need to take these things into account"
+        ],
+        "id": "ver_1",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000005"
+        ],
+        "text": "Full hostname validation should enforce a maximum total length of 253 characters, including dots, and a maximum length of 63 characters for each label."
+      },
+      {
+        "category": "verification",
+        "evidence": [
+          "International Domain Names (IDNs): These domain names can include characters outside the traditional a-z, 0-9, and hyphen.",
+          "IDNs are converted to Punycode for DNS lookups, so you could argue that you should only need to validate the Punycode version, but that depends on your specific application.",
+          "So, to fully validate a hostname, you'd need to take these things into account"
+        ],
+        "id": "ver_2",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000005"
+        ],
+        "text": "Full validation must account for the chosen treatment of internationalized domain names, potentially by validating their Punycode form depending on the application."
+      },
+      {
+        "category": "verification",
+        "evidence": [
+          "While underscores (_) are not permitted in hostnames according to the specification, some systems do use them and they are often permitted in practice. If you need to allow for these, your regex would need to change."
+        ],
+        "id": "ver_3",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000005"
+        ],
+        "text": "If the application needs to accept underscores used by some systems, the validator must explicitly allow them; otherwise, underscores are not permitted by the hostname specification described by the assistant."
+      },
+      {
+        "category": "verification",
+        "evidence": [
+          "In any case, it's important to remember that validation by regex only provides a preliminary check. If you're doing something like resolving the hostname to an IP address, the lookup itself will be the ultimate test of whether the hostname is valid or not."
+        ],
+        "id": "ver_4",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000005"
+        ],
+        "text": "Regex validation is only a preliminary check; when the use case involves resolving the hostname, the lookup is the ultimate validity test."
+      }
+    ]
+  },
+  "request_provenance": {
+    "api": "responses",
+    "input_sha256": "7b5cb1dc60c781afdb45b258f047986dbb8b10d5e79cbcccf875f127fb747fa7",
+    "prompt_sha256": "f8c9df630f7b185fff387f9a311993a205d5c398f6c61e7f6caca67f5067b019",
+    "prompt_version": "dir-stage-c-csv-extraction-v2",
+    "provider": "openai",
+    "reasoning_effort": "medium",
+    "reasoning_mode": "standard",
+    "requested_model": "gpt-5.6-sol",
+    "schema_sha256": "9d481f52cea16dd739a65eede0b566e290142cbba97321d5373383360e6e3633",
+    "schema_version": "stage-c-pass2-v1",
+    "sdk_max_retries": 2,
+    "tools_enabled": []
+  },
+  "response_provenance": {
+    "invocation": {
+      "invocation_timestamp": "2026-10-01T09:16:02.140547+00:00",
+      "response_id": "resp_0cea91f00d67e8f6006abe24d279ec87d1b20977257c116b1c",
+      "returned_model": "gpt-5.6-sol",
+      "usage": {
+        "input_tokens": 2172,
+        "input_tokens_details": {
+          "cache_write_tokens": 2169,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1807,
+        "output_tokens_details": {
+          "reasoning_tokens": 239
+        },
+        "total_tokens": 3979
+      }
+    },
+    "response_received": true,
+    "structured_content_status": "parsed"
+  },
+  "validation": {
+    "accepted": false,
+    "status": "failed"
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "authoritative": false,
+  "case_id": "CASE_51918C8EB470",
+  "diagnostic_version": "stage-c-rejected-output-v1",
+  "disposition": "rejected_model_output",
+  "extraction_version": "conversation-extraction-v5",
+  "failure_reason": "ValueError: Pass 2 item provenance is incomplete",
+  "parsing": {
+    "parsed_payload_retained": true,
+    "status": "parsed"
+  },
+  "pass": "pass_2",
+  "rejected_parsed_payload": {
+    "context_supplied": [
+      {
+        "category": "context",
+        "evidence": [
+          "In typescript, should I use custom Error types to distinguish between different error cases?",
+          "I have a fetchData function."
+        ],
+        "id": "context_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002",
+          "turn_000004"
+        ],
+        "text": "The task concerns error handling in TypeScript."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "I have a fetchData function."
+        ],
+        "id": "context_2",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000004"
+        ],
+        "text": "The user has a `fetchData` function."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "With custom errors, you can write more specific error handling logic.",
+          "Custom error types can carry additional contextual information, making it easier to understand and debug issues."
+        ],
+        "id": "context_3",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000003"
+        ],
+        "text": "Custom error types can support case-specific handling and carry additional contextual information."
+      }
+    ],
+    "failure_reason": "",
+    "specificity_supplied": [
+      {
+        "category": "specificity",
+        "evidence": [
+          "Give me an example. I have a fetchData function. I want to distinguis between a generic error and session expiry"
+        ],
+        "id": "specificity_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000004"
+        ],
+        "text": "Provide an example for the user's `fetchData` function that distinguishes a generic error from session expiry."
+      },
+      {
+        "category": "specificity",
+        "evidence": [
+          "In typescript, should I use custom Error types to distinguish between different error cases?",
+          "I want to distinguis between a generic error and session expiry"
+        ],
+        "id": "specificity_2",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002",
+          "turn_000004"
+        ],
+        "text": "The solution may use custom Error types to distinguish the error cases."
+      }
+    ],
+    "status": "complete",
+    "verification_supplied": [
+      {
+        "category": "verification",
+        "evidence": [
+          "I want to distinguis between a generic error and session expiry"
+        ],
+        "id": "verification_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000004"
+        ],
+        "text": "The example should allow generic errors and session-expiry errors to be distinguished."
+      },
+      {
+        "category": "verification",
+        "evidence": [
+          "Ensure your custom errors extend the native `Error` class, so they integrate well with the JavaScript runtime and error-handling mechanisms."
+        ],
+        "id": "verification_2",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000003"
+        ],
+        "text": "Custom errors should extend the native `Error` class."
+      },
+      {
+        "category": "verification",
+        "evidence": [
+          "Provide a clear, descriptive message and a unique name for each custom error type."
+        ],
+        "id": "verification_3",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000003"
+        ],
+        "text": "Each custom error type should have a clear descriptive message and a unique name."
+      },
+      {
+        "category": "verification",
+        "evidence": [
+          "Use a consistent method (like a factory function or a constructor) to create instances of your custom errors. This ensures that they are created with all necessary information."
+        ],
+        "id": "verification_4",
+        "source_roles": [
+          "assistant"
+        ],
+        "source_turns": [
+          "turn_000003"
+        ],
+        "text": "Custom errors should be created consistently with all necessary information."
+      }
+    ]
+  },
+  "request_provenance": {
+    "api": "responses",
+    "input_sha256": "0263eaeb23990c23a524528137a3f8e5954c23e72e3632ade09901d3d8483ffd",
+    "prompt_sha256": "f8c9df630f7b185fff387f9a311993a205d5c398f6c61e7f6caca67f5067b019",
+    "prompt_version": "dir-stage-c-csv-extraction-v2",
+    "provider": "openai",
+    "reasoning_effort": "medium",
+    "reasoning_mode": "standard",
+    "requested_model": "gpt-5.6-sol",
+    "schema_sha256": "9d481f52cea16dd739a65eede0b566e290142cbba97321d5373383360e6e3633",
+    "schema_version": "stage-c-pass2-v1",
+    "sdk_max_retries": 2,
+    "tools_enabled": []
+  },
+  "response_provenance": {
+    "invocation": {
+      "invocation_timestamp": "2026-10-01T09:08:23.987240+00:00",
+      "response_id": "resp_0563676ad092d338006abe230884e887d1af45c02c37eb35a1",
+      "returned_model": "gpt-5.6-sol",
+      "usage": {
+        "input_tokens": 1773,
+        "input_tokens_details": {
+          "cache_write_tokens": 1770,
+          "cached_tokens": 0
+        },
+        "output_tokens": 902,
+        "output_tokens_details": {
+          "reasoning_tokens": 225
+        },
+        "total_tokens": 2675
+      }
+    },
+    "response_received": true,
+    "structured_content_status": "parsed"
+  },
+  "validation": {
+    "accepted": false,
+    "status": "failed"
+  }
+}

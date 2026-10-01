@@ -378,3 +378,11 @@ Suggested fields:
 - **Scope:** These development observations do not establish general
   multi-candidate performance or change scientific eligibility.
 - **Owner:** Study team. **Status:** Phase 2 checkpoint accepted.
+
+## 2026-10-01 — Make Stage C Pass 2 provenance positional and preserve its outcome
+
+- **Context:** The completed offline corpus audit found four historical extraction-v5 Pass 2 diagnostics (`CASE_51918C8EB470`, `CASE_CE6B20EEAAB5`, `CASE_F7BED13B8119`, and `CASE_27C861787A74`) whose cited turns and roles had unequal cardinality. The v2 prompt required all contributing turns and actual roles, and the v1 response schema required both arrays, but neither explicitly defined positional one-to-one serialization. Deterministic validation already required equal lengths and paired each turn with its role. Separately, two scientifically unresolved records did not preserve the model's non-complete Pass 2 reason.
+- **Decision:** Version future execution as Pass 2 prompt `dir-stage-c-csv-extraction-v3`, response schema `stage-c-pass2-v2`, extraction procedure `conversation-extraction-v6`, and final record `conversation-draft-v4`. `source_turns` and `source_roles` are equal-length parallel arrays; `source_roles[i]` is the actual role of `source_turns[i]`, including repeated roles. Evidence remains textually attributable to a cited admissible turn. Add `pass_2_outcome` to future v4 records so Pass 2 status and every non-complete reason survive independently. Keep Pass 1 v4, family identity, boundaries, `tFG`, C/S/V definitions, admissible information, and `dir-tfg-v2` unchanged.
+- **Audit evidence:** All 107 accepted extraction-v5 records and all 447 accepted C/S/V items satisfy the clarified positional rule; zero accepted items had a cardinality or positional-role mismatch.
+- **Impact:** Historical v4/v5 records and rejected diagnostics remain immutable. The four affected cases are not repaired or promoted and require separately authorized fresh v6 execution. Historical v1/v2 execution mappings remain available; the new `v3` execution contract reads the same `conversation-only-v2` model view and writes `stage_c_extraction_v6.json` without overwriting v5.
+- **Owner:** Study team. **Status:** Adopted as a provenance serialization and observability correction.

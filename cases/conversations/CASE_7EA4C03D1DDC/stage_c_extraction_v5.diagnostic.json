@@ -1,0 +1,174 @@
+{
+  "authoritative": false,
+  "case_id": "CASE_7EA4C03D1DDC",
+  "diagnostic_version": "stage-c-rejected-output-v1",
+  "disposition": "rejected_model_output",
+  "extraction_version": "conversation-extraction-v5",
+  "failure_reason": "ValueError: Pass 2 evidence is not attributable to its cited turns",
+  "parsing": {
+    "parsed_payload_retained": true,
+    "status": "parsed"
+  },
+  "pass": "pass_2",
+  "rejected_parsed_payload": {
+    "context_supplied": [
+      {
+        "category": "context",
+        "evidence": [
+          "when using activerecord-multi-tenant library in my rails project, filters does not work."
+        ],
+        "id": "context_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "The issue occurs in a Rails project using the activerecord-multi-tenant library."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "My non-working code block is as below (not filtering secret values in logs)"
+        ],
+        "id": "context_2",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "The existing filter configuration is not filtering secret values from logs."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "Rails.application.config.filter_parameters += [\n  :passw, :secret, :token, :_key, :crypt, :salt, :certificate, :otp, :ssn\n]"
+        ],
+        "id": "context_3",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "The Rails filter parameter configuration appends the keys `:passw`, `:secret`, `:token`, `:_key`, `:crypt`, `:salt`, `:certificate`, `:otp`, and `:ssn`."
+      },
+      {
+        "category": "context",
+        "evidence": [
+          "I prepared a fix"
+        ],
+        "id": "context_4",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "The user has prepared a fix for the filtering issue."
+      }
+    ],
+    "failure_reason": "",
+    "specificity_supplied": [
+      {
+        "category": "specificity",
+        "evidence": [
+          "Can you give me a unit test to test this issue?"
+        ],
+        "id": "specificity_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "The requested deliverable is a unit test for the described filtering issue."
+      },
+      {
+        "category": "specificity",
+        "evidence": [
+          "My non-working code block is as below (not filtering secret values in logs)\nRails.application.config.filter_parameters += [\n  :passw, :secret, :token, :_key, :crypt, :salt, :certificate, :otp, :ssn\n]"
+        ],
+        "id": "specificity_2",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "The unit test is intended to exercise the Rails filter parameter setup containing the supplied parameter names."
+      }
+    ],
+    "status": "complete",
+    "verification_supplied": [
+      {
+        "category": "verification",
+        "evidence": [
+          "I prepared a fix and now I want to unit test it to see that fix is actually working."
+        ],
+        "id": "verification_1",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "The unit test should determine whether the prepared fix is actually working."
+      },
+      {
+        "category": "verification",
+        "evidence": [
+          "My non-working code block is as below (not filtering secret values in logs)"
+        ],
+        "id": "verification_2",
+        "source_roles": [
+          "user"
+        ],
+        "source_turns": [
+          "turn_000002"
+        ],
+        "text": "The desired behavior is that secret values are filtered from logs."
+      }
+    ]
+  },
+  "request_provenance": {
+    "api": "responses",
+    "input_sha256": "c6476bc6e79f8c1970ea41295314fb93c6a4d8de5642f7b4d02bc288c321c12b",
+    "prompt_sha256": "f8c9df630f7b185fff387f9a311993a205d5c398f6c61e7f6caca67f5067b019",
+    "prompt_version": "dir-stage-c-csv-extraction-v2",
+    "provider": "openai",
+    "reasoning_effort": "medium",
+    "reasoning_mode": "standard",
+    "requested_model": "gpt-5.6-sol",
+    "schema_sha256": "9d481f52cea16dd739a65eede0b566e290142cbba97321d5373383360e6e3633",
+    "schema_version": "stage-c-pass2-v1",
+    "sdk_max_retries": 2,
+    "tools_enabled": []
+  },
+  "response_provenance": {
+    "invocation": {
+      "invocation_timestamp": "2026-10-01T09:17:11.458257+00:00",
+      "response_id": "resp_05538d11e0aa60ca006abe2517c15c87d19dc99795af522202",
+      "returned_model": "gpt-5.6-sol",
+      "usage": {
+        "input_tokens": 1038,
+        "input_tokens_details": {
+          "cache_write_tokens": 1035,
+          "cached_tokens": 0
+        },
+        "output_tokens": 810,
+        "output_tokens_details": {
+          "reasoning_tokens": 164
+        },
+        "total_tokens": 1848
+      }
+    },
+    "response_received": true,
+    "structured_content_status": "parsed"
+  },
+  "validation": {
+    "accepted": false,
+    "status": "failed"
+  }
+}
