@@ -1,0 +1,333 @@
+{
+  "attempts": [
+    {
+      "attempt_number": 1,
+      "http_status": 200,
+      "operation": "github_current_pr_metadata",
+      "retrieved_at": "2026-10-02T14:34:56.648950+00:00",
+      "retry": false,
+      "status": "success"
+    }
+  ],
+  "authoritative_R_i_tFG": "",
+  "candidate_repository_boundaries": [
+    "df09db2d8fc8ae0187ac94925560b5450ff7b555",
+    "9ed8735c94f60857132403a464144107a8be6af9",
+    "783749bd58d7793c6a6bc538e44ad66c838b238d",
+    "2fb0783189cfb0f9b8e53612f0583e0d3ac656b0",
+    "a51fd0e12f99d8b6107898732d8889a4089f369b",
+    "a3ce5822faaee41be6221a8dc1499c97cf28d187",
+    "e7cf72253fd7823d04feb52b32146974b6acaf21",
+    "8cf6af393e29712c3354dc751eadce938c96de63",
+    "166a7108d61e388dc66ba91960fa73ef6058372f",
+    "003eef460886f2f093d024645fe8c268a57337d7",
+    "41073682db48efabb899a41451f0a7335aad2d7c",
+    "53e80a92af83ce6a73614e81765c591bf9a1a1b8"
+  ],
+  "case_id": "CASE_EE7F13CD9FB7",
+  "conflicts": [],
+  "derivation_chain": [],
+  "development_linkage_status": "unresolved",
+  "evidence_claims": [
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "df09db2d8fc8ae0187ac94925560b5450ff7b555",
+      "claim_id": "CASE_EE7F13CD9FB7-B4-2-df09db2d8fc8",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230907_091631_pr_sharings.json",
+        "df09db2d8fc8ae0187ac94925560b5450ff7b555"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "d07e88c14f725224d000b8afb206c4c4a59efaf7ef5ba0980217d3565c64387d",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-09-07T09:16:31+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    },
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "9ed8735c94f60857132403a464144107a8be6af9",
+      "claim_id": "CASE_EE7F13CD9FB7-B4-2-9ed8735c94f6",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230907_091631_pr_sharings.json",
+        "9ed8735c94f60857132403a464144107a8be6af9"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "d07e88c14f725224d000b8afb206c4c4a59efaf7ef5ba0980217d3565c64387d",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-09-07T09:16:31+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    },
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "783749bd58d7793c6a6bc538e44ad66c838b238d",
+      "claim_id": "CASE_EE7F13CD9FB7-B4-2-783749bd58d7",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230907_091631_pr_sharings.json",
+        "783749bd58d7793c6a6bc538e44ad66c838b238d"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "d07e88c14f725224d000b8afb206c4c4a59efaf7ef5ba0980217d3565c64387d",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-09-07T09:16:31+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    },
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "2fb0783189cfb0f9b8e53612f0583e0d3ac656b0",
+      "claim_id": "CASE_EE7F13CD9FB7-B4-2-2fb0783189cf",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230907_091631_pr_sharings.json",
+        "2fb0783189cfb0f9b8e53612f0583e0d3ac656b0"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "d07e88c14f725224d000b8afb206c4c4a59efaf7ef5ba0980217d3565c64387d",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-09-07T09:16:31+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    },
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "a51fd0e12f99d8b6107898732d8889a4089f369b",
+      "claim_id": "CASE_EE7F13CD9FB7-B4-2-a51fd0e12f99",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230907_091631_pr_sharings.json",
+        "a51fd0e12f99d8b6107898732d8889a4089f369b"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "d07e88c14f725224d000b8afb206c4c4a59efaf7ef5ba0980217d3565c64387d",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-09-07T09:16:31+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    },
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "a3ce5822faaee41be6221a8dc1499c97cf28d187",
+      "claim_id": "CASE_EE7F13CD9FB7-B4-2-a3ce5822faae",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230907_091631_pr_sharings.json",
+        "a3ce5822faaee41be6221a8dc1499c97cf28d187"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "d07e88c14f725224d000b8afb206c4c4a59efaf7ef5ba0980217d3565c64387d",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-09-07T09:16:31+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    },
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "e7cf72253fd7823d04feb52b32146974b6acaf21",
+      "claim_id": "CASE_EE7F13CD9FB7-B4-2-e7cf72253fd7",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230907_091631_pr_sharings.json",
+        "e7cf72253fd7823d04feb52b32146974b6acaf21"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "d07e88c14f725224d000b8afb206c4c4a59efaf7ef5ba0980217d3565c64387d",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-09-07T09:16:31+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    },
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "8cf6af393e29712c3354dc751eadce938c96de63",
+      "claim_id": "CASE_EE7F13CD9FB7-B4-2-8cf6af393e29",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230907_091631_pr_sharings.json",
+        "8cf6af393e29712c3354dc751eadce938c96de63"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "d07e88c14f725224d000b8afb206c4c4a59efaf7ef5ba0980217d3565c64387d",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-09-07T09:16:31+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    },
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "166a7108d61e388dc66ba91960fa73ef6058372f",
+      "claim_id": "CASE_EE7F13CD9FB7-B4-2-166a7108d61e",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230907_091631_pr_sharings.json",
+        "166a7108d61e388dc66ba91960fa73ef6058372f"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "d07e88c14f725224d000b8afb206c4c4a59efaf7ef5ba0980217d3565c64387d",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-09-07T09:16:31+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    },
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "003eef460886f2f093d024645fe8c268a57337d7",
+      "claim_id": "CASE_EE7F13CD9FB7-B4-2-003eef460886",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230907_091631_pr_sharings.json",
+        "003eef460886f2f093d024645fe8c268a57337d7"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "d07e88c14f725224d000b8afb206c4c4a59efaf7ef5ba0980217d3565c64387d",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-09-07T09:16:31+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    },
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "41073682db48efabb899a41451f0a7335aad2d7c",
+      "claim_id": "CASE_EE7F13CD9FB7-B4-2-41073682db48",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230907_091631_pr_sharings.json",
+        "41073682db48efabb899a41451f0a7335aad2d7c"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "d07e88c14f725224d000b8afb206c4c4a59efaf7ef5ba0980217d3565c64387d",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-09-07T09:16:31+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    },
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "53e80a92af83ce6a73614e81765c591bf9a1a1b8",
+      "claim_id": "CASE_EE7F13CD9FB7-B5-2-53e80a92af83",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/current_pr_metadata_sanitized_v2.json",
+        "53e80a92af83ce6a73614e81765c591bf9a1a1b8"
+      ],
+      "derivation_rule": "current_pr_base_supporting_only",
+      "development_context_linkage": "unresolved",
+      "evidence_hash": "453968824a84263b65d8fb36a92bfa2d9330e9cecb0598af19d2753981dd4f3e",
+      "evidence_level": "B5",
+      "historical_source_timestamp": "2026-10-02T14:34:56.648950+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "https://api.github.com/repos/darklang/dark/pulls/5058",
+      "relation_to_tFG": "after",
+      "source_identifier": "https://api.github.com/repos/darklang/dark/pulls/5058",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "supporting_only"
+    }
+  ],
+  "executed": true,
+  "historical_state_reconstructible": "unresolved",
+  "human_adjudication_status": "not_required",
+  "materialization_status": "not_attempted",
+  "methodology_version": "dir-tfg-v2",
+  "object_validation_status": "not_attempted",
+  "operational_reason": "",
+  "pr": {
+    "component_status": "available_by_tFG",
+    "created_at": "2023-09-04T13:56:14Z",
+    "existed_by_tFG": "yes",
+    "number": 5058
+  },
+  "primary_repository_cutoff": "tFG",
+  "procedure_version": "post-stage-c-development-baseline-pilot-v2",
+  "reconstruction_contract_version": "post-stage-c-reconstruction-v2",
+  "record_version": "historical-state-acquisition-v2",
+  "repository": "darklang/dark",
+  "scientific_reason": "no_qualifying_development_baseline_claim",
+  "tC": {
+    "precision": "timestamp",
+    "source": "first developer turn in parsed conversation",
+    "status": "derivable",
+    "value": "2023-09-05T01:42:57.168012+00:00"
+  },
+  "tFG": {
+    "precision": "timestamp",
+    "source": "turn_000005.create_time",
+    "status": "derivable",
+    "value": "2023-09-05T01:44:25.726944+00:00"
+  },
+  "target_identity_status": "unresolved",
+  "target_rule": "historically_justified_development_repository_baseline_at_tFG",
+  "temporal_applicability_status": "unresolved",
+  "tree_identity": "",
+  "tree_validation_status": "not_attempted"
+}

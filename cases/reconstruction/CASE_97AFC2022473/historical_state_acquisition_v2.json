@@ -1,0 +1,80 @@
+{
+  "attempts": [
+    {
+      "attempt_number": 1,
+      "http_status": 200,
+      "operation": "github_current_pr_metadata",
+      "retrieved_at": "2026-10-02T14:34:46.813454+00:00",
+      "retry": false,
+      "status": "success"
+    }
+  ],
+  "authoritative_R_i_tFG": "",
+  "candidate_repository_boundaries": [
+    "45b7930af5a1b856e8d208637b5c009dfa65d5f7"
+  ],
+  "case_id": "CASE_97AFC2022473",
+  "conflicts": [],
+  "derivation_chain": [],
+  "development_linkage_status": "unresolved",
+  "evidence_claims": [
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "45b7930af5a1b856e8d208637b5c009dfa65d5f7",
+      "claim_id": "CASE_97AFC2022473-B5-2-45b7930af5a1",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "cases/reconstruction/CASE_97AFC2022473/evidence/current_pr_metadata_sanitized_v2.json",
+        "45b7930af5a1b856e8d208637b5c009dfa65d5f7"
+      ],
+      "derivation_rule": "current_pr_base_supporting_only",
+      "development_context_linkage": "unresolved",
+      "evidence_hash": "fb66cba09b36d6a033a48a556b67cb574c8b4909114516d637e9406e4ae89e67",
+      "evidence_level": "B5",
+      "historical_source_timestamp": "2026-10-02T14:34:46.813454+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "https://api.github.com/repos/equinix/metal-cli/pulls/405",
+      "relation_to_tFG": "after",
+      "source_identifier": "https://api.github.com/repos/equinix/metal-cli/pulls/405",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "supporting_only"
+    }
+  ],
+  "executed": true,
+  "historical_state_reconstructible": "unresolved",
+  "human_adjudication_status": "not_required",
+  "materialization_status": "not_attempted",
+  "methodology_version": "dir-tfg-v2",
+  "object_validation_status": "not_attempted",
+  "operational_reason": "",
+  "pr": {
+    "component_status": "available_by_tFG",
+    "created_at": "2023-12-11T20:48:11Z",
+    "existed_by_tFG": "yes",
+    "number": 405
+  },
+  "primary_repository_cutoff": "tFG",
+  "procedure_version": "post-stage-c-development-baseline-pilot-v2",
+  "reconstruction_contract_version": "post-stage-c-reconstruction-v2",
+  "record_version": "historical-state-acquisition-v2",
+  "repository": "equinix/metal-cli",
+  "scientific_reason": "no_qualifying_development_baseline_claim",
+  "tC": {
+    "precision": "timestamp",
+    "source": "first developer turn in parsed conversation",
+    "status": "derivable",
+    "value": "2023-12-13T16:35:42.372307+00:00"
+  },
+  "tFG": {
+    "precision": "timestamp",
+    "source": "turn_000003.create_time",
+    "status": "derivable",
+    "value": "2023-12-13T16:35:54.603014+00:00"
+  },
+  "target_identity_status": "unresolved",
+  "target_rule": "historically_justified_development_repository_baseline_at_tFG",
+  "temporal_applicability_status": "unresolved",
+  "tree_identity": "",
+  "tree_validation_status": "not_attempted"
+}

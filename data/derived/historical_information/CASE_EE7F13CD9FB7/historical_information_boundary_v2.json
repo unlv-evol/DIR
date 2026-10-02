@@ -1,0 +1,45 @@
+{
+  "authoritative_R_i_tFG": "",
+  "boundary_record_version": "historical-information-boundary-v2",
+  "case_id": "CASE_EE7F13CD9FB7",
+  "development_linkage_status": "unresolved",
+  "historical_state_reconstructible": "unresolved",
+  "materialization_status": "not_attempted",
+  "methodology_version": "dir-tfg-v2",
+  "object_validation_status": "not_attempted",
+  "pr_component_status": "available_by_tFG",
+  "pr_existed_by_tFG": "yes",
+  "primary_repository_cutoff": "tFG",
+  "provenance_references": [
+    "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+    "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+    "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+    "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+    "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+    "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+    "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+    "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+    "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+    "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+    "cases/reconstruction/CASE_EE7F13CD9FB7/evidence/archive_derivation_leads_v2.json",
+    "https://api.github.com/repos/darklang/dark/pulls/5058"
+  ],
+  "reconstruction_contract_version": "post-stage-c-reconstruction-v2",
+  "repository": "darklang/dark",
+  "tC": {
+    "precision": "timestamp",
+    "source": "first developer turn in parsed conversation",
+    "status": "derivable",
+    "value": "2023-09-05T01:42:57.168012+00:00"
+  },
+  "tFG": {
+    "precision": "timestamp",
+    "source": "turn_000005.create_time",
+    "status": "derivable",
+    "value": "2023-09-05T01:44:25.726944+00:00"
+  },
+  "target_identity_status": "unresolved",
+  "temporal_applicability_status": "unresolved",
+  "tree_identity": "",
+  "tree_validation_status": "not_attempted"
+}

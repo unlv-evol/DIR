@@ -1,0 +1,8 @@
+{
+  "attempt_number": 1,
+  "http_status": 200,
+  "operation": "github_current_pr_metadata",
+  "retrieved_at": "2026-10-02T14:34:49.317316+00:00",
+  "retry": false,
+  "status": "success"
+}

@@ -1,0 +1,195 @@
+{
+  "attempts": [
+    {
+      "attempt_number": 1,
+      "http_status": 200,
+      "operation": "github_current_pr_metadata",
+      "retrieved_at": "2026-10-02T14:34:55.176902+00:00",
+      "retry": false,
+      "status": "success"
+    }
+  ],
+  "authoritative_R_i_tFG": "",
+  "candidate_repository_boundaries": [
+    "dba0f0c2aaa735b19c250fb0a2fd917e8074427d",
+    "5bca5300c8a812d133f8122d4646c931714e516c",
+    "ab55baa9050ad6efbb1e8cb6cc058775bb0398b2",
+    "8a076124a338bc99586cc04889d772b091588c0f",
+    "dc715c4c623788e9a5dfc5076dadf458c04f901c",
+    "39747666aa0895699e188f3fd03a0f448c9cf746"
+  ],
+  "case_id": "CASE_F7BED13B8119",
+  "conflicts": [],
+  "derivation_chain": [],
+  "development_linkage_status": "unresolved",
+  "evidence_claims": [
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "dba0f0c2aaa735b19c250fb0a2fd917e8074427d",
+      "claim_id": "CASE_F7BED13B8119-B4-2-dba0f0c2aaa7",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230727_195927_pr_sharings.json",
+        "dba0f0c2aaa735b19c250fb0a2fd917e8074427d"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "a92ef838486df145b6f9e777508d2443086f6f44bc680a1cf8cee1be4dcd8e59",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-07-27T19:59:27+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "cases/reconstruction/CASE_F7BED13B8119/evidence/archive_derivation_leads_v2.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230727_195927_pr_sharings.json;20230803_093947_pr_sharings.json;20230810_123110_pr_sharings.json;20230817_125147_pr_sharings.json;20230824_100450_pr_sharings.json;20230831_060603_pr_sharings.json;20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    },
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "5bca5300c8a812d133f8122d4646c931714e516c",
+      "claim_id": "CASE_F7BED13B8119-B4-2-5bca5300c8a8",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230727_195927_pr_sharings.json",
+        "5bca5300c8a812d133f8122d4646c931714e516c"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "a92ef838486df145b6f9e777508d2443086f6f44bc680a1cf8cee1be4dcd8e59",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-07-27T19:59:27+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "cases/reconstruction/CASE_F7BED13B8119/evidence/archive_derivation_leads_v2.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230727_195927_pr_sharings.json;20230803_093947_pr_sharings.json;20230810_123110_pr_sharings.json;20230817_125147_pr_sharings.json;20230824_100450_pr_sharings.json;20230831_060603_pr_sharings.json;20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    },
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "ab55baa9050ad6efbb1e8cb6cc058775bb0398b2",
+      "claim_id": "CASE_F7BED13B8119-B4-2-ab55baa9050a",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230727_195927_pr_sharings.json",
+        "ab55baa9050ad6efbb1e8cb6cc058775bb0398b2"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "a92ef838486df145b6f9e777508d2443086f6f44bc680a1cf8cee1be4dcd8e59",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-07-27T19:59:27+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "cases/reconstruction/CASE_F7BED13B8119/evidence/archive_derivation_leads_v2.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230727_195927_pr_sharings.json;20230803_093947_pr_sharings.json;20230810_123110_pr_sharings.json;20230817_125147_pr_sharings.json;20230824_100450_pr_sharings.json;20230831_060603_pr_sharings.json;20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    },
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "8a076124a338bc99586cc04889d772b091588c0f",
+      "claim_id": "CASE_F7BED13B8119-B4-2-8a076124a338",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230727_195927_pr_sharings.json",
+        "8a076124a338bc99586cc04889d772b091588c0f"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "a92ef838486df145b6f9e777508d2443086f6f44bc680a1cf8cee1be4dcd8e59",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-07-27T19:59:27+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "cases/reconstruction/CASE_F7BED13B8119/evidence/archive_derivation_leads_v2.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230727_195927_pr_sharings.json;20230803_093947_pr_sharings.json;20230810_123110_pr_sharings.json;20230817_125147_pr_sharings.json;20230824_100450_pr_sharings.json;20230831_060603_pr_sharings.json;20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    },
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "dc715c4c623788e9a5dfc5076dadf458c04f901c",
+      "claim_id": "CASE_F7BED13B8119-B4-2-dc715c4c6237",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230727_195927_pr_sharings.json",
+        "dc715c4c623788e9a5dfc5076dadf458c04f901c"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "a92ef838486df145b6f9e777508d2443086f6f44bc680a1cf8cee1be4dcd8e59",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-07-27T19:59:27+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "cases/reconstruction/CASE_F7BED13B8119/evidence/archive_derivation_leads_v2.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230727_195927_pr_sharings.json;20230803_093947_pr_sharings.json;20230810_123110_pr_sharings.json;20230817_125147_pr_sharings.json;20230824_100450_pr_sharings.json;20230831_060603_pr_sharings.json;20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    },
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "39747666aa0895699e188f3fd03a0f448c9cf746",
+      "claim_id": "CASE_F7BED13B8119-B5-2-39747666aa08",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "cases/reconstruction/CASE_F7BED13B8119/evidence/current_pr_metadata_sanitized_v2.json",
+        "39747666aa0895699e188f3fd03a0f448c9cf746"
+      ],
+      "derivation_rule": "current_pr_base_supporting_only",
+      "development_context_linkage": "unresolved",
+      "evidence_hash": "12601d726df324546ff0f003006387e65b491b242a9052062ebf9582a3b1ceda",
+      "evidence_level": "B5",
+      "historical_source_timestamp": "2026-10-02T14:34:55.176902+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "https://api.github.com/repos/VOICEVOX/voicevox_engine/pulls/716",
+      "relation_to_tFG": "after",
+      "source_identifier": "https://api.github.com/repos/VOICEVOX/voicevox_engine/pulls/716",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "supporting_only"
+    }
+  ],
+  "executed": true,
+  "historical_state_reconstructible": "unresolved",
+  "human_adjudication_status": "not_required",
+  "materialization_status": "not_attempted",
+  "methodology_version": "dir-tfg-v2",
+  "object_validation_status": "not_attempted",
+  "operational_reason": "",
+  "pr": {
+    "component_status": "available_by_tFG",
+    "created_at": "2023-07-09T10:27:11Z",
+    "existed_by_tFG": "yes",
+    "number": 716
+  },
+  "primary_repository_cutoff": "tFG",
+  "procedure_version": "post-stage-c-development-baseline-pilot-v2",
+  "reconstruction_contract_version": "post-stage-c-reconstruction-v2",
+  "record_version": "historical-state-acquisition-v2",
+  "repository": "VOICEVOX/voicevox_engine",
+  "scientific_reason": "no_qualifying_development_baseline_claim",
+  "tC": {
+    "precision": "timestamp",
+    "source": "first developer turn in parsed conversation",
+    "status": "derivable",
+    "value": "2023-07-15T21:52:50.143974+00:00"
+  },
+  "tFG": {
+    "precision": "timestamp",
+    "source": "turn_000009.create_time",
+    "status": "derivable",
+    "value": "2023-07-15T21:55:31.086959+00:00"
+  },
+  "target_identity_status": "unresolved",
+  "target_rule": "historically_justified_development_repository_baseline_at_tFG",
+  "temporal_applicability_status": "unresolved",
+  "tree_identity": "",
+  "tree_validation_status": "not_attempted"
+}

@@ -1,0 +1,80 @@
+{
+  "attempts": [
+    {
+      "attempt_number": 1,
+      "http_status": 200,
+      "operation": "github_current_pr_metadata",
+      "retrieved_at": "2026-10-02T14:34:51.920538+00:00",
+      "retry": false,
+      "status": "success"
+    }
+  ],
+  "authoritative_R_i_tFG": "",
+  "candidate_repository_boundaries": [
+    "67e4123c9e50aa2e56c25ef89136b75219348b04"
+  ],
+  "case_id": "CASE_CE4BF3CB944D",
+  "conflicts": [],
+  "derivation_chain": [],
+  "development_linkage_status": "unresolved",
+  "evidence_claims": [
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "67e4123c9e50aa2e56c25ef89136b75219348b04",
+      "claim_id": "CASE_CE4BF3CB944D-B5-2-67e4123c9e50",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "cases/reconstruction/CASE_CE4BF3CB944D/evidence/current_pr_metadata_sanitized_v2.json",
+        "67e4123c9e50aa2e56c25ef89136b75219348b04"
+      ],
+      "derivation_rule": "current_pr_base_supporting_only",
+      "development_context_linkage": "unresolved",
+      "evidence_hash": "a5eb923ce320ba34637fcd4524290d5e4201a5c9b1eedef1aaf7d9018c379dfa",
+      "evidence_level": "B5",
+      "historical_source_timestamp": "2026-10-02T14:34:51.920538+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "https://api.github.com/repos/pokt-network/poktroll/pulls/338",
+      "relation_to_tFG": "after",
+      "source_identifier": "https://api.github.com/repos/pokt-network/poktroll/pulls/338",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "supporting_only"
+    }
+  ],
+  "executed": true,
+  "historical_state_reconstructible": "unresolved",
+  "human_adjudication_status": "not_required",
+  "materialization_status": "not_attempted",
+  "methodology_version": "dir-tfg-v2",
+  "object_validation_status": "not_attempted",
+  "operational_reason": "",
+  "pr": {
+    "component_status": "available_by_tFG",
+    "created_at": "2024-01-19T16:29:19Z",
+    "existed_by_tFG": "yes",
+    "number": 338
+  },
+  "primary_repository_cutoff": "tFG",
+  "procedure_version": "post-stage-c-development-baseline-pilot-v2",
+  "reconstruction_contract_version": "post-stage-c-reconstruction-v2",
+  "record_version": "historical-state-acquisition-v2",
+  "repository": "pokt-network/poktroll",
+  "scientific_reason": "no_qualifying_development_baseline_claim",
+  "tC": {
+    "precision": "timestamp",
+    "source": "first developer turn in parsed conversation",
+    "status": "derivable",
+    "value": "2024-01-19T20:27:30.612520+00:00"
+  },
+  "tFG": {
+    "precision": "timestamp",
+    "source": "turn_000003.create_time",
+    "status": "derivable",
+    "value": "2024-01-19T20:28:03.030660+00:00"
+  },
+  "target_identity_status": "unresolved",
+  "target_rule": "historically_justified_development_repository_baseline_at_tFG",
+  "temporal_applicability_status": "unresolved",
+  "tree_identity": "",
+  "tree_validation_status": "not_attempted"
+}

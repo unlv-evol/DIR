@@ -1,0 +1,9 @@
+{
+  "base_sha": "45b7930af5a1b856e8d208637b5c009dfa65d5f7",
+  "created_at": "2023-12-11T20:48:11Z",
+  "pr_number": 405,
+  "raw_response_sha256": "9ebcbb748539fb9fbd21e2a0ebf6697895ad7649264efe386f54b5f4ab7bc323",
+  "repository": "equinix/metal-cli",
+  "retrieved_at": "2026-10-02T14:34:46.813454+00:00",
+  "source_url": "https://api.github.com/repos/equinix/metal-cli/pulls/405"
+}

@@ -1,0 +1,118 @@
+{
+  "audit_reference": "cases/manifests/post_stage_c_historical_target_audit.csv",
+  "candidate_shas": "dba0f0c2aaa735b19c250fb0a2fd917e8074427d;5bca5300c8a812d133f8122d4646c931714e516c;ab55baa9050ad6efbb1e8cb6cc058775bb0398b2;8a076124a338bc99586cc04889d772b091588c0f;dc715c4c623788e9a5dfc5076dadf458c04f901c",
+  "case_id": "CASE_F7BED13B8119",
+  "claims": [
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "dba0f0c2aaa735b19c250fb0a2fd917e8074427d",
+      "claim_id": "CASE_F7BED13B8119-B4-2-dba0f0c2aaa7",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230727_195927_pr_sharings.json",
+        "dba0f0c2aaa735b19c250fb0a2fd917e8074427d"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "22fb7250ee684ba115f1643852331cc6daa0112fcb5ed12f54acdb84a4ea974f",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-07-27T19:59:27+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "20230727_195927_pr_sharings.json;20230803_093947_pr_sharings.json;20230810_123110_pr_sharings.json;20230817_125147_pr_sharings.json;20230824_100450_pr_sharings.json;20230831_060603_pr_sharings.json;20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230727_195927_pr_sharings.json;20230803_093947_pr_sharings.json;20230810_123110_pr_sharings.json;20230817_125147_pr_sharings.json;20230824_100450_pr_sharings.json;20230831_060603_pr_sharings.json;20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    },
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "5bca5300c8a812d133f8122d4646c931714e516c",
+      "claim_id": "CASE_F7BED13B8119-B4-2-5bca5300c8a8",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230727_195927_pr_sharings.json",
+        "5bca5300c8a812d133f8122d4646c931714e516c"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "7d4ef60b1400c90d3bc70e33bd10efec164e9e2733dfab8a2bdec6613b33aa4b",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-07-27T19:59:27+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "20230727_195927_pr_sharings.json;20230803_093947_pr_sharings.json;20230810_123110_pr_sharings.json;20230817_125147_pr_sharings.json;20230824_100450_pr_sharings.json;20230831_060603_pr_sharings.json;20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230727_195927_pr_sharings.json;20230803_093947_pr_sharings.json;20230810_123110_pr_sharings.json;20230817_125147_pr_sharings.json;20230824_100450_pr_sharings.json;20230831_060603_pr_sharings.json;20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    },
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "ab55baa9050ad6efbb1e8cb6cc058775bb0398b2",
+      "claim_id": "CASE_F7BED13B8119-B4-2-ab55baa9050a",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230727_195927_pr_sharings.json",
+        "ab55baa9050ad6efbb1e8cb6cc058775bb0398b2"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "19ef04e87dfb118f3cc8aac6bcf512f152f866b2a07d25b7a5b84d4da0fc1c57",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-07-27T19:59:27+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "20230727_195927_pr_sharings.json;20230803_093947_pr_sharings.json;20230810_123110_pr_sharings.json;20230817_125147_pr_sharings.json;20230824_100450_pr_sharings.json;20230831_060603_pr_sharings.json;20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230727_195927_pr_sharings.json;20230803_093947_pr_sharings.json;20230810_123110_pr_sharings.json;20230817_125147_pr_sharings.json;20230824_100450_pr_sharings.json;20230831_060603_pr_sharings.json;20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    },
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "8a076124a338bc99586cc04889d772b091588c0f",
+      "claim_id": "CASE_F7BED13B8119-B4-2-8a076124a338",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230727_195927_pr_sharings.json",
+        "8a076124a338bc99586cc04889d772b091588c0f"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "6a4c5aaaf6fc6e16a2199db31f362bb734262682519143a2b00134a8464c3acf",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-07-27T19:59:27+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "20230727_195927_pr_sharings.json;20230803_093947_pr_sharings.json;20230810_123110_pr_sharings.json;20230817_125147_pr_sharings.json;20230824_100450_pr_sharings.json;20230831_060603_pr_sharings.json;20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230727_195927_pr_sharings.json;20230803_093947_pr_sharings.json;20230810_123110_pr_sharings.json;20230817_125147_pr_sharings.json;20230824_100450_pr_sharings.json;20230831_060603_pr_sharings.json;20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    },
+    {
+      "adequate_provenance": true,
+      "candidate_sha": "dc715c4c623788e9a5dfc5076dadf458c04f901c",
+      "claim_id": "CASE_F7BED13B8119-B4-2-dc715c4c6237",
+      "cross_validated": false,
+      "derivation_inputs": [
+        "20230727_195927_pr_sharings.json",
+        "dc715c4c623788e9a5dfc5076dadf458c04f901c"
+      ],
+      "derivation_rule": "archived_pr_commit_membership_lead",
+      "development_context_linkage": "established",
+      "evidence_hash": "8fee278610356234c578a4f36f10f0792fae5e011caf550b97205c849144646a",
+      "evidence_level": "B4",
+      "historical_source_timestamp": "2023-07-27T19:59:27+00:00",
+      "immutable_git_relationships": [],
+      "provenance_reference": "20230727_195927_pr_sharings.json;20230803_093947_pr_sharings.json;20230810_123110_pr_sharings.json;20230817_125147_pr_sharings.json;20230824_100450_pr_sharings.json;20230831_060603_pr_sharings.json;20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "relation_to_tFG": "after",
+      "source_identifier": "20230727_195927_pr_sharings.json;20230803_093947_pr_sharings.json;20230810_123110_pr_sharings.json;20230817_125147_pr_sharings.json;20230824_100450_pr_sharings.json;20230831_060603_pr_sharings.json;20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json",
+      "timestamp_precision": "timestamp",
+      "uses_outcome_information": false,
+      "validation_status": "unresolved"
+    }
+  ],
+  "snapshot_sources": "20230727_195927_pr_sharings.json;20230803_093947_pr_sharings.json;20230810_123110_pr_sharings.json;20230817_125147_pr_sharings.json;20230824_100450_pr_sharings.json;20230831_060603_pr_sharings.json;20230907_091631_pr_sharings.json;20230914_074826_pr_sharings.json;20231012_233628_pr_sharings.json"
+}

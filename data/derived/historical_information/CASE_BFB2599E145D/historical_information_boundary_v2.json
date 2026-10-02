@@ -1,0 +1,34 @@
+{
+  "authoritative_R_i_tFG": "",
+  "boundary_record_version": "historical-information-boundary-v2",
+  "case_id": "CASE_BFB2599E145D",
+  "development_linkage_status": "unresolved",
+  "historical_state_reconstructible": "unresolved",
+  "materialization_status": "not_attempted",
+  "methodology_version": "dir-tfg-v2",
+  "object_validation_status": "not_attempted",
+  "pr_component_status": "unavailable_by_tFG",
+  "pr_existed_by_tFG": "no",
+  "primary_repository_cutoff": "tFG",
+  "provenance_references": [
+    "https://api.github.com/repos/hufscheer/web-v1/pulls/119"
+  ],
+  "reconstruction_contract_version": "post-stage-c-reconstruction-v2",
+  "repository": "hufscheer/client",
+  "tC": {
+    "precision": "timestamp",
+    "source": "first developer turn in parsed conversation",
+    "status": "derivable",
+    "value": "2023-11-30T08:40:08.698626+00:00"
+  },
+  "tFG": {
+    "precision": "timestamp",
+    "source": "turn_000003.create_time",
+    "status": "derivable",
+    "value": "2023-11-30T08:40:22.179209+00:00"
+  },
+  "target_identity_status": "unresolved",
+  "temporal_applicability_status": "unresolved",
+  "tree_identity": "",
+  "tree_validation_status": "not_attempted"
+}
