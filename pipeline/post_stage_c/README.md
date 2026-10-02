@@ -25,11 +25,13 @@ python3 -B pipeline/post_stage_c/run_pilot.py
 
 It applies current provider metadata only as Level 4 supporting evidence. When qualifying historical target-identity evidence is absent, it persists an unresolved record and does not begin Git materialization. Transport retries are limited to two after the initial request, and credentials are neither printed nor serialized.
 
-Prepare and inspect the same-eight-case v2 pilot without network or Git operations:
+Inspect the same-eight-case v2 pilot without network or Git operations, then use the
+no-argument command for the explicitly authorized live run:
 
 ```bash
 python3 -B pipeline/post_stage_c/run_pilot_v2.py --check-config
 python3 -B pipeline/post_stage_c/run_pilot_v2.py --dry-run
+python3 -B pipeline/post_stage_c/run_pilot_v2.py
 ```
 
-The plan is stored in `cases/manifests/post_stage_c_reconstruction_pilot_v2.csv`; all rows remain `executed=false`. Live v2 acquisition is deliberately disabled at this checkpoint. Future execution is sequential, retains competing claims, applies B1–B5, and materializes only after authoritative identity is established. Transport retries are limited to the initial attempt plus two infrastructure retries; semantic ambiguity is never automatically retried.
+The plan is stored in `cases/manifests/post_stage_c_reconstruction_pilot_v2.csv`. Live execution is sequential and resumable: a completed result is atomically persisted before its row becomes `executed=true`, and completed rows are skipped on resume. Execution status does not imply scientific resolution. V2 records use `cases/reconstruction/<case_id>/historical_state_acquisition_v2.json` and `data/derived/historical_information/<case_id>/historical_information_boundary_v2.json`; v1 files are never overwritten. The runner retains competing claims, applies B1–B5, and materializes only after authoritative identity is established. Transport retries are limited to the initial attempt plus two infrastructure retries; semantic ambiguity is never automatically retried.
