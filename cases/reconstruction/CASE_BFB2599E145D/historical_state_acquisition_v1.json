@@ -1,0 +1,123 @@
+{
+  "attempt_record_version": "historical-state-acquisition-v1",
+  "attempts": [
+    {
+      "acquisition_source": "github_current_pr_api",
+      "attempt_id": "provider-01",
+      "attempt_number": 1,
+      "completed_at": "2026-10-01T18:35:15.151501+00:00",
+      "exit_status": 0,
+      "failure_category": "",
+      "operations": [
+        "GET https://api.github.com/repos/hufscheer/web-v1/pulls/119"
+      ],
+      "retrieval_timestamp": "2026-10-01T18:35:15.151501+00:00",
+      "retry_disposition": "not_applicable",
+      "started_at": "2026-10-01T18:35:13.744968+00:00",
+      "stderr_ref": "",
+      "stdout_ref": "cases/reconstruction/CASE_BFB2599E145D/logs/provider_attempt_1.json"
+    }
+  ],
+  "case_id": "CASE_BFB2599E145D",
+  "components": {
+    "ci": {
+      "evidence_refs": [],
+      "status": "not_assessed"
+    },
+    "discussion": {
+      "evidence_refs": [],
+      "status": "not_assessed"
+    },
+    "issue": {
+      "evidence_refs": [],
+      "status": "not_assessed"
+    },
+    "pr": {
+      "evidence_refs": [
+        "cases/reconstruction/CASE_BFB2599E145D/evidence/current_pr_metadata_sanitized.json"
+      ],
+      "status": "unavailable"
+    },
+    "repository": {
+      "evidence_refs": [],
+      "status": "unresolved"
+    }
+  },
+  "eligibility_contract_version": "post-stage-c-eligibility-v1",
+  "failure_category": "temporal_relation_unresolved",
+  "failure_reason": "present_day_pr_base_has_no_qualifying_historical_identity_evidence",
+  "historical_state_reconstructible": "unresolved",
+  "methodology_version": "dir-tfg-v2",
+  "notes": "No acquisition attempted.",
+  "object_validation": {
+    "deterministic_repeat_validated": false,
+    "materialized_state_identifier": "",
+    "object_sha": "",
+    "object_type": "",
+    "parent_shas": [],
+    "relationships_validated": false,
+    "tree_sha": ""
+  },
+  "pull_request": {
+    "number": 119,
+    "source_linkage_reference": "cases/manifests/screened_PA_PN_cases.csv#CASE_BFB2599E145D"
+  },
+  "reconstruction_contract_version": "post-stage-c-reconstruction-v1",
+  "reconstruction_status": "unresolved",
+  "repository": {
+    "canonical_url": "https://github.com/hufscheer/web-v1",
+    "identity": "hufscheer/client"
+  },
+  "retry_disposition": "not_applicable",
+  "scientific_basis": "historical_target_identity_not_established; materialization_not_permitted",
+  "stage_c_authority": {
+    "path": "cases/conversations/CASE_BFB2599E145D/stage_c_extraction_v5.json",
+    "sha256": "d5f543692ed2df9c0253985b28238232e3813b6cd97691c0d99e814909300ede"
+  },
+  "target_selection": {
+    "adjudication": null,
+    "authoritative_identifier": "",
+    "candidate_identifiers": [
+      "3a56f30491f7a44e4c49d094e44b1c18ded8cdad"
+    ],
+    "historical_identity_evidence": [
+      {
+        "adequate_provenance": true,
+        "asserted_base_sha": "3a56f30491f7a44e4c49d094e44b1c18ded8cdad",
+        "claim_id": "current-pr-base",
+        "cross_validated": false,
+        "evidence_hash": "ab0102108161b7fb1d6e8ef621eb88dfc0bdd96fa6b55db326e7ea56276b4ce1",
+        "evidence_historical_timestamp": "2026-10-01T18:35:15.151501+00:00",
+        "evidence_level": "level_4_present_day_pr_metadata",
+        "evidence_relation_to_tFG": "after",
+        "evidence_source_identifier": "https://api.github.com/repos/hufscheer/web-v1/pulls/119",
+        "evidence_source_type": "current_provider_pr_metadata",
+        "evidence_status": "supporting_only",
+        "evidence_timestamp_precision": "timestamp",
+        "provenance_reference": "cases/reconstruction/CASE_BFB2599E145D/evidence/current_pr_metadata_sanitized.json",
+        "retrieval_timestamp": "2026-10-01T18:35:15.151501+00:00"
+      }
+    ],
+    "identity_basis": "no_historically_qualifying_target_identity_claim",
+    "identity_status": "unresolved",
+    "rule": "historically_evidenced_focal_pr_base_state_at_tFG",
+    "temporal_evidence": [],
+    "type": "git_commit"
+  },
+  "temporal": {
+    "comparison_rule": "historical_timestamp_lte_tFG",
+    "primary_repository_cutoff": "tFG",
+    "tC": {
+      "precision": "timestamp",
+      "source": "first developer turn in parsed conversation",
+      "status": "derivable",
+      "value": "2023-11-30T08:40:08.698626+00:00"
+    },
+    "tFG": {
+      "precision": "timestamp",
+      "source": "turn_000003.create_time",
+      "status": "derivable",
+      "value": "2023-11-30T08:40:22.179209+00:00"
+    }
+  }
+}

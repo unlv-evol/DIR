@@ -1,6 +1,6 @@
-# System Architecture — Protocol v5
+# System Architecture — Protocol v5.1
 
-The operational protocol is [`protocols/experiment_protocol.md`](../protocols/experiment_protocol.md). Protocol v5 applies to the PA/PN candidate corpus.
+The operational protocol is [`protocols/experiment_protocol.md`](../protocols/experiment_protocol.md). Protocol v5.1 applies to the PA/PN candidate corpus.
 
 ## Research data flow
 
@@ -11,144 +11,96 @@ The operational protocol is [`protocols/experiment_protocol.md`](../protocols/ex
                                      |
                                      v
                  +---------------------------------------+
-                 | Stage A: Define and Screen the       |
-                 | PA/PN Corpus                         |
-                 | Automated / Administrative Screening |
-                 |                 +                    |
-                 | Intermediate Restricted Review CSV   |
-                 |                 +                    |
-                 | Manual PR-Conversation               |
-                 | Correspondence Screening (100%)      |
+                 | Stages A-C: Screen, Package, and     |
+                 | Extract Conversation Evidence        |
                  +-------------------+-------------------+
                                      |
                                      v
                  +---------------------------------------+
-                 | Scientific: eligible / excluded /    |
-                 | pending_resolution                   |
+                 | Post-C Historical Processability /   |
+                 | Eligibility: establish R_i(tFG)      |
                  +-------------------+-------------------+
                                      |
                                      v
                  +---------------------------------------+
-                 | Stage B: Package Operationally       |
-                 | Ready Conversations                  |
+                 | Stage D: Validate Stage C Extraction |
+                 | on ~30% of Eligible PA/PN Corpus     |
                  +-------------------+-------------------+
                                      |
                                      v
                  +---------------------------------------+
-                 | Stage C: LLM Conversation Extraction |
-                 | First generation + supplied C/S/V    |
+                 | Stage E: Freeze Authoritative        |
+                 | Conversation-Side Records            |
                  +-------------------+-------------------+
                                      |
                                      v
                  +---------------------------------------+
-                 | Post-Stage-C Processability /        |
-                 | Eligibility Resolution               |
-                 | Boundary + H_i(tFG) checks            |
+                 | Stage F1: Discovery / Held-Out       |
+                 | Assignment                           |
                  +-------------------+-------------------+
                                      |
                                      v
                  +---------------------------------------+
-                 | Stage D: Human Validation of         |
-                 | Conversation Extraction (~30%        |
-                 | eligible PA/PN-stratified sample)    |
-                 +-------------------+-------------------+
-                                     |
-                                     v
-                 +---------------------------------------+
-                 | Stage E: Freeze Validated Records    |
-                 +-------------------+-------------------+
-                                     |
-                                     v
-                 +---------------------------------------+
-                 | Stage F: Split the Corpus            |
-                 | PA/PN-stratified (~70% / ~30%)       |
+                 | Stage F2: Construct H_i(tFG) using   |
+                 | authoritative R_i(tFG)               |
                  +-------------------+-------------------+
                                      |
                            +---------+---------+
-                           |                   |
-                           v                   v
-          +---------------------------+  +---------------------------+
-          | Stage F: Historical       |  | Stage F: Historical       |
-          | H_i(tFG) DISCOVERY Index  |  | H_i(tFG) HELD-OUT Index   |
-          +-------------+-------------+  +-------------+-------------+
-                        |                          |
-                        v                          |
-          +---------------------------+             |
-          | Stage G: Evidence-Pattern |             |
-          | Discovery on Discovery    |             |
-          | Set                       |             |
-          +-------------+-------------+             |
-                        |                          |
-                        v                          |
-          +---------------------------+             |
-          | Stage H: Derive and FREEZE |             |
-          | Retrieval Algorithm v1    |             |
-          +-------------+-------------+             |
-                        |                          |
-                        +-------------+------------+
-                                      |
-                                      v
+                           | discovery         | held-out
+                           v                   |
+          +---------------------------+        |
+          | Stage G: Evidence-Pattern |        |
+          | Discovery                 |        |
+          +-------------+-------------+        |
+                        |                      |
+                        v                      |
+          +---------------------------+        |
+          | Stage H: Freeze Retrieval |        |
+          | Algorithm v1              |        |
+          +-------------+-------------+        |
+                        +----------+-----------+
+                                   |
+                                   v
                  +---------------------------------------+
-                 | Stage I: Apply Frozen Algorithm v1   |
-                 | Held-out H_i(tFG); retrieval begins  |
+                 | Stage I: Apply Frozen Algorithm      |
+                 | Retrieved Index -> Selection ->      |
+                 | Semantic Reduction -> Deferred       |
+                 | Materialization -> Payload Reduction |
+                 | -> E_i^eng                           |
                  +-------------------+-------------------+
                                      |
                                      v
                  +---------------------------------------+
-                 | Stage I: Retrieved Evidence Index    |
+                 | Stage J1: Structured Intent Record   |
                  +-------------------+-------------------+
                                      |
                                      v
                  +---------------------------------------+
-                 | Stage I: Evidence Selection          |
+                 | Stage J2: Evidence-Grounded Prompt   |
+                 | Reconstruction                       |
                  +-------------------+-------------------+
                                      |
                                      v
                  +---------------------------------------+
-                 | Stage I: Semantic Evidence Reduction |
+                 | Stage K: Controlled Same-Model      |
+                 | Generation; BOTH Outputs Fixed       |
                  +-------------------+-------------------+
                                      |
                                      v
                  +---------------------------------------+
-                 | Stage I: Deferred Materialization    |
+                 | Stage L1: Intent-Record Fidelity     |
+                 | Evaluation; L1 Judgment Fixed        |
                  +-------------------+-------------------+
                                      |
                                      v
                  +---------------------------------------+
-                 | Stage I: Evidence Payload Reduction  |
+                 | Reveal Integrated Implementation     |
                  +-------------------+-------------------+
                                      |
                                      v
                  +---------------------------------------+
-                 | Stage I: Engineered Evidence E_i^eng |
-                 +-------------------+-------------------+
-                                     |
-                                     v
-                 +---------------------------------------+
-                 | Stage J: Reconstruct the Developer   |
-                 | Intent                               |
-                 +-------------------+-------------------+
-                                     |
-                                     v
-                 +---------------------------------------+
-                 | Stage K: Controlled Code Generation  |
-                 | Same current model/configuration     |
-                 +-------------------+-------------------+
-                                     |
-                                     v
-                 +---------------------------------------+
-                 | Stage K: BOTH Outputs Fixed          |
-                 +-------------------+-------------------+
-                                     |
-                                     v
-                 +---------------------------------------+
-                 | Stage L: Reveal Integrated           |
-                 | Implementation                       |
-                 +-------------------+-------------------+
-                                     |
-                                     v
-                 +---------------------------------------+
-                 | Stage L: Evaluate                    |
+                 | Stage L2: Generation-Effectiveness  |
+                 | Evaluation                          |
                  +---------------------------------------+
 ```
 
@@ -158,11 +110,11 @@ Stage A contains automated/administrative screening and a separate restricted ma
 
 Stage B preserves three layers: retrieved source archive (source bytes and safe retrieval provenance), lossless normalized conversation (all source conversation records, tool traces, first-generation response, later turns, and source locations), and derived Stage C model view (neutral case ID, conversation-addressed turns, temporal and candidate provenance). `conversation-only-v2` adds deterministic `generated-technical-content-v2` candidates with uniform `GTC_*` IDs, including declarative resources and explicit incomplete fragments; a candidate is not yet a scientific generated artifact. Candidates own exact spans within one assistant response and never span responses. Exact V1 mappings are retained only through nullable `legacy_artifact_id`; historical V1 packages remain immutable. Source acquisition distinguishes fresh retrieval, current-cache reuse, explicit offline legacy raw-source import, and explicit offline archived HTTP response import. Archived HTTP import uses only identity-matched raw `HTMLContent` in the PatchTrack replication ZIP, selects the earliest qualifying snapshot deterministically, and never substitutes the derived `Conversations` list or screening evidence. Unknown or timezone-naive historical retrieval times remain distinct from import time. Corpus orchestration preserves valid packages and reports operational Stage C readiness without changing scientific eligibility. A restricted case-linkage record retains PR/source identities through the same neutral ID; it is never model input. Isolation is provenance-based: the model view must equal the deterministic derivative of the normalized source conversation and cannot carry independently injected administrative fields. Repository or PR strings already present in source conversation text remain unchanged. Stage C uses two independent, tool-free OpenAI Responses API passes. Pass 1 remains `dir-stage-c-first-generation-v4` and receives the complete model view to select a response-local first family from supplied candidates; it cannot invent candidate spans, and incompleteness alone does not prevent selection. Deterministic code validates response-local ownership fail closed, derives `tFG`, and constructs the strictly pre-boundary conversation. Extraction v6 Pass 2 uses `dir-stage-c-csv-extraction-v3` and `stage-c-pass2-v2`; it receives only that reduced conversation and extracts textual C/S/V. Its source-turn and source-role arrays are positionally paired with equal length, evidence remains textually attributable to cited admissible turns, and the final record preserves the independent Pass 2 outcome. All pre-boundary user and assistant turns are admissible, with their roles preserved; the first-generation response and every later turn are excluded. Neither pass receives screening data, PA/PN, independently injected repository/PR metadata, outcomes, or external tools. Temporal methodology remains `dir-tfg-v2`.
 
-Immediately after Stage C, the unlettered Post-Stage-C workflow resolves first-generation boundary identifiability, reconstructs or evaluates `H_i(tFG)` through controlled DIR acquisition, resolves historical-state reconstructibility and remaining deferred criteria, and determines final scientific eligibility. `post-stage-c-reconstruction-v1` treats the core repository target as the historically evidenced focal-PR base state applicable at `tFG`; a Stage A base SHA is only a candidate until identity and temporal applicability are independently verified. Infrastructure failure remains separate from scientific `no`. Stage C does not update eligibility. Stage D then samples approximately 30% of the scientifically eligible PA/PN corpus to validate Stage C extraction. Full evidence-discovery indexes and retrieval work remain governed by the later frozen/split workflow.
+Immediately after Stage C, Post-C Historical Processability / Eligibility establishes the minimum historically justified development baseline `R_i(tFG)`, resolves deferred criteria, and determines final scientific eligibility. It does not build complete `H_i(tFG)` or perform evidence discovery. Historical `post-stage-c-reconstruction-v1` and its pilot retain the focal-PR-base definition. Current v2 permits PR evidence only when historically available and defines `R_i(tFG)` independently of PR existence. Identity/linkage and temporal applicability must precede materialization. Infrastructure failure remains separate from scientific `no`. Stage D samples approximately 30% of the scientifically eligible corpus solely to validate Stage C extraction.
 
 ## Historical information and temporal boundary
 
-Preserve `tC` (first developer prompt) and `tFG` (immediately before the first artifact-bearing assistant response in the first snippet family) with independent value, precision, status, and source. `primary_repository_cutoff = tFG` for `dir-tfg-v2`; never substitute unresolved `tFG` with `tC`. The Historical Project Information Space `H_i(tFG)` comprises repository, PR, issue/work-item, CI, and discussion/review information demonstrably available by the cutoff, with independently statused components. A compact per-case index holds the verified focal-PR base boundary SHA/tree/history references; eligible PR, issue, CI, and discussion IDs/timestamps; and provenance. It does not eagerly copy large trees, logs, diffs, or discussions. Exact timestamps use an inclusive `<= tFG` test; date-only same-day ordering is unresolved unless other evidence orders it. Record `available_by_tC` and `available_by_tFG` separately where determinable. Historical availability, present retrieval, relevance, and additional-evidence status are distinct.
+Preserve `tC` and `tFG` with independent value, precision, status, and source. `primary_repository_cutoff = tFG`; never substitute unresolved `tFG` with `tC`. Post-C v2 establishes `R_i(tFG)`, the historically justified repository revision representing the project baseline relevant to the focal task. Stage F2 then constructs complete `H_i(tFG)` from that fixed anchor and independently statused repository, PR, issue/work-item, CI, discussion/review, and history components. PR state is included only when the PR existed by `tFG`. Exact timestamps use inclusive `<= tFG`; date-only same-day ordering is unresolved without independent ordering. Historical availability, retrieval, relevance, and evidence status remain distinct.
 
 ## Discovery, held-out, and evidence flow
 

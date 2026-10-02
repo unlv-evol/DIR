@@ -1,4 +1,4 @@
-# Repository Structure — Protocol v5
+# Repository Structure — Protocol v5.1
 
 [`docs/architecture.md`](architecture.md) defines stage order; the [operational protocol](../protocols/experiment_protocol.md) defines methodology. This document maps current and planned artifacts to locations.
 
@@ -83,11 +83,11 @@ Stage B corpus orchestration writes operational `cases/manifests/stage_b_summary
 
 Current Stage C execution reads `cases/conversations/<case_id>/stage_c_model_view_v2.json` and writes `stage_c_extraction_v6.json` beside immutable historical outputs. Version-controlled prompts live under `prompts/stage_c/`; response and final-record schemas live under `schemas/`. Extraction-v6 uses `stage-c-pass2-v2` positional provenance and `conversation-draft-v4` with an independent Pass 2 outcome. Runtime configuration is centralized in `src/developer_intent/stage_c_config.py`; extraction, validation, deterministic family identity, temporal derivation, and the tool-free OpenAI Responses adapter live in `src/developer_intent/stage_c.py`.
 
-The offline Post-Stage-C initializer writes `cases/manifests/post_stage_c_eligibility.csv` and `post_stage_c_reconstruction_pilot.csv`. Future acquisition records live at `cases/reconstruction/<case_id>/historical_state_acquisition_v1.json`; compact component indexes live under `data/derived/historical_information/<case_id>/`. These records are researcher-side processability and provenance artifacts, never Stage C model input.
+The historical v1 initializer and pilot records remain at their existing paths. The v2 pilot plan is `cases/manifests/post_stage_c_reconstruction_pilot_v2.csv`; future v2 records use `cases/reconstruction/<case_id>/historical_state_acquisition_v2.json` and `data/derived/historical_information/<case_id>/historical_information_boundary_v2.json`. The v2 boundary record establishes only `R_i(tFG)` processability. Stage F2 later constructs complete `H_i(tFG)` without replacing that boundary. These records are never Stage C model input.
 
 ## Historical information, traces, and evidence
 
-Compact `historical-information-index-v1` records under `data/derived/historical_information/` hold stable historical references, timestamps, the focal-PR base boundary SHA/tree, and separately statused PR/issue/CI/discussion/history identifiers. Large payloads are materialized on demand. `pipeline/snapshot/` resolves historical states without guessing; `pipeline/retrieval/` records justified operations and traces; `pipeline/selection/` assesses temporal validity, relevance, novelty, C/S/V contribution and uncertainty reduction. `pipeline/evidence_engineering/` performs semantic reduction before deferred materialization and payload reduction. Retrieval Algorithm v1 is derived only from discovery cases and frozen before held-out application. Experimental and provenance directories remain available for later runs; no held-out evidence may enter v1 development.
+Stage F2 indexes complete historical information using authoritative `R_i(tFG)` from Post-C as the fixed repository anchor. Large payloads are materialized on demand. `pipeline/retrieval/` records justified operations and traces; `pipeline/selection/` assesses relevance and novelty; `pipeline/evidence_engineering/` performs semantic reduction before deferred materialization and payload reduction. Retrieval Algorithm v1 is derived only from discovery cases and frozen before held-out application. No held-out evidence may enter v1 development.
 
 ## RAW / SAFE / SEALED
 
@@ -95,4 +95,4 @@ Compact `historical-information-index-v1` records under `data/derived/historical
 
 ## Schemas, configuration, and tests
 
-Current Protocol v5 records carry `dir-tfg-v2`. Versioned schemas validate Stage A contracts, restricted linkage, both Stage C model responses, and the final Stage C draft. Earlier `dir-tfg-v1` conversation and repository-evidence schemas remain legacy. `.env.example`, `stage_c_config.py`, and the existing screening configuration keep secrets out of versioned artifacts. Unit tests run without network; later integration and leakage tests verify frozen and held-out boundaries.
+Current Protocol v5.1 records carry `dir-tfg-v2`. Versioned schemas validate Stage A contracts, restricted linkage, both Stage C model responses, and the final Stage C draft. Earlier `dir-tfg-v1` conversation and repository-evidence schemas remain legacy. `.env.example`, `stage_c_config.py`, and the existing screening configuration keep secrets out of versioned artifacts. Unit tests run without network; later integration and leakage tests verify frozen and held-out boundaries.

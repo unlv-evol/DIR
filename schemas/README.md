@@ -1,5 +1,7 @@
 # Record contracts
 
+Current Post-C v2 contracts are `historical_state_acquisition_v2.schema.json` and `historical_information_boundary_v2.schema.json`. They define development-baseline acquisition and the minimum authoritative `R_i(tFG)` boundary, respectively. They coexist with immutable v1 focal-PR-base contracts and do not define the future Stage F full `H_i(tFG)` index.
+
 Protocol v5 currently uses methodology `dir-tfg-v2`. A schema version identifies a **record contract**, not a change to that methodology. CSV values remain strings until explicitly parsed. Current Stage A contracts are:
 
 | Artifact / record | Contract file | Record version | Methodology | Producer | Validation entry point |

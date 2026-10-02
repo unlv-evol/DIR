@@ -1,0 +1,10 @@
+{
+  "base_sha": "39747666aa0895699e188f3fd03a0f448c9cf746",
+  "created_at": "2023-07-09T10:27:11Z",
+  "pr_number": 716,
+  "raw_response_sha256": "a3a66e8a9a51ee77960d23606458339d7088fc48c7b1bcd4a303826864b5e0b3",
+  "repository": "VOICEVOX/voicevox_engine",
+  "retrieved_at": "2026-10-01T18:35:19.727010+00:00",
+  "source_url": "https://api.github.com/repos/VOICEVOX/voicevox_engine/pulls/716",
+  "updated_at": "2023-07-18T11:38:54Z"
+}

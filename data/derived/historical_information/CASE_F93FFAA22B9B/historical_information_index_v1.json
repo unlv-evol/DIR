@@ -1,0 +1,65 @@
+{
+  "case_id": "CASE_F93FFAA22B9B",
+  "components": {
+    "ci": {
+      "items": [],
+      "status": "not_assessed"
+    },
+    "discussion": {
+      "items": [],
+      "status": "not_assessed"
+    },
+    "issue": {
+      "items": [],
+      "status": "not_assessed"
+    },
+    "pr": {
+      "items": [
+        {
+          "availability_status": "available",
+          "historical_timestamp": "2023-07-06T15:28:20Z",
+          "provenance_reference": "cases/reconstruction/CASE_F93FFAA22B9B/evidence/current_pr_metadata_sanitized.json",
+          "retrieval_timestamp": "2026-10-01T18:35:11.401501+00:00",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432",
+          "source_type": "pull_request",
+          "stable_identifier": "dotCMS/core#25432",
+          "temporal_relation_to_tFG": "at_or_before",
+          "timestamp_precision": "timestamp"
+        }
+      ],
+      "status": "available"
+    },
+    "repository": {
+      "items": [],
+      "status": "not_assessed"
+    }
+  },
+  "historical_index_version": "historical-information-index-v1",
+  "methodology_version": "dir-tfg-v2",
+  "primary_repository_cutoff": "tFG",
+  "reconstruction_contract_version": "post-stage-c-reconstruction-v1",
+  "tFG": {
+    "precision": "timestamp",
+    "source": "turn_000003.create_time",
+    "status": "derivable",
+    "value": "2023-07-07T21:10:15.086839+00:00"
+  },
+  "target_identity_claims": [
+    {
+      "adequate_provenance": true,
+      "asserted_base_sha": "9e3357efa8b09dd586c9836650557df4168a59c5",
+      "claim_id": "current-pr-base",
+      "cross_validated": false,
+      "evidence_hash": "f401efb36de9565f02883c91aaf747c03e9bf1e702fee2ebbb3838a7492bf659",
+      "evidence_historical_timestamp": "2026-10-01T18:35:11.401501+00:00",
+      "evidence_level": "level_4_present_day_pr_metadata",
+      "evidence_relation_to_tFG": "after",
+      "evidence_source_identifier": "https://api.github.com/repos/dotCMS/core/pulls/25432",
+      "evidence_source_type": "current_provider_pr_metadata",
+      "evidence_status": "supporting_only",
+      "evidence_timestamp_precision": "timestamp",
+      "provenance_reference": "cases/reconstruction/CASE_F93FFAA22B9B/evidence/current_pr_metadata_sanitized.json",
+      "retrieval_timestamp": "2026-10-01T18:35:11.401501+00:00"
+    }
+  ]
+}
