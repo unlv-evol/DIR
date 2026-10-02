@@ -25,7 +25,7 @@ The export includes only stable identities, source-linkage provenance, automated
 
 The v9 CSV retains only `conversation_turn_pattern` from the former pilot secondary characteristics, as descriptive metadata computed from the complete developer-turn count. It does not persist lexical prompt signals, help-seeking cue lists, unassessed qualitative placeholders, or lexical-producer provenance. These old v6 values must not be passed to Stage G; Stage G derives cues afresh from frozen, permitted inputs after validation, freeze, and splitting.
 
-The run also derives restricted `cases/manifests/case_mapping.csv` from the source index and screened rows. It is the researcher-only Word Protocol v5 mapping, not a Stage C input; the per-case linkage JSON remains separate. `--limit N` writes a separate `smoke_N_case_mapping.csv` under `data/intermediate/screening/`. All mapping outputs refuse overwrite.
+The run also derives restricted `cases/manifests/case_mapping.csv` from the source index and screened rows. It is the researcher-only Protocol v5 mapping, not a Stage C input; the per-case linkage JSON remains separate. `--limit N` writes a separate `smoke_N_case_mapping.csv` under `data/intermediate/screening/`. All mapping outputs refuse overwrite.
 
 ## Safe local checks
 

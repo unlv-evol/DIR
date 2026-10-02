@@ -20,6 +20,16 @@ At minimum, inspect:
 -   relevant files under `protocols/`
 -   `decisions/decision_log.md` when present
 
+## Authoritative Experiment Protocol
+
+`protocols/experiment_protocol.md` is the single authoritative experiment
+protocol. Do not create, regenerate, synchronize, or update Word or `.docx`
+copies of the experiment protocol unless the user explicitly requests one.
+
+Historical references to earlier Word protocol versions in
+`decisions/decision_log.md` are provenance and should not be rewritten merely
+for consistency.
+
 For pilot screening and extraction, specifically read:
 
 -   `protocols/pilot_case_selection_and_extraction.md`

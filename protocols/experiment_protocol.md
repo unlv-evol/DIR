@@ -2,7 +2,7 @@
 
 Case Screening, Conversation Extraction, Historical Project Evidence Discovery, and End-to-End Evaluation Protocol
 
-This Markdown is the repository's operational expression of authoritative Protocol v5.2 in `Developer_Intent_Reconstruction_Experiment_Protocol_v5_2.docx`. The current first-generation methodology version is `dir-tfg-v2`. Protocol v5.2 narrows current Post-C reconstruction to B1 and conditional B2 with B5 support while preserving historical v1/v2 records and Stage F/J/L alignment. Preserve source material, retrieval provenance, and versioned research outputs.
+This file is the repository's authoritative Protocol v5.2. The current first-generation methodology version is `dir-tfg-v2`. Protocol v5.2 narrows current Post-C reconstruction to B1 and conditional B2 with B5 support while preserving historical v1/v2 records and Stage F/J/L alignment. Preserve source material, retrieval provenance, and versioned research outputs.
 
 ## 1. Population and Stage A screening
 
