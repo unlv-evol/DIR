@@ -22,7 +22,7 @@ separately to avoid duplicating methodological details in this README.
     directory responsibilities, case organization, pipeline components,
     experiments, provenance, and testing structure.
 -   [`protocols/experiment_protocol.md`](protocols/experiment_protocol.md)
-    --- current Protocol v5.1 experiment procedure across Stages A–L.
+    --- current Protocol v5.2 experiment procedure across Stages A–L.
 -   [`decisions/decision_log.md`](decisions/decision_log.md) ---
     methodological and engineering decisions and their rationale.
 -   [`AGENTS.md`](AGENTS.md) --- repository-level instructions for Codex
@@ -30,7 +30,7 @@ separately to avoid duplicating methodological details in this README.
 
 ## Current Project Stage
 
-Protocol v5.1 is the adopted primary experiment design. It screens all
+Protocol v5.2 is the adopted primary experiment design. It screens all
 PA/PN candidates for integrity, availability, and processability, then
 packages and analyzes conversations in isolation. Conversation-side
 records are validated and frozen before a stratified discovery/held-out
@@ -48,7 +48,7 @@ into the broader study. See
 [`docs/repository_structure.md`](docs/repository_structure.md) for the
 corresponding output locations.
 
-Current infrastructure includes Stage A screening, Stage B lossless packaging, two-pass Stage C extraction, and versioned Post-C historical processability contracts. Stage C derives `tFG` from the isolated conversation. Post-C v2 establishes the historically justified development repository baseline `R_i(tFG)` without constructing complete `H_i(tFG)` or making an eligibility decision during initialization. Stage F later consumes that fixed anchor, constructs historical information, and separates discovery from held-out evaluation.
+Current infrastructure includes Stage A screening, Stage B lossless packaging, two-pass Stage C extraction, and versioned Post-C historical processability contracts. Stage C derives `tFG` from the isolated conversation. Post-C v3 establishes the historically justified development repository baseline `R_i(tFG)` through B1 and conditional B2, with B5 support only, without constructing complete `H_i(tFG)` or making an eligibility decision during initialization. Stage F later consumes that fixed anchor, constructs historical information, and separates discovery from held-out evaluation.
 
 ## Core Validity Boundary
 

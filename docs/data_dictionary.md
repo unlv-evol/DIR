@@ -1,6 +1,6 @@
 # Data dictionary
 
-This summarizes current contracts; the [Protocol v5.1 Markdown](../protocols/experiment_protocol.md) defines the method. The PatchPrompt CSV is a candidate index, not a complete case source. Its `PR_Size` column is inherited metadata and unused for DIR screening.
+This summarizes current contracts; the [Protocol v5.2 Markdown](../protocols/experiment_protocol.md) defines the method. The PatchPrompt CSV is a candidate index, not a complete case source. Its `PR_Size` column is inherited metadata and unused for DIR screening.
 
 ## Screening
 
@@ -13,6 +13,14 @@ Revised Word Protocol v5 §2.3 requires the neutral Case ID (`case_id`), PR URL/
 `cases/manifests/case_mapping.csv` is a restricted researcher-only mapping derived from the authoritative source index and the current Stage A screened rows. Required Word fields are `case_id`, `pr_url` (PR identifier), and `Outcome_Class` (PA/PN). `mapping_schema_version`, `source_case_id`, `conversation_id`, and `conversation_url` are complementary provenance fields. It does not replace `linkage/*.json` and is never Stage C model input. Stage A may access PR/project identity for administrative integrity, mapping, accessibility, duplicates, and preliminary processability. After Stage C, controlled historical access may resolve minimum `R_i(tFG)` processability and eligibility; complete `H_i(tFG)` construction and substantive evidence discovery occur later under the frozen/split workflow.
 
 `dir-source-linkage-correction-v1` records a verified correction to an inherited PR/conversation association without modifying the inherited source CSV. The overlay preserves the original and corrected URLs/IDs, stable case/source/PR binding, reviewer, timestamp, version, reason, and evidence reference. Current Stage A mapping and Stage B selection apply verified overlays before resolving conversation identity; historical reviews remain preserved separately.
+
+## Post-C v3 B1/B2 reconstruction contracts
+
+`historical-state-acquisition-v3` records the unchanged scientific target `R_i(tFG)` under `post-stage-c-reconstruction-v3`. B1 candidates are deterministic, auditable revision references drawn only from authoritative Stage C `admissible_prior_turns`, with source turn/role, exact evidence, focal-task linkage, temporal admissibility, ambiguity, and interpretation. Full SHAs are recognized directly; abbreviated SHAs require an explicit commit/revision/SHA label and deterministic resolution before authority. Natural-language ambiguity remains unresolved.
+
+B2 may inspect immutable Git relationships only after B1 establishes its starting revision. A B1 statement identifying a baseline can select that revision directly; a statement explicitly identifying a focal-change revision may justify a validated first-parent derivation. Parent selection is never automatic. B5 current information is supporting-only routing/materialization/validation provenance and cannot establish the target or start B2. B3 and B4 have `not_used_v3` status. `patchprompt_archive_repository_state_used` is always false. No score is computed.
+
+`historical-information-boundary-v3` is the minimum fixed repository boundary for later Stage F2. `historical_state_reconstructible = yes` requires authoritative B1/B2 identity, successful deterministic materialization, commit-object validation, tree validation, and no prohibited hindsight. No or ambiguous B1, B5-only evidence, or infrastructure uncertainty remains `unresolved`; scientific `no` requires affirmative evidence. Stage F2 constructs full `H_i(tFG)` from this fixed boundary and cannot replace it.
 
 ## Conversation and temporal records
 

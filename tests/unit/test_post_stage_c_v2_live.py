@@ -103,6 +103,11 @@ class PostStageCV2LiveTests(unittest.TestCase):
                          "cases/manifests/stage_c_post_resolution_authority.csv"):
             target = root / relative; target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(ROOT / relative, target)
+        manifest = root / "cases/manifests/post_stage_c_reconstruction_pilot_v2.csv"
+        rows = read_csv(manifest)
+        with manifest.open("w", newline="", encoding="utf-8") as stream:
+            writer = csv.DictWriter(stream, fieldnames=list(rows[0]), lineterminator="\n")
+            writer.writeheader(); writer.writerows([{**row, "executed": "false"} for row in rows])
         for row in self.eligibility.values():
             source = ROOT / row["stage_c_authoritative_record"]
             target = root / row["stage_c_authoritative_record"]
@@ -138,7 +143,9 @@ class PostStageCV2LiveTests(unittest.TestCase):
     def test_preflight_is_read_only_and_exact(self):
         rows, _, _ = preflight(ROOT)
         self.assertEqual(len(rows), 8)
-        self.assertTrue(all(r["executed"] == "false" for r in rows))
+        self.assertTrue(all(r["executed"] == "true" for r in rows))
+        self.assertTrue(all(all((ROOT / path).is_file() for path in output_paths(r["case_id"]).values())
+                            for r in rows))
 
 
 if __name__ == "__main__":
