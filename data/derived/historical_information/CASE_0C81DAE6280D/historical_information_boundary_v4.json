@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_0C81DAE6280D",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "ec2a0db94a845a376e44601424e097b54680892e",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "7b9a58a751785f873575e0da1beb75ba60c64998"
+    ],
+    "recursive_tree_entry_count": 1485,
+    "recursive_tree_listing_sha256": "124f95cb33d2846016113fa806a61e204506eeb5d5f78928e1eb8a7ba01a64c0",
+    "retrieved_at": "2026-10-05T20:15:34.964916+00:00",
+    "source": "https://github.com/osmosis-labs/osmosis-frontend.git",
+    "status": "materialized",
+    "tree_sha": "9d90fc9cbc4f8e80334faaccb30223c2045baa27"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_0C81DAE6280D/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_0C81DAE6280D/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "osmosis-labs/osmosis-frontend",
+  "selected_state": {
+    "author_time": "2023-07-31T15:32:43Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "ec2a0db94a845a376e44601424e097b54680892e",
+    "committer_time": "2023-07-31T15:32:43Z",
+    "effective_time": "2023-07-31T15:32:43+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "9d90fc9cbc4f8e80334faaccb30223c2045baa27"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-07-31T15:37:00.377631+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

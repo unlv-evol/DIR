@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "master",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_DBFC2CC31FE4",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "e8ca9dfb31973b71d2dbeb4e89cf6e04649028ba",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "8a583a69c875423e656ce8f760217a9b4eda7b09"
+    ],
+    "recursive_tree_entry_count": 300,
+    "recursive_tree_listing_sha256": "fdd3dac62e0098329e134189e53f77e80580047cc0452b053c449155625edee5",
+    "retrieved_at": "2026-10-05T22:50:15.834440+00:00",
+    "source": "https://github.com/VOICEVOX/voicevox_engine.git",
+    "status": "materialized",
+    "tree_sha": "c6c84c3176833dcdeedb45411ff7be8d12c39410"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_DBFC2CC31FE4/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_DBFC2CC31FE4/stage_c_extraction_v5_post_c_resolution_v5_retry_01.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "VOICEVOX/voicevox_engine",
+  "selected_state": {
+    "author_time": "2024-03-18T06:51:00Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "e8ca9dfb31973b71d2dbeb4e89cf6e04649028ba",
+    "committer_time": "2024-03-18T06:51:00Z",
+    "effective_time": "2024-03-18T06:51:00+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "c6c84c3176833dcdeedb45411ff7be8d12c39410"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-03-20T20:23:14.283596+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

@@ -1,0 +1,46 @@
+{
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_B27322676691",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "cf1bed97409aa9b3658dd5c4910783b7c4bf5a06",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "df969f80a512410e6d165ca8eafb433523230d77",
+      "41dccbeb4da68f815eda494d72eb4477e8d1e98a"
+    ],
+    "recursive_tree_entry_count": 407,
+    "recursive_tree_listing_sha256": "9e806a7c632ccfb4c74100b412045c139156070c963416633814d3581a8f8c5a",
+    "retrieved_at": "2026-10-05T20:19:15.886082+00:00",
+    "source": "https://github.com/wahanegi/vibereport.git",
+    "status": "materialized",
+    "tree_sha": "a49e9094138d21201726b6ff352737e5870d8725"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_B27322676691/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_B27322676691/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "wahanegi/vibereport",
+  "selected_state": {
+    "author_time": "2023-05-31T14:03:03Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "cf1bed97409aa9b3658dd5c4910783b7c4bf5a06",
+    "committer_time": "2023-05-31T14:03:03Z",
+    "effective_time": "2023-05-31T14:03:03+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "a49e9094138d21201726b6ff352737e5870d8725"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-05-31T20:15:15.484299+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

@@ -1,0 +1,267 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-12-13T00:24:41Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-13T00:24:41Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-13T00:24:41+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a1efb7093687d048e6a2a7739faadf28aece6a9e",
+          "d66bc0083d2843cb8af38552077acb9de0389539"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:36.853837+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mzkeyy/next.js14-tailwindcss-udemy-blog/commits?sha=main&until=2023-12-13T11%3A36%3A34.939884%2B00%3A00&per_page=1&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:36.853837+00:00",
+          "sha256": "1a2616de608a8d932439f90e72bba7f9910ce35727b752ec496fa116c5d09358",
+          "source": "https://api.github.com/repos/mzkeyy/next.js14-tailwindcss-udemy-blog/commits?sha=main&until=2023-12-13T11%3A36%3A34.939884%2B00%3A00&per_page=1&page=1"
+        },
+        "repository": "mzkeyy/next.js14-tailwindcss-udemy-blog",
+        "sha": "d66ae022763a8ceaa6e0c993b20edd70d71e87dd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "636366a8b4857196ee3fa266c21475d32af8b857"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-12-13T00:24:41Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-12-13T00:24:41Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-12-13T00:24:41+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "a1efb7093687d048e6a2a7739faadf28aece6a9e",
+        "d66bc0083d2843cb8af38552077acb9de0389539"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:36.853837+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/mzkeyy/next.js14-tailwindcss-udemy-blog/commits?sha=main&until=2023-12-13T11%3A36%3A34.939884%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:36.853837+00:00",
+        "sha256": "1a2616de608a8d932439f90e72bba7f9910ce35727b752ec496fa116c5d09358",
+        "source": "https://api.github.com/repos/mzkeyy/next.js14-tailwindcss-udemy-blog/commits?sha=main&until=2023-12-13T11%3A36%3A34.939884%2B00%3A00&per_page=1&page=1"
+      },
+      "repository": "mzkeyy/next.js14-tailwindcss-udemy-blog",
+      "sha": "d66ae022763a8ceaa6e0c993b20edd70d71e87dd",
+      "temporal_basis": "committer_time",
+      "tree_sha": "636366a8b4857196ee3fa266c21475d32af8b857"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "main",
+  "base_routing_source": "pr_base_ref",
+  "case_id": "CASE_36570F50AD25",
+  "executed_at": "2026-10-05T20:16:37.426448+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-12-13T11:49:13Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-13T11:49:13Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-13T11:49:13+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d66ae022763a8ceaa6e0c993b20edd70d71e87dd"
+        ],
+        "position": 1,
+        "pr_number": 6,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:35.994359+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mzkeyy/next.js14-tailwindcss-udemy-blog/pulls/6/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:35.994359+00:00",
+          "sha256": "a04a985af6e6c8c0b317e9ffd5dac033ea04232fa894ce60992057615702cbdd",
+          "source": "https://api.github.com/repos/mzkeyy/next.js14-tailwindcss-udemy-blog/pulls/6/commits?per_page=100&page=1"
+        },
+        "repository": "mzkeyy/next.js14-tailwindcss-udemy-blog",
+        "sha": "438fd0ef88a8d4c2fb6eef30c87f6fe4ab3fa837",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d704d0d4f19ad7ace91a1182e8cb6c56cb43063b"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-12-13T11:49:13Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-12-13T11:49:13Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-12-13T11:49:13+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "d66ae022763a8ceaa6e0c993b20edd70d71e87dd"
+      ],
+      "position": 1,
+      "pr_number": 6,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:35.994359+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/mzkeyy/next.js14-tailwindcss-udemy-blog/pulls/6/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:35.994359+00:00",
+        "sha256": "a04a985af6e6c8c0b317e9ffd5dac033ea04232fa894ce60992057615702cbdd",
+        "source": "https://api.github.com/repos/mzkeyy/next.js14-tailwindcss-udemy-blog/pulls/6/commits?per_page=100&page=1"
+      },
+      "repository": "mzkeyy/next.js14-tailwindcss-udemy-blog",
+      "sha": "438fd0ef88a8d4c2fb6eef30c87f6fe4ab3fa837",
+      "temporal_basis": "committer_time",
+      "tree_sha": "d704d0d4f19ad7ace91a1182e8cb6c56cb43063b"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "d66ae022763a8ceaa6e0c993b20edd70d71e87dd",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "a1efb7093687d048e6a2a7739faadf28aece6a9e",
+      "d66bc0083d2843cb8af38552077acb9de0389539"
+    ],
+    "recursive_tree_entry_count": 55,
+    "recursive_tree_listing_sha256": "8b1d8cef733ed7177ac89ea3ba307ce04413f8abcaf195d93fd00a6df1c33d74",
+    "retrieved_at": "2026-10-05T20:16:37.415043+00:00",
+    "source": "https://github.com/mzkeyy/next.js14-tailwindcss-udemy-blog.git",
+    "status": "materialized",
+    "tree_sha": "636366a8b4857196ee3fa266c21475d32af8b857"
+  },
+  "pr_number": 6,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:36.377738+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/mzkeyy/next.js14-tailwindcss-udemy-blog/git/ref/heads/main"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:36.377738+00:00",
+        "sha256": "16a1f2e774a073da9989037bdda79d2a1f85fd97c7e90dc28a9a7dc0a613e325",
+        "source": "https://api.github.com/repos/mzkeyy/next.js14-tailwindcss-udemy-blog/git/ref/heads/main"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:36.853837+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/mzkeyy/next.js14-tailwindcss-udemy-blog/commits?sha=main&until=2023-12-13T11%3A36%3A34.939884%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:36.853837+00:00",
+        "sha256": "1a2616de608a8d932439f90e72bba7f9910ce35727b752ec496fa116c5d09358",
+        "source": "https://api.github.com/repos/mzkeyy/next.js14-tailwindcss-udemy-blog/commits?sha=main&until=2023-12-13T11%3A36%3A34.939884%2B00%3A00&per_page=1&page=1"
+      }
+    ],
+    "base_route_evidence": {
+      "ref_object_sha": "73728610be7fac7d9cb527a6ffe2b067d9613265",
+      "rule": "recorded_pr_base_ref_resolves"
+    },
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "d66ae022763a8ceaa6e0c993b20edd70d71e87dd",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:35.994359+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/mzkeyy/next.js14-tailwindcss-udemy-blog/pulls/6/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:35.994359+00:00",
+        "sha256": "a04a985af6e6c8c0b317e9ffd5dac033ea04232fa894ce60992057615702cbdd",
+        "source": "https://api.github.com/repos/mzkeyy/next.js14-tailwindcss-udemy-blog/pulls/6/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:16:35.544056+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/mzkeyy/next.js14-tailwindcss-udemy-blog/pulls/6"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:16:35.544056+00:00",
+      "sha256": "94184adce8ccadbfa3b39bb303f4ed71e765e8c371790859a36a8260b4eabb8e",
+      "source": "https://api.github.com/repos/mzkeyy/next.js14-tailwindcss-udemy-blog/pulls/6"
+    },
+    "recorded_pr_base_ref_resolves": true
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "mzkeyy/next.js14-tailwindcss-udemy-blog",
+  "selected_state": {
+    "author_time": "2023-12-13T00:24:41Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "d66ae022763a8ceaa6e0c993b20edd70d71e87dd",
+    "committer_time": "2023-12-13T00:24:41Z",
+    "effective_time": "2023-12-13T00:24:41+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "636366a8b4857196ee3fa266c21475d32af8b857"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-12-13T11:36:12.000305+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-12-13T11:36:34.939884+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

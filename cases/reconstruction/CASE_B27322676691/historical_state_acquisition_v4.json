@@ -1,0 +1,3508 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_B27322676691",
+  "executed_at": "2026-10-05T20:19:15.889878+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-05-10T12:54:53Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-05-10T12:54:53Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-05-10T12:54:53+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "5839d36b4394373608a29d8351d932012f690d8f"
+        ],
+        "position": 1,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "3eaceb24b341bbbb8e2fdffa7ce423f5d6866824",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a9053496cce0376f1269480da5bec6ce09dc0e75"
+      },
+      {
+        "author_time": "2023-05-18T07:37:47Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-05-18T07:37:47Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-05-18T07:37:47+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "3eaceb24b341bbbb8e2fdffa7ce423f5d6866824"
+        ],
+        "position": 2,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "c73ff27d10cc6325ef88a4031f58a07cfa0c2e9c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "85533599e1b937d1558c7d2255324a06d981b301"
+      },
+      {
+        "author_time": "2023-05-25T11:48:57Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-05-25T11:48:57Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-05-25T11:48:57+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c73ff27d10cc6325ef88a4031f58a07cfa0c2e9c"
+        ],
+        "position": 3,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "09acb04ed0f99678fff748f3640d5c5ef7bc74c8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4a55921fbb2c397175ea429ef7ffc63ac71cbe4b"
+      },
+      {
+        "author_time": "2023-05-25T12:01:28Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-05-25T12:01:28Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-05-25T12:01:28+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "09acb04ed0f99678fff748f3640d5c5ef7bc74c8"
+        ],
+        "position": 4,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "a9394daa6e945093ed64154401c62dd43823018c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "723c79851db12da9d55c860c8923230ae4f0a0fe"
+      },
+      {
+        "author_time": "2023-05-25T12:27:12Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-05-25T12:27:12Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-05-25T12:27:12+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a9394daa6e945093ed64154401c62dd43823018c",
+          "62b868fdb57d9d658e14a62dccbd7a7dfccfe653"
+        ],
+        "position": 5,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "cb8725323be217d51d2ade4adde8b9c9ae87a37a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "326cd0d5a937a6658e40a8ca27106613cac5356c"
+      },
+      {
+        "author_time": "2023-05-25T20:04:15Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-05-25T20:04:15Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-05-25T20:04:15+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "cb8725323be217d51d2ade4adde8b9c9ae87a37a"
+        ],
+        "position": 6,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "06be291cd1c9a31324147a4f502c2a0fee67a97d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5bc5e4350fa51d687518acb452df53b09d89fefa"
+      },
+      {
+        "author_time": "2023-05-25T20:09:57Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-05-25T20:09:57Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-05-25T20:09:57+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "06be291cd1c9a31324147a4f502c2a0fee67a97d"
+        ],
+        "position": 7,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "41f74210e30a5c2d29859b34f970d0d032c29e34",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8c639c03bc0876ede6925dd18f68cc09c82c75a6"
+      },
+      {
+        "author_time": "2023-05-30T12:59:20Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-05-30T12:59:20Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-05-30T12:59:20+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "41f74210e30a5c2d29859b34f970d0d032c29e34"
+        ],
+        "position": 8,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "4daa9324580945971ee25bfdb8c566e3207ad73d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "33a93f434b9ebc1fae9bfc9c55b4f9d5b55233df"
+      },
+      {
+        "author_time": "2023-05-30T13:33:36Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-05-30T13:33:36Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-05-30T13:33:36+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "4daa9324580945971ee25bfdb8c566e3207ad73d"
+        ],
+        "position": 9,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "ca21ddeb8badee3da7b9cbdd0c12a830c7c17c33",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8fa98ae25c10306c801d760b8deedf87d689fdec"
+      },
+      {
+        "author_time": "2023-05-31T09:23:45Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-05-31T09:23:45Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-05-31T09:23:45+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ca21ddeb8badee3da7b9cbdd0c12a830c7c17c33"
+        ],
+        "position": 10,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "d025c70ed26c7e9ea725025c7b1f7693216058b8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7030c6f6b2677e975320c2260d649670e162cfa0"
+      },
+      {
+        "author_time": "2023-05-31T09:26:23Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-05-31T09:26:23Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-05-31T09:26:23+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d025c70ed26c7e9ea725025c7b1f7693216058b8"
+        ],
+        "position": 11,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "fd7f8cb2a4eee53c9ee68242b278cc902ee63d79",
+        "temporal_basis": "committer_time",
+        "tree_sha": "dc11c1909f20ba2562142c8152de8c8869883fbd"
+      },
+      {
+        "author_time": "2023-05-31T11:12:20Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-05-31T11:12:20Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-05-31T11:12:20+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "fd7f8cb2a4eee53c9ee68242b278cc902ee63d79"
+        ],
+        "position": 12,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "94685d11001a2d66b4d4fe56d96e8b8d3eb41f87",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f6f8b59c361fe166898fd954e726eefd13cad112"
+      },
+      {
+        "author_time": "2023-05-31T13:31:32Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-05-31T13:31:32Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-05-31T13:31:32+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "94685d11001a2d66b4d4fe56d96e8b8d3eb41f87"
+        ],
+        "position": 13,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "77034655c5bf3f5481841fa9c8785ba85685744f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f6d4effc91027a7d7b6369c8d19d389bd9632bb1"
+      },
+      {
+        "author_time": "2023-05-31T13:45:44Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-05-31T13:45:44Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-05-31T13:45:44+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "77034655c5bf3f5481841fa9c8785ba85685744f"
+        ],
+        "position": 14,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "41404df4fd28c37b9ca33cab7f939530c06630a0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2446ad7280244ce58fe14b5d1b42e1dba87378d6"
+      },
+      {
+        "author_time": "2023-05-31T13:47:39Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-05-31T13:47:39Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-05-31T13:47:39+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "41404df4fd28c37b9ca33cab7f939530c06630a0"
+        ],
+        "position": 15,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "68ada967c1a1ea2fd893caf81edbc7b441e80140",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f0b974229931e12668ad3e8a9a35f3e5bff3d0ce"
+      },
+      {
+        "author_time": "2023-05-31T13:58:08Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-05-31T13:58:08Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-05-31T13:58:08+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "68ada967c1a1ea2fd893caf81edbc7b441e80140"
+        ],
+        "position": 16,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "df969f80a512410e6d165ca8eafb433523230d77",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0d9b7298fc56dcdaf274e1955dee18bcff8222bf"
+      },
+      {
+        "author_time": "2023-05-31T14:03:03Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-05-31T14:03:03Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-05-31T14:03:03+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "df969f80a512410e6d165ca8eafb433523230d77",
+          "41dccbeb4da68f815eda494d72eb4477e8d1e98a"
+        ],
+        "position": 17,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "cf1bed97409aa9b3658dd5c4910783b7c4bf5a06",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a49e9094138d21201726b6ff352737e5870d8725"
+      },
+      {
+        "author_time": "2023-06-06T08:44:42Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T08:44:42Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-06T08:44:42+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "cf1bed97409aa9b3658dd5c4910783b7c4bf5a06"
+        ],
+        "position": 18,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "3746f037bd5f55623c8e34861e4fea00dd79ba82",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0ca04d3cff24bac928634aed5efeb81acb77ce34"
+      },
+      {
+        "author_time": "2023-06-06T09:10:26Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T09:10:26Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-06T09:10:26+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "3746f037bd5f55623c8e34861e4fea00dd79ba82"
+        ],
+        "position": 19,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "7862202bd81a0ba8e965ebbd611c8f760ff15822",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3a41bc929cb7aac7c20a7cea05679c6e5e8501db"
+      },
+      {
+        "author_time": "2023-06-06T12:50:23Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T12:50:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-06T12:50:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7862202bd81a0ba8e965ebbd611c8f760ff15822"
+        ],
+        "position": 20,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "a211df3cd11ffde7ca411dc20706369030626632",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3e2e83931342b79e9060852ae1eb2a3589ac9363"
+      },
+      {
+        "author_time": "2023-06-06T14:36:33Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T14:36:33Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-06T14:36:33+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a211df3cd11ffde7ca411dc20706369030626632"
+        ],
+        "position": 21,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "d93b76512096a8fd444003600d28577544175b5e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "07e07d8553c09c435f0465269cfa9cd212fce25a"
+      },
+      {
+        "author_time": "2023-06-06T16:01:43Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T16:01:43Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-06T16:01:43+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d93b76512096a8fd444003600d28577544175b5e"
+        ],
+        "position": 22,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "f6b607cec3acb56b2a1e729487bb3fbae587d4c7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "90916162d40e1db6d209e8b15808c51591b4cd03"
+      },
+      {
+        "author_time": "2023-06-07T07:08:10Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-07T07:08:10Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-07T07:08:10+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f6b607cec3acb56b2a1e729487bb3fbae587d4c7"
+        ],
+        "position": 23,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "68cd3057b65d0d40611f9d6bcdf91c96920bbf3d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6dc1850d7ffd3b7c4de1e6b92c88aad0001be130"
+      },
+      {
+        "author_time": "2023-06-07T09:41:27Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-07T09:41:27Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-07T09:41:27+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "68cd3057b65d0d40611f9d6bcdf91c96920bbf3d"
+        ],
+        "position": 24,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "147bcd48ffd50c0c0c3a61b47d08dc146aa1fc17",
+        "temporal_basis": "committer_time",
+        "tree_sha": "30fb7c14a19770ec8c149f4e00de6a8b32563082"
+      },
+      {
+        "author_time": "2023-06-07T09:42:33Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-07T09:42:33Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-07T09:42:33+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "147bcd48ffd50c0c0c3a61b47d08dc146aa1fc17"
+        ],
+        "position": 25,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "90612ea191a49afad8a8ec6c8b04923697b71402",
+        "temporal_basis": "committer_time",
+        "tree_sha": "88fed9e53c62eba87c4ebfa617af374232cb589b"
+      },
+      {
+        "author_time": "2023-06-07T09:52:22Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-07T09:52:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-07T09:52:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "90612ea191a49afad8a8ec6c8b04923697b71402",
+          "927193974b090eb1edfd33fdee2d787117419f82"
+        ],
+        "position": 26,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "088d27c6752473bc125273fc3e258a8121d47b7f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d5ae3e67b89112c9769b1e648b88b0ad88118dbc"
+      },
+      {
+        "author_time": "2023-06-07T13:36:15Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-07T13:36:15Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-07T13:36:15+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "088d27c6752473bc125273fc3e258a8121d47b7f"
+        ],
+        "position": 27,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "d1351b871b8d78098d6398e9ca82e2bf0682167a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6a43c29ced5a7e7f9ae7bd667426c496c0d3aec5"
+      },
+      {
+        "author_time": "2023-06-07T14:43:58Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-07T14:43:58Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-07T14:43:58+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d1351b871b8d78098d6398e9ca82e2bf0682167a"
+        ],
+        "position": 28,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "34304f94220f044aca6c2b65d2359b9a55418061",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b7ba0537f8473d4521d11de3a82b129d73d7ed37"
+      },
+      {
+        "author_time": "2023-06-08T11:57:42Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T11:57:42Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T11:57:42+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "34304f94220f044aca6c2b65d2359b9a55418061"
+        ],
+        "position": 29,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "2649288e12c24de10833fea275e309fc17e7f765",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e212c0f8b9f841a14d04f4671f0269f6dbd22c5e"
+      },
+      {
+        "author_time": "2023-06-08T11:59:36Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T11:59:36Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T11:59:36+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2649288e12c24de10833fea275e309fc17e7f765"
+        ],
+        "position": 30,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "b1c63fa0415a300bdecf9b983de0701c707aa745",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d99a510d86c40304fbc100767366523faa3a35dc"
+      },
+      {
+        "author_time": "2023-06-08T12:02:22Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T12:02:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T12:02:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "b1c63fa0415a300bdecf9b983de0701c707aa745"
+        ],
+        "position": 31,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "b2a96018451550a5e152e50a9da3b9937d120d99",
+        "temporal_basis": "committer_time",
+        "tree_sha": "241f2642c43c94c9377d5f1279fc146fce93e24e"
+      },
+      {
+        "author_time": "2023-06-08T12:09:02Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T12:09:02Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T12:09:02+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "b2a96018451550a5e152e50a9da3b9937d120d99"
+        ],
+        "position": 32,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "545de695ae6742b2ecfcec096d98ab9553c64a4d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "38df88d23a0084d831f31250bbf3bc87254c9e42"
+      },
+      {
+        "author_time": "2023-06-08T18:33:14Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T18:33:14Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T18:33:14+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "545de695ae6742b2ecfcec096d98ab9553c64a4d"
+        ],
+        "position": 33,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "7b78e06172c93c2b0bd1c247fdc1a2764a592bc3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e4e9ab93d00346f5b77f4d7cefd4ebc20dd40f8c"
+      },
+      {
+        "author_time": "2023-06-08T18:34:59Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T18:34:59Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T18:34:59+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7b78e06172c93c2b0bd1c247fdc1a2764a592bc3"
+        ],
+        "position": 34,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "55b6a63291726fe53f26335c86b39769c87fd8ba",
+        "temporal_basis": "committer_time",
+        "tree_sha": "622f182e17d590137966142d47ddb11c94c1b26b"
+      },
+      {
+        "author_time": "2023-06-08T18:46:55Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T18:46:55Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T18:46:55+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "55b6a63291726fe53f26335c86b39769c87fd8ba"
+        ],
+        "position": 35,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "3ee6def502b5fd7ccfe717aa757ab35ea394e369",
+        "temporal_basis": "committer_time",
+        "tree_sha": "38cd43ce6ce2194217cf860978a5070cf30ac7b8"
+      },
+      {
+        "author_time": "2023-06-08T18:49:00Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T18:49:00Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T18:49:00+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "3ee6def502b5fd7ccfe717aa757ab35ea394e369"
+        ],
+        "position": 36,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "edd0f033a9853cb1c41b0b61af4a157f86a5ce7c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6551aea12133bf6c63f87f84cc5f0f970794e47d"
+      },
+      {
+        "author_time": "2023-06-08T18:51:14Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T18:51:14Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T18:51:14+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "edd0f033a9853cb1c41b0b61af4a157f86a5ce7c"
+        ],
+        "position": 37,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "7db96413225f90ba2b218f8904a2ec0cee3e79b2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d9a55146bf59233dffd2d55be7598bc36723ff01"
+      },
+      {
+        "author_time": "2023-06-08T19:13:15Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T19:13:15Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T19:13:15+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7db96413225f90ba2b218f8904a2ec0cee3e79b2"
+        ],
+        "position": 38,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "344402b745b2ee23b52f5fdca0d184ce08ea717d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6551aea12133bf6c63f87f84cc5f0f970794e47d"
+      },
+      {
+        "author_time": "2023-06-09T10:31:30Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-09T10:31:30Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-09T10:31:30+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "344402b745b2ee23b52f5fdca0d184ce08ea717d"
+        ],
+        "position": 39,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "2efd70e96b2daa136e3978df26bcf78c25a429fa",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b7584bf1b1e0f785e0a6394110e0af63332024a0"
+      },
+      {
+        "author_time": "2023-06-09T10:37:22Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-09T10:37:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-09T10:37:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2efd70e96b2daa136e3978df26bcf78c25a429fa"
+        ],
+        "position": 40,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "bb5a990db2ffe8e0fd321f69046d92713e7d3ba0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ad47018a0c97441b0c956f30808f799b33eda700"
+      },
+      {
+        "author_time": "2023-06-09T10:42:47Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-09T10:42:47Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-09T10:42:47+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "bb5a990db2ffe8e0fd321f69046d92713e7d3ba0"
+        ],
+        "position": 41,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "6c817cbf243a883027abfede1e31b966719982c7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "39cfe0ccbde0bb259a531c0f27072baf7436bf9d"
+      },
+      {
+        "author_time": "2023-06-09T10:48:44Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-09T10:48:44Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-09T10:48:44+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6c817cbf243a883027abfede1e31b966719982c7"
+        ],
+        "position": 42,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "bf86e114708ae975c158a88e670c4b4084dd08ed",
+        "temporal_basis": "committer_time",
+        "tree_sha": "bab8c07b9508ea06a4eb06fc196e86f5a8a5f090"
+      },
+      {
+        "author_time": "2023-06-09T11:03:03Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-09T11:03:03Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-09T11:03:03+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "bf86e114708ae975c158a88e670c4b4084dd08ed"
+        ],
+        "position": 43,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "bb66e451d807199882e9e2bdcb946b6dbb2d5f84",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e4036f9e4b687947f54dce34f3be65d63b015b92"
+      },
+      {
+        "author_time": "2023-06-09T14:17:35Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-09T14:17:35Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-09T14:17:35+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "bb66e451d807199882e9e2bdcb946b6dbb2d5f84"
+        ],
+        "position": 44,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "79528c0456ef1ca16135c340b1d4baf7fb420f0a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "26f702d85e689001432617b3b44c38a891611383"
+      },
+      {
+        "author_time": "2023-06-09T17:33:54Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-09T17:33:54Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-09T17:33:54+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "79528c0456ef1ca16135c340b1d4baf7fb420f0a"
+        ],
+        "position": 45,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "1c836e2f0f827061545f5fb43a975d1d552e61a8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "fc75939dd7c5d17d76ba406439eb9b8a0006b8eb"
+      },
+      {
+        "author_time": "2023-06-13T14:17:04Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-13T14:17:04Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-13T14:17:04+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1c836e2f0f827061545f5fb43a975d1d552e61a8"
+        ],
+        "position": 46,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "ebe250c95a86bffe3b1f4a1a52bb94655f99a0cb",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f8707cbdacd134cf30d78e8738f68324ac2882f6"
+      },
+      {
+        "author_time": "2023-06-13T14:25:06Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-13T14:25:06Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-13T14:25:06+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "ebe250c95a86bffe3b1f4a1a52bb94655f99a0cb"
+        ],
+        "position": 47,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "ead7d3c2826e4601ee9798de5a96fac7f9eae730",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5bd328c1d59fe012a417b883fa609d3d0e372f32"
+      },
+      {
+        "author_time": "2023-06-13T14:30:50Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-13T14:30:50Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-13T14:30:50+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "ead7d3c2826e4601ee9798de5a96fac7f9eae730"
+        ],
+        "position": 48,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "d0497c0a822139cc6c3211193e2d5fbbf64f32e2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f41e63833f369560bb586a133622d952be6e6b77"
+      },
+      {
+        "author_time": "2023-06-13T14:55:12Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-13T14:55:12Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-13T14:55:12+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d0497c0a822139cc6c3211193e2d5fbbf64f32e2"
+        ],
+        "position": 49,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "d68dacf54f76ef7070da05c5f945b6757f850849",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b1b2cf55f3fc02e3dc966f4b1f4de0242d72f56f"
+      },
+      {
+        "author_time": "2023-06-13T18:44:14Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-13T18:44:14Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-13T18:44:14+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d68dacf54f76ef7070da05c5f945b6757f850849"
+        ],
+        "position": 50,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "5997f3714a5aa2cfccaf5f7d8b33205feb4d48fc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6c01ad96a41f7e0433d50f46f289a677a9bf56f7"
+      },
+      {
+        "author_time": "2023-06-13T19:25:00Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-13T19:25:00Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-13T19:25:00+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "5997f3714a5aa2cfccaf5f7d8b33205feb4d48fc"
+        ],
+        "position": 51,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "31932ef346fb2f4ae30d91707cac6eb9151b9198",
+        "temporal_basis": "committer_time",
+        "tree_sha": "17c77becd2f950520cd86bba05dc15b7ef0a350e"
+      },
+      {
+        "author_time": "2023-06-13T19:27:54Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-13T19:27:54Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-13T19:27:54+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "31932ef346fb2f4ae30d91707cac6eb9151b9198"
+        ],
+        "position": 52,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "7cd46ee49ebc610037944699ef360cd2310566e5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "cd5030765f70e47edb8572cb9ea9bd52aeff4278"
+      },
+      {
+        "author_time": "2023-06-13T19:33:42Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-13T19:33:42Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-13T19:33:42+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7cd46ee49ebc610037944699ef360cd2310566e5"
+        ],
+        "position": 53,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "172769e7f8721addd575592f239b7ca0fb6a0d35",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d33852d7803b5684dfd806232ab35cc6cc847f6b"
+      },
+      {
+        "author_time": "2023-06-13T19:39:54Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-13T19:39:54Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-13T19:39:54+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "172769e7f8721addd575592f239b7ca0fb6a0d35"
+        ],
+        "position": 54,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "e5422c54efd451a3243d01f4025f1ad1efd79e8e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "88800d074daccf5cec17e101a030d01893f9cbe0"
+      },
+      {
+        "author_time": "2023-06-13T19:49:33Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-13T19:49:33Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-13T19:49:33+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e5422c54efd451a3243d01f4025f1ad1efd79e8e"
+        ],
+        "position": 55,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "64fe3b3173071a5689729c81c729659e784a7ace",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b41f28f2f92f75b9047ef1cd5464bb2f7b457845"
+      },
+      {
+        "author_time": "2023-06-14T05:45:00Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-14T05:45:00Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-14T05:45:00+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "64fe3b3173071a5689729c81c729659e784a7ace"
+        ],
+        "position": 56,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "9712ef896d2c653e57c18ec2d17c5a735e50d2f9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d8d61d541539466c302fad50009880b14c9b4df1"
+      },
+      {
+        "author_time": "2023-06-14T06:04:03Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-14T06:04:03Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-14T06:04:03+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "9712ef896d2c653e57c18ec2d17c5a735e50d2f9"
+        ],
+        "position": 57,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "16c79caf9c37e18126eeebc025052657cb4073da",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d4060e892da49cb7bdb2d80dd2635844e3505133"
+      },
+      {
+        "author_time": "2023-06-14T06:10:57Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-14T06:10:57Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-14T06:10:57+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "16c79caf9c37e18126eeebc025052657cb4073da"
+        ],
+        "position": 58,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "cd605dffdc69bd57972b32940709c38d8d779fae",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8cb0e4c8653d606a2e63201f35756b472eefe782"
+      },
+      {
+        "author_time": "2023-06-14T06:45:34Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-14T06:45:34Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-14T06:45:34+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "cd605dffdc69bd57972b32940709c38d8d779fae"
+        ],
+        "position": 59,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "3cb83e3728c421756cabd7a3bc069b0ded93791a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "80cd6b1306652071807d0908d9c0a5d006f8563e"
+      },
+      {
+        "author_time": "2023-06-14T06:51:58Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-14T06:51:58Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-14T06:51:58+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "3cb83e3728c421756cabd7a3bc069b0ded93791a"
+        ],
+        "position": 60,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "92cc1e6590088cde0804960d6be0869e01ede64c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "447b452dc8b852b566a5b3d6970ae4fa3abb80b5"
+      },
+      {
+        "author_time": "2023-06-14T09:52:52Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-14T09:52:52Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-14T09:52:52+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "92cc1e6590088cde0804960d6be0869e01ede64c"
+        ],
+        "position": 61,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "de6ef499a20d12cf0bf1a1b2691c65f751033ed3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3b7ec5ade956103a37f3957838a36471dd039c96"
+      },
+      {
+        "author_time": "2023-06-14T10:51:10Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-14T10:51:10Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-14T10:51:10+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "de6ef499a20d12cf0bf1a1b2691c65f751033ed3"
+        ],
+        "position": 62,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "8265b2a4b5880ef66111033efdc1cbea9c29d931",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1b1a63ee2a3959d9f239f22772ec4f3c75e56f7d"
+      },
+      {
+        "author_time": "2023-06-15T11:55:26Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-15T11:55:26Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-15T11:55:26+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8265b2a4b5880ef66111033efdc1cbea9c29d931"
+        ],
+        "position": 63,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "232fbcad66bec799689f85e35c739990f445e8cd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "69e7e16302bde444413a86773cbbdecc66302c70"
+      },
+      {
+        "author_time": "2023-06-15T12:50:05Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-15T12:50:05Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-15T12:50:05+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "232fbcad66bec799689f85e35c739990f445e8cd"
+        ],
+        "position": 64,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "6893a56c37e97d32b25a3534f2c31c3c1217ee72",
+        "temporal_basis": "committer_time",
+        "tree_sha": "94cfc5ee37ad152728eef1b7ead7c6b005e7fe8a"
+      },
+      {
+        "author_time": "2023-06-15T13:02:23Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-15T13:02:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-15T13:02:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6893a56c37e97d32b25a3534f2c31c3c1217ee72"
+        ],
+        "position": 65,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "4ce0c32a44231f601d917777a23a7cfb556e85af",
+        "temporal_basis": "committer_time",
+        "tree_sha": "622e137c7de3a4e4425ae2fa5270bd2d65642074"
+      },
+      {
+        "author_time": "2023-06-15T13:20:54Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-15T13:20:54Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-15T13:20:54+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "4ce0c32a44231f601d917777a23a7cfb556e85af"
+        ],
+        "position": 66,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "7e190487891170c09a71695e8d06afc25f87c1e5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "16d2f4c541fbcb31701e4f66dbe482c126b41f27"
+      },
+      {
+        "author_time": "2023-06-15T13:34:05Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-15T13:34:05Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-15T13:34:05+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7e190487891170c09a71695e8d06afc25f87c1e5"
+        ],
+        "position": 67,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "8c2d670d7b09da29461e7f4a8ad1c9d79daaf9bd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9e338f8fcdc71fde2c05dc918021029ddd84804c"
+      },
+      {
+        "author_time": "2023-06-15T13:41:16Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-15T13:41:16Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-15T13:41:16+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8c2d670d7b09da29461e7f4a8ad1c9d79daaf9bd"
+        ],
+        "position": 68,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "9c0ed9da00462519958f018ebe9a2818d3665e94",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6fa4f2ca24e4ab03297276a4054045bc77e3e2ed"
+      },
+      {
+        "author_time": "2023-06-15T14:14:11Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-15T14:14:11Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-15T14:14:11+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "9c0ed9da00462519958f018ebe9a2818d3665e94"
+        ],
+        "position": 69,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "e1d80c864158f385c90896f9a4cb42ce98f1aa7b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "811cc8ec3a055ceeaa88890fb9b37052eba134d2"
+      },
+      {
+        "author_time": "2023-06-16T08:52:07Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-16T08:52:07Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-16T08:52:07+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e1d80c864158f385c90896f9a4cb42ce98f1aa7b"
+        ],
+        "position": 70,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "7bd0a31f2596764aa3206c298f91bd3e52057dcb",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2ad29a5b17d6c86ff2e339d4739f95d441b8c7fe"
+      },
+      {
+        "author_time": "2023-06-16T10:56:06Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-16T10:56:06Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-16T10:56:06+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7bd0a31f2596764aa3206c298f91bd3e52057dcb"
+        ],
+        "position": 71,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "ec384aeb961a2a705cb19b55f4ddca33cc44b0fa",
+        "temporal_basis": "committer_time",
+        "tree_sha": "664ee080cffba689c0dc9b544af61a02328ff767"
+      },
+      {
+        "author_time": "2023-06-16T13:19:58Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-16T13:19:58Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-16T13:19:58+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "ec384aeb961a2a705cb19b55f4ddca33cc44b0fa"
+        ],
+        "position": 72,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "1dec31640aec794ac6d5de30233cccee62a3fab1",
+        "temporal_basis": "committer_time",
+        "tree_sha": "205b13ba96092486b61eae662646fb5491e0b5ad"
+      },
+      {
+        "author_time": "2023-06-16T13:26:39Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-16T13:26:39Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-16T13:26:39+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1dec31640aec794ac6d5de30233cccee62a3fab1"
+        ],
+        "position": 73,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "2a90fa2c6628334675ba4ad73e734b32dd8b81c5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9fc81dc633ffc8452a8b3c26101e1c2f28f0ad67"
+      },
+      {
+        "author_time": "2023-06-16T14:02:59Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-16T14:02:59Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-16T14:02:59+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2a90fa2c6628334675ba4ad73e734b32dd8b81c5"
+        ],
+        "position": 74,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "c4552544b7478d584773149504626e80bf75f3bf",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2c17d7f48894049ed33d2bbb4c6a07ec37245744"
+      },
+      {
+        "author_time": "2023-06-19T08:07:52Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-19T08:07:52Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-19T08:07:52+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "c4552544b7478d584773149504626e80bf75f3bf"
+        ],
+        "position": 75,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "0865e28143fc677bf2c2f384489629aa1b7e55b9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "52e88cae659ddb752981b6f35f6e791dd4896393"
+      },
+      {
+        "author_time": "2023-06-19T08:29:36Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-19T08:29:36Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-19T08:29:36+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "0865e28143fc677bf2c2f384489629aa1b7e55b9"
+        ],
+        "position": 76,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "0e808d6fb15f627143cb80baf8bbec59955108c7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4d49db21f215652ca40aa63aa6db5a40808ef9c3"
+      },
+      {
+        "author_time": "2023-06-19T08:54:14Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-19T08:54:14Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-19T08:54:14+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "0e808d6fb15f627143cb80baf8bbec59955108c7"
+        ],
+        "position": 77,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "5f27f59ec3290f0b319bbc43ea0ff3f2dc3d0c93",
+        "temporal_basis": "committer_time",
+        "tree_sha": "59ac0dfe56ccbdb2dc84ddff2fa1815b942cbcc2"
+      },
+      {
+        "author_time": "2023-06-19T08:56:01Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-19T08:56:01Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-19T08:56:01+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "5f27f59ec3290f0b319bbc43ea0ff3f2dc3d0c93"
+        ],
+        "position": 78,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "0dd123c5d0bab40e7c9d03ebeccf4da6ca1c4057",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6d9db23e4c987d2ecd958a5a312f47c68cb7d16a"
+      },
+      {
+        "author_time": "2023-06-19T08:59:30Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-19T08:59:30Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-19T08:59:30+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "0dd123c5d0bab40e7c9d03ebeccf4da6ca1c4057"
+        ],
+        "position": 79,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "84ee0ae1d800fa082c0a78f9712df7f19985e8b5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "bbd9bff63a9ac872d5389e59ea937531dbc8869a"
+      },
+      {
+        "author_time": "2023-06-19T09:27:45Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-19T09:27:45Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-19T09:27:45+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "84ee0ae1d800fa082c0a78f9712df7f19985e8b5",
+          "a4dd7f135bb5c0ad8cf40bc97ba8d047f37436c3"
+        ],
+        "position": 80,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "f065b1b100c360e92930ad4076f3e46dfd975b06",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c71c025f3e101bb410368937d00ae8480e4ae196"
+      },
+      {
+        "author_time": "2023-06-19T11:33:20Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-19T11:33:20Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-19T11:33:20+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f065b1b100c360e92930ad4076f3e46dfd975b06"
+        ],
+        "position": 81,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "8ecc1bc256ab9496c31cc2f552918fd69040b8a2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "57552d7bf6d11e2d788cbe27af179f2bace8a53a"
+      },
+      {
+        "author_time": "2023-06-19T15:57:01Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-19T15:57:01Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-19T15:57:01+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8ecc1bc256ab9496c31cc2f552918fd69040b8a2"
+        ],
+        "position": 82,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "260d9a2e0282ced3b045a679abdb8141168c51a4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d74230ee186c1ef5ed3e1c8c6b04c85f93974f79"
+      },
+      {
+        "author_time": "2023-06-20T12:31:45Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-20T12:31:45Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-20T12:31:45+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "260d9a2e0282ced3b045a679abdb8141168c51a4"
+        ],
+        "position": 83,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "6d543ef4db13ec957ef38d5a3ccb1d070864c126",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ab708e2e2befc0b2a27d03bd6fc6871da7d4e537"
+      },
+      {
+        "author_time": "2023-06-20T14:11:22Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-20T14:11:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-20T14:11:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6d543ef4db13ec957ef38d5a3ccb1d070864c126"
+        ],
+        "position": 84,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "aa3facd3db6cc5d2e1a5aeba61158e89bcbf0136",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d64b35d2bc1cbc4d6fd762dd15a818a0abc76d8c"
+      },
+      {
+        "author_time": "2023-06-21T08:27:46Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-21T08:27:46Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-21T08:27:46+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "aa3facd3db6cc5d2e1a5aeba61158e89bcbf0136"
+        ],
+        "position": 85,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "057e609b7bef6d27050858d08d0cd07569a00faa",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e9361fcf06fb14c060e40a5b689d06960097dc90"
+      },
+      {
+        "author_time": "2023-06-21T08:48:48Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-21T08:48:48Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-21T08:48:48+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "057e609b7bef6d27050858d08d0cd07569a00faa"
+        ],
+        "position": 86,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "feb4bd22143337ba78fd648d0744b633c48026ea",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e12c4dcb2af6b04a4873ced37905d26668e49d88"
+      },
+      {
+        "author_time": "2023-06-21T14:51:45Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-21T14:51:45Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-21T14:51:45+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "feb4bd22143337ba78fd648d0744b633c48026ea"
+        ],
+        "position": 87,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "21229b961ec58e60ecc6c4f5aee08bac92917f21",
+        "temporal_basis": "committer_time",
+        "tree_sha": "64c1cd33aed9add80418ed4e7f94166df8c802d4"
+      },
+      {
+        "author_time": "2023-06-21T15:46:50Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-21T15:46:50Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-21T15:46:50+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "21229b961ec58e60ecc6c4f5aee08bac92917f21"
+        ],
+        "position": 88,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "eb0e73a93ef651c2e6a84f3636ab27b802cf55fd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3f1e32b1e1d39831add108bdd9f2d6a3a9566916"
+      },
+      {
+        "author_time": "2023-06-22T10:44:08Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-22T10:44:08Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-22T10:44:08+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "eb0e73a93ef651c2e6a84f3636ab27b802cf55fd"
+        ],
+        "position": 89,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "8e70281d345427cfde74237d2e4ac28091b1aa39",
+        "temporal_basis": "committer_time",
+        "tree_sha": "523305496f700ba2209326a6592745414665765a"
+      },
+      {
+        "author_time": "2023-06-22T11:15:03Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-22T11:15:03Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-22T11:15:03+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8e70281d345427cfde74237d2e4ac28091b1aa39"
+        ],
+        "position": 90,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "6a92b8eac808334fd216473cc49e4d38bd3c807c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "627d667985248ea9e48ade41a2159b67584070a3"
+      },
+      {
+        "author_time": "2023-06-22T11:20:01Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-22T11:20:01Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-22T11:20:01+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6a92b8eac808334fd216473cc49e4d38bd3c807c"
+        ],
+        "position": 91,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "29ba63d0accff2d01a1de4009070e8c8d8340b39",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2b1d3ce4e0f4f319aa90af2b185daa21a0025851"
+      },
+      {
+        "author_time": "2023-06-22T11:25:42Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-22T11:25:42Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-22T11:25:42+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "29ba63d0accff2d01a1de4009070e8c8d8340b39"
+        ],
+        "position": 92,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "91e8b5968ad9fe313737d124dced48029fc9092d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3487b0c1f9d1358a19bbf088cdc7a92ff04fca10"
+      },
+      {
+        "author_time": "2023-06-22T12:07:34Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-22T12:07:34Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-22T12:07:34+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "91e8b5968ad9fe313737d124dced48029fc9092d"
+        ],
+        "position": 93,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "41af8dc68fb4c08db13657852abaf94419b39ea6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "68f71e4e5848397e49dcc08f76d2953eb340ad57"
+      },
+      {
+        "author_time": "2023-06-22T13:19:52Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-22T13:19:52Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-22T13:19:52+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "41af8dc68fb4c08db13657852abaf94419b39ea6"
+        ],
+        "position": 94,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "bf3a753704813641dba354793e0b8b95ca6b46b7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1fdd4a9600360102eff9a3aa84a2c5a800af74c5"
+      },
+      {
+        "author_time": "2023-06-22T13:25:31Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-22T13:25:31Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-22T13:25:31+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "bf3a753704813641dba354793e0b8b95ca6b46b7"
+        ],
+        "position": 95,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "07a67cdf62d051b52b71cbcd4bf34835adb781b2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5673e73aaf5da59cbb34183b521f6783792a8018"
+      },
+      {
+        "author_time": "2023-06-22T13:31:39Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-22T13:31:39Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-22T13:31:39+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "07a67cdf62d051b52b71cbcd4bf34835adb781b2"
+        ],
+        "position": 96,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "549d531c5862d287acbbf17ea4afa74166c35f5c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b861b2119ea37ee6ff5f7efbab37fc3da682e6bf"
+      },
+      {
+        "author_time": "2023-06-22T13:38:46Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-22T13:38:46Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-22T13:38:46+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "549d531c5862d287acbbf17ea4afa74166c35f5c"
+        ],
+        "position": 97,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "e9ea11c93c95c5b0a01dc7f8297391578d6a23b6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3e74765741463490239fd6f106310c093a6bfbc6"
+      },
+      {
+        "author_time": "2023-06-22T14:45:24Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-22T14:45:24Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-22T14:45:24+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e9ea11c93c95c5b0a01dc7f8297391578d6a23b6"
+        ],
+        "position": 98,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "290d050419f3c9f942374223431d7340c85bd1b7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "933bdeeba394da9478b48eb8e72e821741bf963f"
+      },
+      {
+        "author_time": "2023-06-22T14:49:19Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-22T14:49:19Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-22T14:49:19+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "290d050419f3c9f942374223431d7340c85bd1b7"
+        ],
+        "position": 99,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "7728352bae84954abf8ca887e0648789dc0a29ab",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b329412c5b42d44a1ab695a2ef2830c8d95116ce"
+      },
+      {
+        "author_time": "2023-06-22T14:58:16Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-22T14:58:16Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-22T14:58:16+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7728352bae84954abf8ca887e0648789dc0a29ab"
+        ],
+        "position": 100,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+          "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "c57f251de680aae883b29926f106de538a895179",
+        "temporal_basis": "committer_time",
+        "tree_sha": "11efe926a0f2d1da975d4fc69c5791627dc12810"
+      },
+      {
+        "author_time": "2023-06-22T15:11:47Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-22T15:11:47Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-22T15:11:47+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "c57f251de680aae883b29926f106de538a895179"
+        ],
+        "position": 101,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:15.021595+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:15.021595+00:00",
+          "sha256": "c1fbee5627ed863eb093da276a88743d022d5da4eededadb332f80e0f2e5b6e8",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=2"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "183273cb2c6f16430f0b4977e405a1c815e1b448",
+        "temporal_basis": "committer_time",
+        "tree_sha": "58e21fe7e1664be513e4d2142e4f7f2ca9d74939"
+      },
+      {
+        "author_time": "2023-06-23T08:39:39Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-23T08:39:39Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-23T08:39:39+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "183273cb2c6f16430f0b4977e405a1c815e1b448"
+        ],
+        "position": 102,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:15.021595+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:15.021595+00:00",
+          "sha256": "c1fbee5627ed863eb093da276a88743d022d5da4eededadb332f80e0f2e5b6e8",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=2"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "d7ad845a1b98f089315eb8dcd103c85b64d254ce",
+        "temporal_basis": "committer_time",
+        "tree_sha": "93b1ef62701f6ee35a113dbc776530a156ff27ce"
+      },
+      {
+        "author_time": "2023-06-23T08:45:21Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-23T08:45:21Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-23T08:45:21+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d7ad845a1b98f089315eb8dcd103c85b64d254ce"
+        ],
+        "position": 103,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:15.021595+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:15.021595+00:00",
+          "sha256": "c1fbee5627ed863eb093da276a88743d022d5da4eededadb332f80e0f2e5b6e8",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=2"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "409252659372b19b112b0c631ffdc9d7f8786a6f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f2c6a2f05d70ff75f25b547e4b6cb12643ba4b25"
+      },
+      {
+        "author_time": "2023-06-26T08:43:07Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-26T08:43:07Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-26T08:43:07+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "409252659372b19b112b0c631ffdc9d7f8786a6f"
+        ],
+        "position": 104,
+        "pr_number": 64,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:15.021595+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:15.021595+00:00",
+          "sha256": "c1fbee5627ed863eb093da276a88743d022d5da4eededadb332f80e0f2e5b6e8",
+          "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=2"
+        },
+        "repository": "wahanegi/vibereport",
+        "sha": "b0bd8f42d1889657f388124d438cf4593571fdef",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1466948f202374851d0f3004c750914aaefe6043"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-06-06T08:44:42Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-06-06T08:44:42Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-06-06T08:44:42+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "cf1bed97409aa9b3658dd5c4910783b7c4bf5a06"
+      ],
+      "position": 18,
+      "pr_number": 64,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+        "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+        "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+      },
+      "repository": "wahanegi/vibereport",
+      "sha": "3746f037bd5f55623c8e34861e4fea00dd79ba82",
+      "temporal_basis": "committer_time",
+      "tree_sha": "0ca04d3cff24bac928634aed5efeb81acb77ce34"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-05-31T14:03:03Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-05-31T14:03:03Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-05-31T14:03:03+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "df969f80a512410e6d165ca8eafb433523230d77",
+        "41dccbeb4da68f815eda494d72eb4477e8d1e98a"
+      ],
+      "position": 17,
+      "pr_number": 64,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+        "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+        "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+      },
+      "repository": "wahanegi/vibereport",
+      "sha": "cf1bed97409aa9b3658dd5c4910783b7c4bf5a06",
+      "temporal_basis": "committer_time",
+      "tree_sha": "a49e9094138d21201726b6ff352737e5870d8725"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "cf1bed97409aa9b3658dd5c4910783b7c4bf5a06",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "df969f80a512410e6d165ca8eafb433523230d77",
+      "41dccbeb4da68f815eda494d72eb4477e8d1e98a"
+    ],
+    "recursive_tree_entry_count": 407,
+    "recursive_tree_listing_sha256": "9e806a7c632ccfb4c74100b412045c139156070c963416633814d3581a8f8c5a",
+    "retrieved_at": "2026-10-05T20:19:15.886082+00:00",
+    "source": "https://github.com/wahanegi/vibereport.git",
+    "status": "materialized",
+    "tree_sha": "a49e9094138d21201726b6ff352737e5870d8725"
+  },
+  "pr_number": 64,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "a4dd7f135bb5c0ad8cf40bc97ba8d047f37436c3",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:19:14.508299+00:00",
+        "sha256": "251fdcc4f1a4f9c7cad9ae0d8133b9e457931308df38aba2fa0b9f37839793d5",
+        "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=1"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:19:15.021595+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=2"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:19:15.021595+00:00",
+        "sha256": "c1fbee5627ed863eb093da276a88743d022d5da4eededadb332f80e0f2e5b6e8",
+        "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64/commits?per_page=100&page=2"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:19:13.753660+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/wahanegi/vibereport/pulls/64"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:19:13.753660+00:00",
+      "sha256": "083d52eb6b31c70de3eaa64291e7591528edc76068933dc80628fddcc775b436",
+      "source": "https://api.github.com/repos/wahanegi/vibereport/pulls/64"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "wahanegi/vibereport",
+  "selected_state": {
+    "author_time": "2023-05-31T14:03:03Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "cf1bed97409aa9b3658dd5c4910783b7c4bf5a06",
+    "committer_time": "2023-05-31T14:03:03Z",
+    "effective_time": "2023-05-31T14:03:03+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "a49e9094138d21201726b6ff352737e5870d8725"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-05-31T20:14:44.129139+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-05-31T20:15:15.484299+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

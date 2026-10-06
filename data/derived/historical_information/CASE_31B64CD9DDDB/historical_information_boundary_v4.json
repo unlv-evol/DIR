@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_31B64CD9DDDB",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "a370bf88527494da672ddf89b0528c89c29a948f",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "c0b8e0f6ce1b19ea939c66fb57db48e35df31d79"
+    ],
+    "recursive_tree_entry_count": 539,
+    "recursive_tree_listing_sha256": "89ca8ee22673b422a36b2d695359d110c3d8609556714d181c7ce7da2c84bc30",
+    "retrieved_at": "2026-10-05T20:16:29.203650+00:00",
+    "source": "https://github.com/agentcoinorg/evo.ninja.git",
+    "status": "materialized",
+    "tree_sha": "3bdbd739213e1c22cc512fc569361057f75f95bb"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_31B64CD9DDDB/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_31B64CD9DDDB/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "agentcoinorg/evo.ninja",
+  "selected_state": {
+    "author_time": "2023-12-18T22:51:09Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "a370bf88527494da672ddf89b0528c89c29a948f",
+    "committer_time": "2023-12-18T22:51:09Z",
+    "effective_time": "2023-12-18T22:51:09+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "3bdbd739213e1c22cc512fc569361057f75f95bb"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-12-18T22:52:27.760544+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

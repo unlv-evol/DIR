@@ -1,0 +1,352 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_298A455FBBD8",
+  "executed_at": "2026-10-05T20:16:13.810611+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-02-09T05:23:18Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-09T05:23:18Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-09T05:23:18+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "0334e03ea73e24d6b7e3cec7419aad4962f64d34"
+        ],
+        "position": 1,
+        "pr_number": 291,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:13.176131+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/whatwg/html-build/pulls/291/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:13.176131+00:00",
+          "sha256": "d43e1a0d725e878be379ad0327323847b0641cf9e966d5df4c7d05299075cdcb",
+          "source": "https://api.github.com/repos/whatwg/html-build/pulls/291/commits?per_page=100&page=1"
+        },
+        "repository": "whatwg/html-build",
+        "sha": "2b6ba9e03d8cfcd40f1c26cfe6ad571f3b35a837",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d9532cb8159bc301d3f26dc7c9e6a4f01a70a875"
+      },
+      {
+        "author_time": "2024-02-15T05:50:01Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-15T05:50:01Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-15T05:50:01+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2b6ba9e03d8cfcd40f1c26cfe6ad571f3b35a837"
+        ],
+        "position": 2,
+        "pr_number": 291,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:13.176131+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/whatwg/html-build/pulls/291/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:13.176131+00:00",
+          "sha256": "d43e1a0d725e878be379ad0327323847b0641cf9e966d5df4c7d05299075cdcb",
+          "source": "https://api.github.com/repos/whatwg/html-build/pulls/291/commits?per_page=100&page=1"
+        },
+        "repository": "whatwg/html-build",
+        "sha": "d712891dbeaf58cd450c39b7b8ad61b4ebe5173b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "fe02dcb5959a7c5b85307a501dbe403484d7bdca"
+      },
+      {
+        "author_time": "2024-02-15T05:54:38Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-15T05:54:38Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-15T05:54:38+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d712891dbeaf58cd450c39b7b8ad61b4ebe5173b"
+        ],
+        "position": 3,
+        "pr_number": 291,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:13.176131+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/whatwg/html-build/pulls/291/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:13.176131+00:00",
+          "sha256": "d43e1a0d725e878be379ad0327323847b0641cf9e966d5df4c7d05299075cdcb",
+          "source": "https://api.github.com/repos/whatwg/html-build/pulls/291/commits?per_page=100&page=1"
+        },
+        "repository": "whatwg/html-build",
+        "sha": "46ae120ec6fc258a29c427b0b7ed981193c8f3a5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f50943e42f6534f5a32684664b0ab33cbad7c0a7"
+      },
+      {
+        "author_time": "2024-02-15T05:55:15Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-15T05:55:15Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-15T05:55:15+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "46ae120ec6fc258a29c427b0b7ed981193c8f3a5"
+        ],
+        "position": 4,
+        "pr_number": 291,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:13.176131+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/whatwg/html-build/pulls/291/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:13.176131+00:00",
+          "sha256": "d43e1a0d725e878be379ad0327323847b0641cf9e966d5df4c7d05299075cdcb",
+          "source": "https://api.github.com/repos/whatwg/html-build/pulls/291/commits?per_page=100&page=1"
+        },
+        "repository": "whatwg/html-build",
+        "sha": "6b334fb4c05f1e601a86ed6c5bb1171fee76b10a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4d984ca67ced6e8186a84d9a2ceb74db304c85ca"
+      },
+      {
+        "author_time": "2024-02-15T06:12:19Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-15T06:12:19Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-15T06:12:19+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6b334fb4c05f1e601a86ed6c5bb1171fee76b10a"
+        ],
+        "position": 5,
+        "pr_number": 291,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:13.176131+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/whatwg/html-build/pulls/291/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:13.176131+00:00",
+          "sha256": "d43e1a0d725e878be379ad0327323847b0641cf9e966d5df4c7d05299075cdcb",
+          "source": "https://api.github.com/repos/whatwg/html-build/pulls/291/commits?per_page=100&page=1"
+        },
+        "repository": "whatwg/html-build",
+        "sha": "edd0fd311e8241daaec5c26815b79cf28d437d27",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ad53f2ac766223a070237911c0f5063cd00d3a06"
+      },
+      {
+        "author_time": "2024-04-11T02:31:56Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-11T02:31:56Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-11T02:31:56+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "edd0fd311e8241daaec5c26815b79cf28d437d27"
+        ],
+        "position": 6,
+        "pr_number": 291,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:13.176131+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/whatwg/html-build/pulls/291/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:13.176131+00:00",
+          "sha256": "d43e1a0d725e878be379ad0327323847b0641cf9e966d5df4c7d05299075cdcb",
+          "source": "https://api.github.com/repos/whatwg/html-build/pulls/291/commits?per_page=100&page=1"
+        },
+        "repository": "whatwg/html-build",
+        "sha": "d8a1f808b1b3276d11242ead6d36272bf1eaf461",
+        "temporal_basis": "committer_time",
+        "tree_sha": "45fd908f1cc42ce066da98073a0f794d66a351ab"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2024-02-15T05:50:01Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-02-15T05:50:01Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2024-02-15T05:50:01+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "2b6ba9e03d8cfcd40f1c26cfe6ad571f3b35a837"
+      ],
+      "position": 2,
+      "pr_number": 291,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:13.176131+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/whatwg/html-build/pulls/291/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:13.176131+00:00",
+        "sha256": "d43e1a0d725e878be379ad0327323847b0641cf9e966d5df4c7d05299075cdcb",
+        "source": "https://api.github.com/repos/whatwg/html-build/pulls/291/commits?per_page=100&page=1"
+      },
+      "repository": "whatwg/html-build",
+      "sha": "d712891dbeaf58cd450c39b7b8ad61b4ebe5173b",
+      "temporal_basis": "committer_time",
+      "tree_sha": "fe02dcb5959a7c5b85307a501dbe403484d7bdca"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-02-09T05:23:18Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-02-09T05:23:18Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-02-09T05:23:18+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "0334e03ea73e24d6b7e3cec7419aad4962f64d34"
+      ],
+      "position": 1,
+      "pr_number": 291,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:13.176131+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/whatwg/html-build/pulls/291/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:13.176131+00:00",
+        "sha256": "d43e1a0d725e878be379ad0327323847b0641cf9e966d5df4c7d05299075cdcb",
+        "source": "https://api.github.com/repos/whatwg/html-build/pulls/291/commits?per_page=100&page=1"
+      },
+      "repository": "whatwg/html-build",
+      "sha": "2b6ba9e03d8cfcd40f1c26cfe6ad571f3b35a837",
+      "temporal_basis": "committer_time",
+      "tree_sha": "d9532cb8159bc301d3f26dc7c9e6a4f01a70a875"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "2b6ba9e03d8cfcd40f1c26cfe6ad571f3b35a837",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "0334e03ea73e24d6b7e3cec7419aad4962f64d34"
+    ],
+    "recursive_tree_entry_count": 41,
+    "recursive_tree_listing_sha256": "33fca4efd11307b4cc5c198376e223a9aff5f0fbc27d8f2950c3037de59a752b",
+    "retrieved_at": "2026-10-05T20:16:13.801331+00:00",
+    "source": "https://github.com/whatwg/html-build.git",
+    "status": "materialized",
+    "tree_sha": "d9532cb8159bc301d3f26dc7c9e6a4f01a70a875"
+  },
+  "pr_number": 291,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "0334e03ea73e24d6b7e3cec7419aad4962f64d34",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:13.176131+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/whatwg/html-build/pulls/291/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:13.176131+00:00",
+        "sha256": "d43e1a0d725e878be379ad0327323847b0641cf9e966d5df4c7d05299075cdcb",
+        "source": "https://api.github.com/repos/whatwg/html-build/pulls/291/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:16:12.604752+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/whatwg/html-build/pulls/291"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:16:12.604752+00:00",
+      "sha256": "09bd36fd5d1f09c32b42b5769651c129d3174a1917ca6b7a019bff498f098276",
+      "source": "https://api.github.com/repos/whatwg/html-build/pulls/291"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "whatwg/html-build",
+  "selected_state": {
+    "author_time": "2024-02-09T05:23:18Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "2b6ba9e03d8cfcd40f1c26cfe6ad571f3b35a837",
+    "committer_time": "2024-02-09T05:23:18Z",
+    "effective_time": "2024-02-09T05:23:18+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "d9532cb8159bc301d3f26dc7c9e6a4f01a70a875"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-02-09T05:52:19.004086+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-02-09T05:53:05.925557+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

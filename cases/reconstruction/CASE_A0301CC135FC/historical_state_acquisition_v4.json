@@ -1,0 +1,256 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_A0301CC135FC",
+  "executed_at": "2026-10-05T20:18:41.351282+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-03-05T16:07:52Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T16:07:52Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T16:07:52+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "537ab2d2fdf1763fb8e9fbcb04f1df62bbc685b4"
+        ],
+        "position": 1,
+        "pr_number": 70,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:40.696831+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jaoafa/VCSpeaker.kt/pulls/70/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:40.696831+00:00",
+          "sha256": "39c9c1bc3a756b7d852435580e0b844a3f4fa0e95c292ba388ddb3b458eba79c",
+          "source": "https://api.github.com/repos/jaoafa/VCSpeaker.kt/pulls/70/commits?per_page=100&page=1"
+        },
+        "repository": "jaoafa/VCSpeaker.kt",
+        "sha": "67b0cbaac457edd9f0f6d8af6762c102582aff67",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9f627edfad21f9f21f20277d09959f73e094d8e6"
+      },
+      {
+        "author_time": "2024-03-05T16:28:35Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T16:28:35Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T16:28:35+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "67b0cbaac457edd9f0f6d8af6762c102582aff67"
+        ],
+        "position": 2,
+        "pr_number": 70,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:40.696831+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jaoafa/VCSpeaker.kt/pulls/70/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:40.696831+00:00",
+          "sha256": "39c9c1bc3a756b7d852435580e0b844a3f4fa0e95c292ba388ddb3b458eba79c",
+          "source": "https://api.github.com/repos/jaoafa/VCSpeaker.kt/pulls/70/commits?per_page=100&page=1"
+        },
+        "repository": "jaoafa/VCSpeaker.kt",
+        "sha": "80f252b019f6c99e8bc4d5fe0d60c07e6e858450",
+        "temporal_basis": "committer_time",
+        "tree_sha": "31649aa7d1d8d6ee2fe0cbe676500727efd6845d"
+      },
+      {
+        "author_time": "2024-03-06T10:11:00Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-06T10:11:00Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-03-06T10:11:00+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "80f252b019f6c99e8bc4d5fe0d60c07e6e858450"
+        ],
+        "position": 3,
+        "pr_number": 70,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:40.696831+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jaoafa/VCSpeaker.kt/pulls/70/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:40.696831+00:00",
+          "sha256": "39c9c1bc3a756b7d852435580e0b844a3f4fa0e95c292ba388ddb3b458eba79c",
+          "source": "https://api.github.com/repos/jaoafa/VCSpeaker.kt/pulls/70/commits?per_page=100&page=1"
+        },
+        "repository": "jaoafa/VCSpeaker.kt",
+        "sha": "5fff80ff3c8de1b7fdf847dfd565c3ee300662ed",
+        "temporal_basis": "committer_time",
+        "tree_sha": "66c0a3ada54f1287a085627385d710048df4af77"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2024-03-06T10:11:00Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-03-06T10:11:00Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2024-03-06T10:11:00+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "80f252b019f6c99e8bc4d5fe0d60c07e6e858450"
+      ],
+      "position": 3,
+      "pr_number": 70,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:40.696831+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/jaoafa/VCSpeaker.kt/pulls/70/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:40.696831+00:00",
+        "sha256": "39c9c1bc3a756b7d852435580e0b844a3f4fa0e95c292ba388ddb3b458eba79c",
+        "source": "https://api.github.com/repos/jaoafa/VCSpeaker.kt/pulls/70/commits?per_page=100&page=1"
+      },
+      "repository": "jaoafa/VCSpeaker.kt",
+      "sha": "5fff80ff3c8de1b7fdf847dfd565c3ee300662ed",
+      "temporal_basis": "committer_time",
+      "tree_sha": "66c0a3ada54f1287a085627385d710048df4af77"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-03-05T16:28:35Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-03-05T16:28:35Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-03-05T16:28:35+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "67b0cbaac457edd9f0f6d8af6762c102582aff67"
+      ],
+      "position": 2,
+      "pr_number": 70,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:40.696831+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/jaoafa/VCSpeaker.kt/pulls/70/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:40.696831+00:00",
+        "sha256": "39c9c1bc3a756b7d852435580e0b844a3f4fa0e95c292ba388ddb3b458eba79c",
+        "source": "https://api.github.com/repos/jaoafa/VCSpeaker.kt/pulls/70/commits?per_page=100&page=1"
+      },
+      "repository": "jaoafa/VCSpeaker.kt",
+      "sha": "80f252b019f6c99e8bc4d5fe0d60c07e6e858450",
+      "temporal_basis": "committer_time",
+      "tree_sha": "31649aa7d1d8d6ee2fe0cbe676500727efd6845d"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "80f252b019f6c99e8bc4d5fe0d60c07e6e858450",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "67b0cbaac457edd9f0f6d8af6762c102582aff67"
+    ],
+    "recursive_tree_entry_count": 136,
+    "recursive_tree_listing_sha256": "34c997bfe01adb48b276072d89342b5f8fe57228ac8b16106d8646a300378b1d",
+    "retrieved_at": "2026-10-05T20:18:41.347594+00:00",
+    "source": "https://github.com/jaoafa/VCSpeaker.kt.git",
+    "status": "materialized",
+    "tree_sha": "31649aa7d1d8d6ee2fe0cbe676500727efd6845d"
+  },
+  "pr_number": 70,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "537ab2d2fdf1763fb8e9fbcb04f1df62bbc685b4",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:40.696831+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/jaoafa/VCSpeaker.kt/pulls/70/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:40.696831+00:00",
+        "sha256": "39c9c1bc3a756b7d852435580e0b844a3f4fa0e95c292ba388ddb3b458eba79c",
+        "source": "https://api.github.com/repos/jaoafa/VCSpeaker.kt/pulls/70/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:18:40.218482+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/jaoafa/VCSpeaker.kt/pulls/70"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:18:40.218482+00:00",
+      "sha256": "f74595d0fdb9ab9ecc7a19f3f5cb189c1442175f7c7d9043e0a94fe3164e9088",
+      "source": "https://api.github.com/repos/jaoafa/VCSpeaker.kt/pulls/70"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "jaoafa/VCSpeaker.kt",
+  "selected_state": {
+    "author_time": "2024-03-05T16:28:35Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "80f252b019f6c99e8bc4d5fe0d60c07e6e858450",
+    "committer_time": "2024-03-05T16:28:35Z",
+    "effective_time": "2024-03-05T16:28:35+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "31649aa7d1d8d6ee2fe0cbe676500727efd6845d"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-03-06T09:48:27.180084+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-03-06T09:48:39.965068+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

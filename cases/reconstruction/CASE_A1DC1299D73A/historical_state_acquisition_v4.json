@@ -1,0 +1,554 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-04-11T00:26:18Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-11T00:26:18Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-04-11T00:26:18+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "12ac7b0e52832fefc6c5d0b29ac1236094fcf19a"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:43.691462+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/commits?sha=main&until=2024-04-11T21%3A03%3A17.338142%2B00%3A00&per_page=1&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:43.691462+00:00",
+          "sha256": "831fe4f88c2e10aeccb5b5fd0074272fe943921fdad4884a3f71942ab5e71c36",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/commits?sha=main&until=2024-04-11T21%3A03%3A17.338142%2B00%3A00&per_page=1&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP1-Roadwatch",
+        "sha": "9545baf1f71923b4a5094dac707224c5d99497c4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3a82aaaba0f82026b111e48a9aeadad9ac1f9aae"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-04-11T00:26:18Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-04-11T00:26:18Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-04-11T00:26:18+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "12ac7b0e52832fefc6c5d0b29ac1236094fcf19a"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:43.691462+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/commits?sha=main&until=2024-04-11T21%3A03%3A17.338142%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:43.691462+00:00",
+        "sha256": "831fe4f88c2e10aeccb5b5fd0074272fe943921fdad4884a3f71942ab5e71c36",
+        "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/commits?sha=main&until=2024-04-11T21%3A03%3A17.338142%2B00%3A00&per_page=1&page=1"
+      },
+      "repository": "UNLV-CS472-672/2024-S-GROUP1-Roadwatch",
+      "sha": "9545baf1f71923b4a5094dac707224c5d99497c4",
+      "temporal_basis": "committer_time",
+      "tree_sha": "3a82aaaba0f82026b111e48a9aeadad9ac1f9aae"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "main",
+  "base_routing_source": "pr_base_ref",
+  "case_id": "CASE_A1DC1299D73A",
+  "executed_at": "2026-10-05T20:18:44.624848+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-04-11T21:58:37Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-11T21:58:37Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-11T21:58:37+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8a436d4ac179590803461e4fbf68ab2f46828b7a"
+        ],
+        "position": 1,
+        "pr_number": 120,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+          "sha256": "53c249d42aac267ed5b3e116ca0a48b7921ba47504941303115722fc4516ef89",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP1-Roadwatch",
+        "sha": "d316b0123ecf878b3e16d990208392419b35f885",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6bd51b57a183eb73ff7d81d601dad2f6ed484617"
+      },
+      {
+        "author_time": "2024-04-11T22:58:26Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-11T22:58:26Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-11T22:58:26+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d316b0123ecf878b3e16d990208392419b35f885"
+        ],
+        "position": 2,
+        "pr_number": 120,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+          "sha256": "53c249d42aac267ed5b3e116ca0a48b7921ba47504941303115722fc4516ef89",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP1-Roadwatch",
+        "sha": "8a34a6bb1de57ea0642b76268b9c3f32c711191f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "aea5deb92255b2791d51fbcefa0d2516d5f4d374"
+      },
+      {
+        "author_time": "2024-04-12T05:47:13Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-12T05:47:13Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-12T05:47:13+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8a34a6bb1de57ea0642b76268b9c3f32c711191f"
+        ],
+        "position": 3,
+        "pr_number": 120,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+          "sha256": "53c249d42aac267ed5b3e116ca0a48b7921ba47504941303115722fc4516ef89",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP1-Roadwatch",
+        "sha": "90d9d1c7727ebe31d129a0b6824d40cfaaac56a1",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b1e2ccceac7a03819ea63f2bdd34038303880195"
+      },
+      {
+        "author_time": "2024-04-12T05:52:35Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-12T05:52:35Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-12T05:52:35+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "90d9d1c7727ebe31d129a0b6824d40cfaaac56a1",
+          "9545baf1f71923b4a5094dac707224c5d99497c4"
+        ],
+        "position": 4,
+        "pr_number": 120,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+          "sha256": "53c249d42aac267ed5b3e116ca0a48b7921ba47504941303115722fc4516ef89",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP1-Roadwatch",
+        "sha": "29c7bc4512b1a280d0e3c57fd84543b6301e84a7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b95a604f9982567af092d00d65e24c757fac147b"
+      },
+      {
+        "author_time": "2024-04-15T04:33:12Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-15T04:33:12Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-15T04:33:12+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "90d9d1c7727ebe31d129a0b6824d40cfaaac56a1"
+        ],
+        "position": 5,
+        "pr_number": 120,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+          "sha256": "53c249d42aac267ed5b3e116ca0a48b7921ba47504941303115722fc4516ef89",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP1-Roadwatch",
+        "sha": "f0e6f46c3081d13194def66a244cb2e173170aea",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c7370e86f692af8f08142db5b6537f80778c3eed"
+      },
+      {
+        "author_time": "2024-04-15T05:04:12Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-15T05:04:12Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-15T05:04:12+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f0e6f46c3081d13194def66a244cb2e173170aea"
+        ],
+        "position": 6,
+        "pr_number": 120,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+          "sha256": "53c249d42aac267ed5b3e116ca0a48b7921ba47504941303115722fc4516ef89",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP1-Roadwatch",
+        "sha": "776d44e87d4585b79003dad568e590883cf5ecf0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7867617ca483db2db0d30becd8ed0ff1af0f8bc3"
+      },
+      {
+        "author_time": "2024-04-15T05:05:50Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-15T05:05:50Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-15T05:05:50+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "776d44e87d4585b79003dad568e590883cf5ecf0"
+        ],
+        "position": 7,
+        "pr_number": 120,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+          "sha256": "53c249d42aac267ed5b3e116ca0a48b7921ba47504941303115722fc4516ef89",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP1-Roadwatch",
+        "sha": "5307adbd0de1f511adb2f225817d9d336c1fac84",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1006accf158ada5d963a0545e71d92cb75535a6c"
+      },
+      {
+        "author_time": "2024-04-15T05:13:37Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-15T05:13:37Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-15T05:13:37+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "5307adbd0de1f511adb2f225817d9d336c1fac84"
+        ],
+        "position": 8,
+        "pr_number": 120,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+          "sha256": "53c249d42aac267ed5b3e116ca0a48b7921ba47504941303115722fc4516ef89",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP1-Roadwatch",
+        "sha": "caef8a9e07e36155d53c7a6b67df587e6506f898",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e646cf0f7c1cf53d9b413344130701eac1e26b26"
+      },
+      {
+        "author_time": "2024-04-15T05:19:50Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-15T05:19:50Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-15T05:19:50+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "caef8a9e07e36155d53c7a6b67df587e6506f898"
+        ],
+        "position": 9,
+        "pr_number": 120,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+          "sha256": "53c249d42aac267ed5b3e116ca0a48b7921ba47504941303115722fc4516ef89",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP1-Roadwatch",
+        "sha": "c98876ef046371423494952a5679948258985557",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1006accf158ada5d963a0545e71d92cb75535a6c"
+      },
+      {
+        "author_time": "2024-04-15T05:20:07Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-15T05:20:07Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-15T05:20:07+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "c98876ef046371423494952a5679948258985557",
+          "29c7bc4512b1a280d0e3c57fd84543b6301e84a7"
+        ],
+        "position": 10,
+        "pr_number": 120,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+          "sha256": "53c249d42aac267ed5b3e116ca0a48b7921ba47504941303115722fc4516ef89",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP1-Roadwatch",
+        "sha": "430ee9007bd5345f6965458e7e28f8239dbed811",
+        "temporal_basis": "committer_time",
+        "tree_sha": "bf60593f04904fbcdcc5796a3faf6b5da1224618"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2024-04-11T21:58:37Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-04-11T21:58:37Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2024-04-11T21:58:37+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "8a436d4ac179590803461e4fbf68ab2f46828b7a"
+      ],
+      "position": 1,
+      "pr_number": 120,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+        "sha256": "53c249d42aac267ed5b3e116ca0a48b7921ba47504941303115722fc4516ef89",
+        "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+      },
+      "repository": "UNLV-CS472-672/2024-S-GROUP1-Roadwatch",
+      "sha": "d316b0123ecf878b3e16d990208392419b35f885",
+      "temporal_basis": "committer_time",
+      "tree_sha": "6bd51b57a183eb73ff7d81d601dad2f6ed484617"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "9545baf1f71923b4a5094dac707224c5d99497c4",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "12ac7b0e52832fefc6c5d0b29ac1236094fcf19a"
+    ],
+    "recursive_tree_entry_count": 203,
+    "recursive_tree_listing_sha256": "86006960669a3e6aa775743bc0f31c9717eaf18a4fb84591792b6856290d9267",
+    "retrieved_at": "2026-10-05T20:18:44.621437+00:00",
+    "source": "https://github.com/UNLV-CS472-672/2024-S-GROUP1-Roadwatch.git",
+    "status": "materialized",
+    "tree_sha": "3a82aaaba0f82026b111e48a9aeadad9ac1f9aae"
+  },
+  "pr_number": 120,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:43.231771+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/git/ref/heads/main"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:43.231771+00:00",
+        "sha256": "b500b167fd4e76aa9c8d39915e4d0159cd1215d72eaf1d271dd98ccb36f99211",
+        "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/git/ref/heads/main"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:43.691462+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/commits?sha=main&until=2024-04-11T21%3A03%3A17.338142%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:43.691462+00:00",
+        "sha256": "831fe4f88c2e10aeccb5b5fd0074272fe943921fdad4884a3f71942ab5e71c36",
+        "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/commits?sha=main&until=2024-04-11T21%3A03%3A17.338142%2B00%3A00&per_page=1&page=1"
+      }
+    ],
+    "base_route_evidence": {
+      "ref_object_sha": "65bd003841e416ff7414f44bb82d69908bb6e76d",
+      "rule": "recorded_pr_base_ref_resolves"
+    },
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "9545baf1f71923b4a5094dac707224c5d99497c4",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:42.795554+00:00",
+        "sha256": "53c249d42aac267ed5b3e116ca0a48b7921ba47504941303115722fc4516ef89",
+        "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:18:42.216536+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:18:42.216536+00:00",
+      "sha256": "e662fcfbf9ced32b03633e57318dd69c462acd9c821585e4f9957532a21f2d4a",
+      "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP1-Roadwatch/pulls/120"
+    },
+    "recorded_pr_base_ref_resolves": true
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "UNLV-CS472-672/2024-S-GROUP1-Roadwatch",
+  "selected_state": {
+    "author_time": "2024-04-11T00:26:18Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "9545baf1f71923b4a5094dac707224c5d99497c4",
+    "committer_time": "2024-04-11T00:26:18Z",
+    "effective_time": "2024-04-11T00:26:18+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "3a82aaaba0f82026b111e48a9aeadad9ac1f9aae"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-04-11T21:03:11.627538+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-04-11T21:03:17.338142+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

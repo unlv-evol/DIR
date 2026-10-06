@@ -1,0 +1,1171 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_77BDD439B74B",
+  "executed_at": "2026-10-05T20:17:53.352868+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-10-16T05:52:16Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-16T05:52:16Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-16T05:52:16+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f77db4d814cda27f5a8a5787a0e072916b63a3bb"
+        ],
+        "position": 1,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "2b15ecd65e9d61871ee43af60126483fd5dcadbf",
+        "temporal_basis": "committer_time",
+        "tree_sha": "710606b0d1bef80676e3197f144959751b572198"
+      },
+      {
+        "author_time": "2023-10-17T04:38:36Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-17T04:38:36Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-17T04:38:36+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "2b15ecd65e9d61871ee43af60126483fd5dcadbf"
+        ],
+        "position": 2,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "080da2dd04812f060d5138626d2ac151ae957491",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2b53c0346d7ad02437484e96f7831d7f778d6b66"
+      },
+      {
+        "author_time": "2023-10-17T16:56:14Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-17T16:56:14Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-17T16:56:14+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "080da2dd04812f060d5138626d2ac151ae957491"
+        ],
+        "position": 3,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "af16ff09bcdb9f883993a527ab37addbc57f8c1d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "742e0e19aa62dfac1b6ec3300e0d98a77b82c249"
+      },
+      {
+        "author_time": "2023-10-18T05:48:54Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-18T05:48:54Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-18T05:48:54+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "af16ff09bcdb9f883993a527ab37addbc57f8c1d"
+        ],
+        "position": 4,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "7ee74295e7bf7adcd9761a7b4888126a21b561c7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0bad28dd88951e203ad3a5bec35b21f777318e09"
+      },
+      {
+        "author_time": "2023-10-18T05:54:01Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-18T05:54:01Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-18T05:54:01+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7ee74295e7bf7adcd9761a7b4888126a21b561c7",
+          "04c874fe35d9959ce60839218194283eef6c5524"
+        ],
+        "position": 5,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "7da1226e56f7b7b3b4d4514a4eff2b7568b77fdc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "69bbea9cff246b4e3bd721c1748691bb838afc8f"
+      },
+      {
+        "author_time": "2023-10-18T05:55:47Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-18T05:55:47Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-18T05:55:47+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7da1226e56f7b7b3b4d4514a4eff2b7568b77fdc"
+        ],
+        "position": 6,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "d5ad01a8b6cfbb1633e43f2a3f6b78e94f04ee62",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f694fd006641ef44f3e4061723993bff10ab1ee1"
+      },
+      {
+        "author_time": "2023-10-18T07:40:00Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-18T07:40:00Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-18T07:40:00+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d5ad01a8b6cfbb1633e43f2a3f6b78e94f04ee62"
+        ],
+        "position": 7,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "ba930fe5f03e33be13b7090b68db2bd5ec55cdfb",
+        "temporal_basis": "committer_time",
+        "tree_sha": "383601eab8e0981934c36d4f597a711cc58fe7ad"
+      },
+      {
+        "author_time": "2023-10-18T12:12:31Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-18T12:12:31Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-18T12:12:31+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ba930fe5f03e33be13b7090b68db2bd5ec55cdfb"
+        ],
+        "position": 8,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "71593f7d4711df68122997ba21b0cf1431723383",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f2a827eb180c3629c29ccefadcefe2e42e8bf93c"
+      },
+      {
+        "author_time": "2023-10-18T12:12:31Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-18T16:45:26Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-18T16:45:26+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ba930fe5f03e33be13b7090b68db2bd5ec55cdfb"
+        ],
+        "position": 9,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "c7faa77e537709ee47dbf199eec0a84f1b7e633a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f2a827eb180c3629c29ccefadcefe2e42e8bf93c"
+      },
+      {
+        "author_time": "2023-10-18T16:45:32Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-18T16:45:32Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-18T16:45:32+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c7faa77e537709ee47dbf199eec0a84f1b7e633a",
+          "71593f7d4711df68122997ba21b0cf1431723383"
+        ],
+        "position": 10,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "ff13b6a1b70fc3863c038c5fb7d8b788b852cd24",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f2a827eb180c3629c29ccefadcefe2e42e8bf93c"
+      },
+      {
+        "author_time": "2023-10-19T15:00:21Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-19T15:00:21Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-19T15:00:21+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ff13b6a1b70fc3863c038c5fb7d8b788b852cd24"
+        ],
+        "position": 11,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "59e450709c43ff9120ec7916ea82649020339153",
+        "temporal_basis": "committer_time",
+        "tree_sha": "87b659459c06390a74bb2e22884e180e97dc8a36"
+      },
+      {
+        "author_time": "2023-10-20T10:50:08Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-20T10:50:08Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-20T10:50:08+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "59e450709c43ff9120ec7916ea82649020339153"
+        ],
+        "position": 12,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "38c055281ccb091eb10dc9496d61e320ee483ffd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "bc556f8221b5f13202e2b04eb5001d830d477cf8"
+      },
+      {
+        "author_time": "2023-10-20T10:56:39Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-20T10:56:39Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-20T10:56:39+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "38c055281ccb091eb10dc9496d61e320ee483ffd",
+          "6d9b2a6b3376c927aa1fd1c3f39d80896f2b94ef"
+        ],
+        "position": 13,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "e3c93acd0d8b79fcdad4255a2e94d64117de31ed",
+        "temporal_basis": "committer_time",
+        "tree_sha": "27c44a8f4f38946e79a3d44c74aa4ada519b9fd0"
+      },
+      {
+        "author_time": "2023-10-26T05:28:47Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-26T05:28:47Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-26T05:28:47+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "e3c93acd0d8b79fcdad4255a2e94d64117de31ed",
+          "736f269c49dddc6bf249e02c5afa48ab6c8ef638"
+        ],
+        "position": 14,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "bcdc6f2e56285c19100f1b456141ff7a98c04548",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8d79f833d8e36ec7516324247565873e94b7cd00"
+      },
+      {
+        "author_time": "2023-10-28T03:28:21Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-28T03:28:21Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-28T03:28:21+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "bcdc6f2e56285c19100f1b456141ff7a98c04548",
+          "394fece84685a8f3caea76c14b3219c22ddf65ce"
+        ],
+        "position": 15,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "f7783014cfbcfc601bbabfb73339abaf611309c7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "beae1c9cdc380c182b1da086df10fe77eaaa882d"
+      },
+      {
+        "author_time": "2023-10-30T10:54:24Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-30T10:54:24Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-30T10:54:24+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f7783014cfbcfc601bbabfb73339abaf611309c7",
+          "dfba4770bdcc151ac960fc92a490ee6b42cb3f70"
+        ],
+        "position": 16,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "da5095e986660c63285a9296cbac9539806fe2d3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "62e43dd277d8d29bcf12cd86fd04ae0f9953b59b"
+      },
+      {
+        "author_time": "2023-10-30T10:54:24Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-30T13:18:36Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-30T13:18:36+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f7783014cfbcfc601bbabfb73339abaf611309c7",
+          "dfba4770bdcc151ac960fc92a490ee6b42cb3f70"
+        ],
+        "position": 17,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "6d5c960fbbf0a7896c8bc9fa83e19435f2c61c4e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "62e43dd277d8d29bcf12cd86fd04ae0f9953b59b"
+      },
+      {
+        "author_time": "2023-10-30T13:18:45Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-30T13:18:45Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-30T13:18:45+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "6d5c960fbbf0a7896c8bc9fa83e19435f2c61c4e",
+          "da5095e986660c63285a9296cbac9539806fe2d3"
+        ],
+        "position": 18,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "abd963852304fdadc2737eeb2cc0801449e42a9d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "62e43dd277d8d29bcf12cd86fd04ae0f9953b59b"
+      },
+      {
+        "author_time": "2023-11-07T09:36:19Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-07T09:36:19Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-07T09:36:19+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "abd963852304fdadc2737eeb2cc0801449e42a9d",
+          "3eb1d495774f5e5d6f3948d4709e96284988085b"
+        ],
+        "position": 19,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "3a013c30bdc052eaf24e81618017cbf5a11789d0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "cf996c3f5ab6cf810e6b30bf6271026a07cd4bd0"
+      },
+      {
+        "author_time": "2023-11-09T05:11:11Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-09T05:11:11Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-09T05:11:11+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "3a013c30bdc052eaf24e81618017cbf5a11789d0",
+          "1948bef9acfe81f1bfafc31b4eb9a86aa9390efb"
+        ],
+        "position": 20,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "81b19f2c0a5a878b117f140de96136c971dde8cc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "dafc7996e79b4bd8fc52dab3d60fb96aa2d37895"
+      },
+      {
+        "author_time": "2023-11-09T08:25:25Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-09T08:25:25Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-09T08:25:25+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "81b19f2c0a5a878b117f140de96136c971dde8cc"
+        ],
+        "position": 21,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "808d7f6dde7fdb28ac5da2ee25182be7b6a81ac9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f3778fe1c6a0ceef395fee2f9fa2918a6cd552b5"
+      },
+      {
+        "author_time": "2023-11-09T08:28:41Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-09T08:28:41Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-09T08:28:41+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "808d7f6dde7fdb28ac5da2ee25182be7b6a81ac9"
+        ],
+        "position": 22,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "592a3806c2da947cb368b6c4a25d77f87ba0bfd5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "67232df367ce3fe0d2e4e044df81e187ddc0c998"
+      },
+      {
+        "author_time": "2023-11-09T08:37:28Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-09T08:37:28Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-09T08:37:28+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "592a3806c2da947cb368b6c4a25d77f87ba0bfd5"
+        ],
+        "position": 23,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "2642b6986c8406eb07d99e470c9bea14b0497cab",
+        "temporal_basis": "committer_time",
+        "tree_sha": "28195858f97faec7cc577abee5fdec577ef32652"
+      },
+      {
+        "author_time": "2023-11-14T04:20:00Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-14T04:20:00Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-14T04:20:00+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "2642b6986c8406eb07d99e470c9bea14b0497cab",
+          "cd217a3f86eb7093e0aecb9bbfc7f25772718f7f"
+        ],
+        "position": 24,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "d13bcf104aa60aad54545c3c1c27f52f8adc41e9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4e7ac419098528c3d0b82773497d6d72f8868b53"
+      },
+      {
+        "author_time": "2023-11-14T06:16:37Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-14T06:16:37Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-14T06:16:37+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d13bcf104aa60aad54545c3c1c27f52f8adc41e9"
+        ],
+        "position": 25,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "84310c709bd1b808dbac9fb780a415c7c580bd02",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f85b65fb18e34c684724902b8faac0dbd41bf6c2"
+      },
+      {
+        "author_time": "2023-11-16T06:58:17Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-16T06:58:17Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-16T06:58:17+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "84310c709bd1b808dbac9fb780a415c7c580bd02",
+          "5f6e974531653efeda9025d78976b0d843f8aa64"
+        ],
+        "position": 26,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "80413a9bec69390a6d7b1b377129da1080621413",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e3bcb35262ec8f8770a246b028373298497f6251"
+      },
+      {
+        "author_time": "2023-11-16T08:48:08Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-16T08:48:08Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-16T08:48:08+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "80413a9bec69390a6d7b1b377129da1080621413",
+          "5f503b1a57076504d2075c3f74f4e78bf8949be1"
+        ],
+        "position": 27,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "a20dfc9a8946a499b6ecf19ca8d90adbc1b50cb4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c3096b741751a947ff3896df86d71a8962ba1ca0"
+      },
+      {
+        "author_time": "2023-11-17T03:57:17Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-17T03:57:17Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-17T03:57:17+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a20dfc9a8946a499b6ecf19ca8d90adbc1b50cb4",
+          "04dd65687b2fb8926dfffb6c404835d529c7b1d7"
+        ],
+        "position": 28,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "090f28c9182de304bb5bbcc76dea0a3e404d0b90",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3843500f086f1047c291397d73ccaa79673401a7"
+      },
+      {
+        "author_time": "2023-11-17T04:00:15Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-17T04:00:15Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-17T04:00:15+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a20dfc9a8946a499b6ecf19ca8d90adbc1b50cb4"
+        ],
+        "position": 29,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "0b6c811527d66c450bd584513d69877b6babc281",
+        "temporal_basis": "committer_time",
+        "tree_sha": "59906341ccf662f1f9a480ea63a71a0b4c5ae12f"
+      },
+      {
+        "author_time": "2023-11-17T04:09:22Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-17T04:09:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-17T04:09:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "0b6c811527d66c450bd584513d69877b6babc281",
+          "090f28c9182de304bb5bbcc76dea0a3e404d0b90"
+        ],
+        "position": 30,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "f55b8696db05f4ad757c11ff684177e24813d31e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0f2becb3692bcb75caf168a5c77dd1e4b1505225"
+      },
+      {
+        "author_time": "2023-11-20T05:29:07Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-20T05:29:07Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-20T05:29:07+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f55b8696db05f4ad757c11ff684177e24813d31e",
+          "feead30b0b1af20e374f839276c41823491d933f"
+        ],
+        "position": 31,
+        "pr_number": 8136,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+          "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+          "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+        },
+        "repository": "chatwoot/chatwoot",
+        "sha": "5b81235cb8702837cd5c10d2e0162b77fc31f325",
+        "temporal_basis": "committer_time",
+        "tree_sha": "bdbb54c7c90a5c2648b3290baf2aacda57298d4c"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-11-17T03:57:17Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-11-17T03:57:17Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-11-17T03:57:17+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "a20dfc9a8946a499b6ecf19ca8d90adbc1b50cb4",
+        "04dd65687b2fb8926dfffb6c404835d529c7b1d7"
+      ],
+      "position": 28,
+      "pr_number": 8136,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+        "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+        "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+      },
+      "repository": "chatwoot/chatwoot",
+      "sha": "090f28c9182de304bb5bbcc76dea0a3e404d0b90",
+      "temporal_basis": "committer_time",
+      "tree_sha": "3843500f086f1047c291397d73ccaa79673401a7"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-11-16T08:48:08Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-11-16T08:48:08Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-11-16T08:48:08+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "80413a9bec69390a6d7b1b377129da1080621413",
+        "5f503b1a57076504d2075c3f74f4e78bf8949be1"
+      ],
+      "position": 27,
+      "pr_number": 8136,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+        "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+        "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+      },
+      "repository": "chatwoot/chatwoot",
+      "sha": "a20dfc9a8946a499b6ecf19ca8d90adbc1b50cb4",
+      "temporal_basis": "committer_time",
+      "tree_sha": "c3096b741751a947ff3896df86d71a8962ba1ca0"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "a20dfc9a8946a499b6ecf19ca8d90adbc1b50cb4",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "80413a9bec69390a6d7b1b377129da1080621413",
+      "5f503b1a57076504d2075c3f74f4e78bf8949be1"
+    ],
+    "recursive_tree_entry_count": 6401,
+    "recursive_tree_listing_sha256": "e3b0ce09371f5c91662243f084c9b127da0b431fc6662a93764a56fee9a68417",
+    "retrieved_at": "2026-10-05T20:17:53.349557+00:00",
+    "source": "https://github.com/chatwoot/chatwoot.git",
+    "status": "materialized",
+    "tree_sha": "c3096b741751a947ff3896df86d71a8962ba1ca0"
+  },
+  "pr_number": 8136,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "feead30b0b1af20e374f839276c41823491d933f",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:50.578143+00:00",
+        "sha256": "861837725c4f4eb68315ab97d51baeb21dcc264a23af3b96a89fa61e77c91583",
+        "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:17:49.878847+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:17:49.878847+00:00",
+      "sha256": "ba9712377ef98f83afe608c19f824a0327b802d01303008bc34f6f4bcba4d5f4",
+      "source": "https://api.github.com/repos/chatwoot/chatwoot/pulls/8136"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "chatwoot/chatwoot",
+  "selected_state": {
+    "author_time": "2023-11-16T08:48:08Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "a20dfc9a8946a499b6ecf19ca8d90adbc1b50cb4",
+    "committer_time": "2023-11-16T08:48:08Z",
+    "effective_time": "2023-11-16T08:48:08+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "c3096b741751a947ff3896df86d71a8962ba1ca0"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-11-17T03:45:35.385000+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-11-17T03:45:45.804530+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

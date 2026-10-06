@@ -1,0 +1,46 @@
+{
+  "base_lineage_ref": "4.5",
+  "base_routing_source": "other_explicitly_justified_route",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_C95F69523646",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "9dab5f12a7eac13fc6420310545ee59849251a01",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "fff435c550a41a28b45a4493ee49c50c90be3477",
+      "1d6b7ac3c9b9b1d426cd480140588f1b84fb6988"
+    ],
+    "recursive_tree_entry_count": 3630,
+    "recursive_tree_listing_sha256": "2cc92fc715d7b616f37147120c3f3065b1178420fe3f1b819fa036994f06b9a6",
+    "retrieved_at": "2026-10-05T20:09:27.728259+00:00",
+    "source": "https://github.com/codeigniter4/CodeIgniter4.git",
+    "status": "materialized",
+    "tree_sha": "999626635fd49bca55a1ee43f84d835db127972f"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_C95F69523646/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_C95F69523646/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "repository": "codeigniter4/CodeIgniter4",
+  "selected_state": {
+    "author_time": "2023-11-22T00:05:15Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "9dab5f12a7eac13fc6420310545ee59849251a01",
+    "committer_time": "2023-11-22T00:05:15Z",
+    "effective_time": "2023-11-22T00:05:15+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "999626635fd49bca55a1ee43f84d835db127972f"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-11-24T00:47:52.143178+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

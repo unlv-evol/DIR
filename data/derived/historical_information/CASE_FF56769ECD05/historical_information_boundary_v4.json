@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "main",
+  "base_routing_source": "pr_base_ref",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_FF56769ECD05",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "b8bbe070d589c80b27a396d426b4d281b85734f6",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "7528372394a46a50c4d3aaac69d907bcc22158b8"
+    ],
+    "recursive_tree_entry_count": 190,
+    "recursive_tree_listing_sha256": "d71384b1e8c6d254c2d924b40e9f0c64c6cc6f8b437b79fcb2129d8f235bc360",
+    "retrieved_at": "2026-10-05T22:51:22.236895+00:00",
+    "source": "https://github.com/UNLV-CS472-672/2024-S-GROUP1-Roadwatch.git",
+    "status": "materialized",
+    "tree_sha": "69252d1c4ede0f524e820afd3f40bf907e688a87"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_FF56769ECD05/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_FF56769ECD05/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "repository": "UNLV-CS472-672/2024-S-GROUP1-Roadwatch",
+  "selected_state": {
+    "author_time": "2024-04-03T02:01:47Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "b8bbe070d589c80b27a396d426b4d281b85734f6",
+    "committer_time": "2024-04-03T02:01:47Z",
+    "effective_time": "2024-04-03T02:01:47+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "69252d1c4ede0f524e820afd3f40bf907e688a87"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-04-04T21:43:01.991259+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

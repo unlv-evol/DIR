@@ -1,0 +1,395 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-01-24T12:23:48Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-24T12:23:48Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-24T12:23:48+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "63ac5f389e3df8187d62db1e54f2b77cb7d966df",
+          "ddfd65dd922d7b176ec5260055477cc937e6c470"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:12.270779+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/itpplasma/libneo/commits?sha=main&until=2024-01-24T12%3A29%3A52.633607%2B00%3A00&per_page=1&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:12.270779+00:00",
+          "sha256": "d4484f826063f826d362fdae15ec78f1bc12ecc74c84adad939958495fe5e3df",
+          "source": "https://api.github.com/repos/itpplasma/libneo/commits?sha=main&until=2024-01-24T12%3A29%3A52.633607%2B00%3A00&per_page=1&page=1"
+        },
+        "repository": "itpplasma/libneo",
+        "sha": "cae2816141b3a7d3fbfb0d46728e5c9c6b9d0ca0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e5e98191533f29f0106308d374b41debbe7df63a"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-01-24T12:23:48Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-01-24T12:23:48Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-01-24T12:23:48+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "63ac5f389e3df8187d62db1e54f2b77cb7d966df",
+        "ddfd65dd922d7b176ec5260055477cc937e6c470"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:12.270779+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/itpplasma/libneo/commits?sha=main&until=2024-01-24T12%3A29%3A52.633607%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:12.270779+00:00",
+        "sha256": "d4484f826063f826d362fdae15ec78f1bc12ecc74c84adad939958495fe5e3df",
+        "source": "https://api.github.com/repos/itpplasma/libneo/commits?sha=main&until=2024-01-24T12%3A29%3A52.633607%2B00%3A00&per_page=1&page=1"
+      },
+      "repository": "itpplasma/libneo",
+      "sha": "cae2816141b3a7d3fbfb0d46728e5c9c6b9d0ca0",
+      "temporal_basis": "committer_time",
+      "tree_sha": "e5e98191533f29f0106308d374b41debbe7df63a"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "main",
+  "base_routing_source": "pr_base_ref",
+  "case_id": "CASE_8A756AAC10B8",
+  "executed_at": "2026-10-05T20:18:13.089274+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-01-18T15:58:27Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2024-01-24T12:30:10Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-24T12:30:10+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "cae2816141b3a7d3fbfb0d46728e5c9c6b9d0ca0"
+        ],
+        "position": 1,
+        "pr_number": 21,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:11.383679+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/itpplasma/libneo/pulls/21/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:11.383679+00:00",
+          "sha256": "957a6e6bc29e676cdd475eaa00637c17db9ea9a070798396f642e32a2a84ba04",
+          "source": "https://api.github.com/repos/itpplasma/libneo/pulls/21/commits?per_page=100&page=1"
+        },
+        "repository": "itpplasma/libneo",
+        "sha": "78cbb528fcd243b3af35520ce5b850773556b62d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0a27ea12dc0b74d28f4283d8981369e90bbef6cc"
+      },
+      {
+        "author_time": "2024-01-18T18:16:38Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2024-01-24T12:30:10Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-24T12:30:10+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "78cbb528fcd243b3af35520ce5b850773556b62d"
+        ],
+        "position": 2,
+        "pr_number": 21,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:11.383679+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/itpplasma/libneo/pulls/21/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:11.383679+00:00",
+          "sha256": "957a6e6bc29e676cdd475eaa00637c17db9ea9a070798396f642e32a2a84ba04",
+          "source": "https://api.github.com/repos/itpplasma/libneo/pulls/21/commits?per_page=100&page=1"
+        },
+        "repository": "itpplasma/libneo",
+        "sha": "27e9eef31cb03dd69ffeca6c2681533fd433cd72",
+        "temporal_basis": "committer_time",
+        "tree_sha": "bc564876be6cfcd6893706fcec9fb9d8f593ea30"
+      },
+      {
+        "author_time": "2024-01-20T13:24:25Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2024-01-24T12:30:11Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-24T12:30:11+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "27e9eef31cb03dd69ffeca6c2681533fd433cd72"
+        ],
+        "position": 3,
+        "pr_number": 21,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:11.383679+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/itpplasma/libneo/pulls/21/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:11.383679+00:00",
+          "sha256": "957a6e6bc29e676cdd475eaa00637c17db9ea9a070798396f642e32a2a84ba04",
+          "source": "https://api.github.com/repos/itpplasma/libneo/pulls/21/commits?per_page=100&page=1"
+        },
+        "repository": "itpplasma/libneo",
+        "sha": "3aa1428d8262e208c8ff840bac1ac4a0ddc5bf88",
+        "temporal_basis": "committer_time",
+        "tree_sha": "19908b93291c0772f827c08454198752b8d72227"
+      },
+      {
+        "author_time": "2024-01-24T10:13:09Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2024-01-24T12:30:12Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-24T12:30:12+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "3aa1428d8262e208c8ff840bac1ac4a0ddc5bf88"
+        ],
+        "position": 4,
+        "pr_number": 21,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:11.383679+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/itpplasma/libneo/pulls/21/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:11.383679+00:00",
+          "sha256": "957a6e6bc29e676cdd475eaa00637c17db9ea9a070798396f642e32a2a84ba04",
+          "source": "https://api.github.com/repos/itpplasma/libneo/pulls/21/commits?per_page=100&page=1"
+        },
+        "repository": "itpplasma/libneo",
+        "sha": "da4175276aaa7dbe7e6d6aad326ddb821d4b4d8b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d8898138246c0ab0015630e010bd52da7c729a71"
+      },
+      {
+        "author_time": "2024-01-24T13:12:41Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-24T13:12:41Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-24T13:12:41+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "da4175276aaa7dbe7e6d6aad326ddb821d4b4d8b"
+        ],
+        "position": 5,
+        "pr_number": 21,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:11.383679+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/itpplasma/libneo/pulls/21/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:11.383679+00:00",
+          "sha256": "957a6e6bc29e676cdd475eaa00637c17db9ea9a070798396f642e32a2a84ba04",
+          "source": "https://api.github.com/repos/itpplasma/libneo/pulls/21/commits?per_page=100&page=1"
+        },
+        "repository": "itpplasma/libneo",
+        "sha": "2e9c04445ac7c1d4bce5f82747766a5a44b08c88",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3bc785e466fb142d70e3a5da03de271aa8fabaaa"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2024-01-18T15:58:27Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "crosses_tfg",
+      "committer_time": "2024-01-24T12:30:10Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2024-01-24T12:30:10+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "cae2816141b3a7d3fbfb0d46728e5c9c6b9d0ca0"
+      ],
+      "position": 1,
+      "pr_number": 21,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:11.383679+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/itpplasma/libneo/pulls/21/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:11.383679+00:00",
+        "sha256": "957a6e6bc29e676cdd475eaa00637c17db9ea9a070798396f642e32a2a84ba04",
+        "source": "https://api.github.com/repos/itpplasma/libneo/pulls/21/commits?per_page=100&page=1"
+      },
+      "repository": "itpplasma/libneo",
+      "sha": "78cbb528fcd243b3af35520ce5b850773556b62d",
+      "temporal_basis": "committer_time",
+      "tree_sha": "0a27ea12dc0b74d28f4283d8981369e90bbef6cc"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "cae2816141b3a7d3fbfb0d46728e5c9c6b9d0ca0",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "63ac5f389e3df8187d62db1e54f2b77cb7d966df",
+      "ddfd65dd922d7b176ec5260055477cc937e6c470"
+    ],
+    "recursive_tree_entry_count": 492,
+    "recursive_tree_listing_sha256": "bc62045127829bf8bc55b6fea953152e73374fe1a5feff9978ba517a26d0b584",
+    "retrieved_at": "2026-10-05T20:18:13.085551+00:00",
+    "source": "https://github.com/itpplasma/libneo.git",
+    "status": "materialized",
+    "tree_sha": "e5e98191533f29f0106308d374b41debbe7df63a"
+  },
+  "pr_number": 21,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:11.804005+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/itpplasma/libneo/git/ref/heads/main"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:11.804005+00:00",
+        "sha256": "7610fb88a8e65f637eb81b75f45dc6dde24a485f0bdc1b8176b74c270c344e20",
+        "source": "https://api.github.com/repos/itpplasma/libneo/git/ref/heads/main"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:12.270779+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/itpplasma/libneo/commits?sha=main&until=2024-01-24T12%3A29%3A52.633607%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:12.270779+00:00",
+        "sha256": "d4484f826063f826d362fdae15ec78f1bc12ecc74c84adad939958495fe5e3df",
+        "source": "https://api.github.com/repos/itpplasma/libneo/commits?sha=main&until=2024-01-24T12%3A29%3A52.633607%2B00%3A00&per_page=1&page=1"
+      }
+    ],
+    "base_route_evidence": {
+      "ref_object_sha": "e533f4ded31a830dd4dc0cc04ee6e947f2b2a4a1",
+      "rule": "recorded_pr_base_ref_resolves"
+    },
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "cae2816141b3a7d3fbfb0d46728e5c9c6b9d0ca0",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:11.383679+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/itpplasma/libneo/pulls/21/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:11.383679+00:00",
+        "sha256": "957a6e6bc29e676cdd475eaa00637c17db9ea9a070798396f642e32a2a84ba04",
+        "source": "https://api.github.com/repos/itpplasma/libneo/pulls/21/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:18:10.825554+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/itpplasma/libneo/pulls/21"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:18:10.825554+00:00",
+      "sha256": "ae549f2f45ff383f25ea76a37a1b11bb1fe6d6968b460caed2e730c9342cc11f",
+      "source": "https://api.github.com/repos/itpplasma/libneo/pulls/21"
+    },
+    "recorded_pr_base_ref_resolves": true
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "itpplasma/libneo",
+  "selected_state": {
+    "author_time": "2024-01-24T12:23:48Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "cae2816141b3a7d3fbfb0d46728e5c9c6b9d0ca0",
+    "committer_time": "2024-01-24T12:23:48Z",
+    "effective_time": "2024-01-24T12:23:48+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "e5e98191533f29f0106308d374b41debbe7df63a"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-01-24T12:29:46.015073+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-01-24T12:29:52.633607+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

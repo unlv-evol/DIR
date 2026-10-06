@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "main",
+  "base_routing_source": "pr_base_ref",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_9213ACECEA46",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "87043b725f96ffab7a7fd299da9a477897dc7405",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "b6e9ecf4bc25eadcfc6501302d7b42092dbfa345"
+    ],
+    "recursive_tree_entry_count": 259,
+    "recursive_tree_listing_sha256": "98f68302b8d515558b9355ae66acaa0ad5fa4136e35fb4d75d39ae45b02cbf91",
+    "retrieved_at": "2026-10-05T20:18:21.413144+00:00",
+    "source": "https://github.com/aleph-im/aleph-vm.git",
+    "status": "materialized",
+    "tree_sha": "312488b623c818e66746216bec05f77cc7a6c2bc"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_9213ACECEA46/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_9213ACECEA46/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "repository": "aleph-im/aleph-vm",
+  "selected_state": {
+    "author_time": "2024-05-03T10:01:01Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "87043b725f96ffab7a7fd299da9a477897dc7405",
+    "committer_time": "2024-05-03T14:09:59Z",
+    "effective_time": "2024-05-03T14:09:59+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "312488b623c818e66746216bec05f77cc7a6c2bc"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-05-03T14:48:15.355598+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

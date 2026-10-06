@@ -1,0 +1,385 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_21DFA2A0B7DA",
+  "executed_at": "2026-10-05T20:16:08.452149+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-06-05T15:09:22Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-05T15:09:22Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-05T15:09:22+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "290944c4ffd4a2dd80add4dff0a606210b295065"
+        ],
+        "position": 1,
+        "pr_number": 151,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:07.761780+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:07.761780+00:00",
+          "sha256": "6660d40df315161c2b9e12b471b4f3f091211fc4f0080b7a2f2e90ba99e8526e",
+          "source": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151/commits?per_page=100&page=1"
+        },
+        "repository": "astahmer/openapi-zod-client",
+        "sha": "e4e516330b9fe2b253a9b0420f76c02949aa8ea1",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a89b98c77b229eb8e412731a2171b0c061d3d03c"
+      },
+      {
+        "author_time": "2023-06-05T15:10:12Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-05T15:10:12Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-05T15:10:12+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "e4e516330b9fe2b253a9b0420f76c02949aa8ea1"
+        ],
+        "position": 2,
+        "pr_number": 151,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:07.761780+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:07.761780+00:00",
+          "sha256": "6660d40df315161c2b9e12b471b4f3f091211fc4f0080b7a2f2e90ba99e8526e",
+          "source": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151/commits?per_page=100&page=1"
+        },
+        "repository": "astahmer/openapi-zod-client",
+        "sha": "6c29089e718ee658b372489945b4e79cb4317e6e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "acb6636b856e6e784f779970a52508d062843571"
+      },
+      {
+        "author_time": "2023-06-05T15:15:01Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-05T15:15:01Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-05T15:15:01+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "6c29089e718ee658b372489945b4e79cb4317e6e"
+        ],
+        "position": 3,
+        "pr_number": 151,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:07.761780+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:07.761780+00:00",
+          "sha256": "6660d40df315161c2b9e12b471b4f3f091211fc4f0080b7a2f2e90ba99e8526e",
+          "source": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151/commits?per_page=100&page=1"
+        },
+        "repository": "astahmer/openapi-zod-client",
+        "sha": "0582f902f3a9de2178ccfbd881698c125d9ac903",
+        "temporal_basis": "committer_time",
+        "tree_sha": "62767fa1d0755c1397dca03aa3f201f93255e0a5"
+      },
+      {
+        "author_time": "2023-06-06T11:23:08Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T11:23:08Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-06T11:23:08+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "0582f902f3a9de2178ccfbd881698c125d9ac903"
+        ],
+        "position": 4,
+        "pr_number": 151,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:07.761780+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:07.761780+00:00",
+          "sha256": "6660d40df315161c2b9e12b471b4f3f091211fc4f0080b7a2f2e90ba99e8526e",
+          "source": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151/commits?per_page=100&page=1"
+        },
+        "repository": "astahmer/openapi-zod-client",
+        "sha": "8bcc3d1a01d38f2ebb63c35123137cb0093e9580",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1f54183a5f0dee82136a268303f3f027322f7442"
+      },
+      {
+        "author_time": "2023-06-06T11:23:23Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T11:23:23Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-06T11:23:23+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "8bcc3d1a01d38f2ebb63c35123137cb0093e9580"
+        ],
+        "position": 5,
+        "pr_number": 151,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:07.761780+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:07.761780+00:00",
+          "sha256": "6660d40df315161c2b9e12b471b4f3f091211fc4f0080b7a2f2e90ba99e8526e",
+          "source": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151/commits?per_page=100&page=1"
+        },
+        "repository": "astahmer/openapi-zod-client",
+        "sha": "86e4a0d8db44675b2d79d978dcaf156b620198e2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a45ed391a460d6df268f3d2a11ea8ab5e7c43b04"
+      },
+      {
+        "author_time": "2023-06-06T11:23:55Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T11:23:55Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-06T11:23:55+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "86e4a0d8db44675b2d79d978dcaf156b620198e2"
+        ],
+        "position": 6,
+        "pr_number": 151,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:07.761780+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:07.761780+00:00",
+          "sha256": "6660d40df315161c2b9e12b471b4f3f091211fc4f0080b7a2f2e90ba99e8526e",
+          "source": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151/commits?per_page=100&page=1"
+        },
+        "repository": "astahmer/openapi-zod-client",
+        "sha": "60b9ed506a552faedc01b077c6109b50aa079087",
+        "temporal_basis": "committer_time",
+        "tree_sha": "af8626ee8dff4b0b44e3f1e8f6249bad8f6ae375"
+      },
+      {
+        "author_time": "2023-06-06T11:44:01Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T11:45:53Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-06T11:45:53+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "60b9ed506a552faedc01b077c6109b50aa079087"
+        ],
+        "position": 7,
+        "pr_number": 151,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:07.761780+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:07.761780+00:00",
+          "sha256": "6660d40df315161c2b9e12b471b4f3f091211fc4f0080b7a2f2e90ba99e8526e",
+          "source": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151/commits?per_page=100&page=1"
+        },
+        "repository": "astahmer/openapi-zod-client",
+        "sha": "861062af6b7a41153c3870497e89409b91c0ba9f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8b15a6a637148704d9d9cc0a388beba683ff6863"
+      },
+      {
+        "author_time": "2023-06-06T11:59:07Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T11:59:07Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-06T11:59:07+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "861062af6b7a41153c3870497e89409b91c0ba9f"
+        ],
+        "position": 8,
+        "pr_number": 151,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:07.761780+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:07.761780+00:00",
+          "sha256": "6660d40df315161c2b9e12b471b4f3f091211fc4f0080b7a2f2e90ba99e8526e",
+          "source": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151/commits?per_page=100&page=1"
+        },
+        "repository": "astahmer/openapi-zod-client",
+        "sha": "e1e6dc8e33bbb255fe27e8ff7d6fe77ba31e57e5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7d55ae509ce41a86a32ce7bd90e551539e56ff30"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-06-06T11:59:07Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-06-06T11:59:07Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-06-06T11:59:07+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "861062af6b7a41153c3870497e89409b91c0ba9f"
+      ],
+      "position": 8,
+      "pr_number": 151,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:07.761780+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:07.761780+00:00",
+        "sha256": "6660d40df315161c2b9e12b471b4f3f091211fc4f0080b7a2f2e90ba99e8526e",
+        "source": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151/commits?per_page=100&page=1"
+      },
+      "repository": "astahmer/openapi-zod-client",
+      "sha": "e1e6dc8e33bbb255fe27e8ff7d6fe77ba31e57e5",
+      "temporal_basis": "committer_time",
+      "tree_sha": "7d55ae509ce41a86a32ce7bd90e551539e56ff30"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "e1e6dc8e33bbb255fe27e8ff7d6fe77ba31e57e5",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "861062af6b7a41153c3870497e89409b91c0ba9f"
+    ],
+    "recursive_tree_entry_count": 181,
+    "recursive_tree_listing_sha256": "ce0762bdc77173a4011b18e70e68e890e6ee3fca559b22e082c6cc8d99295c83",
+    "retrieved_at": "2026-10-05T20:16:08.448205+00:00",
+    "source": "https://github.com/astahmer/openapi-zod-client.git",
+    "status": "materialized",
+    "tree_sha": "7d55ae509ce41a86a32ce7bd90e551539e56ff30"
+  },
+  "pr_number": 151,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "d3c23047c616a45a3c18f0e7479168ae1d3a7489",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:07.761780+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:07.761780+00:00",
+        "sha256": "6660d40df315161c2b9e12b471b4f3f091211fc4f0080b7a2f2e90ba99e8526e",
+        "source": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:16:07.177035+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:16:07.177035+00:00",
+      "sha256": "7b91c247df5873e0ce03db05025422e7f3b14d459f420468c0b154895d016975",
+      "source": "https://api.github.com/repos/astahmer/openapi-zod-client/pulls/151"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "astahmer/openapi-zod-client",
+  "selected_state": {
+    "author_time": "2023-06-06T11:59:07Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "e1e6dc8e33bbb255fe27e8ff7d6fe77ba31e57e5",
+    "committer_time": "2023-06-06T11:59:07Z",
+    "effective_time": "2023-06-06T11:59:07+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "7d55ae509ce41a86a32ce7bd90e551539e56ff30"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-06-06T13:54:07.980315+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-06-06T13:54:25.318481+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

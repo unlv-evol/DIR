@@ -1,0 +1,450 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_82C8812C7E0F",
+  "executed_at": "2026-10-05T20:18:04.307336+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-12-08T03:42:08Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-08T03:42:08Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-08T03:42:08+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "13d9f3591db6788bef0bbef5838a2ff2b6a7a2cf"
+        ],
+        "position": 1,
+        "pr_number": 281,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+          "sha256": "91af3c54c597cb932647cebe82b7472f8ebd30fcdb1bf62f70c1154f563aa6f5",
+          "source": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+        },
+        "repository": "pyg-team/pytorch-frame",
+        "sha": "7e1138474315299ca68025259b4a49d0c2cf1672",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6d64d35aee26364646a6513c5e874b96fced18f3"
+      },
+      {
+        "author_time": "2023-12-08T03:49:01Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-08T03:49:01Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-08T03:49:01+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7e1138474315299ca68025259b4a49d0c2cf1672"
+        ],
+        "position": 2,
+        "pr_number": 281,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+          "sha256": "91af3c54c597cb932647cebe82b7472f8ebd30fcdb1bf62f70c1154f563aa6f5",
+          "source": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+        },
+        "repository": "pyg-team/pytorch-frame",
+        "sha": "c46a6169039f74e66afbb2de5f345aebbd0676dd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "be2ef7e0c9c9d530639d13146fd1b36c90b35434"
+      },
+      {
+        "author_time": "2023-12-08T03:49:58Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-08T03:49:58Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-08T03:49:58+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c46a6169039f74e66afbb2de5f345aebbd0676dd"
+        ],
+        "position": 3,
+        "pr_number": 281,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+          "sha256": "91af3c54c597cb932647cebe82b7472f8ebd30fcdb1bf62f70c1154f563aa6f5",
+          "source": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+        },
+        "repository": "pyg-team/pytorch-frame",
+        "sha": "eacb543aed55b88f703ec5be46cf7d88dd45bc97",
+        "temporal_basis": "committer_time",
+        "tree_sha": "da9b02b3c100eac214605f21a7377f9b48e76730"
+      },
+      {
+        "author_time": "2023-12-08T03:54:34Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-08T03:54:34Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-08T03:54:34+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "eacb543aed55b88f703ec5be46cf7d88dd45bc97"
+        ],
+        "position": 4,
+        "pr_number": 281,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+          "sha256": "91af3c54c597cb932647cebe82b7472f8ebd30fcdb1bf62f70c1154f563aa6f5",
+          "source": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+        },
+        "repository": "pyg-team/pytorch-frame",
+        "sha": "b7802979c6aff3e677616edeb0804366ab984047",
+        "temporal_basis": "committer_time",
+        "tree_sha": "bf784be5f8e25fe2b80d9aac590ce066dc3f9ecd"
+      },
+      {
+        "author_time": "2023-12-08T03:59:15Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-08T03:59:15Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-08T03:59:15+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "b7802979c6aff3e677616edeb0804366ab984047"
+        ],
+        "position": 5,
+        "pr_number": 281,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+          "sha256": "91af3c54c597cb932647cebe82b7472f8ebd30fcdb1bf62f70c1154f563aa6f5",
+          "source": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+        },
+        "repository": "pyg-team/pytorch-frame",
+        "sha": "94a53b1d50a678136e7781496639b0edcf186594",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c5d6fefe1d0b6ea28a96b1b8c8e5bc7118183a49"
+      },
+      {
+        "author_time": "2023-12-08T06:40:57Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-08T06:40:57Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-08T06:40:57+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "94a53b1d50a678136e7781496639b0edcf186594",
+          "4ef20f415eaab8f34061fcae8c0b82ce02ebe05d"
+        ],
+        "position": 6,
+        "pr_number": 281,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+          "sha256": "91af3c54c597cb932647cebe82b7472f8ebd30fcdb1bf62f70c1154f563aa6f5",
+          "source": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+        },
+        "repository": "pyg-team/pytorch-frame",
+        "sha": "11448ff7f4386c4ded3a6de2113e5d30c7dc2301",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3aa51046404bc2b4e66e098ac9c3ce65b63143a2"
+      },
+      {
+        "author_time": "2023-12-08T06:58:11Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-08T06:58:11Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-08T06:58:11+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "11448ff7f4386c4ded3a6de2113e5d30c7dc2301"
+        ],
+        "position": 7,
+        "pr_number": 281,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+          "sha256": "91af3c54c597cb932647cebe82b7472f8ebd30fcdb1bf62f70c1154f563aa6f5",
+          "source": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+        },
+        "repository": "pyg-team/pytorch-frame",
+        "sha": "ef673a72de700c7260f181cf1e831309c321344c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "657584d95a3e2c4a31245c4fe6a64907ac1cf1ad"
+      },
+      {
+        "author_time": "2023-12-08T07:02:47Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-08T07:02:47Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-08T07:02:47+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "ef673a72de700c7260f181cf1e831309c321344c"
+        ],
+        "position": 8,
+        "pr_number": 281,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+          "sha256": "91af3c54c597cb932647cebe82b7472f8ebd30fcdb1bf62f70c1154f563aa6f5",
+          "source": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+        },
+        "repository": "pyg-team/pytorch-frame",
+        "sha": "68483e12e3c851fff412a5005e7f6666b211a8ce",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5c3b2a5392db79b8736b16cd1e3d13aa675627df"
+      },
+      {
+        "author_time": "2023-12-08T07:07:22Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-08T07:07:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-08T07:07:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "68483e12e3c851fff412a5005e7f6666b211a8ce"
+        ],
+        "position": 9,
+        "pr_number": 281,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+          "sha256": "91af3c54c597cb932647cebe82b7472f8ebd30fcdb1bf62f70c1154f563aa6f5",
+          "source": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+        },
+        "repository": "pyg-team/pytorch-frame",
+        "sha": "1f2175febcc93a103c20d960725927945aabe1b3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0788002e7909f8fb2be27f24e2e7620562373d5a"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-12-08T06:40:57Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-12-08T06:40:57Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-12-08T06:40:57+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "94a53b1d50a678136e7781496639b0edcf186594",
+        "4ef20f415eaab8f34061fcae8c0b82ce02ebe05d"
+      ],
+      "position": 6,
+      "pr_number": 281,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+        "sha256": "91af3c54c597cb932647cebe82b7472f8ebd30fcdb1bf62f70c1154f563aa6f5",
+        "source": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+      },
+      "repository": "pyg-team/pytorch-frame",
+      "sha": "11448ff7f4386c4ded3a6de2113e5d30c7dc2301",
+      "temporal_basis": "committer_time",
+      "tree_sha": "3aa51046404bc2b4e66e098ac9c3ce65b63143a2"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-12-08T03:59:15Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-12-08T03:59:15Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-12-08T03:59:15+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "b7802979c6aff3e677616edeb0804366ab984047"
+      ],
+      "position": 5,
+      "pr_number": 281,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+        "sha256": "91af3c54c597cb932647cebe82b7472f8ebd30fcdb1bf62f70c1154f563aa6f5",
+        "source": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+      },
+      "repository": "pyg-team/pytorch-frame",
+      "sha": "94a53b1d50a678136e7781496639b0edcf186594",
+      "temporal_basis": "committer_time",
+      "tree_sha": "c5d6fefe1d0b6ea28a96b1b8c8e5bc7118183a49"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "94a53b1d50a678136e7781496639b0edcf186594",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "b7802979c6aff3e677616edeb0804366ab984047"
+    ],
+    "recursive_tree_entry_count": 221,
+    "recursive_tree_listing_sha256": "93a069238cc03caba2bfa9186b6e379ab7b50455b6178d882a07c191bce751a7",
+    "retrieved_at": "2026-10-05T20:18:04.303826+00:00",
+    "source": "https://github.com/pyg-team/pytorch-frame.git",
+    "status": "materialized",
+    "tree_sha": "c5d6fefe1d0b6ea28a96b1b8c8e5bc7118183a49"
+  },
+  "pr_number": 281,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "4ef20f415eaab8f34061fcae8c0b82ce02ebe05d",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:03.343954+00:00",
+        "sha256": "91af3c54c597cb932647cebe82b7472f8ebd30fcdb1bf62f70c1154f563aa6f5",
+        "source": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:18:02.788203+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:18:02.788203+00:00",
+      "sha256": "08fc9a4fd0fd6c41d1800693b22510a221e7c637b52c48abccc66e6cde472674",
+      "source": "https://api.github.com/repos/pyg-team/pytorch-frame/pulls/281"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "pyg-team/pytorch-frame",
+  "selected_state": {
+    "author_time": "2023-12-08T03:59:15Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "94a53b1d50a678136e7781496639b0edcf186594",
+    "committer_time": "2023-12-08T03:59:15Z",
+    "effective_time": "2023-12-08T03:59:15+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "c5d6fefe1d0b6ea28a96b1b8c8e5bc7118183a49"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-12-08T06:10:30.031750+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-12-08T06:10:45.819429+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

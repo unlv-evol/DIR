@@ -48,7 +48,7 @@ into the broader study. See
 [`docs/repository_structure.md`](docs/repository_structure.md) for the
 corresponding output locations.
 
-Current infrastructure includes Stage A screening, Stage B lossless packaging, two-pass Stage C extraction, and versioned Post-C historical processability contracts. Stage C derives `tFG` from the isolated conversation. Post-C v3 establishes the historically justified development repository baseline `R_i(tFG)` through B1 and conditional B2, with B5 support only, without constructing complete `H_i(tFG)` or making an eligibility decision during initialization. Stage F later consumes that fixed anchor, constructs historical information, and separates discovery from held-out evaluation.
+Current infrastructure includes Stage A screening, Stage B lossless packaging, two-pass Stage C extraction, and Post-Stage-C historical repository reconstruction. Stage C derives authoritative `tFG` from the isolated conversation. Post-C reconstructs exact repository state `S_i(tFG)` from the established focal PR Git lineage or, when no focal commit qualifies, its deterministically established applicable base lineage. Final Post-C eligibility is resolved for the 111 authoritative processable cases. Stage D has not started. Stage F later uses the fixed state to construct `H_i(tFG)` and separates discovery from held-out evaluation.
 
 ## Core Validity Boundary
 

@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "main",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_FE82721D67EB",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "71d907f8fe5797d6a990a9ad07627ab1748cf31e",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "81f8a99b93bc2bd5e79b09dcc76b4c06ce88d1d8"
+    ],
+    "recursive_tree_entry_count": 619,
+    "recursive_tree_listing_sha256": "185147d053a1c174a3d6cb87c894a0247a124056e3e828a48fe62e2191eb3ca5",
+    "retrieved_at": "2026-10-05T22:51:18.942543+00:00",
+    "source": "https://github.com/opensearch-project/opensearch-migrations.git",
+    "status": "materialized",
+    "tree_sha": "c296050343f0a1cac443054686f267b3290607b8"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_FE82721D67EB/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_FE82721D67EB/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "opensearch-project/opensearch-migrations",
+  "selected_state": {
+    "author_time": "2023-09-07T05:14:29Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "71d907f8fe5797d6a990a9ad07627ab1748cf31e",
+    "committer_time": "2023-09-07T05:18:28Z",
+    "effective_time": "2023-09-07T05:18:28+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "c296050343f0a1cac443054686f267b3290607b8"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-09-07T14:13:12.585890+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

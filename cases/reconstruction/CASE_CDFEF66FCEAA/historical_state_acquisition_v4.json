@@ -1,0 +1,674 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "main",
+  "base_routing_source": "",
+  "case_id": "CASE_CDFEF66FCEAA",
+  "executed_at": "2026-10-05T22:49:49.085158+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-07-04T05:25:07Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-04T05:25:07Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-04T05:25:07+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "e53a757ced52cb76456641e22c45d39812106199"
+        ],
+        "position": 1,
+        "pr_number": 931,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+          "sha256": "6d5a8dd38182a5ed2a767442e3a67e7aef3625fe2a8dd1e1fd4f629a32a3bb9b",
+          "source": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+        },
+        "repository": "SSWConsulting/SSW.Website",
+        "sha": "62aa3f1fae479f05478d4179202c5e2061047cc8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "45cbcd866b8d62181839ff457828618eacb5ed48"
+      },
+      {
+        "author_time": "2023-07-04T05:48:54Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-04T05:48:54Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-04T05:48:54+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "62aa3f1fae479f05478d4179202c5e2061047cc8"
+        ],
+        "position": 2,
+        "pr_number": 931,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+          "sha256": "6d5a8dd38182a5ed2a767442e3a67e7aef3625fe2a8dd1e1fd4f629a32a3bb9b",
+          "source": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+        },
+        "repository": "SSWConsulting/SSW.Website",
+        "sha": "ac56a7808766e48721afd25be8bff08a99a17100",
+        "temporal_basis": "committer_time",
+        "tree_sha": "43fa2ac2cb391423b4bd7496c3657a6e0056457a"
+      },
+      {
+        "author_time": "2023-07-04T08:09:25Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-04T08:09:25Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-04T08:09:25+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ac56a7808766e48721afd25be8bff08a99a17100"
+        ],
+        "position": 3,
+        "pr_number": 931,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+          "sha256": "6d5a8dd38182a5ed2a767442e3a67e7aef3625fe2a8dd1e1fd4f629a32a3bb9b",
+          "source": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+        },
+        "repository": "SSWConsulting/SSW.Website",
+        "sha": "d0b858777c85e6d95fda1fe74ffd2052ca2a4cec",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c093a475e5c30db0962041a21117b782665f899c"
+      },
+      {
+        "author_time": "2023-07-04T08:16:24Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-04T08:16:24Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-04T08:16:24+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d0b858777c85e6d95fda1fe74ffd2052ca2a4cec",
+          "5c577f54eea2b5d2eb0ebf3fac624aec1b2b73d6"
+        ],
+        "position": 4,
+        "pr_number": 931,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+          "sha256": "6d5a8dd38182a5ed2a767442e3a67e7aef3625fe2a8dd1e1fd4f629a32a3bb9b",
+          "source": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+        },
+        "repository": "SSWConsulting/SSW.Website",
+        "sha": "dea3f82dae5f2815a11d88f9b24bd042478d9d78",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b57e30fa7358f8d8a2d7c615bbc8864efbaa91e2"
+      },
+      {
+        "author_time": "2023-07-04T08:16:53Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-04T08:16:53Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-04T08:16:53+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "dea3f82dae5f2815a11d88f9b24bd042478d9d78"
+        ],
+        "position": 5,
+        "pr_number": 931,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+          "sha256": "6d5a8dd38182a5ed2a767442e3a67e7aef3625fe2a8dd1e1fd4f629a32a3bb9b",
+          "source": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+        },
+        "repository": "SSWConsulting/SSW.Website",
+        "sha": "50f14df131a1354b3e5e5e53d674d21d73c8d4f9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e4afa3e310ea77bc746f7424fec40237298d4ecf"
+      },
+      {
+        "author_time": "2023-07-04T23:08:50Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-04T23:08:50Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-04T23:08:50+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "50f14df131a1354b3e5e5e53d674d21d73c8d4f9"
+        ],
+        "position": 6,
+        "pr_number": 931,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+          "sha256": "6d5a8dd38182a5ed2a767442e3a67e7aef3625fe2a8dd1e1fd4f629a32a3bb9b",
+          "source": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+        },
+        "repository": "SSWConsulting/SSW.Website",
+        "sha": "a911c6dd97652a64355b28b7477a864a051fc409",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3e8063eee8d3ceacd4a7a24f1d625684af7f2b7b"
+      },
+      {
+        "author_time": "2023-07-05T00:13:43Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T00:13:43Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-05T00:13:43+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a911c6dd97652a64355b28b7477a864a051fc409"
+        ],
+        "position": 7,
+        "pr_number": 931,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+          "sha256": "6d5a8dd38182a5ed2a767442e3a67e7aef3625fe2a8dd1e1fd4f629a32a3bb9b",
+          "source": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+        },
+        "repository": "SSWConsulting/SSW.Website",
+        "sha": "675509e6be35044dc20267f9ec789738db5123ca",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3c5cca13339ee0087d16882eefb93c621c9f2764"
+      },
+      {
+        "author_time": "2023-07-05T00:22:47Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T00:22:47Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-05T00:22:47+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "675509e6be35044dc20267f9ec789738db5123ca"
+        ],
+        "position": 8,
+        "pr_number": 931,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+          "sha256": "6d5a8dd38182a5ed2a767442e3a67e7aef3625fe2a8dd1e1fd4f629a32a3bb9b",
+          "source": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+        },
+        "repository": "SSWConsulting/SSW.Website",
+        "sha": "ec2abed9ca6382bc476e373a06dd8f37b265b854",
+        "temporal_basis": "committer_time",
+        "tree_sha": "646dbd9de6f81e38bd695f0347f09b9f7897497c"
+      },
+      {
+        "author_time": "2023-07-05T00:24:57Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T00:24:57Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-05T00:24:57+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ec2abed9ca6382bc476e373a06dd8f37b265b854"
+        ],
+        "position": 9,
+        "pr_number": 931,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+          "sha256": "6d5a8dd38182a5ed2a767442e3a67e7aef3625fe2a8dd1e1fd4f629a32a3bb9b",
+          "source": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+        },
+        "repository": "SSWConsulting/SSW.Website",
+        "sha": "33bd8d728cc2245b7a77b616be6e7f0df859be85",
+        "temporal_basis": "committer_time",
+        "tree_sha": "25600037a5b216a976cff65eeb50b44b235f1a4e"
+      },
+      {
+        "author_time": "2023-07-05T00:27:29Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T00:27:29Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-05T00:27:29+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "33bd8d728cc2245b7a77b616be6e7f0df859be85",
+          "4494a43d37265a3010a907cc1399f1aa9256e8d0"
+        ],
+        "position": 10,
+        "pr_number": 931,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+          "sha256": "6d5a8dd38182a5ed2a767442e3a67e7aef3625fe2a8dd1e1fd4f629a32a3bb9b",
+          "source": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+        },
+        "repository": "SSWConsulting/SSW.Website",
+        "sha": "b310712d9a7014c283a9ffd50b72cac7169b9b79",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9a570319a4b1cde07f4150516ad4de5f00b8a46d"
+      },
+      {
+        "author_time": "2023-07-05T00:30:43Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T00:30:43Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-05T00:30:43+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "b310712d9a7014c283a9ffd50b72cac7169b9b79"
+        ],
+        "position": 11,
+        "pr_number": 931,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+          "sha256": "6d5a8dd38182a5ed2a767442e3a67e7aef3625fe2a8dd1e1fd4f629a32a3bb9b",
+          "source": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+        },
+        "repository": "SSWConsulting/SSW.Website",
+        "sha": "3d23f8adbd2ee06c31c8d618d8af11148c25a982",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9416ed3753c34116003d5b35bd70e2232cef5945"
+      },
+      {
+        "author_time": "2023-07-05T00:42:33Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T00:42:33Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-05T00:42:33+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "3d23f8adbd2ee06c31c8d618d8af11148c25a982"
+        ],
+        "position": 12,
+        "pr_number": 931,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+          "sha256": "6d5a8dd38182a5ed2a767442e3a67e7aef3625fe2a8dd1e1fd4f629a32a3bb9b",
+          "source": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+        },
+        "repository": "SSWConsulting/SSW.Website",
+        "sha": "4fd5d0e19bab4d5b7338d45209559de338aed107",
+        "temporal_basis": "committer_time",
+        "tree_sha": "86c41a95d58ffbc314d4ed876aff770ce7466346"
+      },
+      {
+        "author_time": "2023-07-05T01:17:57Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T01:17:57Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-05T01:17:57+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "4fd5d0e19bab4d5b7338d45209559de338aed107"
+        ],
+        "position": 13,
+        "pr_number": 931,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+          "sha256": "6d5a8dd38182a5ed2a767442e3a67e7aef3625fe2a8dd1e1fd4f629a32a3bb9b",
+          "source": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+        },
+        "repository": "SSWConsulting/SSW.Website",
+        "sha": "14277c5034505277f2a6396f24a9202e39c0454d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f82fde8b2e1d25237d6ade73e714ec9eb11ca25a"
+      },
+      {
+        "author_time": "2023-07-05T01:18:56Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T01:18:56Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-05T01:18:56+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "14277c5034505277f2a6396f24a9202e39c0454d"
+        ],
+        "position": 14,
+        "pr_number": 931,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+          "sha256": "6d5a8dd38182a5ed2a767442e3a67e7aef3625fe2a8dd1e1fd4f629a32a3bb9b",
+          "source": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+        },
+        "repository": "SSWConsulting/SSW.Website",
+        "sha": "3d9b52471fe79b7622be59084f660ceaaaee3271",
+        "temporal_basis": "committer_time",
+        "tree_sha": "11d7100317bfac23713ded4fb697d8ecec96e61b"
+      },
+      {
+        "author_time": "2023-07-05T01:23:32Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T01:23:32Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-05T01:23:32+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "3d9b52471fe79b7622be59084f660ceaaaee3271"
+        ],
+        "position": 15,
+        "pr_number": 931,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+          "sha256": "6d5a8dd38182a5ed2a767442e3a67e7aef3625fe2a8dd1e1fd4f629a32a3bb9b",
+          "source": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+        },
+        "repository": "SSWConsulting/SSW.Website",
+        "sha": "2fe3d777b7dbe72bd4637cd4edbe7719ff797ae6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b06ab9ed2c6bcbd108dfcd16f219993c0cb91bd3"
+      },
+      {
+        "author_time": "2023-07-05T03:04:53Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T03:04:53Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-05T03:04:53+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2fe3d777b7dbe72bd4637cd4edbe7719ff797ae6"
+        ],
+        "position": 16,
+        "pr_number": 931,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+          "sha256": "6d5a8dd38182a5ed2a767442e3a67e7aef3625fe2a8dd1e1fd4f629a32a3bb9b",
+          "source": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+        },
+        "repository": "SSWConsulting/SSW.Website",
+        "sha": "8ee7882109c3b5f377f9020ce2d1fc0ff098cc99",
+        "temporal_basis": "committer_time",
+        "tree_sha": "57941bfadfaad4e5087c672c0a78a45e9cad72f0"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-07-05T01:17:57Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-07-05T01:17:57Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-07-05T01:17:57+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "4fd5d0e19bab4d5b7338d45209559de338aed107"
+      ],
+      "position": 13,
+      "pr_number": 931,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+        "sha256": "6d5a8dd38182a5ed2a767442e3a67e7aef3625fe2a8dd1e1fd4f629a32a3bb9b",
+        "source": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+      },
+      "repository": "SSWConsulting/SSW.Website",
+      "sha": "14277c5034505277f2a6396f24a9202e39c0454d",
+      "temporal_basis": "committer_time",
+      "tree_sha": "f82fde8b2e1d25237d6ade73e714ec9eb11ca25a"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-07-05T00:42:33Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-07-05T00:42:33Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-07-05T00:42:33+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "3d23f8adbd2ee06c31c8d618d8af11148c25a982"
+      ],
+      "position": 12,
+      "pr_number": 931,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+        "sha256": "6d5a8dd38182a5ed2a767442e3a67e7aef3625fe2a8dd1e1fd4f629a32a3bb9b",
+        "source": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+      },
+      "repository": "SSWConsulting/SSW.Website",
+      "sha": "4fd5d0e19bab4d5b7338d45209559de338aed107",
+      "temporal_basis": "committer_time",
+      "tree_sha": "86c41a95d58ffbc314d4ed876aff770ce7466346"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "4fd5d0e19bab4d5b7338d45209559de338aed107",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "3d23f8adbd2ee06c31c8d618d8af11148c25a982"
+    ],
+    "recursive_tree_entry_count": 8261,
+    "recursive_tree_listing_sha256": "d566acada6ac95cc34647e1b8dde981a323b3451d0a30cb93704ded2a4c1e573",
+    "retrieved_at": "2026-10-05T22:49:49.080960+00:00",
+    "source": "https://github.com/SSWConsulting/SSW.Website.git",
+    "status": "materialized",
+    "tree_sha": "86c41a95d58ffbc314d4ed876aff770ce7466346"
+  },
+  "pr_number": 931,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "4494a43d37265a3010a907cc1399f1aa9256e8d0",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:49:40.397941+00:00",
+        "sha256": "6d5a8dd38182a5ed2a767442e3a67e7aef3625fe2a8dd1e1fd4f629a32a3bb9b",
+        "source": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T22:49:39.806778+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931"
+        }
+      ],
+      "retrieved_at": "2026-10-05T22:49:39.806778+00:00",
+      "sha256": "41d3049f77e88b403263ae25e5977869c5a5de13e971cec8868e1e9752010c80",
+      "source": "https://api.github.com/repos/SSWConsulting/SSW.Website/pulls/931"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "SSWConsulting/SSW.Website",
+  "selected_state": {
+    "author_time": "2023-07-05T00:42:33Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "4fd5d0e19bab4d5b7338d45209559de338aed107",
+    "committer_time": "2023-07-05T00:42:33Z",
+    "effective_time": "2023-07-05T00:42:33+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "86c41a95d58ffbc314d4ed876aff770ce7466346"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-07-05T01:12:38.976834+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-07-05T01:12:41.129201+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

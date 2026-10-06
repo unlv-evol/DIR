@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_AB42B2598A84",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "b294083892f35eb228788665591f51b407a348e0",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "51f462f00587762552d6caf1135aaccbaad36d90"
+    ],
+    "recursive_tree_entry_count": 180,
+    "recursive_tree_listing_sha256": "b10311af67ab0ef4a9fbe1e8784cfbc043094ff1a4db08556227a3dbfbcb6b95",
+    "retrieved_at": "2026-10-05T20:19:01.336683+00:00",
+    "source": "https://github.com/Altinn/altinn-broker.git",
+    "status": "materialized",
+    "tree_sha": "0fb862c2106e659ff0849d316d1afd850a04d985"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_AB42B2598A84/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_AB42B2598A84/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "Altinn/altinn-broker",
+  "selected_state": {
+    "author_time": "2024-01-08T10:27:07Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "b294083892f35eb228788665591f51b407a348e0",
+    "committer_time": "2024-01-08T10:27:07Z",
+    "effective_time": "2024-01-08T10:27:07+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "0fb862c2106e659ff0849d316d1afd850a04d985"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-01-08T11:48:53.299044+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

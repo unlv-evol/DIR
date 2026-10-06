@@ -1,0 +1,46 @@
+{
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_1FEA1F5DE7C1",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "9cd4e8a5ad9b48fad5656caa563d1bcf76786b88",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "0e490597c17a1c5d2c25e47c9d249e6ffcbc6b8a",
+      "b03f58432570802bee35c42fa245f6ad0c83454d"
+    ],
+    "recursive_tree_entry_count": 954,
+    "recursive_tree_listing_sha256": "c3a8c9227c9def73f48b719119b8ee9cab671adbf15bc31ac0bb94d099242fa7",
+    "retrieved_at": "2026-10-05T20:16:05.873730+00:00",
+    "source": "https://github.com/box/developer.box.com.git",
+    "status": "materialized",
+    "tree_sha": "c728b6c80528e4d9cc0f5695eab40f8dff884ccd"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_1FEA1F5DE7C1/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_1FEA1F5DE7C1/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "box/developer.box.com",
+  "selected_state": {
+    "author_time": "2024-04-16T10:55:52Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "9cd4e8a5ad9b48fad5656caa563d1bcf76786b88",
+    "committer_time": "2024-04-16T10:55:52Z",
+    "effective_time": "2024-04-16T10:55:52+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "c728b6c80528e4d9cc0f5695eab40f8dff884ccd"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-04-16T11:15:01.694532+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

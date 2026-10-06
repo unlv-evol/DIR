@@ -1,0 +1,2637 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_72448D73D60F",
+  "executed_at": "2026-10-05T20:17:41.973923+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-11-13T14:58:08Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-13T14:58:08Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-13T14:58:08+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ab6f9d17b019e27244e74e774cd34610bc7081d5"
+        ],
+        "position": 1,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "68f88d357225933cc706ead735847584e0452e7c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "43b67af646a22ed43550a8ac2752c901fa55dbef"
+      },
+      {
+        "author_time": "2023-11-14T02:44:55Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-14T02:44:55Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-14T02:44:55+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "68f88d357225933cc706ead735847584e0452e7c",
+          "5ad783e43a1d46663955b124d95c9a41094834b5"
+        ],
+        "position": 2,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "302eda7f6fa878b3808941e541dbcb920073022f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6d0b15a7aac8ba6558b97631772a5f755990e051"
+      },
+      {
+        "author_time": "2023-11-14T17:26:52Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-14T17:26:52Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-14T17:26:52+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "302eda7f6fa878b3808941e541dbcb920073022f"
+        ],
+        "position": 3,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "25ecc11325f1bab08e595fa7bd308aecf986c5e3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c509756241c988e972661b08923089b0de94f236"
+      },
+      {
+        "author_time": "2023-11-14T18:30:33Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-14T18:30:33Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-14T18:30:33+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "25ecc11325f1bab08e595fa7bd308aecf986c5e3"
+        ],
+        "position": 4,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "4050d1813c8d87a1bdb9a043f206f05bf92147cd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1febe97841271419c1f459d8e61e5caf4397b097"
+      },
+      {
+        "author_time": "2023-11-15T17:38:45Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-15T17:38:45Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-15T17:38:45+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "4050d1813c8d87a1bdb9a043f206f05bf92147cd"
+        ],
+        "position": 5,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "e0fb3c1baf92a28d58f5bffec9642359bdd9dacd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3b9d991f1db939fbb6f1d7341688c55997d151e8"
+      },
+      {
+        "author_time": "2023-11-15T17:59:59Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-15T17:59:59Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-15T17:59:59+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "e0fb3c1baf92a28d58f5bffec9642359bdd9dacd"
+        ],
+        "position": 6,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "52dc6e7fd5fabb9fe461baabcb99cf0adc8345e0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2b0f24a245759f40a5e547e67e5414db7c131042"
+      },
+      {
+        "author_time": "2023-11-15T18:42:47Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-15T18:42:47Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-15T18:42:47+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "52dc6e7fd5fabb9fe461baabcb99cf0adc8345e0"
+        ],
+        "position": 7,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "b26a6af8368c0d4601c3d78f2a79e6b5c19074fd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "acc54619ee4e93bdd9a9e3adde9cb661f40486a4"
+      },
+      {
+        "author_time": "2023-11-15T20:01:26Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-15T20:01:26Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-15T20:01:26+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "b26a6af8368c0d4601c3d78f2a79e6b5c19074fd"
+        ],
+        "position": 8,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "1e1cfe7ae9e64f9f30eec52012174b3a98e1d14e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6d1fa68705cea0af0102c2bdd5f6d363043d0360"
+      },
+      {
+        "author_time": "2023-11-16T02:24:27Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-16T02:24:27Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-16T02:24:27+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1e1cfe7ae9e64f9f30eec52012174b3a98e1d14e"
+        ],
+        "position": 9,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "2d119597a17b01a4c2fbe866c14170029e30de63",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ae8758d2546af3674bf934056bee1c825a9ad8d0"
+      },
+      {
+        "author_time": "2023-11-16T05:01:33Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-16T05:01:33Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-16T05:01:33+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2d119597a17b01a4c2fbe866c14170029e30de63"
+        ],
+        "position": 10,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "630d90e112a1aa1ff1c1baf69f677d4c1fc8bac3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2553d4b2272ec669331122e6d5e25c39af2eef10"
+      },
+      {
+        "author_time": "2023-11-20T14:43:45Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-20T14:43:45Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-20T14:43:45+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "630d90e112a1aa1ff1c1baf69f677d4c1fc8bac3"
+        ],
+        "position": 11,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "e737bd3cdd98ae7b871274a239cc4bb6f04cd4b6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a44ce48d6ccb275f82c97cc4ed633a0a554269a7"
+      },
+      {
+        "author_time": "2023-11-20T15:28:49Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-20T15:28:49Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-20T15:28:49+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e737bd3cdd98ae7b871274a239cc4bb6f04cd4b6",
+          "630300e6555e88ae69ec1acdabf6b9fd6aba9fbd"
+        ],
+        "position": 12,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "7dd157856d5543b500fd2f07458a83589a2a0228",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b230ff70b71163475852b2c7a7310d0cbbabbfd7"
+      },
+      {
+        "author_time": "2023-11-20T15:34:55Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-20T15:34:55Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-20T15:34:55+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7dd157856d5543b500fd2f07458a83589a2a0228",
+          "6e294e99be9272a31c18732f2d99b016bbacbaef"
+        ],
+        "position": 13,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "ae74d23bbb5decf24fd2930b06100cf1612af784",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3fe7c0d6c0d0863a7f80f6898170094142f88b5f"
+      },
+      {
+        "author_time": "2023-11-20T15:41:13Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-20T15:41:13Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-20T15:41:13+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "ae74d23bbb5decf24fd2930b06100cf1612af784",
+          "b629d63e059178b918684f407bd3b5088bae0e94"
+        ],
+        "position": 14,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "d1506853f09c05310cc8abd46caea20045f637e9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3fe7c0d6c0d0863a7f80f6898170094142f88b5f"
+      },
+      {
+        "author_time": "2023-11-20T15:46:06Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-20T15:46:06Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-20T15:46:06+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d1506853f09c05310cc8abd46caea20045f637e9",
+          "fdc751f0543e51cf94d5420e4d33e7da1926e03e"
+        ],
+        "position": 15,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "cb03716ea2ccb71206000801bcf286f7f8a8362e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5801c7d95ce4c71ede3cc31bbba128948ec27aa4"
+      },
+      {
+        "author_time": "2023-11-20T15:46:33Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-20T15:46:33Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-20T15:46:33+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "cb03716ea2ccb71206000801bcf286f7f8a8362e"
+        ],
+        "position": 16,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "89529fda3376f7c5f06a40fbc30f7d082d4ad3d7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "66ef1e073a743ca0c43141ddca04d766cae9aae0"
+      },
+      {
+        "author_time": "2023-11-20T16:50:09Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-20T16:50:09Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-20T16:50:09+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "89529fda3376f7c5f06a40fbc30f7d082d4ad3d7"
+        ],
+        "position": 17,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "cade3e982ca04746dedb6ccdb5b7866a2d351bea",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1e698eaf4cb71a19787f9a31fe47e15048eb6905"
+      },
+      {
+        "author_time": "2023-11-20T22:22:22Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-20T22:22:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-20T22:22:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "cade3e982ca04746dedb6ccdb5b7866a2d351bea"
+        ],
+        "position": 18,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "c79fa29018f71e084da2b1c397a9e5161568efc5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3b1b8259547d683314a08ede7e460aba302bf525"
+      },
+      {
+        "author_time": "2023-11-21T18:36:24Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-21T18:36:24Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-21T18:36:24+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "c79fa29018f71e084da2b1c397a9e5161568efc5"
+        ],
+        "position": 19,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "f4b4be2b396efea885546a0a3b7ae9d7b4590f67",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8b496c3bcc9a671e18282251d008968328d9b61e"
+      },
+      {
+        "author_time": "2023-11-21T22:15:45Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-21T22:15:45Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-21T22:15:45+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f4b4be2b396efea885546a0a3b7ae9d7b4590f67"
+        ],
+        "position": 20,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "c54f1f7af4dfab4096edb1b7c4d948ac0182b805",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0ce6545f31f0bdaab8ec8a6af0b3c1343f5526f5"
+      },
+      {
+        "author_time": "2023-11-22T17:43:31Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-22T17:43:31Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-22T17:43:31+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "c54f1f7af4dfab4096edb1b7c4d948ac0182b805"
+        ],
+        "position": 21,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "9bf18c5f1189b3f093e984c5e32415997d9b32e0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "91e59020c757331a0bef14e9829cbf97c4db45d1"
+      },
+      {
+        "author_time": "2023-11-22T19:11:27Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-22T19:11:27Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-22T19:11:27+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "9bf18c5f1189b3f093e984c5e32415997d9b32e0"
+        ],
+        "position": 22,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "38a26c858b827b1357c6fff2376c279f3832ca3e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "922cfb59478f00d55882477dac68cdf44e48640a"
+      },
+      {
+        "author_time": "2023-11-25T05:20:34Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-25T05:20:34Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-25T05:20:34+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "38a26c858b827b1357c6fff2376c279f3832ca3e"
+        ],
+        "position": 23,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "8c6e360ac38ae6d7bea4ee2bd23b0451da605708",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ab076d64250c7e01aabec15caf0c5976f1923227"
+      },
+      {
+        "author_time": "2023-11-27T01:30:36Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-27T01:30:36Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-27T01:30:36+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8c6e360ac38ae6d7bea4ee2bd23b0451da605708",
+          "b32448b99b03f7bb683968559fca9771ea351943"
+        ],
+        "position": 24,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "9fcebd8d4b179b7588648a9a5a1a289a8824fc66",
+        "temporal_basis": "committer_time",
+        "tree_sha": "113d2c6b73eec85874f71bd5fbb1ddbbc0968fe5"
+      },
+      {
+        "author_time": "2023-11-27T01:39:16Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-27T01:39:16Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-27T01:39:16+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "9fcebd8d4b179b7588648a9a5a1a289a8824fc66",
+          "6428d3e3fc1cf21000af86e174ddab04cb7d01a8"
+        ],
+        "position": 25,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "9d4fbf4a6f7d1c6e7bfd98135d50ba35f97c56df",
+        "temporal_basis": "committer_time",
+        "tree_sha": "145843d7c974aebd73ce75d224a8776c7e609b6c"
+      },
+      {
+        "author_time": "2023-11-27T01:41:38Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-27T01:41:38Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-27T01:41:38+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "9d4fbf4a6f7d1c6e7bfd98135d50ba35f97c56df",
+          "4302f53c9074390c934ea8511d45515f633e1f28"
+        ],
+        "position": 26,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "b57f7f41dff13805ee02fd97fb4d9d41653a6cc8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f0ae9f756f6d611a21903ec6b2453d43e3c4aaf4"
+      },
+      {
+        "author_time": "2023-11-27T16:12:27Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-27T16:12:27Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-27T16:12:27+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "b57f7f41dff13805ee02fd97fb4d9d41653a6cc8",
+          "a4e256cb89b1cb182b1e37a428ef768c4d8aa8a6"
+        ],
+        "position": 27,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "188205059e9e665859ed3936cc94505099aefd30",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0fa4c87460d12800b3665dee6059217972056527"
+      },
+      {
+        "author_time": "2023-11-27T16:35:32Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-27T16:35:32Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-27T16:35:32+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "188205059e9e665859ed3936cc94505099aefd30"
+        ],
+        "position": 28,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "465188143878aede9d2bbca9acb808b60a261d28",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a19162b8a4379c6f478dfdc19f0f1c5141a6dab5"
+      },
+      {
+        "author_time": "2023-11-27T19:57:48Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-27T19:57:48Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-27T19:57:48+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "465188143878aede9d2bbca9acb808b60a261d28"
+        ],
+        "position": 29,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "98969472e12237afe62e8ec482eddeb263fbdaa5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f08dc315d4486e5db7521576e7d6fc7f6c2323ae"
+      },
+      {
+        "author_time": "2023-11-27T21:15:03Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-27T21:15:03Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-27T21:15:03+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "98969472e12237afe62e8ec482eddeb263fbdaa5",
+          "d8bd2c6a2e7e2802138fe46bebb54bef06861099"
+        ],
+        "position": 30,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "b26f1864a6bea78c55e58eac6acb2223ae87f951",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7f2915d08073aa626d5a44d79b1b23a4f7975442"
+      },
+      {
+        "author_time": "2023-11-28T00:48:54Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-28T00:48:54Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-28T00:48:54+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "b26f1864a6bea78c55e58eac6acb2223ae87f951",
+          "35ca8fd567da559df6dbc992b7d07466b0a052ca"
+        ],
+        "position": 31,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "98c82b670a3d494f0086c3ea52e3f53e61d6fb4d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0591a8b1569bb870ff05cafeec03f3bc4415e0d3"
+      },
+      {
+        "author_time": "2023-11-28T16:53:17Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-28T16:53:17Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-28T16:53:17+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "98c82b670a3d494f0086c3ea52e3f53e61d6fb4d"
+        ],
+        "position": 32,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "3484bdefa7527b47a81736ab083d5cd668ba0aaa",
+        "temporal_basis": "committer_time",
+        "tree_sha": "83ac70b78167532328a198551a6e076ba7fd6181"
+      },
+      {
+        "author_time": "2023-11-28T16:55:49Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-28T16:55:49Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-28T16:55:49+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "3484bdefa7527b47a81736ab083d5cd668ba0aaa"
+        ],
+        "position": 33,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "6c414a7cb3ef0854e7104913b0394929b4a50e87",
+        "temporal_basis": "committer_time",
+        "tree_sha": "51fd6ffc87c410072403e4e917fdb63c7f687f70"
+      },
+      {
+        "author_time": "2023-11-28T21:59:19Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-28T21:59:19Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-28T21:59:19+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6c414a7cb3ef0854e7104913b0394929b4a50e87"
+        ],
+        "position": 34,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "d4bb0f3108b53ef166fa99aebd435afa8f57218e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3dbac9d5446c344c4972fcbb7dd5804e655ed6ac"
+      },
+      {
+        "author_time": "2023-11-29T20:12:17Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-29T20:12:17Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-29T20:12:17+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d4bb0f3108b53ef166fa99aebd435afa8f57218e"
+        ],
+        "position": 35,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "a07398b7aa4cabbc797a4cbe5664fd4ef1ead0ba",
+        "temporal_basis": "committer_time",
+        "tree_sha": "92f15ebf826e318dd7f7d0329c45efe03fa02532"
+      },
+      {
+        "author_time": "2023-11-29T20:22:40Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-29T20:22:40Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-29T20:22:40+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a07398b7aa4cabbc797a4cbe5664fd4ef1ead0ba"
+        ],
+        "position": 36,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "d09bb46175d4b5897aeebcda100068684059f9e2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e282293bf6f3b83a1f676daf14331318dcacb6c9"
+      },
+      {
+        "author_time": "2023-11-30T03:18:22Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T03:18:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-30T03:18:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d09bb46175d4b5897aeebcda100068684059f9e2"
+        ],
+        "position": 37,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "8a0aca5c1280b91d03cff27de3b9d2b21f382b82",
+        "temporal_basis": "committer_time",
+        "tree_sha": "24510ca382728e1d5661cdb3c106a008a4ccc178"
+      },
+      {
+        "author_time": "2023-11-30T22:18:56Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T22:18:56Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-30T22:18:56+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8a0aca5c1280b91d03cff27de3b9d2b21f382b82"
+        ],
+        "position": 38,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "be0dea5800481f2a7365e4df32007667615baca5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0bcd20bde1d1d7391d18dc2dc89f69fd3c66e083"
+      },
+      {
+        "author_time": "2023-12-01T05:25:43Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-01T05:25:43Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-01T05:25:43+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "be0dea5800481f2a7365e4df32007667615baca5"
+        ],
+        "position": 39,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "3d05d7df4e298b0baff2928a5ed5df2f276f31da",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6fc1d6784056a64ad9b98e8e23a5d7eb273d3b90"
+      },
+      {
+        "author_time": "2023-12-01T16:32:19Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-01T16:32:19Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-01T16:32:19+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "3d05d7df4e298b0baff2928a5ed5df2f276f31da"
+        ],
+        "position": 40,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "0c0551b5b051711e362b971e2cf9f61463ccc937",
+        "temporal_basis": "committer_time",
+        "tree_sha": "76b743082c665a3816f8637d9f35cf16725a02fc"
+      },
+      {
+        "author_time": "2023-12-01T17:36:59Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-01T17:36:59Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-01T17:36:59+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "0c0551b5b051711e362b971e2cf9f61463ccc937"
+        ],
+        "position": 41,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "7b1d41d3f2700f5bbaa5f97e099619da55b17e91",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ef31ae6c2b5fd8949918c56cb872e202aaff483c"
+      },
+      {
+        "author_time": "2023-12-01T18:53:48Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-01T18:53:48Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-01T18:53:48+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7b1d41d3f2700f5bbaa5f97e099619da55b17e91"
+        ],
+        "position": 42,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "f8596264ad808a691a957e921d2d5555a43d9e4c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3148ce691d748af18c3337f44f3c2c20a7f0d9da"
+      },
+      {
+        "author_time": "2023-12-01T20:07:21Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-01T20:07:21Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-01T20:07:21+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f8596264ad808a691a957e921d2d5555a43d9e4c"
+        ],
+        "position": 43,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "4486a675aa5ef663ba2f51d6c2b801ca1d732f36",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6778388477b8db56df7e2f02e7637b013b95f94b"
+      },
+      {
+        "author_time": "2023-12-02T01:13:39Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-02T01:13:39Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-02T01:13:39+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "4486a675aa5ef663ba2f51d6c2b801ca1d732f36"
+        ],
+        "position": 44,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "a8eaeacd69415e2a9aa00875894176e68b116569",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d88a35142e5ac6fb289c873174b9a4e9f073655b"
+      },
+      {
+        "author_time": "2023-12-02T02:58:05Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-02T02:58:05Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-02T02:58:05+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a8eaeacd69415e2a9aa00875894176e68b116569"
+        ],
+        "position": 45,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "1d76e97888fdebf64c872be7d6fe3c3bf85485ee",
+        "temporal_basis": "committer_time",
+        "tree_sha": "627ee4ee8fee0b3d32ce19e3ea89d2c5ff0cf95f"
+      },
+      {
+        "author_time": "2023-12-02T03:04:11Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-02T03:04:11Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-02T03:04:11+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1d76e97888fdebf64c872be7d6fe3c3bf85485ee"
+        ],
+        "position": 46,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "7e916a2c2cd148a98e72af1972e18351cacdf285",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ddb3fe66bd8a41de63cf3b9d156a6d6725a6194d"
+      },
+      {
+        "author_time": "2023-12-02T22:45:23Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-02T22:45:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-02T22:45:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7e916a2c2cd148a98e72af1972e18351cacdf285"
+        ],
+        "position": 47,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "b8dff01715bc002b6249fe2cc341bfc00df18666",
+        "temporal_basis": "committer_time",
+        "tree_sha": "458ea71fb5fc81e3c08697dccdbe96eb3d64b80f"
+      },
+      {
+        "author_time": "2023-12-02T23:08:57Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-02T23:08:57Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-02T23:08:57+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "b8dff01715bc002b6249fe2cc341bfc00df18666"
+        ],
+        "position": 48,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "693cd17fd6c93530bf89bb23e17ac41fa3d7f833",
+        "temporal_basis": "committer_time",
+        "tree_sha": "95004dc400464189bd08c3162b4b3536aa45c780"
+      },
+      {
+        "author_time": "2023-12-04T02:34:43Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-04T02:34:43Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-04T02:34:43+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "693cd17fd6c93530bf89bb23e17ac41fa3d7f833"
+        ],
+        "position": 49,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "37f21db76aa57c239b289334cf46557a073cfbd0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e994b785db313c4d5ab7795d79102fbde05aafe0"
+      },
+      {
+        "author_time": "2023-12-04T04:15:26Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-04T04:15:26Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-04T04:15:26+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "37f21db76aa57c239b289334cf46557a073cfbd0",
+          "4160eabfbc7b932b1ac733a3af07ad0891640f6f"
+        ],
+        "position": 50,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "73a4500773a941e1a9f4625c07b530f71fe37976",
+        "temporal_basis": "committer_time",
+        "tree_sha": "348802e342d933129b948e84cef61c7bf527c942"
+      },
+      {
+        "author_time": "2023-12-04T15:59:44Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-04T15:59:44Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-04T15:59:44+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "73a4500773a941e1a9f4625c07b530f71fe37976"
+        ],
+        "position": 51,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "dab2ffc44856f1843725735d4959fc1e2b188365",
+        "temporal_basis": "committer_time",
+        "tree_sha": "777bfd9e6c0b00c6d77265c479dab9e1884bc344"
+      },
+      {
+        "author_time": "2023-12-04T16:05:49Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-04T16:05:49Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-04T16:05:49+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "dab2ffc44856f1843725735d4959fc1e2b188365"
+        ],
+        "position": 52,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "80dc350508fbb7107bed027d36029315e2c1dd82",
+        "temporal_basis": "committer_time",
+        "tree_sha": "85c4a930d4182f6558fb2f7ff113c91b4c8cff4c"
+      },
+      {
+        "author_time": "2023-12-04T17:23:13Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-04T17:23:13Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-04T17:23:13+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "80dc350508fbb7107bed027d36029315e2c1dd82"
+        ],
+        "position": 53,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "26b07b65251aaf75868b65bc3229aebb25693c4a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9df93a1aec5e94ac6a247dd032e8ff44a0bc41f1"
+      },
+      {
+        "author_time": "2023-12-04T18:05:06Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-04T18:05:06Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-04T18:05:06+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "26b07b65251aaf75868b65bc3229aebb25693c4a"
+        ],
+        "position": 54,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "20293ed5fed9fc6764052696a52a8c479156327f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "bb9929b977affd79f929af1be5f455dad73f59b9"
+      },
+      {
+        "author_time": "2023-12-04T19:35:07Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-04T19:35:07Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-04T19:35:07+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "20293ed5fed9fc6764052696a52a8c479156327f"
+        ],
+        "position": 55,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "6ead3ab5f0bdbb91e4931c7159a21f979f13b9d5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "28cc2eaff93293d08a08a0893b46272c1ea9507b"
+      },
+      {
+        "author_time": "2023-12-04T19:55:12Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-04T19:55:12Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-04T19:55:12+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6ead3ab5f0bdbb91e4931c7159a21f979f13b9d5"
+        ],
+        "position": 56,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "e3a70039949ad6bc7b900d3d4ec67b039afe567b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f60bf6384b82c1447aa2ede37e8bca4026ee867a"
+      },
+      {
+        "author_time": "2023-12-04T20:25:22Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-04T20:25:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-04T20:25:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e3a70039949ad6bc7b900d3d4ec67b039afe567b"
+        ],
+        "position": 57,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "e49b8a86a43c236a929661b56e6e31ff83d58e47",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d17aa7140ce6f86006e586a61f23a2b7f6d3794e"
+      },
+      {
+        "author_time": "2023-12-04T20:54:36Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-04T20:54:36Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-04T20:54:36+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e49b8a86a43c236a929661b56e6e31ff83d58e47"
+        ],
+        "position": 58,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "a0fc124453cb92f847a764e6391a744d8867f7f9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8aa730b4db7b7b5304009bc55140635a4a2853e3"
+      },
+      {
+        "author_time": "2023-12-04T21:02:58Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-04T21:03:00Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-04T21:03:00+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a0fc124453cb92f847a764e6391a744d8867f7f9"
+        ],
+        "position": 59,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "fecd23de06acb4e09df14e8ccf6a2d1a608fe6ab",
+        "temporal_basis": "committer_time",
+        "tree_sha": "56884112c3272deebc872fb970b86b27d410907d"
+      },
+      {
+        "author_time": "2023-12-04T21:10:48Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-04T21:10:48Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-04T21:10:48+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "fecd23de06acb4e09df14e8ccf6a2d1a608fe6ab"
+        ],
+        "position": 60,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "839b3ade6dcff85dc243e3b86091a74b86f5df69",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f3b3decf266f04e627ebf84ce21f158ae506c0ab"
+      },
+      {
+        "author_time": "2023-12-04T21:21:04Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-04T21:21:04Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-04T21:21:04+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "839b3ade6dcff85dc243e3b86091a74b86f5df69"
+        ],
+        "position": 61,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "d9695428678a2e6cdb4537f80eb935238194d167",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c1a1033247cc0ee76334b248238d4a8a98b7ef4f"
+      },
+      {
+        "author_time": "2023-12-04T21:49:25Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-04T21:49:25Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-04T21:49:25+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d9695428678a2e6cdb4537f80eb935238194d167"
+        ],
+        "position": 62,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "97ae9c34d2aed7aa379efe50edc1e00c6b682ecf",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d01ac6a0eb929c59ccdab9f28d81050d97ab1333"
+      },
+      {
+        "author_time": "2023-12-05T16:33:10Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T16:33:10Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T16:33:10+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "97ae9c34d2aed7aa379efe50edc1e00c6b682ecf"
+        ],
+        "position": 63,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "0a127e5966c7130a019456e3234a25c027ecd61c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b3d2d66580ce0ebe9f29b74ce6f5bcf26b6610db"
+      },
+      {
+        "author_time": "2023-12-05T16:48:06Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T16:48:09Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T16:48:09+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "0a127e5966c7130a019456e3234a25c027ecd61c"
+        ],
+        "position": 64,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "dc5c28e19c0dbc2a73134a975a5d7127e9842838",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5848c804c1c7702b5382dd9075cdce405c109805"
+      },
+      {
+        "author_time": "2023-12-05T17:31:42Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T17:31:42Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T17:31:42+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "dc5c28e19c0dbc2a73134a975a5d7127e9842838"
+        ],
+        "position": 65,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "41a62671a78fb6def43db56ee26c68383e31b5ab",
+        "temporal_basis": "committer_time",
+        "tree_sha": "41bbf58aa2f4a99048920b760ef4b3c5338df828"
+      },
+      {
+        "author_time": "2023-12-05T17:43:26Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T17:43:26Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T17:43:26+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "41a62671a78fb6def43db56ee26c68383e31b5ab"
+        ],
+        "position": 66,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "11e7c03ee0afdf6efd8177ae5c246dfbf3994965",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a4df2a7718b28f7087d0e07f9ad54e841cc1810a"
+      },
+      {
+        "author_time": "2023-12-05T18:25:31Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T18:25:31Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T18:25:31+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "11e7c03ee0afdf6efd8177ae5c246dfbf3994965"
+        ],
+        "position": 67,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "f7491faa5b24afddb3d85749b51c273cb772da65",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4d9e2cae17daeb767e1ad6eaf256e880f00d6266"
+      },
+      {
+        "author_time": "2023-12-05T20:17:27Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T20:17:27Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T20:17:27+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f7491faa5b24afddb3d85749b51c273cb772da65"
+        ],
+        "position": 68,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "e902915bd25a11939aec53adfeb2e89e8e983bbc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "79c6094f00f38401f40d622c9f2628ec1c827a66"
+      },
+      {
+        "author_time": "2023-12-05T20:30:41Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T20:30:41Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T20:30:41+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e902915bd25a11939aec53adfeb2e89e8e983bbc"
+        ],
+        "position": 69,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "1fa613ab62f4cd80115936da181998f72ce782dd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4794c16788e35953bf766ce52462e554ec5d53b7"
+      },
+      {
+        "author_time": "2023-12-05T20:45:00Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T20:45:00Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T20:45:00+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1fa613ab62f4cd80115936da181998f72ce782dd"
+        ],
+        "position": 70,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "ba7e925b5587dfa71710ccd35081cc76141db09f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "abe9a4cc58cf178962832b479956ea84002c39ad"
+      },
+      {
+        "author_time": "2023-12-05T21:33:21Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T21:33:21Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T21:33:21+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "ba7e925b5587dfa71710ccd35081cc76141db09f"
+        ],
+        "position": 71,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "7e44bcc946a82369021c1f5b63f8df4544f5500e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "030007e8e5e71c373a69c4b2caabe461e65edd72"
+      },
+      {
+        "author_time": "2023-12-05T21:43:31Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T21:43:31Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T21:43:31+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7e44bcc946a82369021c1f5b63f8df4544f5500e",
+          "87ed59e2d40ef8136aafa28792fe07f89c80dbb5"
+        ],
+        "position": 72,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "49c42b9cebbbe505d6ea203a3d5e444cb8d79c16",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f5e78430eb24b5f3c1bdac7db54261eee044e5e4"
+      },
+      {
+        "author_time": "2023-12-05T21:54:09Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T21:54:09Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T21:54:09+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "49c42b9cebbbe505d6ea203a3d5e444cb8d79c16"
+        ],
+        "position": 73,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "970abb60e281e65650a77b192a8316661a754d02",
+        "temporal_basis": "committer_time",
+        "tree_sha": "bba33dcd27fc1655c24bbb115221338496df86db"
+      },
+      {
+        "author_time": "2023-12-05T21:58:29Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T21:58:29Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T21:58:29+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "970abb60e281e65650a77b192a8316661a754d02"
+        ],
+        "position": 74,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "02cc93878b984605c6f43167cbdba8a22853ba2d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "fa2afd75ac07f3a9a8a4ec91b0ee02428f8e5d4d"
+      },
+      {
+        "author_time": "2023-12-05T22:01:51Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T22:01:51Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T22:01:51+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "02cc93878b984605c6f43167cbdba8a22853ba2d"
+        ],
+        "position": 75,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "1b832750621b6fac2fe1d3309030b6549fdaff67",
+        "temporal_basis": "committer_time",
+        "tree_sha": "778526165456d0965b3492e3dcce38d880dc40e0"
+      },
+      {
+        "author_time": "2023-12-05T22:03:39Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T22:03:39Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T22:03:39+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1b832750621b6fac2fe1d3309030b6549fdaff67"
+        ],
+        "position": 76,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "8a4dd525041709c07472df701b4a90e6eb7e0422",
+        "temporal_basis": "committer_time",
+        "tree_sha": "47b3d53e48d99867c3459a28de87956523d576ff"
+      },
+      {
+        "author_time": "2023-12-05T23:06:41Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T23:06:41Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T23:06:41+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8a4dd525041709c07472df701b4a90e6eb7e0422"
+        ],
+        "position": 77,
+        "pr_number": 37,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+          "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+          "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+        },
+        "repository": "Bananapus/nana-core",
+        "sha": "e71a77d9cc2cb9f73cc2f1c43ab1fb226f404f08",
+        "temporal_basis": "committer_time",
+        "tree_sha": "634d0a23a43b2b6d85c7af94c69e5fd536513ad4"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-11-16T02:24:27Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-11-16T02:24:27Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-11-16T02:24:27+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "1e1cfe7ae9e64f9f30eec52012174b3a98e1d14e"
+      ],
+      "position": 9,
+      "pr_number": 37,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+        "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+        "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+      },
+      "repository": "Bananapus/nana-core",
+      "sha": "2d119597a17b01a4c2fbe866c14170029e30de63",
+      "temporal_basis": "committer_time",
+      "tree_sha": "ae8758d2546af3674bf934056bee1c825a9ad8d0"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-11-15T20:01:26Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-11-15T20:01:26Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-11-15T20:01:26+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "b26a6af8368c0d4601c3d78f2a79e6b5c19074fd"
+      ],
+      "position": 8,
+      "pr_number": 37,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+        "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+        "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+      },
+      "repository": "Bananapus/nana-core",
+      "sha": "1e1cfe7ae9e64f9f30eec52012174b3a98e1d14e",
+      "temporal_basis": "committer_time",
+      "tree_sha": "6d1fa68705cea0af0102c2bdd5f6d363043d0360"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "1e1cfe7ae9e64f9f30eec52012174b3a98e1d14e",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "b26a6af8368c0d4601c3d78f2a79e6b5c19074fd"
+    ],
+    "recursive_tree_entry_count": 136,
+    "recursive_tree_listing_sha256": "294702f36599a2f2213500989d71dc48e60cc5a57aa3fe7e929a87303b2b4d45",
+    "retrieved_at": "2026-10-05T20:17:41.970013+00:00",
+    "source": "https://github.com/Bananapus/nana-core.git",
+    "status": "materialized",
+    "tree_sha": "6d1fa68705cea0af0102c2bdd5f6d363043d0360"
+  },
+  "pr_number": 37,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "87ed59e2d40ef8136aafa28792fe07f89c80dbb5",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:41.275476+00:00",
+        "sha256": "604ed73f857266884501cf44881692e01cb391dd2520a29fbe52cc07d68a6010",
+        "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:17:40.464167+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/Bananapus/nana-core/pulls/37"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:17:40.464167+00:00",
+      "sha256": "4af1e217a8339f5c15485eb77a3711e6cf351375bc81fef80c86b496306768b2",
+      "source": "https://api.github.com/repos/Bananapus/nana-core/pulls/37"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "Bananapus/nana-core",
+  "selected_state": {
+    "author_time": "2023-11-15T20:01:26Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "1e1cfe7ae9e64f9f30eec52012174b3a98e1d14e",
+    "committer_time": "2023-11-15T20:01:26Z",
+    "effective_time": "2023-11-15T20:01:26+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "6d1fa68705cea0af0102c2bdd5f6d363043d0360"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-11-16T02:12:44.435001+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-11-16T02:13:13.571477+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

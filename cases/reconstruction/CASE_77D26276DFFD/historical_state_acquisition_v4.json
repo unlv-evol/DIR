@@ -1,0 +1,834 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_77D26276DFFD",
+  "executed_at": "2026-10-05T20:17:55.967800+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-11-01T09:30:34Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-01T09:30:34Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-01T09:30:34+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "37ead24dbb86e45a2519ba8fb8a4da0f6dfb67b5"
+        ],
+        "position": 1,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "ef4ca706b63aed40e7490eb3a3cd6fb274f7964c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a69ddbfdb52731db2b98c6644490b0d783cbc2e5"
+      },
+      {
+        "author_time": "2023-11-05T10:21:41Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-05T10:21:41Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-05T10:21:41+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ef4ca706b63aed40e7490eb3a3cd6fb274f7964c"
+        ],
+        "position": 2,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "2ea0498d328cd602968b0e411bd48a24fe90f8c8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a11a8a343349d9a4e56c8c54a0acd670e6116c46"
+      },
+      {
+        "author_time": "2023-11-05T10:24:26Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-05T10:24:26Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-05T10:24:26+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "2ea0498d328cd602968b0e411bd48a24fe90f8c8"
+        ],
+        "position": 3,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "f2a1668ab5a011508c15c7ac8c74f0c7f5e58b87",
+        "temporal_basis": "committer_time",
+        "tree_sha": "dd484a1be73d300035b7878d13bf6eb202f224c1"
+      },
+      {
+        "author_time": "2023-11-05T10:35:13Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-05T10:35:13Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-05T10:35:13+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f2a1668ab5a011508c15c7ac8c74f0c7f5e58b87"
+        ],
+        "position": 4,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "a6bed0bbebc2239b5a056322b3c786bb18b6a0d4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4100240c1273913b5373b3b70b2e159fcac6ee49"
+      },
+      {
+        "author_time": "2023-11-05T15:02:58Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-05T15:02:58Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-05T15:02:58+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a6bed0bbebc2239b5a056322b3c786bb18b6a0d4"
+        ],
+        "position": 5,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "dce3f14b38c7371208dbfca245943a76ddd11242",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a78d75e1fce393dc030eb6697afa5d03a3b108f1"
+      },
+      {
+        "author_time": "2023-11-05T15:25:09Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-05T15:25:09Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-05T15:25:09+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "dce3f14b38c7371208dbfca245943a76ddd11242"
+        ],
+        "position": 6,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "a474671bd06c7a5cfb77cec9537e1ae6fb6147f5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4730c3511e938dc8bc4d65e974244d98f67c92f7"
+      },
+      {
+        "author_time": "2023-11-05T15:43:57Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-05T15:43:57Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-05T15:43:57+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a474671bd06c7a5cfb77cec9537e1ae6fb6147f5"
+        ],
+        "position": 7,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "14f99cf74f52bb74808671cb4a8d3341af0653bd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a70a5c77a0c9df6d4c1e3531686d69a363d74ec9"
+      },
+      {
+        "author_time": "2023-11-06T20:46:15Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-06T20:46:15Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-06T20:46:15+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "14f99cf74f52bb74808671cb4a8d3341af0653bd"
+        ],
+        "position": 8,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "f5f9a6b7572cc505e3aa79192d9db1291e91c05b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e401027b2571c1285f34484cd5fda5c1db737c88"
+      },
+      {
+        "author_time": "2023-11-06T20:53:54Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-06T20:53:54Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-06T20:53:54+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f5f9a6b7572cc505e3aa79192d9db1291e91c05b"
+        ],
+        "position": 9,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "d396ae4e39fbcbc503f044aa6bf894a01c047613",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3a9edc2464248d62135a69f3ad6fd0553ca74958"
+      },
+      {
+        "author_time": "2023-11-06T21:08:07Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-06T21:08:07Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-06T21:08:07+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d396ae4e39fbcbc503f044aa6bf894a01c047613"
+        ],
+        "position": 10,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "d4ba2b6144cc1a7e2b3aada0a4f3626a61802ec9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "02c8e93ac25f4999c99118e26a607a5134994fdf"
+      },
+      {
+        "author_time": "2023-12-18T09:16:31Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-18T09:16:31Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-18T09:16:31+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d4ba2b6144cc1a7e2b3aada0a4f3626a61802ec9"
+        ],
+        "position": 11,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "bd44cb66c074c5f8c9d540e164ceb0014c6bdb79",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1da72da4f6b6d611720c0f0ab71dbdff58a307aa"
+      },
+      {
+        "author_time": "2023-12-18T20:22:14Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-18T20:22:14Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-18T20:22:14+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "bd44cb66c074c5f8c9d540e164ceb0014c6bdb79"
+        ],
+        "position": 12,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "c7fdc5856783acc761f5cba440d28caf0c8bd65b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f5e4830b63ed8830c25cc8b6e20c9c69743235c0"
+      },
+      {
+        "author_time": "2023-12-18T20:32:04Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-18T20:32:04Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-18T20:32:04+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c7fdc5856783acc761f5cba440d28caf0c8bd65b"
+        ],
+        "position": 13,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "fcaf6d49183dc172308d5175d07500bc12cf8d3f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "87dc154d6a8d81ec9786be459d5739dbf93834d9"
+      },
+      {
+        "author_time": "2023-12-19T12:05:56Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-19T12:05:56Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-19T12:05:56+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "fcaf6d49183dc172308d5175d07500bc12cf8d3f"
+        ],
+        "position": 14,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "75c7d19b49d8195718f12dd48aa4969a58b69bbb",
+        "temporal_basis": "committer_time",
+        "tree_sha": "835f6012c4ec162bfc69dd51fdc90eae3dce90f0"
+      },
+      {
+        "author_time": "2023-12-21T14:35:49Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-21T14:35:49Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-21T14:35:49+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "75c7d19b49d8195718f12dd48aa4969a58b69bbb"
+        ],
+        "position": 15,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "6a2d3e793c2275764548772168014c6f4742699e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "17ac55f5d78e4e800bc167d822675be9ed676e08"
+      },
+      {
+        "author_time": "2023-12-21T14:36:07Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-21T14:36:07Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-21T14:36:07+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6a2d3e793c2275764548772168014c6f4742699e",
+          "2e11570e7401177fa8e44f97ea08d939407b9ebd"
+        ],
+        "position": 16,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "3ff8bc3df0008e6d7c1dfdc78c4d5fd0af9fa69e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3542f0415212730b1f82249fa10c0e02805124c9"
+      },
+      {
+        "author_time": "2023-12-21T14:37:08Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-21T14:37:08Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-21T14:37:08+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6a2d3e793c2275764548772168014c6f4742699e"
+        ],
+        "position": 17,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "cf285b04550603f1fd16b266df611a879b2fcaf5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "835f6012c4ec162bfc69dd51fdc90eae3dce90f0"
+      },
+      {
+        "author_time": "2023-12-21T14:37:28Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-21T14:37:28Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-21T14:37:28+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "cf285b04550603f1fd16b266df611a879b2fcaf5",
+          "3ff8bc3df0008e6d7c1dfdc78c4d5fd0af9fa69e"
+        ],
+        "position": 18,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "5674f266b30227d02a00d7c9af4a8c28856c2139",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e27c7b5012c2db8b12f2970ae870d63cf11a762f"
+      },
+      {
+        "author_time": "2023-12-21T14:38:00Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-21T14:38:00Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-21T14:38:00+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "5674f266b30227d02a00d7c9af4a8c28856c2139"
+        ],
+        "position": 19,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "7ce48129be1cda1f08369820d52948350f5c3f14",
+        "temporal_basis": "committer_time",
+        "tree_sha": "164fe228379ba319ba759f56b900e4d6d98fa0de"
+      },
+      {
+        "author_time": "2023-12-22T16:58:06Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-22T16:58:06Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-22T16:58:06+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7ce48129be1cda1f08369820d52948350f5c3f14"
+        ],
+        "position": 20,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "aa2780dfd20aad231558fb419b13c01b0ac0f666",
+        "temporal_basis": "committer_time",
+        "tree_sha": "213def4a04e7591d6275683bec8b6f15954b66d7"
+      },
+      {
+        "author_time": "2024-01-07T19:20:06Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-07T19:20:06Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-07T19:20:06+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "aa2780dfd20aad231558fb419b13c01b0ac0f666"
+        ],
+        "position": 21,
+        "pr_number": 448,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+          "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+          "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+        },
+        "repository": "unity-atoms/unity-atoms",
+        "sha": "9207c8fb472bc1b4f56feabc34e81be30cac1105",
+        "temporal_basis": "committer_time",
+        "tree_sha": "20c6c08e64d8cdb4e337dbcaab0529ed5b041835"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-12-21T14:35:49Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-12-21T14:35:49Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-12-21T14:35:49+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "75c7d19b49d8195718f12dd48aa4969a58b69bbb"
+      ],
+      "position": 15,
+      "pr_number": 448,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+        "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+        "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+      },
+      "repository": "unity-atoms/unity-atoms",
+      "sha": "6a2d3e793c2275764548772168014c6f4742699e",
+      "temporal_basis": "committer_time",
+      "tree_sha": "17ac55f5d78e4e800bc167d822675be9ed676e08"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-12-19T12:05:56Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-12-19T12:05:56Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-12-19T12:05:56+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "fcaf6d49183dc172308d5175d07500bc12cf8d3f"
+      ],
+      "position": 14,
+      "pr_number": 448,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+        "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+        "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+      },
+      "repository": "unity-atoms/unity-atoms",
+      "sha": "75c7d19b49d8195718f12dd48aa4969a58b69bbb",
+      "temporal_basis": "committer_time",
+      "tree_sha": "835f6012c4ec162bfc69dd51fdc90eae3dce90f0"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "75c7d19b49d8195718f12dd48aa4969a58b69bbb",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "fcaf6d49183dc172308d5175d07500bc12cf8d3f"
+    ],
+    "recursive_tree_entry_count": 2323,
+    "recursive_tree_listing_sha256": "a70bb37a12dc971c78ca0b1a635f3126db0a6757018810a29534242b2c3ebc1f",
+    "retrieved_at": "2026-10-05T20:17:55.964351+00:00",
+    "source": "https://github.com/unity-atoms/unity-atoms.git",
+    "status": "materialized",
+    "tree_sha": "835f6012c4ec162bfc69dd51fdc90eae3dce90f0"
+  },
+  "pr_number": 448,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "2e11570e7401177fa8e44f97ea08d939407b9ebd",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:54.966517+00:00",
+        "sha256": "203789a1b7d684fcb23a1c969f75b7cee5a37d16d1eaa15697b109d02d16aac0",
+        "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:17:54.287737+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:17:54.287737+00:00",
+      "sha256": "326bc17300824a7eb2dd04198e751aa69efb73dfab242457f3080cbfb95efb61",
+      "source": "https://api.github.com/repos/unity-atoms/unity-atoms/pulls/448"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "unity-atoms/unity-atoms",
+  "selected_state": {
+    "author_time": "2023-12-19T12:05:56Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "75c7d19b49d8195718f12dd48aa4969a58b69bbb",
+    "committer_time": "2023-12-19T12:05:56Z",
+    "effective_time": "2023-12-19T12:05:56+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "835f6012c4ec162bfc69dd51fdc90eae3dce90f0"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-12-20T08:04:51.213189+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-12-20T08:05:37.270477+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

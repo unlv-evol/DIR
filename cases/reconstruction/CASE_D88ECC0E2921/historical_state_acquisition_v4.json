@@ -1,0 +1,1121 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "develop",
+  "base_routing_source": "",
+  "case_id": "CASE_D88ECC0E2921",
+  "executed_at": "2026-10-05T22:50:05.542562+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-02-06T20:17:42Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-06T20:17:42Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-06T20:17:42+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "5dd61e340f16f296501ba359898d51b4956c3e3b"
+        ],
+        "position": 1,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "a2bed7270168b2cf045b59fd9713d697a4b2d0b2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "24841b1f1163b87b0ba970e0ac92bed62b6099a1"
+      },
+      {
+        "author_time": "2024-02-08T06:00:39Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-08T06:00:39Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-08T06:00:39+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a2bed7270168b2cf045b59fd9713d697a4b2d0b2"
+        ],
+        "position": 2,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "0db1dfdd3054c02f72abac6dbd2244636e88981b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7364ec360c93206a2b23c5011b798c806ad182d9"
+      },
+      {
+        "author_time": "2024-02-08T06:07:04Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-08T06:07:04Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-08T06:07:04+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "0db1dfdd3054c02f72abac6dbd2244636e88981b"
+        ],
+        "position": 3,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "cf05fe08465e626c6c9e9c674c9cc83e066cab75",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f51d91083ebc39b659c1cee892d2504296509dbc"
+      },
+      {
+        "author_time": "2024-02-08T06:13:05Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-08T06:13:05Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-08T06:13:05+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "cf05fe08465e626c6c9e9c674c9cc83e066cab75"
+        ],
+        "position": 4,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "8fe4331a5ccc4de39dbacf8284a943fd2bd99301",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1d128440206b14217f9be3f9796bffa5bff373a6"
+      },
+      {
+        "author_time": "2024-02-08T06:38:32Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-08T06:38:32Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-08T06:38:32+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "8fe4331a5ccc4de39dbacf8284a943fd2bd99301"
+        ],
+        "position": 5,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "06a4a7fbd7994257cf2040d13abcd589676c61c1",
+        "temporal_basis": "committer_time",
+        "tree_sha": "cf017ae95ca67efb35eb0e76c5ef64286679db46"
+      },
+      {
+        "author_time": "2024-02-08T19:53:34Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-08T19:53:34Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-08T19:53:34+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "06a4a7fbd7994257cf2040d13abcd589676c61c1"
+        ],
+        "position": 6,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "7fb63415a2cd9c2d92dceb531894ef9e3b4c6e4f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f172afbae34c60da75c5c1b04724b5e64d3a6d7a"
+      },
+      {
+        "author_time": "2024-02-08T20:25:13Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-08T20:25:13Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-08T20:25:13+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7fb63415a2cd9c2d92dceb531894ef9e3b4c6e4f",
+          "d9c18e5dfa79b5fae551b9c4a23786a723816d7e"
+        ],
+        "position": 7,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "80bc4afebe4781cabda8f30f26222ea8dd15eccd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ed7c4864072aa8d6e87292975f838b47a95ea14f"
+      },
+      {
+        "author_time": "2024-02-11T00:09:54Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-11T00:09:54Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-11T00:09:54+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "80bc4afebe4781cabda8f30f26222ea8dd15eccd"
+        ],
+        "position": 8,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "73a33c45d0c88d858e1e9b7a667e06f2e26db416",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7ea9c7289db5bb3766d636f23c89c47a927a940e"
+      },
+      {
+        "author_time": "2024-02-11T00:22:42Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-11T00:22:42Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-11T00:22:42+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "73a33c45d0c88d858e1e9b7a667e06f2e26db416"
+        ],
+        "position": 9,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "1e9ef07caaa13afa133aaf54dc1cfb28c9832b66",
+        "temporal_basis": "committer_time",
+        "tree_sha": "19adfb0f98c727941d5d3b4f4dcaf6e0e04fcfd6"
+      },
+      {
+        "author_time": "2024-02-11T00:37:43Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-11T00:37:43Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-11T00:37:43+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "1e9ef07caaa13afa133aaf54dc1cfb28c9832b66"
+        ],
+        "position": 10,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "0fce4253cdce671eb1d89c42528a56173155cdef",
+        "temporal_basis": "committer_time",
+        "tree_sha": "25c34ddf639b38861946cbfdc1c1699e0c61930a"
+      },
+      {
+        "author_time": "2024-02-11T01:07:09Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-11T01:07:09Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-11T01:07:09+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "0fce4253cdce671eb1d89c42528a56173155cdef"
+        ],
+        "position": 11,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "54bacac3d881f1c028c998ece0beaed900672e29",
+        "temporal_basis": "committer_time",
+        "tree_sha": "681e66c138ea0928f149481678b7aaa21ba2e1e5"
+      },
+      {
+        "author_time": "2024-02-11T15:46:38Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-11T15:46:38Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-11T15:46:38+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "54bacac3d881f1c028c998ece0beaed900672e29"
+        ],
+        "position": 12,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "50a0c751d4d5fd283a7d5cf51f7e9aeaee3761c7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "073061002a7aa95701fe421cdaff8eb04ee99b30"
+      },
+      {
+        "author_time": "2024-02-11T16:23:15Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-11T16:23:15Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-11T16:23:15+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "50a0c751d4d5fd283a7d5cf51f7e9aeaee3761c7"
+        ],
+        "position": 13,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "2f05fd35a406a6d46a649b9d28f077c786d0c25d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "76920f7d52ec355750a3a7c626b0eac3dce1706d"
+      },
+      {
+        "author_time": "2024-02-11T16:38:33Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-11T16:38:33Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-11T16:38:33+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2f05fd35a406a6d46a649b9d28f077c786d0c25d"
+        ],
+        "position": 14,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "67aab8eec28f9f8a52000102ad72f48790fd8f10",
+        "temporal_basis": "committer_time",
+        "tree_sha": "91771bc9ec5a1814e9992849a1ea9fef53c2d70c"
+      },
+      {
+        "author_time": "2024-02-11T16:45:26Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-11T16:45:26Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-11T16:45:26+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "67aab8eec28f9f8a52000102ad72f48790fd8f10"
+        ],
+        "position": 15,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "0895cec1635873f2aca98a06ec54a42d7f6aae09",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4683a6ea2f2cd8d38b652f0b4843cb9efc2e05f2"
+      },
+      {
+        "author_time": "2024-02-11T17:33:22Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-11T17:33:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-11T17:33:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "0895cec1635873f2aca98a06ec54a42d7f6aae09"
+        ],
+        "position": 16,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "31c2ef947550d1418bb99e4271e995a5bc9a673b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a8c5e18d65224463bab1a12068728b1f558a5932"
+      },
+      {
+        "author_time": "2024-02-12T07:41:40Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-12T07:41:40Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-12T07:41:40+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "31c2ef947550d1418bb99e4271e995a5bc9a673b"
+        ],
+        "position": 17,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "cb03a0baf9640d23f4a296d73b7fed25a6ceae7e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4245699a43fbc5e6ed5d4f0c0582c24b3d091055"
+      },
+      {
+        "author_time": "2024-02-12T07:49:18Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-12T07:49:18Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-12T07:49:18+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "cb03a0baf9640d23f4a296d73b7fed25a6ceae7e"
+        ],
+        "position": 18,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "91702e086890ae0ee8bebfa6251d30c9503b90a8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5e0a22de79c855a4b0962e2e1c3afc2848e97b28"
+      },
+      {
+        "author_time": "2024-02-12T07:52:52Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-12T07:52:52Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-12T07:52:52+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "91702e086890ae0ee8bebfa6251d30c9503b90a8"
+        ],
+        "position": 19,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "a005abaa7d1cc78f340488b4c60fb612f84dd697",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4245699a43fbc5e6ed5d4f0c0582c24b3d091055"
+      },
+      {
+        "author_time": "2024-02-12T08:02:33Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-12T08:02:33Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-12T08:02:33+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a005abaa7d1cc78f340488b4c60fb612f84dd697"
+        ],
+        "position": 20,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "e32c56212b2cc2dfb63c4c0d448bdd60766754f6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2baf8baa804b57cb7b761796caf8e8ae7902aa55"
+      },
+      {
+        "author_time": "2024-02-12T08:05:23Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-12T08:05:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-12T08:05:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e32c56212b2cc2dfb63c4c0d448bdd60766754f6"
+        ],
+        "position": 21,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "d368d213ccb4c6bd871d1dc6039e2010a085a0c3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "bf0994ed19f6dd75f8b88bb7b45b114f4812191b"
+      },
+      {
+        "author_time": "2024-02-12T18:45:32Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-12T18:45:32Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-12T18:45:32+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d368d213ccb4c6bd871d1dc6039e2010a085a0c3"
+        ],
+        "position": 22,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "823e56572b51545fde2c4f931df0c8acb54fa6d9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0f0491de7ee372f9f20958c09437b4e473c2c541"
+      },
+      {
+        "author_time": "2024-02-12T19:07:43Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-12T19:07:43Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-12T19:07:43+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "823e56572b51545fde2c4f931df0c8acb54fa6d9"
+        ],
+        "position": 23,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "d6d191de6444f0dc9b408d01279016d651bc3212",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b02c721cb08356f06cb9bc9d7683cd28f0c547d6"
+      },
+      {
+        "author_time": "2024-02-12T19:17:32Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-12T19:17:32Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-12T19:17:32+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d6d191de6444f0dc9b408d01279016d651bc3212"
+        ],
+        "position": 24,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "6b16ef1da943e203c431ef114e37d7cbd1a227f4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3c32f135623314e251a1fac6d7aa2ad405c807f1"
+      },
+      {
+        "author_time": "2024-02-12T19:35:22Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-12T19:35:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-12T19:35:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6b16ef1da943e203c431ef114e37d7cbd1a227f4"
+        ],
+        "position": 25,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "b7b09a08766ffe72b1eefde03c11447e2a483d2a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7481fc2bd6b4fe35d2da158f2b8a089d1e13eb68"
+      },
+      {
+        "author_time": "2024-02-14T05:26:45Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-14T05:26:45Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-14T05:26:45+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "b7b09a08766ffe72b1eefde03c11447e2a483d2a"
+        ],
+        "position": 26,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "aaa56a1a930ac3de85d6e080b698b41c2974ea75",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ec198a5e73e6570ee6f750b49fcee72f8a3bac5a"
+      },
+      {
+        "author_time": "2024-02-14T15:19:40Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-14T15:19:40Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-14T15:19:40+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "aaa56a1a930ac3de85d6e080b698b41c2974ea75"
+        ],
+        "position": 27,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "c126c9ad4c4f20cc3b025d5ed8fd064c8070b175",
+        "temporal_basis": "committer_time",
+        "tree_sha": "651f5c2eb3c97f38ccf3c1b5355c4d4c31e08dc5"
+      },
+      {
+        "author_time": "2024-02-14T15:28:19Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-14T15:28:19Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-14T15:28:19+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "c126c9ad4c4f20cc3b025d5ed8fd064c8070b175"
+        ],
+        "position": 28,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "88a34e1b98e2ab67be65315eb15e198cdec27308",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e7d56fc9a6c7ddb6f2bf226f6459baeaa582bdf9"
+      },
+      {
+        "author_time": "2024-02-14T15:49:12Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-14T15:49:12Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-14T15:49:12+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "88a34e1b98e2ab67be65315eb15e198cdec27308"
+        ],
+        "position": 29,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "c5cea72930e1d3208662422b19f75a99e4bc35dc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e88941f71e2e06781df45b9aa8cd206ee5533368"
+      },
+      {
+        "author_time": "2024-02-14T18:15:15Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-14T18:15:15Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-14T18:15:15+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "c5cea72930e1d3208662422b19f75a99e4bc35dc"
+        ],
+        "position": 30,
+        "pr_number": 223,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+          "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+          "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+        },
+        "repository": "nishiki-tech/nishiki-frontend",
+        "sha": "02ff86dc132f3ad082d22f0f7ae8a7d5ade5c7ef",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5d7f0abc932f4d435cee8f98240e8a8496d92729"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2024-02-11T15:46:38Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-02-11T15:46:38Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2024-02-11T15:46:38+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "54bacac3d881f1c028c998ece0beaed900672e29"
+      ],
+      "position": 12,
+      "pr_number": 223,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+        "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+        "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+      },
+      "repository": "nishiki-tech/nishiki-frontend",
+      "sha": "50a0c751d4d5fd283a7d5cf51f7e9aeaee3761c7",
+      "temporal_basis": "committer_time",
+      "tree_sha": "073061002a7aa95701fe421cdaff8eb04ee99b30"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-02-11T01:07:09Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-02-11T01:07:09Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-02-11T01:07:09+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "0fce4253cdce671eb1d89c42528a56173155cdef"
+      ],
+      "position": 11,
+      "pr_number": 223,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+        "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+        "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+      },
+      "repository": "nishiki-tech/nishiki-frontend",
+      "sha": "54bacac3d881f1c028c998ece0beaed900672e29",
+      "temporal_basis": "committer_time",
+      "tree_sha": "681e66c138ea0928f149481678b7aaa21ba2e1e5"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "54bacac3d881f1c028c998ece0beaed900672e29",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "0fce4253cdce671eb1d89c42528a56173155cdef"
+    ],
+    "recursive_tree_entry_count": 280,
+    "recursive_tree_listing_sha256": "8742f0021525bc320f7eb767c23f1968b622f7c69774e64965a29cb9076ad221",
+    "retrieved_at": "2026-10-05T22:50:05.538831+00:00",
+    "source": "https://github.com/nishiki-tech/nishiki-frontend.git",
+    "status": "materialized",
+    "tree_sha": "681e66c138ea0928f149481678b7aaa21ba2e1e5"
+  },
+  "pr_number": 223,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "d9c18e5dfa79b5fae551b9c4a23786a723816d7e",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:04.827391+00:00",
+        "sha256": "606e1c24a6b98137cea8b706e8e930ab7c0caa283906881eb5e03c746863d100",
+        "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T22:50:04.179454+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223"
+        }
+      ],
+      "retrieved_at": "2026-10-05T22:50:04.179454+00:00",
+      "sha256": "5313806ae8705161a8570e32132429decd4be875ae1d311581c9f9ebe13b3c8e",
+      "source": "https://api.github.com/repos/nishiki-tech/nishiki-frontend/pulls/223"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "nishiki-tech/nishiki-frontend",
+  "selected_state": {
+    "author_time": "2024-02-11T01:07:09Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "54bacac3d881f1c028c998ece0beaed900672e29",
+    "committer_time": "2024-02-11T01:07:09Z",
+    "effective_time": "2024-02-11T01:07:09+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "681e66c138ea0928f149481678b7aaa21ba2e1e5"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-02-11T06:05:32.914164+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-02-11T06:05:49.341140+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

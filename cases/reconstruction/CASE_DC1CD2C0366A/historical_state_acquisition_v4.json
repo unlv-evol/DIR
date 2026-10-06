@@ -1,0 +1,481 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "master",
+  "base_routing_source": "",
+  "case_id": "CASE_DC1CD2C0366A",
+  "executed_at": "2026-10-05T22:50:18.479284+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-03-08T15:56:38Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-08T15:56:38Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-08T15:56:38+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "64eab096287cdd5aa66856be8b37315f7e258d2a"
+        ],
+        "position": 1,
+        "pr_number": 816,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+          "sha256": "187d9686fc34c5413ec7f34d644285ad6e3f3ab054e85d892566c6dcec0b8e17",
+          "source": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+        },
+        "repository": "primer-io/primer-sdk-ios",
+        "sha": "f64a5f7af93e2074aeb2f4ba12420efed2da2758",
+        "temporal_basis": "committer_time",
+        "tree_sha": "89ea0fbdae6c62d89242b7df0460084fd1022948"
+      },
+      {
+        "author_time": "2024-03-08T16:00:45Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-08T16:00:45Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-08T16:00:45+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f64a5f7af93e2074aeb2f4ba12420efed2da2758"
+        ],
+        "position": 2,
+        "pr_number": 816,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+          "sha256": "187d9686fc34c5413ec7f34d644285ad6e3f3ab054e85d892566c6dcec0b8e17",
+          "source": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+        },
+        "repository": "primer-io/primer-sdk-ios",
+        "sha": "8ae58beef5fe8256d28bbca7643d412a5a05204c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0a947801771d0535a00382345cd60a08546443b9"
+      },
+      {
+        "author_time": "2024-03-08T17:13:00Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-08T17:13:00Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-08T17:13:00+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "8ae58beef5fe8256d28bbca7643d412a5a05204c",
+          "44ab837a11a91bb666d93783b8bd12fa5795ae4f"
+        ],
+        "position": 3,
+        "pr_number": 816,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+          "sha256": "187d9686fc34c5413ec7f34d644285ad6e3f3ab054e85d892566c6dcec0b8e17",
+          "source": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+        },
+        "repository": "primer-io/primer-sdk-ios",
+        "sha": "b40dac698ebe07db776054096df954c0570499ca",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e3315d59b32127b8a08a2280f7aa4a5645ee213a"
+      },
+      {
+        "author_time": "2024-03-11T16:29:15Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-11T16:30:21Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-11T16:30:21+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "b40dac698ebe07db776054096df954c0570499ca"
+        ],
+        "position": 4,
+        "pr_number": 816,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+          "sha256": "187d9686fc34c5413ec7f34d644285ad6e3f3ab054e85d892566c6dcec0b8e17",
+          "source": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+        },
+        "repository": "primer-io/primer-sdk-ios",
+        "sha": "4d886d3678f4d49012954fa330a9d821582dcb39",
+        "temporal_basis": "committer_time",
+        "tree_sha": "74d1aa7a4eb6787a9c18c03858d107b601a40c48"
+      },
+      {
+        "author_time": "2024-03-12T10:48:13Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-12T10:48:13Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-12T10:48:13+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "4d886d3678f4d49012954fa330a9d821582dcb39"
+        ],
+        "position": 5,
+        "pr_number": 816,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+          "sha256": "187d9686fc34c5413ec7f34d644285ad6e3f3ab054e85d892566c6dcec0b8e17",
+          "source": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+        },
+        "repository": "primer-io/primer-sdk-ios",
+        "sha": "f50ac0e66f7612f450c9197766318e1e5a63b04e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "838934c9c60e6d7cfa13c94601f682d401b1e891"
+      },
+      {
+        "author_time": "2024-03-12T11:08:36Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-12T11:08:36Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-12T11:08:36+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f50ac0e66f7612f450c9197766318e1e5a63b04e"
+        ],
+        "position": 6,
+        "pr_number": 816,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+          "sha256": "187d9686fc34c5413ec7f34d644285ad6e3f3ab054e85d892566c6dcec0b8e17",
+          "source": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+        },
+        "repository": "primer-io/primer-sdk-ios",
+        "sha": "eb8b672f8f5ad9ddacc94e25d2653efc391b300b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4c1b21ed9c1422780f2cc4f952cc8d7ab9eaf880"
+      },
+      {
+        "author_time": "2024-03-12T17:16:14Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-12T17:16:14Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-12T17:16:14+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "eb8b672f8f5ad9ddacc94e25d2653efc391b300b"
+        ],
+        "position": 7,
+        "pr_number": 816,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+          "sha256": "187d9686fc34c5413ec7f34d644285ad6e3f3ab054e85d892566c6dcec0b8e17",
+          "source": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+        },
+        "repository": "primer-io/primer-sdk-ios",
+        "sha": "c6cf28647791205dacb72dec7be0cdc68e25993f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b04d508c06ac58b0f36375630d857af339896b8f"
+      },
+      {
+        "author_time": "2024-03-13T17:27:33Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-13T17:27:33Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-03-13T17:27:33+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "c6cf28647791205dacb72dec7be0cdc68e25993f"
+        ],
+        "position": 8,
+        "pr_number": 816,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+          "sha256": "187d9686fc34c5413ec7f34d644285ad6e3f3ab054e85d892566c6dcec0b8e17",
+          "source": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+        },
+        "repository": "primer-io/primer-sdk-ios",
+        "sha": "53a4518b599ae1d0f14fd4aa526fb88b609d1a07",
+        "temporal_basis": "committer_time",
+        "tree_sha": "263980255470fee674870ad694a240cd1846b2ff"
+      },
+      {
+        "author_time": "2024-03-13T17:29:11Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-13T17:29:11Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-03-13T17:29:11+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "53a4518b599ae1d0f14fd4aa526fb88b609d1a07"
+        ],
+        "position": 9,
+        "pr_number": 816,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+          "sha256": "187d9686fc34c5413ec7f34d644285ad6e3f3ab054e85d892566c6dcec0b8e17",
+          "source": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+        },
+        "repository": "primer-io/primer-sdk-ios",
+        "sha": "98fc0cc2e5a852af633d3556e7921660a0f689c4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "05370c91305007f8873c19cad0902af0b62b4ae2"
+      },
+      {
+        "author_time": "2024-03-13T17:33:36Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-13T17:33:36Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-03-13T17:33:36+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "98fc0cc2e5a852af633d3556e7921660a0f689c4"
+        ],
+        "position": 10,
+        "pr_number": 816,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+          "sha256": "187d9686fc34c5413ec7f34d644285ad6e3f3ab054e85d892566c6dcec0b8e17",
+          "source": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+        },
+        "repository": "primer-io/primer-sdk-ios",
+        "sha": "6d0add67b55ea7db804919d69972efc3f1d82611",
+        "temporal_basis": "committer_time",
+        "tree_sha": "52ab0f1abc7f042fabaf903ba7cc3e40e3466037"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2024-03-13T17:27:33Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-03-13T17:27:33Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2024-03-13T17:27:33+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "c6cf28647791205dacb72dec7be0cdc68e25993f"
+      ],
+      "position": 8,
+      "pr_number": 816,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+        "sha256": "187d9686fc34c5413ec7f34d644285ad6e3f3ab054e85d892566c6dcec0b8e17",
+        "source": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+      },
+      "repository": "primer-io/primer-sdk-ios",
+      "sha": "53a4518b599ae1d0f14fd4aa526fb88b609d1a07",
+      "temporal_basis": "committer_time",
+      "tree_sha": "263980255470fee674870ad694a240cd1846b2ff"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-03-12T17:16:14Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-03-12T17:16:14Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-03-12T17:16:14+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "eb8b672f8f5ad9ddacc94e25d2653efc391b300b"
+      ],
+      "position": 7,
+      "pr_number": 816,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+        "sha256": "187d9686fc34c5413ec7f34d644285ad6e3f3ab054e85d892566c6dcec0b8e17",
+        "source": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+      },
+      "repository": "primer-io/primer-sdk-ios",
+      "sha": "c6cf28647791205dacb72dec7be0cdc68e25993f",
+      "temporal_basis": "committer_time",
+      "tree_sha": "b04d508c06ac58b0f36375630d857af339896b8f"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "c6cf28647791205dacb72dec7be0cdc68e25993f",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "eb8b672f8f5ad9ddacc94e25d2653efc391b300b"
+    ],
+    "recursive_tree_entry_count": 2186,
+    "recursive_tree_listing_sha256": "e4daac4b89aa194816ffaa3830c05ed71d8ec3a187e543468593453bbd815e3f",
+    "retrieved_at": "2026-10-05T22:50:18.475814+00:00",
+    "source": "https://github.com/primer-io/primer-sdk-ios.git",
+    "status": "materialized",
+    "tree_sha": "b04d508c06ac58b0f36375630d857af339896b8f"
+  },
+  "pr_number": 816,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "44ab837a11a91bb666d93783b8bd12fa5795ae4f",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:17.288072+00:00",
+        "sha256": "187d9686fc34c5413ec7f34d644285ad6e3f3ab054e85d892566c6dcec0b8e17",
+        "source": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T22:50:16.673350+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816"
+        }
+      ],
+      "retrieved_at": "2026-10-05T22:50:16.673350+00:00",
+      "sha256": "0d70473f61c6ec9ccad592c7b0e1c7a85c157c2822538d535d304bd57549767e",
+      "source": "https://api.github.com/repos/primer-io/primer-sdk-ios/pulls/816"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "primer-io/primer-sdk-ios",
+  "selected_state": {
+    "author_time": "2024-03-12T17:16:14Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "c6cf28647791205dacb72dec7be0cdc68e25993f",
+    "committer_time": "2024-03-12T17:16:14Z",
+    "effective_time": "2024-03-12T17:16:14+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "b04d508c06ac58b0f36375630d857af339896b8f"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-03-13T09:41:12.443305+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-03-13T09:41:55.354256+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

@@ -1,0 +1,289 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "main",
+  "base_routing_source": "",
+  "case_id": "CASE_FAEC584E837A",
+  "executed_at": "2026-10-05T22:51:16.638258+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-09-28T09:56:47Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-28T12:25:48Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-28T12:25:48+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "61bdf475759de46803eb9b73b9e5b59dfea2215e"
+        ],
+        "position": 1,
+        "pr_number": 191,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:51:15.982629+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/sablier-labs/v2-periphery/pulls/191/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:51:15.982629+00:00",
+          "sha256": "25cfda37eee357010d714c21ca32a9abb529253e90bc2b9170350e11971241de",
+          "source": "https://api.github.com/repos/sablier-labs/v2-periphery/pulls/191/commits?per_page=100&page=1"
+        },
+        "repository": "sablier-labs/v2-periphery",
+        "sha": "7c6187b38eac888977cbc193e7d2252a8aaf5bb6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c571a0dc956854389245cb3302d3179ebcbe6874"
+      },
+      {
+        "author_time": "2023-09-28T09:56:55Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-28T12:25:48Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-28T12:25:48+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7c6187b38eac888977cbc193e7d2252a8aaf5bb6"
+        ],
+        "position": 2,
+        "pr_number": 191,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:51:15.982629+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/sablier-labs/v2-periphery/pulls/191/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:51:15.982629+00:00",
+          "sha256": "25cfda37eee357010d714c21ca32a9abb529253e90bc2b9170350e11971241de",
+          "source": "https://api.github.com/repos/sablier-labs/v2-periphery/pulls/191/commits?per_page=100&page=1"
+        },
+        "repository": "sablier-labs/v2-periphery",
+        "sha": "b599b3d9dfadb508eb60c1617b440470ed7ebbf5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8efe6ffbb3c123455beeda14d3cf6fd4cae95f78"
+      },
+      {
+        "author_time": "2023-09-28T10:39:46Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-28T12:25:48Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-28T12:25:48+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "b599b3d9dfadb508eb60c1617b440470ed7ebbf5"
+        ],
+        "position": 3,
+        "pr_number": 191,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:51:15.982629+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/sablier-labs/v2-periphery/pulls/191/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:51:15.982629+00:00",
+          "sha256": "25cfda37eee357010d714c21ca32a9abb529253e90bc2b9170350e11971241de",
+          "source": "https://api.github.com/repos/sablier-labs/v2-periphery/pulls/191/commits?per_page=100&page=1"
+        },
+        "repository": "sablier-labs/v2-periphery",
+        "sha": "9d59de476a0cefbcd2826abd7a0c8145f002ea0c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "40e46f98c7e6108ee4a28145b7a369317d50d30e"
+      },
+      {
+        "author_time": "2023-09-28T12:17:36Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-28T12:25:48Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-28T12:25:48+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "9d59de476a0cefbcd2826abd7a0c8145f002ea0c"
+        ],
+        "position": 4,
+        "pr_number": 191,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:51:15.982629+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/sablier-labs/v2-periphery/pulls/191/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:51:15.982629+00:00",
+          "sha256": "25cfda37eee357010d714c21ca32a9abb529253e90bc2b9170350e11971241de",
+          "source": "https://api.github.com/repos/sablier-labs/v2-periphery/pulls/191/commits?per_page=100&page=1"
+        },
+        "repository": "sablier-labs/v2-periphery",
+        "sha": "bda85157bf0d3b684eef79acb48333b4e851b844",
+        "temporal_basis": "committer_time",
+        "tree_sha": "859c25b8340913de36593d960096367c3f0d9512"
+      },
+      {
+        "author_time": "2023-09-28T12:23:49Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-28T12:25:48Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-28T12:25:48+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "bda85157bf0d3b684eef79acb48333b4e851b844"
+        ],
+        "position": 5,
+        "pr_number": 191,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:51:15.982629+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/sablier-labs/v2-periphery/pulls/191/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:51:15.982629+00:00",
+          "sha256": "25cfda37eee357010d714c21ca32a9abb529253e90bc2b9170350e11971241de",
+          "source": "https://api.github.com/repos/sablier-labs/v2-periphery/pulls/191/commits?per_page=100&page=1"
+        },
+        "repository": "sablier-labs/v2-periphery",
+        "sha": "069b80cc7ddaeb512e1122e7d0d0674baf350435",
+        "temporal_basis": "committer_time",
+        "tree_sha": "59c28890892667c3dffa8e2e1ba304b8afa8b33c"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-09-28T12:23:49Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-09-28T12:25:48Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-09-28T12:25:48+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "bda85157bf0d3b684eef79acb48333b4e851b844"
+      ],
+      "position": 5,
+      "pr_number": 191,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:51:15.982629+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/sablier-labs/v2-periphery/pulls/191/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:51:15.982629+00:00",
+        "sha256": "25cfda37eee357010d714c21ca32a9abb529253e90bc2b9170350e11971241de",
+        "source": "https://api.github.com/repos/sablier-labs/v2-periphery/pulls/191/commits?per_page=100&page=1"
+      },
+      "repository": "sablier-labs/v2-periphery",
+      "sha": "069b80cc7ddaeb512e1122e7d0d0674baf350435",
+      "temporal_basis": "committer_time",
+      "tree_sha": "59c28890892667c3dffa8e2e1ba304b8afa8b33c"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "069b80cc7ddaeb512e1122e7d0d0674baf350435",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "bda85157bf0d3b684eef79acb48333b4e851b844"
+    ],
+    "recursive_tree_entry_count": 231,
+    "recursive_tree_listing_sha256": "49e4f5bf03a721237121f9c022fe1a14ef03c30b0b7dc1362588c31f71892efc",
+    "retrieved_at": "2026-10-05T22:51:16.634777+00:00",
+    "source": "https://github.com/sablier-labs/v2-periphery.git",
+    "status": "materialized",
+    "tree_sha": "59c28890892667c3dffa8e2e1ba304b8afa8b33c"
+  },
+  "pr_number": 191,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "61bdf475759de46803eb9b73b9e5b59dfea2215e",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:51:15.982629+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/sablier-labs/v2-periphery/pulls/191/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:51:15.982629+00:00",
+        "sha256": "25cfda37eee357010d714c21ca32a9abb529253e90bc2b9170350e11971241de",
+        "source": "https://api.github.com/repos/sablier-labs/v2-periphery/pulls/191/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T22:51:15.450665+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/sablier-labs/v2-periphery/pulls/191"
+        }
+      ],
+      "retrieved_at": "2026-10-05T22:51:15.450665+00:00",
+      "sha256": "853ff0289edf92625842d835be05357d259d421a6668b6d84859e46eab1ebbbc",
+      "source": "https://api.github.com/repos/sablier-labs/v2-periphery/pulls/191"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "sablier-labs/v2-periphery",
+  "selected_state": {
+    "author_time": "2023-09-28T12:23:49Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "069b80cc7ddaeb512e1122e7d0d0674baf350435",
+    "committer_time": "2023-09-28T12:25:48Z",
+    "effective_time": "2023-09-28T12:25:48+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "59c28890892667c3dffa8e2e1ba304b8afa8b33c"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-09-28T18:33:06.703063+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-09-28T18:33:36.735883+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

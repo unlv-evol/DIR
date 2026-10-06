@@ -1,0 +1,264 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-09-05T04:14:22Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-05T04:14:22Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-05T04:14:22+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "5357479e93a34d2141059c3729ca9e8aa8ea71b1"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:03.651148+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/WordPress/gutenberg/commits?sha=trunk&until=2023-09-05T05%3A08%3A56.471521%2B00%3A00&per_page=1&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:03.651148+00:00",
+          "sha256": "79ab248a2a180b4cc43e3680a5ea279ec6df1442575f8a1b662dc682d3e65e69",
+          "source": "https://api.github.com/repos/WordPress/gutenberg/commits?sha=trunk&until=2023-09-05T05%3A08%3A56.471521%2B00%3A00&per_page=1&page=1"
+        },
+        "repository": "WordPress/gutenberg",
+        "sha": "04687216ba67e6ebace4a5662aa117da1b6bf7a3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b64432f2af085dd3d84eafca8f0a18fc97c3dc49"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-09-05T04:14:22Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-09-05T04:14:22Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-09-05T04:14:22+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "5357479e93a34d2141059c3729ca9e8aa8ea71b1"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:19:03.651148+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/WordPress/gutenberg/commits?sha=trunk&until=2023-09-05T05%3A08%3A56.471521%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:19:03.651148+00:00",
+        "sha256": "79ab248a2a180b4cc43e3680a5ea279ec6df1442575f8a1b662dc682d3e65e69",
+        "source": "https://api.github.com/repos/WordPress/gutenberg/commits?sha=trunk&until=2023-09-05T05%3A08%3A56.471521%2B00%3A00&per_page=1&page=1"
+      },
+      "repository": "WordPress/gutenberg",
+      "sha": "04687216ba67e6ebace4a5662aa117da1b6bf7a3",
+      "temporal_basis": "committer_time",
+      "tree_sha": "b64432f2af085dd3d84eafca8f0a18fc97c3dc49"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "trunk",
+  "base_routing_source": "pr_base_ref",
+  "case_id": "CASE_AD8C4F13A90B",
+  "executed_at": "2026-10-05T20:19:06.257922+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-09-05T04:16:44Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2023-09-05T06:00:06Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-05T06:00:06+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "297999c724fc50c66af162dc3156c279603b8f1e"
+        ],
+        "position": 1,
+        "pr_number": 54172,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:02.678003+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/WordPress/gutenberg/pulls/54172/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:02.678003+00:00",
+          "sha256": "748a46838a54aadad8b05e21f83104ef91efe6338b4a02664b6bf0c4bc9b7533",
+          "source": "https://api.github.com/repos/WordPress/gutenberg/pulls/54172/commits?per_page=100&page=1"
+        },
+        "repository": "WordPress/gutenberg",
+        "sha": "d0c20a733063e89525efcf7dda00546b4e82bc7a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b3018082026602176d265b71bbacdbc6fe1dffe7"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-09-05T04:16:44Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "crosses_tfg",
+      "committer_time": "2023-09-05T06:00:06Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-09-05T06:00:06+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "297999c724fc50c66af162dc3156c279603b8f1e"
+      ],
+      "position": 1,
+      "pr_number": 54172,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:19:02.678003+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/WordPress/gutenberg/pulls/54172/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:19:02.678003+00:00",
+        "sha256": "748a46838a54aadad8b05e21f83104ef91efe6338b4a02664b6bf0c4bc9b7533",
+        "source": "https://api.github.com/repos/WordPress/gutenberg/pulls/54172/commits?per_page=100&page=1"
+      },
+      "repository": "WordPress/gutenberg",
+      "sha": "d0c20a733063e89525efcf7dda00546b4e82bc7a",
+      "temporal_basis": "committer_time",
+      "tree_sha": "b3018082026602176d265b71bbacdbc6fe1dffe7"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "04687216ba67e6ebace4a5662aa117da1b6bf7a3",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "5357479e93a34d2141059c3729ca9e8aa8ea71b1"
+    ],
+    "recursive_tree_entry_count": 11417,
+    "recursive_tree_listing_sha256": "4aff332da44d782007c9d95e935621f316f10b55894d7f4839d0340a9508922c",
+    "retrieved_at": "2026-10-05T20:19:06.254900+00:00",
+    "source": "https://github.com/WordPress/gutenberg.git",
+    "status": "materialized",
+    "tree_sha": "b64432f2af085dd3d84eafca8f0a18fc97c3dc49"
+  },
+  "pr_number": 54172,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:19:03.069754+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/WordPress/gutenberg/git/ref/heads/trunk"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:19:03.069754+00:00",
+        "sha256": "d7281e4bbd86046a816137011aad3f870bd411b5d60a0166d8dc57b90ac9dc5c",
+        "source": "https://api.github.com/repos/WordPress/gutenberg/git/ref/heads/trunk"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:19:03.651148+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/WordPress/gutenberg/commits?sha=trunk&until=2023-09-05T05%3A08%3A56.471521%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:19:03.651148+00:00",
+        "sha256": "79ab248a2a180b4cc43e3680a5ea279ec6df1442575f8a1b662dc682d3e65e69",
+        "source": "https://api.github.com/repos/WordPress/gutenberg/commits?sha=trunk&until=2023-09-05T05%3A08%3A56.471521%2B00%3A00&per_page=1&page=1"
+      }
+    ],
+    "base_route_evidence": {
+      "ref_object_sha": "e1af55e18cb61d7571dd45c9945886783bdeb53e",
+      "rule": "recorded_pr_base_ref_resolves"
+    },
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "04687216ba67e6ebace4a5662aa117da1b6bf7a3",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:19:02.678003+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/WordPress/gutenberg/pulls/54172/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:19:02.678003+00:00",
+        "sha256": "748a46838a54aadad8b05e21f83104ef91efe6338b4a02664b6bf0c4bc9b7533",
+        "source": "https://api.github.com/repos/WordPress/gutenberg/pulls/54172/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:19:02.180958+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/WordPress/gutenberg/pulls/54172"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:19:02.180958+00:00",
+      "sha256": "718b62a53491634d2c91e7e0a59c94fba48c8b36c7d987d47af91ba603e0823c",
+      "source": "https://api.github.com/repos/WordPress/gutenberg/pulls/54172"
+    },
+    "recorded_pr_base_ref_resolves": true
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "WordPress/gutenberg",
+  "selected_state": {
+    "author_time": "2023-09-05T04:14:22Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "04687216ba67e6ebace4a5662aa117da1b6bf7a3",
+    "committer_time": "2023-09-05T04:14:22Z",
+    "effective_time": "2023-09-05T04:14:22+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "b64432f2af085dd3d84eafca8f0a18fc97c3dc49"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-09-05T05:08:46.868780+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-09-05T05:08:56.471521+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

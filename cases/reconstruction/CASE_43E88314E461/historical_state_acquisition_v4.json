@@ -1,0 +1,288 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_43E88314E461",
+  "executed_at": "2026-10-05T20:16:56.171406+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-12-13T18:28:39Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-13T18:28:39Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-13T18:28:39+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "fc1bc450b43ea96bb0b1de959d2be054e1e951e4"
+        ],
+        "position": 1,
+        "pr_number": 142,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:55.213895+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/groundlight/python-sdk/pulls/142/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:55.213895+00:00",
+          "sha256": "c30c5c39b224adff67249f8d28f9aaa6f819edd7d2f963b48522be4af4a2a3ac",
+          "source": "https://api.github.com/repos/groundlight/python-sdk/pulls/142/commits?per_page=100&page=1"
+        },
+        "repository": "groundlight/python-sdk",
+        "sha": "5ceb346f5a831ca097d6f3ae19df9bacd1d6d88e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7f878f9d53cd4d528dd82c7f1db7d5cf9b173a18"
+      },
+      {
+        "author_time": "2023-12-13T21:24:54Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-13T21:24:54Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-13T21:24:54+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "5ceb346f5a831ca097d6f3ae19df9bacd1d6d88e"
+        ],
+        "position": 2,
+        "pr_number": 142,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:55.213895+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/groundlight/python-sdk/pulls/142/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:55.213895+00:00",
+          "sha256": "c30c5c39b224adff67249f8d28f9aaa6f819edd7d2f963b48522be4af4a2a3ac",
+          "source": "https://api.github.com/repos/groundlight/python-sdk/pulls/142/commits?per_page=100&page=1"
+        },
+        "repository": "groundlight/python-sdk",
+        "sha": "9be00caf153f67181247a42c4553034dc60aff19",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f3e7245bf30a3597249a7a62ab798dc273127d46"
+      },
+      {
+        "author_time": "2023-12-13T21:28:24Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-13T21:28:24Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-13T21:28:24+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "9be00caf153f67181247a42c4553034dc60aff19"
+        ],
+        "position": 3,
+        "pr_number": 142,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:55.213895+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/groundlight/python-sdk/pulls/142/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:55.213895+00:00",
+          "sha256": "c30c5c39b224adff67249f8d28f9aaa6f819edd7d2f963b48522be4af4a2a3ac",
+          "source": "https://api.github.com/repos/groundlight/python-sdk/pulls/142/commits?per_page=100&page=1"
+        },
+        "repository": "groundlight/python-sdk",
+        "sha": "dbd1f6022eb01ad4fe94e23f2cc310955f05a8ff",
+        "temporal_basis": "committer_time",
+        "tree_sha": "14c88cf8dc261999550b9c9e7e7b1b64fc61e822"
+      },
+      {
+        "author_time": "2023-12-13T21:49:35Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-13T21:49:35Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-13T21:49:35+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "dbd1f6022eb01ad4fe94e23f2cc310955f05a8ff"
+        ],
+        "position": 4,
+        "pr_number": 142,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:55.213895+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/groundlight/python-sdk/pulls/142/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:55.213895+00:00",
+          "sha256": "c30c5c39b224adff67249f8d28f9aaa6f819edd7d2f963b48522be4af4a2a3ac",
+          "source": "https://api.github.com/repos/groundlight/python-sdk/pulls/142/commits?per_page=100&page=1"
+        },
+        "repository": "groundlight/python-sdk",
+        "sha": "9c11c79c6802d58d6fff0515de10e8b782e32190",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1448721d877706a0b3425d3c0f3401f11f1a1641"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-12-13T21:49:35Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-12-13T21:49:35Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-12-13T21:49:35+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "dbd1f6022eb01ad4fe94e23f2cc310955f05a8ff"
+      ],
+      "position": 4,
+      "pr_number": 142,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:55.213895+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/groundlight/python-sdk/pulls/142/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:55.213895+00:00",
+        "sha256": "c30c5c39b224adff67249f8d28f9aaa6f819edd7d2f963b48522be4af4a2a3ac",
+        "source": "https://api.github.com/repos/groundlight/python-sdk/pulls/142/commits?per_page=100&page=1"
+      },
+      "repository": "groundlight/python-sdk",
+      "sha": "9c11c79c6802d58d6fff0515de10e8b782e32190",
+      "temporal_basis": "committer_time",
+      "tree_sha": "1448721d877706a0b3425d3c0f3401f11f1a1641"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-12-13T21:28:24Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-12-13T21:28:24Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-12-13T21:28:24+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "9be00caf153f67181247a42c4553034dc60aff19"
+      ],
+      "position": 3,
+      "pr_number": 142,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:55.213895+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/groundlight/python-sdk/pulls/142/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:55.213895+00:00",
+        "sha256": "c30c5c39b224adff67249f8d28f9aaa6f819edd7d2f963b48522be4af4a2a3ac",
+        "source": "https://api.github.com/repos/groundlight/python-sdk/pulls/142/commits?per_page=100&page=1"
+      },
+      "repository": "groundlight/python-sdk",
+      "sha": "dbd1f6022eb01ad4fe94e23f2cc310955f05a8ff",
+      "temporal_basis": "committer_time",
+      "tree_sha": "14c88cf8dc261999550b9c9e7e7b1b64fc61e822"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "dbd1f6022eb01ad4fe94e23f2cc310955f05a8ff",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "9be00caf153f67181247a42c4553034dc60aff19"
+    ],
+    "recursive_tree_entry_count": 208,
+    "recursive_tree_listing_sha256": "10f140a18e4d0bf736a33e556bac09fa2f244aba740dc3d1d7871373586213ed",
+    "retrieved_at": "2026-10-05T20:16:56.167949+00:00",
+    "source": "https://github.com/groundlight/python-sdk.git",
+    "status": "materialized",
+    "tree_sha": "14c88cf8dc261999550b9c9e7e7b1b64fc61e822"
+  },
+  "pr_number": 142,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "fc1bc450b43ea96bb0b1de959d2be054e1e951e4",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:55.213895+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/groundlight/python-sdk/pulls/142/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:55.213895+00:00",
+        "sha256": "c30c5c39b224adff67249f8d28f9aaa6f819edd7d2f963b48522be4af4a2a3ac",
+        "source": "https://api.github.com/repos/groundlight/python-sdk/pulls/142/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:16:54.690740+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/groundlight/python-sdk/pulls/142"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:16:54.690740+00:00",
+      "sha256": "67f782e83849388377451d6a1baf5884c025ac0ae61d8a679c148cd8a60b0bc1",
+      "source": "https://api.github.com/repos/groundlight/python-sdk/pulls/142"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "groundlight/python-sdk",
+  "selected_state": {
+    "author_time": "2023-12-13T21:28:24Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "dbd1f6022eb01ad4fe94e23f2cc310955f05a8ff",
+    "committer_time": "2023-12-13T21:28:24Z",
+    "effective_time": "2023-12-13T21:28:24+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "14c88cf8dc261999550b9c9e7e7b1b64fc61e822"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-12-13T21:43:38.610726+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-12-13T21:44:11.190978+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

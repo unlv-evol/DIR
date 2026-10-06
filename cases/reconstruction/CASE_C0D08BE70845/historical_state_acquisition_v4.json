@@ -1,0 +1,776 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "main",
+  "base_routing_source": "",
+  "case_id": "CASE_C0D08BE70845",
+  "executed_at": "2026-10-05T22:48:39.687696+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-03-27T03:23:15Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-27T03:23:15Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-27T03:23:15+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f5ef6b9c020e40bcc126d7f78a41eef5d9a8c478"
+        ],
+        "position": 1,
+        "pr_number": 2351,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+          "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+          "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+        },
+        "repository": "formbricks/formbricks",
+        "sha": "796ffc5ecd9053ed52875a441340e8ad129cba65",
+        "temporal_basis": "committer_time",
+        "tree_sha": "85f8e85bd559f55fdbbda251a900e2e45552fb06"
+      },
+      {
+        "author_time": "2024-03-28T05:54:47Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-28T05:54:47Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-28T05:54:47+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "796ffc5ecd9053ed52875a441340e8ad129cba65",
+          "dddc730ef425fe6682eb41e875297375aa130ce8"
+        ],
+        "position": 2,
+        "pr_number": 2351,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+          "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+          "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+        },
+        "repository": "formbricks/formbricks",
+        "sha": "512f671bdea09059bcdb87ea511e55434919691a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "fa77f785f80c5aaa2bc98074ded2fc75134fdc07"
+      },
+      {
+        "author_time": "2024-03-28T06:54:37Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-28T06:54:37Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-28T06:54:37+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "512f671bdea09059bcdb87ea511e55434919691a"
+        ],
+        "position": 3,
+        "pr_number": 2351,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+          "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+          "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+        },
+        "repository": "formbricks/formbricks",
+        "sha": "546e997096dc393b430ee144cbdcbf1cf98faa9b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a8509113e79bfde6883a752e648ac8df79e5fef8"
+      },
+      {
+        "author_time": "2024-03-28T07:01:50Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-28T07:01:50Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-28T07:01:50+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "546e997096dc393b430ee144cbdcbf1cf98faa9b"
+        ],
+        "position": 4,
+        "pr_number": 2351,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+          "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+          "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+        },
+        "repository": "formbricks/formbricks",
+        "sha": "21445c16452baabfe0d7a938f54c13269f0995d8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "66af83309406111b781c740c10683b7703889bff"
+      },
+      {
+        "author_time": "2024-03-28T07:29:09Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-28T07:29:09Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-28T07:29:09+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "21445c16452baabfe0d7a938f54c13269f0995d8"
+        ],
+        "position": 5,
+        "pr_number": 2351,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+          "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+          "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+        },
+        "repository": "formbricks/formbricks",
+        "sha": "e8e63e66aef116093554b8d38a50c1ebdbbc70fd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "97482889684aff0c3a5c92000b6c4c3c7b9d77fd"
+      },
+      {
+        "author_time": "2024-03-28T07:42:10Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-28T07:42:10Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-28T07:42:10+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "e8e63e66aef116093554b8d38a50c1ebdbbc70fd"
+        ],
+        "position": 6,
+        "pr_number": 2351,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+          "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+          "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+        },
+        "repository": "formbricks/formbricks",
+        "sha": "ae77db1133c3c917977b187d10ca647c3a6d4902",
+        "temporal_basis": "committer_time",
+        "tree_sha": "97b69d3b9bfb1a8bd8deedff50c4828743cbcc28"
+      },
+      {
+        "author_time": "2024-04-01T11:23:51Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-01T11:23:51Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-04-01T11:23:51+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ae77db1133c3c917977b187d10ca647c3a6d4902",
+          "cebc386de3c0c6238a58c469a24347139e769e41"
+        ],
+        "position": 7,
+        "pr_number": 2351,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+          "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+          "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+        },
+        "repository": "formbricks/formbricks",
+        "sha": "7d43e1ae15b13587b66b87b0686090d53e7b10d9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "cdb3f75c1b407fea8acc29422bc7e15c29e2d164"
+      },
+      {
+        "author_time": "2024-04-03T04:14:33Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-03T04:14:33Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-04-03T04:14:33+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7d43e1ae15b13587b66b87b0686090d53e7b10d9"
+        ],
+        "position": 8,
+        "pr_number": 2351,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+          "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+          "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+        },
+        "repository": "formbricks/formbricks",
+        "sha": "ada61e988845b5350564879151d7a57008a00ed4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f8437d44844379cb017b38d034e981fe962ae51b"
+      },
+      {
+        "author_time": "2024-04-03T13:43:01Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-03T13:43:01Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-04-03T13:43:01+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ada61e988845b5350564879151d7a57008a00ed4",
+          "d94e0032446eecb332b6d87e7318e86444229033"
+        ],
+        "position": 9,
+        "pr_number": 2351,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+          "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+          "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+        },
+        "repository": "formbricks/formbricks",
+        "sha": "2eea79fbf3f4ab6bbaf1ab89d8b2d93efa4e94c3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f3b1b2dcbde622a20e7d2715caee0e309bcdb59c"
+      },
+      {
+        "author_time": "2024-04-03T13:46:55Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-03T13:46:55Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-04-03T13:46:55+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "2eea79fbf3f4ab6bbaf1ab89d8b2d93efa4e94c3"
+        ],
+        "position": 10,
+        "pr_number": 2351,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+          "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+          "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+        },
+        "repository": "formbricks/formbricks",
+        "sha": "f3c555be8d23908ab1759dc17218ba79d9b70f0a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0bfbc6c495f5c4072f9701f807bc6ffb2c669097"
+      },
+      {
+        "author_time": "2024-04-03T14:42:18Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-03T14:42:18Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-03T14:42:18+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f3c555be8d23908ab1759dc17218ba79d9b70f0a"
+        ],
+        "position": 11,
+        "pr_number": 2351,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+          "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+          "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+        },
+        "repository": "formbricks/formbricks",
+        "sha": "04a706894745460beec85e646ba17e350e4c2656",
+        "temporal_basis": "committer_time",
+        "tree_sha": "02b340a9647bb38cc68a7234574b5871b402c34f"
+      },
+      {
+        "author_time": "2024-04-04T06:26:34Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-04T06:26:34Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-04T06:26:34+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "04a706894745460beec85e646ba17e350e4c2656"
+        ],
+        "position": 12,
+        "pr_number": 2351,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+          "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+          "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+        },
+        "repository": "formbricks/formbricks",
+        "sha": "533ab54ea9e28311bf59c8cb698ff1dfe82e38ea",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0a2e6099264818b9358df1b356c26b5dcebec6df"
+      },
+      {
+        "author_time": "2024-04-04T07:36:40Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-04T07:36:40Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-04T07:36:40+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "533ab54ea9e28311bf59c8cb698ff1dfe82e38ea",
+          "1e0c90ca6fd8296458c61c7d77fdaae25db4d2f4"
+        ],
+        "position": 13,
+        "pr_number": 2351,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+          "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+          "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+        },
+        "repository": "formbricks/formbricks",
+        "sha": "d1426e27f73e5956e0350ec056e885c65c55ef28",
+        "temporal_basis": "committer_time",
+        "tree_sha": "50284eb9a7ce480b869d11d0e577f6f5419e7479"
+      },
+      {
+        "author_time": "2024-04-04T09:02:38Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-04T09:02:38Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-04T09:02:38+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "533ab54ea9e28311bf59c8cb698ff1dfe82e38ea"
+        ],
+        "position": 14,
+        "pr_number": 2351,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+          "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+          "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+        },
+        "repository": "formbricks/formbricks",
+        "sha": "b1e33b41d41676b79f2d632fa898787b47c9fad9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "fd27e5b6ef0ebc065a85e89e0a59bac1fa3d1cd6"
+      },
+      {
+        "author_time": "2024-04-04T09:02:57Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-04T09:02:57Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-04T09:02:57+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "b1e33b41d41676b79f2d632fa898787b47c9fad9",
+          "d1426e27f73e5956e0350ec056e885c65c55ef28"
+        ],
+        "position": 15,
+        "pr_number": 2351,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+          "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+          "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+        },
+        "repository": "formbricks/formbricks",
+        "sha": "4954593cd2e0c2f993c2af61ca209ceaa331c4b8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "18f108cfb468246603aeddf897c1fee6135da776"
+      },
+      {
+        "author_time": "2024-04-04T09:03:50Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-04T09:03:50Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-04T09:03:50+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "4954593cd2e0c2f993c2af61ca209ceaa331c4b8",
+          "bc86249047f2c26f11843bdc56e9f9288dd1b394"
+        ],
+        "position": 16,
+        "pr_number": 2351,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+          "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+          "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+        },
+        "repository": "formbricks/formbricks",
+        "sha": "23a8161a4b5c92c36fbba5f91e811a3a4b79a3d8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b53503c716815038bb998d5bde7940297e3b1e68"
+      },
+      {
+        "author_time": "2024-04-04T14:15:39Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-04T14:15:39Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-04T14:15:39+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "23a8161a4b5c92c36fbba5f91e811a3a4b79a3d8"
+        ],
+        "position": 17,
+        "pr_number": 2351,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+          "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+          "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+        },
+        "repository": "formbricks/formbricks",
+        "sha": "3255809ae382a885a37f403509781cb4eedf2ecb",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6e277a703804363f2ee1aa2336794b6f124d5511"
+      },
+      {
+        "author_time": "2024-04-04T14:16:27Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-04T14:16:27Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-04T14:16:27+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "3255809ae382a885a37f403509781cb4eedf2ecb",
+          "9e06dde2fc25bec59ab36b69fd82c5f08531e785"
+        ],
+        "position": 18,
+        "pr_number": 2351,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+          "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+          "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+        },
+        "repository": "formbricks/formbricks",
+        "sha": "6eafd96d321169592acb0482af55888fb24dac14",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b7700577030466def80c7485319e3a5ffe5157a7"
+      },
+      {
+        "author_time": "2024-04-05T04:18:06Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-05T04:18:06Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-05T04:18:06+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6eafd96d321169592acb0482af55888fb24dac14",
+          "9f7cb7c1b999bfd6ebb903a2cbf760ea371cf962"
+        ],
+        "position": 19,
+        "pr_number": 2351,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+          "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+          "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+        },
+        "repository": "formbricks/formbricks",
+        "sha": "05904d5429b1d0137ce5681de80200f20595548b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f0c2867554c20f7d2a362fdf7f24c2cb3438d5f9"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2024-04-03T14:42:18Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-04-03T14:42:18Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2024-04-03T14:42:18+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "f3c555be8d23908ab1759dc17218ba79d9b70f0a"
+      ],
+      "position": 11,
+      "pr_number": 2351,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+        "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+        "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+      },
+      "repository": "formbricks/formbricks",
+      "sha": "04a706894745460beec85e646ba17e350e4c2656",
+      "temporal_basis": "committer_time",
+      "tree_sha": "02b340a9647bb38cc68a7234574b5871b402c34f"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-04-03T13:46:55Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-04-03T13:46:55Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-04-03T13:46:55+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "2eea79fbf3f4ab6bbaf1ab89d8b2d93efa4e94c3"
+      ],
+      "position": 10,
+      "pr_number": 2351,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+        "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+        "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+      },
+      "repository": "formbricks/formbricks",
+      "sha": "f3c555be8d23908ab1759dc17218ba79d9b70f0a",
+      "temporal_basis": "committer_time",
+      "tree_sha": "0bfbc6c495f5c4072f9701f807bc6ffb2c669097"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "f3c555be8d23908ab1759dc17218ba79d9b70f0a",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "2eea79fbf3f4ab6bbaf1ab89d8b2d93efa4e94c3"
+    ],
+    "recursive_tree_entry_count": 2825,
+    "recursive_tree_listing_sha256": "d73d293131677e9c9763ea1ffcda420fb39bd9180e9bc61436ae73e0ace8c23d",
+    "retrieved_at": "2026-10-05T22:48:39.683745+00:00",
+    "source": "https://github.com/formbricks/formbricks.git",
+    "status": "materialized",
+    "tree_sha": "0bfbc6c495f5c4072f9701f807bc6ffb2c669097"
+  },
+  "pr_number": 2351,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "9f7cb7c1b999bfd6ebb903a2cbf760ea371cf962",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:48:33.971592+00:00",
+        "sha256": "17c18f71f3ee2c1f04f0e4107e0cfcfbb5981586ddfb7474ad048b7630182b1d",
+        "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T22:48:33.333468+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/formbricks/formbricks/pulls/2351"
+        }
+      ],
+      "retrieved_at": "2026-10-05T22:48:33.333468+00:00",
+      "sha256": "2a357dc71744363f0a355e000b7377811ea58a4d46f4d89ffedb68107ccde2b0",
+      "source": "https://api.github.com/repos/formbricks/formbricks/pulls/2351"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "formbricks/formbricks",
+  "selected_state": {
+    "author_time": "2024-04-03T13:46:55Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "f3c555be8d23908ab1759dc17218ba79d9b70f0a",
+    "committer_time": "2024-04-03T13:46:55Z",
+    "effective_time": "2024-04-03T13:46:55+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "0bfbc6c495f5c4072f9701f807bc6ffb2c669097"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-04-03T14:13:42.318441+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-04-03T14:15:29.912515+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

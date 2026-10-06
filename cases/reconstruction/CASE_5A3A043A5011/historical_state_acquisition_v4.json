@@ -1,0 +1,320 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_5A3A043A5011",
+  "executed_at": "2026-10-05T20:17:12.183902+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-08-13T07:36:47Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-13T07:36:47Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-08-13T07:36:47+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "302bd80c32222e2e878c456f94eeec660ba3c529"
+        ],
+        "position": 1,
+        "pr_number": 29,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:11.484502+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/QRTaxi/QRTaxi_Web/pulls/29/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:11.484502+00:00",
+          "sha256": "c2242ad5a56b3d8c9fa1fddbca16ffa75700f42968c0760063fbcfb2916d680e",
+          "source": "https://api.github.com/repos/QRTaxi/QRTaxi_Web/pulls/29/commits?per_page=100&page=1"
+        },
+        "repository": "QRTaxi/QRTaxi_Web",
+        "sha": "52f4de35853cf41740b92813214bbd2b64f6f7f1",
+        "temporal_basis": "committer_time",
+        "tree_sha": "12ae7fbd71529d2a80f258b7dea357ad282d31f7"
+      },
+      {
+        "author_time": "2023-08-13T07:37:17Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-13T07:37:17Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-08-13T07:37:17+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "52f4de35853cf41740b92813214bbd2b64f6f7f1"
+        ],
+        "position": 2,
+        "pr_number": 29,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:11.484502+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/QRTaxi/QRTaxi_Web/pulls/29/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:11.484502+00:00",
+          "sha256": "c2242ad5a56b3d8c9fa1fddbca16ffa75700f42968c0760063fbcfb2916d680e",
+          "source": "https://api.github.com/repos/QRTaxi/QRTaxi_Web/pulls/29/commits?per_page=100&page=1"
+        },
+        "repository": "QRTaxi/QRTaxi_Web",
+        "sha": "44be4bd010a281e0566c217942ce255ac74b8571",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e4c3640faaa12a02386c886af156a0b5406772d0"
+      },
+      {
+        "author_time": "2023-08-13T07:44:32Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-13T07:44:32Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-08-13T07:44:32+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "44be4bd010a281e0566c217942ce255ac74b8571"
+        ],
+        "position": 3,
+        "pr_number": 29,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:11.484502+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/QRTaxi/QRTaxi_Web/pulls/29/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:11.484502+00:00",
+          "sha256": "c2242ad5a56b3d8c9fa1fddbca16ffa75700f42968c0760063fbcfb2916d680e",
+          "source": "https://api.github.com/repos/QRTaxi/QRTaxi_Web/pulls/29/commits?per_page=100&page=1"
+        },
+        "repository": "QRTaxi/QRTaxi_Web",
+        "sha": "ad499a4a6a812e7c2532b9b90d359f13eb10a981",
+        "temporal_basis": "committer_time",
+        "tree_sha": "39a4c0c3c780b0245e88ff44840092d216343466"
+      },
+      {
+        "author_time": "2023-08-13T07:50:30Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-13T07:50:30Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-08-13T07:50:30+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ad499a4a6a812e7c2532b9b90d359f13eb10a981"
+        ],
+        "position": 4,
+        "pr_number": 29,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:11.484502+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/QRTaxi/QRTaxi_Web/pulls/29/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:11.484502+00:00",
+          "sha256": "c2242ad5a56b3d8c9fa1fddbca16ffa75700f42968c0760063fbcfb2916d680e",
+          "source": "https://api.github.com/repos/QRTaxi/QRTaxi_Web/pulls/29/commits?per_page=100&page=1"
+        },
+        "repository": "QRTaxi/QRTaxi_Web",
+        "sha": "6aa40c3379140aac0ce771725551cf78d2d4a28e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "31963995bce74b02058a480a5d880090448bde2b"
+      },
+      {
+        "author_time": "2023-08-13T09:19:14Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-13T09:19:14Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-13T09:19:14+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6aa40c3379140aac0ce771725551cf78d2d4a28e"
+        ],
+        "position": 5,
+        "pr_number": 29,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:11.484502+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/QRTaxi/QRTaxi_Web/pulls/29/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:11.484502+00:00",
+          "sha256": "c2242ad5a56b3d8c9fa1fddbca16ffa75700f42968c0760063fbcfb2916d680e",
+          "source": "https://api.github.com/repos/QRTaxi/QRTaxi_Web/pulls/29/commits?per_page=100&page=1"
+        },
+        "repository": "QRTaxi/QRTaxi_Web",
+        "sha": "ebb5029b7538a0b981cc27c426be803975c3eaf6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "64660ef52139cb2f10d5e97378fa750990947fee"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-08-13T09:19:14Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-08-13T09:19:14Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-08-13T09:19:14+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "6aa40c3379140aac0ce771725551cf78d2d4a28e"
+      ],
+      "position": 5,
+      "pr_number": 29,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:11.484502+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/QRTaxi/QRTaxi_Web/pulls/29/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:11.484502+00:00",
+        "sha256": "c2242ad5a56b3d8c9fa1fddbca16ffa75700f42968c0760063fbcfb2916d680e",
+        "source": "https://api.github.com/repos/QRTaxi/QRTaxi_Web/pulls/29/commits?per_page=100&page=1"
+      },
+      "repository": "QRTaxi/QRTaxi_Web",
+      "sha": "ebb5029b7538a0b981cc27c426be803975c3eaf6",
+      "temporal_basis": "committer_time",
+      "tree_sha": "64660ef52139cb2f10d5e97378fa750990947fee"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-08-13T07:50:30Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-08-13T07:50:30Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-08-13T07:50:30+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "ad499a4a6a812e7c2532b9b90d359f13eb10a981"
+      ],
+      "position": 4,
+      "pr_number": 29,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:11.484502+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/QRTaxi/QRTaxi_Web/pulls/29/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:11.484502+00:00",
+        "sha256": "c2242ad5a56b3d8c9fa1fddbca16ffa75700f42968c0760063fbcfb2916d680e",
+        "source": "https://api.github.com/repos/QRTaxi/QRTaxi_Web/pulls/29/commits?per_page=100&page=1"
+      },
+      "repository": "QRTaxi/QRTaxi_Web",
+      "sha": "6aa40c3379140aac0ce771725551cf78d2d4a28e",
+      "temporal_basis": "committer_time",
+      "tree_sha": "31963995bce74b02058a480a5d880090448bde2b"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "6aa40c3379140aac0ce771725551cf78d2d4a28e",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "ad499a4a6a812e7c2532b9b90d359f13eb10a981"
+    ],
+    "recursive_tree_entry_count": 104,
+    "recursive_tree_listing_sha256": "a68d3b41fe940bfbacfea9ae22164a165df3ad97f3e1d96a74e12c2f7115b595",
+    "retrieved_at": "2026-10-05T20:17:12.180280+00:00",
+    "source": "https://github.com/QRTaxi/QRTaxi_Web.git",
+    "status": "materialized",
+    "tree_sha": "31963995bce74b02058a480a5d880090448bde2b"
+  },
+  "pr_number": 29,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "302bd80c32222e2e878c456f94eeec660ba3c529",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:11.484502+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/QRTaxi/QRTaxi_Web/pulls/29/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:11.484502+00:00",
+        "sha256": "c2242ad5a56b3d8c9fa1fddbca16ffa75700f42968c0760063fbcfb2916d680e",
+        "source": "https://api.github.com/repos/QRTaxi/QRTaxi_Web/pulls/29/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:17:10.728312+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/QRTaxi/QRTaxi_Web/pulls/29"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:17:10.728312+00:00",
+      "sha256": "29c3697f6fd2380ce37dd2b05243436fbae59460f757272d05fb190413610f71",
+      "source": "https://api.github.com/repos/QRTaxi/QRTaxi_Web/pulls/29"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "QRTaxi/QRTaxi_Web",
+  "selected_state": {
+    "author_time": "2023-08-13T07:50:30Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "6aa40c3379140aac0ce771725551cf78d2d4a28e",
+    "committer_time": "2023-08-13T07:50:30Z",
+    "effective_time": "2023-08-13T07:50:30+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "31963995bce74b02058a480a5d880090448bde2b"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-08-13T08:05:19.653407+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-08-13T08:05:30.672917+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

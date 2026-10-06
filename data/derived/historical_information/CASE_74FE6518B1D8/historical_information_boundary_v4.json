@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "dev",
+  "base_routing_source": "pr_base_ref",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_74FE6518B1D8",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "8fa9dbe3971e41172cab18aa019670c10e798932",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "e3f117c708cebbf9febb96ade7ab61fb2b99ca47"
+    ],
+    "recursive_tree_entry_count": 3105,
+    "recursive_tree_listing_sha256": "58cc155ddda5e80eac8ede936971aad489c6c46b17ff2fb43f98f9c63a17491e",
+    "retrieved_at": "2026-10-05T20:17:49.091790+00:00",
+    "source": "https://github.com/adobe/aem-core-forms-components.git",
+    "status": "materialized",
+    "tree_sha": "99e2aeae25c31b7e5d5a5c8ad8cda7d92fc8cf45"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_74FE6518B1D8/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_74FE6518B1D8/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "repository": "adobe/aem-core-forms-components",
+  "selected_state": {
+    "author_time": "2023-09-27T11:20:24Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "8fa9dbe3971e41172cab18aa019670c10e798932",
+    "committer_time": "2023-09-27T11:20:24Z",
+    "effective_time": "2023-09-27T11:20:24+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "99e2aeae25c31b7e5d5a5c8ad8cda7d92fc8cf45"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-09-30T04:21:13.310784+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

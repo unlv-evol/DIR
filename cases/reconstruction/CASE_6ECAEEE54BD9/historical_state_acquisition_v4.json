@@ -1,0 +1,296 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-07-03T08:15:11Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-03T08:15:11Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-03T08:15:11+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a8e6b791fee01b9b7b5260b69366d5599c96bd8a"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:38.568482+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/app-sre/qontract-reconcile/commits?sha=master&until=2023-07-03T10%3A30%3A55.652206%2B00%3A00&per_page=1&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:38.568482+00:00",
+          "sha256": "52e95be21242a053946c8701e0287f1308b40df76d65fd36f4f204f893e3a53f",
+          "source": "https://api.github.com/repos/app-sre/qontract-reconcile/commits?sha=master&until=2023-07-03T10%3A30%3A55.652206%2B00%3A00&per_page=1&page=1"
+        },
+        "repository": "app-sre/qontract-reconcile",
+        "sha": "c19207d15e0a4f323839997b880a39233a33656d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c3cf47faeba87ba75e2eb50b3187d37ae034b081"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-07-03T08:15:11Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-07-03T08:15:11Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-07-03T08:15:11+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "a8e6b791fee01b9b7b5260b69366d5599c96bd8a"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:38.568482+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/app-sre/qontract-reconcile/commits?sha=master&until=2023-07-03T10%3A30%3A55.652206%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:38.568482+00:00",
+        "sha256": "52e95be21242a053946c8701e0287f1308b40df76d65fd36f4f204f893e3a53f",
+        "source": "https://api.github.com/repos/app-sre/qontract-reconcile/commits?sha=master&until=2023-07-03T10%3A30%3A55.652206%2B00%3A00&per_page=1&page=1"
+      },
+      "repository": "app-sre/qontract-reconcile",
+      "sha": "c19207d15e0a4f323839997b880a39233a33656d",
+      "temporal_basis": "committer_time",
+      "tree_sha": "c3cf47faeba87ba75e2eb50b3187d37ae034b081"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "master",
+  "base_routing_source": "pr_base_ref",
+  "case_id": "CASE_6ECAEEE54BD9",
+  "executed_at": "2026-10-05T20:17:39.552796+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-07-03T11:20:17Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-03T12:00:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-03T12:00:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "ea58999acee96823364a95dfd1554c8cb45854c3"
+        ],
+        "position": 1,
+        "pr_number": 3630,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:37.641879+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/app-sre/qontract-reconcile/pulls/3630/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:37.641879+00:00",
+          "sha256": "ee5709fdc9874b000375fcedbe32023a4258cba8ab4936d17e397d190decc115",
+          "source": "https://api.github.com/repos/app-sre/qontract-reconcile/pulls/3630/commits?per_page=100&page=1"
+        },
+        "repository": "app-sre/qontract-reconcile",
+        "sha": "00760b151fb299d2ae757e1e69bf80daba4bd951",
+        "temporal_basis": "committer_time",
+        "tree_sha": "92d4836c2b2309dea449396c3492439f45ad3ae4"
+      },
+      {
+        "author_time": "2023-07-03T11:57:57Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-03T12:00:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-03T12:00:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "00760b151fb299d2ae757e1e69bf80daba4bd951"
+        ],
+        "position": 2,
+        "pr_number": 3630,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:37.641879+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/app-sre/qontract-reconcile/pulls/3630/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:37.641879+00:00",
+          "sha256": "ee5709fdc9874b000375fcedbe32023a4258cba8ab4936d17e397d190decc115",
+          "source": "https://api.github.com/repos/app-sre/qontract-reconcile/pulls/3630/commits?per_page=100&page=1"
+        },
+        "repository": "app-sre/qontract-reconcile",
+        "sha": "37b2cb6b67c99e21d78efcf7eaab70541259caf8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "fa08a4529e8117bdf5597570980a58d24c59b317"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-07-03T11:20:17Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-07-03T12:00:22Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-07-03T12:00:22+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "ea58999acee96823364a95dfd1554c8cb45854c3"
+      ],
+      "position": 1,
+      "pr_number": 3630,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:37.641879+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/app-sre/qontract-reconcile/pulls/3630/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:37.641879+00:00",
+        "sha256": "ee5709fdc9874b000375fcedbe32023a4258cba8ab4936d17e397d190decc115",
+        "source": "https://api.github.com/repos/app-sre/qontract-reconcile/pulls/3630/commits?per_page=100&page=1"
+      },
+      "repository": "app-sre/qontract-reconcile",
+      "sha": "00760b151fb299d2ae757e1e69bf80daba4bd951",
+      "temporal_basis": "committer_time",
+      "tree_sha": "92d4836c2b2309dea449396c3492439f45ad3ae4"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "c19207d15e0a4f323839997b880a39233a33656d",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "a8e6b791fee01b9b7b5260b69366d5599c96bd8a"
+    ],
+    "recursive_tree_entry_count": 1219,
+    "recursive_tree_listing_sha256": "e79b53fc40db92ed736912bf1418295d290cdbc4f11f5634b070229d6ae1fd06",
+    "retrieved_at": "2026-10-05T20:17:39.549126+00:00",
+    "source": "https://github.com/app-sre/qontract-reconcile.git",
+    "status": "materialized",
+    "tree_sha": "c3cf47faeba87ba75e2eb50b3187d37ae034b081"
+  },
+  "pr_number": 3630,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:38.059974+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/app-sre/qontract-reconcile/git/ref/heads/master"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:38.059974+00:00",
+        "sha256": "d8a8e322691250ef839f6dc8a43d601c6dbdae31f0aacbc4c11d5be80e7bf53b",
+        "source": "https://api.github.com/repos/app-sre/qontract-reconcile/git/ref/heads/master"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:38.568482+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/app-sre/qontract-reconcile/commits?sha=master&until=2023-07-03T10%3A30%3A55.652206%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:38.568482+00:00",
+        "sha256": "52e95be21242a053946c8701e0287f1308b40df76d65fd36f4f204f893e3a53f",
+        "source": "https://api.github.com/repos/app-sre/qontract-reconcile/commits?sha=master&until=2023-07-03T10%3A30%3A55.652206%2B00%3A00&per_page=1&page=1"
+      }
+    ],
+    "base_route_evidence": {
+      "ref_object_sha": "712319f15574d9b764212b2471e3df093d0c6668",
+      "rule": "recorded_pr_base_ref_resolves"
+    },
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "ea58999acee96823364a95dfd1554c8cb45854c3",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:37.641879+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/app-sre/qontract-reconcile/pulls/3630/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:37.641879+00:00",
+        "sha256": "ee5709fdc9874b000375fcedbe32023a4258cba8ab4936d17e397d190decc115",
+        "source": "https://api.github.com/repos/app-sre/qontract-reconcile/pulls/3630/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:17:37.077719+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/app-sre/qontract-reconcile/pulls/3630"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:17:37.077719+00:00",
+      "sha256": "649e626e557324b3cd026106eec0ebc1f72d230cb7f3acb808450a48150d9fd9",
+      "source": "https://api.github.com/repos/app-sre/qontract-reconcile/pulls/3630"
+    },
+    "recorded_pr_base_ref_resolves": true
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "app-sre/qontract-reconcile",
+  "selected_state": {
+    "author_time": "2023-07-03T08:15:11Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "c19207d15e0a4f323839997b880a39233a33656d",
+    "committer_time": "2023-07-03T08:15:11Z",
+    "effective_time": "2023-07-03T08:15:11+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "c3cf47faeba87ba75e2eb50b3187d37ae034b081"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-07-03T10:30:38.693688+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-07-03T10:30:55.652206+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

@@ -1,0 +1,288 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_9B31F94A6604",
+  "executed_at": "2026-10-05T20:18:37.385962+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-04-30T18:27:19Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-04-30T18:27:19Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-04-30T18:27:19+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c6f806788d9c818537ab3bc974df7c9639bb54de"
+        ],
+        "position": 1,
+        "pr_number": 38,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:36.490096+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/StreamSG/ABCWorkshop/pulls/38/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:36.490096+00:00",
+          "sha256": "1fabf747eb9931ffa1b57b629c49fba60181ef5adcda97807dd091c9bd1bdd28",
+          "source": "https://api.github.com/repos/StreamSG/ABCWorkshop/pulls/38/commits?per_page=100&page=1"
+        },
+        "repository": "StreamSG/ABCWorkshop",
+        "sha": "f397d4102b882e68fbfa2cf096ce77aafaf80041",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d2c9bc2ac2765e6b68e3d7d06cb7230fbe19309d"
+      },
+      {
+        "author_time": "2023-05-23T04:22:51Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-05-23T04:22:51Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-05-23T04:22:51+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f397d4102b882e68fbfa2cf096ce77aafaf80041"
+        ],
+        "position": 2,
+        "pr_number": 38,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:36.490096+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/StreamSG/ABCWorkshop/pulls/38/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:36.490096+00:00",
+          "sha256": "1fabf747eb9931ffa1b57b629c49fba60181ef5adcda97807dd091c9bd1bdd28",
+          "source": "https://api.github.com/repos/StreamSG/ABCWorkshop/pulls/38/commits?per_page=100&page=1"
+        },
+        "repository": "StreamSG/ABCWorkshop",
+        "sha": "1356d8e1a53c410b334c4ed1919b11cf56178880",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0fadd409a51842df0a1cf3a48cf680f00089b68a"
+      },
+      {
+        "author_time": "2023-06-01T03:32:27Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-01T03:32:27Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-01T03:32:27+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1356d8e1a53c410b334c4ed1919b11cf56178880"
+        ],
+        "position": 3,
+        "pr_number": 38,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:36.490096+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/StreamSG/ABCWorkshop/pulls/38/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:36.490096+00:00",
+          "sha256": "1fabf747eb9931ffa1b57b629c49fba60181ef5adcda97807dd091c9bd1bdd28",
+          "source": "https://api.github.com/repos/StreamSG/ABCWorkshop/pulls/38/commits?per_page=100&page=1"
+        },
+        "repository": "StreamSG/ABCWorkshop",
+        "sha": "399e9f289ec8f34bb233e759031183c208520b1f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2827f6828b66fc7371505420d594825cc24e715d"
+      },
+      {
+        "author_time": "2023-06-02T02:16:05Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-02T02:16:05Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-02T02:16:05+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "399e9f289ec8f34bb233e759031183c208520b1f"
+        ],
+        "position": 4,
+        "pr_number": 38,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:36.490096+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/StreamSG/ABCWorkshop/pulls/38/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:36.490096+00:00",
+          "sha256": "1fabf747eb9931ffa1b57b629c49fba60181ef5adcda97807dd091c9bd1bdd28",
+          "source": "https://api.github.com/repos/StreamSG/ABCWorkshop/pulls/38/commits?per_page=100&page=1"
+        },
+        "repository": "StreamSG/ABCWorkshop",
+        "sha": "d0b28bd7fa6d4127e46aebf46ff316ce4ab9b980",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c670e36d3c8ff2545487b9c312013de46e3b4f97"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-06-01T03:32:27Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-06-01T03:32:27Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-06-01T03:32:27+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "1356d8e1a53c410b334c4ed1919b11cf56178880"
+      ],
+      "position": 3,
+      "pr_number": 38,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:36.490096+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/StreamSG/ABCWorkshop/pulls/38/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:36.490096+00:00",
+        "sha256": "1fabf747eb9931ffa1b57b629c49fba60181ef5adcda97807dd091c9bd1bdd28",
+        "source": "https://api.github.com/repos/StreamSG/ABCWorkshop/pulls/38/commits?per_page=100&page=1"
+      },
+      "repository": "StreamSG/ABCWorkshop",
+      "sha": "399e9f289ec8f34bb233e759031183c208520b1f",
+      "temporal_basis": "committer_time",
+      "tree_sha": "2827f6828b66fc7371505420d594825cc24e715d"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-05-23T04:22:51Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-05-23T04:22:51Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-05-23T04:22:51+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "f397d4102b882e68fbfa2cf096ce77aafaf80041"
+      ],
+      "position": 2,
+      "pr_number": 38,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:36.490096+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/StreamSG/ABCWorkshop/pulls/38/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:36.490096+00:00",
+        "sha256": "1fabf747eb9931ffa1b57b629c49fba60181ef5adcda97807dd091c9bd1bdd28",
+        "source": "https://api.github.com/repos/StreamSG/ABCWorkshop/pulls/38/commits?per_page=100&page=1"
+      },
+      "repository": "StreamSG/ABCWorkshop",
+      "sha": "1356d8e1a53c410b334c4ed1919b11cf56178880",
+      "temporal_basis": "committer_time",
+      "tree_sha": "0fadd409a51842df0a1cf3a48cf680f00089b68a"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "1356d8e1a53c410b334c4ed1919b11cf56178880",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "f397d4102b882e68fbfa2cf096ce77aafaf80041"
+    ],
+    "recursive_tree_entry_count": 224,
+    "recursive_tree_listing_sha256": "2152f1dc2396d07e21a79532434ab3d2ba02d07d3fd5f28a1d6aba15ef839df3",
+    "retrieved_at": "2026-10-05T20:18:37.382387+00:00",
+    "source": "https://github.com/StreamSG/ABCWorkshop.git",
+    "status": "materialized",
+    "tree_sha": "0fadd409a51842df0a1cf3a48cf680f00089b68a"
+  },
+  "pr_number": 38,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "c6f806788d9c818537ab3bc974df7c9639bb54de",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:36.490096+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/StreamSG/ABCWorkshop/pulls/38/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:36.490096+00:00",
+        "sha256": "1fabf747eb9931ffa1b57b629c49fba60181ef5adcda97807dd091c9bd1bdd28",
+        "source": "https://api.github.com/repos/StreamSG/ABCWorkshop/pulls/38/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:18:35.966359+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/StreamSG/ABCWorkshop/pulls/38"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:18:35.966359+00:00",
+      "sha256": "ad3b590e46e7b6d23a994a9f072ea07cfca416637db49d4056a01cb22d3093a4",
+      "source": "https://api.github.com/repos/StreamSG/ABCWorkshop/pulls/38"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "StreamSG/ABCWorkshop",
+  "selected_state": {
+    "author_time": "2023-05-23T04:22:51Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "1356d8e1a53c410b334c4ed1919b11cf56178880",
+    "committer_time": "2023-05-23T04:22:51Z",
+    "effective_time": "2023-05-23T04:22:51+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "0fadd409a51842df0a1cf3a48cf680f00089b68a"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-06-01T02:12:29.256477+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-06-01T02:12:42.148960+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

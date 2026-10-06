@@ -1,0 +1,288 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_9E4D3DF1CDB9",
+  "executed_at": "2026-10-05T20:18:39.379101+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-07-13T15:27:01Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-13T15:27:01Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-13T15:27:01+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7cbe4a8e70cbf8f8c8b2e8e75693c01eaacfe09b"
+        ],
+        "position": 1,
+        "pr_number": 12,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:38.718802+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/laravel-json-api/core/pulls/12/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:38.718802+00:00",
+          "sha256": "d2406b0ebe3b1cc871368a55e4e571924764a8075d979264d11471de50dc8f0c",
+          "source": "https://api.github.com/repos/laravel-json-api/core/pulls/12/commits?per_page=100&page=1"
+        },
+        "repository": "laravel-json-api/core",
+        "sha": "b59d1ae24ffc2faa466afaf12204d6d5e789494b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5d4b9022aef9bece3653900832092186f0cd0fd1"
+      },
+      {
+        "author_time": "2023-07-13T15:27:30Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-13T15:27:30Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-13T15:27:30+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "b59d1ae24ffc2faa466afaf12204d6d5e789494b"
+        ],
+        "position": 2,
+        "pr_number": 12,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:38.718802+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/laravel-json-api/core/pulls/12/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:38.718802+00:00",
+          "sha256": "d2406b0ebe3b1cc871368a55e4e571924764a8075d979264d11471de50dc8f0c",
+          "source": "https://api.github.com/repos/laravel-json-api/core/pulls/12/commits?per_page=100&page=1"
+        },
+        "repository": "laravel-json-api/core",
+        "sha": "8e25cfa92ad75637367280cf96c0bd3d6a3bd97a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2ae2693bd2010dc9a120bba13cd9e121b163fd1a"
+      },
+      {
+        "author_time": "2023-07-13T21:15:27Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-13T21:15:27Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-13T21:15:27+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "8e25cfa92ad75637367280cf96c0bd3d6a3bd97a"
+        ],
+        "position": 3,
+        "pr_number": 12,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:38.718802+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/laravel-json-api/core/pulls/12/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:38.718802+00:00",
+          "sha256": "d2406b0ebe3b1cc871368a55e4e571924764a8075d979264d11471de50dc8f0c",
+          "source": "https://api.github.com/repos/laravel-json-api/core/pulls/12/commits?per_page=100&page=1"
+        },
+        "repository": "laravel-json-api/core",
+        "sha": "071163cabb1ee67af584281e6ee91a84feddf5e8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e655ed4a21645c6c1fd3e94b512ea71c08a1edc7"
+      },
+      {
+        "author_time": "2023-07-20T16:48:16Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-20T16:48:16Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-20T16:48:16+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "071163cabb1ee67af584281e6ee91a84feddf5e8"
+        ],
+        "position": 4,
+        "pr_number": 12,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:38.718802+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/laravel-json-api/core/pulls/12/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:38.718802+00:00",
+          "sha256": "d2406b0ebe3b1cc871368a55e4e571924764a8075d979264d11471de50dc8f0c",
+          "source": "https://api.github.com/repos/laravel-json-api/core/pulls/12/commits?per_page=100&page=1"
+        },
+        "repository": "laravel-json-api/core",
+        "sha": "0aaacad92e344a191c6e03f81c0bd50ea1d5cb3a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d6cd1ac20ceb7117686aa7953cf3854008c4234f"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-07-20T16:48:16Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-07-20T16:48:16Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-07-20T16:48:16+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "071163cabb1ee67af584281e6ee91a84feddf5e8"
+      ],
+      "position": 4,
+      "pr_number": 12,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:38.718802+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/laravel-json-api/core/pulls/12/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:38.718802+00:00",
+        "sha256": "d2406b0ebe3b1cc871368a55e4e571924764a8075d979264d11471de50dc8f0c",
+        "source": "https://api.github.com/repos/laravel-json-api/core/pulls/12/commits?per_page=100&page=1"
+      },
+      "repository": "laravel-json-api/core",
+      "sha": "0aaacad92e344a191c6e03f81c0bd50ea1d5cb3a",
+      "temporal_basis": "committer_time",
+      "tree_sha": "d6cd1ac20ceb7117686aa7953cf3854008c4234f"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-07-13T21:15:27Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-07-13T21:15:27Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-07-13T21:15:27+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "8e25cfa92ad75637367280cf96c0bd3d6a3bd97a"
+      ],
+      "position": 3,
+      "pr_number": 12,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:38.718802+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/laravel-json-api/core/pulls/12/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:38.718802+00:00",
+        "sha256": "d2406b0ebe3b1cc871368a55e4e571924764a8075d979264d11471de50dc8f0c",
+        "source": "https://api.github.com/repos/laravel-json-api/core/pulls/12/commits?per_page=100&page=1"
+      },
+      "repository": "laravel-json-api/core",
+      "sha": "071163cabb1ee67af584281e6ee91a84feddf5e8",
+      "temporal_basis": "committer_time",
+      "tree_sha": "e655ed4a21645c6c1fd3e94b512ea71c08a1edc7"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "071163cabb1ee67af584281e6ee91a84feddf5e8",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "8e25cfa92ad75637367280cf96c0bd3d6a3bd97a"
+    ],
+    "recursive_tree_entry_count": 240,
+    "recursive_tree_listing_sha256": "492bba7d206dc32d1273ed96a7da57c270bb7ce7e324e9340c0dbf91f6d7723d",
+    "retrieved_at": "2026-10-05T20:18:39.375288+00:00",
+    "source": "https://github.com/laravel-json-api/core.git",
+    "status": "materialized",
+    "tree_sha": "e655ed4a21645c6c1fd3e94b512ea71c08a1edc7"
+  },
+  "pr_number": 12,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "7cbe4a8e70cbf8f8c8b2e8e75693c01eaacfe09b",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:38.718802+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/laravel-json-api/core/pulls/12/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:38.718802+00:00",
+        "sha256": "d2406b0ebe3b1cc871368a55e4e571924764a8075d979264d11471de50dc8f0c",
+        "source": "https://api.github.com/repos/laravel-json-api/core/pulls/12/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:18:38.217223+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/laravel-json-api/core/pulls/12"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:18:38.217223+00:00",
+      "sha256": "2f5818bd9320b4be7e939cf4b0967082d86ac96f884b0d318bdb6ff551c5053e",
+      "source": "https://api.github.com/repos/laravel-json-api/core/pulls/12"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "laravel-json-api/core",
+  "selected_state": {
+    "author_time": "2023-07-13T21:15:27Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "071163cabb1ee67af584281e6ee91a84feddf5e8",
+    "committer_time": "2023-07-13T21:15:27Z",
+    "effective_time": "2023-07-13T21:15:27+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "e655ed4a21645c6c1fd3e94b512ea71c08a1edc7"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-07-13T21:17:13.705425+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-07-13T21:17:21.868937+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

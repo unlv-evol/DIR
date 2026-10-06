@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "main",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_D52C7AE8E2E7",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "6cdab385b6d31bb19ecd441ac5335e9f6e9b5b5c",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "5fb8c91326a2ae012ad0738931b4b7061b6eff37"
+    ],
+    "recursive_tree_entry_count": 691,
+    "recursive_tree_listing_sha256": "746d6cbf556b37f6c7aef96d204f21b7dfaa2028c35f3a382a12b0dc4d825ea3",
+    "retrieved_at": "2026-10-05T22:49:59.630310+00:00",
+    "source": "https://github.com/pokt-network/poktroll.git",
+    "status": "materialized",
+    "tree_sha": "0db5657edc43ed2b33174559694d491ee0a48bd2"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_D52C7AE8E2E7/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_D52C7AE8E2E7/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "pokt-network/poktroll",
+  "selected_state": {
+    "author_time": "2023-12-04T22:53:26Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "6cdab385b6d31bb19ecd441ac5335e9f6e9b5b5c",
+    "committer_time": "2023-12-04T22:53:26Z",
+    "effective_time": "2023-12-04T22:53:26+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "0db5657edc43ed2b33174559694d491ee0a48bd2"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-12-05T16:35:02.796881+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

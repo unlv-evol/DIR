@@ -1,0 +1,577 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_0ECE0C32A4BB",
+  "executed_at": "2026-10-05T20:15:40.408648+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-02-15T21:55:28Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-15T21:55:28Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-15T21:55:28+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "06cce5acc79ad6147cdd6559aa9e5e15f5dfb639"
+        ],
+        "position": 1,
+        "pr_number": 35,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+          "sha256": "389c256453925a4b899fcaf62aacb116869ca603c58020406c0d0e50d361e9d1",
+          "source": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+        },
+        "repository": "StuartGavidia/businessapp",
+        "sha": "1d09d55b64010dea67e0ec325a52c4799e8fabb4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "26e80741299c06be2f95cf93d28d4dc1222a934a"
+      },
+      {
+        "author_time": "2024-02-15T21:56:34Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-15T21:56:34Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-15T21:56:34+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "1d09d55b64010dea67e0ec325a52c4799e8fabb4"
+        ],
+        "position": 2,
+        "pr_number": 35,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+          "sha256": "389c256453925a4b899fcaf62aacb116869ca603c58020406c0d0e50d361e9d1",
+          "source": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+        },
+        "repository": "StuartGavidia/businessapp",
+        "sha": "18c091c7101cfc58b75a27917c3be0a985428552",
+        "temporal_basis": "committer_time",
+        "tree_sha": "917e3845a31ca6ec8e4ea3b1302d49f7164d941b"
+      },
+      {
+        "author_time": "2024-02-15T21:57:32Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-15T21:57:32Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-15T21:57:32+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "18c091c7101cfc58b75a27917c3be0a985428552"
+        ],
+        "position": 3,
+        "pr_number": 35,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+          "sha256": "389c256453925a4b899fcaf62aacb116869ca603c58020406c0d0e50d361e9d1",
+          "source": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+        },
+        "repository": "StuartGavidia/businessapp",
+        "sha": "a807ca9af08fcf4ed3d57fa9e141413a37a6849e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "53ee2e592a25b44be20dc7778365188ee2623f15"
+      },
+      {
+        "author_time": "2024-02-15T22:00:38Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-15T22:00:38Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-15T22:00:38+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a807ca9af08fcf4ed3d57fa9e141413a37a6849e"
+        ],
+        "position": 4,
+        "pr_number": 35,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+          "sha256": "389c256453925a4b899fcaf62aacb116869ca603c58020406c0d0e50d361e9d1",
+          "source": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+        },
+        "repository": "StuartGavidia/businessapp",
+        "sha": "0e253864b11c139210e045b033f2ed8e0c7bc2d4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "98bfffbee08dd9d2e73a2ccd52847ffb4c40086c"
+      },
+      {
+        "author_time": "2024-02-15T22:01:10Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-15T22:01:10Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-15T22:01:10+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "0e253864b11c139210e045b033f2ed8e0c7bc2d4"
+        ],
+        "position": 5,
+        "pr_number": 35,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+          "sha256": "389c256453925a4b899fcaf62aacb116869ca603c58020406c0d0e50d361e9d1",
+          "source": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+        },
+        "repository": "StuartGavidia/businessapp",
+        "sha": "1b502bff6723f761bf08de34b833cedbd8bda498",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f2e5dfffea9f4c46758ffce4cc471f30ba85c07a"
+      },
+      {
+        "author_time": "2024-02-15T22:01:31Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-15T22:01:31Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-15T22:01:31+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "1b502bff6723f761bf08de34b833cedbd8bda498"
+        ],
+        "position": 6,
+        "pr_number": 35,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+          "sha256": "389c256453925a4b899fcaf62aacb116869ca603c58020406c0d0e50d361e9d1",
+          "source": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+        },
+        "repository": "StuartGavidia/businessapp",
+        "sha": "30262b7285858e95b94f7ab2a162586ef4a72f1a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "98bfffbee08dd9d2e73a2ccd52847ffb4c40086c"
+      },
+      {
+        "author_time": "2024-02-15T22:02:01Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-15T22:02:01Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-15T22:02:01+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "30262b7285858e95b94f7ab2a162586ef4a72f1a"
+        ],
+        "position": 7,
+        "pr_number": 35,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+          "sha256": "389c256453925a4b899fcaf62aacb116869ca603c58020406c0d0e50d361e9d1",
+          "source": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+        },
+        "repository": "StuartGavidia/businessapp",
+        "sha": "4064c7fa951f8c21eea871d239b4868fd029fd5c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "95d3e6ebf77861d73aa2e67057a17a2c61a9c155"
+      },
+      {
+        "author_time": "2024-02-15T22:03:02Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-15T22:03:02Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-15T22:03:02+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "4064c7fa951f8c21eea871d239b4868fd029fd5c"
+        ],
+        "position": 8,
+        "pr_number": 35,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+          "sha256": "389c256453925a4b899fcaf62aacb116869ca603c58020406c0d0e50d361e9d1",
+          "source": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+        },
+        "repository": "StuartGavidia/businessapp",
+        "sha": "98572e69dd24bb64652e9acb378b5d65b51e7f7b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4933a2d8cf2b5fa0264908d1b0ac399467ea5855"
+      },
+      {
+        "author_time": "2024-03-04T09:35:35Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-04T09:35:35Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-03-04T09:35:35+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "98572e69dd24bb64652e9acb378b5d65b51e7f7b"
+        ],
+        "position": 9,
+        "pr_number": 35,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+          "sha256": "389c256453925a4b899fcaf62aacb116869ca603c58020406c0d0e50d361e9d1",
+          "source": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+        },
+        "repository": "StuartGavidia/businessapp",
+        "sha": "bc22c7ef52482231abe160607ddd695e86929f89",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4ce3d2f1508582a1b53b8b2850a69155eaa554a3"
+      },
+      {
+        "author_time": "2024-03-12T17:16:32Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-12T17:16:32Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-03-12T17:16:32+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "bc22c7ef52482231abe160607ddd695e86929f89"
+        ],
+        "position": 10,
+        "pr_number": 35,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+          "sha256": "389c256453925a4b899fcaf62aacb116869ca603c58020406c0d0e50d361e9d1",
+          "source": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+        },
+        "repository": "StuartGavidia/businessapp",
+        "sha": "02f4c681023a3e1d60694e028430a9e1fc4c87bf",
+        "temporal_basis": "committer_time",
+        "tree_sha": "12c8174fa6c00b92c31fd57fda55ffb38455a90e"
+      },
+      {
+        "author_time": "2024-03-12T18:21:16Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-12T18:21:16Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-03-12T18:21:16+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "02f4c681023a3e1d60694e028430a9e1fc4c87bf"
+        ],
+        "position": 11,
+        "pr_number": 35,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+          "sha256": "389c256453925a4b899fcaf62aacb116869ca603c58020406c0d0e50d361e9d1",
+          "source": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+        },
+        "repository": "StuartGavidia/businessapp",
+        "sha": "968b790b37ccc81c32e38742d498e8a4160002d2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "30f3cfd27aa7d310881e2b545f5b13f451d92416"
+      },
+      {
+        "author_time": "2024-03-13T04:32:13Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-13T04:32:13Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-03-13T04:32:13+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "968b790b37ccc81c32e38742d498e8a4160002d2"
+        ],
+        "position": 12,
+        "pr_number": 35,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+          "sha256": "389c256453925a4b899fcaf62aacb116869ca603c58020406c0d0e50d361e9d1",
+          "source": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+        },
+        "repository": "StuartGavidia/businessapp",
+        "sha": "108ca3d5e1a4108215e521e5c2096a727241b240",
+        "temporal_basis": "committer_time",
+        "tree_sha": "28458de59e88ce670483577d3355a9bb1040a090"
+      },
+      {
+        "author_time": "2024-03-13T04:48:03Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-13T04:48:03Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-03-13T04:48:03+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "108ca3d5e1a4108215e521e5c2096a727241b240",
+          "8861a9064687dbd874e0dc135d03fc494639e2d1"
+        ],
+        "position": 13,
+        "pr_number": 35,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+          "sha256": "389c256453925a4b899fcaf62aacb116869ca603c58020406c0d0e50d361e9d1",
+          "source": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+        },
+        "repository": "StuartGavidia/businessapp",
+        "sha": "866d7f26e97b3fdfd8874e21a3b51199e984e4a4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0fe4a012afa99a1a4d4719e38f901400902be908"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2024-03-04T09:35:35Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-03-04T09:35:35Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2024-03-04T09:35:35+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "98572e69dd24bb64652e9acb378b5d65b51e7f7b"
+      ],
+      "position": 9,
+      "pr_number": 35,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+        "sha256": "389c256453925a4b899fcaf62aacb116869ca603c58020406c0d0e50d361e9d1",
+        "source": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+      },
+      "repository": "StuartGavidia/businessapp",
+      "sha": "bc22c7ef52482231abe160607ddd695e86929f89",
+      "temporal_basis": "committer_time",
+      "tree_sha": "4ce3d2f1508582a1b53b8b2850a69155eaa554a3"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-02-15T22:03:02Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-02-15T22:03:02Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-02-15T22:03:02+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "4064c7fa951f8c21eea871d239b4868fd029fd5c"
+      ],
+      "position": 8,
+      "pr_number": 35,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+        "sha256": "389c256453925a4b899fcaf62aacb116869ca603c58020406c0d0e50d361e9d1",
+        "source": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+      },
+      "repository": "StuartGavidia/businessapp",
+      "sha": "98572e69dd24bb64652e9acb378b5d65b51e7f7b",
+      "temporal_basis": "committer_time",
+      "tree_sha": "4933a2d8cf2b5fa0264908d1b0ac399467ea5855"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "98572e69dd24bb64652e9acb378b5d65b51e7f7b",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "4064c7fa951f8c21eea871d239b4868fd029fd5c"
+    ],
+    "recursive_tree_entry_count": 255,
+    "recursive_tree_listing_sha256": "465bed502cafdbe1e8e4496e858c045d90739612535610851d2cc778edb09965",
+    "retrieved_at": "2026-10-05T20:15:40.405455+00:00",
+    "source": "https://github.com/StuartGavidia/businessapp.git",
+    "status": "materialized",
+    "tree_sha": "4933a2d8cf2b5fa0264908d1b0ac399467ea5855"
+  },
+  "pr_number": 35,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "8861a9064687dbd874e0dc135d03fc494639e2d1",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:39.662040+00:00",
+        "sha256": "389c256453925a4b899fcaf62aacb116869ca603c58020406c0d0e50d361e9d1",
+        "source": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:15:39.049922+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:15:39.049922+00:00",
+      "sha256": "03620bd616267326ca26f6a3215657ccb42108e6b3ada925d1877594d817952b",
+      "source": "https://api.github.com/repos/StuartGavidia/businessapp/pulls/35"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "StuartGavidia/businessapp",
+  "selected_state": {
+    "author_time": "2024-02-15T22:03:02Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "98572e69dd24bb64652e9acb378b5d65b51e7f7b",
+    "committer_time": "2024-02-15T22:03:02Z",
+    "effective_time": "2024-02-15T22:03:02+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "4933a2d8cf2b5fa0264908d1b0ac399467ea5855"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-03-04T09:15:23.235651+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-03-04T09:15:38.260049+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

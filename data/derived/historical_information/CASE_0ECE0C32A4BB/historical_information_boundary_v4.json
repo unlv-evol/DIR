@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_0ECE0C32A4BB",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "98572e69dd24bb64652e9acb378b5d65b51e7f7b",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "4064c7fa951f8c21eea871d239b4868fd029fd5c"
+    ],
+    "recursive_tree_entry_count": 255,
+    "recursive_tree_listing_sha256": "465bed502cafdbe1e8e4496e858c045d90739612535610851d2cc778edb09965",
+    "retrieved_at": "2026-10-05T20:15:40.405455+00:00",
+    "source": "https://github.com/StuartGavidia/businessapp.git",
+    "status": "materialized",
+    "tree_sha": "4933a2d8cf2b5fa0264908d1b0ac399467ea5855"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_0ECE0C32A4BB/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_0ECE0C32A4BB/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "StuartGavidia/businessapp",
+  "selected_state": {
+    "author_time": "2024-02-15T22:03:02Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "98572e69dd24bb64652e9acb378b5d65b51e7f7b",
+    "committer_time": "2024-02-15T22:03:02Z",
+    "effective_time": "2024-02-15T22:03:02+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "4933a2d8cf2b5fa0264908d1b0ac399467ea5855"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-03-04T09:15:38.260049+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

@@ -1,0 +1,173 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "dev",
+  "base_routing_source": "",
+  "case_id": "CASE_F13F98792012",
+  "executed_at": "2026-10-05T19:19:43.622327+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-09-25T11:07:07Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-25T11:07:07Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-25T11:07:07+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ebd30f10a856a398151b3b8009c0f833b64e4506"
+        ],
+        "position": 1,
+        "pr_number": 206,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:42.266854+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/agentcoinorg/evo.ninja/pulls/206/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:42.266854+00:00",
+          "sha256": "7e6b5406d5a9bbf925871c1ece99c7afe5d365305b06b8a6bcff26b5d0c50043",
+          "source": "https://api.github.com/repos/agentcoinorg/evo.ninja/pulls/206/commits?per_page=100&page=1"
+        },
+        "repository": "agentcoinorg/evo.ninja",
+        "sha": "efe8fa4f424f357399e7fdaebc5c666de987e597",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b7faabb1dba156a77d30a98ec8724520a2b48768"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-09-25T11:07:07Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-09-25T11:07:07Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-09-25T11:07:07+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "ebd30f10a856a398151b3b8009c0f833b64e4506"
+      ],
+      "position": 1,
+      "pr_number": 206,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T19:19:42.266854+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/agentcoinorg/evo.ninja/pulls/206/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T19:19:42.266854+00:00",
+        "sha256": "7e6b5406d5a9bbf925871c1ece99c7afe5d365305b06b8a6bcff26b5d0c50043",
+        "source": "https://api.github.com/repos/agentcoinorg/evo.ninja/pulls/206/commits?per_page=100&page=1"
+      },
+      "repository": "agentcoinorg/evo.ninja",
+      "sha": "efe8fa4f424f357399e7fdaebc5c666de987e597",
+      "temporal_basis": "committer_time",
+      "tree_sha": "b7faabb1dba156a77d30a98ec8724520a2b48768"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "efe8fa4f424f357399e7fdaebc5c666de987e597",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "ebd30f10a856a398151b3b8009c0f833b64e4506"
+    ],
+    "recursive_tree_entry_count": 223,
+    "recursive_tree_listing_sha256": "dd4a41e1e4ac5969727cb8d7def86d61e4caebffbabeae20c97aa6798474a765",
+    "retrieved_at": "2026-10-05T19:19:43.618612+00:00",
+    "source": "https://github.com/agentcoinorg/evo.ninja.git",
+    "status": "materialized",
+    "tree_sha": "b7faabb1dba156a77d30a98ec8724520a2b48768"
+  },
+  "pr_number": 206,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T19:19:42.674838+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/agentcoinorg/evo.ninja/commits?sha=dev&until=2023-09-25T11%3A59%3A29.032600%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T19:19:42.674838+00:00",
+        "sha256": "3581a6dbd04268d8f1542b2505940f91d6b9c396771585d9341e349e55fbf39e",
+        "source": "https://api.github.com/repos/agentcoinorg/evo.ninja/commits?sha=dev&until=2023-09-25T11%3A59%3A29.032600%2B00%3A00&per_page=1&page=1"
+      }
+    ],
+    "current_pr_base_sha_provenance_only": "ebd30f10a856a398151b3b8009c0f833b64e4506",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T19:19:42.266854+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/agentcoinorg/evo.ninja/pulls/206/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T19:19:42.266854+00:00",
+        "sha256": "7e6b5406d5a9bbf925871c1ece99c7afe5d365305b06b8a6bcff26b5d0c50043",
+        "source": "https://api.github.com/repos/agentcoinorg/evo.ninja/pulls/206/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T19:19:41.802397+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/agentcoinorg/evo.ninja/pulls/206"
+        }
+      ],
+      "retrieved_at": "2026-10-05T19:19:41.802397+00:00",
+      "sha256": "10c0462efa64d337e9f8ffd2152aa25f84de7772b587c00682f53dfe2ea54a37",
+      "source": "https://api.github.com/repos/agentcoinorg/evo.ninja/pulls/206"
+    }
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "agentcoinorg/evo.ninja",
+  "selected_state": {
+    "author_time": "2023-09-25T11:07:07Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "efe8fa4f424f357399e7fdaebc5c666de987e597",
+    "committer_time": "2023-09-25T11:07:07Z",
+    "effective_time": "2023-09-25T11:07:07+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "b7faabb1dba156a77d30a98ec8724520a2b48768"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-09-25T11:59:01.557490+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-09-25T11:59:29.032600+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

@@ -1,0 +1,450 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_188C69620856",
+  "executed_at": "2026-10-05T20:15:48.767428+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-01-29T03:22:01Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-29T03:22:01Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-29T03:22:01+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "83c282006b9d2c1f0b166313126b1929935ea380"
+        ],
+        "position": 1,
+        "pr_number": 2021,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+          "sha256": "40ca43721204de3835349d2c418499e5f509f588aa2ec1e88110c2aedbb36dc3",
+          "source": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+        },
+        "repository": "Northeastern-Electric-Racing/FinishLine",
+        "sha": "9ad93a02c38e50a750802dbae61d54db2f653da7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8a15d48dca92b49ad833501de574f49718daeb52"
+      },
+      {
+        "author_time": "2024-01-29T03:44:02Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-29T03:44:02Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-29T03:44:02+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "9ad93a02c38e50a750802dbae61d54db2f653da7"
+        ],
+        "position": 2,
+        "pr_number": 2021,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+          "sha256": "40ca43721204de3835349d2c418499e5f509f588aa2ec1e88110c2aedbb36dc3",
+          "source": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+        },
+        "repository": "Northeastern-Electric-Racing/FinishLine",
+        "sha": "50c09be47dbe8c9e77b176221e144ea86a0a71b1",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6ecf9b7ce20d22901404032ab24e968cf168b4e6"
+      },
+      {
+        "author_time": "2024-02-08T05:17:59Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-08T05:17:59Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-08T05:17:59+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "50c09be47dbe8c9e77b176221e144ea86a0a71b1"
+        ],
+        "position": 3,
+        "pr_number": 2021,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+          "sha256": "40ca43721204de3835349d2c418499e5f509f588aa2ec1e88110c2aedbb36dc3",
+          "source": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+        },
+        "repository": "Northeastern-Electric-Racing/FinishLine",
+        "sha": "9c352a28f154768e59f53c1cb10e01450f44542a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6470463b97f9ee2156ed3c0a609d7f294ecd4aa5"
+      },
+      {
+        "author_time": "2024-02-12T02:12:24Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-12T02:12:24Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-12T02:12:24+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "9c352a28f154768e59f53c1cb10e01450f44542a"
+        ],
+        "position": 4,
+        "pr_number": 2021,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+          "sha256": "40ca43721204de3835349d2c418499e5f509f588aa2ec1e88110c2aedbb36dc3",
+          "source": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+        },
+        "repository": "Northeastern-Electric-Racing/FinishLine",
+        "sha": "65259c6cc0baf1f6789df7d10917ab217ca83eee",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b22514c6a614c3211b5059a202feb83aee3e2db0"
+      },
+      {
+        "author_time": "2024-02-12T03:18:51Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-12T03:18:51Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-12T03:18:51+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "65259c6cc0baf1f6789df7d10917ab217ca83eee",
+          "523cebc9ebac4dd57cc5b1fb1f1c56eca9c09f6a"
+        ],
+        "position": 5,
+        "pr_number": 2021,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+          "sha256": "40ca43721204de3835349d2c418499e5f509f588aa2ec1e88110c2aedbb36dc3",
+          "source": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+        },
+        "repository": "Northeastern-Electric-Racing/FinishLine",
+        "sha": "86b657a9a6026b874eb3f18a7969652280599ea2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "93b7cdef5404d6c9a00f53db10c34c1d0f498ef5"
+      },
+      {
+        "author_time": "2024-02-21T20:35:31Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-21T20:35:31Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-21T20:35:31+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "86b657a9a6026b874eb3f18a7969652280599ea2",
+          "15fee31f5b62089b3e712adedfd6024a88a0bc6b"
+        ],
+        "position": 6,
+        "pr_number": 2021,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+          "sha256": "40ca43721204de3835349d2c418499e5f509f588aa2ec1e88110c2aedbb36dc3",
+          "source": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+        },
+        "repository": "Northeastern-Electric-Racing/FinishLine",
+        "sha": "d7485a7f76fd967c4d33951ae2fb7fc55492aa59",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3380dd8802b19b52abdac201affcd70de591f3fe"
+      },
+      {
+        "author_time": "2024-02-21T21:19:26Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-21T21:19:26Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-21T21:19:26+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d7485a7f76fd967c4d33951ae2fb7fc55492aa59"
+        ],
+        "position": 7,
+        "pr_number": 2021,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+          "sha256": "40ca43721204de3835349d2c418499e5f509f588aa2ec1e88110c2aedbb36dc3",
+          "source": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+        },
+        "repository": "Northeastern-Electric-Racing/FinishLine",
+        "sha": "eb2ae1c424a20f8754be0941babed63d14a36616",
+        "temporal_basis": "committer_time",
+        "tree_sha": "491d9e09c915ff6d6c8148a3db9c30df6b51c6d5"
+      },
+      {
+        "author_time": "2024-02-22T02:48:53Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-22T02:48:53Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-22T02:48:53+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "eb2ae1c424a20f8754be0941babed63d14a36616"
+        ],
+        "position": 8,
+        "pr_number": 2021,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+          "sha256": "40ca43721204de3835349d2c418499e5f509f588aa2ec1e88110c2aedbb36dc3",
+          "source": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+        },
+        "repository": "Northeastern-Electric-Racing/FinishLine",
+        "sha": "0e922cab340d400fcba09396b285edbbadc38528",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ab16f754c1869e246700fa70c58c975504a3a800"
+      },
+      {
+        "author_time": "2024-02-22T04:20:10Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-22T04:20:10Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-22T04:20:10+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "0e922cab340d400fcba09396b285edbbadc38528"
+        ],
+        "position": 9,
+        "pr_number": 2021,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+          "sha256": "40ca43721204de3835349d2c418499e5f509f588aa2ec1e88110c2aedbb36dc3",
+          "source": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+        },
+        "repository": "Northeastern-Electric-Racing/FinishLine",
+        "sha": "5456fd292e86091f5ee2002ee1b4593b63db2487",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ee7d09940817c1c536f23596b7deee9ec0e8be20"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2024-02-08T05:17:59Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-02-08T05:17:59Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2024-02-08T05:17:59+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "50c09be47dbe8c9e77b176221e144ea86a0a71b1"
+      ],
+      "position": 3,
+      "pr_number": 2021,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+        "sha256": "40ca43721204de3835349d2c418499e5f509f588aa2ec1e88110c2aedbb36dc3",
+        "source": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+      },
+      "repository": "Northeastern-Electric-Racing/FinishLine",
+      "sha": "9c352a28f154768e59f53c1cb10e01450f44542a",
+      "temporal_basis": "committer_time",
+      "tree_sha": "6470463b97f9ee2156ed3c0a609d7f294ecd4aa5"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-01-29T03:44:02Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-01-29T03:44:02Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-01-29T03:44:02+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "9ad93a02c38e50a750802dbae61d54db2f653da7"
+      ],
+      "position": 2,
+      "pr_number": 2021,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+        "sha256": "40ca43721204de3835349d2c418499e5f509f588aa2ec1e88110c2aedbb36dc3",
+        "source": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+      },
+      "repository": "Northeastern-Electric-Racing/FinishLine",
+      "sha": "50c09be47dbe8c9e77b176221e144ea86a0a71b1",
+      "temporal_basis": "committer_time",
+      "tree_sha": "6ecf9b7ce20d22901404032ab24e968cf168b4e6"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "50c09be47dbe8c9e77b176221e144ea86a0a71b1",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "9ad93a02c38e50a750802dbae61d54db2f653da7"
+    ],
+    "recursive_tree_entry_count": 725,
+    "recursive_tree_listing_sha256": "a2c7017731e4dab768fd8cef663c3c0cfe100e14fdb4c6f16d5511a2014214ad",
+    "retrieved_at": "2026-10-05T20:15:48.763844+00:00",
+    "source": "https://github.com/Northeastern-Electric-Racing/FinishLine.git",
+    "status": "materialized",
+    "tree_sha": "6ecf9b7ce20d22901404032ab24e968cf168b4e6"
+  },
+  "pr_number": 2021,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "15fee31f5b62089b3e712adedfd6024a88a0bc6b",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:47.727527+00:00",
+        "sha256": "40ca43721204de3835349d2c418499e5f509f588aa2ec1e88110c2aedbb36dc3",
+        "source": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:15:47.210914+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:15:47.210914+00:00",
+      "sha256": "313979b6c0ee5ca72be8f560f74e492aa1c9301b49bda5ade38d402a2a3590d4",
+      "source": "https://api.github.com/repos/Northeastern-Electric-Racing/FinishLine/pulls/2021"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "Northeastern-Electric-Racing/FinishLine",
+  "selected_state": {
+    "author_time": "2024-01-29T03:44:02Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "50c09be47dbe8c9e77b176221e144ea86a0a71b1",
+    "committer_time": "2024-01-29T03:44:02Z",
+    "effective_time": "2024-01-29T03:44:02+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "6ecf9b7ce20d22901404032ab24e968cf168b4e6"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-02-08T04:42:13.817798+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-02-08T04:42:19.499871+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

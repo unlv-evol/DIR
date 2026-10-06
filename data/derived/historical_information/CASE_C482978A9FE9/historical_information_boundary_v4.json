@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "upload",
+  "base_routing_source": "other_explicitly_justified_route",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_C482978A9FE9",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "3702256ff8c618942a2e124b63b81e0f88283a4a",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "d70fe539fcf0f9cd1a3a0e36bd86f6617e3d81a0"
+    ],
+    "recursive_tree_entry_count": 4640,
+    "recursive_tree_listing_sha256": "b0d5d5b6da69c0c27c46c53f524e83cd5e432f0e399a933cd44233d5eb793f65",
+    "retrieved_at": "2026-10-05T20:07:16.322305+00:00",
+    "source": "https://github.com/cataclysmbn/Cataclysm-BN.git",
+    "status": "materialized",
+    "tree_sha": "5f4f98723cd5454a14c3a6308b419fc726e20ceb"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_C482978A9FE9/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_C482978A9FE9/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "repository": "cataclysmbn/Cataclysm-BN",
+  "selected_state": {
+    "author_time": "2023-09-10T21:11:21Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "3702256ff8c618942a2e124b63b81e0f88283a4a",
+    "committer_time": "2023-09-10T21:11:21Z",
+    "effective_time": "2023-09-10T21:11:21+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "5f4f98723cd5454a14c3a6308b419fc726e20ceb"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-09-11T00:04:52.102398+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

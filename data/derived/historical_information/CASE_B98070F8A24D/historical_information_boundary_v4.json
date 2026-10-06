@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "PC-25429-use-paginated-route-for-stock-event",
+  "base_routing_source": "other_explicitly_justified_route",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_B98070F8A24D",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "5a5aba61ea05ea746235452b7b56ce018919e48b",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "b373af922ba607666f1fad49fc40ebe8150e2892"
+    ],
+    "recursive_tree_entry_count": 6463,
+    "recursive_tree_listing_sha256": "04124fcee7f2aec202074a06a347920fdabff403fc0bf365a34fdb4703075966",
+    "retrieved_at": "2026-10-05T20:07:04.604674+00:00",
+    "source": "https://github.com/pass-culture/pass-culture-main.git",
+    "status": "materialized",
+    "tree_sha": "0dcc5ad56b2581a8ae7ed52f8872fdb966dfaaa7"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_B98070F8A24D/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_B98070F8A24D/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "repository": "pass-culture/pass-culture-main",
+  "selected_state": {
+    "author_time": "2023-11-20T16:06:56Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "5a5aba61ea05ea746235452b7b56ce018919e48b",
+    "committer_time": "2023-11-22T09:49:45Z",
+    "effective_time": "2023-11-22T09:49:45+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "0dcc5ad56b2581a8ae7ed52f8872fdb966dfaaa7"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-11-22T09:50:27.931547+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

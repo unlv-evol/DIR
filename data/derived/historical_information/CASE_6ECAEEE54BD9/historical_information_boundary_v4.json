@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "master",
+  "base_routing_source": "pr_base_ref",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_6ECAEEE54BD9",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "c19207d15e0a4f323839997b880a39233a33656d",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "a8e6b791fee01b9b7b5260b69366d5599c96bd8a"
+    ],
+    "recursive_tree_entry_count": 1219,
+    "recursive_tree_listing_sha256": "e79b53fc40db92ed736912bf1418295d290cdbc4f11f5634b070229d6ae1fd06",
+    "retrieved_at": "2026-10-05T20:17:39.549126+00:00",
+    "source": "https://github.com/app-sre/qontract-reconcile.git",
+    "status": "materialized",
+    "tree_sha": "c3cf47faeba87ba75e2eb50b3187d37ae034b081"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_6ECAEEE54BD9/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_6ECAEEE54BD9/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "repository": "app-sre/qontract-reconcile",
+  "selected_state": {
+    "author_time": "2023-07-03T08:15:11Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "c19207d15e0a4f323839997b880a39233a33656d",
+    "committer_time": "2023-07-03T08:15:11Z",
+    "effective_time": "2023-07-03T08:15:11+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "c3cf47faeba87ba75e2eb50b3187d37ae034b081"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-07-03T10:30:55.652206+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

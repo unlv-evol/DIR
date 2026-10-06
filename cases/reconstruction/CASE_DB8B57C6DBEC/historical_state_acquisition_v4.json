@@ -1,0 +1,832 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "main",
+  "base_routing_source": "",
+  "case_id": "CASE_DB8B57C6DBEC",
+  "executed_at": "2026-10-05T22:50:13.253048+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-05-02T15:26:47Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-05T20:49:09Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-05T20:49:09+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f5da9a6ce73ca6041bb59c0c9acf8e89f59e4087"
+        ],
+        "position": 1,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "e68d58afb4121454193e71c1bcea5d0445cfc3ce",
+        "temporal_basis": "committer_time",
+        "tree_sha": "decbaaf630ceb640dc9539c8f459c684e0e8b61c"
+      },
+      {
+        "author_time": "2023-04-27T17:39:35Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-05T20:50:36Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-05T20:50:36+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "e68d58afb4121454193e71c1bcea5d0445cfc3ce"
+        ],
+        "position": 2,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "a22b0e5dd679de6270b293fbab979a8503cda656",
+        "temporal_basis": "committer_time",
+        "tree_sha": "decbaaf630ceb640dc9539c8f459c684e0e8b61c"
+      },
+      {
+        "author_time": "2023-04-27T07:03:39Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-05T20:50:48Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-05T20:50:48+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a22b0e5dd679de6270b293fbab979a8503cda656"
+        ],
+        "position": 3,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "0e0a08231cf612a519b4e02693a979b28cab6d9f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f382061184d362adcdb2f48a95664da86187fae4"
+      },
+      {
+        "author_time": "2023-04-27T07:00:54Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-05T20:50:57Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-05T20:50:57+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "0e0a08231cf612a519b4e02693a979b28cab6d9f"
+        ],
+        "position": 4,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "7430df0885ac80ff7f644e06a567ea95e8dfbf0a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "146fa2263e087285895b920200cbabe6ec092614"
+      },
+      {
+        "author_time": "2023-06-05T21:55:19Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-05T21:55:19Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-05T21:55:19+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7430df0885ac80ff7f644e06a567ea95e8dfbf0a"
+        ],
+        "position": 5,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "c22256118f2bba49249972b16882c2890032f5f9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ac22c083658b7c519d775970acaa9383c1099ff3"
+      },
+      {
+        "author_time": "2023-06-06T00:40:43Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T00:40:43Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-06T00:40:43+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c22256118f2bba49249972b16882c2890032f5f9"
+        ],
+        "position": 6,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "78ab3bf8a364bd98589aa64208993f670351c100",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e13551ba8a40579fbddcafef5f31da1c8bbdeba2"
+      },
+      {
+        "author_time": "2023-06-07T04:45:41Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-07T04:45:41Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-07T04:45:41+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "78ab3bf8a364bd98589aa64208993f670351c100"
+        ],
+        "position": 7,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "4a06649109e63007f2cf015b58f1ae195064a7c2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c81960f145f59c96f7ee99fc4a9f1d61db3612c8"
+      },
+      {
+        "author_time": "2023-06-07T21:22:52Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-07T21:22:52Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-07T21:22:52+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "4a06649109e63007f2cf015b58f1ae195064a7c2"
+        ],
+        "position": 8,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "ff03d2270d58dad27b1ab0545443dac928a8066c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b8f05a1a42b9a5a75619b57dc5b698de38f83233"
+      },
+      {
+        "author_time": "2023-06-07T23:35:24Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-07T23:35:24Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-07T23:35:24+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "ff03d2270d58dad27b1ab0545443dac928a8066c"
+        ],
+        "position": 9,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "f59e4eb1da3b0ad28cd25784a947772caa1cd086",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a625040032b7c955bae5a3f1a6822a31c4c73e0f"
+      },
+      {
+        "author_time": "2023-06-07T23:38:30Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-07T23:38:30Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-07T23:38:30+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f59e4eb1da3b0ad28cd25784a947772caa1cd086"
+        ],
+        "position": 10,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "a09e429c92fe3e5ef670f179dc6ede33727cf328",
+        "temporal_basis": "committer_time",
+        "tree_sha": "fd787101866e76db36a0717e5b2796e935de6398"
+      },
+      {
+        "author_time": "2023-06-08T04:53:44Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T04:53:44Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T04:53:44+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a09e429c92fe3e5ef670f179dc6ede33727cf328"
+        ],
+        "position": 11,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "504548dd955e4dd93455b082ab14d6f9ec28c25a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "207918f065a16e77b3f99b3b8bdca7a58fe02316"
+      },
+      {
+        "author_time": "2023-06-08T05:19:02Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T05:19:02Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T05:19:02+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "504548dd955e4dd93455b082ab14d6f9ec28c25a"
+        ],
+        "position": 12,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "9b075563180faaa36358da06f3341bc19bae2622",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3743a1867eb145e71ef9974eb4b63bc5e812ffd7"
+      },
+      {
+        "author_time": "2023-06-08T05:20:05Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T05:20:05Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T05:20:05+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "9b075563180faaa36358da06f3341bc19bae2622"
+        ],
+        "position": 13,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "620e7e04322ee32012d4316ac7abb4924b2f605c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "43441200c4cc50847b0fb31b7cf5d743961a939a"
+      },
+      {
+        "author_time": "2023-06-08T05:29:01Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T05:29:01Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T05:29:01+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "620e7e04322ee32012d4316ac7abb4924b2f605c"
+        ],
+        "position": 14,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "a83a277c38ad18a51f03d324ddb65d3981f750e8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9f9b8d15c5c1209890383e788d8321a2378fd349"
+      },
+      {
+        "author_time": "2023-06-08T05:32:51Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T05:32:51Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T05:32:51+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a83a277c38ad18a51f03d324ddb65d3981f750e8"
+        ],
+        "position": 15,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "332af70f0a1d15d8cfc84fc6a53a3fdaafa94e75",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a1e6600fa27fb2678fa398e694712c5218189e43"
+      },
+      {
+        "author_time": "2023-06-08T16:24:37Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T16:24:37Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T16:24:37+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "332af70f0a1d15d8cfc84fc6a53a3fdaafa94e75"
+        ],
+        "position": 16,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "b6fba84e80ae2bdfc8e5b89863e1ad55518e8415",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5a0782041fc8c820daee60e5485a6cc6ff3c323e"
+      },
+      {
+        "author_time": "2023-06-08T18:53:29Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T18:53:29Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T18:53:29+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "b6fba84e80ae2bdfc8e5b89863e1ad55518e8415"
+        ],
+        "position": 17,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "28883db803493d408ca12e340b98cddfe7e621b7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3026eef9822aae8ea9dbf0ed91146ae90cd4a286"
+      },
+      {
+        "author_time": "2023-06-08T19:19:32Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T19:19:32Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T19:19:32+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "28883db803493d408ca12e340b98cddfe7e621b7"
+        ],
+        "position": 18,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "57c3cfb91f64ed7037bf98367945ec9f090ca135",
+        "temporal_basis": "committer_time",
+        "tree_sha": "43c5fe49f25d301bf01c16286e5ea83fc150c55e"
+      },
+      {
+        "author_time": "2023-06-08T20:17:58Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T20:17:58Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T20:17:58+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "57c3cfb91f64ed7037bf98367945ec9f090ca135"
+        ],
+        "position": 19,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "4f0df506efd29cd15661994e099f9903c4d42a05",
+        "temporal_basis": "committer_time",
+        "tree_sha": "69da35ed8d853e68a881e11ab931ad5d51c3b38e"
+      },
+      {
+        "author_time": "2023-06-08T20:41:12Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T20:41:12Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T20:41:12+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "4f0df506efd29cd15661994e099f9903c4d42a05"
+        ],
+        "position": 20,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "bb181f537d19b8ee43e5219fbdb104fb6e3e265d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "853c100d91fdac2773f4e93bb27fe5fe399698be"
+      },
+      {
+        "author_time": "2023-06-08T21:23:03Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-08T21:23:03Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-08T21:23:03+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "bb181f537d19b8ee43e5219fbdb104fb6e3e265d"
+        ],
+        "position": 21,
+        "pr_number": 22429,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+          "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+          "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+        },
+        "repository": "jhipster/generator-jhipster",
+        "sha": "0ac9a6879931a9a3f2ada3aa750b8ff2633b0871",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b1cc72e5a989f1ac1acac3801060a2d0243fbf1f"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-06-07T04:45:41Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-06-07T04:45:41Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-06-07T04:45:41+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "78ab3bf8a364bd98589aa64208993f670351c100"
+      ],
+      "position": 7,
+      "pr_number": 22429,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+        "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+        "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+      },
+      "repository": "jhipster/generator-jhipster",
+      "sha": "4a06649109e63007f2cf015b58f1ae195064a7c2",
+      "temporal_basis": "committer_time",
+      "tree_sha": "c81960f145f59c96f7ee99fc4a9f1d61db3612c8"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-06-06T00:40:43Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-06-06T00:40:43Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-06-06T00:40:43+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "c22256118f2bba49249972b16882c2890032f5f9"
+      ],
+      "position": 6,
+      "pr_number": 22429,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+        "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+        "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+      },
+      "repository": "jhipster/generator-jhipster",
+      "sha": "78ab3bf8a364bd98589aa64208993f670351c100",
+      "temporal_basis": "committer_time",
+      "tree_sha": "e13551ba8a40579fbddcafef5f31da1c8bbdeba2"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "78ab3bf8a364bd98589aa64208993f670351c100",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "c22256118f2bba49249972b16882c2890032f5f9"
+    ],
+    "recursive_tree_entry_count": 4638,
+    "recursive_tree_listing_sha256": "999558cafac7bac06b1931da9c7df8b13b32f44ad918bdc2f380f161610e4922",
+    "retrieved_at": "2026-10-05T22:50:13.250394+00:00",
+    "source": "https://github.com/jhipster/generator-jhipster.git",
+    "status": "materialized",
+    "tree_sha": "e13551ba8a40579fbddcafef5f31da1c8bbdeba2"
+  },
+  "pr_number": 22429,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "f5da9a6ce73ca6041bb59c0c9acf8e89f59e4087",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:11.717016+00:00",
+        "sha256": "4371f0a26edfaeb2f112ee06d7dfaf655d1018a5961284859a22a9daf78122f5",
+        "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T22:50:10.937323+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429"
+        }
+      ],
+      "retrieved_at": "2026-10-05T22:50:10.937323+00:00",
+      "sha256": "af971086705072e41993bdccd829d1e02185058bb34d7b787148405db118a7bb",
+      "source": "https://api.github.com/repos/jhipster/generator-jhipster/pulls/22429"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "jhipster/generator-jhipster",
+  "selected_state": {
+    "author_time": "2023-06-06T00:40:43Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "78ab3bf8a364bd98589aa64208993f670351c100",
+    "committer_time": "2023-06-06T00:40:43Z",
+    "effective_time": "2023-06-06T00:40:43+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "e13551ba8a40579fbddcafef5f31da1c8bbdeba2"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-06-06T00:42:21.402883+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-06-06T00:42:37.780720+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

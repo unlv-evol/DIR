@@ -1,0 +1,4391 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "feature/proof-of-stake",
+  "base_routing_source": "",
+  "case_id": "CASE_E9499409E39C",
+  "executed_at": "2026-10-05T22:50:29.673999+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-11-01T14:28:34Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-01T14:28:34Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-01T14:28:34+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "0937f535f31229993189945d6a510b576795fc77"
+        ],
+        "position": 1,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "d61e24cc41c9d87a3b47abf184491a2041289639",
+        "temporal_basis": "committer_time",
+        "tree_sha": "561959852671ae18c4c12dc44291c2155c269317"
+      },
+      {
+        "author_time": "2023-11-01T16:01:11Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-01T16:01:11Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-01T16:01:11+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d61e24cc41c9d87a3b47abf184491a2041289639",
+          "bb7afeadbaf1d508192a9ab033e23262df4db68a"
+        ],
+        "position": 2,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "18aff2b8e0a3f37ac56feff0d33220b8175dd41d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c5860e5cffc717681911b14655fda841ba404925"
+      },
+      {
+        "author_time": "2023-11-01T21:56:34Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-01T21:56:34Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-01T21:56:34+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "18aff2b8e0a3f37ac56feff0d33220b8175dd41d",
+          "c7bbd914c89ffe0267d8b229d9855ddb53dd4925"
+        ],
+        "position": 3,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "92e4f4a2d17c89c3893d56282200cf4c0d8d94f4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "03a26c439b059b781598c63fca110cf5a2978f30"
+      },
+      {
+        "author_time": "2023-11-01T23:15:56Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-01T23:15:56Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-01T23:15:56+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "92e4f4a2d17c89c3893d56282200cf4c0d8d94f4"
+        ],
+        "position": 4,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "dc49488d9da74fd6305e75d03ee88a29cf4d7bc6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "56553737522748b3d188e8f03afcef6ce38c1f1c"
+      },
+      {
+        "author_time": "2023-11-02T20:28:14Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-02T20:28:14Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-02T20:28:14+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "dc49488d9da74fd6305e75d03ee88a29cf4d7bc6"
+        ],
+        "position": 5,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "50a96841c8a37941949716d6d81a2ac0afee8dfd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "98eec4f347a5a0c5107492b61246251d9263d1e8"
+      },
+      {
+        "author_time": "2023-11-07T15:51:48Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-07T15:56:45Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-07T15:56:45+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "50a96841c8a37941949716d6d81a2ac0afee8dfd",
+          "cd079f67e2d3503e7276199e29c3613c2615c60a"
+        ],
+        "position": 6,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "35225073e06c8afcaa0e81e41dec4619947d5c3a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b10961c42b392d42caa11d16ebe0e5680a2e01ce"
+      },
+      {
+        "author_time": "2023-11-07T16:17:14Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-07T16:17:14Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-07T16:17:14+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "35225073e06c8afcaa0e81e41dec4619947d5c3a",
+          "8700cc36063f926d67cd16714dfb4b6b700e32c4"
+        ],
+        "position": 7,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "df6e2653162d21c369182ea5fc1fd1c117783285",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5bcd64056f08f27ef2a5bdf1425baa4fc38cc548"
+      },
+      {
+        "author_time": "2023-11-07T16:40:47Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-07T16:40:47Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-07T16:40:47+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "df6e2653162d21c369182ea5fc1fd1c117783285",
+          "256c9406d80939f8806230ebf829dcca01dcf941"
+        ],
+        "position": 8,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "ca85f59e884f79267de6e6b7925d71f5234bf2b2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2992b901819ef32b5ef725705d1a5f2202f97c52"
+      },
+      {
+        "author_time": "2023-11-07T17:23:16Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-07T17:23:16Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-07T17:23:16+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ca85f59e884f79267de6e6b7925d71f5234bf2b2",
+          "e538e1cc7982fc9aec1c42832679680d44a0ece8"
+        ],
+        "position": 9,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "32682349fb5d81b6b042f5ff15ab6bbb72a21890",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4196e19c321b1c32ec6087b39e0b63f49eef4264"
+      },
+      {
+        "author_time": "2023-11-08T16:59:10Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-08T16:59:10Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-08T16:59:10+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "32682349fb5d81b6b042f5ff15ab6bbb72a21890"
+        ],
+        "position": 10,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "a31f3f8a0f67b717a387b63d977b1a4c69714934",
+        "temporal_basis": "committer_time",
+        "tree_sha": "fd4b4ec9fd4edb5ea59394b710e20d3c68cd778b"
+      },
+      {
+        "author_time": "2023-11-08T17:55:26Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-08T17:55:26Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-08T17:55:26+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a31f3f8a0f67b717a387b63d977b1a4c69714934"
+        ],
+        "position": 11,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "f8cd0f0be1877769277d7f3d0ea164012c99a49e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5015a95646229c9fce11c6366d8082a1daeb1f8d"
+      },
+      {
+        "author_time": "2023-11-08T18:05:06Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-08T18:05:06Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-08T18:05:06+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f8cd0f0be1877769277d7f3d0ea164012c99a49e"
+        ],
+        "position": 12,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "21891062543c9863805a960d303e1f54ff7c1d25",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c057b74df2a0bf9354f43d1b60c30369ff305cf3"
+      },
+      {
+        "author_time": "2023-11-10T16:58:18Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-10T16:58:18Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-10T16:58:18+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "21891062543c9863805a960d303e1f54ff7c1d25",
+          "ae2e2c57a84ec29fdbc0d9ccda9967db1face156"
+        ],
+        "position": 13,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "9983b79fd864ab4b4583e20c43c183fe515454e9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "094ed1354f1f9dd0493ba23a5343e868ad6b4bc0"
+      },
+      {
+        "author_time": "2023-11-14T19:27:38Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-14T19:27:38Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-14T19:27:38+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "9983b79fd864ab4b4583e20c43c183fe515454e9",
+          "bc68d4c2874159cd276da91765c17c761f475ea3"
+        ],
+        "position": 14,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "8ae8948a682f7afdcbd5980b5499016f599643ee",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2d1ab33a7687b0c73e474172d597fc19f5f36477"
+      },
+      {
+        "author_time": "2023-11-14T19:59:19Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-14T19:59:19Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-14T19:59:19+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "8ae8948a682f7afdcbd5980b5499016f599643ee"
+        ],
+        "position": 15,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "fe58e8def4a64eb3cada094e436aef3e5fccf857",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b318f666079f29b8465d0365db699650b713495f"
+      },
+      {
+        "author_time": "2023-11-14T22:44:18Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-14T22:44:18Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-14T22:44:18+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "8ae8948a682f7afdcbd5980b5499016f599643ee",
+          "fe58e8def4a64eb3cada094e436aef3e5fccf857"
+        ],
+        "position": 16,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "434458d7a36695d6effe489fa5387fee9dc9893f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b318f666079f29b8465d0365db699650b713495f"
+      },
+      {
+        "author_time": "2023-11-15T17:26:15Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-15T17:26:15Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-15T17:26:15+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "434458d7a36695d6effe489fa5387fee9dc9893f",
+          "d30169ac05c0d16c8a08b93ae13afccb19d74efc"
+        ],
+        "position": 17,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "323660792081ec39636866023b3292c54f413d79",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2504b7c63ab049f460681a694ab72ad1fee384f3"
+      },
+      {
+        "author_time": "2023-11-16T00:35:36Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-16T00:35:36Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-16T00:35:36+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "323660792081ec39636866023b3292c54f413d79"
+        ],
+        "position": 18,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "02de943c3758941cc211c0584fec610ec99572d0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4e0967693169589e94dd717f23ed69ae5e0038a0"
+      },
+      {
+        "author_time": "2023-11-16T01:07:43Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-16T01:07:43Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-16T01:07:43+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "02de943c3758941cc211c0584fec610ec99572d0"
+        ],
+        "position": 19,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "d3fae5813bd4461d08667ce7b56e53fa51626394",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7fa05a21ab1ad1fe7ef016ee351a48725d5da755"
+      },
+      {
+        "author_time": "2023-11-16T01:14:15Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-16T01:14:15Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-16T01:14:15+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d3fae5813bd4461d08667ce7b56e53fa51626394"
+        ],
+        "position": 20,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "114b6de7c6b2948d8855fd6a10afe15772f1f262",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d23cd231ad8bad6b185f0ec16eb729a8b9b30ecc"
+      },
+      {
+        "author_time": "2023-11-17T17:58:18Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-17T17:58:18Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-17T17:58:18+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "114b6de7c6b2948d8855fd6a10afe15772f1f262"
+        ],
+        "position": 21,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "c42ca157ff0cfd9215bd2c8adc499fbf8ad0781c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ebf1ed289c38249dd5b93e351136e9bbe09e80bb"
+      },
+      {
+        "author_time": "2023-11-17T22:05:26Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-17T22:05:26Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-17T22:05:26+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c42ca157ff0cfd9215bd2c8adc499fbf8ad0781c"
+        ],
+        "position": 22,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "1be9fd8a108453afdd1b17109b1e888a6187374b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "dcf17d1de8dc9da33d1ec467e3cf07d6da0abebb"
+      },
+      {
+        "author_time": "2023-11-20T21:51:27Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-20T21:51:27Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-20T21:51:27+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "1be9fd8a108453afdd1b17109b1e888a6187374b"
+        ],
+        "position": 23,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "e26dfdf73d3d89ecc697ab233aa0286ee926e40f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "64447f015f5c5eead10a09e38b840bc69754b7ac"
+      },
+      {
+        "author_time": "2023-11-30T03:42:11Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T03:42:11Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T03:42:11+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "e26dfdf73d3d89ecc697ab233aa0286ee926e40f",
+          "275586b381b88c2be40f1d87140cdaa38697585a"
+        ],
+        "position": 24,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "bc3cea800bac02db9747cc1095480799e3567e5b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a44c93dc369f91b047c553cf30be171beabb7721"
+      },
+      {
+        "author_time": "2023-12-01T21:05:29Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-01T21:05:29Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-01T21:05:29+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "bc3cea800bac02db9747cc1095480799e3567e5b",
+          "c98e9ac857abf9eda37e83ea5de1f53795e2ed01"
+        ],
+        "position": 25,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "8905a8b9063b3579d49e96aebf35e7cb6fb20346",
+        "temporal_basis": "committer_time",
+        "tree_sha": "597897e52fb1a4cfe3925f82ef6fa3fb174e1152"
+      },
+      {
+        "author_time": "2023-12-01T21:25:29Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-01T21:25:29Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-01T21:25:29+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "8905a8b9063b3579d49e96aebf35e7cb6fb20346",
+          "be7058650a2b30e4d777c5376f1f8494c5cce502"
+        ],
+        "position": 26,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "8dd91713779ad3c8df81ce2f5328919aad6f3c40",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6e23186434c69f28f2f29cca3e3b30285439789d"
+      },
+      {
+        "author_time": "2023-12-04T16:31:19Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-04T16:31:19Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-04T16:31:19+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "8dd91713779ad3c8df81ce2f5328919aad6f3c40"
+        ],
+        "position": 27,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "87d16b5c2f7db0b09936079aa908da4431cca417",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6c928bc457693bffc675b1a5f04583e044aa5c02"
+      },
+      {
+        "author_time": "2023-12-04T19:37:51Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-04T19:37:51Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-04T19:37:51+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "87d16b5c2f7db0b09936079aa908da4431cca417",
+          "ada7fbee2eea30935eead4b1734e8d085eb9c3d4"
+        ],
+        "position": 28,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "52e72070c135a83240318494d04d9ac85efea43d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e27fc8beadc3625b515804c30f074950a65b3cdc"
+      },
+      {
+        "author_time": "2023-12-05T01:30:48Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T01:30:48Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-05T01:30:48+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "52e72070c135a83240318494d04d9ac85efea43d"
+        ],
+        "position": 29,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "42a2411bd9dbd02a5e35cabc7a00b65bd5096b42",
+        "temporal_basis": "committer_time",
+        "tree_sha": "883b144e1a3492356d205aa1ca696133b6604eb7"
+      },
+      {
+        "author_time": "2023-12-05T01:38:05Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T01:38:05Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-05T01:38:05+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "42a2411bd9dbd02a5e35cabc7a00b65bd5096b42"
+        ],
+        "position": 30,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "6c8d19577eacc74859726340ab404419ab1c5407",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6da0408d28b085fc1093ddcb57617292de92e35c"
+      },
+      {
+        "author_time": "2023-12-05T01:46:30Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T01:46:30Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-05T01:46:30+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "6c8d19577eacc74859726340ab404419ab1c5407"
+        ],
+        "position": 31,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "f66410a47c9d4b57601b969c7c39a0473ae8c3a1",
+        "temporal_basis": "committer_time",
+        "tree_sha": "547eaa76f17d6b73afd9c9c893e5b8257b0699e3"
+      },
+      {
+        "author_time": "2023-12-05T01:53:06Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T01:53:06Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-05T01:53:06+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f66410a47c9d4b57601b969c7c39a0473ae8c3a1"
+        ],
+        "position": 32,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "6cd96b09f8513c924a8fbac4d0cb5a1f884b72af",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ace4a88d594cad53a21c871537b177a8c463db55"
+      },
+      {
+        "author_time": "2023-12-05T02:05:31Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T02:05:31Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-05T02:05:31+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "6cd96b09f8513c924a8fbac4d0cb5a1f884b72af"
+        ],
+        "position": 33,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "d0b3dbd013bbeceec9489c1818a85370c6465c2d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "169c0c1fba622abc601a5ccb102020734d6d3cc7"
+      },
+      {
+        "author_time": "2023-12-05T02:17:38Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T02:17:38Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-05T02:17:38+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d0b3dbd013bbeceec9489c1818a85370c6465c2d"
+        ],
+        "position": 34,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "46f020252d790319f199bf3bc73d8d7a70cf03eb",
+        "temporal_basis": "committer_time",
+        "tree_sha": "25e07e29ca2da8625ffcebbe405dfe2ba54d7910"
+      },
+      {
+        "author_time": "2023-12-05T22:01:34Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T22:01:34Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-05T22:01:34+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "46f020252d790319f199bf3bc73d8d7a70cf03eb"
+        ],
+        "position": 35,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "be4355d7fdad6f7bbc710563ceca205ae23352cc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "36218564ee662035361ccea5e18110db1497fd53"
+      },
+      {
+        "author_time": "2023-12-14T16:03:43Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-14T16:03:43Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-14T16:03:43+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "be4355d7fdad6f7bbc710563ceca205ae23352cc"
+        ],
+        "position": 36,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "681f88348cfdab1c997fb2b8251eb893ede60924",
+        "temporal_basis": "committer_time",
+        "tree_sha": "cc3c28795e819abae20b41f52e73faae7b93bf6b"
+      },
+      {
+        "author_time": "2023-12-14T16:05:53Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-14T16:05:53Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-14T16:05:53+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "681f88348cfdab1c997fb2b8251eb893ede60924",
+          "882e94b0b756e89daf32f81282b623e8f46aa248"
+        ],
+        "position": 37,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "75b2178fa755a43affdbe138a25b08453c2d2dd0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e5095839727a8dc6c809203c2223883310355145"
+      },
+      {
+        "author_time": "2023-12-14T16:08:46Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-14T16:08:46Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-14T16:08:46+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "75b2178fa755a43affdbe138a25b08453c2d2dd0"
+        ],
+        "position": 38,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "535393e86cc28a75cdc9db60115be9211ecfa517",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d397ed737a5202519c18c4f438947d6d75743f3d"
+      },
+      {
+        "author_time": "2023-12-16T18:16:52Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-16T18:16:52Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-16T18:16:52+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "535393e86cc28a75cdc9db60115be9211ecfa517"
+        ],
+        "position": 39,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "332f28314a83a10ad3fed48ce4b788f2bb21e9c7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3151072fec7683a49f8babbea86f18158ac7d853"
+      },
+      {
+        "author_time": "2023-12-27T23:39:40Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-27T23:39:40Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-27T23:39:40+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "332f28314a83a10ad3fed48ce4b788f2bb21e9c7",
+          "07edf20302d92e5f035e23f1e2e00d7c431eaf59"
+        ],
+        "position": 40,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "9edcdc4f826c0cc2ca3120ab31259982c159ac73",
+        "temporal_basis": "committer_time",
+        "tree_sha": "abe37569793178c6253fbc1758a02329ac5d06d8"
+      },
+      {
+        "author_time": "2023-12-28T00:20:04Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-28T00:20:04Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-28T00:20:04+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "9edcdc4f826c0cc2ca3120ab31259982c159ac73"
+        ],
+        "position": 41,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "dacd339c244aa3d73c0ce9fc7de228c6eb550a11",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ea2081e7988b217d96a4f73d460a263f008d8561"
+      },
+      {
+        "author_time": "2023-12-28T14:39:20Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-28T14:39:20Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-28T14:39:20+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "dacd339c244aa3d73c0ce9fc7de228c6eb550a11"
+        ],
+        "position": 42,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "a7fd87dbf23c40b2be1a1ef0024cd3bfb396ca29",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9b1983d4008dfc740f4a9c4b837d5415c5556c89"
+      },
+      {
+        "author_time": "2023-12-29T01:15:42Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-29T01:15:42Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-29T01:15:42+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a7fd87dbf23c40b2be1a1ef0024cd3bfb396ca29"
+        ],
+        "position": 43,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "2ad87102fc645918e8516989cb66046df407e4c2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3b18872702dfe97df621419e81881b25d68bdf88"
+      },
+      {
+        "author_time": "2023-12-30T12:05:34Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-30T12:05:34Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-30T12:05:34+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "2ad87102fc645918e8516989cb66046df407e4c2"
+        ],
+        "position": 44,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "b2cbdc3ff47167bf41b6870580acebe4a3a5d67a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "348ef70a5c567b3dd8ce29cbbd0e87bc51a6f243"
+      },
+      {
+        "author_time": "2023-12-30T12:08:56Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-30T12:08:56Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-30T12:08:56+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "b2cbdc3ff47167bf41b6870580acebe4a3a5d67a",
+          "5612cef8738ffbf3656756b87c3848e0826fe22e"
+        ],
+        "position": 45,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "36dfc8ed6dc309e89525fdbd4eafcedbb5f666dd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0fd1a4f8391641af110e958391b665608a9b2fb1"
+      },
+      {
+        "author_time": "2023-12-30T12:24:38Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-30T12:24:38Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-30T12:24:38+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "36dfc8ed6dc309e89525fdbd4eafcedbb5f666dd"
+        ],
+        "position": 46,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "5830191d048355e7c04d2188eb4c5f3e238058ca",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d9e6f72af2385fe78c05e7b305ec074870bc762e"
+      },
+      {
+        "author_time": "2024-01-05T19:35:54Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-05T19:35:54Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-05T19:35:54+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "5830191d048355e7c04d2188eb4c5f3e238058ca"
+        ],
+        "position": 47,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "a901fa6356605e9fcab6206673437b1337c9934b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b6725c7d5afefa2407deff0ab38f9509423362f9"
+      },
+      {
+        "author_time": "2024-01-08T19:28:44Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-08T19:28:44Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-08T19:28:44+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a901fa6356605e9fcab6206673437b1337c9934b"
+        ],
+        "position": 48,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "fa2280d8a46d70fea49eb201a751525ff501c33c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3b90f45da55865be7f5b064c49f75051f44c5251"
+      },
+      {
+        "author_time": "2024-01-09T22:27:37Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-09T22:27:37Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-09T22:27:37+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "fa2280d8a46d70fea49eb201a751525ff501c33c"
+        ],
+        "position": 49,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "7d0b1830366aabd0ad21441e9dc97437e66ce5ea",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ad0369bba2ea4f3193e533fe51c4925bc258acb9"
+      },
+      {
+        "author_time": "2024-01-09T23:47:10Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-09T23:47:10Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-09T23:47:10+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7d0b1830366aabd0ad21441e9dc97437e66ce5ea"
+        ],
+        "position": 50,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "da61986566bde8a7d95b41a9e88d261fd5637afe",
+        "temporal_basis": "committer_time",
+        "tree_sha": "369443a5c5d8609e26ae30021cc71363fe653c93"
+      },
+      {
+        "author_time": "2024-01-10T00:59:14Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-10T00:59:14Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-10T00:59:14+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "da61986566bde8a7d95b41a9e88d261fd5637afe"
+        ],
+        "position": 51,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "cfc4ae9eeba95dfdfa809c48af0897844c3e1d22",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2738ae27c5ede55bd0984450fbd2887b0b31a422"
+      },
+      {
+        "author_time": "2024-01-10T17:12:56Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-10T17:12:56Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-10T17:12:56+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "cfc4ae9eeba95dfdfa809c48af0897844c3e1d22"
+        ],
+        "position": 52,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "cab405d09a56ff5bbd45b6f9aaa175f718b802ad",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2379a23bb74538b087a93e293e373694fddf8f2f"
+      },
+      {
+        "author_time": "2024-01-10T17:32:07Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-10T17:32:07Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-10T17:32:07+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "cab405d09a56ff5bbd45b6f9aaa175f718b802ad"
+        ],
+        "position": 53,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "84a22d2ac01f86a9a22d179516c00dffe863d187",
+        "temporal_basis": "committer_time",
+        "tree_sha": "dc5b82a6acd92b4029571d4e06f4c4b0b5973aab"
+      },
+      {
+        "author_time": "2024-01-17T16:38:20Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-17T16:38:20Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-17T16:38:20+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "84a22d2ac01f86a9a22d179516c00dffe863d187",
+          "391a7753016a940b7ff54f3c895b46df3e4f8fc8"
+        ],
+        "position": 54,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "c4e19c50368f8cc0c50ddcf24e18fc918d139baa",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f1c057b763af11bd58cd14287b1bd128fb4d1cb1"
+      },
+      {
+        "author_time": "2024-01-17T19:27:00Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-17T19:27:00Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-17T19:27:00+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c4e19c50368f8cc0c50ddcf24e18fc918d139baa"
+        ],
+        "position": 55,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "9312bfc1b77380286822a7c9334fa74406a79185",
+        "temporal_basis": "committer_time",
+        "tree_sha": "cf914c4f62b9a698fad58a7a8090d9ffc73a37d1"
+      },
+      {
+        "author_time": "2024-01-18T18:24:58Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-18T18:24:58Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-18T18:24:58+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "9312bfc1b77380286822a7c9334fa74406a79185"
+        ],
+        "position": 56,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "9d7a73b42e0b9ac011670c529ebb91f018e9673c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4fd2138105b16d6c64fb6f6b70622348cc05dc1f"
+      },
+      {
+        "author_time": "2024-01-18T18:33:18Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-18T18:33:18Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-18T18:33:18+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "9d7a73b42e0b9ac011670c529ebb91f018e9673c"
+        ],
+        "position": 57,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "7fc01844302f8f3ffe1ba662fdf56131520ccbe2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7e1fa18a9a1770fad4c5bab9ead60b381bd4f4e4"
+      },
+      {
+        "author_time": "2024-01-18T23:34:57Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-18T23:34:57Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-18T23:34:57+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7fc01844302f8f3ffe1ba662fdf56131520ccbe2"
+        ],
+        "position": 58,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "6da150148e42abbb46076b69ddf2421688aa6770",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b097c9078b7896f0ac64c72361da276188b52642"
+      },
+      {
+        "author_time": "2024-01-18T23:59:56Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-18T23:59:56Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-18T23:59:56+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "6da150148e42abbb46076b69ddf2421688aa6770"
+        ],
+        "position": 59,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "feb8d297876278df974e1b4bdb46b201d4dcad0a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4865dfc9dbca147409a84f3948b42876f9cec2b5"
+      },
+      {
+        "author_time": "2024-01-19T00:17:16Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-19T00:17:16Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-19T00:17:16+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "feb8d297876278df974e1b4bdb46b201d4dcad0a"
+        ],
+        "position": 60,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "2d34f585dff35b1cc85268d1607c2fa2144a839e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3ee38255647d37e6ef44dce507e4ac24964e8a71"
+      },
+      {
+        "author_time": "2024-01-19T00:24:47Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-19T00:24:47Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-19T00:24:47+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "2d34f585dff35b1cc85268d1607c2fa2144a839e"
+        ],
+        "position": 61,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "2f1f3a890a80d4e3c9d1a5841ee4d2a967b0a248",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8623a70f2eed1e4b6aec2c67003232c3c95ea9c4"
+      },
+      {
+        "author_time": "2024-01-19T18:03:35Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-19T18:03:35Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-19T18:03:35+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "2f1f3a890a80d4e3c9d1a5841ee4d2a967b0a248"
+        ],
+        "position": 62,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "10c2aa5f278cc4fcf01abd6c5031f22d272bf8b9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0c6451e08e215bba6292d0be7ac5b9f894493319"
+      },
+      {
+        "author_time": "2024-01-22T18:05:22Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-22T18:05:22Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-22T18:05:22+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "10c2aa5f278cc4fcf01abd6c5031f22d272bf8b9"
+        ],
+        "position": 63,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "9729848bf393aa1142b3dc29215f7e7a7d341139",
+        "temporal_basis": "committer_time",
+        "tree_sha": "bc803220e5dba130fb513e741eec9a2b08d4d442"
+      },
+      {
+        "author_time": "2024-01-22T18:07:16Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-22T18:07:16Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-22T18:07:16+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "9729848bf393aa1142b3dc29215f7e7a7d341139"
+        ],
+        "position": 64,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "acc1f3d1b0c4c0c7d71a31aa406e41f205612cb0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3551f2bcad123cbdfbe0725374b26abb66054eb4"
+      },
+      {
+        "author_time": "2024-01-22T20:16:50Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-22T20:16:50Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-22T20:16:50+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "acc1f3d1b0c4c0c7d71a31aa406e41f205612cb0"
+        ],
+        "position": 65,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "8069dbbbf32e79404e06da890b5f6137b79b43ce",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b3d365d9c1d41ebd61295b30ac085efa7185f7fb"
+      },
+      {
+        "author_time": "2024-01-22T20:20:44Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-22T20:20:44Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-22T20:20:44+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "8069dbbbf32e79404e06da890b5f6137b79b43ce"
+        ],
+        "position": 66,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "0809f8262e28d0f44e927b1a5b4a28cd40e429c6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "90d23eeefa35bc6c40dc2a874d8d07587ad2422e"
+      },
+      {
+        "author_time": "2024-01-23T20:22:32Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-23T20:22:32Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-23T20:22:32+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "0809f8262e28d0f44e927b1a5b4a28cd40e429c6"
+        ],
+        "position": 67,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "c69e65943ccbe362627893e5400e3cfcc9426898",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5bfc95de5d84432aced75ff5117119c1a98a7082"
+      },
+      {
+        "author_time": "2024-01-23T20:35:08Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-23T20:35:08Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-23T20:35:08+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c69e65943ccbe362627893e5400e3cfcc9426898"
+        ],
+        "position": 68,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "43a980f8dbaf2359c82a81d69e2b1a48c3f90070",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ecd3baef82eaa1df19505dcce8a2cd1adb2558bf"
+      },
+      {
+        "author_time": "2024-01-23T21:05:23Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-23T21:05:23Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-23T21:05:23+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "43a980f8dbaf2359c82a81d69e2b1a48c3f90070"
+        ],
+        "position": 69,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "d8e282813b1e1d53d843151c861937520083964f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1eae181a8d3d6c21c86718c65b4423cc3fcf9fb8"
+      },
+      {
+        "author_time": "2024-01-23T21:14:21Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-23T21:14:21Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-23T21:14:21+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d8e282813b1e1d53d843151c861937520083964f"
+        ],
+        "position": 70,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "cb8fcf20d6e8a2c65212a19d872c88846914dbfa",
+        "temporal_basis": "committer_time",
+        "tree_sha": "af6ece235f87b5261dec5077f72d9f9b0f759a83"
+      },
+      {
+        "author_time": "2024-01-24T16:09:14Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-24T16:09:14Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-24T16:09:14+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "cb8fcf20d6e8a2c65212a19d872c88846914dbfa"
+        ],
+        "position": 71,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "07660f78c79568a35c66ae6ac63c3b767b025bc7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "012837163a21c9d6b3e6ecbf8713ddd4d99e219d"
+      },
+      {
+        "author_time": "2024-01-24T16:35:20Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-24T16:35:20Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-24T16:35:20+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "07660f78c79568a35c66ae6ac63c3b767b025bc7"
+        ],
+        "position": 72,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "60e278bb112b0953459ad81803dc015064952ce8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8441ae9762c712cd34088af706ae050fa181c18a"
+      },
+      {
+        "author_time": "2024-01-24T17:04:15Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-24T17:04:15Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-24T17:04:15+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "60e278bb112b0953459ad81803dc015064952ce8"
+        ],
+        "position": 73,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "0194b165225e96b73cb6c758e65163efbb3a514f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "724eb992dce178494017bfd79bd68b3ed51d045d"
+      },
+      {
+        "author_time": "2024-01-24T18:28:10Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-24T18:28:10Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-24T18:28:10+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "0194b165225e96b73cb6c758e65163efbb3a514f"
+        ],
+        "position": 74,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "69247d6ef7e89a072f646c21445bdba1b91c0076",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2881681a2b82c795deaa111dd508f4e7b4ad6768"
+      },
+      {
+        "author_time": "2024-01-24T18:44:25Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-24T18:44:25Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-24T18:44:25+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "69247d6ef7e89a072f646c21445bdba1b91c0076"
+        ],
+        "position": 75,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "c6ca4c5b0b48951ac7f1565c5330db544b549015",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ec23ef9f513cba36dfb499819f88b06c4d04d06a"
+      },
+      {
+        "author_time": "2024-01-24T18:50:56Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-24T18:50:56Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-24T18:50:56+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c6ca4c5b0b48951ac7f1565c5330db544b549015"
+        ],
+        "position": 76,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "6d7bf24854737d3fa4ac75a0243a944f7ce1be71",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3c7dc845a79d66002b015b41d75e7e6b44b78968"
+      },
+      {
+        "author_time": "2024-01-24T20:23:51Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-24T20:23:51Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-24T20:23:51+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "6d7bf24854737d3fa4ac75a0243a944f7ce1be71",
+          "9f24098b70e410c44cd2e37a4de36d6599ba0d4e"
+        ],
+        "position": 77,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "25395ae4d99dfb93ace674ad55e0ce9e31f4c8ef",
+        "temporal_basis": "committer_time",
+        "tree_sha": "10fd5a57662d13704e4e3a0d0f552688bcd6be3f"
+      },
+      {
+        "author_time": "2024-01-24T23:24:59Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-24T23:24:59Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-24T23:24:59+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "25395ae4d99dfb93ace674ad55e0ce9e31f4c8ef"
+        ],
+        "position": 78,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "d3f0ade31d24acc5b01ebafbd2d7431c8737754c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "69d898bda4292b473d168fd9bd60bfde6ca8af0a"
+      },
+      {
+        "author_time": "2024-01-24T23:33:54Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-24T23:33:54Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-24T23:33:54+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d3f0ade31d24acc5b01ebafbd2d7431c8737754c"
+        ],
+        "position": 79,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "7cd044e152fa43e560c4c938ac6717735758a0d2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "fb05a985ea3a6c877948e9883425e93f5c493544"
+      },
+      {
+        "author_time": "2024-01-25T15:33:08Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-25T15:33:08Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-25T15:33:08+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7cd044e152fa43e560c4c938ac6717735758a0d2"
+        ],
+        "position": 80,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "78e8270ab1f996f2f3b089266c7ecaa53dc6cb6b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4a3fc00921750538fbf4837fcdb7a406e52851fc"
+      },
+      {
+        "author_time": "2024-01-25T17:32:31Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-25T17:32:31Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-25T17:32:31+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "78e8270ab1f996f2f3b089266c7ecaa53dc6cb6b"
+        ],
+        "position": 81,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "8584aa15d16ad5360cc931ce1cc137e6736c1ee0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ba3e05f943924f48f612a0404f128205afb24050"
+      },
+      {
+        "author_time": "2024-01-25T17:42:07Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-25T17:42:07Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-25T17:42:07+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "8584aa15d16ad5360cc931ce1cc137e6736c1ee0"
+        ],
+        "position": 82,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "e99d5ed47595d48b0e1a59851aca2df487918135",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f4a64c928f0a3e75f2b73564cc442ec487e81fd4"
+      },
+      {
+        "author_time": "2024-01-25T17:47:55Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-25T17:47:55Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-25T17:47:55+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "e99d5ed47595d48b0e1a59851aca2df487918135"
+        ],
+        "position": 83,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "d049d2774e73e4e242a313e6ad5b99dbf502499f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ebc2457d2baef2f291df6aa2ab5624e878885c7a"
+      },
+      {
+        "author_time": "2024-01-26T16:45:10Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-26T16:45:10Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-26T16:45:10+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d049d2774e73e4e242a313e6ad5b99dbf502499f"
+        ],
+        "position": 84,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "a86f387e0983183183378c7582050de3315e5216",
+        "temporal_basis": "committer_time",
+        "tree_sha": "002c32f997994c57edfe9a8f80c766183b803d77"
+      },
+      {
+        "author_time": "2024-01-26T20:49:02Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-26T20:49:02Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-26T20:49:02+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a86f387e0983183183378c7582050de3315e5216"
+        ],
+        "position": 85,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "1c0eefec15ec5a7eed9bc61fef48386480c76395",
+        "temporal_basis": "committer_time",
+        "tree_sha": "59d2f81b9b1246646355e5109bd1f14fdf738caa"
+      },
+      {
+        "author_time": "2024-01-26T20:58:28Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-26T20:58:28Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-26T20:58:28+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "1c0eefec15ec5a7eed9bc61fef48386480c76395"
+        ],
+        "position": 86,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "4083d42616f2d638337bac6d7a7cba2cdf1cbda3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2c922cffb97a9f0e8e2ac49ef37f12675ac0e475"
+      },
+      {
+        "author_time": "2024-01-26T21:27:37Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-26T21:27:37Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-26T21:27:37+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "4083d42616f2d638337bac6d7a7cba2cdf1cbda3",
+          "c00cee05bb34bd2bf2cccf47ad510750eb683ac7"
+        ],
+        "position": 87,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "2b9dd9a22edc6616973dced0931b498546820d85",
+        "temporal_basis": "committer_time",
+        "tree_sha": "014bea3cb9c4343ede3fb69338c51cc7fb2097a8"
+      },
+      {
+        "author_time": "2024-01-26T21:36:24Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-26T21:36:24Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-26T21:36:24+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "2b9dd9a22edc6616973dced0931b498546820d85"
+        ],
+        "position": 88,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "ef54af284382699aa983734be8902e63a9ceae3c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5ba21701e529431b65f65c1d39d15b543e7f7d82"
+      },
+      {
+        "author_time": "2024-01-29T17:23:40Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-29T17:23:40Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-29T17:23:40+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ef54af284382699aa983734be8902e63a9ceae3c"
+        ],
+        "position": 89,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "a44e4d0be926fec4544b3e4ee86efd9bdd97def4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "725fe7df474d06070d75a713e7ba719167666684"
+      },
+      {
+        "author_time": "2024-01-29T19:12:50Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-29T19:12:50Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-29T19:12:50+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a44e4d0be926fec4544b3e4ee86efd9bdd97def4"
+        ],
+        "position": 90,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "30aa77c6e005897b43df53ca2f81034ab595d3c3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "06424f3f5608502cb6307e97079f5eef5feae4b0"
+      },
+      {
+        "author_time": "2024-01-29T19:13:09Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-29T19:13:09Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-29T19:13:09+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "30aa77c6e005897b43df53ca2f81034ab595d3c3",
+          "5f8d08a54722b51e808f14094564ce19ecb462ae"
+        ],
+        "position": 91,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "a83b814ab4fff905bbe2733181ec4531fca931b6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "06424f3f5608502cb6307e97079f5eef5feae4b0"
+      },
+      {
+        "author_time": "2024-01-29T20:15:44Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-29T20:15:44Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-29T20:15:44+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a83b814ab4fff905bbe2733181ec4531fca931b6"
+        ],
+        "position": 92,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "dc2e84ec081aad05e1cdf517723e9dfe3044315f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "de826e63e982c34a5ef2bdc97253b4eb7b483b4a"
+      },
+      {
+        "author_time": "2024-01-29T21:09:30Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-29T21:09:30Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-29T21:09:30+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "dc2e84ec081aad05e1cdf517723e9dfe3044315f",
+          "ccc6bc6b71adde68d47a1cd6d3dd015777176a24"
+        ],
+        "position": 93,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "d5db240e4da8d118324b342a56b0db20e10c1f24",
+        "temporal_basis": "committer_time",
+        "tree_sha": "46cf7fb5979d3cf96071dbfd7e64f07b9e97d3a3"
+      },
+      {
+        "author_time": "2024-01-29T23:15:03Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-29T23:15:03Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-29T23:15:03+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d5db240e4da8d118324b342a56b0db20e10c1f24"
+        ],
+        "position": 94,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "08b502cd7be5d1c56fc9540b0311888506c75723",
+        "temporal_basis": "committer_time",
+        "tree_sha": "71f13fd2adecf970907bd4f31b6be27311f54d4b"
+      },
+      {
+        "author_time": "2024-01-30T13:15:50Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-30T13:15:50Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-30T13:15:50+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "08b502cd7be5d1c56fc9540b0311888506c75723"
+        ],
+        "position": 95,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "a619f90fee0e287858c334122db9679cd68d44de",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e98772748959ca9bb298fd3ff639f36debbae530"
+      },
+      {
+        "author_time": "2024-01-30T13:25:39Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-30T13:25:39Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-30T13:25:39+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a619f90fee0e287858c334122db9679cd68d44de"
+        ],
+        "position": 96,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "c44e0fd9447f62ada190cf952957860ac5f0cab9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1a556dc1694255b52262505593d9790706e23e04"
+      },
+      {
+        "author_time": "2024-01-30T23:20:44Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-30T23:20:44Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-30T23:20:44+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c44e0fd9447f62ada190cf952957860ac5f0cab9",
+          "96eeaf7f36e5136832433392e01734fba223db39"
+        ],
+        "position": 97,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "d21564a99368e9a94100287d519963138d463d93",
+        "temporal_basis": "committer_time",
+        "tree_sha": "74a06e8127af6c1f8107e86f9a7ad9fbf1d6bbb9"
+      },
+      {
+        "author_time": "2024-01-31T14:42:21Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-31T14:42:21Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-31T14:42:21+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d21564a99368e9a94100287d519963138d463d93"
+        ],
+        "position": 98,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "539059d71092d0a9d53392f6b43cf669a1d49d8f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "bafc1ccb2e3bf3517936cf7f2a4bfe6f5a21de06"
+      },
+      {
+        "author_time": "2024-01-31T15:07:32Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-31T15:08:51Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-31T15:08:51+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "539059d71092d0a9d53392f6b43cf669a1d49d8f",
+          "17370dfb1ce0bd2f8b22ee848e2f78c7c5e6ce40"
+        ],
+        "position": 99,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "d1c505c7c2412a011e0b3d0d80bf4351e3969f50",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c012fb38c5581914ee1cfd8ce9be1970cfb7efc0"
+      },
+      {
+        "author_time": "2024-01-31T16:30:54Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-31T16:30:54Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-31T16:30:54+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d1c505c7c2412a011e0b3d0d80bf4351e3969f50"
+        ],
+        "position": 100,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+          "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "4c327dfabc5e951141e55e4ec4caaeba572970f8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5fc93996ae4ded36b4f50988e853541b10c88cdb"
+      },
+      {
+        "author_time": "2024-01-31T18:32:48Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-31T18:32:48Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-31T18:32:48+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "4c327dfabc5e951141e55e4ec4caaeba572970f8"
+        ],
+        "position": 101,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "7e3b9a6a87d50877a6c13a098a6e1b0606e5b0aa",
+        "temporal_basis": "committer_time",
+        "tree_sha": "39b0b41623d875db583ef45837f863623593ed5e"
+      },
+      {
+        "author_time": "2024-01-31T22:38:33Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-31T22:38:33Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-31T22:38:33+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7e3b9a6a87d50877a6c13a098a6e1b0606e5b0aa"
+        ],
+        "position": 102,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "8e7608bdb29787ea54ba45dccd6bdf0c733297fa",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d65e0769e418551423c0064216d7d2ca7c765192"
+      },
+      {
+        "author_time": "2024-01-31T22:40:33Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-31T22:40:33Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-31T22:40:33+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "8e7608bdb29787ea54ba45dccd6bdf0c733297fa"
+        ],
+        "position": 103,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "82c47893c21c6301814071ebe3e528ddf29fffa2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e969efd568546946ccd9c881344abbaf9b015ef8"
+      },
+      {
+        "author_time": "2024-01-31T22:43:59Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-31T22:43:59Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-31T22:43:59+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "82c47893c21c6301814071ebe3e528ddf29fffa2"
+        ],
+        "position": 104,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "7a8ebd9d73526ab47b04fc2dd817baf2fca79ed4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "fc1a29194cd19cdc79dc8d410a763202d96d7c6e"
+      },
+      {
+        "author_time": "2024-01-31T22:46:48Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-31T22:46:48Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-31T22:46:48+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7a8ebd9d73526ab47b04fc2dd817baf2fca79ed4"
+        ],
+        "position": 105,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "f9117f2d171caac7b53ddfe2fa9f8605becd2691",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e4b3a2a08b2776a64ac97944612753ebc3a4c820"
+      },
+      {
+        "author_time": "2024-01-31T22:48:33Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-31T22:48:33Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-31T22:48:33+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f9117f2d171caac7b53ddfe2fa9f8605becd2691"
+        ],
+        "position": 106,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "25e01e3a59526737a551989138c28a7648e63106",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4edef12fe378bf2326ed4ede0cc5e884ae395429"
+      },
+      {
+        "author_time": "2024-02-01T16:07:54Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-01T16:07:54Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-01T16:07:54+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "25e01e3a59526737a551989138c28a7648e63106",
+          "3434c9a4ff56534d63f9b5e97bb24e0a6be1b63e"
+        ],
+        "position": 107,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "233387c323906666e96a807d74625ed971e0f4ec",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c8aa201f82409fb14de162a91a6f3b599f11f297"
+      },
+      {
+        "author_time": "2024-02-01T16:34:08Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-01T16:34:08Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-01T16:34:08+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "233387c323906666e96a807d74625ed971e0f4ec"
+        ],
+        "position": 108,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "e2050501a83dea09e0902dc56de4b68f83a662cf",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7c17c09cf4730a6871ec4911911dc1075a5ccfa4"
+      },
+      {
+        "author_time": "2024-02-01T22:43:39Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-01T22:43:39Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-01T22:43:39+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "e2050501a83dea09e0902dc56de4b68f83a662cf"
+        ],
+        "position": 109,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "ca38b019ea24cd7bbab43b54443ee3d6b3317ca0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "35522b69669332880519b1f7eb0afc493a069e4e"
+      },
+      {
+        "author_time": "2024-02-01T22:45:28Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-01T22:45:28Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-01T22:45:28+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ca38b019ea24cd7bbab43b54443ee3d6b3317ca0"
+        ],
+        "position": 110,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "297b35acbdf2692e421b70f02c6553d3a0b86b38",
+        "temporal_basis": "committer_time",
+        "tree_sha": "38ea825cddbedfa8ce99d951c6a092884e480f40"
+      },
+      {
+        "author_time": "2024-02-01T22:47:30Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-01T22:47:30Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-01T22:47:30+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "297b35acbdf2692e421b70f02c6553d3a0b86b38"
+        ],
+        "position": 111,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "44f1b33d32cd4eaf7d267df12223c2e980049920",
+        "temporal_basis": "committer_time",
+        "tree_sha": "62e487afb3ea20a34e4f5d3f734d3db0ad9d5b1a"
+      },
+      {
+        "author_time": "2024-02-01T22:50:35Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-01T22:50:35Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-01T22:50:35+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "44f1b33d32cd4eaf7d267df12223c2e980049920"
+        ],
+        "position": 112,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "043991251c372574dd5fff9a5ffc264322a12165",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c5ce45cf1611fce95640fe6ff252bde1cd64c143"
+      },
+      {
+        "author_time": "2024-02-01T22:52:31Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-01T22:52:31Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-01T22:52:31+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "043991251c372574dd5fff9a5ffc264322a12165"
+        ],
+        "position": 113,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "731dae852dc2b7086ba96eebcb0926c92d432d6b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a512e94f6ae107c045d63319b7d8b37d6679cf40"
+      },
+      {
+        "author_time": "2024-02-01T22:54:41Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-01T22:54:41Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-01T22:54:41+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "731dae852dc2b7086ba96eebcb0926c92d432d6b"
+        ],
+        "position": 114,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "f60eaaaf18715154510401088796ef68f53579ee",
+        "temporal_basis": "committer_time",
+        "tree_sha": "28a68c5614592b50759fdfcb140af4a3cc7ba85a"
+      },
+      {
+        "author_time": "2024-02-01T22:56:27Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-01T22:56:27Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-01T22:56:27+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f60eaaaf18715154510401088796ef68f53579ee"
+        ],
+        "position": 115,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "25db6a84ad834d76235e88fab37d6bb79d55cfc4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4062668468804a88e13ce4a645245d5cbf372247"
+      },
+      {
+        "author_time": "2024-02-01T22:58:30Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-01T22:58:30Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-01T22:58:30+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "25db6a84ad834d76235e88fab37d6bb79d55cfc4"
+        ],
+        "position": 116,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "c40575816f7e5f79bceb9e3e67333dc379657515",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c4e92d6a8a0ac226153098adce434489d1fd03f5"
+      },
+      {
+        "author_time": "2024-02-02T15:13:11Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-02T15:13:11Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-02T15:13:11+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c40575816f7e5f79bceb9e3e67333dc379657515"
+        ],
+        "position": 117,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "6aab3863d41785cf4a21aa8b418f5a22aadd365a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9481898de41f3afb6fa115bba83837d93a0b1a4f"
+      },
+      {
+        "author_time": "2024-02-02T16:16:29Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-02T16:16:29Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-02T16:16:29+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "6aab3863d41785cf4a21aa8b418f5a22aadd365a"
+        ],
+        "position": 118,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "b2f03f46b75003000cf2b7310bcea5380b0a52e4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7f6a46f2641e2a8567d7179a7a5f29cf09e638ac"
+      },
+      {
+        "author_time": "2024-02-02T19:46:56Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-02T19:46:56Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-02T19:46:56+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "b2f03f46b75003000cf2b7310bcea5380b0a52e4"
+        ],
+        "position": 119,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "303a17cfb82afb4999dfc31366fa104957fc575e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a51302da0f02336af798ebb910450a1cbb9b9413"
+      },
+      {
+        "author_time": "2024-02-02T19:48:35Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-02T19:48:35Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-02T19:48:35+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "303a17cfb82afb4999dfc31366fa104957fc575e"
+        ],
+        "position": 120,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "045131a01980af70c0a6b5ce775f3ec3afc9c044",
+        "temporal_basis": "committer_time",
+        "tree_sha": "eccec132e0337425577fe96ec008543b14d20a3f"
+      },
+      {
+        "author_time": "2024-02-02T19:50:27Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-02T19:50:27Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-02T19:50:27+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "045131a01980af70c0a6b5ce775f3ec3afc9c044"
+        ],
+        "position": 121,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "f7ab9f21e5e74ee4401b7037455f116fe02dbd84",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b531de0fd2fbd81e78e2d5a4880e10680ecab888"
+      },
+      {
+        "author_time": "2024-02-02T20:06:00Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-02T20:06:00Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-02T20:06:00+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f7ab9f21e5e74ee4401b7037455f116fe02dbd84"
+        ],
+        "position": 122,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "af407af676788869377ceb87e4fe40549cc03bba",
+        "temporal_basis": "committer_time",
+        "tree_sha": "cf425ac1f1cd43f49393a7beab698db2538fe8fa"
+      },
+      {
+        "author_time": "2024-02-02T20:24:01Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-02T20:24:01Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-02T20:24:01+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "af407af676788869377ceb87e4fe40549cc03bba"
+        ],
+        "position": 123,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "e5aec9a79df78008fcb5ed5c9f814001fd04a7c2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a93b56d9f4ab84beb2f648d310ae874b8993f64a"
+      },
+      {
+        "author_time": "2024-02-02T21:30:45Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-02T21:30:45Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-02T21:30:45+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "e5aec9a79df78008fcb5ed5c9f814001fd04a7c2"
+        ],
+        "position": 124,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "a42896545f2ff6d1cffc11e279c9d9e56446fdbc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "305d463438a42a7c510fe8b1c949bd908f2eb654"
+      },
+      {
+        "author_time": "2024-02-04T07:04:33Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-04T07:04:33Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-04T07:04:33+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a42896545f2ff6d1cffc11e279c9d9e56446fdbc"
+        ],
+        "position": 125,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "6f4341024a9e8f88b15f02c874d10baa9059d6b3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f568a99889c1fb05941b168a7af15c34bf4f42c5"
+      },
+      {
+        "author_time": "2024-02-05T15:58:03Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-05T15:58:03Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-05T15:58:03+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6f4341024a9e8f88b15f02c874d10baa9059d6b3"
+        ],
+        "position": 126,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "0a4150c1fdc3d80dd7496c4e42021898addf2cba",
+        "temporal_basis": "committer_time",
+        "tree_sha": "cb0d9026c98b033a2479a49f298179d2b9e4cc7b"
+      },
+      {
+        "author_time": "2024-02-05T16:14:36Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-05T16:14:36Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-05T16:14:36+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "0a4150c1fdc3d80dd7496c4e42021898addf2cba"
+        ],
+        "position": 127,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "305d7904d618ee24f4be8c1072d75251febe7a6b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "10f6e15b443753de5ab585b808e12d7accfdb67f"
+      },
+      {
+        "author_time": "2024-02-05T21:40:47Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-05T21:40:47Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-05T21:40:47+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "305d7904d618ee24f4be8c1072d75251febe7a6b"
+        ],
+        "position": 128,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "818711ad80ac2ef641945064aa3214abc3cee1cd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a6562221977c1f8eb163c6642580b0132983ea29"
+      },
+      {
+        "author_time": "2024-02-05T23:33:59Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-05T23:33:59Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-05T23:33:59+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "818711ad80ac2ef641945064aa3214abc3cee1cd"
+        ],
+        "position": 129,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "cb0fdbf0a5a6c8ae9fe060542c393df60e06ea95",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a5b000f28ae0a0e2046485e44feb5d9e64373a4f"
+      },
+      {
+        "author_time": "2024-02-07T15:00:27Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-07T15:00:27Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-07T15:00:27+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "cb0fdbf0a5a6c8ae9fe060542c393df60e06ea95"
+        ],
+        "position": 130,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "25722abdfa9d2c8e77cd59661a70d780589b2ac7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b49453f89855af747c3e06eb5ee4cec76531751f"
+      },
+      {
+        "author_time": "2024-02-07T19:20:38Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-07T19:20:38Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-07T19:20:38+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "25722abdfa9d2c8e77cd59661a70d780589b2ac7"
+        ],
+        "position": 131,
+        "pr_number": 875,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+          "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+          "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+        },
+        "repository": "deso-protocol/core",
+        "sha": "d45ab17c0645b136a05a78093c9509c9a9fdb4fe",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a3b69b4e6ae1f43a9433187414aca6e93310f2e3"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2024-02-04T07:04:33Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-02-04T07:04:33Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2024-02-04T07:04:33+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "a42896545f2ff6d1cffc11e279c9d9e56446fdbc"
+      ],
+      "position": 125,
+      "pr_number": 875,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+        "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+        "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+      },
+      "repository": "deso-protocol/core",
+      "sha": "6f4341024a9e8f88b15f02c874d10baa9059d6b3",
+      "temporal_basis": "committer_time",
+      "tree_sha": "f568a99889c1fb05941b168a7af15c34bf4f42c5"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-02-02T21:30:45Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-02-02T21:30:45Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-02-02T21:30:45+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "e5aec9a79df78008fcb5ed5c9f814001fd04a7c2"
+      ],
+      "position": 124,
+      "pr_number": 875,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+        "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+        "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+      },
+      "repository": "deso-protocol/core",
+      "sha": "a42896545f2ff6d1cffc11e279c9d9e56446fdbc",
+      "temporal_basis": "committer_time",
+      "tree_sha": "305d463438a42a7c510fe8b1c949bd908f2eb654"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "a42896545f2ff6d1cffc11e279c9d9e56446fdbc",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "e5aec9a79df78008fcb5ed5c9f814001fd04a7c2"
+    ],
+    "recursive_tree_entry_count": 230,
+    "recursive_tree_listing_sha256": "b57aac78c78fbf23154e8327835822d7ce3001de077481e2f5d5209504e6f46a",
+    "retrieved_at": "2026-10-05T22:50:29.671156+00:00",
+    "source": "https://github.com/deso-protocol/core.git",
+    "status": "materialized",
+    "tree_sha": "305d463438a42a7c510fe8b1c949bd908f2eb654"
+  },
+  "pr_number": 875,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "3434c9a4ff56534d63f9b5e97bb24e0a6be1b63e",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:27.606514+00:00",
+        "sha256": "9dcf8d8765238f9d97a6e80960ab70dbb389e3bc81b337d6d9da2aa05873464f",
+        "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=1"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:28.333492+00:00",
+        "sha256": "02f9c17e2a97ad692d07d26f0b85efddc515ba0ea44d8cd512952aa4dd236fff",
+        "source": "https://api.github.com/repos/deso-protocol/core/pulls/875/commits?per_page=100&page=2"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T22:50:26.707239+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/deso-protocol/core/pulls/875"
+        }
+      ],
+      "retrieved_at": "2026-10-05T22:50:26.707239+00:00",
+      "sha256": "a4bcc12178637182cbb42987c0cf8e24c5de8990be9d44121205c2fe1a97f9af",
+      "source": "https://api.github.com/repos/deso-protocol/core/pulls/875"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "deso-protocol/core",
+  "selected_state": {
+    "author_time": "2024-02-02T21:30:45Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "a42896545f2ff6d1cffc11e279c9d9e56446fdbc",
+    "committer_time": "2024-02-02T21:30:45Z",
+    "effective_time": "2024-02-02T21:30:45+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "305d463438a42a7c510fe8b1c949bd908f2eb654"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-02-04T06:17:58.975758+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-02-04T06:18:20.388621+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

@@ -1,0 +1,1381 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "main",
+  "base_routing_source": "",
+  "case_id": "CASE_D52C7AE8E2E7",
+  "executed_at": "2026-10-05T22:49:59.633659+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-11-23T21:39:32Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T02:36:46Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T02:36:46+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "3582decbaf7480503f30039c2665aaad8236e63f"
+        ],
+        "position": 1,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "c501438a1a5d4228599929f5a2b5ca62755e6bbc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "446dc143597506abb62b6974af31a628b9390d03"
+      },
+      {
+        "author_time": "2023-11-24T15:39:20Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T02:36:47Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T02:36:47+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c501438a1a5d4228599929f5a2b5ca62755e6bbc"
+        ],
+        "position": 2,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "46b4006a7e331edcc9174911631ef1ca30d6fea2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b081f6cc0ad5e3f1d3af9030fc871e45823837a3"
+      },
+      {
+        "author_time": "2023-11-24T19:34:25Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T02:36:47Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T02:36:47+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "46b4006a7e331edcc9174911631ef1ca30d6fea2"
+        ],
+        "position": 3,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "fc65c191342a6282ed2db787028897dd06c396fc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "acc3f3037ae3da9904544494fce9d122ff68cba7"
+      },
+      {
+        "author_time": "2023-11-24T22:23:00Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T02:36:47Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T02:36:47+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "fc65c191342a6282ed2db787028897dd06c396fc"
+        ],
+        "position": 4,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "7a87387518a16102494866caef22856c214fe617",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0af1b5ef4bfd5355afa4b730ebe407cb67c12596"
+      },
+      {
+        "author_time": "2023-11-24T23:06:46Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T02:36:47Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T02:36:47+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7a87387518a16102494866caef22856c214fe617"
+        ],
+        "position": 5,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "fa8bb7f57c604ddebf322d84212f450142842c42",
+        "temporal_basis": "committer_time",
+        "tree_sha": "40024bd0db24289bb777b51c7074aeccd079ed42"
+      },
+      {
+        "author_time": "2023-11-24T23:12:00Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T02:36:47Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T02:36:47+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "fa8bb7f57c604ddebf322d84212f450142842c42"
+        ],
+        "position": 6,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "f2138b90a575f93d583670afd67f8c0607f82cc9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7b66345b06dc2e6412ff31094b39d0d36a86966a"
+      },
+      {
+        "author_time": "2023-11-24T23:48:23Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T02:36:47Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T02:36:47+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f2138b90a575f93d583670afd67f8c0607f82cc9"
+        ],
+        "position": 7,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "1bb6f09fd6b30fca9a7996bfd56c82eb64e740f8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0c732379703b08e539afd83bd86642a16e64fd0e"
+      },
+      {
+        "author_time": "2023-11-25T16:35:46Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T02:36:48Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T02:36:48+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "1bb6f09fd6b30fca9a7996bfd56c82eb64e740f8"
+        ],
+        "position": 8,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "f4a540efb050efa831ea80214598f6087604d002",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b97d1a842dd5eb5c6fd98ae3ff788888d4c45f42"
+      },
+      {
+        "author_time": "2023-11-25T17:12:02Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T02:36:48Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T02:36:48+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f4a540efb050efa831ea80214598f6087604d002"
+        ],
+        "position": 9,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "137c41e3dfa785ac3897ea682a873026ee607b13",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6efb3365bbb278ff7348e78718aa414bff667b2f"
+      },
+      {
+        "author_time": "2023-11-25T23:44:13Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T02:36:48Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T02:36:48+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "137c41e3dfa785ac3897ea682a873026ee607b13"
+        ],
+        "position": 10,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "06f551ae111852f40a76f1f985b85fb376aa9056",
+        "temporal_basis": "committer_time",
+        "tree_sha": "455b8d270af8086428fd686ba4462df5048f224d"
+      },
+      {
+        "author_time": "2023-11-26T03:15:48Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T02:36:48Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T02:36:48+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "06f551ae111852f40a76f1f985b85fb376aa9056"
+        ],
+        "position": 11,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "90df55a979086f4c7d4fdffb24f843e14b4366a7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e700cc8418e2d40408fe8d8fcd78222509e1c9a9"
+      },
+      {
+        "author_time": "2023-11-28T00:01:45Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T02:36:48Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T02:36:48+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "90df55a979086f4c7d4fdffb24f843e14b4366a7"
+        ],
+        "position": 12,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "96c3f8c122723af748cf3ab0e5935b6a993c1826",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9bb4a9b75d6af79270614270b740df54390301ad"
+      },
+      {
+        "author_time": "2023-11-29T22:32:35Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T02:36:48Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T02:36:48+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "96c3f8c122723af748cf3ab0e5935b6a993c1826"
+        ],
+        "position": 13,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "9596af9ea1db2931f87724b6cbd9044bc1922a33",
+        "temporal_basis": "committer_time",
+        "tree_sha": "105a5854355926f9812f419efe4e6c7c3cd34556"
+      },
+      {
+        "author_time": "2023-11-29T22:58:14Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T02:42:18Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T02:42:18+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "9596af9ea1db2931f87724b6cbd9044bc1922a33"
+        ],
+        "position": 14,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "30be1e2baf06c2adea8feb11f581715bc6f5c199",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9eaa64f4ce41effb22ce91c52566ebe9e15321e9"
+      },
+      {
+        "author_time": "2023-11-30T21:59:34Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T21:59:34Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T21:59:34+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "30be1e2baf06c2adea8feb11f581715bc6f5c199"
+        ],
+        "position": 15,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "22a288bf2b47b87d6b0b5f7a64543487f87cb528",
+        "temporal_basis": "committer_time",
+        "tree_sha": "53250d9fd09bc95992e7bf8d1b824d73ff55df59"
+      },
+      {
+        "author_time": "2023-11-30T22:08:07Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T22:08:07Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T22:08:07+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "22a288bf2b47b87d6b0b5f7a64543487f87cb528",
+          "3b85dc40279d5ab79d5b6cc3b8fbcdfb5c3c6c39"
+        ],
+        "position": 16,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "14927900cc398dc6f8e1ffd2462333a0f657d444",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c52484b0197b36512a62741c5a113875af8d31a5"
+      },
+      {
+        "author_time": "2023-12-02T02:59:53Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-02T03:01:33Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-02T03:01:33+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "14927900cc398dc6f8e1ffd2462333a0f657d444"
+        ],
+        "position": 17,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "bfde9975b7a4df7e19e8ee81d90ca983a341434b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e4bf638fdffdd6e3850ef9075d460ca9ad075309"
+      },
+      {
+        "author_time": "2023-12-02T03:00:15Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-02T03:01:33Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-02T03:01:33+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "bfde9975b7a4df7e19e8ee81d90ca983a341434b"
+        ],
+        "position": 18,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "0ab3a5f0eef94ef21a8e20fec3bde9a36902a580",
+        "temporal_basis": "committer_time",
+        "tree_sha": "20f340b83aaf79564a550afa0395a7de3fa4677f"
+      },
+      {
+        "author_time": "2023-12-02T03:01:16Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-03T14:19:13Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-03T14:19:13+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "0ab3a5f0eef94ef21a8e20fec3bde9a36902a580"
+        ],
+        "position": 19,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "dea14799113815cc0f5a1ed12d44de50de6d7d09",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4dfe882c38ec2c3b22b9d46adf86ad5ead0578c8"
+      },
+      {
+        "author_time": "2023-12-03T16:31:21Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-03T16:31:21Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-03T16:31:21+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "dea14799113815cc0f5a1ed12d44de50de6d7d09"
+        ],
+        "position": 20,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "1dd4fc5eabe84d4eb97801ceec9210066b9e5178",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1208e6dcee7c04b267cb2754a4bd96095dcd61e3"
+      },
+      {
+        "author_time": "2023-12-04T22:28:33Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-04T22:28:33Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-04T22:28:33+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "1dd4fc5eabe84d4eb97801ceec9210066b9e5178"
+        ],
+        "position": 21,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "5fb8c91326a2ae012ad0738931b4b7061b6eff37",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0509f5097e81b4b42723a4a462dbdace01ae8685"
+      },
+      {
+        "author_time": "2023-12-04T22:53:26Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-04T22:53:26Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-04T22:53:26+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "5fb8c91326a2ae012ad0738931b4b7061b6eff37"
+        ],
+        "position": 22,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "6cdab385b6d31bb19ecd441ac5335e9f6e9b5b5c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0db5657edc43ed2b33174559694d491ee0a48bd2"
+      },
+      {
+        "author_time": "2023-12-05T20:29:55Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T20:29:55Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T20:29:55+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6cdab385b6d31bb19ecd441ac5335e9f6e9b5b5c"
+        ],
+        "position": 23,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "28e4923325cd2d38750536ae534bf034c8257e9f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1d76d0e35ce7791ef1a91f6276e8288d21ea7163"
+      },
+      {
+        "author_time": "2023-12-05T20:47:15Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T20:47:15Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T20:47:15+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "28e4923325cd2d38750536ae534bf034c8257e9f"
+        ],
+        "position": 24,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "5002ad29bb4d92637e6bf88c7f87291345b7a37c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "64e7c62b02bb73882634bfb9c9f6351e7df5ca37"
+      },
+      {
+        "author_time": "2023-12-05T20:47:37Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T20:47:37Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T20:47:37+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "5002ad29bb4d92637e6bf88c7f87291345b7a37c",
+          "e36097ed71ca7bcb0d47b998681e2bf7a383a99b"
+        ],
+        "position": 25,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "0f0513e69111a05417ad7ca974d35598fcbecf1d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5fe2fc061010c7cb94eb7d08c2323371002e7281"
+      },
+      {
+        "author_time": "2023-12-05T22:45:24Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T22:45:24Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T22:45:24+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "0f0513e69111a05417ad7ca974d35598fcbecf1d"
+        ],
+        "position": 26,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "29abc9167d8f85ee916149de76f1ea509030ee2c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "cd0d5da44212b7058cbf84a84aa06e95fbb060b9"
+      },
+      {
+        "author_time": "2023-12-06T00:37:05Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-06T00:37:05Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-06T00:37:05+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "29abc9167d8f85ee916149de76f1ea509030ee2c"
+        ],
+        "position": 27,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "131f4e14876d689a3e479c5b7c4ce4c9c7a16d49",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1b7bff658dd3b349074b7e977117500cc60d1904"
+      },
+      {
+        "author_time": "2023-12-06T01:55:22Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-06T01:55:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-06T01:55:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "131f4e14876d689a3e479c5b7c4ce4c9c7a16d49"
+        ],
+        "position": 28,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "13205394fe69a34061c739e3bdc54a8b0bbd1e18",
+        "temporal_basis": "committer_time",
+        "tree_sha": "fcc8a27acc724bd33c6f64806adf12336b91fc4e"
+      },
+      {
+        "author_time": "2023-12-06T17:49:02Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-06T17:49:02Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-06T17:49:02+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "13205394fe69a34061c739e3bdc54a8b0bbd1e18"
+        ],
+        "position": 29,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "8e3dbc599fd7c800b773cf913b9536565f08e1d0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1eb92273dda286cc5f090ac53737783991e61462"
+      },
+      {
+        "author_time": "2023-12-06T17:57:07Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-06T17:57:07Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-06T17:57:07+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8e3dbc599fd7c800b773cf913b9536565f08e1d0",
+          "86eae6fd9eea2f848f16499a9e96c5eb08baaa8a"
+        ],
+        "position": 30,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "bc19c8cdf05fc031077a3afc65f2b0d99ad04baa",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0f508acebd27eec92007d00f65c11dd4a9fdbcb0"
+      },
+      {
+        "author_time": "2023-12-06T17:59:12Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-06T17:59:12Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-06T17:59:12+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "bc19c8cdf05fc031077a3afc65f2b0d99ad04baa"
+        ],
+        "position": 31,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "3620d6c52649d38741f0ab4dc2e03efbe890bc69",
+        "temporal_basis": "committer_time",
+        "tree_sha": "87061f06d0190071ea19f9a015d37aaab202044c"
+      },
+      {
+        "author_time": "2023-12-06T23:08:30Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-06T23:08:30Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-06T23:08:30+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "3620d6c52649d38741f0ab4dc2e03efbe890bc69"
+        ],
+        "position": 32,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "2a40d48e241d0939ae8311dd670ef9a5b6dd2730",
+        "temporal_basis": "committer_time",
+        "tree_sha": "af7f3306fc3764a059ee36db0ed796d870a85d7f"
+      },
+      {
+        "author_time": "2023-12-07T00:21:04Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-07T00:21:04Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-07T00:21:04+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2a40d48e241d0939ae8311dd670ef9a5b6dd2730"
+        ],
+        "position": 33,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "18f953c6aaed3840043999903ab9e3a8e536eafc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4b3a4902de565bf62fb9e743821bfc60503b0c39"
+      },
+      {
+        "author_time": "2023-12-07T00:21:52Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-07T00:21:52Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-07T00:21:52+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "18f953c6aaed3840043999903ab9e3a8e536eafc",
+          "1164e332fad393580537041c0256334f9e9dde11"
+        ],
+        "position": 34,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "e53078bf723a231c5e45b81a3d4cc7973857cde2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "52c176da14e42fb7b5033fd787a8e1e65944868f"
+      },
+      {
+        "author_time": "2023-12-07T17:31:00Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-07T17:31:00Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-07T17:31:00+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e53078bf723a231c5e45b81a3d4cc7973857cde2"
+        ],
+        "position": 35,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "d5c71985217632ffba0dbdf48df772ee21470e51",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e24c747c1d7f26cb846ee879157c2534d9e8b195"
+      },
+      {
+        "author_time": "2023-12-07T17:47:56Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-07T17:47:56Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-07T17:47:56+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d5c71985217632ffba0dbdf48df772ee21470e51",
+          "7d0c1c963873ca658067839dd127f2956cce0ef0"
+        ],
+        "position": 36,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "c1c39ecdb46ed5ec85675a5b945666abc00142d6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b5d579de3f179860eaaab2715015edf7f91caf7a"
+      },
+      {
+        "author_time": "2023-12-07T17:52:11Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-07T17:52:11Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-07T17:52:11+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "c1c39ecdb46ed5ec85675a5b945666abc00142d6"
+        ],
+        "position": 37,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "fac26017962e38f3d06de2b6cef3059bf811638b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7971033a244d6d9a00ec1d77cc8f1e73901be387"
+      },
+      {
+        "author_time": "2023-12-07T20:34:25Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-07T20:34:25Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-07T20:34:25+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "fac26017962e38f3d06de2b6cef3059bf811638b"
+        ],
+        "position": 38,
+        "pr_number": 220,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+          "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+          "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+        },
+        "repository": "pokt-network/poktroll",
+        "sha": "c6f607c4c06facf43b002bddb65559b22283d2ac",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3fdccea7b45b9639040bb4ffbb7a3c26ffa52844"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-12-05T20:29:55Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-12-05T20:29:55Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-12-05T20:29:55+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "6cdab385b6d31bb19ecd441ac5335e9f6e9b5b5c"
+      ],
+      "position": 23,
+      "pr_number": 220,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+        "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+        "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+      },
+      "repository": "pokt-network/poktroll",
+      "sha": "28e4923325cd2d38750536ae534bf034c8257e9f",
+      "temporal_basis": "committer_time",
+      "tree_sha": "1d76d0e35ce7791ef1a91f6276e8288d21ea7163"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-12-04T22:53:26Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-12-04T22:53:26Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-12-04T22:53:26+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "5fb8c91326a2ae012ad0738931b4b7061b6eff37"
+      ],
+      "position": 22,
+      "pr_number": 220,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+        "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+        "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+      },
+      "repository": "pokt-network/poktroll",
+      "sha": "6cdab385b6d31bb19ecd441ac5335e9f6e9b5b5c",
+      "temporal_basis": "committer_time",
+      "tree_sha": "0db5657edc43ed2b33174559694d491ee0a48bd2"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "6cdab385b6d31bb19ecd441ac5335e9f6e9b5b5c",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "5fb8c91326a2ae012ad0738931b4b7061b6eff37"
+    ],
+    "recursive_tree_entry_count": 691,
+    "recursive_tree_listing_sha256": "746d6cbf556b37f6c7aef96d204f21b7dfaa2028c35f3a382a12b0dc4d825ea3",
+    "retrieved_at": "2026-10-05T22:49:59.630310+00:00",
+    "source": "https://github.com/pokt-network/poktroll.git",
+    "status": "materialized",
+    "tree_sha": "0db5657edc43ed2b33174559694d491ee0a48bd2"
+  },
+  "pr_number": 220,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "7d0c1c963873ca658067839dd127f2956cce0ef0",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:49:58.870584+00:00",
+        "sha256": "39955c417cfb55fa1eee3fb094661e098a91b60321b81e1549603df9ef5f295f",
+        "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T22:49:58.033289+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/pokt-network/poktroll/pulls/220"
+        }
+      ],
+      "retrieved_at": "2026-10-05T22:49:58.033289+00:00",
+      "sha256": "ff61533bdc2f7744f326d78107ef3f73d48b51a2b13534e76213a4ab953cf06e",
+      "source": "https://api.github.com/repos/pokt-network/poktroll/pulls/220"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "pokt-network/poktroll",
+  "selected_state": {
+    "author_time": "2023-12-04T22:53:26Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "6cdab385b6d31bb19ecd441ac5335e9f6e9b5b5c",
+    "committer_time": "2023-12-04T22:53:26Z",
+    "effective_time": "2023-12-04T22:53:26+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "0db5657edc43ed2b33174559694d491ee0a48bd2"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-12-05T16:34:40.580538+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-12-05T16:35:02.796881+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

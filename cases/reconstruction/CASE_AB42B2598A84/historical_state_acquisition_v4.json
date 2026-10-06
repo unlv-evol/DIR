@@ -1,0 +1,416 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_AB42B2598A84",
+  "executed_at": "2026-10-05T20:19:01.340527+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-01-08T10:27:07Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-08T10:27:07Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-08T10:27:07+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "51f462f00587762552d6caf1135aaccbaad36d90"
+        ],
+        "position": 1,
+        "pr_number": 259,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+          "sha256": "24e9f4066a58a858549260f2c80649569377b0742a17a0c62ea09277bb2014be",
+          "source": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+        },
+        "repository": "Altinn/altinn-broker",
+        "sha": "b294083892f35eb228788665591f51b407a348e0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0fb862c2106e659ff0849d316d1afd850a04d985"
+      },
+      {
+        "author_time": "2024-01-08T12:20:30Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-08T12:20:30Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-08T12:20:30+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "b294083892f35eb228788665591f51b407a348e0"
+        ],
+        "position": 2,
+        "pr_number": 259,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+          "sha256": "24e9f4066a58a858549260f2c80649569377b0742a17a0c62ea09277bb2014be",
+          "source": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+        },
+        "repository": "Altinn/altinn-broker",
+        "sha": "164ce9ce7e989f41e88e476633148db860223aa8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "eb1338839f650b6e30c92c95bcae2848e875ad07"
+      },
+      {
+        "author_time": "2024-01-08T12:48:20Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-08T12:48:20Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-08T12:48:20+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "164ce9ce7e989f41e88e476633148db860223aa8"
+        ],
+        "position": 3,
+        "pr_number": 259,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+          "sha256": "24e9f4066a58a858549260f2c80649569377b0742a17a0c62ea09277bb2014be",
+          "source": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+        },
+        "repository": "Altinn/altinn-broker",
+        "sha": "5b0e0279d6c9bb3bf9d65fe4f149b67ced9cd89a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d3f9d7eb8e5cae3ee24c183d35ee59c3282d4a6b"
+      },
+      {
+        "author_time": "2024-01-08T12:55:02Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-08T12:55:02Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-08T12:55:02+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "5b0e0279d6c9bb3bf9d65fe4f149b67ced9cd89a"
+        ],
+        "position": 4,
+        "pr_number": 259,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+          "sha256": "24e9f4066a58a858549260f2c80649569377b0742a17a0c62ea09277bb2014be",
+          "source": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+        },
+        "repository": "Altinn/altinn-broker",
+        "sha": "47f2c10ca23088d76d8cf84fecb56cb758638673",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2b04e1480ad0fffff56964b5648b46c342b35f13"
+      },
+      {
+        "author_time": "2024-01-08T12:59:47Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-08T12:59:47Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-08T12:59:47+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "47f2c10ca23088d76d8cf84fecb56cb758638673"
+        ],
+        "position": 5,
+        "pr_number": 259,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+          "sha256": "24e9f4066a58a858549260f2c80649569377b0742a17a0c62ea09277bb2014be",
+          "source": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+        },
+        "repository": "Altinn/altinn-broker",
+        "sha": "4aca43a27dec68578602a77497f43c374687aa4f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7484e7fce4cdee0d7a370d847b20755ec10c24f4"
+      },
+      {
+        "author_time": "2024-01-08T13:06:41Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-08T13:06:41Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-08T13:06:41+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "4aca43a27dec68578602a77497f43c374687aa4f"
+        ],
+        "position": 6,
+        "pr_number": 259,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+          "sha256": "24e9f4066a58a858549260f2c80649569377b0742a17a0c62ea09277bb2014be",
+          "source": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+        },
+        "repository": "Altinn/altinn-broker",
+        "sha": "3f19790fe355f2425432a44ec5542865b87b124c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "25deefd0fac4e5b8c72914ae9c4b1e660483d8bc"
+      },
+      {
+        "author_time": "2024-01-08T13:32:06Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-08T13:32:06Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-08T13:32:06+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "3f19790fe355f2425432a44ec5542865b87b124c"
+        ],
+        "position": 7,
+        "pr_number": 259,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+          "sha256": "24e9f4066a58a858549260f2c80649569377b0742a17a0c62ea09277bb2014be",
+          "source": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+        },
+        "repository": "Altinn/altinn-broker",
+        "sha": "6386d4af5bc0a6e74443045cd60b136cef0580c5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "72e5b3c52aa2cc2da4abe8c9e78b8de6fd6560b7"
+      },
+      {
+        "author_time": "2024-01-08T13:51:25Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-08T13:51:25Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-08T13:51:25+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6386d4af5bc0a6e74443045cd60b136cef0580c5"
+        ],
+        "position": 8,
+        "pr_number": 259,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+          "sha256": "24e9f4066a58a858549260f2c80649569377b0742a17a0c62ea09277bb2014be",
+          "source": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+        },
+        "repository": "Altinn/altinn-broker",
+        "sha": "f3eae2349b399230875c06ca7994a77bd520e865",
+        "temporal_basis": "committer_time",
+        "tree_sha": "738bcdb50ac64d560e58a9e3315dcedd34055b7d"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2024-01-08T12:20:30Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-01-08T12:20:30Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2024-01-08T12:20:30+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "b294083892f35eb228788665591f51b407a348e0"
+      ],
+      "position": 2,
+      "pr_number": 259,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+        "sha256": "24e9f4066a58a858549260f2c80649569377b0742a17a0c62ea09277bb2014be",
+        "source": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+      },
+      "repository": "Altinn/altinn-broker",
+      "sha": "164ce9ce7e989f41e88e476633148db860223aa8",
+      "temporal_basis": "committer_time",
+      "tree_sha": "eb1338839f650b6e30c92c95bcae2848e875ad07"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-01-08T10:27:07Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-01-08T10:27:07Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-01-08T10:27:07+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "51f462f00587762552d6caf1135aaccbaad36d90"
+      ],
+      "position": 1,
+      "pr_number": 259,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+        "sha256": "24e9f4066a58a858549260f2c80649569377b0742a17a0c62ea09277bb2014be",
+        "source": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+      },
+      "repository": "Altinn/altinn-broker",
+      "sha": "b294083892f35eb228788665591f51b407a348e0",
+      "temporal_basis": "committer_time",
+      "tree_sha": "0fb862c2106e659ff0849d316d1afd850a04d985"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "b294083892f35eb228788665591f51b407a348e0",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "51f462f00587762552d6caf1135aaccbaad36d90"
+    ],
+    "recursive_tree_entry_count": 180,
+    "recursive_tree_listing_sha256": "b10311af67ab0ef4a9fbe1e8784cfbc043094ff1a4db08556227a3dbfbcb6b95",
+    "retrieved_at": "2026-10-05T20:19:01.336683+00:00",
+    "source": "https://github.com/Altinn/altinn-broker.git",
+    "status": "materialized",
+    "tree_sha": "0fb862c2106e659ff0849d316d1afd850a04d985"
+  },
+  "pr_number": 259,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "51f462f00587762552d6caf1135aaccbaad36d90",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:19:00.442873+00:00",
+        "sha256": "24e9f4066a58a858549260f2c80649569377b0742a17a0c62ea09277bb2014be",
+        "source": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:18:59.928736+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:18:59.928736+00:00",
+      "sha256": "617fe4e29f5e596ebe7346d748b9d2a28836d5f56e8fb8f01d769aedd25d4543",
+      "source": "https://api.github.com/repos/Altinn/altinn-broker/pulls/259"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "Altinn/altinn-broker",
+  "selected_state": {
+    "author_time": "2024-01-08T10:27:07Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "b294083892f35eb228788665591f51b407a348e0",
+    "committer_time": "2024-01-08T10:27:07Z",
+    "effective_time": "2024-01-08T10:27:07+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "0fb862c2106e659ff0849d316d1afd850a04d985"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-01-08T11:48:08.393214+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-01-08T11:48:53.299044+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

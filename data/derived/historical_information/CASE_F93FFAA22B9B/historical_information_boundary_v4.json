@@ -1,0 +1,46 @@
+{
+  "base_lineage_ref": "master",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_F93FFAA22B9B",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "7428cd1606386541ccbfa6ece6edc45b3342a9cb",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "39e2fcf9b91ca5c2e746626120bafc5d7baa3122",
+      "09ca574ff840f9f0525c6dfe0192c692f4ca73ff"
+    ],
+    "recursive_tree_entry_count": 22958,
+    "recursive_tree_listing_sha256": "2e894697cd65ebb250f5eeaa599ca85a728008ffbabd581e76fa9e25608dc444",
+    "retrieved_at": "2026-10-05T19:19:33.251154+00:00",
+    "source": "https://github.com/dotCMS/core.git",
+    "status": "materialized",
+    "tree_sha": "ef3dc583712a28468005930831a6e4ac64cf9290"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_F93FFAA22B9B/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_F93FFAA22B9B/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "dotCMS/core",
+  "selected_state": {
+    "author_time": "2023-07-07T17:49:24Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "7428cd1606386541ccbfa6ece6edc45b3342a9cb",
+    "committer_time": "2023-07-07T17:49:24Z",
+    "effective_time": "2023-07-07T17:49:24+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "ef3dc583712a28468005930831a6e4ac64cf9290"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-07-07T21:10:15.086839+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

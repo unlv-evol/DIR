@@ -1,0 +1,264 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-09-15T19:28:02Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-15T19:28:02Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-15T19:28:02+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c7914d1838beb5a93e02fb1c244c8de0f6693c72"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:50.809947+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/SharezoneApp/sharezone-app/commits?sha=main&until=2023-09-16T11%3A14%3A32.846018%2B00%3A00&per_page=1&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:50.809947+00:00",
+          "sha256": "8b567232e34b5d24af4185a03c5635bb2292f0cef15f7c719bb0246e37257b32",
+          "source": "https://api.github.com/repos/SharezoneApp/sharezone-app/commits?sha=main&until=2023-09-16T11%3A14%3A32.846018%2B00%3A00&per_page=1&page=1"
+        },
+        "repository": "SharezoneApp/sharezone-app",
+        "sha": "968361dd412d7137042ec192dece98afaaba90da",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1880640c56eaff65327d47e9bd3ad62b0cb8ffdd"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-09-15T19:28:02Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-09-15T19:28:02Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-09-15T19:28:02+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "c7914d1838beb5a93e02fb1c244c8de0f6693c72"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:50.809947+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/SharezoneApp/sharezone-app/commits?sha=main&until=2023-09-16T11%3A14%3A32.846018%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:50.809947+00:00",
+        "sha256": "8b567232e34b5d24af4185a03c5635bb2292f0cef15f7c719bb0246e37257b32",
+        "source": "https://api.github.com/repos/SharezoneApp/sharezone-app/commits?sha=main&until=2023-09-16T11%3A14%3A32.846018%2B00%3A00&per_page=1&page=1"
+      },
+      "repository": "SharezoneApp/sharezone-app",
+      "sha": "968361dd412d7137042ec192dece98afaaba90da",
+      "temporal_basis": "committer_time",
+      "tree_sha": "1880640c56eaff65327d47e9bd3ad62b0cb8ffdd"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "main",
+  "base_routing_source": "pr_base_ref",
+  "case_id": "CASE_193801513E85",
+  "executed_at": "2026-10-05T20:15:52.068632+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-09-16T12:03:57Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-16T12:03:57Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-16T12:03:57+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "968361dd412d7137042ec192dece98afaaba90da"
+        ],
+        "position": 1,
+        "pr_number": 980,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:49.973106+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/SharezoneApp/sharezone-app/pulls/980/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:49.973106+00:00",
+          "sha256": "3c0b84eb155b4a5af6d2ffe55cc2723ed8c06c0d7f5374386270eeee9bd91366",
+          "source": "https://api.github.com/repos/SharezoneApp/sharezone-app/pulls/980/commits?per_page=100&page=1"
+        },
+        "repository": "SharezoneApp/sharezone-app",
+        "sha": "ae0c14fe0b10b4cbc56b2dec1975920cb82e183b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "28fa0cb827cf784ec0d569bf837920fff483d6f4"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-09-16T12:03:57Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-09-16T12:03:57Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-09-16T12:03:57+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "968361dd412d7137042ec192dece98afaaba90da"
+      ],
+      "position": 1,
+      "pr_number": 980,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:49.973106+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/SharezoneApp/sharezone-app/pulls/980/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:49.973106+00:00",
+        "sha256": "3c0b84eb155b4a5af6d2ffe55cc2723ed8c06c0d7f5374386270eeee9bd91366",
+        "source": "https://api.github.com/repos/SharezoneApp/sharezone-app/pulls/980/commits?per_page=100&page=1"
+      },
+      "repository": "SharezoneApp/sharezone-app",
+      "sha": "ae0c14fe0b10b4cbc56b2dec1975920cb82e183b",
+      "temporal_basis": "committer_time",
+      "tree_sha": "28fa0cb827cf784ec0d569bf837920fff483d6f4"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "968361dd412d7137042ec192dece98afaaba90da",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "c7914d1838beb5a93e02fb1c244c8de0f6693c72"
+    ],
+    "recursive_tree_entry_count": 2439,
+    "recursive_tree_listing_sha256": "57bf32a6c0c0cb449c3e9a77e7b5cab42f76e2f16f5b7c05182f8f2390c51aba",
+    "retrieved_at": "2026-10-05T20:15:52.065337+00:00",
+    "source": "https://github.com/SharezoneApp/sharezone-app.git",
+    "status": "materialized",
+    "tree_sha": "1880640c56eaff65327d47e9bd3ad62b0cb8ffdd"
+  },
+  "pr_number": 980,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:50.361112+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/SharezoneApp/sharezone-app/git/ref/heads/main"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:50.361112+00:00",
+        "sha256": "c232f9e27bac8232b7bc03f4f141e7f5cfd1b03c4aea48af00e06996c8d25724",
+        "source": "https://api.github.com/repos/SharezoneApp/sharezone-app/git/ref/heads/main"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:50.809947+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/SharezoneApp/sharezone-app/commits?sha=main&until=2023-09-16T11%3A14%3A32.846018%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:50.809947+00:00",
+        "sha256": "8b567232e34b5d24af4185a03c5635bb2292f0cef15f7c719bb0246e37257b32",
+        "source": "https://api.github.com/repos/SharezoneApp/sharezone-app/commits?sha=main&until=2023-09-16T11%3A14%3A32.846018%2B00%3A00&per_page=1&page=1"
+      }
+    ],
+    "base_route_evidence": {
+      "ref_object_sha": "33387c5a79ec4f36cab950a82b1ec0e12722bead",
+      "rule": "recorded_pr_base_ref_resolves"
+    },
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "968361dd412d7137042ec192dece98afaaba90da",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:49.973106+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/SharezoneApp/sharezone-app/pulls/980/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:49.973106+00:00",
+        "sha256": "3c0b84eb155b4a5af6d2ffe55cc2723ed8c06c0d7f5374386270eeee9bd91366",
+        "source": "https://api.github.com/repos/SharezoneApp/sharezone-app/pulls/980/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:15:49.518691+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/SharezoneApp/sharezone-app/pulls/980"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:15:49.518691+00:00",
+      "sha256": "a74cf808b6b7bb0480bfab6cb19ac68d5043e3f657b5c70c952dca1598a3e978",
+      "source": "https://api.github.com/repos/SharezoneApp/sharezone-app/pulls/980"
+    },
+    "recorded_pr_base_ref_resolves": true
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "SharezoneApp/sharezone-app",
+  "selected_state": {
+    "author_time": "2023-09-15T19:28:02Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "968361dd412d7137042ec192dece98afaaba90da",
+    "committer_time": "2023-09-15T19:28:02Z",
+    "effective_time": "2023-09-15T19:28:02+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "1880640c56eaff65327d47e9bd3ad62b0cb8ffdd"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-09-16T11:10:33.268452+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-09-16T11:14:32.846018+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

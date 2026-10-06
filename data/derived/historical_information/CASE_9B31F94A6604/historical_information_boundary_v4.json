@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_9B31F94A6604",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "1356d8e1a53c410b334c4ed1919b11cf56178880",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "f397d4102b882e68fbfa2cf096ce77aafaf80041"
+    ],
+    "recursive_tree_entry_count": 224,
+    "recursive_tree_listing_sha256": "2152f1dc2396d07e21a79532434ab3d2ba02d07d3fd5f28a1d6aba15ef839df3",
+    "retrieved_at": "2026-10-05T20:18:37.382387+00:00",
+    "source": "https://github.com/StreamSG/ABCWorkshop.git",
+    "status": "materialized",
+    "tree_sha": "0fadd409a51842df0a1cf3a48cf680f00089b68a"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_9B31F94A6604/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_9B31F94A6604/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "StreamSG/ABCWorkshop",
+  "selected_state": {
+    "author_time": "2023-05-23T04:22:51Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "1356d8e1a53c410b334c4ed1919b11cf56178880",
+    "committer_time": "2023-05-23T04:22:51Z",
+    "effective_time": "2023-05-23T04:22:51+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "0fadd409a51842df0a1cf3a48cf680f00089b68a"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-06-01T02:12:42.148960+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

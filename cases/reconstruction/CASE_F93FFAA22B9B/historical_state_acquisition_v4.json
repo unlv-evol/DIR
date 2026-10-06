@@ -1,0 +1,1394 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "master",
+  "base_routing_source": "",
+  "case_id": "CASE_F93FFAA22B9B",
+  "executed_at": "2026-10-05T19:19:33.257574+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-06-29T22:05:23Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T21:33:18Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-05T21:33:18+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f0d0ded5e9b3e2a9f52e7854d869d0eec33978df"
+        ],
+        "position": 1,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "e53d4d264ea9c9ab805bc93660db75c82c494dd7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "19b65a18b5b9d068b06b489adc0ea893a4ca5004"
+      },
+      {
+        "author_time": "2023-06-29T22:06:14Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T21:33:18Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-05T21:33:18+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "e53d4d264ea9c9ab805bc93660db75c82c494dd7"
+        ],
+        "position": 2,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "4a736c720c343dd39e542683dd58f120aab8ac41",
+        "temporal_basis": "committer_time",
+        "tree_sha": "fce8683915342d0e296646be288968576909cf67"
+      },
+      {
+        "author_time": "2023-07-03T18:52:17Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T21:33:18Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-05T21:33:18+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "4a736c720c343dd39e542683dd58f120aab8ac41"
+        ],
+        "position": 3,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "4455138a168d2547ab0ededa20ff139c7056b081",
+        "temporal_basis": "committer_time",
+        "tree_sha": "45e9799700b5e468faf08e9d11b1eb8388ed2d42"
+      },
+      {
+        "author_time": "2023-07-05T13:21:27Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T21:33:18Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-05T21:33:18+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "4455138a168d2547ab0ededa20ff139c7056b081"
+        ],
+        "position": 4,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "bf674c178396383bca89bd3a892359053b7df4e4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e72ed9b775fdc1a3d43ad1f4d8f1e308fd56f992"
+      },
+      {
+        "author_time": "2023-07-05T21:02:55Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T21:33:18Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-05T21:33:18+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "bf674c178396383bca89bd3a892359053b7df4e4"
+        ],
+        "position": 5,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "311a89aa877978b73e626c9c62335d5863048e01",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3d03a674a286664370a041b4033021cbee89c6eb"
+      },
+      {
+        "author_time": "2023-07-03T18:52:17Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T21:33:18Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-05T21:33:18+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "311a89aa877978b73e626c9c62335d5863048e01"
+        ],
+        "position": 6,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "b443d3eb70a48562d6236e6f10637b543cd451f0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9674494a35624609e0b3a133f3fe8aef7a733d5f"
+      },
+      {
+        "author_time": "2023-07-06T00:31:47Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-06T00:31:47Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-06T00:31:47+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "b443d3eb70a48562d6236e6f10637b543cd451f0"
+        ],
+        "position": 7,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "0ffa4cd5ca420300ce7174d58b2c36912cd1cafa",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8c65f77e487c594941c487fc9854d3c3d999cca6"
+      },
+      {
+        "author_time": "2023-07-06T01:55:39Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-06T01:55:39Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-06T01:55:39+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "0ffa4cd5ca420300ce7174d58b2c36912cd1cafa"
+        ],
+        "position": 8,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "caff5410488d2b911f8fe5eb6a45b1f1d00fcf04",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5315157f7e35c7e5409e33eb01ec9b38c913ca4f"
+      },
+      {
+        "author_time": "2023-07-06T01:59:05Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-06T01:59:05Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-06T01:59:05+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "caff5410488d2b911f8fe5eb6a45b1f1d00fcf04"
+        ],
+        "position": 9,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "1033c11f855369297587db40dc1d88e54cf838a4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "00b177744b6b24ec7dfe521b969e46e16b10ba09"
+      },
+      {
+        "author_time": "2023-07-06T14:19:47Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-06T14:19:47Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-06T14:19:47+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "1033c11f855369297587db40dc1d88e54cf838a4"
+        ],
+        "position": 10,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "92b21eaba64e47c261eb09db8e8cece7fdef1a26",
+        "temporal_basis": "committer_time",
+        "tree_sha": "302d8a6979a1416af9c3353e4b30a0bbf001dc60"
+      },
+      {
+        "author_time": "2023-07-06T15:25:39Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-06T15:25:39Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-06T15:25:39+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "92b21eaba64e47c261eb09db8e8cece7fdef1a26"
+        ],
+        "position": 11,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "8496ed16b6fc5847b8fb0d151ad4a4d643273f97",
+        "temporal_basis": "committer_time",
+        "tree_sha": "56b7c4d3cfab033c0cf30fd6652d9904154ec9d2"
+      },
+      {
+        "author_time": "2023-07-06T15:26:09Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-06T15:26:09Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-06T15:26:09+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "8496ed16b6fc5847b8fb0d151ad4a4d643273f97"
+        ],
+        "position": 12,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "b68f7af565e1c50b199149f5c7205c0953b86856",
+        "temporal_basis": "committer_time",
+        "tree_sha": "265ad7f17ec062df7b5919a5ed12d0b328a44b52"
+      },
+      {
+        "author_time": "2023-07-06T15:44:04Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-06T15:44:04Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-06T15:44:04+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "b68f7af565e1c50b199149f5c7205c0953b86856",
+          "d355b596613ff7c3a23205f0e70ea351be126a45"
+        ],
+        "position": 13,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "67eaad93675550c628f389fc0aa808267c99be66",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5af6b6c7b8c06b92e5b08ae5a64f0ef2bea9293f"
+      },
+      {
+        "author_time": "2023-07-06T16:42:26Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-06T16:42:26Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-06T16:42:26+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "67eaad93675550c628f389fc0aa808267c99be66",
+          "3d7a55966211b614868ce55c38a3fa22e9ecdc54"
+        ],
+        "position": 14,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "1462c4bde671fd537baa4370540e9800bc9ec60a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e71ce348e97d9c2ee361c1d15401b04423761913"
+      },
+      {
+        "author_time": "2023-07-06T18:01:12Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-06T21:29:27Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-06T21:29:27+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "1462c4bde671fd537baa4370540e9800bc9ec60a"
+        ],
+        "position": 15,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "dc7753b81f1336f60a5c591f1b424a47f5ba6126",
+        "temporal_basis": "committer_time",
+        "tree_sha": "82fb3f189019b516a9804a8ea49b32b5a4e89110"
+      },
+      {
+        "author_time": "2023-07-06T21:28:46Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-06T21:29:27Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-06T21:29:27+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "dc7753b81f1336f60a5c591f1b424a47f5ba6126"
+        ],
+        "position": 16,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "39e2fcf9b91ca5c2e746626120bafc5d7baa3122",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5bebde88209dfb217293477d7712650646bdeb22"
+      },
+      {
+        "author_time": "2023-07-07T17:49:24Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-07T17:49:24Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-07T17:49:24+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "39e2fcf9b91ca5c2e746626120bafc5d7baa3122",
+          "09ca574ff840f9f0525c6dfe0192c692f4ca73ff"
+        ],
+        "position": 17,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "7428cd1606386541ccbfa6ece6edc45b3342a9cb",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ef3dc583712a28468005930831a6e4ac64cf9290"
+      },
+      {
+        "author_time": "2023-07-10T18:00:50Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-10T18:02:17Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-10T18:02:17+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7428cd1606386541ccbfa6ece6edc45b3342a9cb"
+        ],
+        "position": 18,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "391ac05a163287cd4aa9caececa935026fb14563",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b22f1c317a7da47533fc94dcd0963bba262e5c0a"
+      },
+      {
+        "author_time": "2023-07-10T18:23:10Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-10T18:23:10Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-10T18:23:10+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "391ac05a163287cd4aa9caececa935026fb14563"
+        ],
+        "position": 19,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "6efe3562d0bf39d6b98305ca0f3491e48cdaa9bc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d6f41bd31028f61b60fbc7577b3821b584a3a194"
+      },
+      {
+        "author_time": "2023-07-10T18:27:10Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-10T18:27:10Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-10T18:27:10+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6efe3562d0bf39d6b98305ca0f3491e48cdaa9bc"
+        ],
+        "position": 20,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "6d514981642c3913c5dfa4784bdd049209b1d0b9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7a6a2548ce83c504a36348809ee2895487eea2fb"
+      },
+      {
+        "author_time": "2023-07-10T18:40:09Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-10T18:40:09Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-10T18:40:09+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6d514981642c3913c5dfa4784bdd049209b1d0b9"
+        ],
+        "position": 21,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "a5883bd1d138f481695009c81f811b9b84aa4b5e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c58e46f2a38b0f65d8a1f054b7a49de625dc2cb7"
+      },
+      {
+        "author_time": "2023-07-10T20:27:37Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-10T20:27:37Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-10T20:27:37+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a5883bd1d138f481695009c81f811b9b84aa4b5e"
+        ],
+        "position": 22,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "246aad00c1aa711a2b1226515db4728cdc8cb402",
+        "temporal_basis": "committer_time",
+        "tree_sha": "bd76e7c72327411e3a83c5513e58ef5e85d55be2"
+      },
+      {
+        "author_time": "2023-07-10T21:47:03Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-10T21:47:03Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-10T21:47:03+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "246aad00c1aa711a2b1226515db4728cdc8cb402"
+        ],
+        "position": 23,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "7f14fd5c32129f0bb6e228fc4916a22b75f0da51",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2679ddc06d3eed67ef26a573544e021da2ed7784"
+      },
+      {
+        "author_time": "2023-07-11T13:56:55Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-11T13:56:55Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-11T13:56:55+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7f14fd5c32129f0bb6e228fc4916a22b75f0da51"
+        ],
+        "position": 24,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "e18d15da62c1427ae4d802709f36dc7909ef391d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "89b7c38a0391088f7def56e0d427dac3f924bb8b"
+      },
+      {
+        "author_time": "2023-07-11T13:58:33Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-11T13:58:33Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-11T13:58:33+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e18d15da62c1427ae4d802709f36dc7909ef391d",
+          "66960725d8b018294dfbddf3d39ededbdacbafc2"
+        ],
+        "position": 25,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "1d1e13c9a4da2e71859240c383631bbb99e8357a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "bb998f9a2ba962e9525208fe3fb9c13527ff1fe7"
+      },
+      {
+        "author_time": "2023-07-11T14:16:23Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-11T14:16:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-11T14:16:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1d1e13c9a4da2e71859240c383631bbb99e8357a"
+        ],
+        "position": 26,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "e56d32fba0e2c6d51e3d65394c8ac3685d87abfd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "06ebe525fd71aae770f2d94ffe664df2bda6ff2e"
+      },
+      {
+        "author_time": "2023-07-11T14:44:50Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-11T14:44:50Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-11T14:44:50+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e56d32fba0e2c6d51e3d65394c8ac3685d87abfd"
+        ],
+        "position": 27,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "26dc04cd2b53fd952dc7eed27d259e44b3fae632",
+        "temporal_basis": "committer_time",
+        "tree_sha": "699de346cc1bd04917ca564c3cb474082ef3c144"
+      },
+      {
+        "author_time": "2023-07-11T15:07:56Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-11T15:07:56Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-11T15:07:56+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "26dc04cd2b53fd952dc7eed27d259e44b3fae632"
+        ],
+        "position": 28,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "2ecaf23b401d55fe1b127b40af1e0ef159512007",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2ad0e6478fcc35fe2fe608adc2a85bddbb95dc5c"
+      },
+      {
+        "author_time": "2023-07-11T15:52:48Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-11T15:52:48Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-11T15:52:48+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2ecaf23b401d55fe1b127b40af1e0ef159512007"
+        ],
+        "position": 29,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "38f29c2eca2648346f76259e9037f933a043dbac",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a9fa7f19148b5a776031f0eb1201bb6294c4f128"
+      },
+      {
+        "author_time": "2023-07-11T15:53:27Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-11T15:53:27Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-11T15:53:27+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "38f29c2eca2648346f76259e9037f933a043dbac"
+        ],
+        "position": 30,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "6277d29f628b14547b8fe97186c723a1bca2e4bd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c03e94518cd3aa4cfb4ab0465aad5a70575a9b7b"
+      },
+      {
+        "author_time": "2023-07-11T16:17:52Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-11T16:17:52Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-11T16:17:52+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6277d29f628b14547b8fe97186c723a1bca2e4bd"
+        ],
+        "position": 31,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "de0e4609f0654c1a2f2d27b9bc7887b2abd4b92b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4c365178318b9524836eaa2fd4ed7ff4a1d67827"
+      },
+      {
+        "author_time": "2023-07-11T16:33:12Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-11T16:33:12Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-11T16:33:12+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "de0e4609f0654c1a2f2d27b9bc7887b2abd4b92b"
+        ],
+        "position": 32,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "af2974b550d740977db153fec0d046d7da884cdd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "808dbdd508f8f0032295fc012a5adbef8887cd98"
+      },
+      {
+        "author_time": "2023-07-11T16:35:14Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-11T16:35:14Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-11T16:35:14+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "af2974b550d740977db153fec0d046d7da884cdd"
+        ],
+        "position": 33,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "195ade37e3d55052357b7836a8d06a97be35f43a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1d05e78fdff25f87ad99ba58ce0e82220486fe1c"
+      },
+      {
+        "author_time": "2023-07-11T16:40:05Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-11T16:40:05Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-11T16:40:05+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "195ade37e3d55052357b7836a8d06a97be35f43a"
+        ],
+        "position": 34,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "8d31e870b967bd8bf60c62b75bd7aab1f946df19",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0141219fe0b0f403a888533b3c7501f15c30af09"
+      },
+      {
+        "author_time": "2023-07-11T16:48:35Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-11T16:48:35Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-11T16:48:35+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8d31e870b967bd8bf60c62b75bd7aab1f946df19",
+          "9e3357efa8b09dd586c9836650557df4168a59c5"
+        ],
+        "position": 35,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "6e4869995b06124e89e1cdc757f121ea045e186e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ccfdccf094877e4ee385ae7c4d2f71938f7aa9f0"
+      },
+      {
+        "author_time": "2023-07-11T17:29:06Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-11T17:29:43Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-11T17:29:43+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6e4869995b06124e89e1cdc757f121ea045e186e"
+        ],
+        "position": 36,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "2e9ca70056dc598e5bdf5a415907e070fb58e645",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c17cdcba0582e0e7bff33e661f9bd6fd0fd44a79"
+      },
+      {
+        "author_time": "2023-07-11T19:56:21Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-11T19:56:21Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-11T19:56:21+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2e9ca70056dc598e5bdf5a415907e070fb58e645"
+        ],
+        "position": 37,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "225628b01a1d583c2331a7e4a7adeec64f7047cf",
+        "temporal_basis": "committer_time",
+        "tree_sha": "115ff0c3ba7e808ac2401475e33628682690718c"
+      },
+      {
+        "author_time": "2023-07-11T20:23:42Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-11T20:23:42Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-11T20:23:42+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "225628b01a1d583c2331a7e4a7adeec64f7047cf"
+        ],
+        "position": 38,
+        "pr_number": 25432,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+          "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+          "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+        },
+        "repository": "dotCMS/core",
+        "sha": "370fc4ca8adafc2c9dfa0ec7a55245b9dc0c7277",
+        "temporal_basis": "committer_time",
+        "tree_sha": "cc141a8b9aa0cac526c67f9c4ed50b762673641c"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-07-10T18:00:50Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-07-10T18:02:17Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-07-10T18:02:17+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "7428cd1606386541ccbfa6ece6edc45b3342a9cb"
+      ],
+      "position": 18,
+      "pr_number": 25432,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+        "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+        "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+      },
+      "repository": "dotCMS/core",
+      "sha": "391ac05a163287cd4aa9caececa935026fb14563",
+      "temporal_basis": "committer_time",
+      "tree_sha": "b22f1c317a7da47533fc94dcd0963bba262e5c0a"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-07-07T17:49:24Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-07-07T17:49:24Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-07-07T17:49:24+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "39e2fcf9b91ca5c2e746626120bafc5d7baa3122",
+        "09ca574ff840f9f0525c6dfe0192c692f4ca73ff"
+      ],
+      "position": 17,
+      "pr_number": 25432,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+        "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+        "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+      },
+      "repository": "dotCMS/core",
+      "sha": "7428cd1606386541ccbfa6ece6edc45b3342a9cb",
+      "temporal_basis": "committer_time",
+      "tree_sha": "ef3dc583712a28468005930831a6e4ac64cf9290"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "7428cd1606386541ccbfa6ece6edc45b3342a9cb",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "39e2fcf9b91ca5c2e746626120bafc5d7baa3122",
+      "09ca574ff840f9f0525c6dfe0192c692f4ca73ff"
+    ],
+    "recursive_tree_entry_count": 22958,
+    "recursive_tree_listing_sha256": "2e894697cd65ebb250f5eeaa599ca85a728008ffbabd581e76fa9e25608dc444",
+    "retrieved_at": "2026-10-05T19:19:33.251154+00:00",
+    "source": "https://github.com/dotCMS/core.git",
+    "status": "materialized",
+    "tree_sha": "ef3dc583712a28468005930831a6e4ac64cf9290"
+  },
+  "pr_number": 25432,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 404,
+            "retrieved_at": "2026-10-05T19:19:23.840184+00:00",
+            "status": "repository_unavailable",
+            "url": "https://api.github.com/repos/dotCMS/core/commits?sha=master&until=2023-07-07T21%3A10%3A15.086839%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T19:19:23.840184+00:00",
+        "source": "https://api.github.com/repos/dotCMS/core/commits?sha=master&until=2023-07-07T21%3A10%3A15.086839%2B00%3A00&per_page=1&page=1"
+      }
+    ],
+    "current_pr_base_sha_provenance_only": "9e3357efa8b09dd586c9836650557df4168a59c5",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T19:19:23.395518+00:00",
+        "sha256": "87661ffbc34a9bdababa3651b70f01e1cccfe79e0e1ccf92db0b0ebf890b30b3",
+        "source": "https://api.github.com/repos/dotCMS/core/pulls/25432/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T19:19:22.606113+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/dotCMS/core/pulls/25432"
+        }
+      ],
+      "retrieved_at": "2026-10-05T19:19:22.606113+00:00",
+      "sha256": "cfc5baf57c7da9a110b9154fdcac497f8d010541bbea19eb8d47258c6a012f8a",
+      "source": "https://api.github.com/repos/dotCMS/core/pulls/25432"
+    }
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "dotCMS/core",
+  "selected_state": {
+    "author_time": "2023-07-07T17:49:24Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "7428cd1606386541ccbfa6ece6edc45b3342a9cb",
+    "committer_time": "2023-07-07T17:49:24Z",
+    "effective_time": "2023-07-07T17:49:24+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "ef3dc583712a28468005930831a6e4ac64cf9290"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-07-07T21:09:50.169989+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-07-07T21:10:15.086839+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

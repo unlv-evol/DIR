@@ -1,0 +1,547 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_B0A21EE800C0",
+  "executed_at": "2026-10-05T20:19:12.740776+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-09-18T07:07:22Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-18T07:07:22Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-18T07:07:22+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d6a4f8c2ddf9e957e875bc3fab77e496104d1320"
+        ],
+        "position": 1,
+        "pr_number": 2405,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+          "sha256": "2a48365efab817e79f790205a1ad8368ab21a58921bbf47eb9cc5f974cefdede",
+          "source": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+        },
+        "repository": "faker-js/faker",
+        "sha": "62eb120e3237409984a20e7965f467615c26c0d0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b214233f298250e0a38d07d16b17febe1aaf7218"
+      },
+      {
+        "author_time": "2023-09-18T07:18:37Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-18T07:18:37Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-18T07:18:37+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "62eb120e3237409984a20e7965f467615c26c0d0"
+        ],
+        "position": 2,
+        "pr_number": 2405,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+          "sha256": "2a48365efab817e79f790205a1ad8368ab21a58921bbf47eb9cc5f974cefdede",
+          "source": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+        },
+        "repository": "faker-js/faker",
+        "sha": "5dd4475867d7ded4d655bda97ce50a8ecc449000",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4bdd4b65e544ddf41de5ec964a65e2452c9cf999"
+      },
+      {
+        "author_time": "2023-09-18T07:23:08Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-18T07:23:08Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-18T07:23:08+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "5dd4475867d7ded4d655bda97ce50a8ecc449000"
+        ],
+        "position": 3,
+        "pr_number": 2405,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+          "sha256": "2a48365efab817e79f790205a1ad8368ab21a58921bbf47eb9cc5f974cefdede",
+          "source": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+        },
+        "repository": "faker-js/faker",
+        "sha": "78a740d047f0d8953b922ab4ec2f2a982ef1cb06",
+        "temporal_basis": "committer_time",
+        "tree_sha": "27fe0ceb11dc7fd7b90ccf418f1b820fa34bd5ae"
+      },
+      {
+        "author_time": "2023-09-18T10:36:40Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-18T10:36:40Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-18T10:36:40+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "78a740d047f0d8953b922ab4ec2f2a982ef1cb06"
+        ],
+        "position": 4,
+        "pr_number": 2405,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+          "sha256": "2a48365efab817e79f790205a1ad8368ab21a58921bbf47eb9cc5f974cefdede",
+          "source": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+        },
+        "repository": "faker-js/faker",
+        "sha": "7f36a98f6ca25d822e3abaa8542f48cd4e0b4e21",
+        "temporal_basis": "committer_time",
+        "tree_sha": "11e27062ea8380c0b352bb842a22bdda0d2d51aa"
+      },
+      {
+        "author_time": "2023-09-18T10:54:23Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-18T10:54:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-18T10:54:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7f36a98f6ca25d822e3abaa8542f48cd4e0b4e21"
+        ],
+        "position": 5,
+        "pr_number": 2405,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+          "sha256": "2a48365efab817e79f790205a1ad8368ab21a58921bbf47eb9cc5f974cefdede",
+          "source": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+        },
+        "repository": "faker-js/faker",
+        "sha": "1348ac403cd55b5ef2c8e117f164c5c8f92cce73",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3f42d553817b773a22ffc87b1a77d468e6a4c58b"
+      },
+      {
+        "author_time": "2023-09-18T11:31:20Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-18T11:31:20Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-18T11:31:20+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1348ac403cd55b5ef2c8e117f164c5c8f92cce73"
+        ],
+        "position": 6,
+        "pr_number": 2405,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+          "sha256": "2a48365efab817e79f790205a1ad8368ab21a58921bbf47eb9cc5f974cefdede",
+          "source": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+        },
+        "repository": "faker-js/faker",
+        "sha": "5d2b65f7a8419468d60db3368f360ebf31692854",
+        "temporal_basis": "committer_time",
+        "tree_sha": "bfaa8c110c9d4d9ce4a2fca284f6dfe6e9ec527b"
+      },
+      {
+        "author_time": "2023-09-18T11:35:41Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-18T11:35:41Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-18T11:35:41+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "5d2b65f7a8419468d60db3368f360ebf31692854"
+        ],
+        "position": 7,
+        "pr_number": 2405,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+          "sha256": "2a48365efab817e79f790205a1ad8368ab21a58921bbf47eb9cc5f974cefdede",
+          "source": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+        },
+        "repository": "faker-js/faker",
+        "sha": "892a693c5922b77fa4d98657d72e3e0c543b8d4d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ca1924978873448a622c5ab7ae5dc9f26576bd76"
+      },
+      {
+        "author_time": "2023-09-18T11:44:02Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-18T11:44:02Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-18T11:44:02+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "892a693c5922b77fa4d98657d72e3e0c543b8d4d"
+        ],
+        "position": 8,
+        "pr_number": 2405,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+          "sha256": "2a48365efab817e79f790205a1ad8368ab21a58921bbf47eb9cc5f974cefdede",
+          "source": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+        },
+        "repository": "faker-js/faker",
+        "sha": "718ce80347be46f8c5001adb18124d13373e7544",
+        "temporal_basis": "committer_time",
+        "tree_sha": "82a21ed21543c321f5fb5b33d285e495bf1d105c"
+      },
+      {
+        "author_time": "2023-09-18T11:49:56Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-18T11:49:56Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-18T11:49:56+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "718ce80347be46f8c5001adb18124d13373e7544",
+          "d5859b7d8d151306ce1f98261c9b4c20ebb46319"
+        ],
+        "position": 9,
+        "pr_number": 2405,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+          "sha256": "2a48365efab817e79f790205a1ad8368ab21a58921bbf47eb9cc5f974cefdede",
+          "source": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+        },
+        "repository": "faker-js/faker",
+        "sha": "7dfa6238ec2f6422abe2402f6608bc7aa254b1c0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d9d2820bb0bb6a4c648f3b5270fa31fe68ab89fb"
+      },
+      {
+        "author_time": "2023-09-18T20:26:34Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-18T20:26:34Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-18T20:26:34+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7dfa6238ec2f6422abe2402f6608bc7aa254b1c0",
+          "c7182f01afe7dc07549599363e55d676e799e2d6"
+        ],
+        "position": 10,
+        "pr_number": 2405,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+          "sha256": "2a48365efab817e79f790205a1ad8368ab21a58921bbf47eb9cc5f974cefdede",
+          "source": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+        },
+        "repository": "faker-js/faker",
+        "sha": "15c4de9b4edaa073e2306cce61557c880021ea89",
+        "temporal_basis": "committer_time",
+        "tree_sha": "674c98bc6d76f2e5f3b22aef976add216d34bd06"
+      },
+      {
+        "author_time": "2023-09-19T13:21:42Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-19T13:21:42Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-19T13:21:42+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "15c4de9b4edaa073e2306cce61557c880021ea89"
+        ],
+        "position": 11,
+        "pr_number": 2405,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+          "sha256": "2a48365efab817e79f790205a1ad8368ab21a58921bbf47eb9cc5f974cefdede",
+          "source": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+        },
+        "repository": "faker-js/faker",
+        "sha": "afddc1d723371d3f45aa52db57cfc6d0113f260b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e8ef2e52895bc5a83f32d7ea702badfae60b20ca"
+      },
+      {
+        "author_time": "2023-09-20T10:38:34Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-20T10:38:34Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-20T10:38:34+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "afddc1d723371d3f45aa52db57cfc6d0113f260b",
+          "fd6557e4b3716ebe41aa38a58b4ae112e6baf0d2"
+        ],
+        "position": 12,
+        "pr_number": 2405,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+          "sha256": "2a48365efab817e79f790205a1ad8368ab21a58921bbf47eb9cc5f974cefdede",
+          "source": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+        },
+        "repository": "faker-js/faker",
+        "sha": "777c0b6552c12e7425dee11f46eca127c8f6143a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5587bc3d6b55f53de46f85df5d3ff6c031290b90"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-09-18T10:36:40Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-09-18T10:36:40Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-09-18T10:36:40+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "78a740d047f0d8953b922ab4ec2f2a982ef1cb06"
+      ],
+      "position": 4,
+      "pr_number": 2405,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+        "sha256": "2a48365efab817e79f790205a1ad8368ab21a58921bbf47eb9cc5f974cefdede",
+        "source": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+      },
+      "repository": "faker-js/faker",
+      "sha": "7f36a98f6ca25d822e3abaa8542f48cd4e0b4e21",
+      "temporal_basis": "committer_time",
+      "tree_sha": "11e27062ea8380c0b352bb842a22bdda0d2d51aa"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-09-18T07:23:08Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-09-18T07:23:08Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-09-18T07:23:08+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "5dd4475867d7ded4d655bda97ce50a8ecc449000"
+      ],
+      "position": 3,
+      "pr_number": 2405,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+        "sha256": "2a48365efab817e79f790205a1ad8368ab21a58921bbf47eb9cc5f974cefdede",
+        "source": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+      },
+      "repository": "faker-js/faker",
+      "sha": "78a740d047f0d8953b922ab4ec2f2a982ef1cb06",
+      "temporal_basis": "committer_time",
+      "tree_sha": "27fe0ceb11dc7fd7b90ccf418f1b820fa34bd5ae"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "78a740d047f0d8953b922ab4ec2f2a982ef1cb06",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "5dd4475867d7ded4d655bda97ce50a8ecc449000"
+    ],
+    "recursive_tree_entry_count": 3617,
+    "recursive_tree_listing_sha256": "4c546b7dac8c419bf37416a40ba664cbf181d018afc587ed1394027cbee3c9ad",
+    "retrieved_at": "2026-10-05T20:19:12.737759+00:00",
+    "source": "https://github.com/faker-js/faker.git",
+    "status": "materialized",
+    "tree_sha": "27fe0ceb11dc7fd7b90ccf418f1b820fa34bd5ae"
+  },
+  "pr_number": 2405,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "fd6557e4b3716ebe41aa38a58b4ae112e6baf0d2",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:19:11.762346+00:00",
+        "sha256": "2a48365efab817e79f790205a1ad8368ab21a58921bbf47eb9cc5f974cefdede",
+        "source": "https://api.github.com/repos/faker-js/faker/pulls/2405/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:19:11.075839+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/faker-js/faker/pulls/2405"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:19:11.075839+00:00",
+      "sha256": "560c27232c08282fef232a934d6e3c042dcf889be194bc1e0e90a732da554e51",
+      "source": "https://api.github.com/repos/faker-js/faker/pulls/2405"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "faker-js/faker",
+  "selected_state": {
+    "author_time": "2023-09-18T07:23:08Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "78a740d047f0d8953b922ab4ec2f2a982ef1cb06",
+    "committer_time": "2023-09-18T07:23:08Z",
+    "effective_time": "2023-09-18T07:23:08+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "27fe0ceb11dc7fd7b90ccf418f1b820fa34bd5ae"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-09-18T10:32:34.847554+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-09-18T10:32:45.973662+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

@@ -1,0 +1,360 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-02-06T09:50:35Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-06T09:50:35Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-06T09:50:35+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "e4d2227ecb09f1854735ce892519df107e7be6c9"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:41.283167+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Mudlet/Mudlet/commits?sha=development&until=2024-02-07T19%3A21%3A54.930568%2B00%3A00&per_page=1&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:41.283167+00:00",
+          "sha256": "3cb3d37c98612082638fd64f90fe9f5bbf84ec6edb89cb5c4321a2ac9458e384",
+          "source": "https://api.github.com/repos/Mudlet/Mudlet/commits?sha=development&until=2024-02-07T19%3A21%3A54.930568%2B00%3A00&per_page=1&page=1"
+        },
+        "repository": "Mudlet/Mudlet",
+        "sha": "2f58f4378e1e8eb297f5bb4a2464240a8210fc9d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d7516a144552eacfd40a8e1e7f0d4158e2c42bf1"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-02-06T09:50:35Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-02-06T09:50:35Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-02-06T09:50:35+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "e4d2227ecb09f1854735ce892519df107e7be6c9"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:41.283167+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Mudlet/Mudlet/commits?sha=development&until=2024-02-07T19%3A21%3A54.930568%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:41.283167+00:00",
+        "sha256": "3cb3d37c98612082638fd64f90fe9f5bbf84ec6edb89cb5c4321a2ac9458e384",
+        "source": "https://api.github.com/repos/Mudlet/Mudlet/commits?sha=development&until=2024-02-07T19%3A21%3A54.930568%2B00%3A00&per_page=1&page=1"
+      },
+      "repository": "Mudlet/Mudlet",
+      "sha": "2f58f4378e1e8eb297f5bb4a2464240a8210fc9d",
+      "temporal_basis": "committer_time",
+      "tree_sha": "d7516a144552eacfd40a8e1e7f0d4158e2c42bf1"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "development",
+  "base_routing_source": "pr_base_ref",
+  "case_id": "CASE_EFB57C0D7D17",
+  "executed_at": "2026-10-05T22:50:43.439146+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-02-07T19:27:33Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-07T19:27:33Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-07T19:27:33+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2f58f4378e1e8eb297f5bb4a2464240a8210fc9d"
+        ],
+        "position": 1,
+        "pr_number": 7123,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:40.407673+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Mudlet/Mudlet/pulls/7123/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:40.407673+00:00",
+          "sha256": "65d4d0eeef6840bc6cc01e9fd2a1908b46d9bc12f7de11b807727ccc1c3df6e4",
+          "source": "https://api.github.com/repos/Mudlet/Mudlet/pulls/7123/commits?per_page=100&page=1"
+        },
+        "repository": "Mudlet/Mudlet",
+        "sha": "1cb18a5f56daddd13ec1bd0382354f92044971f3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6c53384d4eff54d2ca53f19e54a4c00cec1ea160"
+      },
+      {
+        "author_time": "2024-02-11T11:41:11Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-11T11:41:11Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-11T11:41:11+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1cb18a5f56daddd13ec1bd0382354f92044971f3"
+        ],
+        "position": 2,
+        "pr_number": 7123,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:40.407673+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Mudlet/Mudlet/pulls/7123/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:40.407673+00:00",
+          "sha256": "65d4d0eeef6840bc6cc01e9fd2a1908b46d9bc12f7de11b807727ccc1c3df6e4",
+          "source": "https://api.github.com/repos/Mudlet/Mudlet/pulls/7123/commits?per_page=100&page=1"
+        },
+        "repository": "Mudlet/Mudlet",
+        "sha": "8b3a15adafde7a9db8c84a823235bcf0dbe25654",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3965bfab075305d6f7ba0f1dbebbc5258cd13543"
+      },
+      {
+        "author_time": "2024-03-29T14:46:24Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-29T14:46:24Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-03-29T14:46:24+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8b3a15adafde7a9db8c84a823235bcf0dbe25654"
+        ],
+        "position": 3,
+        "pr_number": 7123,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:40.407673+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Mudlet/Mudlet/pulls/7123/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:40.407673+00:00",
+          "sha256": "65d4d0eeef6840bc6cc01e9fd2a1908b46d9bc12f7de11b807727ccc1c3df6e4",
+          "source": "https://api.github.com/repos/Mudlet/Mudlet/pulls/7123/commits?per_page=100&page=1"
+        },
+        "repository": "Mudlet/Mudlet",
+        "sha": "a2d28ee7598d2fac323402eef5ac51818395b485",
+        "temporal_basis": "committer_time",
+        "tree_sha": "cc4b55c92a6aabc893960f5fa9577d1bb8673b3a"
+      },
+      {
+        "author_time": "2024-03-29T14:50:02Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-29T14:50:02Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-03-29T14:50:02+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a2d28ee7598d2fac323402eef5ac51818395b485"
+        ],
+        "position": 4,
+        "pr_number": 7123,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:40.407673+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Mudlet/Mudlet/pulls/7123/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:40.407673+00:00",
+          "sha256": "65d4d0eeef6840bc6cc01e9fd2a1908b46d9bc12f7de11b807727ccc1c3df6e4",
+          "source": "https://api.github.com/repos/Mudlet/Mudlet/pulls/7123/commits?per_page=100&page=1"
+        },
+        "repository": "Mudlet/Mudlet",
+        "sha": "e224103c538165965ddf0f589e3326bb493442ce",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3965bfab075305d6f7ba0f1dbebbc5258cd13543"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2024-02-07T19:27:33Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-02-07T19:27:33Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2024-02-07T19:27:33+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "2f58f4378e1e8eb297f5bb4a2464240a8210fc9d"
+      ],
+      "position": 1,
+      "pr_number": 7123,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:40.407673+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Mudlet/Mudlet/pulls/7123/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:40.407673+00:00",
+        "sha256": "65d4d0eeef6840bc6cc01e9fd2a1908b46d9bc12f7de11b807727ccc1c3df6e4",
+        "source": "https://api.github.com/repos/Mudlet/Mudlet/pulls/7123/commits?per_page=100&page=1"
+      },
+      "repository": "Mudlet/Mudlet",
+      "sha": "1cb18a5f56daddd13ec1bd0382354f92044971f3",
+      "temporal_basis": "committer_time",
+      "tree_sha": "6c53384d4eff54d2ca53f19e54a4c00cec1ea160"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "2f58f4378e1e8eb297f5bb4a2464240a8210fc9d",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "e4d2227ecb09f1854735ce892519df107e7be6c9"
+    ],
+    "recursive_tree_entry_count": 1028,
+    "recursive_tree_listing_sha256": "d10ad9ca1353f321e6fe8ccb98dae66003d9843b32084c31754b150bdb1328b6",
+    "retrieved_at": "2026-10-05T22:50:43.436101+00:00",
+    "source": "https://github.com/Mudlet/Mudlet.git",
+    "status": "materialized",
+    "tree_sha": "d7516a144552eacfd40a8e1e7f0d4158e2c42bf1"
+  },
+  "pr_number": 7123,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:40.822039+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Mudlet/Mudlet/git/ref/heads/development"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:40.822039+00:00",
+        "sha256": "541cb07af710bc1682b4ecead48c1e87abf2fbb2c97a310689cb8115d61188c2",
+        "source": "https://api.github.com/repos/Mudlet/Mudlet/git/ref/heads/development"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:41.283167+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Mudlet/Mudlet/commits?sha=development&until=2024-02-07T19%3A21%3A54.930568%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:41.283167+00:00",
+        "sha256": "3cb3d37c98612082638fd64f90fe9f5bbf84ec6edb89cb5c4321a2ac9458e384",
+        "source": "https://api.github.com/repos/Mudlet/Mudlet/commits?sha=development&until=2024-02-07T19%3A21%3A54.930568%2B00%3A00&per_page=1&page=1"
+      }
+    ],
+    "base_route_evidence": {
+      "ref_object_sha": "925e199c95aae14f89b989e909aad316852aeff0",
+      "rule": "recorded_pr_base_ref_resolves"
+    },
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "2f58f4378e1e8eb297f5bb4a2464240a8210fc9d",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:40.407673+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Mudlet/Mudlet/pulls/7123/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:40.407673+00:00",
+        "sha256": "65d4d0eeef6840bc6cc01e9fd2a1908b46d9bc12f7de11b807727ccc1c3df6e4",
+        "source": "https://api.github.com/repos/Mudlet/Mudlet/pulls/7123/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T22:50:39.914358+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/Mudlet/Mudlet/pulls/7123"
+        }
+      ],
+      "retrieved_at": "2026-10-05T22:50:39.914358+00:00",
+      "sha256": "e51cf234d1cb416fefe995052d659a1ed91774234c9a083eac663ab2ee42a9b4",
+      "source": "https://api.github.com/repos/Mudlet/Mudlet/pulls/7123"
+    },
+    "recorded_pr_base_ref_resolves": true
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "Mudlet/Mudlet",
+  "selected_state": {
+    "author_time": "2024-02-06T09:50:35Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "2f58f4378e1e8eb297f5bb4a2464240a8210fc9d",
+    "committer_time": "2024-02-06T09:50:35Z",
+    "effective_time": "2024-02-06T09:50:35+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "d7516a144552eacfd40a8e1e7f0d4158e2c42bf1"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-02-07T19:21:00.794516+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-02-07T19:21:54.930568+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

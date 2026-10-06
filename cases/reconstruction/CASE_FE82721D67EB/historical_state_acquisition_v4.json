@@ -1,0 +1,257 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "main",
+  "base_routing_source": "",
+  "case_id": "CASE_FE82721D67EB",
+  "executed_at": "2026-10-05T22:51:18.945944+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-09-07T05:14:29Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-07T05:18:28Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-07T05:18:28+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "81f8a99b93bc2bd5e79b09dcc76b4c06ce88d1d8"
+        ],
+        "position": 1,
+        "pr_number": 297,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:51:18.155520+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/opensearch-project/opensearch-migrations/pulls/297/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:51:18.155520+00:00",
+          "sha256": "84621c483eb852d7b268ecf390ff3806ffa56b7dc0cfc3136e31b2428ed9ff6f",
+          "source": "https://api.github.com/repos/opensearch-project/opensearch-migrations/pulls/297/commits?per_page=100&page=1"
+        },
+        "repository": "opensearch-project/opensearch-migrations",
+        "sha": "71d907f8fe5797d6a990a9ad07627ab1748cf31e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c296050343f0a1cac443054686f267b3290607b8"
+      },
+      {
+        "author_time": "2023-09-08T21:37:46Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-08T21:37:46Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-08T21:37:46+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "71d907f8fe5797d6a990a9ad07627ab1748cf31e"
+        ],
+        "position": 2,
+        "pr_number": 297,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:51:18.155520+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/opensearch-project/opensearch-migrations/pulls/297/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:51:18.155520+00:00",
+          "sha256": "84621c483eb852d7b268ecf390ff3806ffa56b7dc0cfc3136e31b2428ed9ff6f",
+          "source": "https://api.github.com/repos/opensearch-project/opensearch-migrations/pulls/297/commits?per_page=100&page=1"
+        },
+        "repository": "opensearch-project/opensearch-migrations",
+        "sha": "a2b77f727c916668a2f06813fdf84e1cc78fd138",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3dff44c2ef1455ce36ca174a6feddc2c30ca4338"
+      },
+      {
+        "author_time": "2023-09-08T22:05:56Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-08T22:05:56Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-08T22:05:56+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a2b77f727c916668a2f06813fdf84e1cc78fd138",
+          "453cecf708c94f30111259c0873d2315b393753b"
+        ],
+        "position": 3,
+        "pr_number": 297,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:51:18.155520+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/opensearch-project/opensearch-migrations/pulls/297/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:51:18.155520+00:00",
+          "sha256": "84621c483eb852d7b268ecf390ff3806ffa56b7dc0cfc3136e31b2428ed9ff6f",
+          "source": "https://api.github.com/repos/opensearch-project/opensearch-migrations/pulls/297/commits?per_page=100&page=1"
+        },
+        "repository": "opensearch-project/opensearch-migrations",
+        "sha": "d21bcb5c438be40199de579a0627ef283be3a622",
+        "temporal_basis": "committer_time",
+        "tree_sha": "af986611bcda6e2ba2ba231d4a45c7ed44cc9061"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-09-08T21:37:46Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-09-08T21:37:46Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-09-08T21:37:46+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "71d907f8fe5797d6a990a9ad07627ab1748cf31e"
+      ],
+      "position": 2,
+      "pr_number": 297,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:51:18.155520+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/opensearch-project/opensearch-migrations/pulls/297/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:51:18.155520+00:00",
+        "sha256": "84621c483eb852d7b268ecf390ff3806ffa56b7dc0cfc3136e31b2428ed9ff6f",
+        "source": "https://api.github.com/repos/opensearch-project/opensearch-migrations/pulls/297/commits?per_page=100&page=1"
+      },
+      "repository": "opensearch-project/opensearch-migrations",
+      "sha": "a2b77f727c916668a2f06813fdf84e1cc78fd138",
+      "temporal_basis": "committer_time",
+      "tree_sha": "3dff44c2ef1455ce36ca174a6feddc2c30ca4338"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-09-07T05:14:29Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-09-07T05:18:28Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-09-07T05:18:28+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "81f8a99b93bc2bd5e79b09dcc76b4c06ce88d1d8"
+      ],
+      "position": 1,
+      "pr_number": 297,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:51:18.155520+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/opensearch-project/opensearch-migrations/pulls/297/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:51:18.155520+00:00",
+        "sha256": "84621c483eb852d7b268ecf390ff3806ffa56b7dc0cfc3136e31b2428ed9ff6f",
+        "source": "https://api.github.com/repos/opensearch-project/opensearch-migrations/pulls/297/commits?per_page=100&page=1"
+      },
+      "repository": "opensearch-project/opensearch-migrations",
+      "sha": "71d907f8fe5797d6a990a9ad07627ab1748cf31e",
+      "temporal_basis": "committer_time",
+      "tree_sha": "c296050343f0a1cac443054686f267b3290607b8"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "71d907f8fe5797d6a990a9ad07627ab1748cf31e",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "81f8a99b93bc2bd5e79b09dcc76b4c06ce88d1d8"
+    ],
+    "recursive_tree_entry_count": 619,
+    "recursive_tree_listing_sha256": "185147d053a1c174a3d6cb87c894a0247a124056e3e828a48fe62e2191eb3ca5",
+    "retrieved_at": "2026-10-05T22:51:18.942543+00:00",
+    "source": "https://github.com/opensearch-project/opensearch-migrations.git",
+    "status": "materialized",
+    "tree_sha": "c296050343f0a1cac443054686f267b3290607b8"
+  },
+  "pr_number": 297,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "453cecf708c94f30111259c0873d2315b393753b",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:51:18.155520+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/opensearch-project/opensearch-migrations/pulls/297/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:51:18.155520+00:00",
+        "sha256": "84621c483eb852d7b268ecf390ff3806ffa56b7dc0cfc3136e31b2428ed9ff6f",
+        "source": "https://api.github.com/repos/opensearch-project/opensearch-migrations/pulls/297/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T22:51:17.602115+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/opensearch-project/opensearch-migrations/pulls/297"
+        }
+      ],
+      "retrieved_at": "2026-10-05T22:51:17.602115+00:00",
+      "sha256": "cf0544342c252b89b6520f30a6b549aee446448034a58b7819e9cd634b7c1062",
+      "source": "https://api.github.com/repos/opensearch-project/opensearch-migrations/pulls/297"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "opensearch-project/opensearch-migrations",
+  "selected_state": {
+    "author_time": "2023-09-07T05:14:29Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "71d907f8fe5797d6a990a9ad07627ab1748cf31e",
+    "committer_time": "2023-09-07T05:18:28Z",
+    "effective_time": "2023-09-07T05:18:28+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "c296050343f0a1cac443054686f267b3290607b8"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-09-07T14:12:08.165512+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-09-07T14:13:12.585890+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

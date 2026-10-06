@@ -1,0 +1,2892 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_6DA0F9615A57",
+  "executed_at": "2026-10-05T20:17:36.097429+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-06-12T08:47:46Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-12T08:47:46Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-12T08:47:46+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "8519fce0a765fc101189433f01bb3b55aaeb8ddc"
+        ],
+        "position": 1,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "70e78d0d42ffe68492a1c10d1cfbc6a03c2a9841",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2d51a352446a8051b719a93932fd976c06d551de"
+      },
+      {
+        "author_time": "2023-07-03T11:22:36Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-03T11:22:36Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-03T11:22:36+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "70e78d0d42ffe68492a1c10d1cfbc6a03c2a9841"
+        ],
+        "position": 2,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "505e53ef2b2f6bf072bb6848b992283dcb844e79",
+        "temporal_basis": "committer_time",
+        "tree_sha": "fda8c03bc4bb2399523d485bf807995c05cfc42e"
+      },
+      {
+        "author_time": "2023-07-03T14:52:37Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-03T14:52:37Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-03T14:52:37+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "505e53ef2b2f6bf072bb6848b992283dcb844e79"
+        ],
+        "position": 3,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "0d4153fc6411e27d6cae32a6a17f390e6308a724",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1c70e3d47d888bcee9f529e777ef563d40e9f0cf"
+      },
+      {
+        "author_time": "2023-07-04T11:54:50Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-04T11:54:50Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-04T11:54:50+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "0d4153fc6411e27d6cae32a6a17f390e6308a724"
+        ],
+        "position": 4,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "c8eddd82b68f690adf52442609498295ff2900e8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c69e33bc43e85bb4adcd7cb6066575a02d28ac2d"
+      },
+      {
+        "author_time": "2023-07-04T15:27:33Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-04T15:27:33Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-04T15:27:33+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c8eddd82b68f690adf52442609498295ff2900e8"
+        ],
+        "position": 5,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "f967eb1baa9bee030b21840312106b08616efe77",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ed048c6548384da9536a3089ab91654ffc927ea8"
+      },
+      {
+        "author_time": "2023-07-05T11:01:52Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T11:01:52Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-05T11:01:52+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f967eb1baa9bee030b21840312106b08616efe77"
+        ],
+        "position": 6,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "119ce79cc09d541eea321900fbd72c19eded89bd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ff73ed90bbf41c1a92573fddea114d9bc18a48e8"
+      },
+      {
+        "author_time": "2023-07-05T13:56:43Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T13:56:43Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-05T13:56:43+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "119ce79cc09d541eea321900fbd72c19eded89bd"
+        ],
+        "position": 7,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "e18370a571e1301f2322cce9b7e417bd466c4e53",
+        "temporal_basis": "committer_time",
+        "tree_sha": "81543e11fb407806698c66d0573c8681505de3c3"
+      },
+      {
+        "author_time": "2023-07-05T14:30:36Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T14:30:36Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-05T14:30:36+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "e18370a571e1301f2322cce9b7e417bd466c4e53"
+        ],
+        "position": 8,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "627e451932d861a569e5907e757085424f5f9abe",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e5c8255de30b9950715b0cb3c341a0a9ea0c7318"
+      },
+      {
+        "author_time": "2023-07-05T14:42:37Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T14:42:37Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-05T14:42:37+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "627e451932d861a569e5907e757085424f5f9abe"
+        ],
+        "position": 9,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "e798e15d5b4a28f2da4c69424694cb246cf1d1ea",
+        "temporal_basis": "committer_time",
+        "tree_sha": "98c801d029c5a43c4cea815ba9032fdc78e00b3c"
+      },
+      {
+        "author_time": "2023-07-05T14:55:41Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T14:55:41Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-05T14:55:41+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "e798e15d5b4a28f2da4c69424694cb246cf1d1ea"
+        ],
+        "position": 10,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "b820de549ce0413cb06128ef212c6128c4e49f8e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3749a7a9128b027cf35815804fc127f89e813f1e"
+      },
+      {
+        "author_time": "2023-07-05T16:14:09Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-05T16:14:09Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-05T16:14:09+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "b820de549ce0413cb06128ef212c6128c4e49f8e"
+        ],
+        "position": 11,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "bedb60860ec357c6d7e70d9fd5e0f708814a836e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8c9d79731bade798c727892ec4d58cec5deaefb7"
+      },
+      {
+        "author_time": "2023-07-06T10:24:01Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-06T10:24:01Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-06T10:24:01+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "bedb60860ec357c6d7e70d9fd5e0f708814a836e"
+        ],
+        "position": 12,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "93a81557115ea64fc76a4b574c740afab11f2224",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7accdfd4a585900ffda7c323c31c428ea3e75946"
+      },
+      {
+        "author_time": "2023-07-06T15:05:37Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-06T15:05:37Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-06T15:05:37+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "93a81557115ea64fc76a4b574c740afab11f2224"
+        ],
+        "position": 13,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "5e654c8b4250407a79f5b5d84fc86f3a4237e78c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3c7a27798c2f6941aab457918fabe89c531e5c69"
+      },
+      {
+        "author_time": "2023-07-06T15:30:43Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-06T15:30:43Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-06T15:30:43+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "5e654c8b4250407a79f5b5d84fc86f3a4237e78c"
+        ],
+        "position": 14,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "47b30ee4d8f54bbf38d3f587f8b4691c2e81e9b9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f5e56d2203e46f7eae1c14b1fca571ed019d8bc2"
+      },
+      {
+        "author_time": "2023-07-06T15:32:46Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-06T15:32:46Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-06T15:32:46+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "47b30ee4d8f54bbf38d3f587f8b4691c2e81e9b9"
+        ],
+        "position": 15,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "7431192413ad7baec34cd4e6d428736c24291fbb",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c021acda2f9254a6b4cb21991d27d42e30f23462"
+      },
+      {
+        "author_time": "2023-07-07T14:33:16Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-07T14:33:16Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-07T14:33:16+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7431192413ad7baec34cd4e6d428736c24291fbb"
+        ],
+        "position": 16,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "bc1c7009272a747403bfae35e1ed4c1df9a129c9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "80f28d0d251130513707c762f23f9a60051ebbd6"
+      },
+      {
+        "author_time": "2023-07-10T10:58:17Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-10T10:58:17Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-10T10:58:17+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "bc1c7009272a747403bfae35e1ed4c1df9a129c9"
+        ],
+        "position": 17,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "22ee4aca295cf26a50e494175d581e94f589379e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "da1b8d8dc91c05720e2876c2d3791fa91ab1454f"
+      },
+      {
+        "author_time": "2023-07-10T10:58:41Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-10T10:58:41Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-10T10:58:41+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "22ee4aca295cf26a50e494175d581e94f589379e"
+        ],
+        "position": 18,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "9a56a2ce6b233b03930b3681fd5cd5dcf4cb17e9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "14bbcd8aabc7bf9edb37138a0d82fcf05425576e"
+      },
+      {
+        "author_time": "2023-07-10T11:26:22Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-10T11:26:22Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-10T11:26:22+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "9a56a2ce6b233b03930b3681fd5cd5dcf4cb17e9"
+        ],
+        "position": 19,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "77861a56db28a31c0715a0c79b377d93e2bc0cb6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d03609a558c7fe1b91edb5c2c35358efd04141b7"
+      },
+      {
+        "author_time": "2023-07-10T12:01:34Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-10T12:01:34Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-10T12:01:34+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "77861a56db28a31c0715a0c79b377d93e2bc0cb6"
+        ],
+        "position": 20,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "a7eaff6c1250f7c821eb8eb766bcf2a8fa10e4ee",
+        "temporal_basis": "committer_time",
+        "tree_sha": "028b8ef12fdba45902a60c06fa219f0b848980ef"
+      },
+      {
+        "author_time": "2023-07-10T14:21:03Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-10T14:21:03Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-10T14:21:03+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a7eaff6c1250f7c821eb8eb766bcf2a8fa10e4ee"
+        ],
+        "position": 21,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "3a0313c83d5f1edf52473af5061a6ffa9516d94c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3130a3205efc894343eb8d6e05d788a830f2abf7"
+      },
+      {
+        "author_time": "2023-07-10T16:12:23Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-10T16:12:23Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-10T16:12:23+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "3a0313c83d5f1edf52473af5061a6ffa9516d94c"
+        ],
+        "position": 22,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "55d024e6e6568f6ded294507c5c8c0f541de3933",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f95cde6aa56416e2ec93b5d4a43f1045d9f3b245"
+      },
+      {
+        "author_time": "2023-07-11T09:49:08Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-11T09:49:08Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-11T09:49:08+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "55d024e6e6568f6ded294507c5c8c0f541de3933"
+        ],
+        "position": 23,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "eaccb1e69b89d8cbc849f01ee55ea8b2f52dfb64",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b148b8eaa73a2a739933221105fec5a209945a2c"
+      },
+      {
+        "author_time": "2023-07-11T14:04:01Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-11T14:04:01Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-11T14:04:01+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "eaccb1e69b89d8cbc849f01ee55ea8b2f52dfb64"
+        ],
+        "position": 24,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "29b450ccaf597be01daf8362935d4de1a7119664",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f56d309ad9fbb0d3454e75e4e441e250dc649a8e"
+      },
+      {
+        "author_time": "2023-07-11T14:40:25Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-11T14:40:25Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-11T14:40:25+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "29b450ccaf597be01daf8362935d4de1a7119664"
+        ],
+        "position": 25,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "9a24334e409b50d08da729b60554a1bfccd482a3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4fff9ab9189eec629d6fc3c3c127da770a7f47cd"
+      },
+      {
+        "author_time": "2023-07-12T12:04:38Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-12T12:04:38Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-12T12:04:38+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "9a24334e409b50d08da729b60554a1bfccd482a3"
+        ],
+        "position": 26,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "5f3bc94f5bf458bb222d50add18ae4291e4f2968",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a79b367f3585817689269bd8807c7aef91eeca93"
+      },
+      {
+        "author_time": "2023-07-12T12:15:35Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-12T12:15:35Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-12T12:15:35+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "5f3bc94f5bf458bb222d50add18ae4291e4f2968"
+        ],
+        "position": 27,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "c08adb17a6f4dff558b5918dd151d03fcde8bb84",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6cb8d998f55ad35ee19a4cf694b29c5a6728aeb2"
+      },
+      {
+        "author_time": "2023-07-12T15:01:14Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-12T15:01:14Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-12T15:01:14+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "c08adb17a6f4dff558b5918dd151d03fcde8bb84"
+        ],
+        "position": 28,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "600c93c0a2a0a65b3f834015100b64b40d1002ce",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2cab0ec0279ebe64e4964d801e235157b8a6ccaf"
+      },
+      {
+        "author_time": "2023-07-12T15:08:57Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-12T15:08:57Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-12T15:08:57+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "600c93c0a2a0a65b3f834015100b64b40d1002ce"
+        ],
+        "position": 29,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "79ec3a56931e420ce022fb3d2f8adcc25b1e050f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c1196639d035e438d78bb07079d08208ae09fe27"
+      },
+      {
+        "author_time": "2023-07-12T15:11:02Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-12T15:11:02Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-12T15:11:02+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "79ec3a56931e420ce022fb3d2f8adcc25b1e050f"
+        ],
+        "position": 30,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "e3394dc9901f2539fde96db1f0c061ec1f82ac1e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "10715f3114eed1b42553b3e94f348f6f9b88471c"
+      },
+      {
+        "author_time": "2023-07-13T09:37:58Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-13T09:37:58Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-13T09:37:58+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e3394dc9901f2539fde96db1f0c061ec1f82ac1e"
+        ],
+        "position": 31,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "0ff7c291a3b6aee4d202156b1f6c2cde8b76fc38",
+        "temporal_basis": "committer_time",
+        "tree_sha": "dd8a37c324ba2a72577cadc5dd966d508e7c49f4"
+      },
+      {
+        "author_time": "2023-07-13T13:03:55Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-13T13:03:55Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-13T13:03:55+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "0ff7c291a3b6aee4d202156b1f6c2cde8b76fc38"
+        ],
+        "position": 32,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "d46250edbb47c5a19a39adbaa3c66deb41e6bc2a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6271ae28d04bfab237ef4aa7ff54b232e5210dad"
+      },
+      {
+        "author_time": "2023-07-13T13:07:54Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-13T13:07:54Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-13T13:07:54+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d46250edbb47c5a19a39adbaa3c66deb41e6bc2a"
+        ],
+        "position": 33,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "06c538403c22c1010b9ec39322fc1fea1cca8c45",
+        "temporal_basis": "committer_time",
+        "tree_sha": "42d67e892a7addef7e7a54526402db8a7e77847a"
+      },
+      {
+        "author_time": "2023-07-17T11:55:43Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-17T11:55:43Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-17T11:55:43+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "06c538403c22c1010b9ec39322fc1fea1cca8c45"
+        ],
+        "position": 34,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "69c490b69f1d1b55b98da887334153936f945d6b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "83865dc3d6fa1b3f74a133b34b17454a4225de51"
+      },
+      {
+        "author_time": "2023-07-17T14:18:35Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-17T14:18:35Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-17T14:18:35+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "69c490b69f1d1b55b98da887334153936f945d6b"
+        ],
+        "position": 35,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "57d0421e3e13d45088294b3ee8b66c649902f1b0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "303809cd4b3d5a6c6cee117137983c63cb407b1c"
+      },
+      {
+        "author_time": "2023-07-17T15:41:24Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-17T15:41:24Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-17T15:41:24+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "57d0421e3e13d45088294b3ee8b66c649902f1b0"
+        ],
+        "position": 36,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "163b40a1012bc1e842126442cdf8344841b454cf",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3ca1acc9cf55ddf31024dafc37bebd54cc79bfa3"
+      },
+      {
+        "author_time": "2023-07-18T08:59:13Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-18T08:59:13Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-18T08:59:13+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "163b40a1012bc1e842126442cdf8344841b454cf"
+        ],
+        "position": 37,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "4554bcd22c0c66bf0feae9abe19e592e25b5a571",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f3e04ad491e71735c0dde82d7e933adfcf70e871"
+      },
+      {
+        "author_time": "2023-07-18T09:32:04Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-18T09:32:04Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-18T09:32:04+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "20fc1f319e3c352d815ec2c0b8b8695f4fa4c2ab",
+          "4554bcd22c0c66bf0feae9abe19e592e25b5a571"
+        ],
+        "position": 38,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "3884d1f48c66ce6905b96e113bc651faf77b2633",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d504952339bdd02ab09158c205e47fff05e05d9d"
+      },
+      {
+        "author_time": "2023-07-18T10:36:05Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-18T10:36:05Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-18T10:36:05+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "3884d1f48c66ce6905b96e113bc651faf77b2633",
+          "79f3207939bc958fef697b2818e85f8417dd7c41"
+        ],
+        "position": 39,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "7dd0fa9884f928d180dbb15cc0243ba5587d79e9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c4c6f07ac904ca942913b735300afcd5005eef90"
+      },
+      {
+        "author_time": "2023-07-18T11:45:29Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-18T11:45:29Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-18T11:45:29+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7dd0fa9884f928d180dbb15cc0243ba5587d79e9"
+        ],
+        "position": 40,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "d72c4db7bb0ca1ab220e02a86759e4445b3ae5b5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "415a48168b25048217ed54ada43eff2f8d208b4a"
+      },
+      {
+        "author_time": "2023-07-18T13:39:54Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-18T13:39:54Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-18T13:39:54+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d72c4db7bb0ca1ab220e02a86759e4445b3ae5b5"
+        ],
+        "position": 41,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "66c0926041f117843eb726b88963269392dad008",
+        "temporal_basis": "committer_time",
+        "tree_sha": "415a48168b25048217ed54ada43eff2f8d208b4a"
+      },
+      {
+        "author_time": "2023-07-18T14:09:05Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-18T14:09:05Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-18T14:09:05+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "79f3207939bc958fef697b2818e85f8417dd7c41"
+        ],
+        "position": 42,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "a9d2b4340e8d02f0ea8546af1340ed3d4489dc1b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "fa34412215664417d2b6bf0d1074a1494f47ca8a"
+      },
+      {
+        "author_time": "2023-07-18T14:16:06Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-18T14:16:06Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-18T14:16:06+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "66c0926041f117843eb726b88963269392dad008",
+          "a9d2b4340e8d02f0ea8546af1340ed3d4489dc1b"
+        ],
+        "position": 43,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "27b369163ab64e1eebf1e29ffd61c036373322ee",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f624a07f8fe90512616efe794d52ebec174e21e1"
+      },
+      {
+        "author_time": "2023-07-18T16:21:24Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-18T16:21:24Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-18T16:21:24+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "66c0926041f117843eb726b88963269392dad008"
+        ],
+        "position": 44,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "663d33c86c0e747611ee41c1947ef37a811763b1",
+        "temporal_basis": "committer_time",
+        "tree_sha": "43fb6f1e17b1a52299374a69d597eb80b4997bcd"
+      },
+      {
+        "author_time": "2023-07-18T16:21:29Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-18T16:21:29Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-18T16:21:29+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "663d33c86c0e747611ee41c1947ef37a811763b1",
+          "27b369163ab64e1eebf1e29ffd61c036373322ee"
+        ],
+        "position": 45,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "32bdeb1c5674923b3efeb3609d72b4d522ea6005",
+        "temporal_basis": "committer_time",
+        "tree_sha": "29d3bf857037ed24a9f8c1e2ba206497fb4ffc49"
+      },
+      {
+        "author_time": "2023-07-18T16:27:20Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-18T16:27:20Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-18T16:27:20+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "27b369163ab64e1eebf1e29ffd61c036373322ee"
+        ],
+        "position": 46,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "526dda909a3edba1b61518658fb2849518ef54f3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9ee277a9e6b3ef5c40f1113ce918218abe9a45b5"
+      },
+      {
+        "author_time": "2023-07-18T16:27:49Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-18T16:27:49Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-18T16:27:49+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "526dda909a3edba1b61518658fb2849518ef54f3",
+          "32bdeb1c5674923b3efeb3609d72b4d522ea6005"
+        ],
+        "position": 47,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "45d3abc974ea02349d6186178c55a3f0b7253214",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3a4e4192be8d0f4a1fabec3d9baed9f92fe9d3a8"
+      },
+      {
+        "author_time": "2023-07-18T16:50:05Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-18T16:50:05Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-18T16:50:05+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "45d3abc974ea02349d6186178c55a3f0b7253214"
+        ],
+        "position": 48,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "e7c20276d02583c975a8587139c7ff1224961308",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b730944c2a6de74d87ff9137f649a77ea503d372"
+      },
+      {
+        "author_time": "2023-07-18T16:55:49Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-18T16:55:49Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-18T16:55:49+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e7c20276d02583c975a8587139c7ff1224961308"
+        ],
+        "position": 49,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "ac98eeb983b651640261b8bb6167fb2a407c0e64",
+        "temporal_basis": "committer_time",
+        "tree_sha": "61c8778740ea649c780da9ce3d1cf0844857f528"
+      },
+      {
+        "author_time": "2023-07-19T09:09:48Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-19T09:09:48Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-19T09:09:48+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "ac98eeb983b651640261b8bb6167fb2a407c0e64"
+        ],
+        "position": 50,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "f5889c5a15ba4f02b63a5206fe0b0049625ac2c2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "125ef505004d92344bc516e649ec2d7ef53fa284"
+      },
+      {
+        "author_time": "2023-07-19T10:30:08Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-19T10:30:08Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-19T10:30:08+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f5889c5a15ba4f02b63a5206fe0b0049625ac2c2"
+        ],
+        "position": 51,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "87c0f27677f2943e46ad4501e9bccafceff50dfe",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4389ed533c43ec37ac144c247c322794b3e6ccac"
+      },
+      {
+        "author_time": "2023-07-19T10:38:21Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-19T10:38:21Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-19T10:38:21+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f5889c5a15ba4f02b63a5206fe0b0049625ac2c2"
+        ],
+        "position": 52,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "17a06eb8296c3fcdb9da6c4e0ac5590b8aac6937",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3d4cde43b38331d812bc77e2889c41a5b6b7bfef"
+      },
+      {
+        "author_time": "2023-07-19T10:38:29Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-19T10:38:29Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-19T10:38:29+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "17a06eb8296c3fcdb9da6c4e0ac5590b8aac6937",
+          "87c0f27677f2943e46ad4501e9bccafceff50dfe"
+        ],
+        "position": 53,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "81ba43a2c6c3f99a22761de012e3cbba845f4250",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a0f7cf45bcbd6281529f9d3c2e383e8bc91fcbde"
+      },
+      {
+        "author_time": "2023-07-19T11:55:03Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-19T11:55:03Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-19T11:55:03+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "81ba43a2c6c3f99a22761de012e3cbba845f4250"
+        ],
+        "position": 54,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "5f5a487ea5da632d1e9b439aadf574c3b745f03c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e1cd171eec1002aac2b341295952eeeaf2b5253d"
+      },
+      {
+        "author_time": "2023-07-19T13:39:49Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-19T13:39:49Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-19T13:39:49+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "5f5a487ea5da632d1e9b439aadf574c3b745f03c"
+        ],
+        "position": 55,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "70b6321c1cf9cd4a5e002d961757b8f5e0630ca8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "df828a592fc30188e6ca7d58e1df6b08eb7c35e6"
+      },
+      {
+        "author_time": "2023-07-19T14:37:21Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-19T14:37:21Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-19T14:37:21+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "70b6321c1cf9cd4a5e002d961757b8f5e0630ca8"
+        ],
+        "position": 56,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "24aa09cf2af17a8c871bb03821826fd9dcb2ac80",
+        "temporal_basis": "committer_time",
+        "tree_sha": "cb557305ad3a3c19209ee01bb7ad8c8f4a895369"
+      },
+      {
+        "author_time": "2023-07-19T14:49:48Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-19T14:49:48Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-19T14:49:48+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "24aa09cf2af17a8c871bb03821826fd9dcb2ac80"
+        ],
+        "position": 57,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "59f4b4f70e78f6972f6a13a4296265bd6eec3464",
+        "temporal_basis": "committer_time",
+        "tree_sha": "98368e30de20ff17200e146702975ff50bd8ccc6"
+      },
+      {
+        "author_time": "2023-07-19T14:59:17Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-19T14:59:17Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-19T14:59:17+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "59f4b4f70e78f6972f6a13a4296265bd6eec3464"
+        ],
+        "position": 58,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "bb38d0a391801cb998bb87a5bb148996bfaa391a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7c5f4bf9f4054b6c2beb5fd43432ec2feb9e8a97"
+      },
+      {
+        "author_time": "2023-07-19T15:04:45Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-19T15:04:45Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-19T15:04:45+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "bb38d0a391801cb998bb87a5bb148996bfaa391a"
+        ],
+        "position": 59,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "5ad9a5b7af484e21f827d5a847ae53052fc73c7b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2889f54321ab4fe5526798f41f188d06fa128519"
+      },
+      {
+        "author_time": "2023-07-19T15:25:05Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-19T15:25:05Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-19T15:25:05+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "5f5a487ea5da632d1e9b439aadf574c3b745f03c"
+        ],
+        "position": 60,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "d1fe3cc13f0ee324d8cc710585d1dfdb904b54cf",
+        "temporal_basis": "committer_time",
+        "tree_sha": "77c5de123fb5cf055faad291ace96642d97f6224"
+      },
+      {
+        "author_time": "2023-07-19T15:27:55Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-19T15:27:55Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-19T15:27:55+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "5ad9a5b7af484e21f827d5a847ae53052fc73c7b"
+        ],
+        "position": 61,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "17af02b21663437053d2dc32ee347c3ee158a592",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a96da80543f4caededcc3e316f8a62c11bce0193"
+      },
+      {
+        "author_time": "2023-07-20T08:43:09Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-20T08:43:09Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-20T08:43:09+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d1fe3cc13f0ee324d8cc710585d1dfdb904b54cf"
+        ],
+        "position": 62,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "df5eb43ffd4a0b44c594a8a353447b0a577c413a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f1ebcb56d97cfea2525dcd97ce60cc206c9daff9"
+      },
+      {
+        "author_time": "2023-07-20T08:43:17Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-20T08:43:17Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-20T08:43:17+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "df5eb43ffd4a0b44c594a8a353447b0a577c413a",
+          "17af02b21663437053d2dc32ee347c3ee158a592"
+        ],
+        "position": 63,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "e92ca014809f305fa98fff4b387c239d31f1a0bd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c9bfce620732c1688e60c0ba95809189ca1c9a2c"
+      },
+      {
+        "author_time": "2023-07-20T09:36:41Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-20T09:36:41Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-20T09:36:41+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e92ca014809f305fa98fff4b387c239d31f1a0bd"
+        ],
+        "position": 64,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "41ed43444ec03b1cbc4beb93a1877175e56da7fe",
+        "temporal_basis": "committer_time",
+        "tree_sha": "31fa9897a59045f7506ee82f76685e1f78f45f57"
+      },
+      {
+        "author_time": "2023-07-20T13:37:35Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-20T13:37:35Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-20T13:37:35+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "41ed43444ec03b1cbc4beb93a1877175e56da7fe"
+        ],
+        "position": 65,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "a7aaff9bd7eff314b08a8b23f3c4c20b113588fc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "78974b40ccbdd12ebfaa5c73235a51ddd220b91f"
+      },
+      {
+        "author_time": "2023-07-20T14:16:51Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-20T14:16:51Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-20T14:16:51+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a7aaff9bd7eff314b08a8b23f3c4c20b113588fc"
+        ],
+        "position": 66,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "e2bd8a9dd6285a9744bb67762d8ba38c476d0754",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d2ac9cca8a70f89cdb12a11b2025628ea742ad2a"
+      },
+      {
+        "author_time": "2023-07-20T14:33:12Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-20T14:33:12Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-20T14:33:12+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e2bd8a9dd6285a9744bb67762d8ba38c476d0754"
+        ],
+        "position": 67,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "831aae0b3b8cfda8dc0fe1e6d5688d06ae0ebfe6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "303152908ed903eae115c0bafce75f3a476c1f02"
+      },
+      {
+        "author_time": "2023-07-20T15:29:56Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-20T15:29:56Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-20T15:29:56+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "831aae0b3b8cfda8dc0fe1e6d5688d06ae0ebfe6"
+        ],
+        "position": 68,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "edf48146a890032daa02bf3d1b18534debe2d136",
+        "temporal_basis": "committer_time",
+        "tree_sha": "69d8f5b0191c5ec5292d411eba8f9ffb2f153698"
+      },
+      {
+        "author_time": "2023-07-20T15:48:51Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-20T15:48:51Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-20T15:48:51+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "edf48146a890032daa02bf3d1b18534debe2d136"
+        ],
+        "position": 69,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "f88c645efad3333f0391aa75a213c15d598efdf7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5c9e1e79ecfd83c771c72099e48d00ba5c409064"
+      },
+      {
+        "author_time": "2023-08-02T11:27:15Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-02T11:27:15Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-02T11:27:15+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f88c645efad3333f0391aa75a213c15d598efdf7",
+          "99f3e510588a2f78c22621ea16af2910cb5663e3"
+        ],
+        "position": 70,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "2e9e006f8c9f40c617db2a834e6423a3d1a0c66e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e34bc5f9266a6d81ccad907001ded7285a6fccfc"
+      },
+      {
+        "author_time": "2023-08-03T16:18:02Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-03T16:18:02Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-03T16:18:02+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2e9e006f8c9f40c617db2a834e6423a3d1a0c66e",
+          "f18659fa2f7d50e0331bc06bc4565fa0d9bb610c"
+        ],
+        "position": 71,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "ea98c9c593b8b06eabfdae676d65615abf7c1801",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e34bc5f9266a6d81ccad907001ded7285a6fccfc"
+      },
+      {
+        "author_time": "2023-08-03T16:35:44Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-03T16:35:44Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-03T16:35:44+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "ea98c9c593b8b06eabfdae676d65615abf7c1801"
+        ],
+        "position": 72,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "2f60077cd6172d89c53a320ca6c23aed4e538c65",
+        "temporal_basis": "committer_time",
+        "tree_sha": "36b8d841047ab477e81226c3420e72131a39b2d0"
+      },
+      {
+        "author_time": "2023-08-03T16:42:37Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-03T16:42:37Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-03T16:42:37+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2f60077cd6172d89c53a320ca6c23aed4e538c65"
+        ],
+        "position": 73,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "d674211aacb20e54ca7c03b248c972fb5352e4ed",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4269739a8abbf1a4d3c6617fde1bbae71e6c4f30"
+      },
+      {
+        "author_time": "2023-08-04T11:06:32Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-04T11:06:32Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-04T11:06:32+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d674211aacb20e54ca7c03b248c972fb5352e4ed"
+        ],
+        "position": 74,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "aaafe1f3f6fb9fecb7beb821e064102266b5d7d2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c3051801b9330a0c6ba2bc24d57caf37a38b515a"
+      },
+      {
+        "author_time": "2023-08-04T11:09:42Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-04T11:09:42Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-04T11:09:42+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "aaafe1f3f6fb9fecb7beb821e064102266b5d7d2"
+        ],
+        "position": 75,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "cf96424d2c0dffc825507abff667520aae12fd0d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6e9da45de86613b84ba85d219f44549cbf89537d"
+      },
+      {
+        "author_time": "2023-08-04T13:05:35Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-04T13:05:35Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-04T13:05:35+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "cf96424d2c0dffc825507abff667520aae12fd0d",
+          "9309519ea62b6f2cb87fa5cbe6ff37ce9436f1fa"
+        ],
+        "position": 76,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "3e6f3d70119f84c4c4d5754fb2de8fd5c832f068",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8b2abb00397231fb14715d8bbaa509805ea6ea5d"
+      },
+      {
+        "author_time": "2023-09-04T09:33:46Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-04T09:33:46Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-04T09:33:46+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "3e6f3d70119f84c4c4d5754fb2de8fd5c832f068",
+          "ebdb5a946c37b5ccfbe0484a072462ea60f77457"
+        ],
+        "position": 77,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "800b629fe2110573b4cec4a91d94086a14673c9e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "885bed81cb82fe320e610fd0a2153a80305c1c88"
+      },
+      {
+        "author_time": "2023-09-05T11:21:55Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-05T11:21:55Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-05T11:21:55+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "800b629fe2110573b4cec4a91d94086a14673c9e",
+          "93011d68ad2ab924d3ddf4700798c35b0f93526f"
+        ],
+        "position": 78,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "3ef72012b190685f38cc31385b2ff6644c83e30d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9c5f89e4b0c4d3195590763306f6649ca770c9c5"
+      },
+      {
+        "author_time": "2023-09-05T16:04:55Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-05T16:04:55Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-05T16:04:55+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "3ef72012b190685f38cc31385b2ff6644c83e30d"
+        ],
+        "position": 79,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "84606b4b3c050ab96d014113b8cf35682c2ea116",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1db1d8e5934b449de857c87167992e1a6c4b5def"
+      },
+      {
+        "author_time": "2023-09-05T16:12:39Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-05T16:12:39Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-05T16:12:39+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "84606b4b3c050ab96d014113b8cf35682c2ea116"
+        ],
+        "position": 80,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "a82815f18a78643c626de3e4460bcb625d3da8d7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "817671ef5ace37e4b669988e01c7b44287b8b008"
+      },
+      {
+        "author_time": "2023-09-06T14:37:20Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-06T14:37:20Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-06T14:37:20+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a82815f18a78643c626de3e4460bcb625d3da8d7"
+        ],
+        "position": 81,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "eba7493fad8810188309e2389873a04def0c74f8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "80368f9652dbaefa746d768b75b30a29455c1ce8"
+      },
+      {
+        "author_time": "2023-09-06T14:56:34Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-06T14:56:34Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-06T14:56:34+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "eba7493fad8810188309e2389873a04def0c74f8"
+        ],
+        "position": 82,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "5e5e1f9cac9004d38c73071f1a3af254aefad559",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d9316807eda631f429a97e810b919cb78de841aa"
+      },
+      {
+        "author_time": "2023-09-06T15:45:28Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-06T15:45:28Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-06T15:45:28+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "5e5e1f9cac9004d38c73071f1a3af254aefad559"
+        ],
+        "position": 83,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "c3263f120293d98276bf780e4e117a5b4b32f49f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "57b8952572f85c4eb5e8d47949c4ef99388b197a"
+      },
+      {
+        "author_time": "2023-09-07T08:25:36Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-07T08:25:36Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-07T08:25:36+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "c3263f120293d98276bf780e4e117a5b4b32f49f"
+        ],
+        "position": 84,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "2d44f9ed44fcc94917d55ae2fe520715c211d378",
+        "temporal_basis": "committer_time",
+        "tree_sha": "36dfb92022bd9f4686c39a89a44d11bcfd1df1ad"
+      },
+      {
+        "author_time": "2023-09-07T08:49:54Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-07T08:49:54Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-07T08:49:54+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2d44f9ed44fcc94917d55ae2fe520715c211d378"
+        ],
+        "position": 85,
+        "pr_number": 539,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+          "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+          "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+        },
+        "repository": "mcagov/beacons",
+        "sha": "8705adc0ca8ffe743f590157ea4a352c92aaefe4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1b9e1e71e182990c433e0b4b68760848d3bbf099"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-07-12T12:04:38Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-07-12T12:04:38Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-07-12T12:04:38+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "9a24334e409b50d08da729b60554a1bfccd482a3"
+      ],
+      "position": 26,
+      "pr_number": 539,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+        "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+        "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+      },
+      "repository": "mcagov/beacons",
+      "sha": "5f3bc94f5bf458bb222d50add18ae4291e4f2968",
+      "temporal_basis": "committer_time",
+      "tree_sha": "a79b367f3585817689269bd8807c7aef91eeca93"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-07-11T14:40:25Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-07-11T14:40:25Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-07-11T14:40:25+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "29b450ccaf597be01daf8362935d4de1a7119664"
+      ],
+      "position": 25,
+      "pr_number": 539,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+        "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+        "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+      },
+      "repository": "mcagov/beacons",
+      "sha": "9a24334e409b50d08da729b60554a1bfccd482a3",
+      "temporal_basis": "committer_time",
+      "tree_sha": "4fff9ab9189eec629d6fc3c3c127da770a7f47cd"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "9a24334e409b50d08da729b60554a1bfccd482a3",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "29b450ccaf597be01daf8362935d4de1a7119664"
+    ],
+    "recursive_tree_entry_count": 1509,
+    "recursive_tree_listing_sha256": "85dfbee7eb5ace9ab1cedcdd1ffd70ce06989b2562723cbe1baf0a17c090b984",
+    "retrieved_at": "2026-10-05T20:17:36.093948+00:00",
+    "source": "https://github.com/mcagov/beacons.git",
+    "status": "materialized",
+    "tree_sha": "4fff9ab9189eec629d6fc3c3c127da770a7f47cd"
+  },
+  "pr_number": 539,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "93011d68ad2ab924d3ddf4700798c35b0f93526f",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:34.750456+00:00",
+        "sha256": "58a6cf436c217b05d5fecde4a75b6440dc494235d4a42f12733353190a7aa830",
+        "source": "https://api.github.com/repos/mcagov/beacons/pulls/539/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:17:33.910330+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/mcagov/beacons/pulls/539"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:17:33.910330+00:00",
+      "sha256": "f4c039a18a6b72696b8bc629b31189f7e7856041eaaa556e053bfc612bdc91c3",
+      "source": "https://api.github.com/repos/mcagov/beacons/pulls/539"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "mcagov/beacons",
+  "selected_state": {
+    "author_time": "2023-07-11T14:40:25Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "9a24334e409b50d08da729b60554a1bfccd482a3",
+    "committer_time": "2023-07-11T14:40:25Z",
+    "effective_time": "2023-07-11T14:40:25+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "4fff9ab9189eec629d6fc3c3c127da770a7f47cd"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-07-12T10:53:31.263665+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-07-12T10:56:20.468566+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

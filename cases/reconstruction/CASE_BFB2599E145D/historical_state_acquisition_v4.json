@@ -1,0 +1,332 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "main",
+  "base_routing_source": "",
+  "case_id": "CASE_BFB2599E145D",
+  "executed_at": "2026-10-05T19:19:38.271018+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-11-30T07:18:44Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T07:25:36Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T07:25:36+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ed01c4078dff5e92e5efc5dc7c989f3469de8a7b"
+        ],
+        "position": 1,
+        "pr_number": 119,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:37.154242+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/hufscheer/web-v1/pulls/119/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:37.154242+00:00",
+          "sha256": "6146a12f42d81060cf5bf3ea63635299c815164fe1c02ec18a2ba8ce0dc49829",
+          "source": "https://api.github.com/repos/hufscheer/web-v1/pulls/119/commits?per_page=100&page=1"
+        },
+        "repository": "hufscheer/web-v1",
+        "sha": "3c1b8ace08b5d8b52a4853322f9f97e6f2f743bc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0b51e54484e0d04411323c9ad577c3311338ceef"
+      },
+      {
+        "author_time": "2023-11-30T07:34:28Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T08:11:54Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T08:11:54+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "3c1b8ace08b5d8b52a4853322f9f97e6f2f743bc"
+        ],
+        "position": 2,
+        "pr_number": 119,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:37.154242+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/hufscheer/web-v1/pulls/119/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:37.154242+00:00",
+          "sha256": "6146a12f42d81060cf5bf3ea63635299c815164fe1c02ec18a2ba8ce0dc49829",
+          "source": "https://api.github.com/repos/hufscheer/web-v1/pulls/119/commits?per_page=100&page=1"
+        },
+        "repository": "hufscheer/web-v1",
+        "sha": "1e3149af3fb551a5d9b71067ee6a6b090e483017",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ab573a4af85d6e7c326dcc44296646c683ca5089"
+      },
+      {
+        "author_time": "2023-11-30T08:13:45Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T08:13:45Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T08:13:45+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "1e3149af3fb551a5d9b71067ee6a6b090e483017"
+        ],
+        "position": 3,
+        "pr_number": 119,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:37.154242+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/hufscheer/web-v1/pulls/119/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:37.154242+00:00",
+          "sha256": "6146a12f42d81060cf5bf3ea63635299c815164fe1c02ec18a2ba8ce0dc49829",
+          "source": "https://api.github.com/repos/hufscheer/web-v1/pulls/119/commits?per_page=100&page=1"
+        },
+        "repository": "hufscheer/web-v1",
+        "sha": "b3894922b09186f033f5db9ff9a5d6ec9f20c531",
+        "temporal_basis": "committer_time",
+        "tree_sha": "706f5fd8212c68a609f0f5ed76073e9c3074086d"
+      },
+      {
+        "author_time": "2023-11-30T08:17:17Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T08:17:17Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-30T08:17:17+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "b3894922b09186f033f5db9ff9a5d6ec9f20c531"
+        ],
+        "position": 4,
+        "pr_number": 119,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:37.154242+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/hufscheer/web-v1/pulls/119/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:37.154242+00:00",
+          "sha256": "6146a12f42d81060cf5bf3ea63635299c815164fe1c02ec18a2ba8ce0dc49829",
+          "source": "https://api.github.com/repos/hufscheer/web-v1/pulls/119/commits?per_page=100&page=1"
+        },
+        "repository": "hufscheer/web-v1",
+        "sha": "c241900c8d6ac0ac6a7f7529c0e0dd87198dd348",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f111151e1f9972045746a99915c2ef407f52252f"
+      },
+      {
+        "author_time": "2023-11-30T09:05:31Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T09:05:31Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-30T09:05:31+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "c241900c8d6ac0ac6a7f7529c0e0dd87198dd348"
+        ],
+        "position": 5,
+        "pr_number": 119,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:37.154242+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/hufscheer/web-v1/pulls/119/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:37.154242+00:00",
+          "sha256": "6146a12f42d81060cf5bf3ea63635299c815164fe1c02ec18a2ba8ce0dc49829",
+          "source": "https://api.github.com/repos/hufscheer/web-v1/pulls/119/commits?per_page=100&page=1"
+        },
+        "repository": "hufscheer/web-v1",
+        "sha": "a3aa68f33db34e49b7853fb4f61503ff2969a801",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a59c047fd6979d7db5c0216ed4897b57c8ba7c09"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-11-30T09:05:31Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-11-30T09:05:31Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-11-30T09:05:31+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "c241900c8d6ac0ac6a7f7529c0e0dd87198dd348"
+      ],
+      "position": 5,
+      "pr_number": 119,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T19:19:37.154242+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/hufscheer/web-v1/pulls/119/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T19:19:37.154242+00:00",
+        "sha256": "6146a12f42d81060cf5bf3ea63635299c815164fe1c02ec18a2ba8ce0dc49829",
+        "source": "https://api.github.com/repos/hufscheer/web-v1/pulls/119/commits?per_page=100&page=1"
+      },
+      "repository": "hufscheer/web-v1",
+      "sha": "a3aa68f33db34e49b7853fb4f61503ff2969a801",
+      "temporal_basis": "committer_time",
+      "tree_sha": "a59c047fd6979d7db5c0216ed4897b57c8ba7c09"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-11-30T08:17:17Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-11-30T08:17:17Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-11-30T08:17:17+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "b3894922b09186f033f5db9ff9a5d6ec9f20c531"
+      ],
+      "position": 4,
+      "pr_number": 119,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T19:19:37.154242+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/hufscheer/web-v1/pulls/119/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T19:19:37.154242+00:00",
+        "sha256": "6146a12f42d81060cf5bf3ea63635299c815164fe1c02ec18a2ba8ce0dc49829",
+        "source": "https://api.github.com/repos/hufscheer/web-v1/pulls/119/commits?per_page=100&page=1"
+      },
+      "repository": "hufscheer/web-v1",
+      "sha": "c241900c8d6ac0ac6a7f7529c0e0dd87198dd348",
+      "temporal_basis": "committer_time",
+      "tree_sha": "f111151e1f9972045746a99915c2ef407f52252f"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "c241900c8d6ac0ac6a7f7529c0e0dd87198dd348",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "b3894922b09186f033f5db9ff9a5d6ec9f20c531"
+    ],
+    "recursive_tree_entry_count": 262,
+    "recursive_tree_listing_sha256": "c7b7d837272fc170477390f67897c29f52142a55b5716d6d8789ef14d0bc4eb3",
+    "retrieved_at": "2026-10-05T19:19:38.267209+00:00",
+    "source": "https://github.com/hufscheer/web-v1.git",
+    "status": "materialized",
+    "tree_sha": "f111151e1f9972045746a99915c2ef407f52252f"
+  },
+  "pr_number": 119,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T19:19:37.611700+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/hufscheer/web-v1/commits?sha=main&until=2023-11-30T08%3A40%3A22.179209%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T19:19:37.611700+00:00",
+        "sha256": "dc028f94a2ff7a2d1184ea0baa1f8c1f059333571d0ef2ee2355b1da3d7a8d7f",
+        "source": "https://api.github.com/repos/hufscheer/web-v1/commits?sha=main&until=2023-11-30T08%3A40%3A22.179209%2B00%3A00&per_page=1&page=1"
+      }
+    ],
+    "current_pr_base_sha_provenance_only": "3a56f30491f7a44e4c49d094e44b1c18ded8cdad",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T19:19:37.154242+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/hufscheer/web-v1/pulls/119/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T19:19:37.154242+00:00",
+        "sha256": "6146a12f42d81060cf5bf3ea63635299c815164fe1c02ec18a2ba8ce0dc49829",
+        "source": "https://api.github.com/repos/hufscheer/web-v1/pulls/119/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T19:19:36.588526+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/hufscheer/web-v1/pulls/119"
+        }
+      ],
+      "retrieved_at": "2026-10-05T19:19:36.588526+00:00",
+      "sha256": "ab0102108161b7fb1d6e8ef621eb88dfc0bdd96fa6b55db326e7ea56276b4ce1",
+      "source": "https://api.github.com/repos/hufscheer/web-v1/pulls/119"
+    }
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "hufscheer/web-v1",
+  "selected_state": {
+    "author_time": "2023-11-30T08:17:17Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "c241900c8d6ac0ac6a7f7529c0e0dd87198dd348",
+    "committer_time": "2023-11-30T08:17:17Z",
+    "effective_time": "2023-11-30T08:17:17+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "f111151e1f9972045746a99915c2ef407f52252f"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-11-30T08:40:08.698626+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-11-30T08:40:22.179209+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

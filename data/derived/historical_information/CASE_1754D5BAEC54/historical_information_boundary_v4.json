@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_1754D5BAEC54",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "6aef029e269fe5573d8aad0c8cd1882099a2b285",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "5c49eb1019a7cc9213114dc8dd2a99e454b41547"
+    ],
+    "recursive_tree_entry_count": 331,
+    "recursive_tree_listing_sha256": "63cb39889032133cde57189d084d1e1aa272160bc098495595bf31d1e9ad97a0",
+    "retrieved_at": "2026-10-05T20:15:42.991883+00:00",
+    "source": "https://github.com/ECMaker/blog.git",
+    "status": "materialized",
+    "tree_sha": "3d2847384c322835835709dc3184c45d64c363f5"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_1754D5BAEC54/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_1754D5BAEC54/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "ECMaker/blog",
+  "selected_state": {
+    "author_time": "2023-07-15T05:05:39Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "6aef029e269fe5573d8aad0c8cd1882099a2b285",
+    "committer_time": "2023-07-15T05:05:39Z",
+    "effective_time": "2023-07-15T05:05:39+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "3d2847384c322835835709dc3184c45d64c363f5"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-07-15T05:09:56.392897+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

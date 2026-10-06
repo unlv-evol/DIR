@@ -1,0 +1,46 @@
+{
+  "base_lineage_ref": "staging-watchonly",
+  "base_routing_source": "other_explicitly_justified_route",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_978B83E2DF72",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "6b8ec3cc4b6a1037ffa93e19fb92d9cf5e731ff9",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "99faf2696928e0e43004f6f6159de13534e32907",
+      "7b625760c32e451bb86ac8976813a969d2cdfdd0"
+    ],
+    "recursive_tree_entry_count": 3054,
+    "recursive_tree_listing_sha256": "9f44ddb99e61cd0ebc115813661905b45daad2ef79ef96962dcbffa94471cfff",
+    "retrieved_at": "2026-10-05T20:08:36.335915+00:00",
+    "source": "https://github.com/BitBoxSwiss/bitbox-wallet-app.git",
+    "status": "materialized",
+    "tree_sha": "983230294d7fafd3ed5af25d0c007251de6ef4bd"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_978B83E2DF72/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_978B83E2DF72/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "repository": "BitBoxSwiss/bitbox-wallet-app",
+  "selected_state": {
+    "author_time": "2023-11-19T15:44:08Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "6b8ec3cc4b6a1037ffa93e19fb92d9cf5e731ff9",
+    "committer_time": "2023-11-19T15:44:08Z",
+    "effective_time": "2023-11-19T15:44:08+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "983230294d7fafd3ed5af25d0c007251de6ef4bd"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-11-23T04:34:55.099208+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

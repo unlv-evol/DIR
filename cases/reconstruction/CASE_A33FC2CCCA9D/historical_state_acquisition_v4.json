@@ -1,0 +1,418 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_A33FC2CCCA9D",
+  "executed_at": "2026-10-05T20:18:47.113417+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-09-13T05:54:49Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-13T05:54:49Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-13T05:54:49+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "df414fb45d022917385e31ffe8a0309a43c32e04"
+        ],
+        "position": 1,
+        "pr_number": 2323,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+          "sha256": "8e385f449e8311a314a836b1ce1d1cc207052ca9e22d86d0b7edbcf8899f165b",
+          "source": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+        },
+        "repository": "lcompilers/lpython",
+        "sha": "34a6461c0a50de1585092ccdc584db7aea5964d4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8e37ed784ac56161843280ccf25bd280ed730dad"
+      },
+      {
+        "author_time": "2023-09-13T08:40:43Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-13T08:40:43Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-13T08:40:43+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "34a6461c0a50de1585092ccdc584db7aea5964d4"
+        ],
+        "position": 2,
+        "pr_number": 2323,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+          "sha256": "8e385f449e8311a314a836b1ce1d1cc207052ca9e22d86d0b7edbcf8899f165b",
+          "source": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+        },
+        "repository": "lcompilers/lpython",
+        "sha": "de9bd28270e7048a574166fb5852d2a789f8eab7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ae9d8ff911638afdf14443dd18cb94122aa4f922"
+      },
+      {
+        "author_time": "2023-09-13T10:35:32Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-13T10:35:32Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-13T10:35:32+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "de9bd28270e7048a574166fb5852d2a789f8eab7"
+        ],
+        "position": 3,
+        "pr_number": 2323,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+          "sha256": "8e385f449e8311a314a836b1ce1d1cc207052ca9e22d86d0b7edbcf8899f165b",
+          "source": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+        },
+        "repository": "lcompilers/lpython",
+        "sha": "fb6b2ec7481774f3e291737e4341b1d83de79d53",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3a53cd4e7adb22fd20c794421d986c00fdfb4a4a"
+      },
+      {
+        "author_time": "2023-09-13T10:39:01Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-13T10:39:01Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-13T10:39:01+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "fb6b2ec7481774f3e291737e4341b1d83de79d53",
+          "8b60246cdaa8110c10884cb767264651e9132fdd"
+        ],
+        "position": 4,
+        "pr_number": 2323,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+          "sha256": "8e385f449e8311a314a836b1ce1d1cc207052ca9e22d86d0b7edbcf8899f165b",
+          "source": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+        },
+        "repository": "lcompilers/lpython",
+        "sha": "6ef41e9f1df0da5c3be6d5c7778144934d00bdce",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ae140c9837cb659c6f742bb0380fb8598d410946"
+      },
+      {
+        "author_time": "2023-09-13T10:41:52Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-13T10:41:52Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-13T10:41:52+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "6ef41e9f1df0da5c3be6d5c7778144934d00bdce"
+        ],
+        "position": 5,
+        "pr_number": 2323,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+          "sha256": "8e385f449e8311a314a836b1ce1d1cc207052ca9e22d86d0b7edbcf8899f165b",
+          "source": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+        },
+        "repository": "lcompilers/lpython",
+        "sha": "c069e6103e22a614d9e2eaabd40336b777a3137d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9061db85628c8ca8633a707824955540e03d4379"
+      },
+      {
+        "author_time": "2023-09-13T10:52:20Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-13T10:52:20Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-13T10:52:20+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c069e6103e22a614d9e2eaabd40336b777a3137d"
+        ],
+        "position": 6,
+        "pr_number": 2323,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+          "sha256": "8e385f449e8311a314a836b1ce1d1cc207052ca9e22d86d0b7edbcf8899f165b",
+          "source": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+        },
+        "repository": "lcompilers/lpython",
+        "sha": "fa24e0f1ffe8cffdd8c287efda15d509d1dbd618",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7914079e9be792ee3fd6556340dcb7f9aff66732"
+      },
+      {
+        "author_time": "2023-09-13T11:58:35Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-13T11:58:35Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-13T11:58:35+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "fa24e0f1ffe8cffdd8c287efda15d509d1dbd618"
+        ],
+        "position": 7,
+        "pr_number": 2323,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+          "sha256": "8e385f449e8311a314a836b1ce1d1cc207052ca9e22d86d0b7edbcf8899f165b",
+          "source": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+        },
+        "repository": "lcompilers/lpython",
+        "sha": "d0e9ad595e37a8e171b57c2d4fa45678f198a58e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "cb2e8bb708beab2732eee46f28c4c0c5da7ad4be"
+      },
+      {
+        "author_time": "2023-09-13T16:47:08Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-13T16:47:08Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-13T16:47:08+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d0e9ad595e37a8e171b57c2d4fa45678f198a58e"
+        ],
+        "position": 8,
+        "pr_number": 2323,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+          "sha256": "8e385f449e8311a314a836b1ce1d1cc207052ca9e22d86d0b7edbcf8899f165b",
+          "source": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+        },
+        "repository": "lcompilers/lpython",
+        "sha": "22c8474d7171fabfdf63b3afd8c9ec81ead71844",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6e45264a62d188a4ad21fe8fd874d5eacd548257"
+      },
+      {
+        "author_time": "2023-09-15T06:10:41Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-15T06:10:41Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-15T06:10:41+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "22c8474d7171fabfdf63b3afd8c9ec81ead71844"
+        ],
+        "position": 9,
+        "pr_number": 2323,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+          "sha256": "8e385f449e8311a314a836b1ce1d1cc207052ca9e22d86d0b7edbcf8899f165b",
+          "source": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+        },
+        "repository": "lcompilers/lpython",
+        "sha": "4d4217264175dfb324478eaaa0f61b7babbf9e56",
+        "temporal_basis": "committer_time",
+        "tree_sha": "cb2e8bb708beab2732eee46f28c4c0c5da7ad4be"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-09-15T06:10:41Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-09-15T06:10:41Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-09-15T06:10:41+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "22c8474d7171fabfdf63b3afd8c9ec81ead71844"
+      ],
+      "position": 9,
+      "pr_number": 2323,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+        "sha256": "8e385f449e8311a314a836b1ce1d1cc207052ca9e22d86d0b7edbcf8899f165b",
+        "source": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+      },
+      "repository": "lcompilers/lpython",
+      "sha": "4d4217264175dfb324478eaaa0f61b7babbf9e56",
+      "temporal_basis": "committer_time",
+      "tree_sha": "cb2e8bb708beab2732eee46f28c4c0c5da7ad4be"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "4d4217264175dfb324478eaaa0f61b7babbf9e56",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "22c8474d7171fabfdf63b3afd8c9ec81ead71844"
+    ],
+    "recursive_tree_entry_count": 1773,
+    "recursive_tree_listing_sha256": "b13c8801140697db8b562af4d819f58e226babd323bbfece6c7c4cd065674940",
+    "retrieved_at": "2026-10-05T20:18:47.109999+00:00",
+    "source": "https://github.com/lcompilers/lpython.git",
+    "status": "materialized",
+    "tree_sha": "cb2e8bb708beab2732eee46f28c4c0c5da7ad4be"
+  },
+  "pr_number": 2323,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "8b60246cdaa8110c10884cb767264651e9132fdd",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:46.070426+00:00",
+        "sha256": "8e385f449e8311a314a836b1ce1d1cc207052ca9e22d86d0b7edbcf8899f165b",
+        "source": "https://api.github.com/repos/lcompilers/lpython/pulls/2323/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:18:45.492536+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/lcompilers/lpython/pulls/2323"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:18:45.492536+00:00",
+      "sha256": "c362c377f3b165a5d6fd2065b2eb54a2f7136d6f4e50c397d406f95ce28d914d",
+      "source": "https://api.github.com/repos/lcompilers/lpython/pulls/2323"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "lcompilers/lpython",
+  "selected_state": {
+    "author_time": "2023-09-15T06:10:41Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "4d4217264175dfb324478eaaa0f61b7babbf9e56",
+    "committer_time": "2023-09-15T06:10:41Z",
+    "effective_time": "2023-09-15T06:10:41+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "cb2e8bb708beab2732eee46f28c4c0c5da7ad4be"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-09-15T23:10:06.197984+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-09-15T23:10:11.107760+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

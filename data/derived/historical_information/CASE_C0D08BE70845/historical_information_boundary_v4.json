@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "main",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_C0D08BE70845",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "f3c555be8d23908ab1759dc17218ba79d9b70f0a",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "2eea79fbf3f4ab6bbaf1ab89d8b2d93efa4e94c3"
+    ],
+    "recursive_tree_entry_count": 2825,
+    "recursive_tree_listing_sha256": "d73d293131677e9c9763ea1ffcda420fb39bd9180e9bc61436ae73e0ace8c23d",
+    "retrieved_at": "2026-10-05T22:48:39.683745+00:00",
+    "source": "https://github.com/formbricks/formbricks.git",
+    "status": "materialized",
+    "tree_sha": "0bfbc6c495f5c4072f9701f807bc6ffb2c669097"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_C0D08BE70845/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_C0D08BE70845/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "formbricks/formbricks",
+  "selected_state": {
+    "author_time": "2024-04-03T13:46:55Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "f3c555be8d23908ab1759dc17218ba79d9b70f0a",
+    "committer_time": "2024-04-03T13:46:55Z",
+    "effective_time": "2024-04-03T13:46:55+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "0bfbc6c495f5c4072f9701f807bc6ffb2c669097"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-04-03T14:15:29.912515+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

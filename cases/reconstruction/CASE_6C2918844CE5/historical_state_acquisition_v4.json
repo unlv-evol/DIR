@@ -1,0 +1,1009 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-11-14T20:27:57Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-14T20:27:57Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-14T20:27:57+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "cef0393cb3ea552d820a714218e3a4c1c525eb55",
+          "8d2fc6db23daaad769d48abbcaf7dee383f0f38a"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:28.718625+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/commits?sha=dev&until=2023-11-14T20%3A33%3A19.478217%2B00%3A00&per_page=1&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:28.718625+00:00",
+          "sha256": "0dda8eb14df85978236e871283f566a2400358e7ceb232f0bf93c24840243658",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/commits?sha=dev&until=2023-11-14T20%3A33%3A19.478217%2B00%3A00&per_page=1&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "ca868eecf0e1bde8a3c7f3f399ab88deb629275b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "20eaa05a378dae91290a1c50640c4ae9882b1528"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-11-14T20:27:57Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-11-14T20:27:57Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-11-14T20:27:57+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "cef0393cb3ea552d820a714218e3a4c1c525eb55",
+        "8d2fc6db23daaad769d48abbcaf7dee383f0f38a"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:28.718625+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/uchicago-cs/chigame/commits?sha=dev&until=2023-11-14T20%3A33%3A19.478217%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:28.718625+00:00",
+        "sha256": "0dda8eb14df85978236e871283f566a2400358e7ceb232f0bf93c24840243658",
+        "source": "https://api.github.com/repos/uchicago-cs/chigame/commits?sha=dev&until=2023-11-14T20%3A33%3A19.478217%2B00%3A00&per_page=1&page=1"
+      },
+      "repository": "uchicago-cs/chigame",
+      "sha": "ca868eecf0e1bde8a3c7f3f399ab88deb629275b",
+      "temporal_basis": "committer_time",
+      "tree_sha": "20eaa05a378dae91290a1c50640c4ae9882b1528"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "dev",
+  "base_routing_source": "pr_base_ref",
+  "case_id": "CASE_6C2918844CE5",
+  "executed_at": "2026-10-05T20:17:29.395211+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-11-22T04:40:18Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-22T04:40:18Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-22T04:40:18+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a02cb334f12fdf8e0cfb21da3962d9cdecce35ab"
+        ],
+        "position": 1,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "d7aff1fa528ed3b6b5056792b5a8ec6efedc9b2f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d26d7886300c6887119c07de94c64d84cd733502"
+      },
+      {
+        "author_time": "2023-11-22T17:43:20Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-22T17:43:20Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-22T17:43:20+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d7aff1fa528ed3b6b5056792b5a8ec6efedc9b2f"
+        ],
+        "position": 2,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "c354bec0dbcc23e545e27f998ca9ff21b70c05b2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "96793f83c3d0a3c5fe2363584e3de62c5c257965"
+      },
+      {
+        "author_time": "2023-11-22T17:45:28Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-22T17:45:28Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-22T17:45:28+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "c354bec0dbcc23e545e27f998ca9ff21b70c05b2"
+        ],
+        "position": 3,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "2b4c5c78638dec664156da50af4fd3551b823822",
+        "temporal_basis": "committer_time",
+        "tree_sha": "45f1577d9b6f3561b68554b107e9e4425e0355c7"
+      },
+      {
+        "author_time": "2023-11-22T17:59:41Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-22T17:59:41Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-22T17:59:41+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2b4c5c78638dec664156da50af4fd3551b823822"
+        ],
+        "position": 4,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "1da52e2ab49ae29bc2bc8468e98141f3e57b888d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f3457a953d27d1fc18a788d174a62b0eae2c45f2"
+      },
+      {
+        "author_time": "2023-11-30T18:43:13Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T18:43:13Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-30T18:43:13+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1da52e2ab49ae29bc2bc8468e98141f3e57b888d"
+        ],
+        "position": 5,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "8068409aed87503eb70451786c67549ba594b918",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e69c518bb088a36f620e07d9ca9e978a88a38313"
+      },
+      {
+        "author_time": "2023-11-30T18:50:21Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T18:50:21Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-30T18:50:21+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8068409aed87503eb70451786c67549ba594b918",
+          "721ef602d22a7058f7f845665b2bb5759fd25307"
+        ],
+        "position": 6,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "a9f8ee01dd8b5baacd6b886eb7383a6bb13faf69",
+        "temporal_basis": "committer_time",
+        "tree_sha": "65db02a28143c54b47cbef8ce861c250d2a754b5"
+      },
+      {
+        "author_time": "2023-11-30T18:54:29Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T18:54:29Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-30T18:54:29+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a9f8ee01dd8b5baacd6b886eb7383a6bb13faf69"
+        ],
+        "position": 7,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "4dfc17c5a7353b3747bbad4f2bb20a9e27b8ff3d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "013c2f217119764b3cbb8bcc6c4972552ad5105c"
+      },
+      {
+        "author_time": "2023-11-30T19:10:59Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T19:10:59Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-30T19:10:59+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "4dfc17c5a7353b3747bbad4f2bb20a9e27b8ff3d",
+          "1d3d63678056cdb47cb12f65d25b6a46e383fc72"
+        ],
+        "position": 8,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "acec84db9df73043bb5679bc8fff17ddf1aa2c27",
+        "temporal_basis": "committer_time",
+        "tree_sha": "aa0cba87d3ae07013f7407ebc2b88330464407f0"
+      },
+      {
+        "author_time": "2023-11-30T19:24:11Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-30T19:24:11Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-30T19:24:11+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "acec84db9df73043bb5679bc8fff17ddf1aa2c27"
+        ],
+        "position": 9,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "12678f3b0249ea823245edf1c7f626f02daead9f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "29087244dbf954a0f9d1fa04181061a427f2391a"
+      },
+      {
+        "author_time": "2023-12-05T05:12:45Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T05:12:45Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T05:12:45+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "12678f3b0249ea823245edf1c7f626f02daead9f"
+        ],
+        "position": 10,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "5ed86865637aa34f9a5dba1d7a3a5c1aa0551bcf",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1b7c3b72780e8c9237efd3801b9d9c6d20c8669f"
+      },
+      {
+        "author_time": "2023-12-05T05:17:24Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T05:17:24Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T05:17:24+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "5ed86865637aa34f9a5dba1d7a3a5c1aa0551bcf"
+        ],
+        "position": 11,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "174696453ce021e0eccce071286a6b78efb9c25f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "73c85b9a16468bcaca6ef46dac4531d189034f4e"
+      },
+      {
+        "author_time": "2023-12-05T05:23:52Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T05:23:52Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T05:23:52+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "174696453ce021e0eccce071286a6b78efb9c25f"
+        ],
+        "position": 12,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "85e8c287ae0639749f76fe219815dff6abec2998",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2f41d454d120fec1ebe739c7e386361fa04bfacd"
+      },
+      {
+        "author_time": "2023-12-05T05:27:06Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T05:27:06Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T05:27:06+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "85e8c287ae0639749f76fe219815dff6abec2998",
+          "4e1f6c9f317ecbd56448bd4566d8704bb3a7c02c"
+        ],
+        "position": 13,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "d7c8d064b5103e32b3b0cda9adcf75eb3330dbad",
+        "temporal_basis": "committer_time",
+        "tree_sha": "49e5d9a56d46640f4e066e7bbb572e14a7cb33ad"
+      },
+      {
+        "author_time": "2023-12-05T05:48:34Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T05:48:34Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T05:48:34+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d7c8d064b5103e32b3b0cda9adcf75eb3330dbad"
+        ],
+        "position": 14,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "f7f31d89c9788a0d562a1339efe7b088bff912cf",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b9c803adf74dfcec052d2368d702d91991be6a88"
+      },
+      {
+        "author_time": "2023-12-05T05:54:50Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T05:54:50Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T05:54:50+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f7f31d89c9788a0d562a1339efe7b088bff912cf",
+          "c00b3ddb7d5ce6046f38ac9c66f4b4172252ee71"
+        ],
+        "position": 15,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "8925aac589f338ac24301de23bd939cf12e93aa2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "49f3cd8ac3f8080405b957222693809397f2f6c8"
+      },
+      {
+        "author_time": "2023-12-05T05:57:35Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-05T05:57:35Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-05T05:57:35+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8925aac589f338ac24301de23bd939cf12e93aa2"
+        ],
+        "position": 16,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "aeb28c8bbecd977ef69d15d345b4d2f114ccbac8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "56d53a21c988a838805bce20eb11fbb5886112a4"
+      },
+      {
+        "author_time": "2023-12-06T00:32:13Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-06T00:32:13Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-06T00:32:13+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "aeb28c8bbecd977ef69d15d345b4d2f114ccbac8"
+        ],
+        "position": 17,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "b2e3cd56138b7295d4c9bd64c1b916b9fda2f7ef",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ff8427dc9e8aaf7f1d86388d11635fa89579c665"
+      },
+      {
+        "author_time": "2023-12-06T00:33:29Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-06T00:33:29Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-06T00:33:29+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "b2e3cd56138b7295d4c9bd64c1b916b9fda2f7ef",
+          "7dd1681d39a64a02e05c29cd02d0891a791b25e4"
+        ],
+        "position": 18,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "ae99927b6fbd860acc36e21b8a1ed06e58addef9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9d636a4c9b6322c0f03ae2079a8262b2ce3dc43a"
+      },
+      {
+        "author_time": "2023-12-06T00:38:23Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-06T00:38:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-06T00:38:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "ae99927b6fbd860acc36e21b8a1ed06e58addef9"
+        ],
+        "position": 19,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "098d96f1da3470a08453b5ef94a6e3c72e96b38d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e0f41e01822dd8f89253313e96d6f9168c26eebe"
+      },
+      {
+        "author_time": "2023-12-06T01:14:34Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-06T01:14:34Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-06T01:14:34+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "098d96f1da3470a08453b5ef94a6e3c72e96b38d"
+        ],
+        "position": 20,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "f58270aaa2d445c5d3fc9132c80cbb2c1cd982ee",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0ee723117ddbf24591ae1d552b25737fc984c358"
+      },
+      {
+        "author_time": "2023-12-06T01:16:23Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-06T01:16:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-06T01:16:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f58270aaa2d445c5d3fc9132c80cbb2c1cd982ee"
+        ],
+        "position": 21,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "73fd45987862039cf4b57b5f5cb752c3a9a629d3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6ac419e09cbe321990d624cba44ec18aab9dfdd1"
+      },
+      {
+        "author_time": "2023-12-06T01:20:58Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-06T01:20:58Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-06T01:20:58+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "73fd45987862039cf4b57b5f5cb752c3a9a629d3"
+        ],
+        "position": 22,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "b3e979f97b57f88d5e0ad2e866086a73a75fc621",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1e4fe073b49f67b1c1bbf58adfa3167a0eeef3f8"
+      },
+      {
+        "author_time": "2023-12-06T01:32:19Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-06T01:32:19Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-06T01:32:19+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "b3e979f97b57f88d5e0ad2e866086a73a75fc621"
+        ],
+        "position": 23,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "095508080670a35a99a7002a19b7f3a7cbab3d5f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f99438ad8af7dfbf8b6789c5f755bb92c664c91a"
+      },
+      {
+        "author_time": "2023-12-06T01:37:04Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-06T01:37:04Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-12-06T01:37:04+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "095508080670a35a99a7002a19b7f3a7cbab3d5f",
+          "b1fe3f795e59b0f4dc3e671904cb622631386a61"
+        ],
+        "position": 24,
+        "pr_number": 265,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+          "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+          "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+        },
+        "repository": "uchicago-cs/chigame",
+        "sha": "ce705b9259537c4066e756e90d90c6c065200ae3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d71da7fde5190f234a68da538394fcf639567d95"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-11-22T04:40:18Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-11-22T04:40:18Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-11-22T04:40:18+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "a02cb334f12fdf8e0cfb21da3962d9cdecce35ab"
+      ],
+      "position": 1,
+      "pr_number": 265,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+        "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+        "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+      },
+      "repository": "uchicago-cs/chigame",
+      "sha": "d7aff1fa528ed3b6b5056792b5a8ec6efedc9b2f",
+      "temporal_basis": "committer_time",
+      "tree_sha": "d26d7886300c6887119c07de94c64d84cd733502"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "ca868eecf0e1bde8a3c7f3f399ab88deb629275b",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "cef0393cb3ea552d820a714218e3a4c1c525eb55",
+      "8d2fc6db23daaad769d48abbcaf7dee383f0f38a"
+    ],
+    "recursive_tree_entry_count": 193,
+    "recursive_tree_listing_sha256": "7027aee01e6c7e0331a102182b55b67cbee80b037a2dd6368880dbce8500cf13",
+    "retrieved_at": "2026-10-05T20:17:29.391390+00:00",
+    "source": "https://github.com/uchicago-cs/chigame.git",
+    "status": "materialized",
+    "tree_sha": "20eaa05a378dae91290a1c50640c4ae9882b1528"
+  },
+  "pr_number": 265,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:28.227032+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/uchicago-cs/chigame/git/ref/heads/dev"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:28.227032+00:00",
+        "sha256": "42fda761a5ae62aeecb03127b501072539133529167ac443c27d5fd2188a2556",
+        "source": "https://api.github.com/repos/uchicago-cs/chigame/git/ref/heads/dev"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:28.718625+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/uchicago-cs/chigame/commits?sha=dev&until=2023-11-14T20%3A33%3A19.478217%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:28.718625+00:00",
+        "sha256": "0dda8eb14df85978236e871283f566a2400358e7ceb232f0bf93c24840243658",
+        "source": "https://api.github.com/repos/uchicago-cs/chigame/commits?sha=dev&until=2023-11-14T20%3A33%3A19.478217%2B00%3A00&per_page=1&page=1"
+      }
+    ],
+    "base_route_evidence": {
+      "ref_object_sha": "dba9cd348471c72a93dd594d12fa9f2c40f21ebb",
+      "rule": "recorded_pr_base_ref_resolves"
+    },
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "b1fe3f795e59b0f4dc3e671904cb622631386a61",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:27.827912+00:00",
+        "sha256": "4c95e36a426d8fca2378ae328d371b420f53e5a6a9e155a7353f55c2efb02dfc",
+        "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:17:27.153574+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:17:27.153574+00:00",
+      "sha256": "ee65e1bd5a5b55a990f0ce7556a2b57e5788f8dfb42a2556410701874164f144",
+      "source": "https://api.github.com/repos/uchicago-cs/chigame/pulls/265"
+    },
+    "recorded_pr_base_ref_resolves": true
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "uchicago-cs/chigame",
+  "selected_state": {
+    "author_time": "2023-11-14T20:27:57Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "ca868eecf0e1bde8a3c7f3f399ab88deb629275b",
+    "committer_time": "2023-11-14T20:27:57Z",
+    "effective_time": "2023-11-14T20:27:57+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "20eaa05a378dae91290a1c50640c4ae9882b1528"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-11-14T20:33:04.626020+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-11-14T20:33:19.478217+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

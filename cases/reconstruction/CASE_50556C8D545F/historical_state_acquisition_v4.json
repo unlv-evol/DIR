@@ -1,0 +1,256 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_50556C8D545F",
+  "executed_at": "2026-10-05T20:17:02.993197+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-10-23T16:52:05Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-23T17:04:24Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-23T17:04:24+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "bb08de7ff317186403fa2bf504b8c4c0797d8c8c"
+        ],
+        "position": 1,
+        "pr_number": 655,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:57.500920+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/VOICEVOX/voicevox_core/pulls/655/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:57.500920+00:00",
+          "sha256": "69f1323e8cdfd8bce30eecea0189f7d4558bc5b032fb138cfcb4d8f23d1061be",
+          "source": "https://api.github.com/repos/VOICEVOX/voicevox_core/pulls/655/commits?per_page=100&page=1"
+        },
+        "repository": "VOICEVOX/voicevox_core",
+        "sha": "be0a07841b9f4325c212d072b876ac57fbfa1a3f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "efaf577a0172b3b650895ef10dea51e66770a691"
+      },
+      {
+        "author_time": "2023-10-23T17:10:54Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-23T17:10:54Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-23T17:10:54+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "be0a07841b9f4325c212d072b876ac57fbfa1a3f"
+        ],
+        "position": 2,
+        "pr_number": 655,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:57.500920+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/VOICEVOX/voicevox_core/pulls/655/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:57.500920+00:00",
+          "sha256": "69f1323e8cdfd8bce30eecea0189f7d4558bc5b032fb138cfcb4d8f23d1061be",
+          "source": "https://api.github.com/repos/VOICEVOX/voicevox_core/pulls/655/commits?per_page=100&page=1"
+        },
+        "repository": "VOICEVOX/voicevox_core",
+        "sha": "0371c0400904f8b6a888043350c8006d41c676c6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "53be46e716ef6dedd8b32a382a91a5727ee5ce9c"
+      },
+      {
+        "author_time": "2023-10-23T20:13:26Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-23T20:13:26Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-10-23T20:13:26+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "0371c0400904f8b6a888043350c8006d41c676c6"
+        ],
+        "position": 3,
+        "pr_number": 655,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:57.500920+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/VOICEVOX/voicevox_core/pulls/655/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:57.500920+00:00",
+          "sha256": "69f1323e8cdfd8bce30eecea0189f7d4558bc5b032fb138cfcb4d8f23d1061be",
+          "source": "https://api.github.com/repos/VOICEVOX/voicevox_core/pulls/655/commits?per_page=100&page=1"
+        },
+        "repository": "VOICEVOX/voicevox_core",
+        "sha": "c1c4068d732c07fea23bc66c0fe5091bb69d25d5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e2a74485d9331afc44166dbda41e2f6e380d2859"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-10-23T20:13:26Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-10-23T20:13:26Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-10-23T20:13:26+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "0371c0400904f8b6a888043350c8006d41c676c6"
+      ],
+      "position": 3,
+      "pr_number": 655,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:57.500920+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/VOICEVOX/voicevox_core/pulls/655/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:57.500920+00:00",
+        "sha256": "69f1323e8cdfd8bce30eecea0189f7d4558bc5b032fb138cfcb4d8f23d1061be",
+        "source": "https://api.github.com/repos/VOICEVOX/voicevox_core/pulls/655/commits?per_page=100&page=1"
+      },
+      "repository": "VOICEVOX/voicevox_core",
+      "sha": "c1c4068d732c07fea23bc66c0fe5091bb69d25d5",
+      "temporal_basis": "committer_time",
+      "tree_sha": "e2a74485d9331afc44166dbda41e2f6e380d2859"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-10-23T17:10:54Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-10-23T17:10:54Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-10-23T17:10:54+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "be0a07841b9f4325c212d072b876ac57fbfa1a3f"
+      ],
+      "position": 2,
+      "pr_number": 655,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:57.500920+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/VOICEVOX/voicevox_core/pulls/655/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:57.500920+00:00",
+        "sha256": "69f1323e8cdfd8bce30eecea0189f7d4558bc5b032fb138cfcb4d8f23d1061be",
+        "source": "https://api.github.com/repos/VOICEVOX/voicevox_core/pulls/655/commits?per_page=100&page=1"
+      },
+      "repository": "VOICEVOX/voicevox_core",
+      "sha": "0371c0400904f8b6a888043350c8006d41c676c6",
+      "temporal_basis": "committer_time",
+      "tree_sha": "53be46e716ef6dedd8b32a382a91a5727ee5ce9c"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "0371c0400904f8b6a888043350c8006d41c676c6",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "be0a07841b9f4325c212d072b876ac57fbfa1a3f"
+    ],
+    "recursive_tree_entry_count": 264,
+    "recursive_tree_listing_sha256": "79eea1c26d8f727e6d127bb339e0cca3f67553498030b62fe48c21736918a70a",
+    "retrieved_at": "2026-10-05T20:17:02.988979+00:00",
+    "source": "https://github.com/VOICEVOX/voicevox_core.git",
+    "status": "materialized",
+    "tree_sha": "53be46e716ef6dedd8b32a382a91a5727ee5ce9c"
+  },
+  "pr_number": 655,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "bb08de7ff317186403fa2bf504b8c4c0797d8c8c",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:57.500920+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/VOICEVOX/voicevox_core/pulls/655/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:57.500920+00:00",
+        "sha256": "69f1323e8cdfd8bce30eecea0189f7d4558bc5b032fb138cfcb4d8f23d1061be",
+        "source": "https://api.github.com/repos/VOICEVOX/voicevox_core/pulls/655/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:16:56.943520+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/VOICEVOX/voicevox_core/pulls/655"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:16:56.943520+00:00",
+      "sha256": "5c5e488bb1b0abe12868f18246ff9274495788a513d7e2f84f13fa6d18f80ac3",
+      "source": "https://api.github.com/repos/VOICEVOX/voicevox_core/pulls/655"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "VOICEVOX/voicevox_core",
+  "selected_state": {
+    "author_time": "2023-10-23T17:10:54Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "0371c0400904f8b6a888043350c8006d41c676c6",
+    "committer_time": "2023-10-23T17:10:54Z",
+    "effective_time": "2023-10-23T17:10:54+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "53be46e716ef6dedd8b32a382a91a5727ee5ce9c"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-10-23T20:09:52.927538+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-10-23T20:10:13.700623+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

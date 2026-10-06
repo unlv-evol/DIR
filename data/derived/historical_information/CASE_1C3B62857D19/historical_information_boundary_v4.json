@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_1C3B62857D19",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "f3248e54401e171fb551dffea7c33b50bd88b02e",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "9d88ffd203ea69eea717f82a7a6a33c569fbfcc7"
+    ],
+    "recursive_tree_entry_count": 327,
+    "recursive_tree_listing_sha256": "4e7cdc7ee173c257a046471a3b15dada3d3769fde86c44d1dc112c8883a1d9d7",
+    "retrieved_at": "2026-10-05T20:16:00.873189+00:00",
+    "source": "https://github.com/langroid/langroid.git",
+    "status": "materialized",
+    "tree_sha": "93fa0c48945e9c5b1ff20cf9e21a936e4f12d2a0"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_1C3B62857D19/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_1C3B62857D19/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "langroid/langroid",
+  "selected_state": {
+    "author_time": "2024-01-12T21:44:14Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "f3248e54401e171fb551dffea7c33b50bd88b02e",
+    "committer_time": "2024-01-12T21:44:14Z",
+    "effective_time": "2024-01-12T21:44:14+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "93fa0c48945e9c5b1ff20cf9e21a936e4f12d2a0"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-01-15T00:03:53.295269+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

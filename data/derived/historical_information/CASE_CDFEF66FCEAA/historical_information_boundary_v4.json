@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "main",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_CDFEF66FCEAA",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "4fd5d0e19bab4d5b7338d45209559de338aed107",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "3d23f8adbd2ee06c31c8d618d8af11148c25a982"
+    ],
+    "recursive_tree_entry_count": 8261,
+    "recursive_tree_listing_sha256": "d566acada6ac95cc34647e1b8dde981a323b3451d0a30cb93704ded2a4c1e573",
+    "retrieved_at": "2026-10-05T22:49:49.080960+00:00",
+    "source": "https://github.com/SSWConsulting/SSW.Website.git",
+    "status": "materialized",
+    "tree_sha": "86c41a95d58ffbc314d4ed876aff770ce7466346"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_CDFEF66FCEAA/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_CDFEF66FCEAA/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "SSWConsulting/SSW.Website",
+  "selected_state": {
+    "author_time": "2023-07-05T00:42:33Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "4fd5d0e19bab4d5b7338d45209559de338aed107",
+    "committer_time": "2023-07-05T00:42:33Z",
+    "effective_time": "2023-07-05T00:42:33+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "86c41a95d58ffbc314d4ed876aff770ce7466346"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-07-05T01:12:41.129201+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

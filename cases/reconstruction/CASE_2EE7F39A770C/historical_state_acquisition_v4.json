@@ -1,0 +1,256 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_2EE7F39A770C",
+  "executed_at": "2026-10-05T20:16:26.434973+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-06-22T15:17:31Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-22T15:17:31Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-22T15:17:31+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "463a8d7d938c3e03eb968462eb7051342824e5f6"
+        ],
+        "position": 1,
+        "pr_number": 277,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:25.125794+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/ssvlabs/ssv-web/pulls/277/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:25.125794+00:00",
+          "sha256": "334ed8b4cebbc9d57b2d8def76f049db5364e6b7692a7b34754c0ebdccc822b5",
+          "source": "https://api.github.com/repos/ssvlabs/ssv-web/pulls/277/commits?per_page=100&page=1"
+        },
+        "repository": "ssvlabs/ssv-web",
+        "sha": "b11130af8864206758ec0f5b91682260fabc6ac8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "60bd017e03cd22608c7ee4c0cf481f462040d0a2"
+      },
+      {
+        "author_time": "2023-06-27T08:01:40Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-27T08:01:40Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-27T08:01:40+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "b11130af8864206758ec0f5b91682260fabc6ac8"
+        ],
+        "position": 2,
+        "pr_number": 277,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:25.125794+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/ssvlabs/ssv-web/pulls/277/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:25.125794+00:00",
+          "sha256": "334ed8b4cebbc9d57b2d8def76f049db5364e6b7692a7b34754c0ebdccc822b5",
+          "source": "https://api.github.com/repos/ssvlabs/ssv-web/pulls/277/commits?per_page=100&page=1"
+        },
+        "repository": "ssvlabs/ssv-web",
+        "sha": "cbd4fd87a2df58d3315a425d92f3cc1f1d9b496b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "591e57f6ad58c2395e1d72d702fe9028d3cdf81a"
+      },
+      {
+        "author_time": "2023-06-27T13:33:07Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-27T13:33:07Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-27T13:33:07+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "cbd4fd87a2df58d3315a425d92f3cc1f1d9b496b"
+        ],
+        "position": 3,
+        "pr_number": 277,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:25.125794+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/ssvlabs/ssv-web/pulls/277/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:25.125794+00:00",
+          "sha256": "334ed8b4cebbc9d57b2d8def76f049db5364e6b7692a7b34754c0ebdccc822b5",
+          "source": "https://api.github.com/repos/ssvlabs/ssv-web/pulls/277/commits?per_page=100&page=1"
+        },
+        "repository": "ssvlabs/ssv-web",
+        "sha": "744bf32ef77677dcbb72bff19a8634c42b3add73",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2d781df29a5d2880a80b21e655807047cf37b120"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-06-27T13:33:07Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-06-27T13:33:07Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-06-27T13:33:07+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "cbd4fd87a2df58d3315a425d92f3cc1f1d9b496b"
+      ],
+      "position": 3,
+      "pr_number": 277,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:25.125794+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/ssvlabs/ssv-web/pulls/277/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:25.125794+00:00",
+        "sha256": "334ed8b4cebbc9d57b2d8def76f049db5364e6b7692a7b34754c0ebdccc822b5",
+        "source": "https://api.github.com/repos/ssvlabs/ssv-web/pulls/277/commits?per_page=100&page=1"
+      },
+      "repository": "ssvlabs/ssv-web",
+      "sha": "744bf32ef77677dcbb72bff19a8634c42b3add73",
+      "temporal_basis": "committer_time",
+      "tree_sha": "2d781df29a5d2880a80b21e655807047cf37b120"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-06-27T08:01:40Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-06-27T08:01:40Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-06-27T08:01:40+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "b11130af8864206758ec0f5b91682260fabc6ac8"
+      ],
+      "position": 2,
+      "pr_number": 277,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:25.125794+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/ssvlabs/ssv-web/pulls/277/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:25.125794+00:00",
+        "sha256": "334ed8b4cebbc9d57b2d8def76f049db5364e6b7692a7b34754c0ebdccc822b5",
+        "source": "https://api.github.com/repos/ssvlabs/ssv-web/pulls/277/commits?per_page=100&page=1"
+      },
+      "repository": "ssvlabs/ssv-web",
+      "sha": "cbd4fd87a2df58d3315a425d92f3cc1f1d9b496b",
+      "temporal_basis": "committer_time",
+      "tree_sha": "591e57f6ad58c2395e1d72d702fe9028d3cdf81a"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "cbd4fd87a2df58d3315a425d92f3cc1f1d9b496b",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "b11130af8864206758ec0f5b91682260fabc6ac8"
+    ],
+    "recursive_tree_entry_count": 833,
+    "recursive_tree_listing_sha256": "ed232531aa2ff75356b21a9d3a0d8b9c80ff43c3e687c689cea0d5e1738e63e2",
+    "retrieved_at": "2026-10-05T20:16:26.431936+00:00",
+    "source": "https://github.com/ssvlabs/ssv-web.git",
+    "status": "materialized",
+    "tree_sha": "591e57f6ad58c2395e1d72d702fe9028d3cdf81a"
+  },
+  "pr_number": 277,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "a9a2a6022bfa0f6cbfe36a8f55215e41bed9a970",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:25.125794+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/ssvlabs/ssv-web/pulls/277/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:25.125794+00:00",
+        "sha256": "334ed8b4cebbc9d57b2d8def76f049db5364e6b7692a7b34754c0ebdccc822b5",
+        "source": "https://api.github.com/repos/ssvlabs/ssv-web/pulls/277/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:16:24.585119+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/ssvlabs/ssv-web/pulls/277"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:16:24.585119+00:00",
+      "sha256": "8dc5474f49580b6135e713e33d5890855d78c8a1a1caeab934fe53b3bde04bc6",
+      "source": "https://api.github.com/repos/ssvlabs/ssv-web/pulls/277"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "ssvlabs/ssv-web",
+  "selected_state": {
+    "author_time": "2023-06-27T08:01:40Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "cbd4fd87a2df58d3315a425d92f3cc1f1d9b496b",
+    "committer_time": "2023-06-27T08:01:40Z",
+    "effective_time": "2023-06-27T08:01:40+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "591e57f6ad58c2395e1d72d702fe9028d3cdf81a"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-06-27T10:44:55.838603+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-06-27T10:44:59.407016+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

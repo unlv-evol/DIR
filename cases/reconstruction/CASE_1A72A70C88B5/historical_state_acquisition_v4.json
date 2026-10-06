@@ -1,0 +1,288 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_1A72A70C88B5",
+  "executed_at": "2026-10-05T20:15:57.684610+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-02-13T23:50:06Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-13T23:50:06Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-13T23:50:06+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "6f5b7f100a1e230479631fdd6e6b70aad272e82f"
+        ],
+        "position": 1,
+        "pr_number": 51,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:56.220562+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/VyProductions/SeniorDesign/pulls/51/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:56.220562+00:00",
+          "sha256": "f2a89861ded292e68dbd22bbfdeb1c36c0384c375edfde91efb3e4ce450dd9a8",
+          "source": "https://api.github.com/repos/VyProductions/SeniorDesign/pulls/51/commits?per_page=100&page=1"
+        },
+        "repository": "VyProductions/SeniorDesign",
+        "sha": "d6f996ec2a0101c890b8976fc58a0c92cdb001ca",
+        "temporal_basis": "committer_time",
+        "tree_sha": "797a2baccd07c982247acef4576da4785c907619"
+      },
+      {
+        "author_time": "2024-02-14T00:11:07Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-14T00:11:07Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-14T00:11:07+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d6f996ec2a0101c890b8976fc58a0c92cdb001ca"
+        ],
+        "position": 2,
+        "pr_number": 51,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:56.220562+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/VyProductions/SeniorDesign/pulls/51/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:56.220562+00:00",
+          "sha256": "f2a89861ded292e68dbd22bbfdeb1c36c0384c375edfde91efb3e4ce450dd9a8",
+          "source": "https://api.github.com/repos/VyProductions/SeniorDesign/pulls/51/commits?per_page=100&page=1"
+        },
+        "repository": "VyProductions/SeniorDesign",
+        "sha": "18b9b1560ca9d65800244f636bdf39afc0ef8794",
+        "temporal_basis": "committer_time",
+        "tree_sha": "17a94a70335179ed8a95c35ed8d525d89577bad8"
+      },
+      {
+        "author_time": "2024-02-14T00:36:48Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-14T00:36:48Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-14T00:36:48+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "18b9b1560ca9d65800244f636bdf39afc0ef8794"
+        ],
+        "position": 3,
+        "pr_number": 51,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:56.220562+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/VyProductions/SeniorDesign/pulls/51/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:56.220562+00:00",
+          "sha256": "f2a89861ded292e68dbd22bbfdeb1c36c0384c375edfde91efb3e4ce450dd9a8",
+          "source": "https://api.github.com/repos/VyProductions/SeniorDesign/pulls/51/commits?per_page=100&page=1"
+        },
+        "repository": "VyProductions/SeniorDesign",
+        "sha": "bd2efb9c448f7fe7424076e1d1a06746dcf91f8b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a234422c9f3b7bf86ceb544b03191290fcc6bcf1"
+      },
+      {
+        "author_time": "2024-02-14T00:49:38Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-14T00:49:38Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-14T00:49:38+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "bd2efb9c448f7fe7424076e1d1a06746dcf91f8b"
+        ],
+        "position": 4,
+        "pr_number": 51,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:56.220562+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/VyProductions/SeniorDesign/pulls/51/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:56.220562+00:00",
+          "sha256": "f2a89861ded292e68dbd22bbfdeb1c36c0384c375edfde91efb3e4ce450dd9a8",
+          "source": "https://api.github.com/repos/VyProductions/SeniorDesign/pulls/51/commits?per_page=100&page=1"
+        },
+        "repository": "VyProductions/SeniorDesign",
+        "sha": "8a404adcd2976efeed56f380774e7b9225f67cc9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "17a94a70335179ed8a95c35ed8d525d89577bad8"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2024-02-14T00:11:07Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-02-14T00:11:07Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2024-02-14T00:11:07+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "d6f996ec2a0101c890b8976fc58a0c92cdb001ca"
+      ],
+      "position": 2,
+      "pr_number": 51,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:56.220562+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/VyProductions/SeniorDesign/pulls/51/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:56.220562+00:00",
+        "sha256": "f2a89861ded292e68dbd22bbfdeb1c36c0384c375edfde91efb3e4ce450dd9a8",
+        "source": "https://api.github.com/repos/VyProductions/SeniorDesign/pulls/51/commits?per_page=100&page=1"
+      },
+      "repository": "VyProductions/SeniorDesign",
+      "sha": "18b9b1560ca9d65800244f636bdf39afc0ef8794",
+      "temporal_basis": "committer_time",
+      "tree_sha": "17a94a70335179ed8a95c35ed8d525d89577bad8"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-02-13T23:50:06Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-02-13T23:50:06Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-02-13T23:50:06+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "6f5b7f100a1e230479631fdd6e6b70aad272e82f"
+      ],
+      "position": 1,
+      "pr_number": 51,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:56.220562+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/VyProductions/SeniorDesign/pulls/51/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:56.220562+00:00",
+        "sha256": "f2a89861ded292e68dbd22bbfdeb1c36c0384c375edfde91efb3e4ce450dd9a8",
+        "source": "https://api.github.com/repos/VyProductions/SeniorDesign/pulls/51/commits?per_page=100&page=1"
+      },
+      "repository": "VyProductions/SeniorDesign",
+      "sha": "d6f996ec2a0101c890b8976fc58a0c92cdb001ca",
+      "temporal_basis": "committer_time",
+      "tree_sha": "797a2baccd07c982247acef4576da4785c907619"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "d6f996ec2a0101c890b8976fc58a0c92cdb001ca",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "6f5b7f100a1e230479631fdd6e6b70aad272e82f"
+    ],
+    "recursive_tree_entry_count": 63,
+    "recursive_tree_listing_sha256": "cb37cf100964c067ed6312fbf9ae01fd3d14f0ec17c8314fc785326a0640795e",
+    "retrieved_at": "2026-10-05T20:15:57.673401+00:00",
+    "source": "https://github.com/VyProductions/SeniorDesign.git",
+    "status": "materialized",
+    "tree_sha": "797a2baccd07c982247acef4576da4785c907619"
+  },
+  "pr_number": 51,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "6f5b7f100a1e230479631fdd6e6b70aad272e82f",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:56.220562+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/VyProductions/SeniorDesign/pulls/51/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:56.220562+00:00",
+        "sha256": "f2a89861ded292e68dbd22bbfdeb1c36c0384c375edfde91efb3e4ce450dd9a8",
+        "source": "https://api.github.com/repos/VyProductions/SeniorDesign/pulls/51/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:15:55.590922+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/VyProductions/SeniorDesign/pulls/51"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:15:55.590922+00:00",
+      "sha256": "f41b8cb8b77eb3a6eb85c2e260d0f277f7698a1361a76d515557bc767c21aff9",
+      "source": "https://api.github.com/repos/VyProductions/SeniorDesign/pulls/51"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "VyProductions/SeniorDesign",
+  "selected_state": {
+    "author_time": "2024-02-13T23:50:06Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "d6f996ec2a0101c890b8976fc58a0c92cdb001ca",
+    "committer_time": "2024-02-13T23:50:06Z",
+    "effective_time": "2024-02-13T23:50:06+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "797a2baccd07c982247acef4576da4785c907619"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-02-14T00:08:44.088851+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-02-14T00:08:46.581968+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

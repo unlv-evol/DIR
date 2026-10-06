@@ -1,0 +1,264 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-06-14T10:07:21Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-14T10:07:21Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-14T10:07:21+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "dbf48f646f3f9a069b316495f476036b5c74c9d0"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:37.522833+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Altinity/clickhouse-backup/commits?sha=master&until=2023-06-15T12%3A00%3A33.229427%2B00%3A00&per_page=1&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:37.522833+00:00",
+          "sha256": "8f9a1ff6f2164b2708c2c737c1ca3b61efdbf5cc7d19c8256a3fe7ce24c0ffb2",
+          "source": "https://api.github.com/repos/Altinity/clickhouse-backup/commits?sha=master&until=2023-06-15T12%3A00%3A33.229427%2B00%3A00&per_page=1&page=1"
+        },
+        "repository": "Altinity/clickhouse-backup",
+        "sha": "29e4ded1cec15e96c82ffc44ab9a2095c449face",
+        "temporal_basis": "committer_time",
+        "tree_sha": "39b8ce83caea48fb900577228f5cd0d3df1ea90a"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-06-14T10:07:21Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-06-14T10:07:21Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-06-14T10:07:21+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "dbf48f646f3f9a069b316495f476036b5c74c9d0"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:37.522833+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Altinity/clickhouse-backup/commits?sha=master&until=2023-06-15T12%3A00%3A33.229427%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:37.522833+00:00",
+        "sha256": "8f9a1ff6f2164b2708c2c737c1ca3b61efdbf5cc7d19c8256a3fe7ce24c0ffb2",
+        "source": "https://api.github.com/repos/Altinity/clickhouse-backup/commits?sha=master&until=2023-06-15T12%3A00%3A33.229427%2B00%3A00&per_page=1&page=1"
+      },
+      "repository": "Altinity/clickhouse-backup",
+      "sha": "29e4ded1cec15e96c82ffc44ab9a2095c449face",
+      "temporal_basis": "committer_time",
+      "tree_sha": "39b8ce83caea48fb900577228f5cd0d3df1ea90a"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "master",
+  "base_routing_source": "pr_base_ref",
+  "case_id": "CASE_0CE9E03556F1",
+  "executed_at": "2026-10-05T20:15:38.186753+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-04-26T17:26:42Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2023-08-02T21:29:05Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-02T21:29:05+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "b1c4727884a479781dab886cdc750d2932d62333"
+        ],
+        "position": 1,
+        "pr_number": 648,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:36.606733+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Altinity/clickhouse-backup/pulls/648/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:36.606733+00:00",
+          "sha256": "281a4da08c800479ee8b5ee3684ef14a422dbb1ef2803e75e574161fabb29279",
+          "source": "https://api.github.com/repos/Altinity/clickhouse-backup/pulls/648/commits?per_page=100&page=1"
+        },
+        "repository": "Altinity/clickhouse-backup",
+        "sha": "cfbffc5f27fc6789e0702851746dc1b7b686f881",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5807c5fd8ec94f8b593c6fa724d5af1cede5e8b9"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-04-26T17:26:42Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "crosses_tfg",
+      "committer_time": "2023-08-02T21:29:05Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-08-02T21:29:05+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "b1c4727884a479781dab886cdc750d2932d62333"
+      ],
+      "position": 1,
+      "pr_number": 648,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:36.606733+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Altinity/clickhouse-backup/pulls/648/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:36.606733+00:00",
+        "sha256": "281a4da08c800479ee8b5ee3684ef14a422dbb1ef2803e75e574161fabb29279",
+        "source": "https://api.github.com/repos/Altinity/clickhouse-backup/pulls/648/commits?per_page=100&page=1"
+      },
+      "repository": "Altinity/clickhouse-backup",
+      "sha": "cfbffc5f27fc6789e0702851746dc1b7b686f881",
+      "temporal_basis": "committer_time",
+      "tree_sha": "5807c5fd8ec94f8b593c6fa724d5af1cede5e8b9"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "29e4ded1cec15e96c82ffc44ab9a2095c449face",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "dbf48f646f3f9a069b316495f476036b5c74c9d0"
+    ],
+    "recursive_tree_entry_count": 214,
+    "recursive_tree_listing_sha256": "c997653681e0694d56ec62c7eafefa5c6065ed5d21ac8871c3e8e1a9214a9e38",
+    "retrieved_at": "2026-10-05T20:15:38.183495+00:00",
+    "source": "https://github.com/Altinity/clickhouse-backup.git",
+    "status": "materialized",
+    "tree_sha": "39b8ce83caea48fb900577228f5cd0d3df1ea90a"
+  },
+  "pr_number": 648,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:37.063985+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Altinity/clickhouse-backup/git/ref/heads/master"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:37.063985+00:00",
+        "sha256": "80c943a30365e856ba2171c701aaef098d0b0eaf747a9eed1ef05e37c643a80a",
+        "source": "https://api.github.com/repos/Altinity/clickhouse-backup/git/ref/heads/master"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:37.522833+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Altinity/clickhouse-backup/commits?sha=master&until=2023-06-15T12%3A00%3A33.229427%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:37.522833+00:00",
+        "sha256": "8f9a1ff6f2164b2708c2c737c1ca3b61efdbf5cc7d19c8256a3fe7ce24c0ffb2",
+        "source": "https://api.github.com/repos/Altinity/clickhouse-backup/commits?sha=master&until=2023-06-15T12%3A00%3A33.229427%2B00%3A00&per_page=1&page=1"
+      }
+    ],
+    "base_route_evidence": {
+      "ref_object_sha": "8a9d1d2d014430d6c14a150a0419a8227e4c057a",
+      "rule": "recorded_pr_base_ref_resolves"
+    },
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "b1c4727884a479781dab886cdc750d2932d62333",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:36.606733+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Altinity/clickhouse-backup/pulls/648/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:36.606733+00:00",
+        "sha256": "281a4da08c800479ee8b5ee3684ef14a422dbb1ef2803e75e574161fabb29279",
+        "source": "https://api.github.com/repos/Altinity/clickhouse-backup/pulls/648/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:15:36.049222+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/Altinity/clickhouse-backup/pulls/648"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:15:36.049222+00:00",
+      "sha256": "04f347309616a531d8ea26481c0326cd175a86a2dbd17c1ccea775de76d500e8",
+      "source": "https://api.github.com/repos/Altinity/clickhouse-backup/pulls/648"
+    },
+    "recorded_pr_base_ref_resolves": true
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "Altinity/clickhouse-backup",
+  "selected_state": {
+    "author_time": "2023-06-14T10:07:21Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "29e4ded1cec15e96c82ffc44ab9a2095c449face",
+    "committer_time": "2023-06-14T10:07:21Z",
+    "effective_time": "2023-06-14T10:07:21+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "39b8ce83caea48fb900577228f5cd0d3df1ea90a"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-06-15T12:00:11.965943+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-06-15T12:00:33.229427+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

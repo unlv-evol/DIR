@@ -1,0 +1,288 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_3A639B473AED",
+  "executed_at": "2026-10-05T20:16:42.373265+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-08-07T17:24:13Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-07T17:24:13Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-08-07T17:24:13+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "48079483be9e7f7b5f623a07f2fcb7f157928d51"
+        ],
+        "position": 1,
+        "pr_number": 1134,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:41.480716+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/PrivateBin/PrivateBin/pulls/1134/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:41.480716+00:00",
+          "sha256": "726c44532e0bd21a90712e001355e2236a6b03943e278932f2568c8bbf3d5145",
+          "source": "https://api.github.com/repos/PrivateBin/PrivateBin/pulls/1134/commits?per_page=100&page=1"
+        },
+        "repository": "PrivateBin/PrivateBin",
+        "sha": "1a37f7b865e5f51a9dfac023a3663256dd7ca268",
+        "temporal_basis": "committer_time",
+        "tree_sha": "fecca43f34b624dd30394426408668d2fac6b95a"
+      },
+      {
+        "author_time": "2023-08-07T17:26:26Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-07T17:26:26Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-08-07T17:26:26+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "1a37f7b865e5f51a9dfac023a3663256dd7ca268"
+        ],
+        "position": 2,
+        "pr_number": 1134,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:41.480716+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/PrivateBin/PrivateBin/pulls/1134/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:41.480716+00:00",
+          "sha256": "726c44532e0bd21a90712e001355e2236a6b03943e278932f2568c8bbf3d5145",
+          "source": "https://api.github.com/repos/PrivateBin/PrivateBin/pulls/1134/commits?per_page=100&page=1"
+        },
+        "repository": "PrivateBin/PrivateBin",
+        "sha": "8deb68c2daddad7466f3301c381da937e9e3ddab",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4758da1bcd3047ee3866fc4ea1dfd09a0cf83b86"
+      },
+      {
+        "author_time": "2023-08-07T17:56:38Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-07T17:59:07Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-07T17:59:07+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8deb68c2daddad7466f3301c381da937e9e3ddab"
+        ],
+        "position": 3,
+        "pr_number": 1134,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:41.480716+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/PrivateBin/PrivateBin/pulls/1134/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:41.480716+00:00",
+          "sha256": "726c44532e0bd21a90712e001355e2236a6b03943e278932f2568c8bbf3d5145",
+          "source": "https://api.github.com/repos/PrivateBin/PrivateBin/pulls/1134/commits?per_page=100&page=1"
+        },
+        "repository": "PrivateBin/PrivateBin",
+        "sha": "204d1756c97138e3abc470d8d49f954f0cfaeb41",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0650433595ca24bab17846ea837760299785362a"
+      },
+      {
+        "author_time": "2023-08-07T18:02:36Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-07T18:02:36Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-07T18:02:36+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "204d1756c97138e3abc470d8d49f954f0cfaeb41"
+        ],
+        "position": 4,
+        "pr_number": 1134,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:41.480716+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/PrivateBin/PrivateBin/pulls/1134/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:41.480716+00:00",
+          "sha256": "726c44532e0bd21a90712e001355e2236a6b03943e278932f2568c8bbf3d5145",
+          "source": "https://api.github.com/repos/PrivateBin/PrivateBin/pulls/1134/commits?per_page=100&page=1"
+        },
+        "repository": "PrivateBin/PrivateBin",
+        "sha": "a22b96b7fc94d31a381d6d4556ff8ba60f9a9bd1",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ca76241e1e814265343e246037b3e03c1b75fa44"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-08-07T17:56:38Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-08-07T17:59:07Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-08-07T17:59:07+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "8deb68c2daddad7466f3301c381da937e9e3ddab"
+      ],
+      "position": 3,
+      "pr_number": 1134,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:41.480716+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/PrivateBin/PrivateBin/pulls/1134/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:41.480716+00:00",
+        "sha256": "726c44532e0bd21a90712e001355e2236a6b03943e278932f2568c8bbf3d5145",
+        "source": "https://api.github.com/repos/PrivateBin/PrivateBin/pulls/1134/commits?per_page=100&page=1"
+      },
+      "repository": "PrivateBin/PrivateBin",
+      "sha": "204d1756c97138e3abc470d8d49f954f0cfaeb41",
+      "temporal_basis": "committer_time",
+      "tree_sha": "0650433595ca24bab17846ea837760299785362a"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-08-07T17:26:26Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-08-07T17:26:26Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-08-07T17:26:26+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "1a37f7b865e5f51a9dfac023a3663256dd7ca268"
+      ],
+      "position": 2,
+      "pr_number": 1134,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:41.480716+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/PrivateBin/PrivateBin/pulls/1134/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:41.480716+00:00",
+        "sha256": "726c44532e0bd21a90712e001355e2236a6b03943e278932f2568c8bbf3d5145",
+        "source": "https://api.github.com/repos/PrivateBin/PrivateBin/pulls/1134/commits?per_page=100&page=1"
+      },
+      "repository": "PrivateBin/PrivateBin",
+      "sha": "8deb68c2daddad7466f3301c381da937e9e3ddab",
+      "temporal_basis": "committer_time",
+      "tree_sha": "4758da1bcd3047ee3866fc4ea1dfd09a0cf83b86"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "8deb68c2daddad7466f3301c381da937e9e3ddab",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "1a37f7b865e5f51a9dfac023a3663256dd7ca268"
+    ],
+    "recursive_tree_entry_count": 326,
+    "recursive_tree_listing_sha256": "e988c96eaa4cabf152f6d467cdce7f359aed5bba1d33c97c5b672b4e03433b82",
+    "retrieved_at": "2026-10-05T20:16:42.369384+00:00",
+    "source": "https://github.com/PrivateBin/PrivateBin.git",
+    "status": "materialized",
+    "tree_sha": "4758da1bcd3047ee3866fc4ea1dfd09a0cf83b86"
+  },
+  "pr_number": 1134,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "48079483be9e7f7b5f623a07f2fcb7f157928d51",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:41.480716+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/PrivateBin/PrivateBin/pulls/1134/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:41.480716+00:00",
+        "sha256": "726c44532e0bd21a90712e001355e2236a6b03943e278932f2568c8bbf3d5145",
+        "source": "https://api.github.com/repos/PrivateBin/PrivateBin/pulls/1134/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:16:40.852389+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/PrivateBin/PrivateBin/pulls/1134"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:16:40.852389+00:00",
+      "sha256": "2a822a2967a0b0432cdf63d376367cdf0bf06d5b3bd8b159268113d185fc0dc6",
+      "source": "https://api.github.com/repos/PrivateBin/PrivateBin/pulls/1134"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "PrivateBin/PrivateBin",
+  "selected_state": {
+    "author_time": "2023-08-07T17:26:26Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "8deb68c2daddad7466f3301c381da937e9e3ddab",
+    "committer_time": "2023-08-07T17:26:26Z",
+    "effective_time": "2023-08-07T17:26:26+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "4758da1bcd3047ee3866fc4ea1dfd09a0cf83b86"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-08-07T17:40:02.973733+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-08-07T17:40:16.134775+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

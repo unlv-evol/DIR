@@ -1,0 +1,352 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_813B25949CF6",
+  "executed_at": "2026-10-05T20:18:01.952818+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-11-20T17:18:56Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-20T17:18:56Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-20T17:18:56+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d8263b43daed771868433f1524c6b6746c6adc58"
+        ],
+        "position": 1,
+        "pr_number": 114,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:00.992107+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/shakacode/control-plane-flow/pulls/114/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:00.992107+00:00",
+          "sha256": "318496d9010c2ae0fef9d74273617dca61f40b6727d7a44f3d8a6504c996b95f",
+          "source": "https://api.github.com/repos/shakacode/control-plane-flow/pulls/114/commits?per_page=100&page=1"
+        },
+        "repository": "shakacode/control-plane-flow",
+        "sha": "4cfaf11137f70de805e4bf9ae0700efcd3c6ba70",
+        "temporal_basis": "committer_time",
+        "tree_sha": "84f76670e8aea79f57364158a92d78cf440c119c"
+      },
+      {
+        "author_time": "2023-11-25T08:45:10Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-25T08:45:10Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-25T08:45:10+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "4cfaf11137f70de805e4bf9ae0700efcd3c6ba70"
+        ],
+        "position": 2,
+        "pr_number": 114,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:00.992107+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/shakacode/control-plane-flow/pulls/114/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:00.992107+00:00",
+          "sha256": "318496d9010c2ae0fef9d74273617dca61f40b6727d7a44f3d8a6504c996b95f",
+          "source": "https://api.github.com/repos/shakacode/control-plane-flow/pulls/114/commits?per_page=100&page=1"
+        },
+        "repository": "shakacode/control-plane-flow",
+        "sha": "b38664f63439a65c3129c2bc9aa2ab2901e85e2f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4499a3d21c72abed493f5b05b5c595dcc8d4ca2f"
+      },
+      {
+        "author_time": "2023-11-25T08:52:42Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-25T08:52:42Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-25T08:52:42+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "b38664f63439a65c3129c2bc9aa2ab2901e85e2f"
+        ],
+        "position": 3,
+        "pr_number": 114,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:00.992107+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/shakacode/control-plane-flow/pulls/114/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:00.992107+00:00",
+          "sha256": "318496d9010c2ae0fef9d74273617dca61f40b6727d7a44f3d8a6504c996b95f",
+          "source": "https://api.github.com/repos/shakacode/control-plane-flow/pulls/114/commits?per_page=100&page=1"
+        },
+        "repository": "shakacode/control-plane-flow",
+        "sha": "79a03526261de403057fbf24c3de09e06ffd0239",
+        "temporal_basis": "committer_time",
+        "tree_sha": "55133d964835439c4221e4de36ecb798cce62225"
+      },
+      {
+        "author_time": "2023-11-25T11:00:56Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-25T11:00:56Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-25T11:00:56+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "79a03526261de403057fbf24c3de09e06ffd0239"
+        ],
+        "position": 4,
+        "pr_number": 114,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:00.992107+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/shakacode/control-plane-flow/pulls/114/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:00.992107+00:00",
+          "sha256": "318496d9010c2ae0fef9d74273617dca61f40b6727d7a44f3d8a6504c996b95f",
+          "source": "https://api.github.com/repos/shakacode/control-plane-flow/pulls/114/commits?per_page=100&page=1"
+        },
+        "repository": "shakacode/control-plane-flow",
+        "sha": "16a829fed56dd0d470960738fd9f6e2d9bb46365",
+        "temporal_basis": "committer_time",
+        "tree_sha": "da1dc22dba43fdcea9505a9743fef50dc2c07d3f"
+      },
+      {
+        "author_time": "2023-11-26T08:10:21Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-26T08:10:21Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-26T08:10:21+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "16a829fed56dd0d470960738fd9f6e2d9bb46365"
+        ],
+        "position": 5,
+        "pr_number": 114,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:00.992107+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/shakacode/control-plane-flow/pulls/114/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:00.992107+00:00",
+          "sha256": "318496d9010c2ae0fef9d74273617dca61f40b6727d7a44f3d8a6504c996b95f",
+          "source": "https://api.github.com/repos/shakacode/control-plane-flow/pulls/114/commits?per_page=100&page=1"
+        },
+        "repository": "shakacode/control-plane-flow",
+        "sha": "77ddae2f6381800631ca04aac523481c1dee961b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "21809852aef77ae888636147894216dcd9f840d6"
+      },
+      {
+        "author_time": "2023-11-27T16:54:12Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-27T16:54:12Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-27T16:54:12+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "77ddae2f6381800631ca04aac523481c1dee961b"
+        ],
+        "position": 6,
+        "pr_number": 114,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:00.992107+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/shakacode/control-plane-flow/pulls/114/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:00.992107+00:00",
+          "sha256": "318496d9010c2ae0fef9d74273617dca61f40b6727d7a44f3d8a6504c996b95f",
+          "source": "https://api.github.com/repos/shakacode/control-plane-flow/pulls/114/commits?per_page=100&page=1"
+        },
+        "repository": "shakacode/control-plane-flow",
+        "sha": "a86f323d7dc47011c177a08d106fc1b125652fb6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "54fecffce5ae5c57b3449e0c4ff52431f2ff57db"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-11-25T08:45:10Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-11-25T08:45:10Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-11-25T08:45:10+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "4cfaf11137f70de805e4bf9ae0700efcd3c6ba70"
+      ],
+      "position": 2,
+      "pr_number": 114,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:00.992107+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/shakacode/control-plane-flow/pulls/114/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:00.992107+00:00",
+        "sha256": "318496d9010c2ae0fef9d74273617dca61f40b6727d7a44f3d8a6504c996b95f",
+        "source": "https://api.github.com/repos/shakacode/control-plane-flow/pulls/114/commits?per_page=100&page=1"
+      },
+      "repository": "shakacode/control-plane-flow",
+      "sha": "b38664f63439a65c3129c2bc9aa2ab2901e85e2f",
+      "temporal_basis": "committer_time",
+      "tree_sha": "4499a3d21c72abed493f5b05b5c595dcc8d4ca2f"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-11-20T17:18:56Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-11-20T17:18:56Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-11-20T17:18:56+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "d8263b43daed771868433f1524c6b6746c6adc58"
+      ],
+      "position": 1,
+      "pr_number": 114,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:00.992107+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/shakacode/control-plane-flow/pulls/114/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:00.992107+00:00",
+        "sha256": "318496d9010c2ae0fef9d74273617dca61f40b6727d7a44f3d8a6504c996b95f",
+        "source": "https://api.github.com/repos/shakacode/control-plane-flow/pulls/114/commits?per_page=100&page=1"
+      },
+      "repository": "shakacode/control-plane-flow",
+      "sha": "4cfaf11137f70de805e4bf9ae0700efcd3c6ba70",
+      "temporal_basis": "committer_time",
+      "tree_sha": "84f76670e8aea79f57364158a92d78cf440c119c"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "4cfaf11137f70de805e4bf9ae0700efcd3c6ba70",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "d8263b43daed771868433f1524c6b6746c6adc58"
+    ],
+    "recursive_tree_entry_count": 150,
+    "recursive_tree_listing_sha256": "283e76cce4a55b7d265236238055ec19ab665f414cc68d71217af07c86faed59",
+    "retrieved_at": "2026-10-05T20:18:01.949002+00:00",
+    "source": "https://github.com/shakacode/control-plane-flow.git",
+    "status": "materialized",
+    "tree_sha": "84f76670e8aea79f57364158a92d78cf440c119c"
+  },
+  "pr_number": 114,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "d8263b43daed771868433f1524c6b6746c6adc58",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:00.992107+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/shakacode/control-plane-flow/pulls/114/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:00.992107+00:00",
+        "sha256": "318496d9010c2ae0fef9d74273617dca61f40b6727d7a44f3d8a6504c996b95f",
+        "source": "https://api.github.com/repos/shakacode/control-plane-flow/pulls/114/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:18:00.432084+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/shakacode/control-plane-flow/pulls/114"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:18:00.432084+00:00",
+      "sha256": "dcaf727d1439a6f8da054048c89e4240a85685733187237d13df93c9a8c19928",
+      "source": "https://api.github.com/repos/shakacode/control-plane-flow/pulls/114"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "shakacode/control-plane-flow",
+  "selected_state": {
+    "author_time": "2023-11-20T17:18:56Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "4cfaf11137f70de805e4bf9ae0700efcd3c6ba70",
+    "committer_time": "2023-11-20T17:18:56Z",
+    "effective_time": "2023-11-20T17:18:56+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "84f76670e8aea79f57364158a92d78cf440c119c"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-11-25T03:00:31.435024+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-11-25T03:00:40.760965+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

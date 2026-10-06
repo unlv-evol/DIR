@@ -1,0 +1,909 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-06-12T16:42:32Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-12T16:42:32Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-12T16:42:32+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "5612f064b7827f10606f771b5928f23eae3f606e",
+          "be0e173eddae18169cdec07d6882cf8325d34ab2"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:53.546649+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/commits?sha=main&until=2023-06-12T18%3A08%3A24.454929%2B00%3A00&per_page=1&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:53.546649+00:00",
+          "sha256": "bff3fb79f6c5217c640ae5a8404c14976d09840117181a7f8c268dc601bb6785",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/commits?sha=main&until=2023-06-12T18%3A08%3A24.454929%2B00%3A00&per_page=1&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "3cbc83b1decc28f38d27b9d2cf8f33f771e4b4a4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "23c08271c6768a9a5ee4ecf8de98f9fe597df2bf"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-06-12T16:42:32Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-06-12T16:42:32Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-06-12T16:42:32+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "5612f064b7827f10606f771b5928f23eae3f606e",
+        "be0e173eddae18169cdec07d6882cf8325d34ab2"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:53.546649+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/commits?sha=main&until=2023-06-12T18%3A08%3A24.454929%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:53.546649+00:00",
+        "sha256": "bff3fb79f6c5217c640ae5a8404c14976d09840117181a7f8c268dc601bb6785",
+        "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/commits?sha=main&until=2023-06-12T18%3A08%3A24.454929%2B00%3A00&per_page=1&page=1"
+      },
+      "repository": "viets-software-club/truffle-ai-backend",
+      "sha": "3cbc83b1decc28f38d27b9d2cf8f33f771e4b4a4",
+      "temporal_basis": "committer_time",
+      "tree_sha": "23c08271c6768a9a5ee4ecf8de98f9fe597df2bf"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "main",
+  "base_routing_source": "pr_base_ref",
+  "case_id": "CASE_A4CDC94D210B",
+  "executed_at": "2026-10-05T20:18:54.181124+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-06-16T07:04:54Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-16T07:04:54Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-16T07:04:54+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2a82c362a94f68ca5b333da76bffae3149977b9d"
+        ],
+        "position": 1,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "7111e5fdb9e6be7d5b5f27c3878d3f718fa1a262",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e452f0b1fec4ca946f624bb4e38e24a39e662856"
+      },
+      {
+        "author_time": "2023-06-17T06:39:03Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-17T06:39:03Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-17T06:39:03+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7111e5fdb9e6be7d5b5f27c3878d3f718fa1a262"
+        ],
+        "position": 2,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "09c7cf65d1b30d61256987fd5309b4a6ce303368",
+        "temporal_basis": "committer_time",
+        "tree_sha": "74b2e93d7a116dd63c11ae7cb2c0fdbb29d2b7e7"
+      },
+      {
+        "author_time": "2023-06-17T06:48:32Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-17T06:48:32Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-17T06:48:32+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "09c7cf65d1b30d61256987fd5309b4a6ce303368"
+        ],
+        "position": 3,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "8206b2496de3457e2ca455c8aad52219c78afe69",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8e8203dfcf22bb0a7cb7448f46b0477d695a8b07"
+      },
+      {
+        "author_time": "2023-06-17T06:51:50Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-17T06:51:50Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-17T06:51:50+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "cccdb3c8a35e9accb9f9bb4962d580640c99e4d0"
+        ],
+        "position": 4,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "1a56f646c7bed476fccd1343a13c425a9ad7bab1",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1b1c3714455ed6eb13cc2a699255dc9b20ef5b80"
+      },
+      {
+        "author_time": "2023-06-17T08:41:36Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-17T08:41:36Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-17T08:41:36+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "09c7cf65d1b30d61256987fd5309b4a6ce303368",
+          "0406fc9d758332f40864249f449317caa79e28d7"
+        ],
+        "position": 5,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "cfdc8a78a5066809b88c1c74c953928874518488",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6d34b88d4c6eb6aecbad7a4eeb83b1ab42d64fa5"
+      },
+      {
+        "author_time": "2023-06-17T06:49:10Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-17T06:49:10Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-17T06:49:10+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8206b2496de3457e2ca455c8aad52219c78afe69",
+          "cfdc8a78a5066809b88c1c74c953928874518488"
+        ],
+        "position": 6,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "cccdb3c8a35e9accb9f9bb4962d580640c99e4d0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "394290505ca35573524726658ab37c652a4945b2"
+      },
+      {
+        "author_time": "2023-06-17T13:59:18Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-17T13:59:18Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-17T13:59:18+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1a56f646c7bed476fccd1343a13c425a9ad7bab1"
+        ],
+        "position": 7,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "3687c01ac46215020f17b11707ada396fac7ee01",
+        "temporal_basis": "committer_time",
+        "tree_sha": "07ce8075efd7bf8593cf89fa25cea546cd8489c6"
+      },
+      {
+        "author_time": "2023-06-17T14:52:39Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-17T14:52:39Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-17T14:52:39+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "3687c01ac46215020f17b11707ada396fac7ee01"
+        ],
+        "position": 8,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "b529dd002670016c0c34b037236be43c8888021a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "93a0af514fbd939e2b43c80f4ef7a13f52dedec2"
+      },
+      {
+        "author_time": "2023-06-18T09:53:33Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-18T09:53:33Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-18T09:53:33+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "b529dd002670016c0c34b037236be43c8888021a"
+        ],
+        "position": 9,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "6c0ac21c3098bea396ddf27520505f8462759e0a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "edadef94a08ec0701755128dc348a27378aa0d9c"
+      },
+      {
+        "author_time": "2023-06-18T10:16:38Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-18T10:16:38Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-18T10:16:38+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6c0ac21c3098bea396ddf27520505f8462759e0a"
+        ],
+        "position": 10,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "d4dbbdf4a5a054dba69c5f63290a06e4591105eb",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5ea88c5b52d6c2845f42ecdb7dbf5015bae9d892"
+      },
+      {
+        "author_time": "2023-06-18T10:32:00Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-18T10:32:00Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-18T10:32:00+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d4dbbdf4a5a054dba69c5f63290a06e4591105eb"
+        ],
+        "position": 11,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "c74a2853d7ed2d5249bbd98846b8b0776e2eb51a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "397c346ec7e3ff1e15ac5328a273f098d12e8f2e"
+      },
+      {
+        "author_time": "2023-06-18T10:39:44Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-18T10:39:44Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-18T10:39:44+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "c74a2853d7ed2d5249bbd98846b8b0776e2eb51a"
+        ],
+        "position": 12,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "c9a9238e192dbe5489f645499ba4193579238b6b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "54a5c22fe780c938656c30da430a74936cf3c9d8"
+      },
+      {
+        "author_time": "2023-06-18T10:55:03Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-18T10:55:03Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-18T10:55:03+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "c9a9238e192dbe5489f645499ba4193579238b6b"
+        ],
+        "position": 13,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "047f67c4341dd6aad5b25688293a0ba164f92f9d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d5cda3414e809f39ec2f9b08fbd1a3f18466b921"
+      },
+      {
+        "author_time": "2023-06-18T11:00:33Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-18T11:00:33Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-18T11:00:33+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "047f67c4341dd6aad5b25688293a0ba164f92f9d"
+        ],
+        "position": 14,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "38b6231baae6c8c0e2a8985737b1066009f53ea1",
+        "temporal_basis": "committer_time",
+        "tree_sha": "54d39fcda951e2def43f25224b90b72c045a978f"
+      },
+      {
+        "author_time": "2023-06-18T11:04:09Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-18T11:04:09Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-18T11:04:09+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "38b6231baae6c8c0e2a8985737b1066009f53ea1"
+        ],
+        "position": 15,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "9826f248a44cb3a8bc6ea6da3b7bff1146e7760a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7aed1aab7144ea14e503e6952b9bfbbb1d6d15ad"
+      },
+      {
+        "author_time": "2023-06-18T21:22:28Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-18T21:22:28Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-18T21:22:28+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "9826f248a44cb3a8bc6ea6da3b7bff1146e7760a"
+        ],
+        "position": 16,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "afeba419fce025bc6f450a68ff13d4cdd4cd57c4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ab0813790ddc1690027adfccd0cb66d4fe9d87dc"
+      },
+      {
+        "author_time": "2023-06-19T03:51:18Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-19T03:51:18Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-19T03:51:18+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "afeba419fce025bc6f450a68ff13d4cdd4cd57c4"
+        ],
+        "position": 17,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "e3fca4652be8f0574053ee620b341dfd101caf27",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6e892c4946f93a269ac37233354cfc2dd056a578"
+      },
+      {
+        "author_time": "2023-06-19T04:20:16Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-19T04:20:16Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-19T04:20:16+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e3fca4652be8f0574053ee620b341dfd101caf27"
+        ],
+        "position": 18,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "d51b0f445f43153c0e4989734ed418cd36c0eeaf",
+        "temporal_basis": "committer_time",
+        "tree_sha": "cf49b180f5c8dfbaf589569877870d22acb33c63"
+      },
+      {
+        "author_time": "2023-06-19T04:24:39Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-19T04:24:39Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-19T04:24:39+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d51b0f445f43153c0e4989734ed418cd36c0eeaf"
+        ],
+        "position": 19,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "9677a9cfa3768ad64c1406fc8c37cf09b437429d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ffb0506b27db8747c1d087582c7b434de4adb79c"
+      },
+      {
+        "author_time": "2023-06-19T04:39:07Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-19T04:39:07Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-19T04:39:07+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "9677a9cfa3768ad64c1406fc8c37cf09b437429d"
+        ],
+        "position": 20,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "8e41b27335ef3ef18adfc900b9abedd8995533f7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e1d3cd1f29a278c5188864faa3f17ea4510d7bec"
+      },
+      {
+        "author_time": "2023-06-19T04:43:54Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-19T04:43:54Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-19T04:43:54+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8e41b27335ef3ef18adfc900b9abedd8995533f7"
+        ],
+        "position": 21,
+        "pr_number": 52,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+          "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+          "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+        },
+        "repository": "viets-software-club/truffle-ai-backend",
+        "sha": "d8db46367fb70dfb775542f163160b08695ec488",
+        "temporal_basis": "committer_time",
+        "tree_sha": "693799356ca786a224fd793038b96422a5166e9c"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-06-16T07:04:54Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-06-16T07:04:54Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-06-16T07:04:54+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "2a82c362a94f68ca5b333da76bffae3149977b9d"
+      ],
+      "position": 1,
+      "pr_number": 52,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+        "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+        "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+      },
+      "repository": "viets-software-club/truffle-ai-backend",
+      "sha": "7111e5fdb9e6be7d5b5f27c3878d3f718fa1a262",
+      "temporal_basis": "committer_time",
+      "tree_sha": "e452f0b1fec4ca946f624bb4e38e24a39e662856"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "3cbc83b1decc28f38d27b9d2cf8f33f771e4b4a4",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "5612f064b7827f10606f771b5928f23eae3f606e",
+      "be0e173eddae18169cdec07d6882cf8325d34ab2"
+    ],
+    "recursive_tree_entry_count": 85,
+    "recursive_tree_listing_sha256": "0b53f61e4bac9b06c6fd42e71dfd77b83cc565fb22ef4fce9b388595e384626b",
+    "retrieved_at": "2026-10-05T20:18:54.167899+00:00",
+    "source": "https://github.com/viets-software-club/truffle-ai-backend.git",
+    "status": "materialized",
+    "tree_sha": "23c08271c6768a9a5ee4ecf8de98f9fe597df2bf"
+  },
+  "pr_number": 52,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:53.025582+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/git/ref/heads/main"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:53.025582+00:00",
+        "sha256": "d9194039f4043b1a87ecd97346f404837c5a0484542916bf00ffa1a63e8e4c7b",
+        "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/git/ref/heads/main"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:53.546649+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/commits?sha=main&until=2023-06-12T18%3A08%3A24.454929%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:53.546649+00:00",
+        "sha256": "bff3fb79f6c5217c640ae5a8404c14976d09840117181a7f8c268dc601bb6785",
+        "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/commits?sha=main&until=2023-06-12T18%3A08%3A24.454929%2B00%3A00&per_page=1&page=1"
+      }
+    ],
+    "base_route_evidence": {
+      "ref_object_sha": "e49fccdc8f44dc251145c0b43aa0ced28ad92f20",
+      "rule": "recorded_pr_base_ref_resolves"
+    },
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "0406fc9d758332f40864249f449317caa79e28d7",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:52.610948+00:00",
+        "sha256": "9ac0da6a57df35acda7ea0ca84dcaee67444eb086fdecb064a4364420d423b90",
+        "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:18:51.896453+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:18:51.896453+00:00",
+      "sha256": "f508e0203bcb2826ef7e37325bee09993f9a017b45be9fb95e8de168f6948077",
+      "source": "https://api.github.com/repos/viets-software-club/truffle-ai-backend/pulls/52"
+    },
+    "recorded_pr_base_ref_resolves": true
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "viets-software-club/truffle-ai-backend",
+  "selected_state": {
+    "author_time": "2023-06-12T16:42:32Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "3cbc83b1decc28f38d27b9d2cf8f33f771e4b4a4",
+    "committer_time": "2023-06-12T16:42:32Z",
+    "effective_time": "2023-06-12T16:42:32+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "23c08271c6768a9a5ee4ecf8de98f9fe597df2bf"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-06-12T18:08:13.877268+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-06-12T18:08:24.454929+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

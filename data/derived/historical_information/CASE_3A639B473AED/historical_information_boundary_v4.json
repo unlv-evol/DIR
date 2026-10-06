@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_3A639B473AED",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "8deb68c2daddad7466f3301c381da937e9e3ddab",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "1a37f7b865e5f51a9dfac023a3663256dd7ca268"
+    ],
+    "recursive_tree_entry_count": 326,
+    "recursive_tree_listing_sha256": "e988c96eaa4cabf152f6d467cdce7f359aed5bba1d33c97c5b672b4e03433b82",
+    "retrieved_at": "2026-10-05T20:16:42.369384+00:00",
+    "source": "https://github.com/PrivateBin/PrivateBin.git",
+    "status": "materialized",
+    "tree_sha": "4758da1bcd3047ee3866fc4ea1dfd09a0cf83b86"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_3A639B473AED/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_3A639B473AED/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "PrivateBin/PrivateBin",
+  "selected_state": {
+    "author_time": "2023-08-07T17:26:26Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "8deb68c2daddad7466f3301c381da937e9e3ddab",
+    "committer_time": "2023-08-07T17:26:26Z",
+    "effective_time": "2023-08-07T17:26:26+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "4758da1bcd3047ee3866fc4ea1dfd09a0cf83b86"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-08-07T17:40:16.134775+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

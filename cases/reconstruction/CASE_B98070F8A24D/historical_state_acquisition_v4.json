@@ -1,0 +1,341 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-11-20T16:06:56Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-22T09:49:45Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-22T09:49:45+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "b373af922ba607666f1fad49fc40ebe8150e2892"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:07:01.686749+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pass-culture/pass-culture-main/commits/5a5aba61ea05ea746235452b7b56ce018919e48b"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:07:01.686749+00:00",
+          "sha256": "908bd63de21f63acf053b1947e9e70c6b0d33c0ee6051d077de179cafd7ed6ce",
+          "source": "https://api.github.com/repos/pass-culture/pass-culture-main/commits/5a5aba61ea05ea746235452b7b56ce018919e48b"
+        },
+        "repository": "pass-culture/pass-culture-main",
+        "sha": "5a5aba61ea05ea746235452b7b56ce018919e48b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0dcc5ad56b2581a8ae7ed52f8872fdb966dfaaa7"
+      },
+      {
+        "author_time": "2023-11-22T13:25:21Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-22T14:13:41Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-22T14:13:41+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "5a5aba61ea05ea746235452b7b56ce018919e48b"
+        ],
+        "position": 2,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:07:01.062789+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pass-culture/pass-culture-main/commits/f928f03f9bf267c505f449dd540c8b3985bcbdc8"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:07:01.062789+00:00",
+          "sha256": "0f528209c67716c719f6062d7bff59c87c9321320bdfc746cf8fff8c6af4f0e0",
+          "source": "https://api.github.com/repos/pass-culture/pass-culture-main/commits/f928f03f9bf267c505f449dd540c8b3985bcbdc8"
+        },
+        "repository": "pass-culture/pass-culture-main",
+        "sha": "f928f03f9bf267c505f449dd540c8b3985bcbdc8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "65c2a6f770fefdd09a02ac4fee6b095f21231d2a"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-11-22T13:25:21Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-11-22T14:13:41Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-11-22T14:13:41+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "5a5aba61ea05ea746235452b7b56ce018919e48b"
+      ],
+      "position": 2,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:07:01.062789+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/pass-culture/pass-culture-main/commits/f928f03f9bf267c505f449dd540c8b3985bcbdc8"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:07:01.062789+00:00",
+        "sha256": "0f528209c67716c719f6062d7bff59c87c9321320bdfc746cf8fff8c6af4f0e0",
+        "source": "https://api.github.com/repos/pass-culture/pass-culture-main/commits/f928f03f9bf267c505f449dd540c8b3985bcbdc8"
+      },
+      "repository": "pass-culture/pass-culture-main",
+      "sha": "f928f03f9bf267c505f449dd540c8b3985bcbdc8",
+      "temporal_basis": "committer_time",
+      "tree_sha": "65c2a6f770fefdd09a02ac4fee6b095f21231d2a"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-11-20T16:06:56Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-11-22T09:49:45Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-11-22T09:49:45+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "b373af922ba607666f1fad49fc40ebe8150e2892"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:07:01.686749+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/pass-culture/pass-culture-main/commits/5a5aba61ea05ea746235452b7b56ce018919e48b"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:07:01.686749+00:00",
+        "sha256": "908bd63de21f63acf053b1947e9e70c6b0d33c0ee6051d077de179cafd7ed6ce",
+        "source": "https://api.github.com/repos/pass-culture/pass-culture-main/commits/5a5aba61ea05ea746235452b7b56ce018919e48b"
+      },
+      "repository": "pass-culture/pass-culture-main",
+      "sha": "5a5aba61ea05ea746235452b7b56ce018919e48b",
+      "temporal_basis": "committer_time",
+      "tree_sha": "0dcc5ad56b2581a8ae7ed52f8872fdb966dfaaa7"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "PC-25429-use-paginated-route-for-stock-event",
+  "base_routing_source": "other_explicitly_justified_route",
+  "case_id": "CASE_B98070F8A24D",
+  "executed_at": "2026-10-05T20:07:04.608355+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-11-20T15:45:57Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2023-11-27T09:13:43Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-27T09:13:43+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f928f03f9bf267c505f449dd540c8b3985bcbdc8"
+        ],
+        "position": 1,
+        "pr_number": 9227,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:06:59.931391+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pass-culture/pass-culture-main/pulls/9227/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:06:59.931391+00:00",
+          "sha256": "d6472b4d76114d3a0aa24d7eac48f6697e3e6c82a0bcf05d1c107d687ae02ae3",
+          "source": "https://api.github.com/repos/pass-culture/pass-culture-main/pulls/9227/commits?per_page=100&page=1"
+        },
+        "repository": "pass-culture/pass-culture-main",
+        "sha": "3cf548a123ea1a62fe8f4110d037b7ccf5f9866a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3c2fb0f75e147a34d482a36f90291c7b9962b90b"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-11-20T15:45:57Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "crosses_tfg",
+      "committer_time": "2023-11-27T09:13:43Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-11-27T09:13:43+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "f928f03f9bf267c505f449dd540c8b3985bcbdc8"
+      ],
+      "position": 1,
+      "pr_number": 9227,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:06:59.931391+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/pass-culture/pass-culture-main/pulls/9227/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:06:59.931391+00:00",
+        "sha256": "d6472b4d76114d3a0aa24d7eac48f6697e3e6c82a0bcf05d1c107d687ae02ae3",
+        "source": "https://api.github.com/repos/pass-culture/pass-culture-main/pulls/9227/commits?per_page=100&page=1"
+      },
+      "repository": "pass-culture/pass-culture-main",
+      "sha": "3cf548a123ea1a62fe8f4110d037b7ccf5f9866a",
+      "temporal_basis": "committer_time",
+      "tree_sha": "3c2fb0f75e147a34d482a36f90291c7b9962b90b"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "5a5aba61ea05ea746235452b7b56ce018919e48b",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "b373af922ba607666f1fad49fc40ebe8150e2892"
+    ],
+    "recursive_tree_entry_count": 6463,
+    "recursive_tree_listing_sha256": "04124fcee7f2aec202074a06a347920fdabff403fc0bf365a34fdb4703075966",
+    "retrieved_at": "2026-10-05T20:07:04.604674+00:00",
+    "source": "https://github.com/pass-culture/pass-culture-main.git",
+    "status": "materialized",
+    "tree_sha": "0dcc5ad56b2581a8ae7ed52f8872fdb966dfaaa7"
+  },
+  "pr_number": 9227,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 404,
+            "retrieved_at": "2026-10-05T20:07:00.383413+00:00",
+            "status": "repository_unavailable",
+            "url": "https://api.github.com/repos/pass-culture/pass-culture-main/git/ref/heads/PC-25429-use-paginated-route-for-stock-event"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:07:00.383413+00:00",
+        "source": "https://api.github.com/repos/pass-culture/pass-culture-main/git/ref/heads/PC-25429-use-paginated-route-for-stock-event"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:07:01.062789+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/pass-culture/pass-culture-main/commits/f928f03f9bf267c505f449dd540c8b3985bcbdc8"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:07:01.062789+00:00",
+        "sha256": "0f528209c67716c719f6062d7bff59c87c9321320bdfc746cf8fff8c6af4f0e0",
+        "source": "https://api.github.com/repos/pass-culture/pass-culture-main/commits/f928f03f9bf267c505f449dd540c8b3985bcbdc8"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:07:01.686749+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/pass-culture/pass-culture-main/commits/5a5aba61ea05ea746235452b7b56ce018919e48b"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:07:01.686749+00:00",
+        "sha256": "908bd63de21f63acf053b1947e9e70c6b0d33c0ee6051d077de179cafd7ed6ce",
+        "source": "https://api.github.com/repos/pass-culture/pass-culture-main/commits/5a5aba61ea05ea746235452b7b56ce018919e48b"
+      }
+    ],
+    "base_route_evidence": {
+      "anchor_reason": "unique_focal_root_external_parent",
+      "anchor_sha": "f928f03f9bf267c505f449dd540c8b3985bcbdc8",
+      "rule": "unique_focal_root_external_parent_ancestry"
+    },
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "f928f03f9bf267c505f449dd540c8b3985bcbdc8",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:06:59.931391+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/pass-culture/pass-culture-main/pulls/9227/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:06:59.931391+00:00",
+        "sha256": "d6472b4d76114d3a0aa24d7eac48f6697e3e6c82a0bcf05d1c107d687ae02ae3",
+        "source": "https://api.github.com/repos/pass-culture/pass-culture-main/pulls/9227/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:06:59.411359+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/pass-culture/pass-culture-main/pulls/9227"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:06:59.411359+00:00",
+      "sha256": "426cf4693c647f5f838625819e1469ebc1bffcea28bc6efe229a11f416894729",
+      "source": "https://api.github.com/repos/pass-culture/pass-culture-main/pulls/9227"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "pass-culture/pass-culture-main",
+  "selected_state": {
+    "author_time": "2023-11-20T16:06:56Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "5a5aba61ea05ea746235452b7b56ce018919e48b",
+    "committer_time": "2023-11-22T09:49:45Z",
+    "effective_time": "2023-11-22T09:49:45+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "0dcc5ad56b2581a8ae7ed52f8872fdb966dfaaa7"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-11-22T09:49:48.179225+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-11-22T09:50:27.931547+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

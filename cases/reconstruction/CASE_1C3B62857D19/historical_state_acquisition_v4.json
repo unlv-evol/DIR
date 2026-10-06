@@ -1,0 +1,1387 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_1C3B62857D19",
+  "executed_at": "2026-10-05T20:16:00.876635+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-11-16T22:57:38Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-16T22:57:38Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-16T22:57:38+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "33c7fc7531d8254ec12c322e37685b63cdac7dc3"
+        ],
+        "position": 1,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "5d9ee4a4c6ada035849d632bb6d04c6c7d5f26fe",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0632ab87128cfbaccde4282dd51d66bf009a7b29"
+      },
+      {
+        "author_time": "2023-11-20T01:19:01Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-20T01:19:01Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-20T01:19:01+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "5d9ee4a4c6ada035849d632bb6d04c6c7d5f26fe",
+          "9b70e3e1ddd813eb89fad579613eb40cd8c3cab8"
+        ],
+        "position": 2,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "8fdb607e47ea4e6aad91fc977f790c6f711bfc5e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f70f30d0500cd8f6d0f5dab3d3ea3940d5e8f4df"
+      },
+      {
+        "author_time": "2023-11-20T15:51:02Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-20T15:51:02Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-20T15:51:02+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "8fdb607e47ea4e6aad91fc977f790c6f711bfc5e"
+        ],
+        "position": 3,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "d064c85efb06cc2eaf1dd31bca5a7e2ba8fc00f1",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7cd4a9ff7f81a0495f02b17fd62e9a6c0d25c95b"
+      },
+      {
+        "author_time": "2023-11-20T15:51:51Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-20T15:51:51Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-20T15:51:51+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d064c85efb06cc2eaf1dd31bca5a7e2ba8fc00f1"
+        ],
+        "position": 4,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "efc6a58b7a17aa42fe4b36aa10e719e4ce212868",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6f3c9564fef53a4a508f0dc2b83a212b477e53a1"
+      },
+      {
+        "author_time": "2023-12-16T00:55:16Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-16T00:55:16Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-16T00:55:16+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "efc6a58b7a17aa42fe4b36aa10e719e4ce212868"
+        ],
+        "position": 5,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "f3d67a35e6401a4a97fb0f437043d5810731037b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2be108358029fbbcd5bdac6f111c98c25baa30bb"
+      },
+      {
+        "author_time": "2023-12-16T00:55:23Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-16T00:55:23Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-16T00:55:23+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f3d67a35e6401a4a97fb0f437043d5810731037b",
+          "7faf4867043fe478b241555337316aa9e092e134"
+        ],
+        "position": 6,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "02648a0f7c03eec47e7746cd057f2718f5e0c3d8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "bb1eaf31ecf7bc9ed6c402b87a469cfb03065053"
+      },
+      {
+        "author_time": "2023-12-16T01:42:53Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-16T01:42:53Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-16T01:42:53+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "02648a0f7c03eec47e7746cd057f2718f5e0c3d8"
+        ],
+        "position": 7,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "8d0ec85794030bac8aaba6f034e8ebd476605c1b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "69e256ab81a32832a05ae8e2ee664f695233fa10"
+      },
+      {
+        "author_time": "2023-12-18T17:43:59Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-18T17:43:59Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-18T17:43:59+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "8d0ec85794030bac8aaba6f034e8ebd476605c1b",
+          "546ff753090f67d2aaf0605d2a6f2924ac49e1a2"
+        ],
+        "position": 8,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "9191cc70309da972743773720c04dee918ee6b4d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ac88eef09bba666a0436b5e33cb193105a45ee90"
+      },
+      {
+        "author_time": "2023-12-18T17:54:47Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-18T17:54:47Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-18T17:54:47+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "9191cc70309da972743773720c04dee918ee6b4d"
+        ],
+        "position": 9,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "cacf264806efda9c6166955cfaa1719e87de3092",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f590d4bbec17acc885eed64f5080cedc6849195a"
+      },
+      {
+        "author_time": "2023-12-18T18:57:06Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-18T18:57:06Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-18T18:57:06+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "cacf264806efda9c6166955cfaa1719e87de3092"
+        ],
+        "position": 10,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "b34b3861d83ec59cb1131a6b125c4ae653610434",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c0bce99c8525e1acd84c9ad990375e4fd33333f7"
+      },
+      {
+        "author_time": "2023-12-22T14:01:00Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-22T14:01:00Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-22T14:01:00+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "b34b3861d83ec59cb1131a6b125c4ae653610434",
+          "3ee4a2a8e67f00284f2787bfcd94c219cfa0cae0"
+        ],
+        "position": 11,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "4b11d350344f3a81b2cdfa9e5ce0dfa2ca0ce54d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2f76a549c8ce24bb2fe41b1b19821e0441422145"
+      },
+      {
+        "author_time": "2023-12-22T16:22:29Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-22T16:22:29Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-22T16:22:29+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "4b11d350344f3a81b2cdfa9e5ce0dfa2ca0ce54d"
+        ],
+        "position": 12,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "eb4b944e0dbcc6894797bfb65f7cab1b11b8cd97",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c82741a79fc4a684ddd28ecd40f4247291812c8c"
+      },
+      {
+        "author_time": "2023-12-22T16:25:39Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-22T16:25:39Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-22T16:25:39+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "eb4b944e0dbcc6894797bfb65f7cab1b11b8cd97"
+        ],
+        "position": 13,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "459de2efc71e37165118d0fbe47f5a510ebb13d0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4718d890278e661044d45246504bbab7746de9e1"
+      },
+      {
+        "author_time": "2023-12-22T16:34:33Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-22T16:34:33Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-22T16:34:33+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "459de2efc71e37165118d0fbe47f5a510ebb13d0"
+        ],
+        "position": 14,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "061d7ecc053e79b78de923a5b678c62ff8e31a93",
+        "temporal_basis": "committer_time",
+        "tree_sha": "101ad39c2d91000123304f52f40f7b049a18f2b4"
+      },
+      {
+        "author_time": "2023-12-22T17:07:45Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-22T17:07:45Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-22T17:07:45+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "061d7ecc053e79b78de923a5b678c62ff8e31a93"
+        ],
+        "position": 15,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "b2db88c2f333b52487718f33d82bcbfea754f31d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ea29447947634247d360b230a0e2538e287d307f"
+      },
+      {
+        "author_time": "2023-12-29T18:10:03Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-29T18:10:03Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-29T18:10:03+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "b2db88c2f333b52487718f33d82bcbfea754f31d",
+          "636a7f15e0b752946b9ba0e655a414837c548901"
+        ],
+        "position": 16,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "a8a51e55f9ca5698972c88224abec2231e9cc2d4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e1146a351fcf6c8d36a852fcff220dce933fedbd"
+      },
+      {
+        "author_time": "2024-01-05T21:40:12Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-05T21:40:12Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-05T21:40:12+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a8a51e55f9ca5698972c88224abec2231e9cc2d4"
+        ],
+        "position": 17,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "7d17a61a4724b10d1957f0161f13ba267239f01e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d4485768a7db0795b38c50deddc82453d95ed1f0"
+      },
+      {
+        "author_time": "2024-01-05T22:52:02Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-05T22:52:02Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-05T22:52:02+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7f0ecf689e15b150cc61d4480e109ad51400b91f"
+        ],
+        "position": 18,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "ab360258bde666b8b5e3f8920c0673142d1fe431",
+        "temporal_basis": "committer_time",
+        "tree_sha": "716181f342d4314b901105972e817917161351da"
+      },
+      {
+        "author_time": "2024-01-05T22:55:03Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-05T22:55:03Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-05T22:55:03+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7d17a61a4724b10d1957f0161f13ba267239f01e"
+        ],
+        "position": 19,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "a4c5a8719e884435f7cbf33c7438bc41b2130cbb",
+        "temporal_basis": "committer_time",
+        "tree_sha": "fed8a64e7a79d333fccb59aa3cbdfafac9b92a72"
+      },
+      {
+        "author_time": "2024-01-05T22:55:56Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-05T22:55:56Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-05T22:55:56+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a4c5a8719e884435f7cbf33c7438bc41b2130cbb",
+          "ab360258bde666b8b5e3f8920c0673142d1fe431"
+        ],
+        "position": 20,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "6f420af074ad588ee0643dcdeb734ea94dc3a046",
+        "temporal_basis": "committer_time",
+        "tree_sha": "595816dbbdc1f7d24427dc5495f936516fe1f535"
+      },
+      {
+        "author_time": "2024-01-07T23:23:27Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-07T23:23:27Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-07T23:23:27+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "6f420af074ad588ee0643dcdeb734ea94dc3a046"
+        ],
+        "position": 21,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "45fc26712ca29340d00e4e86e7ca8511dbb23aae",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0bef049cf97e44a4d67fd727f7535d4618c46fbe"
+      },
+      {
+        "author_time": "2024-01-07T23:27:58Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-07T23:27:58Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-07T23:27:58+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "45fc26712ca29340d00e4e86e7ca8511dbb23aae",
+          "af32f5fc9286770e5f85f7037d215a5ccd2c42a2"
+        ],
+        "position": 22,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "2d6bcc88855f86e2373caf0432b50b30d7ca8035",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1150748437b7ce9d5e7d827e21d4c3368339198f"
+      },
+      {
+        "author_time": "2024-01-11T18:31:26Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-11T18:31:47Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-11T18:31:47+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ead333eec90a46d18afd327f7aa29fdeadf40559"
+        ],
+        "position": 23,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "500905401d1ac89ff2392a5016c9959d2c621451",
+        "temporal_basis": "committer_time",
+        "tree_sha": "64d5413effae05b9d9b1618c6289afea6bca3fbc"
+      },
+      {
+        "author_time": "2024-01-11T18:54:45Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-11T18:54:45Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-11T18:54:45+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "2d6bcc88855f86e2373caf0432b50b30d7ca8035"
+        ],
+        "position": 24,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "7df19d07d8b7fb97a8d91f2ba265e9e72c2933bb",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5fc6da7c09a45ece91b6352264da60da6e39c086"
+      },
+      {
+        "author_time": "2024-01-11T19:01:20Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-11T19:01:20Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-11T19:01:20+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7df19d07d8b7fb97a8d91f2ba265e9e72c2933bb",
+          "500905401d1ac89ff2392a5016c9959d2c621451"
+        ],
+        "position": 25,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "d9ec799f73a73c17994d53e5297b5470956df9ef",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0f000ccafa459980bfb8190ea7757a2878a57a40"
+      },
+      {
+        "author_time": "2024-01-11T19:27:53Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-11T19:27:53Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-11T19:27:53+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d9ec799f73a73c17994d53e5297b5470956df9ef"
+        ],
+        "position": 26,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "ec4b7f98f5ea3ecbc2ff9aa5d2ec1606bf9d6214",
+        "temporal_basis": "committer_time",
+        "tree_sha": "44b066f3e211ed37d7e64d0739acf96445614200"
+      },
+      {
+        "author_time": "2024-01-12T02:01:15Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-12T02:01:15Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-12T02:01:15+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ec4b7f98f5ea3ecbc2ff9aa5d2ec1606bf9d6214",
+          "8f0743c57d38ef69f87924faa7adb05564aca2f9"
+        ],
+        "position": 27,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "ea5244fa4b7515a65184fd318d99dcc17bbff10c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e5e47d198fd12dbb65827b8eb89fe2a7eff5b534"
+      },
+      {
+        "author_time": "2024-01-12T21:30:15Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-12T21:30:15Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-12T21:30:15+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ea5244fa4b7515a65184fd318d99dcc17bbff10c"
+        ],
+        "position": 28,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "9d88ffd203ea69eea717f82a7a6a33c569fbfcc7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ea430f5a4c4ca4c5ebb0c49e3855311533e97d4b"
+      },
+      {
+        "author_time": "2024-01-12T21:44:14Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-12T21:44:14Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-12T21:44:14+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "9d88ffd203ea69eea717f82a7a6a33c569fbfcc7"
+        ],
+        "position": 29,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "f3248e54401e171fb551dffea7c33b50bd88b02e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "93fa0c48945e9c5b1ff20cf9e21a936e4f12d2a0"
+      },
+      {
+        "author_time": "2024-01-15T23:30:00Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-15T23:30:00Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-15T23:30:00+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f3248e54401e171fb551dffea7c33b50bd88b02e"
+        ],
+        "position": 30,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "9d71533ab51cd7db28640dc6194eec0a916a0fb0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8a44733f9a284773327732b86e26fe144d81dfd5"
+      },
+      {
+        "author_time": "2024-01-14T16:21:57Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2024-01-16T13:06:10Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-16T13:06:10+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "9d71533ab51cd7db28640dc6194eec0a916a0fb0"
+        ],
+        "position": 31,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "f73a81c07450a521f012de6165021a7a6b683380",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3da794f298cdebee9a1d1adc32076b9ca2bec1f6"
+      },
+      {
+        "author_time": "2024-01-14T22:37:38Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2024-01-16T13:06:10Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-16T13:06:10+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f73a81c07450a521f012de6165021a7a6b683380"
+        ],
+        "position": 32,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "4ca228dc5c850ed2d347d5f2461746bcef265301",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ddac05e42ec5f9d21e32900b364344189cc969d6"
+      },
+      {
+        "author_time": "2024-01-16T17:16:29Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-16T17:16:29Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-16T17:16:29+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "0e4fbad6be60e5662bc550cc3df1218007991572",
+          "4ca228dc5c850ed2d347d5f2461746bcef265301"
+        ],
+        "position": 33,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "d0bdb80886a7deff175608282baa8e3135996ded",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ac8382043291d78c45d4ae16fc02204fbdf6ba05"
+      },
+      {
+        "author_time": "2024-01-16T17:49:33Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-16T17:49:33Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-16T17:49:33+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d0bdb80886a7deff175608282baa8e3135996ded"
+        ],
+        "position": 34,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "2a95a4914fce5c66c07c45fd4b7b4828087dc582",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1094319e09f5874bb6bdaf1fec0999ed47ccca99"
+      },
+      {
+        "author_time": "2024-01-16T19:27:16Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-16T19:27:16Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-16T19:27:16+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2a95a4914fce5c66c07c45fd4b7b4828087dc582",
+          "ca3d4eb6f4b9c875874e1e937f17cd5375ed4dc3"
+        ],
+        "position": 35,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "b65dd4b57e7475fb410d3c7355cf6496ba5bc2b3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "cb290aaff762168c85deba56ff06635703ed7934"
+      },
+      {
+        "author_time": "2024-01-16T19:27:50Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-16T19:27:50Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-16T19:27:50+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "b65dd4b57e7475fb410d3c7355cf6496ba5bc2b3"
+        ],
+        "position": 36,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "8190f4042f8b0c5bef404396c89c22d0208623f0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c950fe1756e20589eaba97834b6d41671762af0a"
+      },
+      {
+        "author_time": "2024-01-16T21:16:29Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-16T21:16:29Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-16T21:16:29+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8190f4042f8b0c5bef404396c89c22d0208623f0"
+        ],
+        "position": 37,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "8e6f5ecfaaa2b60b153e9a4b04564b296e95cbce",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8089481b3fd614d1ec5a72484e45d468653fc665"
+      },
+      {
+        "author_time": "2024-01-16T22:04:10Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-16T22:04:10Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-01-16T22:04:10+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8e6f5ecfaaa2b60b153e9a4b04564b296e95cbce"
+        ],
+        "position": 38,
+        "pr_number": 301,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+          "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+          "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+        },
+        "repository": "langroid/langroid",
+        "sha": "6eb1baa48c7994af241c6daac998f7870f0ce4b4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "66111a982027559852052852f5aad5da11576b70"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2024-01-15T23:30:00Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-01-15T23:30:00Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2024-01-15T23:30:00+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "f3248e54401e171fb551dffea7c33b50bd88b02e"
+      ],
+      "position": 30,
+      "pr_number": 301,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+        "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+        "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+      },
+      "repository": "langroid/langroid",
+      "sha": "9d71533ab51cd7db28640dc6194eec0a916a0fb0",
+      "temporal_basis": "committer_time",
+      "tree_sha": "8a44733f9a284773327732b86e26fe144d81dfd5"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-01-12T21:44:14Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-01-12T21:44:14Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-01-12T21:44:14+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "9d88ffd203ea69eea717f82a7a6a33c569fbfcc7"
+      ],
+      "position": 29,
+      "pr_number": 301,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+        "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+        "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+      },
+      "repository": "langroid/langroid",
+      "sha": "f3248e54401e171fb551dffea7c33b50bd88b02e",
+      "temporal_basis": "committer_time",
+      "tree_sha": "93fa0c48945e9c5b1ff20cf9e21a936e4f12d2a0"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "f3248e54401e171fb551dffea7c33b50bd88b02e",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "9d88ffd203ea69eea717f82a7a6a33c569fbfcc7"
+    ],
+    "recursive_tree_entry_count": 327,
+    "recursive_tree_listing_sha256": "4e7cdc7ee173c257a046471a3b15dada3d3769fde86c44d1dc112c8883a1d9d7",
+    "retrieved_at": "2026-10-05T20:16:00.873189+00:00",
+    "source": "https://github.com/langroid/langroid.git",
+    "status": "materialized",
+    "tree_sha": "93fa0c48945e9c5b1ff20cf9e21a936e4f12d2a0"
+  },
+  "pr_number": 301,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "ca3d4eb6f4b9c875874e1e937f17cd5375ed4dc3",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:59.314047+00:00",
+        "sha256": "572f15fc93ab61485aa78e555b327f369de269016ff1f202bf20a8c22fd27556",
+        "source": "https://api.github.com/repos/langroid/langroid/pulls/301/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:15:58.520163+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/langroid/langroid/pulls/301"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:15:58.520163+00:00",
+      "sha256": "ca0d397d1b6e3edc85a9adee05485cfdd42970999a5791ea732823dee90f9922",
+      "source": "https://api.github.com/repos/langroid/langroid/pulls/301"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "langroid/langroid",
+  "selected_state": {
+    "author_time": "2024-01-12T21:44:14Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "f3248e54401e171fb551dffea7c33b50bd88b02e",
+    "committer_time": "2024-01-12T21:44:14Z",
+    "effective_time": "2024-01-12T21:44:14+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "93fa0c48945e9c5b1ff20cf9e21a936e4f12d2a0"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-01-15T00:03:34.811640+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-01-15T00:03:53.295269+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

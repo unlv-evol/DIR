@@ -1,0 +1,517 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "main",
+  "base_routing_source": "",
+  "case_id": "CASE_E8F12807DBDC",
+  "executed_at": "2026-10-05T22:50:25.939182+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-11-21T17:42:44Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-21T17:42:44Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-21T17:42:44+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ec9bb0f85d99ffa7ada97772b71ee69e649aeea0"
+        ],
+        "position": 1,
+        "pr_number": 796,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+          "sha256": "04deabd7a474eade560d8a5c5d114b4ef4ecb96a12b142757b98da244e39b41b",
+          "source": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+        },
+        "repository": "annuaire-entreprises-data-gouv-fr/site",
+        "sha": "c6241717a0e2e70f650b1edefe88973e7f75493f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d3e0dee41213f369c1437bb9b18a225213d0e916"
+      },
+      {
+        "author_time": "2023-11-21T18:13:14Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-21T18:13:14Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-21T18:13:14+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c6241717a0e2e70f650b1edefe88973e7f75493f",
+          "69497194cb40cde109f5b69e8676c90a524e8765"
+        ],
+        "position": 2,
+        "pr_number": 796,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+          "sha256": "04deabd7a474eade560d8a5c5d114b4ef4ecb96a12b142757b98da244e39b41b",
+          "source": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+        },
+        "repository": "annuaire-entreprises-data-gouv-fr/site",
+        "sha": "a5f6b84150bd3a12d87cf877667784f2a1c40029",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6398ea5ca8676bef91beed780e737187d48e0b77"
+      },
+      {
+        "author_time": "2023-11-24T13:54:55Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-24T13:54:55Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-24T13:54:55+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a5f6b84150bd3a12d87cf877667784f2a1c40029"
+        ],
+        "position": 3,
+        "pr_number": 796,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+          "sha256": "04deabd7a474eade560d8a5c5d114b4ef4ecb96a12b142757b98da244e39b41b",
+          "source": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+        },
+        "repository": "annuaire-entreprises-data-gouv-fr/site",
+        "sha": "33915ec15ffd1d5164c28da50be2cbc653d285a7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ad1d0a7cc24dd840ab8e4c2681d2cd1ed798c300"
+      },
+      {
+        "author_time": "2023-11-29T11:55:38Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-29T11:55:38Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-29T11:55:38+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "33915ec15ffd1d5164c28da50be2cbc653d285a7",
+          "da3a8a75fddb4604a5c367a32ea9a5c2e9933be5"
+        ],
+        "position": 4,
+        "pr_number": 796,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+          "sha256": "04deabd7a474eade560d8a5c5d114b4ef4ecb96a12b142757b98da244e39b41b",
+          "source": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+        },
+        "repository": "annuaire-entreprises-data-gouv-fr/site",
+        "sha": "f4961564e013292c1669729c8866107e997a1a76",
+        "temporal_basis": "committer_time",
+        "tree_sha": "dc9f2964ab2d27bfb1c26df7c332ad759f67b45f"
+      },
+      {
+        "author_time": "2023-11-29T13:40:11Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-29T13:40:11Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-29T13:40:11+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f4961564e013292c1669729c8866107e997a1a76"
+        ],
+        "position": 5,
+        "pr_number": 796,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+          "sha256": "04deabd7a474eade560d8a5c5d114b4ef4ecb96a12b142757b98da244e39b41b",
+          "source": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+        },
+        "repository": "annuaire-entreprises-data-gouv-fr/site",
+        "sha": "b098856d2e4df4f9722b3412368ab2c3a30ee775",
+        "temporal_basis": "committer_time",
+        "tree_sha": "29e52c66f44d8b77c5e682c3ac9d5f9e1cda38b7"
+      },
+      {
+        "author_time": "2023-11-29T14:43:50Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-29T14:43:50Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-29T14:43:50+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "b098856d2e4df4f9722b3412368ab2c3a30ee775"
+        ],
+        "position": 6,
+        "pr_number": 796,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+          "sha256": "04deabd7a474eade560d8a5c5d114b4ef4ecb96a12b142757b98da244e39b41b",
+          "source": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+        },
+        "repository": "annuaire-entreprises-data-gouv-fr/site",
+        "sha": "078d9f07d311a6693d77b97d41b9069fbd34c121",
+        "temporal_basis": "committer_time",
+        "tree_sha": "91b09a3ef67e86c61f175f6439a3f4f81fb0f8cc"
+      },
+      {
+        "author_time": "2023-11-29T16:09:37Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-29T16:09:37Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-29T16:09:37+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "078d9f07d311a6693d77b97d41b9069fbd34c121",
+          "d42ff483ee9dc91bbdd599f6cbcd2902a9b9087e"
+        ],
+        "position": 7,
+        "pr_number": 796,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+          "sha256": "04deabd7a474eade560d8a5c5d114b4ef4ecb96a12b142757b98da244e39b41b",
+          "source": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+        },
+        "repository": "annuaire-entreprises-data-gouv-fr/site",
+        "sha": "dad5b38d703b60164a7fa8c01882fbd9058bb55f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1a0742b73fe0ff29b92d26b89e0e3a1e5cd32009"
+      },
+      {
+        "author_time": "2023-11-29T16:11:40Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-29T16:11:40Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-29T16:11:40+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "dad5b38d703b60164a7fa8c01882fbd9058bb55f"
+        ],
+        "position": 8,
+        "pr_number": 796,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+          "sha256": "04deabd7a474eade560d8a5c5d114b4ef4ecb96a12b142757b98da244e39b41b",
+          "source": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+        },
+        "repository": "annuaire-entreprises-data-gouv-fr/site",
+        "sha": "eac9ae9ffdaf50bddd4bfb3098bfdc470745e952",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1cee31c51bc5afb1134ca5159c9395e7be6201ab"
+      },
+      {
+        "author_time": "2023-11-29T16:42:49Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-29T16:42:49Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-29T16:42:49+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "eac9ae9ffdaf50bddd4bfb3098bfdc470745e952",
+          "2819d6b88b1db178b8cfa5f6d5de7e1c21275eaf"
+        ],
+        "position": 9,
+        "pr_number": 796,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+          "sha256": "04deabd7a474eade560d8a5c5d114b4ef4ecb96a12b142757b98da244e39b41b",
+          "source": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+        },
+        "repository": "annuaire-entreprises-data-gouv-fr/site",
+        "sha": "1f320e0d921c1518336b8426b056d83985b608d6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ce8a1ea90e5f6d0d0e823987490a56ee4bfda1e1"
+      },
+      {
+        "author_time": "2023-11-29T17:05:45Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-29T17:05:45Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-29T17:05:45+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1f320e0d921c1518336b8426b056d83985b608d6"
+        ],
+        "position": 10,
+        "pr_number": 796,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+          "sha256": "04deabd7a474eade560d8a5c5d114b4ef4ecb96a12b142757b98da244e39b41b",
+          "source": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+        },
+        "repository": "annuaire-entreprises-data-gouv-fr/site",
+        "sha": "3adc28136f9cfe092b614a8812552a69cdfc9e29",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c15f28a5b94d0164b196d24143d955f57b546a18"
+      },
+      {
+        "author_time": "2023-11-29T17:19:10Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-29T17:19:10Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-29T17:19:10+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "3adc28136f9cfe092b614a8812552a69cdfc9e29"
+        ],
+        "position": 11,
+        "pr_number": 796,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+          "sha256": "04deabd7a474eade560d8a5c5d114b4ef4ecb96a12b142757b98da244e39b41b",
+          "source": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+        },
+        "repository": "annuaire-entreprises-data-gouv-fr/site",
+        "sha": "0b15564d91d20381a5a81b8601daf734917c31d4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "582248713feec728e9e0113d4eec8ab865ae8136"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-11-29T16:09:37Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-11-29T16:09:37Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-11-29T16:09:37+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "078d9f07d311a6693d77b97d41b9069fbd34c121",
+        "d42ff483ee9dc91bbdd599f6cbcd2902a9b9087e"
+      ],
+      "position": 7,
+      "pr_number": 796,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+        "sha256": "04deabd7a474eade560d8a5c5d114b4ef4ecb96a12b142757b98da244e39b41b",
+        "source": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+      },
+      "repository": "annuaire-entreprises-data-gouv-fr/site",
+      "sha": "dad5b38d703b60164a7fa8c01882fbd9058bb55f",
+      "temporal_basis": "committer_time",
+      "tree_sha": "1a0742b73fe0ff29b92d26b89e0e3a1e5cd32009"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-11-29T14:43:50Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-11-29T14:43:50Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-11-29T14:43:50+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "b098856d2e4df4f9722b3412368ab2c3a30ee775"
+      ],
+      "position": 6,
+      "pr_number": 796,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+        "sha256": "04deabd7a474eade560d8a5c5d114b4ef4ecb96a12b142757b98da244e39b41b",
+        "source": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+      },
+      "repository": "annuaire-entreprises-data-gouv-fr/site",
+      "sha": "078d9f07d311a6693d77b97d41b9069fbd34c121",
+      "temporal_basis": "committer_time",
+      "tree_sha": "91b09a3ef67e86c61f175f6439a3f4f81fb0f8cc"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "078d9f07d311a6693d77b97d41b9069fbd34c121",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "b098856d2e4df4f9722b3412368ab2c3a30ee775"
+    ],
+    "recursive_tree_entry_count": 1594,
+    "recursive_tree_listing_sha256": "749c96ff325b470c8c7ade0201ace9061de21d5f6d4d9c9fb9bbdb44a0e5b250",
+    "retrieved_at": "2026-10-05T22:50:25.935747+00:00",
+    "source": "https://github.com/annuaire-entreprises-data-gouv-fr/site.git",
+    "status": "materialized",
+    "tree_sha": "91b09a3ef67e86c61f175f6439a3f4f81fb0f8cc"
+  },
+  "pr_number": 796,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "2819d6b88b1db178b8cfa5f6d5de7e1c21275eaf",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:24.924838+00:00",
+        "sha256": "04deabd7a474eade560d8a5c5d114b4ef4ecb96a12b142757b98da244e39b41b",
+        "source": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T22:50:24.147698+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796"
+        }
+      ],
+      "retrieved_at": "2026-10-05T22:50:24.147698+00:00",
+      "sha256": "592aa222a6a95a018316884461261497605c640bc13d6c25098d8340cff33ae8",
+      "source": "https://api.github.com/repos/annuaire-entreprises-data-gouv-fr/site/pulls/796"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "annuaire-entreprises-data-gouv-fr/site",
+  "selected_state": {
+    "author_time": "2023-11-29T14:43:50Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "078d9f07d311a6693d77b97d41b9069fbd34c121",
+    "committer_time": "2023-11-29T14:43:50Z",
+    "effective_time": "2023-11-29T14:43:50+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "91b09a3ef67e86c61f175f6439a3f4f81fb0f8cc"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-11-29T15:29:58.598890+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-11-29T15:30:05.280608+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

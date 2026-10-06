@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "v6.0.0-beta",
+  "base_routing_source": "other_explicitly_justified_route",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_5D45BE40E95A",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "17049b13476382126283480840150924050f0799",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "71af6b54a77910923301863f8f70b583a2cd9b4a"
+    ],
+    "recursive_tree_entry_count": 51,
+    "recursive_tree_listing_sha256": "4982a8f182c9ff32ca6448b45783bda532cfa0abc7a15e1594d70432b0977af7",
+    "retrieved_at": "2026-10-05T20:06:56.275433+00:00",
+    "source": "https://github.com/nylas/nylas-python.git",
+    "status": "materialized",
+    "tree_sha": "65a37def8b9572a0a43cf7b18af18c93615a462b"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_5D45BE40E95A/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_5D45BE40E95A/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "repository": "nylas/nylas-python",
+  "selected_state": {
+    "author_time": "2023-09-28T22:08:48Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "17049b13476382126283480840150924050f0799",
+    "committer_time": "2023-09-28T22:08:48Z",
+    "effective_time": "2023-09-28T22:08:48+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "65a37def8b9572a0a43cf7b18af18c93615a462b"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-10-02T23:06:13.290606+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

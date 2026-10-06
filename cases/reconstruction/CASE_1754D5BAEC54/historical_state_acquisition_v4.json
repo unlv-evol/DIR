@@ -1,0 +1,320 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_1754D5BAEC54",
+  "executed_at": "2026-10-05T20:15:42.995386+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-07-13T02:37:16Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-13T02:37:16Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-13T02:37:16+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "06b638eeb7a824f7853c7d74a1b9f8b0719227cb"
+        ],
+        "position": 1,
+        "pr_number": 24,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:41.710540+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/ECMaker/blog/pulls/24/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:41.710540+00:00",
+          "sha256": "8398326d5756895e07e1e6a293fa7801b1171f76dea25ff8eac925994c4c4a55",
+          "source": "https://api.github.com/repos/ECMaker/blog/pulls/24/commits?per_page=100&page=1"
+        },
+        "repository": "ECMaker/blog",
+        "sha": "31b23290c91a6525c97b477ee0a787edb2765b77",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b9597de5898f05892ad9a5cd52f8880540e247c7"
+      },
+      {
+        "author_time": "2023-07-13T03:41:29Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-13T03:41:29Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-13T03:41:29+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "31b23290c91a6525c97b477ee0a787edb2765b77"
+        ],
+        "position": 2,
+        "pr_number": 24,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:41.710540+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/ECMaker/blog/pulls/24/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:41.710540+00:00",
+          "sha256": "8398326d5756895e07e1e6a293fa7801b1171f76dea25ff8eac925994c4c4a55",
+          "source": "https://api.github.com/repos/ECMaker/blog/pulls/24/commits?per_page=100&page=1"
+        },
+        "repository": "ECMaker/blog",
+        "sha": "5c49eb1019a7cc9213114dc8dd2a99e454b41547",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4e931842e0e441067eb8a9a7f2aba79f9ac2123d"
+      },
+      {
+        "author_time": "2023-07-15T05:05:39Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-15T05:05:39Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-15T05:05:39+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "5c49eb1019a7cc9213114dc8dd2a99e454b41547"
+        ],
+        "position": 3,
+        "pr_number": 24,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:41.710540+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/ECMaker/blog/pulls/24/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:41.710540+00:00",
+          "sha256": "8398326d5756895e07e1e6a293fa7801b1171f76dea25ff8eac925994c4c4a55",
+          "source": "https://api.github.com/repos/ECMaker/blog/pulls/24/commits?per_page=100&page=1"
+        },
+        "repository": "ECMaker/blog",
+        "sha": "6aef029e269fe5573d8aad0c8cd1882099a2b285",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3d2847384c322835835709dc3184c45d64c363f5"
+      },
+      {
+        "author_time": "2023-07-16T04:03:48Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-16T04:03:48Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-16T04:03:48+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6aef029e269fe5573d8aad0c8cd1882099a2b285"
+        ],
+        "position": 4,
+        "pr_number": 24,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:41.710540+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/ECMaker/blog/pulls/24/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:41.710540+00:00",
+          "sha256": "8398326d5756895e07e1e6a293fa7801b1171f76dea25ff8eac925994c4c4a55",
+          "source": "https://api.github.com/repos/ECMaker/blog/pulls/24/commits?per_page=100&page=1"
+        },
+        "repository": "ECMaker/blog",
+        "sha": "7ca6427af78d4466441b20b868a9878abc5f66c0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4cd08f14cd743e060f9e81d755a2767970a0876a"
+      },
+      {
+        "author_time": "2023-07-16T04:46:10Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-16T04:46:10Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-16T04:46:10+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7ca6427af78d4466441b20b868a9878abc5f66c0"
+        ],
+        "position": 5,
+        "pr_number": 24,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:41.710540+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/ECMaker/blog/pulls/24/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:41.710540+00:00",
+          "sha256": "8398326d5756895e07e1e6a293fa7801b1171f76dea25ff8eac925994c4c4a55",
+          "source": "https://api.github.com/repos/ECMaker/blog/pulls/24/commits?per_page=100&page=1"
+        },
+        "repository": "ECMaker/blog",
+        "sha": "14b9ad67ae0473456fbef288d1617d8273b7fda8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "72e5526bc7a4dc0ef6a8a1dbc13176821c69e1a4"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-07-16T04:03:48Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-07-16T04:03:48Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-07-16T04:03:48+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "6aef029e269fe5573d8aad0c8cd1882099a2b285"
+      ],
+      "position": 4,
+      "pr_number": 24,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:41.710540+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/ECMaker/blog/pulls/24/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:41.710540+00:00",
+        "sha256": "8398326d5756895e07e1e6a293fa7801b1171f76dea25ff8eac925994c4c4a55",
+        "source": "https://api.github.com/repos/ECMaker/blog/pulls/24/commits?per_page=100&page=1"
+      },
+      "repository": "ECMaker/blog",
+      "sha": "7ca6427af78d4466441b20b868a9878abc5f66c0",
+      "temporal_basis": "committer_time",
+      "tree_sha": "4cd08f14cd743e060f9e81d755a2767970a0876a"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-07-15T05:05:39Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-07-15T05:05:39Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-07-15T05:05:39+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "5c49eb1019a7cc9213114dc8dd2a99e454b41547"
+      ],
+      "position": 3,
+      "pr_number": 24,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:41.710540+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/ECMaker/blog/pulls/24/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:41.710540+00:00",
+        "sha256": "8398326d5756895e07e1e6a293fa7801b1171f76dea25ff8eac925994c4c4a55",
+        "source": "https://api.github.com/repos/ECMaker/blog/pulls/24/commits?per_page=100&page=1"
+      },
+      "repository": "ECMaker/blog",
+      "sha": "6aef029e269fe5573d8aad0c8cd1882099a2b285",
+      "temporal_basis": "committer_time",
+      "tree_sha": "3d2847384c322835835709dc3184c45d64c363f5"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "6aef029e269fe5573d8aad0c8cd1882099a2b285",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "5c49eb1019a7cc9213114dc8dd2a99e454b41547"
+    ],
+    "recursive_tree_entry_count": 331,
+    "recursive_tree_listing_sha256": "63cb39889032133cde57189d084d1e1aa272160bc098495595bf31d1e9ad97a0",
+    "retrieved_at": "2026-10-05T20:15:42.991883+00:00",
+    "source": "https://github.com/ECMaker/blog.git",
+    "status": "materialized",
+    "tree_sha": "3d2847384c322835835709dc3184c45d64c363f5"
+  },
+  "pr_number": 24,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "06b638eeb7a824f7853c7d74a1b9f8b0719227cb",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:41.710540+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/ECMaker/blog/pulls/24/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:41.710540+00:00",
+        "sha256": "8398326d5756895e07e1e6a293fa7801b1171f76dea25ff8eac925994c4c4a55",
+        "source": "https://api.github.com/repos/ECMaker/blog/pulls/24/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:15:41.150805+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/ECMaker/blog/pulls/24"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:15:41.150805+00:00",
+      "sha256": "eeff581d67f058d6d0267c451ff87e29353192f5f4c903c6b75eae284259d9fa",
+      "source": "https://api.github.com/repos/ECMaker/blog/pulls/24"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "ECMaker/blog",
+  "selected_state": {
+    "author_time": "2023-07-15T05:05:39Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "6aef029e269fe5573d8aad0c8cd1882099a2b285",
+    "committer_time": "2023-07-15T05:05:39Z",
+    "effective_time": "2023-07-15T05:05:39+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "3d2847384c322835835709dc3184c45d64c363f5"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-07-15T05:09:47.979731+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-07-15T05:09:56.392897+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

@@ -1,0 +1,360 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-05-03T10:01:01Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-05-03T14:09:59Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-05-03T14:09:59+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "b6e9ecf4bc25eadcfc6501302d7b42092dbfa345"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:20.722852+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/aleph-im/aleph-vm/commits?sha=main&until=2024-05-03T14%3A48%3A15.355598%2B00%3A00&per_page=1&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:20.722852+00:00",
+          "sha256": "e52ea5e0d6ad5fadf888868902ff7a07382a28ffd6a33b6f0aebabe646f42428",
+          "source": "https://api.github.com/repos/aleph-im/aleph-vm/commits?sha=main&until=2024-05-03T14%3A48%3A15.355598%2B00%3A00&per_page=1&page=1"
+        },
+        "repository": "aleph-im/aleph-vm",
+        "sha": "87043b725f96ffab7a7fd299da9a477897dc7405",
+        "temporal_basis": "committer_time",
+        "tree_sha": "312488b623c818e66746216bec05f77cc7a6c2bc"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-05-03T10:01:01Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-05-03T14:09:59Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-05-03T14:09:59+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "b6e9ecf4bc25eadcfc6501302d7b42092dbfa345"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:20.722852+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/aleph-im/aleph-vm/commits?sha=main&until=2024-05-03T14%3A48%3A15.355598%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:20.722852+00:00",
+        "sha256": "e52ea5e0d6ad5fadf888868902ff7a07382a28ffd6a33b6f0aebabe646f42428",
+        "source": "https://api.github.com/repos/aleph-im/aleph-vm/commits?sha=main&until=2024-05-03T14%3A48%3A15.355598%2B00%3A00&per_page=1&page=1"
+      },
+      "repository": "aleph-im/aleph-vm",
+      "sha": "87043b725f96ffab7a7fd299da9a477897dc7405",
+      "temporal_basis": "committer_time",
+      "tree_sha": "312488b623c818e66746216bec05f77cc7a6c2bc"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "main",
+  "base_routing_source": "pr_base_ref",
+  "case_id": "CASE_9213ACECEA46",
+  "executed_at": "2026-10-05T20:18:21.416964+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-05-16T08:47:19Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-05-16T08:50:05Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-05-16T08:50:05+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "cb0a9f9633e302e66e41477134d4c5403847c162"
+        ],
+        "position": 1,
+        "pr_number": 460,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:19.869587+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/aleph-im/aleph-vm/pulls/460/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:19.869587+00:00",
+          "sha256": "6bd8fcb34f342952d282de87ad0cbaceda211b643ecdb1068c1715660f8bdf99",
+          "source": "https://api.github.com/repos/aleph-im/aleph-vm/pulls/460/commits?per_page=100&page=1"
+        },
+        "repository": "aleph-im/aleph-vm",
+        "sha": "fa09d77880eb38ea8bada022c4fe3cb100e7794c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "434b5e5c0518de4de0bf850576c9ae502fa54567"
+      },
+      {
+        "author_time": "2024-05-16T08:51:41Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-05-16T08:51:41Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-05-16T08:51:41+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "fa09d77880eb38ea8bada022c4fe3cb100e7794c"
+        ],
+        "position": 2,
+        "pr_number": 460,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:19.869587+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/aleph-im/aleph-vm/pulls/460/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:19.869587+00:00",
+          "sha256": "6bd8fcb34f342952d282de87ad0cbaceda211b643ecdb1068c1715660f8bdf99",
+          "source": "https://api.github.com/repos/aleph-im/aleph-vm/pulls/460/commits?per_page=100&page=1"
+        },
+        "repository": "aleph-im/aleph-vm",
+        "sha": "1b2f1e50c38942afd67e87bd4bc5306d4bb8905e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "27f7b523a2dcc84683eb54d4e9e775e6c6419052"
+      },
+      {
+        "author_time": "2024-05-16T08:51:54Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-05-16T08:51:54Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-05-16T08:51:54+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1b2f1e50c38942afd67e87bd4bc5306d4bb8905e"
+        ],
+        "position": 3,
+        "pr_number": 460,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:19.869587+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/aleph-im/aleph-vm/pulls/460/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:19.869587+00:00",
+          "sha256": "6bd8fcb34f342952d282de87ad0cbaceda211b643ecdb1068c1715660f8bdf99",
+          "source": "https://api.github.com/repos/aleph-im/aleph-vm/pulls/460/commits?per_page=100&page=1"
+        },
+        "repository": "aleph-im/aleph-vm",
+        "sha": "19a8a1a4b1cda27163275c9ff1f7be2d6c4ff561",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b42dd925de429f717e6650cd799b4ee760325c71"
+      },
+      {
+        "author_time": "2024-05-16T09:28:29Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-05-16T12:49:08Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-05-16T12:49:08+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "19a8a1a4b1cda27163275c9ff1f7be2d6c4ff561"
+        ],
+        "position": 4,
+        "pr_number": 460,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:19.869587+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/aleph-im/aleph-vm/pulls/460/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:19.869587+00:00",
+          "sha256": "6bd8fcb34f342952d282de87ad0cbaceda211b643ecdb1068c1715660f8bdf99",
+          "source": "https://api.github.com/repos/aleph-im/aleph-vm/pulls/460/commits?per_page=100&page=1"
+        },
+        "repository": "aleph-im/aleph-vm",
+        "sha": "d875fcaf59fd05e4f1bf534ad90535305fcad307",
+        "temporal_basis": "committer_time",
+        "tree_sha": "28763757f9d06e42c978c987cb82dab974d7ba31"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2024-05-16T08:47:19Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-05-16T08:50:05Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2024-05-16T08:50:05+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "cb0a9f9633e302e66e41477134d4c5403847c162"
+      ],
+      "position": 1,
+      "pr_number": 460,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:19.869587+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/aleph-im/aleph-vm/pulls/460/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:19.869587+00:00",
+        "sha256": "6bd8fcb34f342952d282de87ad0cbaceda211b643ecdb1068c1715660f8bdf99",
+        "source": "https://api.github.com/repos/aleph-im/aleph-vm/pulls/460/commits?per_page=100&page=1"
+      },
+      "repository": "aleph-im/aleph-vm",
+      "sha": "fa09d77880eb38ea8bada022c4fe3cb100e7794c",
+      "temporal_basis": "committer_time",
+      "tree_sha": "434b5e5c0518de4de0bf850576c9ae502fa54567"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "87043b725f96ffab7a7fd299da9a477897dc7405",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "b6e9ecf4bc25eadcfc6501302d7b42092dbfa345"
+    ],
+    "recursive_tree_entry_count": 259,
+    "recursive_tree_listing_sha256": "98f68302b8d515558b9355ae66acaa0ad5fa4136e35fb4d75d39ae45b02cbf91",
+    "retrieved_at": "2026-10-05T20:18:21.413144+00:00",
+    "source": "https://github.com/aleph-im/aleph-vm.git",
+    "status": "materialized",
+    "tree_sha": "312488b623c818e66746216bec05f77cc7a6c2bc"
+  },
+  "pr_number": 460,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:20.260316+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/aleph-im/aleph-vm/git/ref/heads/main"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:20.260316+00:00",
+        "sha256": "699bc0ef6967560295a65b9c5c067d40eefc2acbb4f83da5d95040fc4b0b5ae3",
+        "source": "https://api.github.com/repos/aleph-im/aleph-vm/git/ref/heads/main"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:20.722852+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/aleph-im/aleph-vm/commits?sha=main&until=2024-05-03T14%3A48%3A15.355598%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:20.722852+00:00",
+        "sha256": "e52ea5e0d6ad5fadf888868902ff7a07382a28ffd6a33b6f0aebabe646f42428",
+        "source": "https://api.github.com/repos/aleph-im/aleph-vm/commits?sha=main&until=2024-05-03T14%3A48%3A15.355598%2B00%3A00&per_page=1&page=1"
+      }
+    ],
+    "base_route_evidence": {
+      "ref_object_sha": "7e3c73720e9f203fbf310092238a713d03bdd68e",
+      "rule": "recorded_pr_base_ref_resolves"
+    },
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "cb0a9f9633e302e66e41477134d4c5403847c162",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:19.869587+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/aleph-im/aleph-vm/pulls/460/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:19.869587+00:00",
+        "sha256": "6bd8fcb34f342952d282de87ad0cbaceda211b643ecdb1068c1715660f8bdf99",
+        "source": "https://api.github.com/repos/aleph-im/aleph-vm/pulls/460/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:18:19.377217+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/aleph-im/aleph-vm/pulls/460"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:18:19.377217+00:00",
+      "sha256": "ec0f408a6b4aa6aac455944028ef7b9f8fc6384ec4377eabbd2135959dee6514",
+      "source": "https://api.github.com/repos/aleph-im/aleph-vm/pulls/460"
+    },
+    "recorded_pr_base_ref_resolves": true
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "aleph-im/aleph-vm",
+  "selected_state": {
+    "author_time": "2024-05-03T10:01:01Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "87043b725f96ffab7a7fd299da9a477897dc7405",
+    "committer_time": "2024-05-03T14:09:59Z",
+    "effective_time": "2024-05-03T14:09:59+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "312488b623c818e66746216bec05f77cc7a6c2bc"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-05-03T14:48:05.263301+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-05-03T14:48:15.355598+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

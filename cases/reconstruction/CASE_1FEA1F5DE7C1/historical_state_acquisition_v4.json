@@ -1,0 +1,421 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_1FEA1F5DE7C1",
+  "executed_at": "2026-10-05T20:16:05.877687+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-04-16T07:32:10Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-16T07:32:10Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-04-16T07:32:10+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "88932452eda856c501ec0bb38b25953970fc9719"
+        ],
+        "position": 1,
+        "pr_number": 533,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+          "sha256": "7ea594893404d55796ecd15b3b47c21ed19284820d6e90dc639f538a8f91ba52",
+          "source": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+        },
+        "repository": "box/developer.box.com",
+        "sha": "79ce9da9f5b2dd791ffc1d5057659c2e859fd8af",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a6cb21afb4359e4674db5d36e1f4962825dbc50b"
+      },
+      {
+        "author_time": "2024-04-16T08:26:55Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-16T08:26:55Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-04-16T08:26:55+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "79ce9da9f5b2dd791ffc1d5057659c2e859fd8af",
+          "6c1c997cd692af36b024f8e5a7e6f528bbba73c7"
+        ],
+        "position": 2,
+        "pr_number": 533,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+          "sha256": "7ea594893404d55796ecd15b3b47c21ed19284820d6e90dc639f538a8f91ba52",
+          "source": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+        },
+        "repository": "box/developer.box.com",
+        "sha": "b03f58432570802bee35c42fa245f6ad0c83454d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a1589e138047112a2cd6f586b6d06a0da9bc040c"
+      },
+      {
+        "author_time": "2024-04-16T10:55:48Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-16T10:55:48Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-04-16T10:55:48+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "79ce9da9f5b2dd791ffc1d5057659c2e859fd8af"
+        ],
+        "position": 3,
+        "pr_number": 533,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+          "sha256": "7ea594893404d55796ecd15b3b47c21ed19284820d6e90dc639f538a8f91ba52",
+          "source": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+        },
+        "repository": "box/developer.box.com",
+        "sha": "0e490597c17a1c5d2c25e47c9d249e6ffcbc6b8a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8c30ff4cfa177dd0b8932c41ed5499508bd26ef9"
+      },
+      {
+        "author_time": "2024-04-16T10:55:52Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-16T10:55:52Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-04-16T10:55:52+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "0e490597c17a1c5d2c25e47c9d249e6ffcbc6b8a",
+          "b03f58432570802bee35c42fa245f6ad0c83454d"
+        ],
+        "position": 4,
+        "pr_number": 533,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+          "sha256": "7ea594893404d55796ecd15b3b47c21ed19284820d6e90dc639f538a8f91ba52",
+          "source": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+        },
+        "repository": "box/developer.box.com",
+        "sha": "9cd4e8a5ad9b48fad5656caa563d1bcf76786b88",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c728b6c80528e4d9cc0f5695eab40f8dff884ccd"
+      },
+      {
+        "author_time": "2024-04-16T13:57:13Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-16T13:57:13Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-16T13:57:13+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "9cd4e8a5ad9b48fad5656caa563d1bcf76786b88"
+        ],
+        "position": 5,
+        "pr_number": 533,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+          "sha256": "7ea594893404d55796ecd15b3b47c21ed19284820d6e90dc639f538a8f91ba52",
+          "source": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+        },
+        "repository": "box/developer.box.com",
+        "sha": "42f6a4a4aa3fa7a7015b63ae2fa47b8f1d80d6fc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ffe92b15fd44b6202eeccc3efef17c813872e808"
+      },
+      {
+        "author_time": "2024-04-16T13:59:33Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-16T13:59:33Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-16T13:59:33+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "42f6a4a4aa3fa7a7015b63ae2fa47b8f1d80d6fc"
+        ],
+        "position": 6,
+        "pr_number": 533,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+          "sha256": "7ea594893404d55796ecd15b3b47c21ed19284820d6e90dc639f538a8f91ba52",
+          "source": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+        },
+        "repository": "box/developer.box.com",
+        "sha": "87447ed6f0fee5fe5bfc7cc2c3e635a9e9da5fbc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "34351673bef9702a824e85a3c7fe188a6b08e121"
+      },
+      {
+        "author_time": "2024-04-18T06:39:16Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-18T06:39:16Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-18T06:39:16+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "87447ed6f0fee5fe5bfc7cc2c3e635a9e9da5fbc",
+          "55b957ab3142c20df96cde39d3330ea715d65566"
+        ],
+        "position": 7,
+        "pr_number": 533,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+          "sha256": "7ea594893404d55796ecd15b3b47c21ed19284820d6e90dc639f538a8f91ba52",
+          "source": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+        },
+        "repository": "box/developer.box.com",
+        "sha": "86cb77d51c562f34727363135cbbfe1a0ddbec36",
+        "temporal_basis": "committer_time",
+        "tree_sha": "fc58a0440111bb6d8078d6c7a30afd6dfd82ff5a"
+      },
+      {
+        "author_time": "2024-04-18T06:55:26Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-18T06:55:26Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-18T06:55:26+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "86cb77d51c562f34727363135cbbfe1a0ddbec36"
+        ],
+        "position": 8,
+        "pr_number": 533,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+          "sha256": "7ea594893404d55796ecd15b3b47c21ed19284820d6e90dc639f538a8f91ba52",
+          "source": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+        },
+        "repository": "box/developer.box.com",
+        "sha": "09701bf74158c717bedc2e63baf102ab6ded3abb",
+        "temporal_basis": "committer_time",
+        "tree_sha": "df5831692bddca2aa31771701d5085a5817b439a"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2024-04-16T13:57:13Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-04-16T13:57:13Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2024-04-16T13:57:13+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "9cd4e8a5ad9b48fad5656caa563d1bcf76786b88"
+      ],
+      "position": 5,
+      "pr_number": 533,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+        "sha256": "7ea594893404d55796ecd15b3b47c21ed19284820d6e90dc639f538a8f91ba52",
+        "source": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+      },
+      "repository": "box/developer.box.com",
+      "sha": "42f6a4a4aa3fa7a7015b63ae2fa47b8f1d80d6fc",
+      "temporal_basis": "committer_time",
+      "tree_sha": "ffe92b15fd44b6202eeccc3efef17c813872e808"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-04-16T10:55:52Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-04-16T10:55:52Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-04-16T10:55:52+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "0e490597c17a1c5d2c25e47c9d249e6ffcbc6b8a",
+        "b03f58432570802bee35c42fa245f6ad0c83454d"
+      ],
+      "position": 4,
+      "pr_number": 533,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+        "sha256": "7ea594893404d55796ecd15b3b47c21ed19284820d6e90dc639f538a8f91ba52",
+        "source": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+      },
+      "repository": "box/developer.box.com",
+      "sha": "9cd4e8a5ad9b48fad5656caa563d1bcf76786b88",
+      "temporal_basis": "committer_time",
+      "tree_sha": "c728b6c80528e4d9cc0f5695eab40f8dff884ccd"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "9cd4e8a5ad9b48fad5656caa563d1bcf76786b88",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "0e490597c17a1c5d2c25e47c9d249e6ffcbc6b8a",
+      "b03f58432570802bee35c42fa245f6ad0c83454d"
+    ],
+    "recursive_tree_entry_count": 954,
+    "recursive_tree_listing_sha256": "c3a8c9227c9def73f48b719119b8ee9cab671adbf15bc31ac0bb94d099242fa7",
+    "retrieved_at": "2026-10-05T20:16:05.873730+00:00",
+    "source": "https://github.com/box/developer.box.com.git",
+    "status": "materialized",
+    "tree_sha": "c728b6c80528e4d9cc0f5695eab40f8dff884ccd"
+  },
+  "pr_number": 533,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "55b957ab3142c20df96cde39d3330ea715d65566",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:02.263680+00:00",
+        "sha256": "7ea594893404d55796ecd15b3b47c21ed19284820d6e90dc639f538a8f91ba52",
+        "source": "https://api.github.com/repos/box/developer.box.com/pulls/533/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:16:01.665393+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/box/developer.box.com/pulls/533"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:16:01.665393+00:00",
+      "sha256": "f7cbcb68818bd687e096e1732e1f63cfa439e5108e6d9bdc43aebcb7aa14486c",
+      "source": "https://api.github.com/repos/box/developer.box.com/pulls/533"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "box/developer.box.com",
+  "selected_state": {
+    "author_time": "2024-04-16T10:55:52Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "9cd4e8a5ad9b48fad5656caa563d1bcf76786b88",
+    "committer_time": "2024-04-16T10:55:52Z",
+    "effective_time": "2024-04-16T10:55:52+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "c728b6c80528e4d9cc0f5695eab40f8dff884ccd"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-04-16T11:14:56.891392+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-04-16T11:15:01.694532+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_1A72A70C88B5",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "d6f996ec2a0101c890b8976fc58a0c92cdb001ca",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "6f5b7f100a1e230479631fdd6e6b70aad272e82f"
+    ],
+    "recursive_tree_entry_count": 63,
+    "recursive_tree_listing_sha256": "cb37cf100964c067ed6312fbf9ae01fd3d14f0ec17c8314fc785326a0640795e",
+    "retrieved_at": "2026-10-05T20:15:57.673401+00:00",
+    "source": "https://github.com/VyProductions/SeniorDesign.git",
+    "status": "materialized",
+    "tree_sha": "797a2baccd07c982247acef4576da4785c907619"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_1A72A70C88B5/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_1A72A70C88B5/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "VyProductions/SeniorDesign",
+  "selected_state": {
+    "author_time": "2024-02-13T23:50:06Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "d6f996ec2a0101c890b8976fc58a0c92cdb001ca",
+    "committer_time": "2024-02-13T23:50:06Z",
+    "effective_time": "2024-02-13T23:50:06+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "797a2baccd07c982247acef4576da4785c907619"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-02-14T00:08:46.581968+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

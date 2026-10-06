@@ -1,0 +1,46 @@
+{
+  "base_lineage_ref": "main",
+  "base_routing_source": "pr_base_ref",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_36570F50AD25",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "d66ae022763a8ceaa6e0c993b20edd70d71e87dd",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "a1efb7093687d048e6a2a7739faadf28aece6a9e",
+      "d66bc0083d2843cb8af38552077acb9de0389539"
+    ],
+    "recursive_tree_entry_count": 55,
+    "recursive_tree_listing_sha256": "8b1d8cef733ed7177ac89ea3ba307ce04413f8abcaf195d93fd00a6df1c33d74",
+    "retrieved_at": "2026-10-05T20:16:37.415043+00:00",
+    "source": "https://github.com/mzkeyy/next.js14-tailwindcss-udemy-blog.git",
+    "status": "materialized",
+    "tree_sha": "636366a8b4857196ee3fa266c21475d32af8b857"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_36570F50AD25/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_36570F50AD25/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "repository": "mzkeyy/next.js14-tailwindcss-udemy-blog",
+  "selected_state": {
+    "author_time": "2023-12-13T00:24:41Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "d66ae022763a8ceaa6e0c993b20edd70d71e87dd",
+    "committer_time": "2023-12-13T00:24:41Z",
+    "effective_time": "2023-12-13T00:24:41+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "636366a8b4857196ee3fa266c21475d32af8b857"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-12-13T11:36:34.939884+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

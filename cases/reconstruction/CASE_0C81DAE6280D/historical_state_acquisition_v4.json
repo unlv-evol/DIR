@@ -1,0 +1,1473 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_0C81DAE6280D",
+  "executed_at": "2026-10-05T20:15:34.968496+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-07-29T15:43:54Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-29T15:43:54Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-29T15:43:54+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c1b1fbadc5f898b8d7c661bcb1386685a59a85a6"
+        ],
+        "position": 1,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "3c115e6663754ded147ce31dbbbb9dd7f53c4253",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e2721f9f97cc0bfdf518c2b1c150e98b7dd13cfa"
+      },
+      {
+        "author_time": "2023-07-29T16:29:11Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-29T16:29:11Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-29T16:29:11+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "3c115e6663754ded147ce31dbbbb9dd7f53c4253"
+        ],
+        "position": 2,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "c7799fb55d7b0a0a384ca13279fd70d0ae59fbff",
+        "temporal_basis": "committer_time",
+        "tree_sha": "40fc46ef577a2a2c4a45ac0d2ffa0384249c3974"
+      },
+      {
+        "author_time": "2023-07-31T03:04:57Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-31T03:04:57Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-31T03:04:57+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c7799fb55d7b0a0a384ca13279fd70d0ae59fbff"
+        ],
+        "position": 3,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "eed73c26db649fac729fa9850f6ae84c8f87a45c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "36884f8db95bca28b1613cea713596c5b5216cac"
+      },
+      {
+        "author_time": "2023-07-31T03:18:11Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-31T03:18:11Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-31T03:18:11+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "eed73c26db649fac729fa9850f6ae84c8f87a45c"
+        ],
+        "position": 4,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "0316fe8effd3d862e17fcd1c858dd1005bcbc1dd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "dd90e6bac41c0a23c1ca6d4985c629f7aa3c53c7"
+      },
+      {
+        "author_time": "2023-07-31T15:11:50Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-31T15:11:50Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-31T15:11:50+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "0316fe8effd3d862e17fcd1c858dd1005bcbc1dd"
+        ],
+        "position": 5,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "a66f2b4f20856b9d563d6f3b8609466d1c170cd8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1a8fbe93814dfcd8e0d29c0142fc083245ce787b"
+      },
+      {
+        "author_time": "2023-07-31T15:12:17Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-31T15:12:17Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-31T15:12:17+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a66f2b4f20856b9d563d6f3b8609466d1c170cd8"
+        ],
+        "position": 6,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "7b9a58a751785f873575e0da1beb75ba60c64998",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b4d7e0eb7a21fccfdd17026defa0bce9cd616a11"
+      },
+      {
+        "author_time": "2023-07-31T15:32:43Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-31T15:32:43Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-31T15:32:43+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7b9a58a751785f873575e0da1beb75ba60c64998"
+        ],
+        "position": 7,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "ec2a0db94a845a376e44601424e097b54680892e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9d90fc9cbc4f8e80334faaccb30223c2045baa27"
+      },
+      {
+        "author_time": "2023-07-31T15:38:46Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-31T15:38:46Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-31T15:38:46+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "ec2a0db94a845a376e44601424e097b54680892e"
+        ],
+        "position": 8,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "8fb7981545c7a6e450347ca8a02f1936ffac4132",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0dcb282c2d26fef57b2bec398740010647a88a42"
+      },
+      {
+        "author_time": "2023-07-31T16:05:17Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-31T16:05:17Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-31T16:05:17+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8fb7981545c7a6e450347ca8a02f1936ffac4132"
+        ],
+        "position": 9,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "d825a565c6844c9461e63afd9dc7bd90e1d59714",
+        "temporal_basis": "committer_time",
+        "tree_sha": "29cc9de30d96f97e7fb1e538b7a046169c81a331"
+      },
+      {
+        "author_time": "2023-07-31T17:07:17Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-31T17:07:17Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-31T17:07:17+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d825a565c6844c9461e63afd9dc7bd90e1d59714"
+        ],
+        "position": 10,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "a6c6e5918cdf4400dcc2e5ee153296f3b3ea0c49",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ba97dd9e9e8461ab8c1c2fd1dd6d90c2cb44388d"
+      },
+      {
+        "author_time": "2023-07-31T17:08:03Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-31T17:08:03Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-31T17:08:03+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a6c6e5918cdf4400dcc2e5ee153296f3b3ea0c49"
+        ],
+        "position": 11,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "e6ec7416b843875005d80e60a5ac9b066521e0db",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ec7a807aa1e59086f223f27c5071e6bfaa26cb78"
+      },
+      {
+        "author_time": "2023-07-31T21:34:25Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-31T21:34:25Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-31T21:34:25+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e6ec7416b843875005d80e60a5ac9b066521e0db"
+        ],
+        "position": 12,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "459e549f19c74baa2ad9ebb8e58c36b27fd2ce31",
+        "temporal_basis": "committer_time",
+        "tree_sha": "def14df9a6ef14e4ecc07b85f4cb5c403b92c0e8"
+      },
+      {
+        "author_time": "2023-08-01T13:21:53Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-01T13:21:53Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-01T13:21:53+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "459e549f19c74baa2ad9ebb8e58c36b27fd2ce31"
+        ],
+        "position": 13,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "a7c090030d22e318c3c696d4eec696eb7d181e47",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a79e81131622c6daf75d8867f13ddc60726cfc2d"
+      },
+      {
+        "author_time": "2023-08-01T13:50:48Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-01T13:50:48Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-01T13:50:48+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a7c090030d22e318c3c696d4eec696eb7d181e47"
+        ],
+        "position": 14,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "f604f50f3e8bab176c71d1c62921aa3fa7f04d1c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a19f6f2aa4c5ef5a03e3ade70ec276501af029b0"
+      },
+      {
+        "author_time": "2023-08-01T14:39:24Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-01T14:39:24Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-01T14:39:24+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f604f50f3e8bab176c71d1c62921aa3fa7f04d1c"
+        ],
+        "position": 15,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "a84dbf567742a59260ee197181f42086174b7bdd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "97a6943b95815dc0442b3e921a24e2feabda5d8f"
+      },
+      {
+        "author_time": "2023-08-01T17:36:36Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-01T17:36:36Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-01T17:36:36+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a84dbf567742a59260ee197181f42086174b7bdd"
+        ],
+        "position": 16,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "76954b5f32e818a019886add1174a30970993672",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a95e0a468231f6cb9bee3b028e759d44ee230c01"
+      },
+      {
+        "author_time": "2023-08-01T17:39:05Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-01T17:39:05Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-01T17:39:05+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "76954b5f32e818a019886add1174a30970993672"
+        ],
+        "position": 17,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "33a4d750cda22b459fdf71953ed10e6cc7d42d4f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e360724cda3414554429a6c386272de7c566e924"
+      },
+      {
+        "author_time": "2023-08-01T18:49:29Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-01T18:49:29Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-01T18:49:29+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "33a4d750cda22b459fdf71953ed10e6cc7d42d4f"
+        ],
+        "position": 18,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "34d2037946f59edc7d962940d89bba8830f87b95",
+        "temporal_basis": "committer_time",
+        "tree_sha": "36c6f04c99b3ec1be21d578d3d6db6f5abd2d849"
+      },
+      {
+        "author_time": "2023-08-01T18:59:22Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-01T18:59:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-01T18:59:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "34d2037946f59edc7d962940d89bba8830f87b95"
+        ],
+        "position": 19,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "564ad771a57fede08f20308ab0d852645c6df713",
+        "temporal_basis": "committer_time",
+        "tree_sha": "bfe353ad5f384915505ad5a8b8556f87c8777b98"
+      },
+      {
+        "author_time": "2023-08-01T20:12:29Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-01T20:12:29Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-01T20:12:29+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "564ad771a57fede08f20308ab0d852645c6df713"
+        ],
+        "position": 20,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "1ce18f3b26ca64eab5606f3fd87d1116d7ea38d5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ad455ce26c120401cb88658a45d0f87e50a2079e"
+      },
+      {
+        "author_time": "2023-08-01T20:34:56Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-01T20:34:56Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-01T20:34:56+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1ce18f3b26ca64eab5606f3fd87d1116d7ea38d5"
+        ],
+        "position": 21,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "0ad1f91a5e37e30f1cadd490d1c690d46b925c95",
+        "temporal_basis": "committer_time",
+        "tree_sha": "181c271652b48105217389cd64f3b61efd838794"
+      },
+      {
+        "author_time": "2023-08-01T21:00:48Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-01T21:00:48Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-01T21:00:48+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "0ad1f91a5e37e30f1cadd490d1c690d46b925c95"
+        ],
+        "position": 22,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "77ea0ea02f234108b6018087d3e417880dfacc5a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c3165333abf190bbad11894c22730a254074be94"
+      },
+      {
+        "author_time": "2023-08-01T21:09:40Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-01T21:09:40Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-01T21:09:40+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "77ea0ea02f234108b6018087d3e417880dfacc5a"
+        ],
+        "position": 23,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "6463b7b0924dfe8344bfa3ea5ec98ae933b0252c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1c9598668c59d3d0542948939196f453555f49bd"
+      },
+      {
+        "author_time": "2023-08-01T21:11:00Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-01T21:11:00Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-01T21:11:00+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6463b7b0924dfe8344bfa3ea5ec98ae933b0252c"
+        ],
+        "position": 24,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "20037226b84a63d601e732642dd89af589afdb10",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c0e11ee2fd9c8ecc9bf3f0333bcfc92a85442073"
+      },
+      {
+        "author_time": "2023-08-02T19:05:30Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-02T19:05:30Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-02T19:05:30+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "20037226b84a63d601e732642dd89af589afdb10"
+        ],
+        "position": 25,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "2320252d401e080ba2ecd3c6a825eb1503b80b0d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e418294111df14118fbf3531581ae08ac5c04e0c"
+      },
+      {
+        "author_time": "2023-08-02T19:24:26Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-02T19:24:26Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-02T19:24:26+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2320252d401e080ba2ecd3c6a825eb1503b80b0d"
+        ],
+        "position": 26,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "e932c5c4c27573d9e51c50b0e0f149f9e7a924ca",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7f5a66aea039f8e6ac75e2fc70a93ef4ddecdca0"
+      },
+      {
+        "author_time": "2023-08-02T19:29:21Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-02T19:29:21Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-02T19:29:21+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e932c5c4c27573d9e51c50b0e0f149f9e7a924ca"
+        ],
+        "position": 27,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "11873309248f6e247df41947ef746bbf03aa19a3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1a8b8a0faf45611912eb2d83a5b19c477a783f84"
+      },
+      {
+        "author_time": "2023-08-02T19:41:22Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-02T19:41:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-02T19:41:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "11873309248f6e247df41947ef746bbf03aa19a3"
+        ],
+        "position": 28,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "bb74ac5cddacb2855cff96b7b919f3651a86804c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "50a0f6d0b1bdfb50b206d6facf40508d61cfe8b6"
+      },
+      {
+        "author_time": "2023-08-02T20:22:14Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-02T20:22:14Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-02T20:22:14+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "bb74ac5cddacb2855cff96b7b919f3651a86804c"
+        ],
+        "position": 29,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "37f2e4f10436a0833ab6f7db940e89583387ba11",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d72ea54d5879bdf35cede3b209c85a96cfc41d33"
+      },
+      {
+        "author_time": "2023-08-02T21:27:50Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-02T21:27:50Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-02T21:27:50+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "37f2e4f10436a0833ab6f7db940e89583387ba11"
+        ],
+        "position": 30,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "cb6eeddab44c88bedd30d0dc8fc07f891e354eb9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c1859e92d383281131767dc31dc155a0dfd423a1"
+      },
+      {
+        "author_time": "2023-08-02T22:01:23Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-02T22:01:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-02T22:01:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "cb6eeddab44c88bedd30d0dc8fc07f891e354eb9",
+          "cc8ace0671476576111485db61053033711547db"
+        ],
+        "position": 31,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "db9d6d59de55083bd84414e1f4d215e4d96ac4e2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5f2bbcdc29524e44daeb5acbbee9cd7937f58d50"
+      },
+      {
+        "author_time": "2023-08-03T14:40:55Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-03T14:40:55Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-03T14:40:55+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "db9d6d59de55083bd84414e1f4d215e4d96ac4e2"
+        ],
+        "position": 32,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "0ee7a92eb5916978d37770849badb31f6261caa6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "54436b2a58c96dbab259d80f0e4c17c24773ef81"
+      },
+      {
+        "author_time": "2023-08-03T16:22:05Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-03T16:22:05Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-03T16:22:05+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "0ee7a92eb5916978d37770849badb31f6261caa6"
+        ],
+        "position": 33,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "5d4bc09332a709d68f892f07deec866418374946",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9ef4b775f3d31d9a4d164f692ee7e9b4f0f9a5b8"
+      },
+      {
+        "author_time": "2023-08-03T16:29:41Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-03T16:29:41Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-03T16:29:41+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "5d4bc09332a709d68f892f07deec866418374946"
+        ],
+        "position": 34,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "613c49d75494975b7a8e078e0f59dd94cc00e3c8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "077cbe346d91ae952027122bc579b684dd4f56e4"
+      },
+      {
+        "author_time": "2023-08-03T16:31:07Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-03T16:31:07Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-03T16:31:07+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "613c49d75494975b7a8e078e0f59dd94cc00e3c8"
+        ],
+        "position": 35,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "9b2edb3fa21fe486434165bf7d0f612db51292d7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "39ed84723c599fd5d71e1dc44ddd11e62fc669bf"
+      },
+      {
+        "author_time": "2023-08-03T19:43:48Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-03T19:43:48Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-03T19:43:48+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "9b2edb3fa21fe486434165bf7d0f612db51292d7"
+        ],
+        "position": 36,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "de8e4510d1fa3ea476d6acb9a4cb11f562fb62b6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9b99598e5b49e8bb82f93bd809d583e42d65e269"
+      },
+      {
+        "author_time": "2023-08-03T21:10:30Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-03T21:10:30Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-03T21:10:30+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "de8e4510d1fa3ea476d6acb9a4cb11f562fb62b6"
+        ],
+        "position": 37,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "e9089ea84349253b07eb7ae0ac9aef85bf03efef",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d801a84dd2b2c3704b238bf0198d97b4261c8245"
+      },
+      {
+        "author_time": "2023-08-03T21:10:38Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-03T21:10:38Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-03T21:10:38+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e9089ea84349253b07eb7ae0ac9aef85bf03efef"
+        ],
+        "position": 38,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "ba8e563f810b1994d50848c723aa97fd0387395e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "647aecf3466d4ad017d20568415e9774082cbafb"
+      },
+      {
+        "author_time": "2023-08-03T21:13:58Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-03T21:13:58Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-03T21:13:58+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "ba8e563f810b1994d50848c723aa97fd0387395e"
+        ],
+        "position": 39,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "3ebe1b18e1b5463663ac31ae15da3914bb3973e0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "23644803345031b6cc83cd1f0747876fa6bc5761"
+      },
+      {
+        "author_time": "2023-08-03T21:18:55Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-03T21:18:55Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-03T21:18:55+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "3ebe1b18e1b5463663ac31ae15da3914bb3973e0"
+        ],
+        "position": 40,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "c179b8c6a1863164cc94f4e9b26c9c7a9c394af8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a747c1c398219a26b17f28dd6ebb5eb40712b92e"
+      },
+      {
+        "author_time": "2023-08-04T01:38:00Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-04T01:38:00Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-04T01:38:00+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "c179b8c6a1863164cc94f4e9b26c9c7a9c394af8"
+        ],
+        "position": 41,
+        "pr_number": 1936,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+          "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+          "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+        },
+        "repository": "osmosis-labs/osmosis-frontend",
+        "sha": "ab9efddd70f043a7b5ad502544cb3c821bff02db",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7bd84bb79437009392f06250f10b1219a39b5122"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-07-31T15:38:46Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-07-31T15:38:46Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-07-31T15:38:46+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "ec2a0db94a845a376e44601424e097b54680892e"
+      ],
+      "position": 8,
+      "pr_number": 1936,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+        "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+        "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+      },
+      "repository": "osmosis-labs/osmosis-frontend",
+      "sha": "8fb7981545c7a6e450347ca8a02f1936ffac4132",
+      "temporal_basis": "committer_time",
+      "tree_sha": "0dcb282c2d26fef57b2bec398740010647a88a42"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-07-31T15:32:43Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-07-31T15:32:43Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-07-31T15:32:43+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "7b9a58a751785f873575e0da1beb75ba60c64998"
+      ],
+      "position": 7,
+      "pr_number": 1936,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+        "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+        "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+      },
+      "repository": "osmosis-labs/osmosis-frontend",
+      "sha": "ec2a0db94a845a376e44601424e097b54680892e",
+      "temporal_basis": "committer_time",
+      "tree_sha": "9d90fc9cbc4f8e80334faaccb30223c2045baa27"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "ec2a0db94a845a376e44601424e097b54680892e",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "7b9a58a751785f873575e0da1beb75ba60c64998"
+    ],
+    "recursive_tree_entry_count": 1485,
+    "recursive_tree_listing_sha256": "124f95cb33d2846016113fa806a61e204506eeb5d5f78928e1eb8a7ba01a64c0",
+    "retrieved_at": "2026-10-05T20:15:34.964916+00:00",
+    "source": "https://github.com/osmosis-labs/osmosis-frontend.git",
+    "status": "materialized",
+    "tree_sha": "9d90fc9cbc4f8e80334faaccb30223c2045baa27"
+  },
+  "pr_number": 1936,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "cc8ace0671476576111485db61053033711547db",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:32.991772+00:00",
+        "sha256": "932257049b7c84449ee2c07b0e399d1ec55249a658e4a5d02413ff5570a6c910",
+        "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:15:32.186646+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:15:32.186646+00:00",
+      "sha256": "0c078af376a7546aabb14abfc7272e66e7b3646350762d4bf03e9b1c1518b338",
+      "source": "https://api.github.com/repos/osmosis-labs/osmosis-frontend/pulls/1936"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "osmosis-labs/osmosis-frontend",
+  "selected_state": {
+    "author_time": "2023-07-31T15:32:43Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "ec2a0db94a845a376e44601424e097b54680892e",
+    "committer_time": "2023-07-31T15:32:43Z",
+    "effective_time": "2023-07-31T15:32:43+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "9d90fc9cbc4f8e80334faaccb30223c2045baa27"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-07-31T15:36:45.193223+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-07-31T15:37:00.377631+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

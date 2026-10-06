@@ -1,0 +1,394 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-07-13T17:45:18Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-13T17:45:18Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-13T17:45:18+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "3353304c9fdbc85eda9ed2be67c7123400a45f47"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:56.728705+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/open-learning-exchange/myplanet/commits?sha=master&until=2023-07-17T12%3A56%3A44.032860%2B00%3A00&per_page=1&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:56.728705+00:00",
+          "sha256": "e69b0ea3be1d6f106f9fc4a3ee5f0ac8690747553ce32706a2eb93c7ec2c7614",
+          "source": "https://api.github.com/repos/open-learning-exchange/myplanet/commits?sha=master&until=2023-07-17T12%3A56%3A44.032860%2B00%3A00&per_page=1&page=1"
+        },
+        "repository": "open-learning-exchange/myplanet",
+        "sha": "1ca129106c6e9556957870ec57589dc180705f6a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6da0b4333574b6190a1ade65744fb4e73575ba36"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-07-13T17:45:18Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-07-13T17:45:18Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-07-13T17:45:18+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "3353304c9fdbc85eda9ed2be67c7123400a45f47"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:56.728705+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/open-learning-exchange/myplanet/commits?sha=master&until=2023-07-17T12%3A56%3A44.032860%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:56.728705+00:00",
+        "sha256": "e69b0ea3be1d6f106f9fc4a3ee5f0ac8690747553ce32706a2eb93c7ec2c7614",
+        "source": "https://api.github.com/repos/open-learning-exchange/myplanet/commits?sha=master&until=2023-07-17T12%3A56%3A44.032860%2B00%3A00&per_page=1&page=1"
+      },
+      "repository": "open-learning-exchange/myplanet",
+      "sha": "1ca129106c6e9556957870ec57589dc180705f6a",
+      "temporal_basis": "committer_time",
+      "tree_sha": "6da0b4333574b6190a1ade65744fb4e73575ba36"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "master",
+  "base_routing_source": "pr_base_ref",
+  "case_id": "CASE_AADA2C787EEE",
+  "executed_at": "2026-10-05T20:18:59.060502+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-07-17T13:37:44Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-17T13:37:44Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-17T13:37:44+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1ca129106c6e9556957870ec57589dc180705f6a"
+        ],
+        "position": 1,
+        "pr_number": 2231,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:55.833946+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/open-learning-exchange/myplanet/pulls/2231/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:55.833946+00:00",
+          "sha256": "2d91fd8bbd3b0c7b1b37af4f61a9306df793971db22e9a7184e76d02d07cb711",
+          "source": "https://api.github.com/repos/open-learning-exchange/myplanet/pulls/2231/commits?per_page=100&page=1"
+        },
+        "repository": "open-learning-exchange/myplanet",
+        "sha": "05feb6a7606139aa8eaf3a9a01b5ca0e213a2047",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a3a41392e9094fa7750bfb13952b877499fecb3e"
+      },
+      {
+        "author_time": "2023-07-20T15:30:40Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-20T15:30:40Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-20T15:30:40+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f2e94abe7a3097bca7df5f6e45fe742f4758a5ff",
+          "05feb6a7606139aa8eaf3a9a01b5ca0e213a2047"
+        ],
+        "position": 2,
+        "pr_number": 2231,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:55.833946+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/open-learning-exchange/myplanet/pulls/2231/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:55.833946+00:00",
+          "sha256": "2d91fd8bbd3b0c7b1b37af4f61a9306df793971db22e9a7184e76d02d07cb711",
+          "source": "https://api.github.com/repos/open-learning-exchange/myplanet/pulls/2231/commits?per_page=100&page=1"
+        },
+        "repository": "open-learning-exchange/myplanet",
+        "sha": "7873e1d6eda56f368d76fc1d9a3b160d247c4f08",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5730829322d8672941b5476a5a07c2a692c9e96e"
+      },
+      {
+        "author_time": "2023-07-24T10:38:18Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-24T10:38:18Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-24T10:38:18+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7873e1d6eda56f368d76fc1d9a3b160d247c4f08"
+        ],
+        "position": 3,
+        "pr_number": 2231,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:55.833946+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/open-learning-exchange/myplanet/pulls/2231/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:55.833946+00:00",
+          "sha256": "2d91fd8bbd3b0c7b1b37af4f61a9306df793971db22e9a7184e76d02d07cb711",
+          "source": "https://api.github.com/repos/open-learning-exchange/myplanet/pulls/2231/commits?per_page=100&page=1"
+        },
+        "repository": "open-learning-exchange/myplanet",
+        "sha": "17f82c8d79368b72d65a1de9ecaea59bb727097b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "eeb568aba51243c880776b2c2833515b0e1b9b39"
+      },
+      {
+        "author_time": "2023-07-24T10:38:44Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-24T10:38:44Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-24T10:38:44+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "17f82c8d79368b72d65a1de9ecaea59bb727097b"
+        ],
+        "position": 4,
+        "pr_number": 2231,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:55.833946+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/open-learning-exchange/myplanet/pulls/2231/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:55.833946+00:00",
+          "sha256": "2d91fd8bbd3b0c7b1b37af4f61a9306df793971db22e9a7184e76d02d07cb711",
+          "source": "https://api.github.com/repos/open-learning-exchange/myplanet/pulls/2231/commits?per_page=100&page=1"
+        },
+        "repository": "open-learning-exchange/myplanet",
+        "sha": "f4b7674e6e8c8fb301a549266ea8ee4abb948b0b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1c1a90217521dbd0733e5fa7499619bc4ef5fed1"
+      },
+      {
+        "author_time": "2023-07-24T10:39:23Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-24T10:39:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-24T10:39:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f4b7674e6e8c8fb301a549266ea8ee4abb948b0b",
+          "4a945cbb5a3b9a764839b780c759790f01b7df7c"
+        ],
+        "position": 5,
+        "pr_number": 2231,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:55.833946+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/open-learning-exchange/myplanet/pulls/2231/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:55.833946+00:00",
+          "sha256": "2d91fd8bbd3b0c7b1b37af4f61a9306df793971db22e9a7184e76d02d07cb711",
+          "source": "https://api.github.com/repos/open-learning-exchange/myplanet/pulls/2231/commits?per_page=100&page=1"
+        },
+        "repository": "open-learning-exchange/myplanet",
+        "sha": "a4553880c38e437faabcf69626273b8cd96e0c41",
+        "temporal_basis": "committer_time",
+        "tree_sha": "14f3ff6d211719f336f00acab3fad3e04aa3a4e0"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-07-17T13:37:44Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-07-17T13:37:44Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-07-17T13:37:44+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "1ca129106c6e9556957870ec57589dc180705f6a"
+      ],
+      "position": 1,
+      "pr_number": 2231,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:55.833946+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/open-learning-exchange/myplanet/pulls/2231/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:55.833946+00:00",
+        "sha256": "2d91fd8bbd3b0c7b1b37af4f61a9306df793971db22e9a7184e76d02d07cb711",
+        "source": "https://api.github.com/repos/open-learning-exchange/myplanet/pulls/2231/commits?per_page=100&page=1"
+      },
+      "repository": "open-learning-exchange/myplanet",
+      "sha": "05feb6a7606139aa8eaf3a9a01b5ca0e213a2047",
+      "temporal_basis": "committer_time",
+      "tree_sha": "a3a41392e9094fa7750bfb13952b877499fecb3e"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "1ca129106c6e9556957870ec57589dc180705f6a",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "3353304c9fdbc85eda9ed2be67c7123400a45f47"
+    ],
+    "recursive_tree_entry_count": 817,
+    "recursive_tree_listing_sha256": "dde5918d0d00e8d04f9e40b02039ad8051eae2f2bd88632f15ca94f5a927b386",
+    "retrieved_at": "2026-10-05T20:18:59.056640+00:00",
+    "source": "https://github.com/open-learning-exchange/myplanet.git",
+    "status": "materialized",
+    "tree_sha": "6da0b4333574b6190a1ade65744fb4e73575ba36"
+  },
+  "pr_number": 2231,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:56.222980+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/open-learning-exchange/myplanet/git/ref/heads/master"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:56.222980+00:00",
+        "sha256": "90e03e13ae7447e4614273ea9da4aba4922d4e60a76197bc5a9294053cf0035b",
+        "source": "https://api.github.com/repos/open-learning-exchange/myplanet/git/ref/heads/master"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:56.728705+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/open-learning-exchange/myplanet/commits?sha=master&until=2023-07-17T12%3A56%3A44.032860%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:56.728705+00:00",
+        "sha256": "e69b0ea3be1d6f106f9fc4a3ee5f0ac8690747553ce32706a2eb93c7ec2c7614",
+        "source": "https://api.github.com/repos/open-learning-exchange/myplanet/commits?sha=master&until=2023-07-17T12%3A56%3A44.032860%2B00%3A00&per_page=1&page=1"
+      }
+    ],
+    "base_route_evidence": {
+      "ref_object_sha": "aa3cefbbedd158e8ce5f16193f194a09702aa192",
+      "rule": "recorded_pr_base_ref_resolves"
+    },
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "4a945cbb5a3b9a764839b780c759790f01b7df7c",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:55.833946+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/open-learning-exchange/myplanet/pulls/2231/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:55.833946+00:00",
+        "sha256": "2d91fd8bbd3b0c7b1b37af4f61a9306df793971db22e9a7184e76d02d07cb711",
+        "source": "https://api.github.com/repos/open-learning-exchange/myplanet/pulls/2231/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:18:55.216653+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/open-learning-exchange/myplanet/pulls/2231"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:18:55.216653+00:00",
+      "sha256": "2a2636e348a089dc59b1dad71e17a378990e291bf3012ff0a9d92e22d32e18eb",
+      "source": "https://api.github.com/repos/open-learning-exchange/myplanet/pulls/2231"
+    },
+    "recorded_pr_base_ref_resolves": true
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "open-learning-exchange/myplanet",
+  "selected_state": {
+    "author_time": "2023-07-13T17:45:18Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "1ca129106c6e9556957870ec57589dc180705f6a",
+    "committer_time": "2023-07-13T17:45:18Z",
+    "effective_time": "2023-07-13T17:45:18+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "6da0b4333574b6190a1ade65744fb4e73575ba36"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-07-17T12:55:01.242029+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-07-17T12:56:44.032860+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

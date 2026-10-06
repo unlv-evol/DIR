@@ -1,0 +1,712 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-06-02T14:30:48Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-02T14:30:48Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-02T14:30:48+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "210f5420cd514f8b72fabd28708bebc9da284266"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:44.580789+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dust-tt/dust/commits?sha=main&until=2023-06-05T08%3A19%3A36.723423%2B00%3A00&per_page=1&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:44.580789+00:00",
+          "sha256": "8584c3cca887fdb998939a5ab4b956eeb4eccedc658ccc184aae40756ea6a8e3",
+          "source": "https://api.github.com/repos/dust-tt/dust/commits?sha=main&until=2023-06-05T08%3A19%3A36.723423%2B00%3A00&per_page=1&page=1"
+        },
+        "repository": "dust-tt/dust",
+        "sha": "d072391eff54bdd554bfca5a468e6959871a732c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3e1694e7242861dbb280a7efbe88db1cb4b8109f"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-06-02T14:30:48Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-06-02T14:30:48Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-06-02T14:30:48+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "210f5420cd514f8b72fabd28708bebc9da284266"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:44.580789+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/dust-tt/dust/commits?sha=main&until=2023-06-05T08%3A19%3A36.723423%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:44.580789+00:00",
+        "sha256": "8584c3cca887fdb998939a5ab4b956eeb4eccedc658ccc184aae40756ea6a8e3",
+        "source": "https://api.github.com/repos/dust-tt/dust/commits?sha=main&until=2023-06-05T08%3A19%3A36.723423%2B00%3A00&per_page=1&page=1"
+      },
+      "repository": "dust-tt/dust",
+      "sha": "d072391eff54bdd554bfca5a468e6959871a732c",
+      "temporal_basis": "committer_time",
+      "tree_sha": "3e1694e7242861dbb280a7efbe88db1cb4b8109f"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "main",
+  "base_routing_source": "pr_base_ref",
+  "case_id": "CASE_7351FB1ECD56",
+  "executed_at": "2026-10-05T20:17:45.878458+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-05-26T10:16:35Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2023-06-06T08:33:21Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-06T08:33:21+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "21c04b5657f046d11bc2fd7dbb85b35d56649610"
+        ],
+        "position": 1,
+        "pr_number": 508,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+          "sha256": "d8138fd78601be92e48f911f672e489bf39b31539284e16d673252b3c8ff26df",
+          "source": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+        },
+        "repository": "dust-tt/dust",
+        "sha": "f426cd1532625a29e08f84f9bab061bb7e7e1459",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6dd04014e52f57dc1e415795735cc9d95ded3480"
+      },
+      {
+        "author_time": "2023-05-26T10:25:58Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2023-06-06T08:35:21Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-06T08:35:21+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f426cd1532625a29e08f84f9bab061bb7e7e1459"
+        ],
+        "position": 2,
+        "pr_number": 508,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+          "sha256": "d8138fd78601be92e48f911f672e489bf39b31539284e16d673252b3c8ff26df",
+          "source": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+        },
+        "repository": "dust-tt/dust",
+        "sha": "b6e0573fd71a60f88a703e1ff02886900334cfb0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2d9e06cb5973eca97f4e5613b1a0fe345e454e1a"
+      },
+      {
+        "author_time": "2023-05-29T11:25:11Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2023-06-06T08:35:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-06T08:35:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "b6e0573fd71a60f88a703e1ff02886900334cfb0"
+        ],
+        "position": 3,
+        "pr_number": 508,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+          "sha256": "d8138fd78601be92e48f911f672e489bf39b31539284e16d673252b3c8ff26df",
+          "source": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+        },
+        "repository": "dust-tt/dust",
+        "sha": "c9840c4604698515c53fc0b2563970be1ef98043",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d8efd18baf5db84a248dc7b89437899412b62d95"
+      },
+      {
+        "author_time": "2023-06-05T08:14:55Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2023-06-06T08:35:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-06T08:35:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "c9840c4604698515c53fc0b2563970be1ef98043"
+        ],
+        "position": 4,
+        "pr_number": 508,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+          "sha256": "d8138fd78601be92e48f911f672e489bf39b31539284e16d673252b3c8ff26df",
+          "source": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+        },
+        "repository": "dust-tt/dust",
+        "sha": "eb7bf7439846718368279ccff212ef49b9096ae1",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5af9285a76857d38f9450a1c53ce27f58931771c"
+      },
+      {
+        "author_time": "2023-06-05T10:29:42Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T08:35:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-06T08:35:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "eb7bf7439846718368279ccff212ef49b9096ae1"
+        ],
+        "position": 5,
+        "pr_number": 508,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+          "sha256": "d8138fd78601be92e48f911f672e489bf39b31539284e16d673252b3c8ff26df",
+          "source": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+        },
+        "repository": "dust-tt/dust",
+        "sha": "22df81b695aa4fa668edb77835b770eaffe064ae",
+        "temporal_basis": "committer_time",
+        "tree_sha": "38cd147079dbd7c5e9e35bb28aa560d01a2ddfd0"
+      },
+      {
+        "author_time": "2023-06-05T10:30:10Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T08:35:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-06T08:35:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "22df81b695aa4fa668edb77835b770eaffe064ae"
+        ],
+        "position": 6,
+        "pr_number": 508,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+          "sha256": "d8138fd78601be92e48f911f672e489bf39b31539284e16d673252b3c8ff26df",
+          "source": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+        },
+        "repository": "dust-tt/dust",
+        "sha": "d291c2d966bf9512edb3ef7b563c984ab49e8f68",
+        "temporal_basis": "committer_time",
+        "tree_sha": "eb9af2060e9016074989f3833fe22e49d3d5bda6"
+      },
+      {
+        "author_time": "2023-06-05T13:03:17Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T08:35:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-06T08:35:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d291c2d966bf9512edb3ef7b563c984ab49e8f68"
+        ],
+        "position": 7,
+        "pr_number": 508,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+          "sha256": "d8138fd78601be92e48f911f672e489bf39b31539284e16d673252b3c8ff26df",
+          "source": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+        },
+        "repository": "dust-tt/dust",
+        "sha": "03b238952a8d0c81cfa1313c52463e881a7a85b3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "03f6b6c89b72ac19531d3127188ee0d9afc492fa"
+      },
+      {
+        "author_time": "2023-06-05T13:43:57Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T08:35:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-06T08:35:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "03b238952a8d0c81cfa1313c52463e881a7a85b3"
+        ],
+        "position": 8,
+        "pr_number": 508,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+          "sha256": "d8138fd78601be92e48f911f672e489bf39b31539284e16d673252b3c8ff26df",
+          "source": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+        },
+        "repository": "dust-tt/dust",
+        "sha": "8a0f66c92537712c3281be3490185ab1174ede03",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1261be1d44be53ae3f2dbfcad31e437816f1572e"
+      },
+      {
+        "author_time": "2023-06-05T13:59:35Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T08:35:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-06T08:35:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8a0f66c92537712c3281be3490185ab1174ede03"
+        ],
+        "position": 9,
+        "pr_number": 508,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+          "sha256": "d8138fd78601be92e48f911f672e489bf39b31539284e16d673252b3c8ff26df",
+          "source": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+        },
+        "repository": "dust-tt/dust",
+        "sha": "1092e9672575fdbcd8f59db50749ad9adfd3b305",
+        "temporal_basis": "committer_time",
+        "tree_sha": "332e50f3aae116dc047ffed44aaea5151a75a5a0"
+      },
+      {
+        "author_time": "2023-06-05T16:22:18Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T08:35:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-06T08:35:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1092e9672575fdbcd8f59db50749ad9adfd3b305"
+        ],
+        "position": 10,
+        "pr_number": 508,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+          "sha256": "d8138fd78601be92e48f911f672e489bf39b31539284e16d673252b3c8ff26df",
+          "source": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+        },
+        "repository": "dust-tt/dust",
+        "sha": "8c2da3370701dccacf68604c756375333968a3b5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a8112a2535f7fd05e5131328c60361aac5a6da04"
+      },
+      {
+        "author_time": "2023-06-05T16:25:57Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T08:35:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-06T08:35:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8c2da3370701dccacf68604c756375333968a3b5"
+        ],
+        "position": 11,
+        "pr_number": 508,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+          "sha256": "d8138fd78601be92e48f911f672e489bf39b31539284e16d673252b3c8ff26df",
+          "source": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+        },
+        "repository": "dust-tt/dust",
+        "sha": "d6a715242a268a1a6038c3656be27b11ab4870b1",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d75023ab0ba831a9c5d89a48fd8b489babac1f80"
+      },
+      {
+        "author_time": "2023-06-06T08:46:46Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T08:46:46Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-06T08:46:46+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d6a715242a268a1a6038c3656be27b11ab4870b1"
+        ],
+        "position": 12,
+        "pr_number": 508,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+          "sha256": "d8138fd78601be92e48f911f672e489bf39b31539284e16d673252b3c8ff26df",
+          "source": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+        },
+        "repository": "dust-tt/dust",
+        "sha": "c989d852e448ae3ee1af0dd0c8d140a8b6a1e5f6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "68faac211f2807fdf7b26e4c8f2591b7aa34f9e7"
+      },
+      {
+        "author_time": "2023-06-06T08:51:33Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T08:51:33Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-06T08:51:33+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "c989d852e448ae3ee1af0dd0c8d140a8b6a1e5f6"
+        ],
+        "position": 13,
+        "pr_number": 508,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+          "sha256": "d8138fd78601be92e48f911f672e489bf39b31539284e16d673252b3c8ff26df",
+          "source": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+        },
+        "repository": "dust-tt/dust",
+        "sha": "61707486670c6e03fdcb916587586c4560ba730b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ad1219a0dcbaadf653b1ced011904f46d08d20ef"
+      },
+      {
+        "author_time": "2023-06-06T08:53:22Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T08:53:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-06T08:53:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "61707486670c6e03fdcb916587586c4560ba730b"
+        ],
+        "position": 14,
+        "pr_number": 508,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+          "sha256": "d8138fd78601be92e48f911f672e489bf39b31539284e16d673252b3c8ff26df",
+          "source": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+        },
+        "repository": "dust-tt/dust",
+        "sha": "a8036eaca4505c820a0e7cad79eaeeba346f0eef",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d2546db0ef94c648eab2c3c5d5f7fbe142145ceb"
+      },
+      {
+        "author_time": "2023-06-06T09:33:13Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-06T09:33:13Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-06T09:33:13+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a8036eaca4505c820a0e7cad79eaeeba346f0eef"
+        ],
+        "position": 15,
+        "pr_number": 508,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+          "sha256": "d8138fd78601be92e48f911f672e489bf39b31539284e16d673252b3c8ff26df",
+          "source": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+        },
+        "repository": "dust-tt/dust",
+        "sha": "b2e56209895aa090f2f0236c4b35de1061b7320b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5410768e45dae4a21b8eb36328ee9df4eeb664b7"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-05-26T10:16:35Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "crosses_tfg",
+      "committer_time": "2023-06-06T08:33:21Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-06-06T08:33:21+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "21c04b5657f046d11bc2fd7dbb85b35d56649610"
+      ],
+      "position": 1,
+      "pr_number": 508,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+        "sha256": "d8138fd78601be92e48f911f672e489bf39b31539284e16d673252b3c8ff26df",
+        "source": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+      },
+      "repository": "dust-tt/dust",
+      "sha": "f426cd1532625a29e08f84f9bab061bb7e7e1459",
+      "temporal_basis": "committer_time",
+      "tree_sha": "6dd04014e52f57dc1e415795735cc9d95ded3480"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "d072391eff54bdd554bfca5a468e6959871a732c",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "210f5420cd514f8b72fabd28708bebc9da284266"
+    ],
+    "recursive_tree_entry_count": 662,
+    "recursive_tree_listing_sha256": "430729771343ac7570548c08f4488479f9d33038d97b5951f215349b78f78468",
+    "retrieved_at": "2026-10-05T20:17:45.874956+00:00",
+    "source": "https://github.com/dust-tt/dust.git",
+    "status": "materialized",
+    "tree_sha": "3e1694e7242861dbb280a7efbe88db1cb4b8109f"
+  },
+  "pr_number": 508,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:44.094027+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/dust-tt/dust/git/ref/heads/main"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:44.094027+00:00",
+        "sha256": "4a339c09e0e43439f342093be5a071fe71c0b6c3c536b67bfda536d905c3659b",
+        "source": "https://api.github.com/repos/dust-tt/dust/git/ref/heads/main"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:44.580789+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/dust-tt/dust/commits?sha=main&until=2023-06-05T08%3A19%3A36.723423%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:44.580789+00:00",
+        "sha256": "8584c3cca887fdb998939a5ab4b956eeb4eccedc658ccc184aae40756ea6a8e3",
+        "source": "https://api.github.com/repos/dust-tt/dust/commits?sha=main&until=2023-06-05T08%3A19%3A36.723423%2B00%3A00&per_page=1&page=1"
+      }
+    ],
+    "base_route_evidence": {
+      "ref_object_sha": "c1560bbf26233a0676185aeb022863b1abab9def",
+      "rule": "recorded_pr_base_ref_resolves"
+    },
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "21c04b5657f046d11bc2fd7dbb85b35d56649610",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:43.697070+00:00",
+        "sha256": "d8138fd78601be92e48f911f672e489bf39b31539284e16d673252b3c8ff26df",
+        "source": "https://api.github.com/repos/dust-tt/dust/pulls/508/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:17:43.029111+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/dust-tt/dust/pulls/508"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:17:43.029111+00:00",
+      "sha256": "77c98ca7b416385bbac37b36b108f7104afb83f1137eac633daad51f9a068716",
+      "source": "https://api.github.com/repos/dust-tt/dust/pulls/508"
+    },
+    "recorded_pr_base_ref_resolves": true
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "dust-tt/dust",
+  "selected_state": {
+    "author_time": "2023-06-02T14:30:48Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "d072391eff54bdd554bfca5a468e6959871a732c",
+    "committer_time": "2023-06-02T14:30:48Z",
+    "effective_time": "2023-06-02T14:30:48+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "3e1694e7242861dbb280a7efbe88db1cb4b8109f"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-06-05T08:19:11.674399+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-06-05T08:19:36.723423+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

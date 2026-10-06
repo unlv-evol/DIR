@@ -1,0 +1,290 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_179B36843FBE",
+  "executed_at": "2026-10-05T20:15:46.243788+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-07-23T09:55:55Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-23T09:56:00Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-23T09:56:00+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "0439135632ff32a323f161a9844b36d07b241233"
+        ],
+        "position": 1,
+        "pr_number": 158,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:44.413059+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Hochfrequenz/kohlrahbi/pulls/158/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:44.413059+00:00",
+          "sha256": "4fa7cd69931637171baf3f412c8c67c06e35acb1963726eba44a225de614e9ff",
+          "source": "https://api.github.com/repos/Hochfrequenz/kohlrahbi/pulls/158/commits?per_page=100&page=1"
+        },
+        "repository": "Hochfrequenz/kohlrahbi",
+        "sha": "72a9a3399b274617a1ca5d72257269fe24561e5a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c71b4b433278452c6365a424e0ffa95d42941dbf"
+      },
+      {
+        "author_time": "2023-07-24T07:19:20Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-24T07:19:20Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-24T07:19:20+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "72a9a3399b274617a1ca5d72257269fe24561e5a",
+          "ddb943d326ed2d8822615a664160aaa8437b1762"
+        ],
+        "position": 2,
+        "pr_number": 158,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:44.413059+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Hochfrequenz/kohlrahbi/pulls/158/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:44.413059+00:00",
+          "sha256": "4fa7cd69931637171baf3f412c8c67c06e35acb1963726eba44a225de614e9ff",
+          "source": "https://api.github.com/repos/Hochfrequenz/kohlrahbi/pulls/158/commits?per_page=100&page=1"
+        },
+        "repository": "Hochfrequenz/kohlrahbi",
+        "sha": "03b34839155c902883f8b6ef24a7b05cd38b10d2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "55421627f0b0e6c15a69ff01517016cd40f5aaca"
+      },
+      {
+        "author_time": "2023-07-24T09:16:18Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-24T09:16:18Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-24T09:16:18+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "03b34839155c902883f8b6ef24a7b05cd38b10d2"
+        ],
+        "position": 3,
+        "pr_number": 158,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:44.413059+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Hochfrequenz/kohlrahbi/pulls/158/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:44.413059+00:00",
+          "sha256": "4fa7cd69931637171baf3f412c8c67c06e35acb1963726eba44a225de614e9ff",
+          "source": "https://api.github.com/repos/Hochfrequenz/kohlrahbi/pulls/158/commits?per_page=100&page=1"
+        },
+        "repository": "Hochfrequenz/kohlrahbi",
+        "sha": "23e4ecf0d897b607793b60f9875ae986a39debf1",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4ee687f349a26b67cfdec04d4a18f374d764f197"
+      },
+      {
+        "author_time": "2023-07-24T09:26:55Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-24T09:26:55Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-24T09:26:55+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "23e4ecf0d897b607793b60f9875ae986a39debf1"
+        ],
+        "position": 4,
+        "pr_number": 158,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:15:44.413059+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/Hochfrequenz/kohlrahbi/pulls/158/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:15:44.413059+00:00",
+          "sha256": "4fa7cd69931637171baf3f412c8c67c06e35acb1963726eba44a225de614e9ff",
+          "source": "https://api.github.com/repos/Hochfrequenz/kohlrahbi/pulls/158/commits?per_page=100&page=1"
+        },
+        "repository": "Hochfrequenz/kohlrahbi",
+        "sha": "58064f932d604ada573b28df10c4c89df9e74921",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b2afdbed635542addae4db7d0fbfaf08c2dc4f9a"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-07-24T07:19:20Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-07-24T07:19:20Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-07-24T07:19:20+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "72a9a3399b274617a1ca5d72257269fe24561e5a",
+        "ddb943d326ed2d8822615a664160aaa8437b1762"
+      ],
+      "position": 2,
+      "pr_number": 158,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:44.413059+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Hochfrequenz/kohlrahbi/pulls/158/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:44.413059+00:00",
+        "sha256": "4fa7cd69931637171baf3f412c8c67c06e35acb1963726eba44a225de614e9ff",
+        "source": "https://api.github.com/repos/Hochfrequenz/kohlrahbi/pulls/158/commits?per_page=100&page=1"
+      },
+      "repository": "Hochfrequenz/kohlrahbi",
+      "sha": "03b34839155c902883f8b6ef24a7b05cd38b10d2",
+      "temporal_basis": "committer_time",
+      "tree_sha": "55421627f0b0e6c15a69ff01517016cd40f5aaca"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-07-23T09:55:55Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-07-23T09:56:00Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-07-23T09:56:00+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "0439135632ff32a323f161a9844b36d07b241233"
+      ],
+      "position": 1,
+      "pr_number": 158,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:44.413059+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Hochfrequenz/kohlrahbi/pulls/158/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:44.413059+00:00",
+        "sha256": "4fa7cd69931637171baf3f412c8c67c06e35acb1963726eba44a225de614e9ff",
+        "source": "https://api.github.com/repos/Hochfrequenz/kohlrahbi/pulls/158/commits?per_page=100&page=1"
+      },
+      "repository": "Hochfrequenz/kohlrahbi",
+      "sha": "72a9a3399b274617a1ca5d72257269fe24561e5a",
+      "temporal_basis": "committer_time",
+      "tree_sha": "c71b4b433278452c6365a424e0ffa95d42941dbf"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "72a9a3399b274617a1ca5d72257269fe24561e5a",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "0439135632ff32a323f161a9844b36d07b241233"
+    ],
+    "recursive_tree_entry_count": 127,
+    "recursive_tree_listing_sha256": "80ac41108ad591cdfcf0b409aaa2007c8be3075303ee71643fabd8928dfdf684",
+    "retrieved_at": "2026-10-05T20:15:46.240518+00:00",
+    "source": "https://github.com/Hochfrequenz/kohlrahbi.git",
+    "status": "materialized",
+    "tree_sha": "c71b4b433278452c6365a424e0ffa95d42941dbf"
+  },
+  "pr_number": 158,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "ddb943d326ed2d8822615a664160aaa8437b1762",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:15:44.413059+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/Hochfrequenz/kohlrahbi/pulls/158/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:15:44.413059+00:00",
+        "sha256": "4fa7cd69931637171baf3f412c8c67c06e35acb1963726eba44a225de614e9ff",
+        "source": "https://api.github.com/repos/Hochfrequenz/kohlrahbi/pulls/158/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:15:43.858563+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/Hochfrequenz/kohlrahbi/pulls/158"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:15:43.858563+00:00",
+      "sha256": "dc288edd985e1ca289159759291e65c0f2ede0663b3a062a660a982562837d1e",
+      "source": "https://api.github.com/repos/Hochfrequenz/kohlrahbi/pulls/158"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "Hochfrequenz/kohlrahbi",
+  "selected_state": {
+    "author_time": "2023-07-23T09:55:55Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "72a9a3399b274617a1ca5d72257269fe24561e5a",
+    "committer_time": "2023-07-23T09:56:00Z",
+    "effective_time": "2023-07-23T09:56:00+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "c71b4b433278452c6365a424e0ffa95d42941dbf"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-07-24T07:17:59.369699+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-07-24T07:18:17.145534+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

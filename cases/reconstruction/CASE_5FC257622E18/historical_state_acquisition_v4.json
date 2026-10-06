@@ -1,0 +1,485 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_5FC257622E18",
+  "executed_at": "2026-10-05T20:17:20.625662+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-08-22T17:58:36Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-22T17:58:36Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-08-22T17:58:36+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "b39b9780a018d0b315d32769771c974aa3f40eeb"
+        ],
+        "position": 1,
+        "pr_number": 23,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+          "sha256": "7755ec8be8dd12e9a855050ac148163ab0148fe0772e60eda8ed3f336a7b9829",
+          "source": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+        },
+        "repository": "MrNeRF/LichtFeld-Studio",
+        "sha": "40099e53c621e01c3edb9b31cbc939b0c03538cf",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d570b9d0225bb4b63819406398d73296a70e7c0c"
+      },
+      {
+        "author_time": "2023-08-22T18:01:10Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-22T18:01:10Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-08-22T18:01:10+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "40099e53c621e01c3edb9b31cbc939b0c03538cf",
+          "40448c25b882fe94bac1e2430cf62efb70e21821"
+        ],
+        "position": 2,
+        "pr_number": 23,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+          "sha256": "7755ec8be8dd12e9a855050ac148163ab0148fe0772e60eda8ed3f336a7b9829",
+          "source": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+        },
+        "repository": "MrNeRF/LichtFeld-Studio",
+        "sha": "c25b77e196661427b08d5b05c7c064dae7af0471",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d570b9d0225bb4b63819406398d73296a70e7c0c"
+      },
+      {
+        "author_time": "2023-08-23T06:56:59Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-23T06:56:59Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-08-23T06:56:59+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c25b77e196661427b08d5b05c7c064dae7af0471",
+          "4aff8d7410a77329a347b221b904e40177c9ab8b"
+        ],
+        "position": 3,
+        "pr_number": 23,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+          "sha256": "7755ec8be8dd12e9a855050ac148163ab0148fe0772e60eda8ed3f336a7b9829",
+          "source": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+        },
+        "repository": "MrNeRF/LichtFeld-Studio",
+        "sha": "c352765f00e0d50d3d7843e78ef448c964735fbc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d570b9d0225bb4b63819406398d73296a70e7c0c"
+      },
+      {
+        "author_time": "2023-08-23T08:58:41Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-23T08:58:41Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-08-23T08:58:41+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c352765f00e0d50d3d7843e78ef448c964735fbc"
+        ],
+        "position": 4,
+        "pr_number": 23,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+          "sha256": "7755ec8be8dd12e9a855050ac148163ab0148fe0772e60eda8ed3f336a7b9829",
+          "source": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+        },
+        "repository": "MrNeRF/LichtFeld-Studio",
+        "sha": "9dbd303a2576536f10239882d14acf2121e25b2c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a278bc924aa8ac02dacfc1582677bb6c1061ac63"
+      },
+      {
+        "author_time": "2023-08-23T09:13:13Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-23T09:13:13Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-08-23T09:13:13+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "9dbd303a2576536f10239882d14acf2121e25b2c",
+          "49c604a6faab894e1dc4ce2443f349be1cbb810a"
+        ],
+        "position": 5,
+        "pr_number": 23,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+          "sha256": "7755ec8be8dd12e9a855050ac148163ab0148fe0772e60eda8ed3f336a7b9829",
+          "source": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+        },
+        "repository": "MrNeRF/LichtFeld-Studio",
+        "sha": "060ee6e51fb4f7dd02ebe223f24f50c65c54edce",
+        "temporal_basis": "committer_time",
+        "tree_sha": "dd7fa71b2868412fad9e16887b9fbdc285e6bae3"
+      },
+      {
+        "author_time": "2023-08-23T10:17:30Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-23T10:17:30Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-23T10:17:30+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "060ee6e51fb4f7dd02ebe223f24f50c65c54edce"
+        ],
+        "position": 6,
+        "pr_number": 23,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+          "sha256": "7755ec8be8dd12e9a855050ac148163ab0148fe0772e60eda8ed3f336a7b9829",
+          "source": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+        },
+        "repository": "MrNeRF/LichtFeld-Studio",
+        "sha": "729a05945f3dafcdcebddd5c9ebcf48fc328e9b4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9185ba997c8a594d30a1b611652045c571852aa1"
+      },
+      {
+        "author_time": "2023-08-23T11:18:03Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-23T11:18:03Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-23T11:18:03+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "729a05945f3dafcdcebddd5c9ebcf48fc328e9b4"
+        ],
+        "position": 7,
+        "pr_number": 23,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+          "sha256": "7755ec8be8dd12e9a855050ac148163ab0148fe0772e60eda8ed3f336a7b9829",
+          "source": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+        },
+        "repository": "MrNeRF/LichtFeld-Studio",
+        "sha": "4a772f9101f748466cccf83ce38ecb783ae9dc3a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "cc69ad6443976d3175885f6e4c03a3b4b4a671be"
+      },
+      {
+        "author_time": "2023-08-23T11:19:17Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-23T11:19:17Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-23T11:19:17+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "4a772f9101f748466cccf83ce38ecb783ae9dc3a"
+        ],
+        "position": 8,
+        "pr_number": 23,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+          "sha256": "7755ec8be8dd12e9a855050ac148163ab0148fe0772e60eda8ed3f336a7b9829",
+          "source": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+        },
+        "repository": "MrNeRF/LichtFeld-Studio",
+        "sha": "2ed2709aa0796d45fab8d304338f659dc763029b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8965c24f1a55a13541beafde6aaa4034d5318f06"
+      },
+      {
+        "author_time": "2023-08-23T11:20:27Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-23T11:20:27Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-23T11:20:27+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2ed2709aa0796d45fab8d304338f659dc763029b"
+        ],
+        "position": 9,
+        "pr_number": 23,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+          "sha256": "7755ec8be8dd12e9a855050ac148163ab0148fe0772e60eda8ed3f336a7b9829",
+          "source": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+        },
+        "repository": "MrNeRF/LichtFeld-Studio",
+        "sha": "e5bbea44f95a79f015adf1a97eb2ed5fb2903f29",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ff0ee07b5afd3f1e0ef37c289a851541240522ea"
+      },
+      {
+        "author_time": "2023-08-23T11:23:03Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-23T11:23:03Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-23T11:23:03+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e5bbea44f95a79f015adf1a97eb2ed5fb2903f29"
+        ],
+        "position": 10,
+        "pr_number": 23,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+          "sha256": "7755ec8be8dd12e9a855050ac148163ab0148fe0772e60eda8ed3f336a7b9829",
+          "source": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+        },
+        "repository": "MrNeRF/LichtFeld-Studio",
+        "sha": "4c4c12a792d4c94cdb0c598f3d45eb5e9a2c8537",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0ce5e1d60303c2fc894f7706c0537f50b3f9410c"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-08-23T10:17:30Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-08-23T10:17:30Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-08-23T10:17:30+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "060ee6e51fb4f7dd02ebe223f24f50c65c54edce"
+      ],
+      "position": 6,
+      "pr_number": 23,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+        "sha256": "7755ec8be8dd12e9a855050ac148163ab0148fe0772e60eda8ed3f336a7b9829",
+        "source": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+      },
+      "repository": "MrNeRF/LichtFeld-Studio",
+      "sha": "729a05945f3dafcdcebddd5c9ebcf48fc328e9b4",
+      "temporal_basis": "committer_time",
+      "tree_sha": "9185ba997c8a594d30a1b611652045c571852aa1"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-08-23T09:13:13Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-08-23T09:13:13Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-08-23T09:13:13+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "9dbd303a2576536f10239882d14acf2121e25b2c",
+        "49c604a6faab894e1dc4ce2443f349be1cbb810a"
+      ],
+      "position": 5,
+      "pr_number": 23,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+        "sha256": "7755ec8be8dd12e9a855050ac148163ab0148fe0772e60eda8ed3f336a7b9829",
+        "source": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+      },
+      "repository": "MrNeRF/LichtFeld-Studio",
+      "sha": "060ee6e51fb4f7dd02ebe223f24f50c65c54edce",
+      "temporal_basis": "committer_time",
+      "tree_sha": "dd7fa71b2868412fad9e16887b9fbdc285e6bae3"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "060ee6e51fb4f7dd02ebe223f24f50c65c54edce",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "9dbd303a2576536f10239882d14acf2121e25b2c",
+      "49c604a6faab894e1dc4ce2443f349be1cbb810a"
+    ],
+    "recursive_tree_entry_count": 65,
+    "recursive_tree_listing_sha256": "29889e2f2c1ae81d8572a0233b0724df825fa8e3fa84721803420da3508d7a26",
+    "retrieved_at": "2026-10-05T20:17:20.613735+00:00",
+    "source": "https://github.com/MrNeRF/LichtFeld-Studio.git",
+    "status": "materialized",
+    "tree_sha": "dd7fa71b2868412fad9e16887b9fbdc285e6bae3"
+  },
+  "pr_number": 23,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "49c604a6faab894e1dc4ce2443f349be1cbb810a",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:19.989755+00:00",
+        "sha256": "7755ec8be8dd12e9a855050ac148163ab0148fe0772e60eda8ed3f336a7b9829",
+        "source": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:17:19.396937+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:17:19.396937+00:00",
+      "sha256": "225717470b846e18f4ad1da3c72c9a629472139150ebccf2ead24534a43a492a",
+      "source": "https://api.github.com/repos/MrNeRF/LichtFeld-Studio/pulls/23"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "MrNeRF/LichtFeld-Studio",
+  "selected_state": {
+    "author_time": "2023-08-23T09:13:13Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "060ee6e51fb4f7dd02ebe223f24f50c65c54edce",
+    "committer_time": "2023-08-23T09:13:13Z",
+    "effective_time": "2023-08-23T09:13:13+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "dd7fa71b2868412fad9e16887b9fbdc285e6bae3"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-08-23T10:06:02.443150+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-08-23T10:06:56.662222+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

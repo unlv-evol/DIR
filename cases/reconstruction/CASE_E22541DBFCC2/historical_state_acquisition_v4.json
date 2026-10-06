@@ -1,0 +1,486 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "main",
+  "base_routing_source": "",
+  "case_id": "CASE_E22541DBFCC2",
+  "executed_at": "2026-10-05T22:50:20.770475+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-04-24T04:41:33Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-24T04:41:33Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-04-24T04:41:33+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ff0152b92651f521a5a37e5956e0f9e9c50fa5af"
+        ],
+        "position": 1,
+        "pr_number": 258,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+          "sha256": "bce40e233c6e0e58074e6b263c163511d47dd3b54b5ec8c8426b409792242112",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP3-Barbell",
+        "sha": "353ca05770dfb9e9c91e1c998dc1fce3fa891726",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3c7bb501f6b41b9db0c70f3c19dde36bd91d3b19"
+      },
+      {
+        "author_time": "2024-04-24T04:41:40Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-24T04:41:40Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-04-24T04:41:40+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "353ca05770dfb9e9c91e1c998dc1fce3fa891726",
+          "0544743cc762c68c56116e9803c1f06d0039d632"
+        ],
+        "position": 2,
+        "pr_number": 258,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+          "sha256": "bce40e233c6e0e58074e6b263c163511d47dd3b54b5ec8c8426b409792242112",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP3-Barbell",
+        "sha": "ab033a0ca8a7eb208535dfebdb1d74cb01e831a6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1d53002cdf1d6bb293736913267d8cb2dab65d19"
+      },
+      {
+        "author_time": "2024-04-24T22:47:26Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-24T22:47:26Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-24T22:47:26+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "ab033a0ca8a7eb208535dfebdb1d74cb01e831a6"
+        ],
+        "position": 3,
+        "pr_number": 258,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+          "sha256": "bce40e233c6e0e58074e6b263c163511d47dd3b54b5ec8c8426b409792242112",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP3-Barbell",
+        "sha": "1dc8031f84818831b2d8aa4aa72e746aeee6cf0a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "93e450cacf489e4313288b87e68501420d924c2b"
+      },
+      {
+        "author_time": "2024-04-24T22:47:33Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-24T22:47:33Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-24T22:47:33+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1dc8031f84818831b2d8aa4aa72e746aeee6cf0a",
+          "c6ef4ead2f062810c199672150b2b5633b588ac2"
+        ],
+        "position": 4,
+        "pr_number": 258,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+          "sha256": "bce40e233c6e0e58074e6b263c163511d47dd3b54b5ec8c8426b409792242112",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP3-Barbell",
+        "sha": "d45004f49f852f35c2e23d5058390cc84f3b8672",
+        "temporal_basis": "committer_time",
+        "tree_sha": "afcca93d7237a6c548ac333fb3026439d4dc358f"
+      },
+      {
+        "author_time": "2024-04-24T22:53:29Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-24T22:53:29Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-24T22:53:29+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d45004f49f852f35c2e23d5058390cc84f3b8672"
+        ],
+        "position": 5,
+        "pr_number": 258,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+          "sha256": "bce40e233c6e0e58074e6b263c163511d47dd3b54b5ec8c8426b409792242112",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP3-Barbell",
+        "sha": "84d55c54458698a072dac3bfff94d25a728380d7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "34567bab59fa24663b554165e69999d2050004b1"
+      },
+      {
+        "author_time": "2024-04-26T01:08:30Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-26T01:08:30Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-26T01:08:30+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "84d55c54458698a072dac3bfff94d25a728380d7",
+          "65d9ba5c07b2a0019080a23c4abf47a1675603a6"
+        ],
+        "position": 6,
+        "pr_number": 258,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+          "sha256": "bce40e233c6e0e58074e6b263c163511d47dd3b54b5ec8c8426b409792242112",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP3-Barbell",
+        "sha": "588a518114fe722a1d513c330916a0265061ce64",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ab9d42f6e29fe247d1a293e4cc01c1682819c4cf"
+      },
+      {
+        "author_time": "2024-04-29T05:54:09Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-29T05:54:09Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-29T05:54:09+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "588a518114fe722a1d513c330916a0265061ce64",
+          "9b9c999738b52e3c1f3e2134b5274a7619f325ab"
+        ],
+        "position": 7,
+        "pr_number": 258,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+          "sha256": "bce40e233c6e0e58074e6b263c163511d47dd3b54b5ec8c8426b409792242112",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP3-Barbell",
+        "sha": "cc8c1a5a80eb1997e112be6d682c30adbecb2037",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1cf5cba5864ebe23ed57f7828e629513700ce5f6"
+      },
+      {
+        "author_time": "2024-04-29T06:02:12Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-29T06:02:12Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-29T06:02:12+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "cc8c1a5a80eb1997e112be6d682c30adbecb2037"
+        ],
+        "position": 8,
+        "pr_number": 258,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+          "sha256": "bce40e233c6e0e58074e6b263c163511d47dd3b54b5ec8c8426b409792242112",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP3-Barbell",
+        "sha": "39a547f9042c3acab682240da9cfc28c8e1a8e6b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2053359bd84a682807087e3b8316f339e4e3e555"
+      },
+      {
+        "author_time": "2024-04-29T07:58:13Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-29T07:58:13Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-29T07:58:13+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "39a547f9042c3acab682240da9cfc28c8e1a8e6b"
+        ],
+        "position": 9,
+        "pr_number": 258,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+          "sha256": "bce40e233c6e0e58074e6b263c163511d47dd3b54b5ec8c8426b409792242112",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP3-Barbell",
+        "sha": "1dc536da1c0d0bbd990269c5af76ee79c85bcca5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1f3c1491298a07cd401c59cf8aefaf7d4587be63"
+      },
+      {
+        "author_time": "2024-04-29T22:06:25Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-04-29T22:06:25Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-04-29T22:06:25+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1dc536da1c0d0bbd990269c5af76ee79c85bcca5"
+        ],
+        "position": 10,
+        "pr_number": 258,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+          "sha256": "bce40e233c6e0e58074e6b263c163511d47dd3b54b5ec8c8426b409792242112",
+          "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+        },
+        "repository": "UNLV-CS472-672/2024-S-GROUP3-Barbell",
+        "sha": "651a495d8d7d7c63177b45eefd7b6ba2b8a8372d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "145142861739dae38206f22dc9a0129b6583691b"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2024-04-24T22:47:26Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-04-24T22:47:26Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2024-04-24T22:47:26+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "ab033a0ca8a7eb208535dfebdb1d74cb01e831a6"
+      ],
+      "position": 3,
+      "pr_number": 258,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+        "sha256": "bce40e233c6e0e58074e6b263c163511d47dd3b54b5ec8c8426b409792242112",
+        "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+      },
+      "repository": "UNLV-CS472-672/2024-S-GROUP3-Barbell",
+      "sha": "1dc8031f84818831b2d8aa4aa72e746aeee6cf0a",
+      "temporal_basis": "committer_time",
+      "tree_sha": "93e450cacf489e4313288b87e68501420d924c2b"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-04-24T04:41:40Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-04-24T04:41:40Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-04-24T04:41:40+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "353ca05770dfb9e9c91e1c998dc1fce3fa891726",
+        "0544743cc762c68c56116e9803c1f06d0039d632"
+      ],
+      "position": 2,
+      "pr_number": 258,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+        "sha256": "bce40e233c6e0e58074e6b263c163511d47dd3b54b5ec8c8426b409792242112",
+        "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+      },
+      "repository": "UNLV-CS472-672/2024-S-GROUP3-Barbell",
+      "sha": "ab033a0ca8a7eb208535dfebdb1d74cb01e831a6",
+      "temporal_basis": "committer_time",
+      "tree_sha": "1d53002cdf1d6bb293736913267d8cb2dab65d19"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "ab033a0ca8a7eb208535dfebdb1d74cb01e831a6",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "353ca05770dfb9e9c91e1c998dc1fce3fa891726",
+      "0544743cc762c68c56116e9803c1f06d0039d632"
+    ],
+    "recursive_tree_entry_count": 459,
+    "recursive_tree_listing_sha256": "7c6f3dd0675d54aac2a54d46b341a1fdfb42c954efed978c5ebe18a29e0850a6",
+    "retrieved_at": "2026-10-05T22:50:20.767119+00:00",
+    "source": "https://github.com/UNLV-CS472-672/2024-S-GROUP3-Barbell.git",
+    "status": "materialized",
+    "tree_sha": "1d53002cdf1d6bb293736913267d8cb2dab65d19"
+  },
+  "pr_number": 258,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "9b9c999738b52e3c1f3e2134b5274a7619f325ab",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:19.881190+00:00",
+        "sha256": "bce40e233c6e0e58074e6b263c163511d47dd3b54b5ec8c8426b409792242112",
+        "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T22:50:19.334491+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258"
+        }
+      ],
+      "retrieved_at": "2026-10-05T22:50:19.334491+00:00",
+      "sha256": "e2ac34dfa71a0d9dea0db7802d3543c0e135c922033b747e5b7177ec27d2e92d",
+      "source": "https://api.github.com/repos/UNLV-CS472-672/2024-S-GROUP3-Barbell/pulls/258"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "UNLV-CS472-672/2024-S-GROUP3-Barbell",
+  "selected_state": {
+    "author_time": "2024-04-24T04:41:40Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "ab033a0ca8a7eb208535dfebdb1d74cb01e831a6",
+    "committer_time": "2024-04-24T04:41:40Z",
+    "effective_time": "2024-04-24T04:41:40+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "1d53002cdf1d6bb293736913267d8cb2dab65d19"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-04-24T09:34:49.096743+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-04-24T09:34:57.715598+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

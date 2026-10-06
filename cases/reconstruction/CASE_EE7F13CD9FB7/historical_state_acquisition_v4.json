@@ -1,0 +1,564 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-09-04T23:36:57Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-04T23:36:57Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-04T23:36:57+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7049a11412790b92e8cb067e59e6c74c48dcb3ac"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:48.280168+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/darklang/dark/commits?sha=main&until=2023-09-05T01%3A44%3A25.726944%2B00%3A00&per_page=1&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:48.280168+00:00",
+          "sha256": "179232d7107b0dde0ab2a14d9ff666893c15dae8890bfbfbde0f0c5ea36da365",
+          "source": "https://api.github.com/repos/darklang/dark/commits?sha=main&until=2023-09-05T01%3A44%3A25.726944%2B00%3A00&per_page=1&page=1"
+        },
+        "repository": "darklang/dark",
+        "sha": "7bd846358d83129a46533928ff2341a5de45388a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9c4021e618ed44c6b327d7699fe199dd5d8e234a"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-09-04T23:36:57Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-09-04T23:36:57Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-09-04T23:36:57+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "7049a11412790b92e8cb067e59e6c74c48dcb3ac"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T19:19:48.280168+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/darklang/dark/commits?sha=main&until=2023-09-05T01%3A44%3A25.726944%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T19:19:48.280168+00:00",
+        "sha256": "179232d7107b0dde0ab2a14d9ff666893c15dae8890bfbfbde0f0c5ea36da365",
+        "source": "https://api.github.com/repos/darklang/dark/commits?sha=main&until=2023-09-05T01%3A44%3A25.726944%2B00%3A00&per_page=1&page=1"
+      },
+      "repository": "darklang/dark",
+      "sha": "7bd846358d83129a46533928ff2341a5de45388a",
+      "temporal_basis": "committer_time",
+      "tree_sha": "9c4021e618ed44c6b327d7699fe199dd5d8e234a"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "main",
+  "base_routing_source": "pr_base_ref",
+  "case_id": "CASE_EE7F13CD9FB7",
+  "executed_at": "2026-10-05T19:19:49.173548+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-09-01T19:48:33Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2023-09-05T17:35:27Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-05T17:35:27+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "53e80a92af83ce6a73614e81765c591bf9a1a1b8"
+        ],
+        "position": 1,
+        "pr_number": 5058,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+          "sha256": "8cc787a0b474a36ff5c5a3f8fb8870736ee2a03b55e5e7eaf0cd56e5601ac971",
+          "source": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+        },
+        "repository": "darklang/dark",
+        "sha": "df09db2d8fc8ae0187ac94925560b5450ff7b555",
+        "temporal_basis": "committer_time",
+        "tree_sha": "301082779983f44185605cf22922c97142ff4c54"
+      },
+      {
+        "author_time": "2023-09-04T13:52:39Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2023-09-05T17:41:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-05T17:41:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "df09db2d8fc8ae0187ac94925560b5450ff7b555"
+        ],
+        "position": 2,
+        "pr_number": 5058,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+          "sha256": "8cc787a0b474a36ff5c5a3f8fb8870736ee2a03b55e5e7eaf0cd56e5601ac971",
+          "source": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+        },
+        "repository": "darklang/dark",
+        "sha": "9ed8735c94f60857132403a464144107a8be6af9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8fdbe262447aa1f7fab19de1e656edd98384c61b"
+      },
+      {
+        "author_time": "2023-09-04T13:54:16Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2023-09-05T17:41:24Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-05T17:41:24+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "9ed8735c94f60857132403a464144107a8be6af9"
+        ],
+        "position": 3,
+        "pr_number": 5058,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+          "sha256": "8cc787a0b474a36ff5c5a3f8fb8870736ee2a03b55e5e7eaf0cd56e5601ac971",
+          "source": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+        },
+        "repository": "darklang/dark",
+        "sha": "783749bd58d7793c6a6bc538e44ad66c838b238d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8860e684e6ca11177402d9d5cbb028496ab828ff"
+      },
+      {
+        "author_time": "2023-09-04T13:54:54Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2023-09-05T17:41:24Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-05T17:41:24+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "783749bd58d7793c6a6bc538e44ad66c838b238d"
+        ],
+        "position": 4,
+        "pr_number": 5058,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+          "sha256": "8cc787a0b474a36ff5c5a3f8fb8870736ee2a03b55e5e7eaf0cd56e5601ac971",
+          "source": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+        },
+        "repository": "darklang/dark",
+        "sha": "2fb0783189cfb0f9b8e53612f0583e0d3ac656b0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d93d2f2d8c7bbc864cce8d95fdbb5f37ce787b08"
+      },
+      {
+        "author_time": "2023-09-04T14:23:01Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2023-09-05T17:41:25Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-05T17:41:25+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2fb0783189cfb0f9b8e53612f0583e0d3ac656b0"
+        ],
+        "position": 5,
+        "pr_number": 5058,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+          "sha256": "8cc787a0b474a36ff5c5a3f8fb8870736ee2a03b55e5e7eaf0cd56e5601ac971",
+          "source": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+        },
+        "repository": "darklang/dark",
+        "sha": "a51fd0e12f99d8b6107898732d8889a4089f369b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c873804d772b51ff3ba210039f77d85bdb14d0de"
+      },
+      {
+        "author_time": "2023-09-04T14:44:24Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2023-09-05T17:43:21Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-05T17:43:21+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a51fd0e12f99d8b6107898732d8889a4089f369b"
+        ],
+        "position": 6,
+        "pr_number": 5058,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+          "sha256": "8cc787a0b474a36ff5c5a3f8fb8870736ee2a03b55e5e7eaf0cd56e5601ac971",
+          "source": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+        },
+        "repository": "darklang/dark",
+        "sha": "a3ce5822faaee41be6221a8dc1499c97cf28d187",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6e1386d4835f51981f989c691e4a6d73c8d077d8"
+      },
+      {
+        "author_time": "2023-09-05T10:05:26Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-05T17:43:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-05T17:43:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a3ce5822faaee41be6221a8dc1499c97cf28d187"
+        ],
+        "position": 7,
+        "pr_number": 5058,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+          "sha256": "8cc787a0b474a36ff5c5a3f8fb8870736ee2a03b55e5e7eaf0cd56e5601ac971",
+          "source": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+        },
+        "repository": "darklang/dark",
+        "sha": "e7cf72253fd7823d04feb52b32146974b6acaf21",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d5827284956212898b5831ae913c7ae9230a549b"
+      },
+      {
+        "author_time": "2023-09-05T10:06:19Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-05T17:43:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-05T17:43:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e7cf72253fd7823d04feb52b32146974b6acaf21"
+        ],
+        "position": 8,
+        "pr_number": 5058,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+          "sha256": "8cc787a0b474a36ff5c5a3f8fb8870736ee2a03b55e5e7eaf0cd56e5601ac971",
+          "source": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+        },
+        "repository": "darklang/dark",
+        "sha": "8cf6af393e29712c3354dc751eadce938c96de63",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d1d8b25c1c6f0cd7c6d0693ec7424336f189286d"
+      },
+      {
+        "author_time": "2023-09-05T10:40:33Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-05T17:43:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-05T17:43:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "8cf6af393e29712c3354dc751eadce938c96de63"
+        ],
+        "position": 9,
+        "pr_number": 5058,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+          "sha256": "8cc787a0b474a36ff5c5a3f8fb8870736ee2a03b55e5e7eaf0cd56e5601ac971",
+          "source": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+        },
+        "repository": "darklang/dark",
+        "sha": "166a7108d61e388dc66ba91960fa73ef6058372f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6c3e1d8a48afcd48713beb62c07dc19eec8d1b6d"
+      },
+      {
+        "author_time": "2023-09-05T17:57:57Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-05T17:57:57Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-05T17:57:57+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "166a7108d61e388dc66ba91960fa73ef6058372f"
+        ],
+        "position": 10,
+        "pr_number": 5058,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+          "sha256": "8cc787a0b474a36ff5c5a3f8fb8870736ee2a03b55e5e7eaf0cd56e5601ac971",
+          "source": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+        },
+        "repository": "darklang/dark",
+        "sha": "003eef460886f2f093d024645fe8c268a57337d7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9994e00e08315901e95a409d12d91f3e87108f1f"
+      },
+      {
+        "author_time": "2023-09-05T18:31:15Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-05T18:31:15Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-05T18:31:15+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "003eef460886f2f093d024645fe8c268a57337d7"
+        ],
+        "position": 11,
+        "pr_number": 5058,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+          "sha256": "8cc787a0b474a36ff5c5a3f8fb8870736ee2a03b55e5e7eaf0cd56e5601ac971",
+          "source": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+        },
+        "repository": "darklang/dark",
+        "sha": "41073682db48efabb899a41451f0a7335aad2d7c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a03b88ec0b751041eb4ca52559f17605af4a76c7"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-09-01T19:48:33Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "crosses_tfg",
+      "committer_time": "2023-09-05T17:35:27Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-09-05T17:35:27+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "53e80a92af83ce6a73614e81765c591bf9a1a1b8"
+      ],
+      "position": 1,
+      "pr_number": 5058,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+        "sha256": "8cc787a0b474a36ff5c5a3f8fb8870736ee2a03b55e5e7eaf0cd56e5601ac971",
+        "source": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+      },
+      "repository": "darklang/dark",
+      "sha": "df09db2d8fc8ae0187ac94925560b5450ff7b555",
+      "temporal_basis": "committer_time",
+      "tree_sha": "301082779983f44185605cf22922c97142ff4c54"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "7bd846358d83129a46533928ff2341a5de45388a",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "7049a11412790b92e8cb067e59e6c74c48dcb3ac"
+    ],
+    "recursive_tree_entry_count": 1249,
+    "recursive_tree_listing_sha256": "0aa4150e3245846c78dad0d4c22f1741cd3b94ee062caa9ac605d6aeb87099ce",
+    "retrieved_at": "2026-10-05T19:19:49.170199+00:00",
+    "source": "https://github.com/darklang/dark.git",
+    "status": "materialized",
+    "tree_sha": "9c4021e618ed44c6b327d7699fe199dd5d8e234a"
+  },
+  "pr_number": 5058,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T19:19:48.280168+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/darklang/dark/commits?sha=main&until=2023-09-05T01%3A44%3A25.726944%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T19:19:48.280168+00:00",
+        "sha256": "179232d7107b0dde0ab2a14d9ff666893c15dae8890bfbfbde0f0c5ea36da365",
+        "source": "https://api.github.com/repos/darklang/dark/commits?sha=main&until=2023-09-05T01%3A44%3A25.726944%2B00%3A00&per_page=1&page=1"
+      }
+    ],
+    "current_pr_base_sha_provenance_only": "53e80a92af83ce6a73614e81765c591bf9a1a1b8",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T19:19:47.854859+00:00",
+        "sha256": "8cc787a0b474a36ff5c5a3f8fb8870736ee2a03b55e5e7eaf0cd56e5601ac971",
+        "source": "https://api.github.com/repos/darklang/dark/pulls/5058/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T19:19:47.216187+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/darklang/dark/pulls/5058"
+        }
+      ],
+      "retrieved_at": "2026-10-05T19:19:47.216187+00:00",
+      "sha256": "60dfa9e79d54af1dea7e55f4f153b3e7d0735d19292c3bcc9b42bc9122421a22",
+      "source": "https://api.github.com/repos/darklang/dark/pulls/5058"
+    }
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "darklang/dark",
+  "selected_state": {
+    "author_time": "2023-09-04T23:36:57Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "7bd846358d83129a46533928ff2341a5de45388a",
+    "committer_time": "2023-09-04T23:36:57Z",
+    "effective_time": "2023-09-04T23:36:57+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "9c4021e618ed44c6b327d7699fe199dd5d8e234a"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-09-05T01:42:57.168012+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-09-05T01:44:25.726944+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

@@ -1,0 +1,329 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-06-28T18:14:35Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-28T18:14:35Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-28T18:14:35+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f51b96d9248701dbb3f7c64bbb984404558b6d3c"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:07:06.853002+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/temporalio/temporal/commits/87cc6f421ec3c2d4c3c7bf0c14e215e0d3564885"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:07:06.853002+00:00",
+          "sha256": "d12e5cb25dc11be3c412dc69a23e59033cd886896462668e4eaa81b242c40f5c",
+          "source": "https://api.github.com/repos/temporalio/temporal/commits/87cc6f421ec3c2d4c3c7bf0c14e215e0d3564885"
+        },
+        "repository": "temporalio/temporal",
+        "sha": "87cc6f421ec3c2d4c3c7bf0c14e215e0d3564885",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a8054393083807de746fd05ea378362ceabdb1e8"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-06-28T18:14:35Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-06-28T18:14:35Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-06-28T18:14:35+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "f51b96d9248701dbb3f7c64bbb984404558b6d3c"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:07:06.853002+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/temporalio/temporal/commits/87cc6f421ec3c2d4c3c7bf0c14e215e0d3564885"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:07:06.853002+00:00",
+        "sha256": "d12e5cb25dc11be3c412dc69a23e59033cd886896462668e4eaa81b242c40f5c",
+        "source": "https://api.github.com/repos/temporalio/temporal/commits/87cc6f421ec3c2d4c3c7bf0c14e215e0d3564885"
+      },
+      "repository": "temporalio/temporal",
+      "sha": "87cc6f421ec3c2d4c3c7bf0c14e215e0d3564885",
+      "temporal_basis": "committer_time",
+      "tree_sha": "a8054393083807de746fd05ea378362ceabdb1e8"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "master",
+  "base_routing_source": "other_explicitly_justified_route",
+  "case_id": "CASE_BD3DEF3FC202",
+  "executed_at": "2026-10-05T20:07:08.416714+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-06-28T19:07:18Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-28T19:07:18Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-28T19:07:18+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "87cc6f421ec3c2d4c3c7bf0c14e215e0d3564885"
+        ],
+        "position": 1,
+        "pr_number": 4558,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:07:05.828505+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/temporalio/temporal/pulls/4558/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:07:05.828505+00:00",
+          "sha256": "376d5157dde01b5f62251308626bb85db0c8dc30dd849e72595edd116ee255c9",
+          "source": "https://api.github.com/repos/temporalio/temporal/pulls/4558/commits?per_page=100&page=1"
+        },
+        "repository": "temporalio/temporal",
+        "sha": "580acb2616caaed8cb76d15787fb8041ecd7791d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "94f2b2e426a1558ee1f73dde2251733aa4121f73"
+      },
+      {
+        "author_time": "2023-07-03T17:32:54Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-03T17:32:54Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-03T17:32:54+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "580acb2616caaed8cb76d15787fb8041ecd7791d",
+          "2a22821b41ea8da452738086b4df30391a92f803"
+        ],
+        "position": 2,
+        "pr_number": 4558,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:07:05.828505+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/temporalio/temporal/pulls/4558/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:07:05.828505+00:00",
+          "sha256": "376d5157dde01b5f62251308626bb85db0c8dc30dd849e72595edd116ee255c9",
+          "source": "https://api.github.com/repos/temporalio/temporal/pulls/4558/commits?per_page=100&page=1"
+        },
+        "repository": "temporalio/temporal",
+        "sha": "797c8cd9d00a8c9959b2977e4f9a647a5eb0721f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "64918c759949d4d2a9df5a382cb4aea2066fb0c5"
+      },
+      {
+        "author_time": "2023-07-03T17:35:03Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-03T17:35:03Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-03T17:35:03+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "797c8cd9d00a8c9959b2977e4f9a647a5eb0721f"
+        ],
+        "position": 3,
+        "pr_number": 4558,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:07:05.828505+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/temporalio/temporal/pulls/4558/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:07:05.828505+00:00",
+          "sha256": "376d5157dde01b5f62251308626bb85db0c8dc30dd849e72595edd116ee255c9",
+          "source": "https://api.github.com/repos/temporalio/temporal/pulls/4558/commits?per_page=100&page=1"
+        },
+        "repository": "temporalio/temporal",
+        "sha": "ece6ce85f51a8582db9e6f8ad05b3cedab53084f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "922a74a593585d950444b4da2f66030cdff246bf"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-06-28T19:07:18Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-06-28T19:07:18Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-06-28T19:07:18+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "87cc6f421ec3c2d4c3c7bf0c14e215e0d3564885"
+      ],
+      "position": 1,
+      "pr_number": 4558,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:07:05.828505+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/temporalio/temporal/pulls/4558/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:07:05.828505+00:00",
+        "sha256": "376d5157dde01b5f62251308626bb85db0c8dc30dd849e72595edd116ee255c9",
+        "source": "https://api.github.com/repos/temporalio/temporal/pulls/4558/commits?per_page=100&page=1"
+      },
+      "repository": "temporalio/temporal",
+      "sha": "580acb2616caaed8cb76d15787fb8041ecd7791d",
+      "temporal_basis": "committer_time",
+      "tree_sha": "94f2b2e426a1558ee1f73dde2251733aa4121f73"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "87cc6f421ec3c2d4c3c7bf0c14e215e0d3564885",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "f51b96d9248701dbb3f7c64bbb984404558b6d3c"
+    ],
+    "recursive_tree_entry_count": 2218,
+    "recursive_tree_listing_sha256": "06dcb9f9cda8f22532948ca811b628c2287e120969e692c8094f1865b39abe32",
+    "retrieved_at": "2026-10-05T20:07:08.413292+00:00",
+    "source": "https://github.com/temporalio/temporal.git",
+    "status": "materialized",
+    "tree_sha": "a8054393083807de746fd05ea378362ceabdb1e8"
+  },
+  "pr_number": 4558,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 404,
+            "retrieved_at": "2026-10-05T20:07:06.214192+00:00",
+            "status": "repository_unavailable",
+            "url": "https://api.github.com/repos/temporalio/temporal/git/ref/heads/master"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:07:06.214192+00:00",
+        "source": "https://api.github.com/repos/temporalio/temporal/git/ref/heads/master"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:07:06.853002+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/temporalio/temporal/commits/87cc6f421ec3c2d4c3c7bf0c14e215e0d3564885"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:07:06.853002+00:00",
+        "sha256": "d12e5cb25dc11be3c412dc69a23e59033cd886896462668e4eaa81b242c40f5c",
+        "source": "https://api.github.com/repos/temporalio/temporal/commits/87cc6f421ec3c2d4c3c7bf0c14e215e0d3564885"
+      }
+    ],
+    "base_route_evidence": {
+      "anchor_reason": "unique_focal_root_external_parent",
+      "anchor_sha": "87cc6f421ec3c2d4c3c7bf0c14e215e0d3564885",
+      "rule": "unique_focal_root_external_parent_ancestry"
+    },
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "2a22821b41ea8da452738086b4df30391a92f803",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:07:05.828505+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/temporalio/temporal/pulls/4558/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:07:05.828505+00:00",
+        "sha256": "376d5157dde01b5f62251308626bb85db0c8dc30dd849e72595edd116ee255c9",
+        "source": "https://api.github.com/repos/temporalio/temporal/pulls/4558/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:07:05.276062+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/temporalio/temporal/pulls/4558"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:07:05.276062+00:00",
+      "sha256": "b11cfd19ce6c4e8629033940a3de53c1996c2964d483cdd1f2bb321828a5f6c5",
+      "source": "https://api.github.com/repos/temporalio/temporal/pulls/4558"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "temporalio/temporal",
+  "selected_state": {
+    "author_time": "2023-06-28T18:14:35Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "87cc6f421ec3c2d4c3c7bf0c14e215e0d3564885",
+    "committer_time": "2023-06-28T18:14:35Z",
+    "effective_time": "2023-06-28T18:14:35+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "a8054393083807de746fd05ea378362ceabdb1e8"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-06-28T18:18:10.292608+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-06-28T18:18:28.582688+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

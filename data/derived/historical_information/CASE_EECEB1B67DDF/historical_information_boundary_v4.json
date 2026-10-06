@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "main",
+  "base_routing_source": "pr_base_ref",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_EECEB1B67DDF",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "37256216482e5b8e3a86b7d2a7ce0fca85530fa7",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "4cb8bfa414be1b21902d84d71e5a4f05a059b9e8"
+    ],
+    "recursive_tree_entry_count": 2540,
+    "recursive_tree_listing_sha256": "84dea8a77126ef0f2b53681f247a172a1b8149caca863fa70f93525d77873201",
+    "retrieved_at": "2026-10-05T22:50:39.089322+00:00",
+    "source": "https://github.com/gradio-app/gradio.git",
+    "status": "materialized",
+    "tree_sha": "364773ded11e8edea03c35acf0b2ee23da8b45bc"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_EECEB1B67DDF/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_EECEB1B67DDF/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "repository": "gradio-app/gradio",
+  "selected_state": {
+    "author_time": "2023-08-10T21:35:53Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "37256216482e5b8e3a86b7d2a7ce0fca85530fa7",
+    "committer_time": "2023-08-10T21:35:53Z",
+    "effective_time": "2023-08-10T21:35:53+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "364773ded11e8edea03c35acf0b2ee23da8b45bc"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-08-10T22:09:21.776553+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

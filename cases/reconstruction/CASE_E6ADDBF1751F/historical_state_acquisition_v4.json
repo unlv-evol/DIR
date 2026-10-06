@@ -1,0 +1,448 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "master",
+  "base_routing_source": "",
+  "case_id": "CASE_E6ADDBF1751F",
+  "executed_at": "2026-10-05T22:50:23.214382+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-11-02T12:53:35Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-02T12:58:10Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-11-02T12:58:10+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "fe7629b996250b0661e78fb5f79e83648d1bc3c3"
+        ],
+        "position": 1,
+        "pr_number": 1631,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+          "sha256": "157239ce9276cd9db8cd9975e296956de1980fd613bfec3181416026645f5c2f",
+          "source": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+        },
+        "repository": "netket/netket",
+        "sha": "febbda8d787b4bc0b88aa88ddb640a5f5c401ecc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9ac4cce6c72f7114a746b3f4dda26a7b0a03141f"
+      },
+      {
+        "author_time": "2023-11-03T07:06:46Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-03T07:06:46Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-03T07:06:46+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "febbda8d787b4bc0b88aa88ddb640a5f5c401ecc"
+        ],
+        "position": 2,
+        "pr_number": 1631,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+          "sha256": "157239ce9276cd9db8cd9975e296956de1980fd613bfec3181416026645f5c2f",
+          "source": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+        },
+        "repository": "netket/netket",
+        "sha": "1934d9c765fffcc16a7c96db7690f5d19dc74dcd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2c427f10d7efb4b0f9f58adebd94fe9e05b603e6"
+      },
+      {
+        "author_time": "2023-11-03T07:18:47Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-03T07:29:40Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-03T07:29:40+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1934d9c765fffcc16a7c96db7690f5d19dc74dcd"
+        ],
+        "position": 3,
+        "pr_number": 1631,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+          "sha256": "157239ce9276cd9db8cd9975e296956de1980fd613bfec3181416026645f5c2f",
+          "source": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+        },
+        "repository": "netket/netket",
+        "sha": "18f03b6ae818d6fa1a339ad8c0e928f30015d942",
+        "temporal_basis": "committer_time",
+        "tree_sha": "992914b21bfc5a67706d9bcdf8c45f4b479899d1"
+      },
+      {
+        "author_time": "2023-11-03T07:18:54Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-03T07:29:40Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-03T07:29:40+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "18f03b6ae818d6fa1a339ad8c0e928f30015d942"
+        ],
+        "position": 4,
+        "pr_number": 1631,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+          "sha256": "157239ce9276cd9db8cd9975e296956de1980fd613bfec3181416026645f5c2f",
+          "source": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+        },
+        "repository": "netket/netket",
+        "sha": "1560fb554e87d28677c93d0b6616b6202f55e524",
+        "temporal_basis": "committer_time",
+        "tree_sha": "082d2509ca577962801b98b7766e8d43d3b7dd2b"
+      },
+      {
+        "author_time": "2023-11-03T07:36:27Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-03T07:36:27Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-03T07:36:27+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1560fb554e87d28677c93d0b6616b6202f55e524"
+        ],
+        "position": 5,
+        "pr_number": 1631,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+          "sha256": "157239ce9276cd9db8cd9975e296956de1980fd613bfec3181416026645f5c2f",
+          "source": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+        },
+        "repository": "netket/netket",
+        "sha": "6127f5df618700e6f7cc9d2f0744c9b0e8f80506",
+        "temporal_basis": "committer_time",
+        "tree_sha": "583d1cc3fd28ed4110a4f34065c1dc0f06ae4e15"
+      },
+      {
+        "author_time": "2023-11-03T07:45:25Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-03T07:45:25Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-03T07:45:25+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "6127f5df618700e6f7cc9d2f0744c9b0e8f80506"
+        ],
+        "position": 6,
+        "pr_number": 1631,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+          "sha256": "157239ce9276cd9db8cd9975e296956de1980fd613bfec3181416026645f5c2f",
+          "source": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+        },
+        "repository": "netket/netket",
+        "sha": "e8f1892fcbe2472d628f7e420c79bac7f64525ca",
+        "temporal_basis": "committer_time",
+        "tree_sha": "64514b8094095cccbabbbb39f76efde538d3842a"
+      },
+      {
+        "author_time": "2023-11-06T13:23:13Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-06T13:23:13Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-06T13:23:13+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "e8f1892fcbe2472d628f7e420c79bac7f64525ca"
+        ],
+        "position": 7,
+        "pr_number": 1631,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+          "sha256": "157239ce9276cd9db8cd9975e296956de1980fd613bfec3181416026645f5c2f",
+          "source": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+        },
+        "repository": "netket/netket",
+        "sha": "f51a26ade7142196c30a5062880371b8cba39337",
+        "temporal_basis": "committer_time",
+        "tree_sha": "501f03bf8d75c06772813e0fc5b99748f4a3f992"
+      },
+      {
+        "author_time": "2023-11-06T13:23:22Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-06T13:23:22Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-06T13:23:22+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f51a26ade7142196c30a5062880371b8cba39337"
+        ],
+        "position": 8,
+        "pr_number": 1631,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+          "sha256": "157239ce9276cd9db8cd9975e296956de1980fd613bfec3181416026645f5c2f",
+          "source": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+        },
+        "repository": "netket/netket",
+        "sha": "d54b852438a774dd5a38d1bc38a754057f9f5ce5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6b404318e3ca99ec82a892876a268bf7d2652e79"
+      },
+      {
+        "author_time": "2023-11-06T13:23:33Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-11-06T13:23:33Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-11-06T13:23:33+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d54b852438a774dd5a38d1bc38a754057f9f5ce5"
+        ],
+        "position": 9,
+        "pr_number": 1631,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+          "sha256": "157239ce9276cd9db8cd9975e296956de1980fd613bfec3181416026645f5c2f",
+          "source": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+        },
+        "repository": "netket/netket",
+        "sha": "f3d034854987e6c5e846ad8cd3a679a185768f5c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "35950ac63fc4900fcd48427cbdea978be310684b"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-11-03T07:06:46Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-11-03T07:06:46Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-11-03T07:06:46+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "febbda8d787b4bc0b88aa88ddb640a5f5c401ecc"
+      ],
+      "position": 2,
+      "pr_number": 1631,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+        "sha256": "157239ce9276cd9db8cd9975e296956de1980fd613bfec3181416026645f5c2f",
+        "source": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+      },
+      "repository": "netket/netket",
+      "sha": "1934d9c765fffcc16a7c96db7690f5d19dc74dcd",
+      "temporal_basis": "committer_time",
+      "tree_sha": "2c427f10d7efb4b0f9f58adebd94fe9e05b603e6"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-11-02T12:53:35Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-11-02T12:58:10Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-11-02T12:58:10+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "fe7629b996250b0661e78fb5f79e83648d1bc3c3"
+      ],
+      "position": 1,
+      "pr_number": 1631,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+        "sha256": "157239ce9276cd9db8cd9975e296956de1980fd613bfec3181416026645f5c2f",
+        "source": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+      },
+      "repository": "netket/netket",
+      "sha": "febbda8d787b4bc0b88aa88ddb640a5f5c401ecc",
+      "temporal_basis": "committer_time",
+      "tree_sha": "9ac4cce6c72f7114a746b3f4dda26a7b0a03141f"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "febbda8d787b4bc0b88aa88ddb640a5f5c401ecc",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "fe7629b996250b0661e78fb5f79e83648d1bc3c3"
+    ],
+    "recursive_tree_entry_count": 704,
+    "recursive_tree_listing_sha256": "186210a5235d9516fb01fdbd2a739169742962596633c32dca173589fb13ea3a",
+    "retrieved_at": "2026-10-05T22:50:23.211322+00:00",
+    "source": "https://github.com/netket/netket.git",
+    "status": "materialized",
+    "tree_sha": "9ac4cce6c72f7114a746b3f4dda26a7b0a03141f"
+  },
+  "pr_number": 1631,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "928630769246c74923ba1d8c85a51b3957e251aa",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:22.126296+00:00",
+        "sha256": "157239ce9276cd9db8cd9975e296956de1980fd613bfec3181416026645f5c2f",
+        "source": "https://api.github.com/repos/netket/netket/pulls/1631/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T22:50:21.593826+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/netket/netket/pulls/1631"
+        }
+      ],
+      "retrieved_at": "2026-10-05T22:50:21.593826+00:00",
+      "sha256": "a632f19962f9f133b5224637f45fe534d3a4115a7c053bd7e63f5b53dd3600fc",
+      "source": "https://api.github.com/repos/netket/netket/pulls/1631"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "netket/netket",
+  "selected_state": {
+    "author_time": "2023-11-02T12:53:35Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "febbda8d787b4bc0b88aa88ddb640a5f5c401ecc",
+    "committer_time": "2023-11-02T12:58:10Z",
+    "effective_time": "2023-11-02T12:58:10+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "9ac4cce6c72f7114a746b3f4dda26a7b0a03141f"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-11-02T13:01:45.967322+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-11-02T13:01:48.037682+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

@@ -1,0 +1,161 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_A48E956577BA",
+  "executed_at": "2026-10-05T20:18:51.021884+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-12-07T15:43:12Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-12-07T15:43:12Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-12-07T15:43:12+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "cff5f95a5cdc54261ce8344c22c38466aaf27664"
+        ],
+        "position": 1,
+        "pr_number": 65,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:50.452438+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jwjacobson/jazztunes/pulls/65/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:50.452438+00:00",
+          "sha256": "eb1ad91175f77eeb14dd9e63f367d795b162459b9caa5f9c7f27d342f45819d4",
+          "source": "https://api.github.com/repos/jwjacobson/jazztunes/pulls/65/commits?per_page=100&page=1"
+        },
+        "repository": "jwjacobson/jazztunes",
+        "sha": "29d6ea42d74d012e5afdb8f4b4356099046a99c6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "af9eb74433cbd8d2881ddfab15e14d152101afa1"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-12-07T15:43:12Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-12-07T15:43:12Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-12-07T15:43:12+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "cff5f95a5cdc54261ce8344c22c38466aaf27664"
+      ],
+      "position": 1,
+      "pr_number": 65,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:50.452438+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/jwjacobson/jazztunes/pulls/65/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:50.452438+00:00",
+        "sha256": "eb1ad91175f77eeb14dd9e63f367d795b162459b9caa5f9c7f27d342f45819d4",
+        "source": "https://api.github.com/repos/jwjacobson/jazztunes/pulls/65/commits?per_page=100&page=1"
+      },
+      "repository": "jwjacobson/jazztunes",
+      "sha": "29d6ea42d74d012e5afdb8f4b4356099046a99c6",
+      "temporal_basis": "committer_time",
+      "tree_sha": "af9eb74433cbd8d2881ddfab15e14d152101afa1"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "29d6ea42d74d012e5afdb8f4b4356099046a99c6",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "cff5f95a5cdc54261ce8344c22c38466aaf27664"
+    ],
+    "recursive_tree_entry_count": 209,
+    "recursive_tree_listing_sha256": "153aa3bac52d191f0350e1c87e078aefb003bad3209e9fc23969b1dd0a91f2e8",
+    "retrieved_at": "2026-10-05T20:18:51.017793+00:00",
+    "source": "https://github.com/jwjacobson/jazztunes.git",
+    "status": "materialized",
+    "tree_sha": "af9eb74433cbd8d2881ddfab15e14d152101afa1"
+  },
+  "pr_number": 65,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "28181f194b752b6e98952772c9d92b9294b5196e",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:50.452438+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/jwjacobson/jazztunes/pulls/65/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:50.452438+00:00",
+        "sha256": "eb1ad91175f77eeb14dd9e63f367d795b162459b9caa5f9c7f27d342f45819d4",
+        "source": "https://api.github.com/repos/jwjacobson/jazztunes/pulls/65/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:18:49.994733+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/jwjacobson/jazztunes/pulls/65"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:18:49.994733+00:00",
+      "sha256": "d3d3afbec2136075fa6a50aa19649b8fa337f3b453bfaef9f598eecf91dea3a5",
+      "source": "https://api.github.com/repos/jwjacobson/jazztunes/pulls/65"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "jwjacobson/jazztunes",
+  "selected_state": {
+    "author_time": "2023-12-07T15:43:12Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "29d6ea42d74d012e5afdb8f4b4356099046a99c6",
+    "committer_time": "2023-12-07T15:43:12Z",
+    "effective_time": "2023-12-07T15:43:12+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "af9eb74433cbd8d2881ddfab15e14d152101afa1"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-12-07T16:26:45.333439+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-12-07T16:27:18.728553+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

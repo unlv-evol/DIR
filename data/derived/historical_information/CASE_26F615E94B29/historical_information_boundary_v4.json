@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_26F615E94B29",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "8193a830450c90cba8b47ba7d3b00f77a413826d",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "28b20bb08da9709091039006ebd2dc91e01a9e61"
+    ],
+    "recursive_tree_entry_count": 1179,
+    "recursive_tree_listing_sha256": "d471fa926b28f11383264bba3b28f237d12b726c858132c2e3104b7116e66b77",
+    "retrieved_at": "2026-10-05T20:16:11.765516+00:00",
+    "source": "https://github.com/alcionai/corso.git",
+    "status": "materialized",
+    "tree_sha": "d44f3138d1a17652236c4363d361c49b82c373c7"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_26F615E94B29/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_26F615E94B29/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "alcionai/corso",
+  "selected_state": {
+    "author_time": "2023-10-02T13:30:53Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "8193a830450c90cba8b47ba7d3b00f77a413826d",
+    "committer_time": "2023-10-02T13:30:53Z",
+    "effective_time": "2023-10-02T13:30:53+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "d44f3138d1a17652236c4363d361c49b82c373c7"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-10-02T18:17:19.796546+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

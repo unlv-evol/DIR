@@ -1,0 +1,46 @@
+{
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_6413F3DD2F91",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "24487b31d62e364c1e02665c3524e7db91b3c6dc",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "3917c1586e0ec8a80a2fd18dce8d16c17fc46346",
+      "827cd8e3da22688c08d7ec0f81b1167cec7329a6"
+    ],
+    "recursive_tree_entry_count": 43,
+    "recursive_tree_listing_sha256": "46bf471332ad9840099047d76cc2ef3032d447bb45582bc9bbfbf960b2510306",
+    "retrieved_at": "2026-10-05T20:17:26.244234+00:00",
+    "source": "https://github.com/g12-4soat/techlanches-lambda-auth.git",
+    "status": "materialized",
+    "tree_sha": "aa72610d5fed412d8a10d1c2cb13adfad7c8afb0"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_6413F3DD2F91/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_6413F3DD2F91/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "g12-4soat/techlanches-lambda-auth",
+  "selected_state": {
+    "author_time": "2024-03-05T15:09:19Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "24487b31d62e364c1e02665c3524e7db91b3c6dc",
+    "committer_time": "2024-03-05T15:09:19Z",
+    "effective_time": "2024-03-05T15:09:19+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "aa72610d5fed412d8a10d1c2cb13adfad7c8afb0"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-03-05T20:20:12.845274+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

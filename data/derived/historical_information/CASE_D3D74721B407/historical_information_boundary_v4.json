@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "main",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_D3D74721B407",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "fdb0878782bb648ad9b972e41e9c50ddbeb53457",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "a86692ffc636efde9fb0e8f5318b89e93dc267ec"
+    ],
+    "recursive_tree_entry_count": 421,
+    "recursive_tree_listing_sha256": "6fb413405bcc6808d0dc7678920271a2cc0decaad949f6064485cef8ef7e6636",
+    "retrieved_at": "2026-10-05T22:49:57.075913+00:00",
+    "source": "https://github.com/UNLV-CS472-672/2024-S-GROUP3-Barbell.git",
+    "status": "materialized",
+    "tree_sha": "c3b79f9a6a2f7279cb7a3b0101461948a5f91907"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_D3D74721B407/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_D3D74721B407/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "UNLV-CS472-672/2024-S-GROUP3-Barbell",
+  "selected_state": {
+    "author_time": "2024-04-22T22:38:59Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "fdb0878782bb648ad9b972e41e9c50ddbeb53457",
+    "committer_time": "2024-04-22T22:38:59Z",
+    "effective_time": "2024-04-22T22:38:59+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "c3b79f9a6a2f7279cb7a3b0101461948a5f91907"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-04-23T07:53:15.218519+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

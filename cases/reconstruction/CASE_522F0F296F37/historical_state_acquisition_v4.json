@@ -1,0 +1,224 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_522F0F296F37",
+  "executed_at": "2026-10-05T20:17:07.526852+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-07-21T12:28:56Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-21T12:28:56Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-07-21T12:28:56+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a3357696d4b167c8d1d6e4b91db5a875dcb91526"
+        ],
+        "position": 1,
+        "pr_number": 15485,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:04.378506+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/netdata/netdata/pulls/15485/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:04.378506+00:00",
+          "sha256": "e8d6195312aea0d470897e48892f739300883b7a59fa18788231a2c0aa2f421c",
+          "source": "https://api.github.com/repos/netdata/netdata/pulls/15485/commits?per_page=100&page=1"
+        },
+        "repository": "netdata/netdata",
+        "sha": "055fc6f7dd85922737fd64634afd65c488afcab8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0bdc82db3f76d2079e2be74d28695f769f601729"
+      },
+      {
+        "author_time": "2023-07-21T13:46:53Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-07-21T13:46:53Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-07-21T13:46:53+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "055fc6f7dd85922737fd64634afd65c488afcab8"
+        ],
+        "position": 2,
+        "pr_number": 15485,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:04.378506+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/netdata/netdata/pulls/15485/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:04.378506+00:00",
+          "sha256": "e8d6195312aea0d470897e48892f739300883b7a59fa18788231a2c0aa2f421c",
+          "source": "https://api.github.com/repos/netdata/netdata/pulls/15485/commits?per_page=100&page=1"
+        },
+        "repository": "netdata/netdata",
+        "sha": "3d62b6a45853d4a170c5db05c6f564b0d9d5d451",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c6be072c69d807bcfcbe6252f81a073dcb0bce13"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-07-21T13:46:53Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-07-21T13:46:53Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-07-21T13:46:53+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "055fc6f7dd85922737fd64634afd65c488afcab8"
+      ],
+      "position": 2,
+      "pr_number": 15485,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:04.378506+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/netdata/netdata/pulls/15485/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:04.378506+00:00",
+        "sha256": "e8d6195312aea0d470897e48892f739300883b7a59fa18788231a2c0aa2f421c",
+        "source": "https://api.github.com/repos/netdata/netdata/pulls/15485/commits?per_page=100&page=1"
+      },
+      "repository": "netdata/netdata",
+      "sha": "3d62b6a45853d4a170c5db05c6f564b0d9d5d451",
+      "temporal_basis": "committer_time",
+      "tree_sha": "c6be072c69d807bcfcbe6252f81a073dcb0bce13"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-07-21T12:28:56Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-07-21T12:28:56Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-07-21T12:28:56+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "a3357696d4b167c8d1d6e4b91db5a875dcb91526"
+      ],
+      "position": 1,
+      "pr_number": 15485,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:04.378506+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/netdata/netdata/pulls/15485/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:04.378506+00:00",
+        "sha256": "e8d6195312aea0d470897e48892f739300883b7a59fa18788231a2c0aa2f421c",
+        "source": "https://api.github.com/repos/netdata/netdata/pulls/15485/commits?per_page=100&page=1"
+      },
+      "repository": "netdata/netdata",
+      "sha": "055fc6f7dd85922737fd64634afd65c488afcab8",
+      "temporal_basis": "committer_time",
+      "tree_sha": "0bdc82db3f76d2079e2be74d28695f769f601729"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "055fc6f7dd85922737fd64634afd65c488afcab8",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "a3357696d4b167c8d1d6e4b91db5a875dcb91526"
+    ],
+    "recursive_tree_entry_count": 2707,
+    "recursive_tree_listing_sha256": "1f60e5816d2304a8f658465172bc30b5f9d69165bd86ffa8280d0bc800572b17",
+    "retrieved_at": "2026-10-05T20:17:07.523675+00:00",
+    "source": "https://github.com/netdata/netdata.git",
+    "status": "materialized",
+    "tree_sha": "0bdc82db3f76d2079e2be74d28695f769f601729"
+  },
+  "pr_number": 15485,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "720e855ad5a8098fe24c413119f523c671a65f15",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:04.378506+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/netdata/netdata/pulls/15485/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:04.378506+00:00",
+        "sha256": "e8d6195312aea0d470897e48892f739300883b7a59fa18788231a2c0aa2f421c",
+        "source": "https://api.github.com/repos/netdata/netdata/pulls/15485/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:17:03.817297+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/netdata/netdata/pulls/15485"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:17:03.817297+00:00",
+      "sha256": "d102013fee22de642fdee14422eaa14e741cf4241fdb96a28b14d25d038b705b",
+      "source": "https://api.github.com/repos/netdata/netdata/pulls/15485"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "netdata/netdata",
+  "selected_state": {
+    "author_time": "2023-07-21T12:28:56Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "055fc6f7dd85922737fd64634afd65c488afcab8",
+    "committer_time": "2023-07-21T12:28:56Z",
+    "effective_time": "2023-07-21T12:28:56+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "0bdc82db3f76d2079e2be74d28695f769f601729"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-07-21T13:02:28.027542+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-07-21T13:02:53.574420+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

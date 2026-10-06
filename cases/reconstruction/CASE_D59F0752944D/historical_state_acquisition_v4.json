@@ -1,0 +1,193 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "master",
+  "base_routing_source": "",
+  "case_id": "CASE_D59F0752944D",
+  "executed_at": "2026-10-05T22:50:03.273153+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-01-09T13:14:16Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-09T13:14:16Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-09T13:14:16+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "cf90d5e2a6e96cc65c8652ee5e0900760145a957"
+        ],
+        "position": 1,
+        "pr_number": 252,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:00.912841+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/robotology/icub-models-generator/pulls/252/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:00.912841+00:00",
+          "sha256": "9ca41512c88c93ec64126309f8cabdaac9c3ff1c6ee48ad89e9cc442f1348253",
+          "source": "https://api.github.com/repos/robotology/icub-models-generator/pulls/252/commits?per_page=100&page=1"
+        },
+        "repository": "robotology/icub-models-generator",
+        "sha": "7ca97ca0df925329f465cc470600446fbf00e1a8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3adf35bbc01d5c7a6bd154d334a308cca8881fef"
+      },
+      {
+        "author_time": "2024-01-09T13:19:42Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-09T13:19:42Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-09T13:19:42+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7ca97ca0df925329f465cc470600446fbf00e1a8"
+        ],
+        "position": 2,
+        "pr_number": 252,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:00.912841+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/robotology/icub-models-generator/pulls/252/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:00.912841+00:00",
+          "sha256": "9ca41512c88c93ec64126309f8cabdaac9c3ff1c6ee48ad89e9cc442f1348253",
+          "source": "https://api.github.com/repos/robotology/icub-models-generator/pulls/252/commits?per_page=100&page=1"
+        },
+        "repository": "robotology/icub-models-generator",
+        "sha": "1ff6e8cfb144786d83d1f9b7c4195faa54852186",
+        "temporal_basis": "committer_time",
+        "tree_sha": "dd9245a7acdbfe5be10acf560c0964fcb64c2127"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-01-09T13:19:42Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-01-09T13:19:42Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-01-09T13:19:42+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "7ca97ca0df925329f465cc470600446fbf00e1a8"
+      ],
+      "position": 2,
+      "pr_number": 252,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:00.912841+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/robotology/icub-models-generator/pulls/252/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:00.912841+00:00",
+        "sha256": "9ca41512c88c93ec64126309f8cabdaac9c3ff1c6ee48ad89e9cc442f1348253",
+        "source": "https://api.github.com/repos/robotology/icub-models-generator/pulls/252/commits?per_page=100&page=1"
+      },
+      "repository": "robotology/icub-models-generator",
+      "sha": "1ff6e8cfb144786d83d1f9b7c4195faa54852186",
+      "temporal_basis": "committer_time",
+      "tree_sha": "dd9245a7acdbfe5be10acf560c0964fcb64c2127"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "1ff6e8cfb144786d83d1f9b7c4195faa54852186",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "7ca97ca0df925329f465cc470600446fbf00e1a8"
+    ],
+    "recursive_tree_entry_count": 661,
+    "recursive_tree_listing_sha256": "19ce7f58a3c53cc4f824856abdb8c12a2e9d7498ba319953a44851af2bcd7b58",
+    "retrieved_at": "2026-10-05T22:50:03.270358+00:00",
+    "source": "https://github.com/robotology/icub-models-generator.git",
+    "status": "materialized",
+    "tree_sha": "dd9245a7acdbfe5be10acf560c0964fcb64c2127"
+  },
+  "pr_number": 252,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "cf90d5e2a6e96cc65c8652ee5e0900760145a957",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:00.912841+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/robotology/icub-models-generator/pulls/252/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:00.912841+00:00",
+        "sha256": "9ca41512c88c93ec64126309f8cabdaac9c3ff1c6ee48ad89e9cc442f1348253",
+        "source": "https://api.github.com/repos/robotology/icub-models-generator/pulls/252/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T22:50:00.410347+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/robotology/icub-models-generator/pulls/252"
+        }
+      ],
+      "retrieved_at": "2026-10-05T22:50:00.410347+00:00",
+      "sha256": "8fd3ca9ebeaeb6af0a13c56b61351caf504dabf4a54654405ef5b0dbe2665053",
+      "source": "https://api.github.com/repos/robotology/icub-models-generator/pulls/252"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "robotology/icub-models-generator",
+  "selected_state": {
+    "author_time": "2024-01-09T13:19:42Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "1ff6e8cfb144786d83d1f9b7c4195faa54852186",
+    "committer_time": "2024-01-09T13:19:42Z",
+    "effective_time": "2024-01-09T13:19:42+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "dd9245a7acdbfe5be10acf560c0964fcb64c2127"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-01-10T13:48:39.762270+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-01-10T13:48:51.124078+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

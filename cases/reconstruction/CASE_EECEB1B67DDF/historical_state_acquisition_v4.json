@@ -1,0 +1,523 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-08-10T21:35:53Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-10T21:35:53Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-08-10T21:35:53+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "4cb8bfa414be1b21902d84d71e5a4f05a059b9e8"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:37.533031+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/gradio-app/gradio/commits?sha=main&until=2023-08-10T22%3A09%3A21.776553%2B00%3A00&per_page=1&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:37.533031+00:00",
+          "sha256": "3563901fdc7d801cc75e12664b9af8502fe4b8f7992ce737829c8c14c223bab7",
+          "source": "https://api.github.com/repos/gradio-app/gradio/commits?sha=main&until=2023-08-10T22%3A09%3A21.776553%2B00%3A00&per_page=1&page=1"
+        },
+        "repository": "gradio-app/gradio",
+        "sha": "37256216482e5b8e3a86b7d2a7ce0fca85530fa7",
+        "temporal_basis": "committer_time",
+        "tree_sha": "364773ded11e8edea03c35acf0b2ee23da8b45bc"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-08-10T21:35:53Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-08-10T21:35:53Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-08-10T21:35:53+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "4cb8bfa414be1b21902d84d71e5a4f05a059b9e8"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:37.533031+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/gradio-app/gradio/commits?sha=main&until=2023-08-10T22%3A09%3A21.776553%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:37.533031+00:00",
+        "sha256": "3563901fdc7d801cc75e12664b9af8502fe4b8f7992ce737829c8c14c223bab7",
+        "source": "https://api.github.com/repos/gradio-app/gradio/commits?sha=main&until=2023-08-10T22%3A09%3A21.776553%2B00%3A00&per_page=1&page=1"
+      },
+      "repository": "gradio-app/gradio",
+      "sha": "37256216482e5b8e3a86b7d2a7ce0fca85530fa7",
+      "temporal_basis": "committer_time",
+      "tree_sha": "364773ded11e8edea03c35acf0b2ee23da8b45bc"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "main",
+  "base_routing_source": "pr_base_ref",
+  "case_id": "CASE_EECEB1B67DDF",
+  "executed_at": "2026-10-05T22:50:39.092536+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-08-10T22:34:30Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-10T22:34:30Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-10T22:34:30+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "9d1bd28bdf96a8b8810fd962936a23f519abf1ef"
+        ],
+        "position": 1,
+        "pr_number": 5179,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+          "sha256": "aea0f7d56fdbebebbfd300bbe275073df28c5a4a474be51d0d23762ff15cd5f1",
+          "source": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+        },
+        "repository": "gradio-app/gradio",
+        "sha": "48908317bf24f54e971e5ff682fffa3546230707",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5c389733691f8265416ceea4595ed5a15da8d016"
+      },
+      {
+        "author_time": "2023-08-11T00:37:59Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-11T00:37:59Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-11T00:37:59+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "48908317bf24f54e971e5ff682fffa3546230707"
+        ],
+        "position": 2,
+        "pr_number": 5179,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+          "sha256": "aea0f7d56fdbebebbfd300bbe275073df28c5a4a474be51d0d23762ff15cd5f1",
+          "source": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+        },
+        "repository": "gradio-app/gradio",
+        "sha": "4102946954a22f58f792fd9deb924a3564d83990",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3d33f8680e71407d1e796732fa0feb0fc270c894"
+      },
+      {
+        "author_time": "2023-08-11T00:38:56Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-11T00:38:56Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-11T00:38:56+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "4102946954a22f58f792fd9deb924a3564d83990"
+        ],
+        "position": 3,
+        "pr_number": 5179,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+          "sha256": "aea0f7d56fdbebebbfd300bbe275073df28c5a4a474be51d0d23762ff15cd5f1",
+          "source": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+        },
+        "repository": "gradio-app/gradio",
+        "sha": "a9fca281168fafd1c5c8274b2f9f33dfe918ec6f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "908a5ba13b2ff401ebb9a5794a60865939ff4bd6"
+      },
+      {
+        "author_time": "2023-08-11T00:43:52Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-11T00:43:52Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-11T00:43:52+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a9fca281168fafd1c5c8274b2f9f33dfe918ec6f"
+        ],
+        "position": 4,
+        "pr_number": 5179,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+          "sha256": "aea0f7d56fdbebebbfd300bbe275073df28c5a4a474be51d0d23762ff15cd5f1",
+          "source": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+        },
+        "repository": "gradio-app/gradio",
+        "sha": "52ec53dffe865de996067dae160621ce888cb88e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3d33f8680e71407d1e796732fa0feb0fc270c894"
+      },
+      {
+        "author_time": "2023-08-11T00:44:42Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-11T00:44:42Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-11T00:44:42+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "52ec53dffe865de996067dae160621ce888cb88e",
+          "ade93a893e4dc84f41411bfeb075ab15d017357d"
+        ],
+        "position": 5,
+        "pr_number": 5179,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+          "sha256": "aea0f7d56fdbebebbfd300bbe275073df28c5a4a474be51d0d23762ff15cd5f1",
+          "source": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+        },
+        "repository": "gradio-app/gradio",
+        "sha": "feb7740bab18ba7f9492af6f0ea3a11a18e427ad",
+        "temporal_basis": "committer_time",
+        "tree_sha": "97770221b0107a609cf3c1c85f4d18638007df47"
+      },
+      {
+        "author_time": "2023-08-11T02:19:09Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-11T02:19:09Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-11T02:19:09+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "feb7740bab18ba7f9492af6f0ea3a11a18e427ad"
+        ],
+        "position": 6,
+        "pr_number": 5179,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+          "sha256": "aea0f7d56fdbebebbfd300bbe275073df28c5a4a474be51d0d23762ff15cd5f1",
+          "source": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+        },
+        "repository": "gradio-app/gradio",
+        "sha": "732d85f3f7860cb6a641b794ae53beca0affc971",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9262ce7563aeeb07c35b9af8fae36f775ec1a861"
+      },
+      {
+        "author_time": "2023-08-11T16:14:13Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-11T16:14:13Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-11T16:14:13+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "732d85f3f7860cb6a641b794ae53beca0affc971",
+          "643442e1a5e25fc0c89a15a38b6279b8955643ac"
+        ],
+        "position": 7,
+        "pr_number": 5179,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+          "sha256": "aea0f7d56fdbebebbfd300bbe275073df28c5a4a474be51d0d23762ff15cd5f1",
+          "source": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+        },
+        "repository": "gradio-app/gradio",
+        "sha": "7d4c9901e06250196a9f4695d7cd975724b46641",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9aa3bd085f68a9e54c1b638a140703283fbc9d57"
+      },
+      {
+        "author_time": "2023-08-11T16:14:55Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-11T16:14:55Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-11T16:14:55+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "7d4c9901e06250196a9f4695d7cd975724b46641"
+        ],
+        "position": 8,
+        "pr_number": 5179,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+          "sha256": "aea0f7d56fdbebebbfd300bbe275073df28c5a4a474be51d0d23762ff15cd5f1",
+          "source": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+        },
+        "repository": "gradio-app/gradio",
+        "sha": "d0ebd68a112ca17bd7e80ca4d769e0fdb8980376",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6947a6d6b439bfaea3638cce7eb965c66e0136d3"
+      },
+      {
+        "author_time": "2023-08-11T17:02:31Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-11T17:02:31Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-08-11T17:02:31+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d0ebd68a112ca17bd7e80ca4d769e0fdb8980376",
+          "b22e1888fcf0843520525c1e4b7e1fe73fdeb948"
+        ],
+        "position": 9,
+        "pr_number": 5179,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+          "sha256": "aea0f7d56fdbebebbfd300bbe275073df28c5a4a474be51d0d23762ff15cd5f1",
+          "source": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+        },
+        "repository": "gradio-app/gradio",
+        "sha": "fca401f54390435dc50bbc4e5dd5a4f6a70e1004",
+        "temporal_basis": "committer_time",
+        "tree_sha": "dda191f16aa206993867dad145e3ec2afb11c47c"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-08-10T22:34:30Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-08-10T22:34:30Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-08-10T22:34:30+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "9d1bd28bdf96a8b8810fd962936a23f519abf1ef"
+      ],
+      "position": 1,
+      "pr_number": 5179,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+        "sha256": "aea0f7d56fdbebebbfd300bbe275073df28c5a4a474be51d0d23762ff15cd5f1",
+        "source": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+      },
+      "repository": "gradio-app/gradio",
+      "sha": "48908317bf24f54e971e5ff682fffa3546230707",
+      "temporal_basis": "committer_time",
+      "tree_sha": "5c389733691f8265416ceea4595ed5a15da8d016"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "37256216482e5b8e3a86b7d2a7ce0fca85530fa7",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "4cb8bfa414be1b21902d84d71e5a4f05a059b9e8"
+    ],
+    "recursive_tree_entry_count": 2540,
+    "recursive_tree_listing_sha256": "84dea8a77126ef0f2b53681f247a172a1b8149caca863fa70f93525d77873201",
+    "retrieved_at": "2026-10-05T22:50:39.089322+00:00",
+    "source": "https://github.com/gradio-app/gradio.git",
+    "status": "materialized",
+    "tree_sha": "364773ded11e8edea03c35acf0b2ee23da8b45bc"
+  },
+  "pr_number": 5179,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:37.102063+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/gradio-app/gradio/git/ref/heads/main"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:37.102063+00:00",
+        "sha256": "ab4a39128e7512ca8e53fb9c99187601522d2bd4666bb224a3cee934275253b4",
+        "source": "https://api.github.com/repos/gradio-app/gradio/git/ref/heads/main"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:37.533031+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/gradio-app/gradio/commits?sha=main&until=2023-08-10T22%3A09%3A21.776553%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:37.533031+00:00",
+        "sha256": "3563901fdc7d801cc75e12664b9af8502fe4b8f7992ce737829c8c14c223bab7",
+        "source": "https://api.github.com/repos/gradio-app/gradio/commits?sha=main&until=2023-08-10T22%3A09%3A21.776553%2B00%3A00&per_page=1&page=1"
+      }
+    ],
+    "base_route_evidence": {
+      "ref_object_sha": "dea2bf33d79338b2e607689d4b77b9b37d31293b",
+      "rule": "recorded_pr_base_ref_resolves"
+    },
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "b22e1888fcf0843520525c1e4b7e1fe73fdeb948",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:36.703820+00:00",
+        "sha256": "aea0f7d56fdbebebbfd300bbe275073df28c5a4a474be51d0d23762ff15cd5f1",
+        "source": "https://api.github.com/repos/gradio-app/gradio/pulls/5179/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T22:50:36.128619+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/gradio-app/gradio/pulls/5179"
+        }
+      ],
+      "retrieved_at": "2026-10-05T22:50:36.128619+00:00",
+      "sha256": "48d9f3ba89a2fa2eca3cff7cdc3456fcaaf38eb1664562eb115395fd722f19f9",
+      "source": "https://api.github.com/repos/gradio-app/gradio/pulls/5179"
+    },
+    "recorded_pr_base_ref_resolves": true
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "gradio-app/gradio",
+  "selected_state": {
+    "author_time": "2023-08-10T21:35:53Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "37256216482e5b8e3a86b7d2a7ce0fca85530fa7",
+    "committer_time": "2023-08-10T21:35:53Z",
+    "effective_time": "2023-08-10T21:35:53+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "364773ded11e8edea03c35acf0b2ee23da8b45bc"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-08-10T22:08:47.876748+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-08-10T22:09:21.776553+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

@@ -1,0 +1,1769 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_6413F3DD2F91",
+  "executed_at": "2026-10-05T20:17:26.254073+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-02-27T16:43:14Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-27T16:43:14Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-27T16:43:14+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "52f141294602f95144999a94e73de26b17078055"
+        ],
+        "position": 1,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "8ccbcc2e8244d2db3d11ba0f13fc8856b6ef306d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "41646e9b6f5102b5451e9c69f6bff5055dd4cf1a"
+      },
+      {
+        "author_time": "2024-02-27T17:04:00Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-27T17:04:00Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-27T17:04:00+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "8ccbcc2e8244d2db3d11ba0f13fc8856b6ef306d"
+        ],
+        "position": 2,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "951f65e4dbb8938ed063e0b6cae94084cf5b9627",
+        "temporal_basis": "committer_time",
+        "tree_sha": "40dc65e755f60fa959d0b3df55f87ac678c3ba67"
+      },
+      {
+        "author_time": "2024-02-27T18:54:07Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-27T18:54:07Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-27T18:54:07+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "951f65e4dbb8938ed063e0b6cae94084cf5b9627"
+        ],
+        "position": 3,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "1f157d7ef7ac6f2691dbfdf4bbb7418b0751746f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a6cb4c5655eef7c308210bea567fcbac6e34802f"
+      },
+      {
+        "author_time": "2024-02-27T18:59:10Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-27T18:59:10Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-27T18:59:10+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "1f157d7ef7ac6f2691dbfdf4bbb7418b0751746f"
+        ],
+        "position": 4,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "18e813a314c80533091a63f1846c90cb69a7fd31",
+        "temporal_basis": "committer_time",
+        "tree_sha": "cb427427cfb5fa8d0ba4cd307ba00c07625891de"
+      },
+      {
+        "author_time": "2024-02-27T19:10:05Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-27T19:10:05Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-27T19:10:05+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "18e813a314c80533091a63f1846c90cb69a7fd31"
+        ],
+        "position": 5,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "cdcacd33a974756297af0183a259000e992572de",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2196558111c475a2c7344e287a442b32c2eb9f0c"
+      },
+      {
+        "author_time": "2024-02-27T19:15:13Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-27T19:15:13Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-27T19:15:13+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "cdcacd33a974756297af0183a259000e992572de"
+        ],
+        "position": 6,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "8177b0fe180a87fbf79f1fb52ac5df32f53f2235",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5136d3336821dcde5c3ae03a27af524cdeee6225"
+      },
+      {
+        "author_time": "2024-02-27T19:16:21Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-27T19:16:21Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-27T19:16:21+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "8177b0fe180a87fbf79f1fb52ac5df32f53f2235"
+        ],
+        "position": 7,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "cd6aa320023231ef6421f2979c88bf70fe976d78",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5d4f09fa3524208873622d8339427c716d9cc244"
+      },
+      {
+        "author_time": "2024-02-27T19:19:03Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-27T19:19:03Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-27T19:19:03+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "cd6aa320023231ef6421f2979c88bf70fe976d78"
+        ],
+        "position": 8,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "d421d9780bfb6a5e33e309f85da5b66052ef9122",
+        "temporal_basis": "committer_time",
+        "tree_sha": "221bd419ac66770ff2165e53ed2cbfc1b361868f"
+      },
+      {
+        "author_time": "2024-02-27T19:23:35Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-27T19:23:35Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-27T19:23:35+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d421d9780bfb6a5e33e309f85da5b66052ef9122"
+        ],
+        "position": 9,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "480b549cf223751dc1b03fbfa026400012a2da41",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2196558111c475a2c7344e287a442b32c2eb9f0c"
+      },
+      {
+        "author_time": "2024-02-29T03:21:54Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-29T03:21:54Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-29T03:21:54+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "52f141294602f95144999a94e73de26b17078055"
+        ],
+        "position": 10,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "4e932d9fd782407650dfcd89fdfd7f73037161b0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "bc6034556d85b57e6ad35445abc4d4aa7cc1cc9b"
+      },
+      {
+        "author_time": "2024-02-29T03:27:06Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-29T03:27:06Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-29T03:27:06+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "4e932d9fd782407650dfcd89fdfd7f73037161b0"
+        ],
+        "position": 11,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "887eb7745dd47161752416b77112baf55f0badc9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0e7427562d69333fdd71dd48f2f066977fdffd94"
+      },
+      {
+        "author_time": "2024-02-29T21:42:50Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-29T21:42:50Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-29T21:42:50+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "480b549cf223751dc1b03fbfa026400012a2da41",
+          "887eb7745dd47161752416b77112baf55f0badc9"
+        ],
+        "position": 12,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "53051b49fc43448da3d0336472c17dffdaacafa6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "01d17054089b275dcdc14ce8ad2b60fde572f187"
+      },
+      {
+        "author_time": "2024-03-01T21:59:32Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-01T21:59:32Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-01T21:59:32+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "53051b49fc43448da3d0336472c17dffdaacafa6"
+        ],
+        "position": 13,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "86987a5b55740b49e6e8532e20e34c929bc77e9e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "45fe0fbda27dcb44bfd4750762abacab91776614"
+      },
+      {
+        "author_time": "2024-03-02T00:16:25Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-02T00:16:25Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-02T00:16:25+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "86987a5b55740b49e6e8532e20e34c929bc77e9e"
+        ],
+        "position": 14,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "03da53c37268c8fdafff150ce6845307be4bf6e4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5887f7eabd78ade1c242b89adcb9ca4381c3eb54"
+      },
+      {
+        "author_time": "2024-03-02T00:48:29Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-02T00:48:29Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-02T00:48:29+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "03da53c37268c8fdafff150ce6845307be4bf6e4"
+        ],
+        "position": 15,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "37f6c20bb205f415d52ecb5dabab780d5a247a5b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "092bbccef50d77b084cce37e2115382f63426ab3"
+      },
+      {
+        "author_time": "2024-03-02T00:52:05Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-02T00:52:05Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-02T00:52:05+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "37f6c20bb205f415d52ecb5dabab780d5a247a5b"
+        ],
+        "position": 16,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "241b604fda0f48245a4c24a6fb4b02af4edd0960",
+        "temporal_basis": "committer_time",
+        "tree_sha": "25e446492406d45c3ba32bef708bcf6c17176ecf"
+      },
+      {
+        "author_time": "2024-03-02T00:52:46Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-02T00:52:46Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-02T00:52:46+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "241b604fda0f48245a4c24a6fb4b02af4edd0960"
+        ],
+        "position": 17,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "f21a426295f621f45b7439ed850b040b883cad2b",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d1b2d13921fc7a781fdb47436952df3a88c9c2a2"
+      },
+      {
+        "author_time": "2024-03-02T00:54:00Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-02T00:54:00Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-02T00:54:00+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f21a426295f621f45b7439ed850b040b883cad2b"
+        ],
+        "position": 18,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "876aa846058775c44383c8b3cc9971cfbcc12d81",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ad1c9fb24f359ec9ff4261c7e7f8a9b2fa3774f3"
+      },
+      {
+        "author_time": "2024-03-02T01:15:07Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-02T01:15:07Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-02T01:15:07+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "241b604fda0f48245a4c24a6fb4b02af4edd0960"
+        ],
+        "position": 19,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "34956121eea13eb1b5560317a6199a4f9d1e1f15",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b967108a28b4ce93e81ef01e57520e5bbe43eb1e"
+      },
+      {
+        "author_time": "2024-03-02T01:15:10Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-02T01:15:10Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-02T01:15:10+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "34956121eea13eb1b5560317a6199a4f9d1e1f15",
+          "876aa846058775c44383c8b3cc9971cfbcc12d81"
+        ],
+        "position": 20,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "7f8f3657934c9dfdd5f8f552425ca68247c0cf40",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4cce2065cef3db9445cc1cdba82117ad2ce58ed8"
+      },
+      {
+        "author_time": "2024-03-02T02:34:11Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-02T02:34:11Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-02T02:34:11+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7f8f3657934c9dfdd5f8f552425ca68247c0cf40"
+        ],
+        "position": 21,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "2dfb5c11d0d51a52bf6961bd5566acb2416c2327",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4a02adb975b7917256c8364a0016e3403ccf1e89"
+      },
+      {
+        "author_time": "2024-03-04T12:23:05Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-04T12:23:05Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-04T12:23:05+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "2dfb5c11d0d51a52bf6961bd5566acb2416c2327"
+        ],
+        "position": 22,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "85dce7edeacd974894ce62e004d5745d748a3219",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0e0fed21ccf71f28faf08847f3a4b7b2df99095a"
+      },
+      {
+        "author_time": "2024-03-04T22:43:34Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-04T22:43:34Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-04T22:43:34+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "2dfb5c11d0d51a52bf6961bd5566acb2416c2327"
+        ],
+        "position": 23,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "0e20ca41299f5203a3647aa846a7f099fe52f48f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "25355fbed9349f2a61c01742a356e89bbc79862d"
+      },
+      {
+        "author_time": "2024-03-04T22:43:46Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-04T22:43:46Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-04T22:43:46+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "0e20ca41299f5203a3647aa846a7f099fe52f48f",
+          "85dce7edeacd974894ce62e004d5745d748a3219"
+        ],
+        "position": 24,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "2e9ea03aaeaa9ca7ab0dc97c920be488172a77ad",
+        "temporal_basis": "committer_time",
+        "tree_sha": "425a49ee8fda46304127606a185bf70b77607f56"
+      },
+      {
+        "author_time": "2024-03-05T11:55:57Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T11:55:57Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T11:55:57+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "2e9ea03aaeaa9ca7ab0dc97c920be488172a77ad"
+        ],
+        "position": 25,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "359a65d265d2a2af5a18ede6bb119494fa848928",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f282c52513f838a6ad205b001b2162e46a288d50"
+      },
+      {
+        "author_time": "2024-03-05T12:25:30Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T12:25:30Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T12:25:30+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "359a65d265d2a2af5a18ede6bb119494fa848928"
+        ],
+        "position": 26,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "36e9e90b623e9c5ca20c272d9b3070b5404e353f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d16e519ea0da96c1a042c528fe447a3478071f59"
+      },
+      {
+        "author_time": "2024-03-05T12:34:13Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T12:34:13Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T12:34:13+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "36e9e90b623e9c5ca20c272d9b3070b5404e353f"
+        ],
+        "position": 27,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "9f8cc3a635ed598473e66cb4e58d0dba71ded5e6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "913635c50694fe2409244e4b740fc100ef4af217"
+      },
+      {
+        "author_time": "2024-03-05T12:56:07Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T12:56:07Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T12:56:07+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "9f8cc3a635ed598473e66cb4e58d0dba71ded5e6"
+        ],
+        "position": 28,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "8f64a253db5890c91f64a65f39b5b6dbe0af82bd",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9324d9edf9adfa6540805412540c858352e3ec51"
+      },
+      {
+        "author_time": "2024-03-05T12:58:38Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T12:58:38Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T12:58:38+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "8f64a253db5890c91f64a65f39b5b6dbe0af82bd"
+        ],
+        "position": 29,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "c4103d685e79f03152da55a943a94f33c5665ab2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d61e8d9505ad2a39d1a825554b080c7462243c4b"
+      },
+      {
+        "author_time": "2024-03-05T12:59:10Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T12:59:10Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T12:59:10+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c4103d685e79f03152da55a943a94f33c5665ab2"
+        ],
+        "position": 30,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "ce7395fd37de391a94db9f164426e33f0ba64389",
+        "temporal_basis": "committer_time",
+        "tree_sha": "fedd75d4e1b41db05fa9b3bcb8d0d9dddb30175d"
+      },
+      {
+        "author_time": "2024-03-05T13:01:17Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T13:01:17Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T13:01:17+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "359a65d265d2a2af5a18ede6bb119494fa848928"
+        ],
+        "position": 31,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "041b04384a029b47cefdf468585ae43b8278419e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "07205d9e4e7e42ff8f05d70c0ff15efd79f1a87f"
+      },
+      {
+        "author_time": "2024-03-05T13:01:23Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T13:01:23Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T13:01:23+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "041b04384a029b47cefdf468585ae43b8278419e",
+          "ce7395fd37de391a94db9f164426e33f0ba64389"
+        ],
+        "position": 32,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "eebf4914a3d8773c616d6136e8d266e39e420d2c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "21879d307c2a5d64237f68d547d16a48eb82de9b"
+      },
+      {
+        "author_time": "2024-03-05T13:08:41Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T13:08:41Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T13:08:41+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "eebf4914a3d8773c616d6136e8d266e39e420d2c"
+        ],
+        "position": 33,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "c1d455780ce281e00c38152dab8250a0032958f5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "077628ebad7bb325a10117a81a07066e2e2b57c0"
+      },
+      {
+        "author_time": "2024-03-05T13:30:14Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T13:30:14Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T13:30:14+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c1d455780ce281e00c38152dab8250a0032958f5"
+        ],
+        "position": 34,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "44f4c0366a2869cbf7a3c3a12051c1d709f7dec1",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e4d1168ce7aa1f0422d63537917acc0da6f719f9"
+      },
+      {
+        "author_time": "2024-03-05T13:30:37Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T13:30:37Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T13:30:37+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "44f4c0366a2869cbf7a3c3a12051c1d709f7dec1"
+        ],
+        "position": 35,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "9d9b64eb0890acad0a1e3a492517467d0442b60c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "73fbb50184be9411f98ff419488c45b18ffbdac7"
+      },
+      {
+        "author_time": "2024-03-05T13:30:46Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T13:30:46Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T13:30:46+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "9d9b64eb0890acad0a1e3a492517467d0442b60c"
+        ],
+        "position": 36,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "c3583af76f2c6fc02f45e9f9a003b26fe12fb727",
+        "temporal_basis": "committer_time",
+        "tree_sha": "311ef35ba31e8ae9e27f21e9dde747a2efa4c563"
+      },
+      {
+        "author_time": "2024-03-05T13:46:05Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T13:46:05Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T13:46:05+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "c1d455780ce281e00c38152dab8250a0032958f5"
+        ],
+        "position": 37,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "0300e41bd04f3e7cf7350df2c8d95ac2463a5a96",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d2c3a7947518463826be44246d25e3aa84f6cb3a"
+      },
+      {
+        "author_time": "2024-03-05T13:46:08Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T13:46:08Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T13:46:08+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "0300e41bd04f3e7cf7350df2c8d95ac2463a5a96",
+          "c3583af76f2c6fc02f45e9f9a003b26fe12fb727"
+        ],
+        "position": 38,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "6ea1d152d253613fcf2d83cbc9a4ba70adc4fa68",
+        "temporal_basis": "committer_time",
+        "tree_sha": "132fdccca2d63c1eed5c78b2d5bf95d2469b9b32"
+      },
+      {
+        "author_time": "2024-03-05T13:50:43Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T13:50:43Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T13:50:43+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "6ea1d152d253613fcf2d83cbc9a4ba70adc4fa68"
+        ],
+        "position": 39,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "862a30f7840a12ee139dc3d6b8b6f5bdb99205ad",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5591ceab2eb358bef959b67f5028681046ef7157"
+      },
+      {
+        "author_time": "2024-03-05T13:58:21Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T13:58:21Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T13:58:21+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "862a30f7840a12ee139dc3d6b8b6f5bdb99205ad"
+        ],
+        "position": 40,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "64c398e352a79d3c350c0ec10d096b03be1ee831",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9c64b1810c8e8b11e4abc338c85d29325ec690dd"
+      },
+      {
+        "author_time": "2024-03-05T14:08:47Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T14:08:47Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T14:08:47+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "6ea1d152d253613fcf2d83cbc9a4ba70adc4fa68"
+        ],
+        "position": 41,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "bf0e782332e4b597e4d457c1a15a8d2eebb45dbe",
+        "temporal_basis": "committer_time",
+        "tree_sha": "8fcb76c63e402b52f0867fc40ff4aa5dede9828c"
+      },
+      {
+        "author_time": "2024-03-05T14:08:52Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T14:08:52Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T14:08:52+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "bf0e782332e4b597e4d457c1a15a8d2eebb45dbe",
+          "64c398e352a79d3c350c0ec10d096b03be1ee831"
+        ],
+        "position": 42,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "108910f2dfe24ff4b1d822fa939bef10265b356f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6dfafc06833d282fdd22642a991204829aead3f1"
+      },
+      {
+        "author_time": "2024-03-05T14:10:36Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T14:10:36Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T14:10:36+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "108910f2dfe24ff4b1d822fa939bef10265b356f"
+        ],
+        "position": 43,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "efc2119a300523117a56e7076260f6c3825e6fa9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "945726a9c1e372f2031869929051b37fb7705ede"
+      },
+      {
+        "author_time": "2024-03-05T14:14:40Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T14:14:40Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T14:14:40+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "efc2119a300523117a56e7076260f6c3825e6fa9"
+        ],
+        "position": 44,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "6ce6eb5393ad6441aa2ab6a5927c8501a7d8d331",
+        "temporal_basis": "committer_time",
+        "tree_sha": "20be4be9685fe1cbb76503da3f701362fe4b5d48"
+      },
+      {
+        "author_time": "2024-03-05T14:19:51Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T14:19:51Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T14:19:51+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "6ce6eb5393ad6441aa2ab6a5927c8501a7d8d331"
+        ],
+        "position": 45,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "827cd8e3da22688c08d7ec0f81b1167cec7329a6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7c254cf5beae00773af21e73d32c5471aeec4540"
+      },
+      {
+        "author_time": "2024-03-05T15:09:16Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T15:09:16Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T15:09:16+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "108910f2dfe24ff4b1d822fa939bef10265b356f"
+        ],
+        "position": 46,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "3917c1586e0ec8a80a2fd18dce8d16c17fc46346",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e59bb45b19689b6f3de310d2a384baed5312b20b"
+      },
+      {
+        "author_time": "2024-03-05T15:09:19Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T15:09:19Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-03-05T15:09:19+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "3917c1586e0ec8a80a2fd18dce8d16c17fc46346",
+          "827cd8e3da22688c08d7ec0f81b1167cec7329a6"
+        ],
+        "position": 47,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "24487b31d62e364c1e02665c3524e7db91b3c6dc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "aa72610d5fed412d8a10d1c2cb13adfad7c8afb0"
+      },
+      {
+        "author_time": "2024-03-05T23:44:46Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-05T23:44:46Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-03-05T23:44:46+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "24487b31d62e364c1e02665c3524e7db91b3c6dc"
+        ],
+        "position": 48,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "45c121f90c683e7859727f92df2c7a851c5a5988",
+        "temporal_basis": "committer_time",
+        "tree_sha": "19659788583361e0103bff17f5e7d76425102fd4"
+      },
+      {
+        "author_time": "2024-03-06T01:13:40Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-06T01:13:40Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-03-06T01:13:40+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "45c121f90c683e7859727f92df2c7a851c5a5988"
+        ],
+        "position": 49,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "4e50a2381087a3e1d5a2516a15bfb0af5f77c4ff",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d98189c1d57f774bbcf96e211151a175f5b29936"
+      },
+      {
+        "author_time": "2024-03-06T01:17:57Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-06T01:17:57Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-03-06T01:17:57+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "4e50a2381087a3e1d5a2516a15bfb0af5f77c4ff"
+        ],
+        "position": 50,
+        "pr_number": 1,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+          "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+          "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+        },
+        "repository": "g12-4soat/techlanches-lambda-auth",
+        "sha": "4a52d89d3a100f9e81c4653b46269dc6ec3798d2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2f89a3d3e7dc7a4c5a41f3632960fbc2fcff74e9"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2024-03-05T23:44:46Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-03-05T23:44:46Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2024-03-05T23:44:46+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "24487b31d62e364c1e02665c3524e7db91b3c6dc"
+      ],
+      "position": 48,
+      "pr_number": 1,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+        "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+        "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+      },
+      "repository": "g12-4soat/techlanches-lambda-auth",
+      "sha": "45c121f90c683e7859727f92df2c7a851c5a5988",
+      "temporal_basis": "committer_time",
+      "tree_sha": "19659788583361e0103bff17f5e7d76425102fd4"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-03-05T15:09:19Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-03-05T15:09:19Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-03-05T15:09:19+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "3917c1586e0ec8a80a2fd18dce8d16c17fc46346",
+        "827cd8e3da22688c08d7ec0f81b1167cec7329a6"
+      ],
+      "position": 47,
+      "pr_number": 1,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+        "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+        "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+      },
+      "repository": "g12-4soat/techlanches-lambda-auth",
+      "sha": "24487b31d62e364c1e02665c3524e7db91b3c6dc",
+      "temporal_basis": "committer_time",
+      "tree_sha": "aa72610d5fed412d8a10d1c2cb13adfad7c8afb0"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "24487b31d62e364c1e02665c3524e7db91b3c6dc",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "3917c1586e0ec8a80a2fd18dce8d16c17fc46346",
+      "827cd8e3da22688c08d7ec0f81b1167cec7329a6"
+    ],
+    "recursive_tree_entry_count": 43,
+    "recursive_tree_listing_sha256": "46bf471332ad9840099047d76cc2ef3032d447bb45582bc9bbfbf960b2510306",
+    "retrieved_at": "2026-10-05T20:17:26.244234+00:00",
+    "source": "https://github.com/g12-4soat/techlanches-lambda-auth.git",
+    "status": "materialized",
+    "tree_sha": "aa72610d5fed412d8a10d1c2cb13adfad7c8afb0"
+  },
+  "pr_number": 1,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "52f141294602f95144999a94e73de26b17078055",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:25.727058+00:00",
+        "sha256": "aa639d8eb7e8782f67c931fdbf5529601f2c0a5b70f99281a3b1027d2ade3771",
+        "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:17:25.000623+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:17:25.000623+00:00",
+      "sha256": "d425bb613878306b25aeda39e6a08973017ffc65b43da03a5fd474ae7e9e0a80",
+      "source": "https://api.github.com/repos/g12-4soat/techlanches-lambda-auth/pulls/1"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "g12-4soat/techlanches-lambda-auth",
+  "selected_state": {
+    "author_time": "2024-03-05T15:09:19Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "24487b31d62e364c1e02665c3524e7db91b3c6dc",
+    "committer_time": "2024-03-05T15:09:19Z",
+    "effective_time": "2024-03-05T15:09:19+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "aa72610d5fed412d8a10d1c2cb13adfad7c8afb0"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-03-05T20:20:08.577178+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-03-05T20:20:12.845274+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

@@ -1,0 +1,264 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-06-02T12:51:54Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-02T14:17:25Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-02T14:17:25+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d8b303408883abe01451d2cdb3948c13c39d034c"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:56.706427+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/swarmion/swarmion/commits?sha=main&until=2023-06-02T14%3A42%3A14.814585%2B00%3A00&per_page=1&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:56.706427+00:00",
+          "sha256": "888d47a3deae34dbbe51d619163fb370f144004034ee97e9eaad71436d4aa8ef",
+          "source": "https://api.github.com/repos/swarmion/swarmion/commits?sha=main&until=2023-06-02T14%3A42%3A14.814585%2B00%3A00&per_page=1&page=1"
+        },
+        "repository": "swarmion/swarmion",
+        "sha": "21ee6481198806465cafd16b27fa6988dfb844a1",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b8da8c6992a7aec88e92365b614694faa7d0b922"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-06-02T12:51:54Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-06-02T14:17:25Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-06-02T14:17:25+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "d8b303408883abe01451d2cdb3948c13c39d034c"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:56.706427+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/swarmion/swarmion/commits?sha=main&until=2023-06-02T14%3A42%3A14.814585%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:56.706427+00:00",
+        "sha256": "888d47a3deae34dbbe51d619163fb370f144004034ee97e9eaad71436d4aa8ef",
+        "source": "https://api.github.com/repos/swarmion/swarmion/commits?sha=main&until=2023-06-02T14%3A42%3A14.814585%2B00%3A00&per_page=1&page=1"
+      },
+      "repository": "swarmion/swarmion",
+      "sha": "21ee6481198806465cafd16b27fa6988dfb844a1",
+      "temporal_basis": "committer_time",
+      "tree_sha": "b8da8c6992a7aec88e92365b614694faa7d0b922"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "main",
+  "base_routing_source": "pr_base_ref",
+  "case_id": "CASE_F850E0DE06D3",
+  "executed_at": "2026-10-05T22:50:57.655504+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-06-02T14:54:08Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-16T20:15:10Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-16T20:15:10+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "a7d587c12fee54e688286b8254c812b785045003"
+        ],
+        "position": 1,
+        "pr_number": 678,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:55.862286+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/swarmion/swarmion/pulls/678/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:55.862286+00:00",
+          "sha256": "ac4258498d7a09bb5830e9d161f2a031d57473c1889a6eff9ce6f911c9b0c09c",
+          "source": "https://api.github.com/repos/swarmion/swarmion/pulls/678/commits?per_page=100&page=1"
+        },
+        "repository": "swarmion/swarmion",
+        "sha": "abd993f4e941a8eb01a505fb24aeb8a86d6f19d3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f62419258f95c69813726adc644f4d510662cfce"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-06-02T14:54:08Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-06-16T20:15:10Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-06-16T20:15:10+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "a7d587c12fee54e688286b8254c812b785045003"
+      ],
+      "position": 1,
+      "pr_number": 678,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:55.862286+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/swarmion/swarmion/pulls/678/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:55.862286+00:00",
+        "sha256": "ac4258498d7a09bb5830e9d161f2a031d57473c1889a6eff9ce6f911c9b0c09c",
+        "source": "https://api.github.com/repos/swarmion/swarmion/pulls/678/commits?per_page=100&page=1"
+      },
+      "repository": "swarmion/swarmion",
+      "sha": "abd993f4e941a8eb01a505fb24aeb8a86d6f19d3",
+      "temporal_basis": "committer_time",
+      "tree_sha": "f62419258f95c69813726adc644f4d510662cfce"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "21ee6481198806465cafd16b27fa6988dfb844a1",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "d8b303408883abe01451d2cdb3948c13c39d034c"
+    ],
+    "recursive_tree_entry_count": 1227,
+    "recursive_tree_listing_sha256": "636be2bbc3e1d6b6a98a5cd596d389edefdfcb4488769b3631b576e00b6b7157",
+    "retrieved_at": "2026-10-05T22:50:57.652145+00:00",
+    "source": "https://github.com/swarmion/swarmion.git",
+    "status": "materialized",
+    "tree_sha": "b8da8c6992a7aec88e92365b614694faa7d0b922"
+  },
+  "pr_number": 678,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:56.257148+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/swarmion/swarmion/git/ref/heads/main"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:56.257148+00:00",
+        "sha256": "b4d7f63193efa5eb4cccbe604230f1c7ece83ca71534a0a215f1f2bf52304335",
+        "source": "https://api.github.com/repos/swarmion/swarmion/git/ref/heads/main"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:56.706427+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/swarmion/swarmion/commits?sha=main&until=2023-06-02T14%3A42%3A14.814585%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:56.706427+00:00",
+        "sha256": "888d47a3deae34dbbe51d619163fb370f144004034ee97e9eaad71436d4aa8ef",
+        "source": "https://api.github.com/repos/swarmion/swarmion/commits?sha=main&until=2023-06-02T14%3A42%3A14.814585%2B00%3A00&per_page=1&page=1"
+      }
+    ],
+    "base_route_evidence": {
+      "ref_object_sha": "bff9d180a7aa2b4c43c3eb35072f5d4c0971855d",
+      "rule": "recorded_pr_base_ref_resolves"
+    },
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "a7d587c12fee54e688286b8254c812b785045003",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:55.862286+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/swarmion/swarmion/pulls/678/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:55.862286+00:00",
+        "sha256": "ac4258498d7a09bb5830e9d161f2a031d57473c1889a6eff9ce6f911c9b0c09c",
+        "source": "https://api.github.com/repos/swarmion/swarmion/pulls/678/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T22:50:55.377053+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/swarmion/swarmion/pulls/678"
+        }
+      ],
+      "retrieved_at": "2026-10-05T22:50:55.377053+00:00",
+      "sha256": "eeccf5c7820138bf75067be84be98c2ea379435d1e4d4a4f129ed4ed31cb9127",
+      "source": "https://api.github.com/repos/swarmion/swarmion/pulls/678"
+    },
+    "recorded_pr_base_ref_resolves": true
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "swarmion/swarmion",
+  "selected_state": {
+    "author_time": "2023-06-02T12:51:54Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "21ee6481198806465cafd16b27fa6988dfb844a1",
+    "committer_time": "2023-06-02T14:17:25Z",
+    "effective_time": "2023-06-02T14:17:25+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "b8da8c6992a7aec88e92365b614694faa7d0b922"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-06-02T14:41:51.583692+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-06-02T14:42:14.814585+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

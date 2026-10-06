@@ -1,0 +1,354 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_84DFC90D3698",
+  "executed_at": "2026-10-05T20:18:06.872389+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-06-22T15:34:30Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-22T15:34:30Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-22T15:34:30+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "1dfb193006516b1ad6d6f7201111fe5f431f7464"
+        ],
+        "position": 1,
+        "pr_number": 62,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:05.818081+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/qin-team-recipe/05-recipe-app/pulls/62/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:05.818081+00:00",
+          "sha256": "95da7be07894caa1839431a023f3e1b118f4376159355a183432e548cb1e2a74",
+          "source": "https://api.github.com/repos/qin-team-recipe/05-recipe-app/pulls/62/commits?per_page=100&page=1"
+        },
+        "repository": "qin-team-recipe/05-recipe-app",
+        "sha": "b81efbde94eca297ed61d3e96243503e8959b216",
+        "temporal_basis": "committer_time",
+        "tree_sha": "779d1f929a1fdc8643117ab16c2d4a5348c43185"
+      },
+      {
+        "author_time": "2023-06-23T11:56:07Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-23T11:56:07Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-23T11:56:07+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "b81efbde94eca297ed61d3e96243503e8959b216"
+        ],
+        "position": 2,
+        "pr_number": 62,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:05.818081+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/qin-team-recipe/05-recipe-app/pulls/62/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:05.818081+00:00",
+          "sha256": "95da7be07894caa1839431a023f3e1b118f4376159355a183432e548cb1e2a74",
+          "source": "https://api.github.com/repos/qin-team-recipe/05-recipe-app/pulls/62/commits?per_page=100&page=1"
+        },
+        "repository": "qin-team-recipe/05-recipe-app",
+        "sha": "0a79b88c10c8360b71f7a38162bc1a94ddb175cc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "c0053025b8f8661f92f0448d71022f7b20d3da2d"
+      },
+      {
+        "author_time": "2023-06-23T11:57:34Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-23T11:57:34Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-23T11:57:34+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "0a79b88c10c8360b71f7a38162bc1a94ddb175cc"
+        ],
+        "position": 3,
+        "pr_number": 62,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:05.818081+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/qin-team-recipe/05-recipe-app/pulls/62/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:05.818081+00:00",
+          "sha256": "95da7be07894caa1839431a023f3e1b118f4376159355a183432e548cb1e2a74",
+          "source": "https://api.github.com/repos/qin-team-recipe/05-recipe-app/pulls/62/commits?per_page=100&page=1"
+        },
+        "repository": "qin-team-recipe/05-recipe-app",
+        "sha": "ff74d9ef5a6df613fbae01d4f9478ad2c4fc8d4e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "cd80fc852f21d3e233c6be811732226dbf9c12ff"
+      },
+      {
+        "author_time": "2023-06-23T12:00:07Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-23T12:00:07Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-23T12:00:07+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "ff74d9ef5a6df613fbae01d4f9478ad2c4fc8d4e"
+        ],
+        "position": 4,
+        "pr_number": 62,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:05.818081+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/qin-team-recipe/05-recipe-app/pulls/62/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:05.818081+00:00",
+          "sha256": "95da7be07894caa1839431a023f3e1b118f4376159355a183432e548cb1e2a74",
+          "source": "https://api.github.com/repos/qin-team-recipe/05-recipe-app/pulls/62/commits?per_page=100&page=1"
+        },
+        "repository": "qin-team-recipe/05-recipe-app",
+        "sha": "6382edc41e1929fa598a97fdf67452fc3c85272e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "bcc451024dd184378888531c41d33cb83eaa3268"
+      },
+      {
+        "author_time": "2023-06-23T12:04:51Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-23T12:04:51Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-06-23T12:04:51+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "6382edc41e1929fa598a97fdf67452fc3c85272e"
+        ],
+        "position": 5,
+        "pr_number": 62,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:05.818081+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/qin-team-recipe/05-recipe-app/pulls/62/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:05.818081+00:00",
+          "sha256": "95da7be07894caa1839431a023f3e1b118f4376159355a183432e548cb1e2a74",
+          "source": "https://api.github.com/repos/qin-team-recipe/05-recipe-app/pulls/62/commits?per_page=100&page=1"
+        },
+        "repository": "qin-team-recipe/05-recipe-app",
+        "sha": "56c04110e67c30d309d63875c891844ab35cee9c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "20c9dea3351485aebcb4b454b49b9e88a6e54fa7"
+      },
+      {
+        "author_time": "2023-06-24T03:13:43Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-06-24T03:13:43Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-06-24T03:13:43+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "56c04110e67c30d309d63875c891844ab35cee9c",
+          "5884f07031d482c574c8797d768fa259bc20a489"
+        ],
+        "position": 6,
+        "pr_number": 62,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:05.818081+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/qin-team-recipe/05-recipe-app/pulls/62/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:05.818081+00:00",
+          "sha256": "95da7be07894caa1839431a023f3e1b118f4376159355a183432e548cb1e2a74",
+          "source": "https://api.github.com/repos/qin-team-recipe/05-recipe-app/pulls/62/commits?per_page=100&page=1"
+        },
+        "repository": "qin-team-recipe/05-recipe-app",
+        "sha": "aee5cd28b562aa4106aaffb54e1e9e46144d9541",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6aa82ddbc9ce4f6e8194306f01c1078f96c1e03b"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-06-24T03:13:43Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-06-24T03:13:43Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-06-24T03:13:43+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "56c04110e67c30d309d63875c891844ab35cee9c",
+        "5884f07031d482c574c8797d768fa259bc20a489"
+      ],
+      "position": 6,
+      "pr_number": 62,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:05.818081+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/qin-team-recipe/05-recipe-app/pulls/62/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:05.818081+00:00",
+        "sha256": "95da7be07894caa1839431a023f3e1b118f4376159355a183432e548cb1e2a74",
+        "source": "https://api.github.com/repos/qin-team-recipe/05-recipe-app/pulls/62/commits?per_page=100&page=1"
+      },
+      "repository": "qin-team-recipe/05-recipe-app",
+      "sha": "aee5cd28b562aa4106aaffb54e1e9e46144d9541",
+      "temporal_basis": "committer_time",
+      "tree_sha": "6aa82ddbc9ce4f6e8194306f01c1078f96c1e03b"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-06-23T12:04:51Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-06-23T12:04:51Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-06-23T12:04:51+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "6382edc41e1929fa598a97fdf67452fc3c85272e"
+      ],
+      "position": 5,
+      "pr_number": 62,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:05.818081+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/qin-team-recipe/05-recipe-app/pulls/62/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:05.818081+00:00",
+        "sha256": "95da7be07894caa1839431a023f3e1b118f4376159355a183432e548cb1e2a74",
+        "source": "https://api.github.com/repos/qin-team-recipe/05-recipe-app/pulls/62/commits?per_page=100&page=1"
+      },
+      "repository": "qin-team-recipe/05-recipe-app",
+      "sha": "56c04110e67c30d309d63875c891844ab35cee9c",
+      "temporal_basis": "committer_time",
+      "tree_sha": "20c9dea3351485aebcb4b454b49b9e88a6e54fa7"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "56c04110e67c30d309d63875c891844ab35cee9c",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "6382edc41e1929fa598a97fdf67452fc3c85272e"
+    ],
+    "recursive_tree_entry_count": 182,
+    "recursive_tree_listing_sha256": "5e0e3568aeb44be9737f92be960c063caf02dcaba92e0796be54be7ac86593af",
+    "retrieved_at": "2026-10-05T20:18:06.869051+00:00",
+    "source": "https://github.com/qin-team-recipe/05-recipe-app.git",
+    "status": "materialized",
+    "tree_sha": "20c9dea3351485aebcb4b454b49b9e88a6e54fa7"
+  },
+  "pr_number": 62,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "5884f07031d482c574c8797d768fa259bc20a489",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:05.818081+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/qin-team-recipe/05-recipe-app/pulls/62/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:05.818081+00:00",
+        "sha256": "95da7be07894caa1839431a023f3e1b118f4376159355a183432e548cb1e2a74",
+        "source": "https://api.github.com/repos/qin-team-recipe/05-recipe-app/pulls/62/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:18:05.254730+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/qin-team-recipe/05-recipe-app/pulls/62"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:18:05.254730+00:00",
+      "sha256": "c6eea74f42eeabbabfe0019f78b57093f163f0cc5440c4887bcacfc12c020945",
+      "source": "https://api.github.com/repos/qin-team-recipe/05-recipe-app/pulls/62"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "qin-team-recipe/05-recipe-app",
+  "selected_state": {
+    "author_time": "2023-06-23T12:04:51Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "56c04110e67c30d309d63875c891844ab35cee9c",
+    "committer_time": "2023-06-23T12:04:51Z",
+    "effective_time": "2023-06-23T12:04:51+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "20c9dea3351485aebcb4b454b49b9e88a6e54fa7"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-06-23T14:18:07.144951+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-06-23T14:20:15.098399+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

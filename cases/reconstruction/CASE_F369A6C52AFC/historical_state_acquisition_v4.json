@@ -1,0 +1,289 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "main",
+  "base_routing_source": "",
+  "case_id": "CASE_F369A6C52AFC",
+  "executed_at": "2026-10-05T22:50:52.027177+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-12-23T07:26:18Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-07T10:37:43Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-07T10:37:43+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "dc8306f776b8a2411e3a4ce3e1e3225d3fc88316"
+        ],
+        "position": 1,
+        "pr_number": 3644,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:50.934758+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jsdom/jsdom/pulls/3644/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:50.934758+00:00",
+          "sha256": "2790f47d5ed3fcb08e12e2997f0dc16da209311c3b0c34e3815d31f9dad7ca28",
+          "source": "https://api.github.com/repos/jsdom/jsdom/pulls/3644/commits?per_page=100&page=1"
+        },
+        "repository": "jsdom/jsdom",
+        "sha": "6f7a15c13c3ee3ad55e6c329557c0b3f18968ea5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "22b84d2e5ccfd0f3def87927e378032cb4f05e82"
+      },
+      {
+        "author_time": "2023-12-23T10:46:40Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-07T10:37:50Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-07T10:37:50+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "6f7a15c13c3ee3ad55e6c329557c0b3f18968ea5"
+        ],
+        "position": 2,
+        "pr_number": 3644,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:50.934758+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jsdom/jsdom/pulls/3644/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:50.934758+00:00",
+          "sha256": "2790f47d5ed3fcb08e12e2997f0dc16da209311c3b0c34e3815d31f9dad7ca28",
+          "source": "https://api.github.com/repos/jsdom/jsdom/pulls/3644/commits?per_page=100&page=1"
+        },
+        "repository": "jsdom/jsdom",
+        "sha": "7ea34bd2130357981b064d14228442f08e2c8d57",
+        "temporal_basis": "committer_time",
+        "tree_sha": "ea6d7b8e8dd13b62ab82f8b0c008bbd08ae12979"
+      },
+      {
+        "author_time": "2023-12-23T11:26:24Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-07T11:10:55Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-07T11:10:55+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7ea34bd2130357981b064d14228442f08e2c8d57"
+        ],
+        "position": 3,
+        "pr_number": 3644,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:50.934758+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jsdom/jsdom/pulls/3644/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:50.934758+00:00",
+          "sha256": "2790f47d5ed3fcb08e12e2997f0dc16da209311c3b0c34e3815d31f9dad7ca28",
+          "source": "https://api.github.com/repos/jsdom/jsdom/pulls/3644/commits?per_page=100&page=1"
+        },
+        "repository": "jsdom/jsdom",
+        "sha": "6b1a7c9c380baca05d2a6252cfcc3f2b9a9de6b5",
+        "temporal_basis": "committer_time",
+        "tree_sha": "6df644dac6a0823d4628e38ad56247a4553c64bd"
+      },
+      {
+        "author_time": "2023-12-23T11:29:49Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-07T11:10:55Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-07T11:10:55+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "6b1a7c9c380baca05d2a6252cfcc3f2b9a9de6b5"
+        ],
+        "position": 4,
+        "pr_number": 3644,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:50.934758+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jsdom/jsdom/pulls/3644/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:50.934758+00:00",
+          "sha256": "2790f47d5ed3fcb08e12e2997f0dc16da209311c3b0c34e3815d31f9dad7ca28",
+          "source": "https://api.github.com/repos/jsdom/jsdom/pulls/3644/commits?per_page=100&page=1"
+        },
+        "repository": "jsdom/jsdom",
+        "sha": "3eab018562f3d7a294d5505bb19598336642947c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "934d847ebeaea5a42d019c440d46b24d2b05d47e"
+      },
+      {
+        "author_time": "2024-01-03T10:17:53Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-01-07T11:10:55Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-01-07T11:10:55+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "3eab018562f3d7a294d5505bb19598336642947c"
+        ],
+        "position": 5,
+        "pr_number": 3644,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:50.934758+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/jsdom/jsdom/pulls/3644/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:50.934758+00:00",
+          "sha256": "2790f47d5ed3fcb08e12e2997f0dc16da209311c3b0c34e3815d31f9dad7ca28",
+          "source": "https://api.github.com/repos/jsdom/jsdom/pulls/3644/commits?per_page=100&page=1"
+        },
+        "repository": "jsdom/jsdom",
+        "sha": "f3bcfca545ab5918fa1f2125fac7bac5ed864bad",
+        "temporal_basis": "committer_time",
+        "tree_sha": "87e646bd93a917be8841bfd65212d3e8a2025f34"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-01-03T10:17:53Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-01-07T11:10:55Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-01-07T11:10:55+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "3eab018562f3d7a294d5505bb19598336642947c"
+      ],
+      "position": 5,
+      "pr_number": 3644,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:50.934758+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/jsdom/jsdom/pulls/3644/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:50.934758+00:00",
+        "sha256": "2790f47d5ed3fcb08e12e2997f0dc16da209311c3b0c34e3815d31f9dad7ca28",
+        "source": "https://api.github.com/repos/jsdom/jsdom/pulls/3644/commits?per_page=100&page=1"
+      },
+      "repository": "jsdom/jsdom",
+      "sha": "f3bcfca545ab5918fa1f2125fac7bac5ed864bad",
+      "temporal_basis": "committer_time",
+      "tree_sha": "87e646bd93a917be8841bfd65212d3e8a2025f34"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "f3bcfca545ab5918fa1f2125fac7bac5ed864bad",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "3eab018562f3d7a294d5505bb19598336642947c"
+    ],
+    "recursive_tree_entry_count": 1129,
+    "recursive_tree_listing_sha256": "f4e6c0ebb8bd9289d642d1fbf9cfab611262e61dad8157e48a00f9ed54d368ac",
+    "retrieved_at": "2026-10-05T22:50:52.024282+00:00",
+    "source": "https://github.com/jsdom/jsdom.git",
+    "status": "materialized",
+    "tree_sha": "87e646bd93a917be8841bfd65212d3e8a2025f34"
+  },
+  "pr_number": 3644,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "dc8306f776b8a2411e3a4ce3e1e3225d3fc88316",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:50.934758+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/jsdom/jsdom/pulls/3644/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:50.934758+00:00",
+        "sha256": "2790f47d5ed3fcb08e12e2997f0dc16da209311c3b0c34e3815d31f9dad7ca28",
+        "source": "https://api.github.com/repos/jsdom/jsdom/pulls/3644/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T22:50:50.359653+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/jsdom/jsdom/pulls/3644"
+        }
+      ],
+      "retrieved_at": "2026-10-05T22:50:50.359653+00:00",
+      "sha256": "f01870690609eea5de606679c8225bc4d533a85989cdea1a2810bfc256e5ab35",
+      "source": "https://api.github.com/repos/jsdom/jsdom/pulls/3644"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "jsdom/jsdom",
+  "selected_state": {
+    "author_time": "2024-01-03T10:17:53Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "f3bcfca545ab5918fa1f2125fac7bac5ed864bad",
+    "committer_time": "2024-01-07T11:10:55Z",
+    "effective_time": "2024-01-07T11:10:55+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "87e646bd93a917be8841bfd65212d3e8a2025f34"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-01-07T13:22:01.017775+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-01-07T13:22:25.537973+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

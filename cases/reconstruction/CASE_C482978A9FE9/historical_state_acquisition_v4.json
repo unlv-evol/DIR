@@ -1,0 +1,296 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-09-10T21:11:21Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-10T21:11:21Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-10T21:11:21+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "d70fe539fcf0f9cd1a3a0e36bd86f6617e3d81a0"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:07:10.816178+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/cataclysmbn/Cataclysm-BN/commits/3702256ff8c618942a2e124b63b81e0f88283a4a"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:07:10.816178+00:00",
+          "sha256": "77388b399ae64f42b6357cd49a672df47078172759d31bc3dfdd01cc058a3503",
+          "source": "https://api.github.com/repos/cataclysmbn/Cataclysm-BN/commits/3702256ff8c618942a2e124b63b81e0f88283a4a"
+        },
+        "repository": "cataclysmbn/Cataclysm-BN",
+        "sha": "3702256ff8c618942a2e124b63b81e0f88283a4a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5f4f98723cd5454a14c3a6308b419fc726e20ceb"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-09-10T21:11:21Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-09-10T21:11:21Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-09-10T21:11:21+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "d70fe539fcf0f9cd1a3a0e36bd86f6617e3d81a0"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:07:10.816178+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/cataclysmbn/Cataclysm-BN/commits/3702256ff8c618942a2e124b63b81e0f88283a4a"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:07:10.816178+00:00",
+        "sha256": "77388b399ae64f42b6357cd49a672df47078172759d31bc3dfdd01cc058a3503",
+        "source": "https://api.github.com/repos/cataclysmbn/Cataclysm-BN/commits/3702256ff8c618942a2e124b63b81e0f88283a4a"
+      },
+      "repository": "cataclysmbn/Cataclysm-BN",
+      "sha": "3702256ff8c618942a2e124b63b81e0f88283a4a",
+      "temporal_basis": "committer_time",
+      "tree_sha": "5f4f98723cd5454a14c3a6308b419fc726e20ceb"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "upload",
+  "base_routing_source": "other_explicitly_justified_route",
+  "case_id": "CASE_C482978A9FE9",
+  "executed_at": "2026-10-05T20:07:16.326447+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-09-11T00:20:24Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-11T00:23:00Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-11T00:23:00+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "3702256ff8c618942a2e124b63b81e0f88283a4a"
+        ],
+        "position": 1,
+        "pr_number": 3130,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:07:09.786623+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/cataclysmbn/Cataclysm-BN/pulls/3130/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:07:09.786623+00:00",
+          "sha256": "302a3e4df1298b51a5857b11d8d4f6d09601052fefc8a539cc17cc09835e5167",
+          "source": "https://api.github.com/repos/cataclysmbn/Cataclysm-BN/pulls/3130/commits?per_page=100&page=1"
+        },
+        "repository": "cataclysmbn/Cataclysm-BN",
+        "sha": "090669b83dbf9659f6a04b0fff089ac3093c4bb2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7e1dd22bb94696c22896572ae7081fde7070bcae"
+      },
+      {
+        "author_time": "2023-09-11T14:28:06Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-11T14:28:06Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-11T14:28:06+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "090669b83dbf9659f6a04b0fff089ac3093c4bb2"
+        ],
+        "position": 2,
+        "pr_number": 3130,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:07:09.786623+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/cataclysmbn/Cataclysm-BN/pulls/3130/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:07:09.786623+00:00",
+          "sha256": "302a3e4df1298b51a5857b11d8d4f6d09601052fefc8a539cc17cc09835e5167",
+          "source": "https://api.github.com/repos/cataclysmbn/Cataclysm-BN/pulls/3130/commits?per_page=100&page=1"
+        },
+        "repository": "cataclysmbn/Cataclysm-BN",
+        "sha": "ac8f52abe95c9986a42410f7e52e95695d434dbc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "368f4e2b7e52388f94faa414a2974a0a6b872fd6"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-09-11T00:20:24Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-09-11T00:23:00Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-09-11T00:23:00+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "3702256ff8c618942a2e124b63b81e0f88283a4a"
+      ],
+      "position": 1,
+      "pr_number": 3130,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:07:09.786623+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/cataclysmbn/Cataclysm-BN/pulls/3130/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:07:09.786623+00:00",
+        "sha256": "302a3e4df1298b51a5857b11d8d4f6d09601052fefc8a539cc17cc09835e5167",
+        "source": "https://api.github.com/repos/cataclysmbn/Cataclysm-BN/pulls/3130/commits?per_page=100&page=1"
+      },
+      "repository": "cataclysmbn/Cataclysm-BN",
+      "sha": "090669b83dbf9659f6a04b0fff089ac3093c4bb2",
+      "temporal_basis": "committer_time",
+      "tree_sha": "7e1dd22bb94696c22896572ae7081fde7070bcae"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "3702256ff8c618942a2e124b63b81e0f88283a4a",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "d70fe539fcf0f9cd1a3a0e36bd86f6617e3d81a0"
+    ],
+    "recursive_tree_entry_count": 4640,
+    "recursive_tree_listing_sha256": "b0d5d5b6da69c0c27c46c53f524e83cd5e432f0e399a933cd44233d5eb793f65",
+    "retrieved_at": "2026-10-05T20:07:16.322305+00:00",
+    "source": "https://github.com/cataclysmbn/Cataclysm-BN.git",
+    "status": "materialized",
+    "tree_sha": "5f4f98723cd5454a14c3a6308b419fc726e20ceb"
+  },
+  "pr_number": 3130,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 404,
+            "retrieved_at": "2026-10-05T20:07:10.160004+00:00",
+            "status": "repository_unavailable",
+            "url": "https://api.github.com/repos/cataclysmbn/Cataclysm-BN/git/ref/heads/upload"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:07:10.160004+00:00",
+        "source": "https://api.github.com/repos/cataclysmbn/Cataclysm-BN/git/ref/heads/upload"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:07:10.816178+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/cataclysmbn/Cataclysm-BN/commits/3702256ff8c618942a2e124b63b81e0f88283a4a"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:07:10.816178+00:00",
+        "sha256": "77388b399ae64f42b6357cd49a672df47078172759d31bc3dfdd01cc058a3503",
+        "source": "https://api.github.com/repos/cataclysmbn/Cataclysm-BN/commits/3702256ff8c618942a2e124b63b81e0f88283a4a"
+      }
+    ],
+    "base_route_evidence": {
+      "anchor_reason": "unique_focal_root_external_parent",
+      "anchor_sha": "3702256ff8c618942a2e124b63b81e0f88283a4a",
+      "rule": "unique_focal_root_external_parent_ancestry"
+    },
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "3702256ff8c618942a2e124b63b81e0f88283a4a",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:07:09.786623+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/cataclysmbn/Cataclysm-BN/pulls/3130/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:07:09.786623+00:00",
+        "sha256": "302a3e4df1298b51a5857b11d8d4f6d09601052fefc8a539cc17cc09835e5167",
+        "source": "https://api.github.com/repos/cataclysmbn/Cataclysm-BN/pulls/3130/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:07:09.265637+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/cataclysmbn/Cataclysm-BN/pulls/3130"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:07:09.265637+00:00",
+      "sha256": "f8639111f336f4ae1002f6e873e819840b324934d87bf43113b6e3c45fd5fd30",
+      "source": "https://api.github.com/repos/cataclysmbn/Cataclysm-BN/pulls/3130"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "cataclysmbn/Cataclysm-BN",
+  "selected_state": {
+    "author_time": "2023-09-10T21:11:21Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "3702256ff8c618942a2e124b63b81e0f88283a4a",
+    "committer_time": "2023-09-10T21:11:21Z",
+    "effective_time": "2023-09-10T21:11:21+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "5f4f98723cd5454a14c3a6308b419fc726e20ceb"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-09-11T00:04:47.774569+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-09-11T00:04:52.102398+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

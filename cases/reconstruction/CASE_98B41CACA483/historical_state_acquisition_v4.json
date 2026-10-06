@@ -1,0 +1,289 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_98B41CACA483",
+  "executed_at": "2026-10-05T20:18:31.054375+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-08-31T11:56:44Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-31T11:56:44Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-08-31T11:56:44+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "a19a5a5bc329af26a9713f11239c9d1d1a939cac"
+        ],
+        "position": 1,
+        "pr_number": 79,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:30.224018+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/python-mysql-replication-kr/python-mysql-replication/pulls/79/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:30.224018+00:00",
+          "sha256": "1e0f714f8d6483ce676cf36540eb0a055c6c963560fc476050116cce81109136",
+          "source": "https://api.github.com/repos/python-mysql-replication-kr/python-mysql-replication/pulls/79/commits?per_page=100&page=1"
+        },
+        "repository": "python-mysql-replication-kr/python-mysql-replication",
+        "sha": "1c9e49a27057023ab5a1fd7e7f107d73938b34d9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "cd61a52eef716c743f941b6e7782bcef4ba76317"
+      },
+      {
+        "author_time": "2023-08-31T12:07:35Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-08-31T12:07:35Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-08-31T12:07:35+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "1c9e49a27057023ab5a1fd7e7f107d73938b34d9"
+        ],
+        "position": 2,
+        "pr_number": 79,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:30.224018+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/python-mysql-replication-kr/python-mysql-replication/pulls/79/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:30.224018+00:00",
+          "sha256": "1e0f714f8d6483ce676cf36540eb0a055c6c963560fc476050116cce81109136",
+          "source": "https://api.github.com/repos/python-mysql-replication-kr/python-mysql-replication/pulls/79/commits?per_page=100&page=1"
+        },
+        "repository": "python-mysql-replication-kr/python-mysql-replication",
+        "sha": "3b8255763edf2b4d4d410ae105b0b435c1710041",
+        "temporal_basis": "committer_time",
+        "tree_sha": "395f0d3a617ea3f511e9415c8258523ea8505823"
+      },
+      {
+        "author_time": "2023-09-01T07:13:16Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-01T07:13:16Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-01T07:13:16+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "3b8255763edf2b4d4d410ae105b0b435c1710041"
+        ],
+        "position": 3,
+        "pr_number": 79,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:30.224018+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/python-mysql-replication-kr/python-mysql-replication/pulls/79/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:30.224018+00:00",
+          "sha256": "1e0f714f8d6483ce676cf36540eb0a055c6c963560fc476050116cce81109136",
+          "source": "https://api.github.com/repos/python-mysql-replication-kr/python-mysql-replication/pulls/79/commits?per_page=100&page=1"
+        },
+        "repository": "python-mysql-replication-kr/python-mysql-replication",
+        "sha": "9bcf867dc9518ee5e048a6518f6ff33d02cc8aae",
+        "temporal_basis": "committer_time",
+        "tree_sha": "da7e8ab0472e44f71f27637c70f2cfd88fcd2513"
+      },
+      {
+        "author_time": "2023-09-01T09:16:45Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-01T09:16:45Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-01T09:16:45+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "9bcf867dc9518ee5e048a6518f6ff33d02cc8aae"
+        ],
+        "position": 4,
+        "pr_number": 79,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:30.224018+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/python-mysql-replication-kr/python-mysql-replication/pulls/79/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:30.224018+00:00",
+          "sha256": "1e0f714f8d6483ce676cf36540eb0a055c6c963560fc476050116cce81109136",
+          "source": "https://api.github.com/repos/python-mysql-replication-kr/python-mysql-replication/pulls/79/commits?per_page=100&page=1"
+        },
+        "repository": "python-mysql-replication-kr/python-mysql-replication",
+        "sha": "7cc0e713b05fd82def255cc1b0220228ee2f3d27",
+        "temporal_basis": "committer_time",
+        "tree_sha": "28114761a9fb4983db767dc471383a3c3e0497eb"
+      },
+      {
+        "author_time": "2023-09-01T09:21:19Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-01T09:21:19Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-01T09:21:19+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "7cc0e713b05fd82def255cc1b0220228ee2f3d27"
+        ],
+        "position": 5,
+        "pr_number": 79,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:18:30.224018+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/python-mysql-replication-kr/python-mysql-replication/pulls/79/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:18:30.224018+00:00",
+          "sha256": "1e0f714f8d6483ce676cf36540eb0a055c6c963560fc476050116cce81109136",
+          "source": "https://api.github.com/repos/python-mysql-replication-kr/python-mysql-replication/pulls/79/commits?per_page=100&page=1"
+        },
+        "repository": "python-mysql-replication-kr/python-mysql-replication",
+        "sha": "f7f0ba5278ddf1d936fcd242165d97f4a295bb29",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d2332ccc870d39613f6bc14f6f6050fdd6f814b9"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-09-01T09:21:19Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-09-01T09:21:19Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-09-01T09:21:19+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "7cc0e713b05fd82def255cc1b0220228ee2f3d27"
+      ],
+      "position": 5,
+      "pr_number": 79,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:30.224018+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/python-mysql-replication-kr/python-mysql-replication/pulls/79/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:30.224018+00:00",
+        "sha256": "1e0f714f8d6483ce676cf36540eb0a055c6c963560fc476050116cce81109136",
+        "source": "https://api.github.com/repos/python-mysql-replication-kr/python-mysql-replication/pulls/79/commits?per_page=100&page=1"
+      },
+      "repository": "python-mysql-replication-kr/python-mysql-replication",
+      "sha": "f7f0ba5278ddf1d936fcd242165d97f4a295bb29",
+      "temporal_basis": "committer_time",
+      "tree_sha": "d2332ccc870d39613f6bc14f6f6050fdd6f814b9"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "f7f0ba5278ddf1d936fcd242165d97f4a295bb29",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "7cc0e713b05fd82def255cc1b0220228ee2f3d27"
+    ],
+    "recursive_tree_entry_count": 68,
+    "recursive_tree_listing_sha256": "d15f5a002cca0627883aa45e1ca51e813c1f174e3622ff43c2b8648590d72580",
+    "retrieved_at": "2026-10-05T20:18:31.042617+00:00",
+    "source": "https://github.com/python-mysql-replication-kr/python-mysql-replication.git",
+    "status": "materialized",
+    "tree_sha": "d2332ccc870d39613f6bc14f6f6050fdd6f814b9"
+  },
+  "pr_number": 79,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "a19a5a5bc329af26a9713f11239c9d1d1a939cac",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:18:30.224018+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/python-mysql-replication-kr/python-mysql-replication/pulls/79/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:18:30.224018+00:00",
+        "sha256": "1e0f714f8d6483ce676cf36540eb0a055c6c963560fc476050116cce81109136",
+        "source": "https://api.github.com/repos/python-mysql-replication-kr/python-mysql-replication/pulls/79/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:18:29.690058+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/python-mysql-replication-kr/python-mysql-replication/pulls/79"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:18:29.690058+00:00",
+      "sha256": "d67f7f289081587deabe8db8f0d282f2f53365ce51c8f31b7def5a5786c412db",
+      "source": "https://api.github.com/repos/python-mysql-replication-kr/python-mysql-replication/pulls/79"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "python-mysql-replication-kr/python-mysql-replication",
+  "selected_state": {
+    "author_time": "2023-09-01T09:21:19Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "f7f0ba5278ddf1d936fcd242165d97f4a295bb29",
+    "committer_time": "2023-09-01T09:21:19Z",
+    "effective_time": "2023-09-01T09:21:19+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "d2332ccc870d39613f6bc14f6f6050fdd6f814b9"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-09-02T12:57:25.658190+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-09-02T12:57:57.488403+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

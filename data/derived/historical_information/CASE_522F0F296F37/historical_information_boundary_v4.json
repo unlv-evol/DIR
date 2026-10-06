@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_522F0F296F37",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "055fc6f7dd85922737fd64634afd65c488afcab8",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "a3357696d4b167c8d1d6e4b91db5a875dcb91526"
+    ],
+    "recursive_tree_entry_count": 2707,
+    "recursive_tree_listing_sha256": "1f60e5816d2304a8f658465172bc30b5f9d69165bd86ffa8280d0bc800572b17",
+    "retrieved_at": "2026-10-05T20:17:07.523675+00:00",
+    "source": "https://github.com/netdata/netdata.git",
+    "status": "materialized",
+    "tree_sha": "0bdc82db3f76d2079e2be74d28695f769f601729"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_522F0F296F37/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_522F0F296F37/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "netdata/netdata",
+  "selected_state": {
+    "author_time": "2023-07-21T12:28:56Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "055fc6f7dd85922737fd64634afd65c488afcab8",
+    "committer_time": "2023-07-21T12:28:56Z",
+    "effective_time": "2023-07-21T12:28:56+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "0bdc82db3f76d2079e2be74d28695f769f601729"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-07-21T13:02:53.574420+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

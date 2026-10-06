@@ -1,0 +1,46 @@
+{
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_77BDD439B74B",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "a20dfc9a8946a499b6ecf19ca8d90adbc1b50cb4",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "80413a9bec69390a6d7b1b377129da1080621413",
+      "5f503b1a57076504d2075c3f74f4e78bf8949be1"
+    ],
+    "recursive_tree_entry_count": 6401,
+    "recursive_tree_listing_sha256": "e3b0ce09371f5c91662243f084c9b127da0b431fc6662a93764a56fee9a68417",
+    "retrieved_at": "2026-10-05T20:17:53.349557+00:00",
+    "source": "https://github.com/chatwoot/chatwoot.git",
+    "status": "materialized",
+    "tree_sha": "c3096b741751a947ff3896df86d71a8962ba1ca0"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_77BDD439B74B/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_77BDD439B74B/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "chatwoot/chatwoot",
+  "selected_state": {
+    "author_time": "2023-11-16T08:48:08Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "a20dfc9a8946a499b6ecf19ca8d90adbc1b50cb4",
+    "committer_time": "2023-11-16T08:48:08Z",
+    "effective_time": "2023-11-16T08:48:08+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "c3096b741751a947ff3896df86d71a8962ba1ca0"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-11-17T03:45:45.804530+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

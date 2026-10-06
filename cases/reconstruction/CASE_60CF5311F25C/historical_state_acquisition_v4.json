@@ -1,0 +1,224 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_60CF5311F25C",
+  "executed_at": "2026-10-05T20:17:24.147626+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-09-25T13:32:41Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-25T13:32:41Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-25T13:32:41+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "77ea359baf360c198e86acf0d2f4eaa85d68fb96"
+        ],
+        "position": 1,
+        "pr_number": 209,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:22.281538+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/sCrypt-Inc/scryptTS-docs/pulls/209/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:22.281538+00:00",
+          "sha256": "4b8869d34bb8ddc88b838ad2d6f70134e27a205a859c7ea517df9c22f71295f2",
+          "source": "https://api.github.com/repos/sCrypt-Inc/scryptTS-docs/pulls/209/commits?per_page=100&page=1"
+        },
+        "repository": "sCrypt-Inc/scryptTS-docs",
+        "sha": "3348257ec71349b43b352d5b8cacf2aded505aeb",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e2e0591c6f95a16ba3f10b52154483ecdad329b6"
+      },
+      {
+        "author_time": "2023-09-29T10:17:52Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-29T10:17:52Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-09-29T10:17:52+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "3348257ec71349b43b352d5b8cacf2aded505aeb"
+        ],
+        "position": 2,
+        "pr_number": 209,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:22.281538+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/sCrypt-Inc/scryptTS-docs/pulls/209/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:22.281538+00:00",
+          "sha256": "4b8869d34bb8ddc88b838ad2d6f70134e27a205a859c7ea517df9c22f71295f2",
+          "source": "https://api.github.com/repos/sCrypt-Inc/scryptTS-docs/pulls/209/commits?per_page=100&page=1"
+        },
+        "repository": "sCrypt-Inc/scryptTS-docs",
+        "sha": "a1b43c5be0e59bb0cbc221e3abb8ed96bd65e9f6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5797c0d1ed23534cc6e025325e69e247c35e5803"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-09-29T10:17:52Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-09-29T10:17:52Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-09-29T10:17:52+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "3348257ec71349b43b352d5b8cacf2aded505aeb"
+      ],
+      "position": 2,
+      "pr_number": 209,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:22.281538+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/sCrypt-Inc/scryptTS-docs/pulls/209/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:22.281538+00:00",
+        "sha256": "4b8869d34bb8ddc88b838ad2d6f70134e27a205a859c7ea517df9c22f71295f2",
+        "source": "https://api.github.com/repos/sCrypt-Inc/scryptTS-docs/pulls/209/commits?per_page=100&page=1"
+      },
+      "repository": "sCrypt-Inc/scryptTS-docs",
+      "sha": "a1b43c5be0e59bb0cbc221e3abb8ed96bd65e9f6",
+      "temporal_basis": "committer_time",
+      "tree_sha": "5797c0d1ed23534cc6e025325e69e247c35e5803"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-09-25T13:32:41Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-09-25T13:32:41Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-09-25T13:32:41+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "77ea359baf360c198e86acf0d2f4eaa85d68fb96"
+      ],
+      "position": 1,
+      "pr_number": 209,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:22.281538+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/sCrypt-Inc/scryptTS-docs/pulls/209/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:22.281538+00:00",
+        "sha256": "4b8869d34bb8ddc88b838ad2d6f70134e27a205a859c7ea517df9c22f71295f2",
+        "source": "https://api.github.com/repos/sCrypt-Inc/scryptTS-docs/pulls/209/commits?per_page=100&page=1"
+      },
+      "repository": "sCrypt-Inc/scryptTS-docs",
+      "sha": "3348257ec71349b43b352d5b8cacf2aded505aeb",
+      "temporal_basis": "committer_time",
+      "tree_sha": "e2e0591c6f95a16ba3f10b52154483ecdad329b6"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "3348257ec71349b43b352d5b8cacf2aded505aeb",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "77ea359baf360c198e86acf0d2f4eaa85d68fb96"
+    ],
+    "recursive_tree_entry_count": 270,
+    "recursive_tree_listing_sha256": "37e79538e694248e6ef1c813cbbb741a46a0451fab640fe21dea5585f5ffb5f7",
+    "retrieved_at": "2026-10-05T20:17:24.143924+00:00",
+    "source": "https://github.com/sCrypt-Inc/scryptTS-docs.git",
+    "status": "materialized",
+    "tree_sha": "e2e0591c6f95a16ba3f10b52154483ecdad329b6"
+  },
+  "pr_number": 209,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "a3a209878fc6f4e9982ba24fa1d02584aac5733d",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:22.281538+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/sCrypt-Inc/scryptTS-docs/pulls/209/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:22.281538+00:00",
+        "sha256": "4b8869d34bb8ddc88b838ad2d6f70134e27a205a859c7ea517df9c22f71295f2",
+        "source": "https://api.github.com/repos/sCrypt-Inc/scryptTS-docs/pulls/209/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:17:21.595472+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/sCrypt-Inc/scryptTS-docs/pulls/209"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:17:21.595472+00:00",
+      "sha256": "265cefc620ad0f98765fb2c3e21a7f7aea432180d5f759cc7f63277fd1a64da2",
+      "source": "https://api.github.com/repos/sCrypt-Inc/scryptTS-docs/pulls/209"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "sCrypt-Inc/scryptTS-docs",
+  "selected_state": {
+    "author_time": "2023-09-25T13:32:41Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "3348257ec71349b43b352d5b8cacf2aded505aeb",
+    "committer_time": "2023-09-25T13:32:41Z",
+    "effective_time": "2023-09-25T13:32:41+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "e2e0591c6f95a16ba3f10b52154483ecdad329b6"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-09-29T00:41:06.489203+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-09-29T00:41:23.258596+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

@@ -1,0 +1,45 @@
+{
+  "base_lineage_ref": "master",
+  "base_routing_source": "",
+  "boundary_record_version": "historical-information-boundary-v4",
+  "case_id": "CASE_DC1CD2C0366A",
+  "historical_observability": "not_confirmed",
+  "materialization": {
+    "commit_sha": "c6cf28647791205dacb72dec7be0cdc68e25993f",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "eb8b672f8f5ad9ddacc94e25d2653efc391b300b"
+    ],
+    "recursive_tree_entry_count": 2186,
+    "recursive_tree_listing_sha256": "e4daac4b89aa194816ffaa3830c05ed71d8ec3a187e543468593453bbd815e3f",
+    "retrieved_at": "2026-10-05T22:50:18.475814+00:00",
+    "source": "https://github.com/primer-io/primer-sdk-ios.git",
+    "status": "materialized",
+    "tree_sha": "b04d508c06ac58b0f36375630d857af339896b8f"
+  },
+  "provenance_references": [
+    "cases/reconstruction/CASE_DC1CD2C0366A/historical_state_acquisition_v4.json",
+    "cases/conversations/CASE_DC1CD2C0366A/stage_c_extraction_v5.json"
+  ],
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "repository": "primer-io/primer-sdk-ios",
+  "selected_state": {
+    "author_time": "2024-03-12T17:16:14Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "c6cf28647791205dacb72dec7be0cdc68e25993f",
+    "committer_time": "2024-03-12T17:16:14Z",
+    "effective_time": "2024-03-12T17:16:14+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "b04d508c06ac58b0f36375630d857af339896b8f"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-03-13T09:41:55.354256+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

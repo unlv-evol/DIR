@@ -1,0 +1,448 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "",
+  "base_routing_source": "",
+  "case_id": "CASE_34D14D6B0BB7",
+  "executed_at": "2026-10-05T20:16:34.668893+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-10-06T19:49:45Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-06T19:49:45Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-06T19:49:45+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "f90efd79baea9f632aea26ef51db99c87b6385a6"
+        ],
+        "position": 1,
+        "pr_number": 157,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+          "sha256": "a283efb668d4e437cd6fb384636de02af9530fbe5fc80d7c254638c0908959b2",
+          "source": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+        },
+        "repository": "pyspark-ai/pyspark-ai",
+        "sha": "1edc9bd0368fb18defcdfb788cdc96e939ce183a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b9a974d821d02a22da4908726160ef8eb7de5684"
+      },
+      {
+        "author_time": "2023-10-08T14:30:53Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-08T14:30:53Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-10-08T14:30:53+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "1edc9bd0368fb18defcdfb788cdc96e939ce183a"
+        ],
+        "position": 2,
+        "pr_number": 157,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+          "sha256": "a283efb668d4e437cd6fb384636de02af9530fbe5fc80d7c254638c0908959b2",
+          "source": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+        },
+        "repository": "pyspark-ai/pyspark-ai",
+        "sha": "cd1858bf16b0b31e003043a6d6f9b661d959d8d0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "26313da18afa719293d4755f5b56dad1f19712ac"
+      },
+      {
+        "author_time": "2023-10-10T00:46:47Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-10T00:46:47Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-10-10T00:46:47+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "cd1858bf16b0b31e003043a6d6f9b661d959d8d0"
+        ],
+        "position": 3,
+        "pr_number": 157,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+          "sha256": "a283efb668d4e437cd6fb384636de02af9530fbe5fc80d7c254638c0908959b2",
+          "source": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+        },
+        "repository": "pyspark-ai/pyspark-ai",
+        "sha": "44695f151c6d7c27ff21be93470c8439b769b889",
+        "temporal_basis": "committer_time",
+        "tree_sha": "82ca4c6d996c2bfbecf3eb4d3a755e1bee65acda"
+      },
+      {
+        "author_time": "2023-10-10T00:47:58Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-10T00:48:15Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-10-10T00:48:15+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "44695f151c6d7c27ff21be93470c8439b769b889"
+        ],
+        "position": 4,
+        "pr_number": 157,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+          "sha256": "a283efb668d4e437cd6fb384636de02af9530fbe5fc80d7c254638c0908959b2",
+          "source": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+        },
+        "repository": "pyspark-ai/pyspark-ai",
+        "sha": "0f894ee271b6712f25b698f0cc5dc8a98b011ae3",
+        "temporal_basis": "committer_time",
+        "tree_sha": "03cffdb47f16a5c5a74b00e7af1ff2600329b130"
+      },
+      {
+        "author_time": "2023-10-10T13:14:28Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-10T13:14:28Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-10-10T13:14:28+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "0f894ee271b6712f25b698f0cc5dc8a98b011ae3"
+        ],
+        "position": 5,
+        "pr_number": 157,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+          "sha256": "a283efb668d4e437cd6fb384636de02af9530fbe5fc80d7c254638c0908959b2",
+          "source": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+        },
+        "repository": "pyspark-ai/pyspark-ai",
+        "sha": "d534fba9c6dfed1591fac18ee1f38e3d553fe11a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "4094e60183ada3f9305db0bbfbd7a746904291d3"
+      },
+      {
+        "author_time": "2023-10-10T19:16:08Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-10T19:16:08Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-10-10T19:16:08+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "d534fba9c6dfed1591fac18ee1f38e3d553fe11a"
+        ],
+        "position": 6,
+        "pr_number": 157,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+          "sha256": "a283efb668d4e437cd6fb384636de02af9530fbe5fc80d7c254638c0908959b2",
+          "source": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+        },
+        "repository": "pyspark-ai/pyspark-ai",
+        "sha": "611ef412094f22db5b42589ed05555dff251311a",
+        "temporal_basis": "committer_time",
+        "tree_sha": "2b2ec0e1323e1211ad0300b19ec6fe873c06c6d1"
+      },
+      {
+        "author_time": "2023-10-11T01:26:03Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-11T01:26:03Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-10-11T01:26:03+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "611ef412094f22db5b42589ed05555dff251311a"
+        ],
+        "position": 7,
+        "pr_number": 157,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+          "sha256": "a283efb668d4e437cd6fb384636de02af9530fbe5fc80d7c254638c0908959b2",
+          "source": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+        },
+        "repository": "pyspark-ai/pyspark-ai",
+        "sha": "649da734078baf516f4ce06b14df04976848bfd9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "d2e248698a16f2435ed4c87ee147c01c2cf6e4fa"
+      },
+      {
+        "author_time": "2023-10-11T01:52:27Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-11T01:52:27Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-10-11T01:52:27+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "649da734078baf516f4ce06b14df04976848bfd9"
+        ],
+        "position": 8,
+        "pr_number": 157,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+          "sha256": "a283efb668d4e437cd6fb384636de02af9530fbe5fc80d7c254638c0908959b2",
+          "source": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+        },
+        "repository": "pyspark-ai/pyspark-ai",
+        "sha": "ef38f4ee84cedffb6b45fc359fbf0dbfe4398a3f",
+        "temporal_basis": "committer_time",
+        "tree_sha": "11d945a100313664fbc2e79756e26100dbe3b888"
+      },
+      {
+        "author_time": "2023-10-11T10:34:45Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-11T10:34:45Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-10-11T10:34:45+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "ef38f4ee84cedffb6b45fc359fbf0dbfe4398a3f"
+        ],
+        "position": 9,
+        "pr_number": 157,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+          "sha256": "a283efb668d4e437cd6fb384636de02af9530fbe5fc80d7c254638c0908959b2",
+          "source": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+        },
+        "repository": "pyspark-ai/pyspark-ai",
+        "sha": "741346c07f4e1c0ce6ceb65a03da74a0046d5547",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1a4681706c513c4548cbf5c15de8c3c4a1759ce2"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-10-10T00:46:47Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-10-10T00:46:47Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-10-10T00:46:47+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "cd1858bf16b0b31e003043a6d6f9b661d959d8d0"
+      ],
+      "position": 3,
+      "pr_number": 157,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+        "sha256": "a283efb668d4e437cd6fb384636de02af9530fbe5fc80d7c254638c0908959b2",
+        "source": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+      },
+      "repository": "pyspark-ai/pyspark-ai",
+      "sha": "44695f151c6d7c27ff21be93470c8439b769b889",
+      "temporal_basis": "committer_time",
+      "tree_sha": "82ca4c6d996c2bfbecf3eb4d3a755e1bee65acda"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-10-08T14:30:53Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-10-08T14:30:53Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-10-08T14:30:53+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "1edc9bd0368fb18defcdfb788cdc96e939ce183a"
+      ],
+      "position": 2,
+      "pr_number": 157,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+        "sha256": "a283efb668d4e437cd6fb384636de02af9530fbe5fc80d7c254638c0908959b2",
+        "source": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+      },
+      "repository": "pyspark-ai/pyspark-ai",
+      "sha": "cd1858bf16b0b31e003043a6d6f9b661d959d8d0",
+      "temporal_basis": "committer_time",
+      "tree_sha": "26313da18afa719293d4755f5b56dad1f19712ac"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "cd1858bf16b0b31e003043a6d6f9b661d959d8d0",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "1edc9bd0368fb18defcdfb788cdc96e939ce183a"
+    ],
+    "recursive_tree_entry_count": 73,
+    "recursive_tree_listing_sha256": "9cb096a1cfc0ff3e9c5ba76324e82549ab019c78a64b21dbb8b8ba7d183d5369",
+    "retrieved_at": "2026-10-05T20:16:34.656782+00:00",
+    "source": "https://github.com/pyspark-ai/pyspark-ai.git",
+    "status": "materialized",
+    "tree_sha": "26313da18afa719293d4755f5b56dad1f19712ac"
+  },
+  "pr_number": 157,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "f90efd79baea9f632aea26ef51db99c87b6385a6",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:16:33.711353+00:00",
+        "sha256": "a283efb668d4e437cd6fb384636de02af9530fbe5fc80d7c254638c0908959b2",
+        "source": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:16:33.080439+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:16:33.080439+00:00",
+      "sha256": "319c7fa2bbe298a5d4de693474e3d030c4cf13e6caa39fcc8b908d7d3d06a785",
+      "source": "https://api.github.com/repos/pyspark-ai/pyspark-ai/pulls/157"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "pyspark-ai/pyspark-ai",
+  "selected_state": {
+    "author_time": "2023-10-08T14:30:53Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "cd1858bf16b0b31e003043a6d6f9b661d959d8d0",
+    "committer_time": "2023-10-08T14:30:53Z",
+    "effective_time": "2023-10-08T14:30:53+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "26313da18afa719293d4755f5b56dad1f19712ac"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-10-09T17:52:55.102066+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-10-09T17:53:50.509201+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

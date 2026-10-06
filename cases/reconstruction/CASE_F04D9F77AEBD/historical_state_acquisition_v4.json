@@ -1,0 +1,584 @@
+{
+  "base_lineage": null,
+  "base_lineage_ref": "main",
+  "base_routing_source": "",
+  "case_id": "CASE_F04D9F77AEBD",
+  "executed_at": "2026-10-05T22:50:46.943867+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2024-02-05T07:04:30Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-05T07:04:30Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-05T07:04:30+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "bbab37f1e19bae4d143575ce22c4418c603cf39f"
+        ],
+        "position": 1,
+        "pr_number": 3621,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+          "sha256": "6b58e6d81e443af498035062441d7f66613fad6543e0e39b2c4fe6ad6dc3bc90",
+          "source": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+        },
+        "repository": "firezone/firezone",
+        "sha": "24e9467bb1dd551ad6321a5d12636c8276c86c44",
+        "temporal_basis": "committer_time",
+        "tree_sha": "be91e815bca7680cfd103b8cc16d13bafdbb0f8e"
+      },
+      {
+        "author_time": "2024-02-05T07:04:49Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-05T07:04:49Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-05T07:04:49+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "24e9467bb1dd551ad6321a5d12636c8276c86c44",
+          "e0af22990190367e0fa4a4add2ef85a6efd9d4c0"
+        ],
+        "position": 2,
+        "pr_number": 3621,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+          "sha256": "6b58e6d81e443af498035062441d7f66613fad6543e0e39b2c4fe6ad6dc3bc90",
+          "source": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+        },
+        "repository": "firezone/firezone",
+        "sha": "6920696acc400865859227caf3799d5154b271a9",
+        "temporal_basis": "committer_time",
+        "tree_sha": "7db5870ddc53f57c49a1c9eb58fea259c72f702a"
+      },
+      {
+        "author_time": "2024-02-10T21:46:04Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-10T21:46:04Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-10T21:46:04+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "6920696acc400865859227caf3799d5154b271a9",
+          "beee8bd52e2dd597f87c375883c7bddc31773a6b"
+        ],
+        "position": 3,
+        "pr_number": 3621,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+          "sha256": "6b58e6d81e443af498035062441d7f66613fad6543e0e39b2c4fe6ad6dc3bc90",
+          "source": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+        },
+        "repository": "firezone/firezone",
+        "sha": "12e6f9c14b45541c5e275d36519bd3450634c2f0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "202ee57341e46ad18f6e7da3f6818df8fddeb123"
+      },
+      {
+        "author_time": "2024-02-14T16:10:59Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-14T16:10:59Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-14T16:10:59+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "12e6f9c14b45541c5e275d36519bd3450634c2f0"
+        ],
+        "position": 4,
+        "pr_number": 3621,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+          "sha256": "6b58e6d81e443af498035062441d7f66613fad6543e0e39b2c4fe6ad6dc3bc90",
+          "source": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+        },
+        "repository": "firezone/firezone",
+        "sha": "16945d55b30c7e1bb97dceb49476bcb5982bb8e0",
+        "temporal_basis": "committer_time",
+        "tree_sha": "514284c3ceec57e3524db26d64c52297c335ff58"
+      },
+      {
+        "author_time": "2024-02-14T16:26:43Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-14T16:26:43Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-14T16:26:43+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "16945d55b30c7e1bb97dceb49476bcb5982bb8e0",
+          "e47c1766bf2cdbbb432b328e30c3ab090ef466de"
+        ],
+        "position": 5,
+        "pr_number": 3621,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+          "sha256": "6b58e6d81e443af498035062441d7f66613fad6543e0e39b2c4fe6ad6dc3bc90",
+          "source": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+        },
+        "repository": "firezone/firezone",
+        "sha": "de9d5af07e9beec074aa36abce78070e9a94fe74",
+        "temporal_basis": "committer_time",
+        "tree_sha": "3f1926bc179c89d301a174eb9f63e7a9a8cee8ef"
+      },
+      {
+        "author_time": "2024-02-14T16:52:08Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-14T16:52:08Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2024-02-14T16:52:08+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "de9d5af07e9beec074aa36abce78070e9a94fe74"
+        ],
+        "position": 6,
+        "pr_number": 3621,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+          "sha256": "6b58e6d81e443af498035062441d7f66613fad6543e0e39b2c4fe6ad6dc3bc90",
+          "source": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+        },
+        "repository": "firezone/firezone",
+        "sha": "02fd161ef0269b531698ac835b2c3a0b9adf719c",
+        "temporal_basis": "committer_time",
+        "tree_sha": "0e754564462f43ab05cba92d2552ec6519bafe8d"
+      },
+      {
+        "author_time": "2024-02-16T00:44:28Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-02-16T00:44:28Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-02-16T00:44:28+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "02fd161ef0269b531698ac835b2c3a0b9adf719c",
+          "19bcaa95398bcf079d98758c8f1f13051ca0c7e7"
+        ],
+        "position": 7,
+        "pr_number": 3621,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+          "sha256": "6b58e6d81e443af498035062441d7f66613fad6543e0e39b2c4fe6ad6dc3bc90",
+          "source": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+        },
+        "repository": "firezone/firezone",
+        "sha": "01317afdfbcbf46692b10e3a2e942b0f0f44b8a6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e3fd2e3fd168f0e9e5cf37c6e0b7ae1bf4b4cc92"
+      },
+      {
+        "author_time": "2024-03-08T14:39:49Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-08T14:39:49Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-03-08T14:39:49+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "01317afdfbcbf46692b10e3a2e942b0f0f44b8a6",
+          "822a30cd93eb80255b934da5d374c41722503c01"
+        ],
+        "position": 8,
+        "pr_number": 3621,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+          "sha256": "6b58e6d81e443af498035062441d7f66613fad6543e0e39b2c4fe6ad6dc3bc90",
+          "source": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+        },
+        "repository": "firezone/firezone",
+        "sha": "f362d87fa3c4bc7845e8a30f8c7f988ae8dd3dd4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "61c861c4bede992135f9e7ccef1598e0685320c8"
+      },
+      {
+        "author_time": "2024-03-27T16:33:31Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-27T16:33:31Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-03-27T16:33:31+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f362d87fa3c4bc7845e8a30f8c7f988ae8dd3dd4",
+          "2ee5508ec22420f921d67e74c8eb86dae61722ca"
+        ],
+        "position": 9,
+        "pr_number": 3621,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+          "sha256": "6b58e6d81e443af498035062441d7f66613fad6543e0e39b2c4fe6ad6dc3bc90",
+          "source": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+        },
+        "repository": "firezone/firezone",
+        "sha": "c414784d4a75b8da5985ea2e89f0a9f2e5906e6d",
+        "temporal_basis": "committer_time",
+        "tree_sha": "65466a9b1781051a3fa3d1a80d55db5c62a118ba"
+      },
+      {
+        "author_time": "2024-03-29T18:37:44Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-29T18:37:44Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-03-29T18:37:44+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "c414784d4a75b8da5985ea2e89f0a9f2e5906e6d",
+          "1de3e45dde9d6a5f183df02c5bffc0d5b6d017b7"
+        ],
+        "position": 10,
+        "pr_number": 3621,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+          "sha256": "6b58e6d81e443af498035062441d7f66613fad6543e0e39b2c4fe6ad6dc3bc90",
+          "source": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+        },
+        "repository": "firezone/firezone",
+        "sha": "1b74abcb6e6a964311e4e1c4df36cedf6ca0dcc4",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1a591e8da08505ce0d6a416c8527210cc1f70b86"
+      },
+      {
+        "author_time": "2024-03-29T19:44:01Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-29T19:44:01Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-03-29T19:44:01+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "1b74abcb6e6a964311e4e1c4df36cedf6ca0dcc4"
+        ],
+        "position": 11,
+        "pr_number": 3621,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+          "sha256": "6b58e6d81e443af498035062441d7f66613fad6543e0e39b2c4fe6ad6dc3bc90",
+          "source": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+        },
+        "repository": "firezone/firezone",
+        "sha": "f22da6e0d5d89e8c5b3c2e4a4f86eed28ab295ff",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f483849279b02a7e737bcf4b5a072814fcf1f84f"
+      },
+      {
+        "author_time": "2024-03-29T19:47:10Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-29T19:47:10Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-03-29T19:47:10+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f22da6e0d5d89e8c5b3c2e4a4f86eed28ab295ff"
+        ],
+        "position": 12,
+        "pr_number": 3621,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+          "sha256": "6b58e6d81e443af498035062441d7f66613fad6543e0e39b2c4fe6ad6dc3bc90",
+          "source": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+        },
+        "repository": "firezone/firezone",
+        "sha": "be235c61e94e68360f9edfd4f70780ff587b53b6",
+        "temporal_basis": "committer_time",
+        "tree_sha": "a1e9ce3ba2cf69c51aaf79c95e4c57b5c8fe3c0f"
+      },
+      {
+        "author_time": "2024-03-30T17:44:02Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2024-03-30T17:44:02Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2024-03-30T17:44:02+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "be235c61e94e68360f9edfd4f70780ff587b53b6"
+        ],
+        "position": 13,
+        "pr_number": 3621,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+          "sha256": "6b58e6d81e443af498035062441d7f66613fad6543e0e39b2c4fe6ad6dc3bc90",
+          "source": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+        },
+        "repository": "firezone/firezone",
+        "sha": "7ce67147cdc88f8700ddc7f9155a4174b86c40a8",
+        "temporal_basis": "committer_time",
+        "tree_sha": "9a4a19206649e8fdd325c78cac333fc738fd16d2"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2024-02-16T00:44:28Z",
+      "author_time_relation": "after_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-02-16T00:44:28Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2024-02-16T00:44:28+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "02fd161ef0269b531698ac835b2c3a0b9adf719c",
+        "19bcaa95398bcf079d98758c8f1f13051ca0c7e7"
+      ],
+      "position": 7,
+      "pr_number": 3621,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+        "sha256": "6b58e6d81e443af498035062441d7f66613fad6543e0e39b2c4fe6ad6dc3bc90",
+        "source": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+      },
+      "repository": "firezone/firezone",
+      "sha": "01317afdfbcbf46692b10e3a2e942b0f0f44b8a6",
+      "temporal_basis": "committer_time",
+      "tree_sha": "e3fd2e3fd168f0e9e5cf37c6e0b7ae1bf4b4cc92"
+    },
+    "reasons": [],
+    "selected": {
+      "author_time": "2024-02-14T16:52:08Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2024-02-14T16:52:08Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2024-02-14T16:52:08+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "de9d5af07e9beec074aa36abce78070e9a94fe74"
+      ],
+      "position": 6,
+      "pr_number": 3621,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+        "sha256": "6b58e6d81e443af498035062441d7f66613fad6543e0e39b2c4fe6ad6dc3bc90",
+        "source": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+      },
+      "repository": "firezone/firezone",
+      "sha": "02fd161ef0269b531698ac835b2c3a0b9adf719c",
+      "temporal_basis": "committer_time",
+      "tree_sha": "0e754564462f43ab05cba92d2552ec6519bafe8d"
+    },
+    "selected_to_first_post_relationship": "ancestor",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "02fd161ef0269b531698ac835b2c3a0b9adf719c",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "de9d5af07e9beec074aa36abce78070e9a94fe74"
+    ],
+    "recursive_tree_entry_count": 2971,
+    "recursive_tree_listing_sha256": "9a0c5007989c865a04351168e7a48cdac652fdff966a012f5daec5d49e88cbf4",
+    "retrieved_at": "2026-10-05T22:50:46.940592+00:00",
+    "source": "https://github.com/firezone/firezone.git",
+    "status": "materialized",
+    "tree_sha": "0e754564462f43ab05cba92d2552ec6519bafe8d"
+  },
+  "pr_number": 3621,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [],
+    "base_route_evidence": {},
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "1de3e45dde9d6a5f183df02c5bffc0d5b6d017b7",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T22:50:44.919594+00:00",
+        "sha256": "6b58e6d81e443af498035062441d7f66613fad6543e0e39b2c4fe6ad6dc3bc90",
+        "source": "https://api.github.com/repos/firezone/firezone/pulls/3621/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T22:50:44.215050+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/firezone/firezone/pulls/3621"
+        }
+      ],
+      "retrieved_at": "2026-10-05T22:50:44.215050+00:00",
+      "sha256": "ded74abd56353c6758aaacb91d9fb12804b722e3df3d94a35290de625a9ebf8c",
+      "source": "https://api.github.com/repos/firezone/firezone/pulls/3621"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "focal",
+  "reconstruction_status": "reconstructed_focal_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "firezone/firezone",
+  "selected_state": {
+    "author_time": "2024-02-14T16:52:08Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "02fd161ef0269b531698ac835b2c3a0b9adf719c",
+    "committer_time": "2024-02-14T16:52:08Z",
+    "effective_time": "2024-02-14T16:52:08+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "0e754564462f43ab05cba92d2552ec6519bafe8d"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2024-02-14T16:55:59.924440+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2024-02-14T16:56:24.662180+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

@@ -1,0 +1,392 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-09-27T11:20:24Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-27T11:20:24Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-27T11:20:24+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "e3f117c708cebbf9febb96ade7ab61fb2b99ca47"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:48.087295+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/adobe/aem-core-forms-components/commits?sha=dev&until=2023-09-30T04%3A21%3A13.310784%2B00%3A00&per_page=1&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:48.087295+00:00",
+          "sha256": "091c28212c2573472fcf54ce0cde897e0a51de3fd6f3ca61724490409c4938e2",
+          "source": "https://api.github.com/repos/adobe/aem-core-forms-components/commits?sha=dev&until=2023-09-30T04%3A21%3A13.310784%2B00%3A00&per_page=1&page=1"
+        },
+        "repository": "adobe/aem-core-forms-components",
+        "sha": "8fa9dbe3971e41172cab18aa019670c10e798932",
+        "temporal_basis": "committer_time",
+        "tree_sha": "99e2aeae25c31b7e5d5a5c8ad8cda7d92fc8cf45"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-09-27T11:20:24Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-09-27T11:20:24Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-09-27T11:20:24+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "e3f117c708cebbf9febb96ade7ab61fb2b99ca47"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:48.087295+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/adobe/aem-core-forms-components/commits?sha=dev&until=2023-09-30T04%3A21%3A13.310784%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:48.087295+00:00",
+        "sha256": "091c28212c2573472fcf54ce0cde897e0a51de3fd6f3ca61724490409c4938e2",
+        "source": "https://api.github.com/repos/adobe/aem-core-forms-components/commits?sha=dev&until=2023-09-30T04%3A21%3A13.310784%2B00%3A00&per_page=1&page=1"
+      },
+      "repository": "adobe/aem-core-forms-components",
+      "sha": "8fa9dbe3971e41172cab18aa019670c10e798932",
+      "temporal_basis": "committer_time",
+      "tree_sha": "99e2aeae25c31b7e5d5a5c8ad8cda7d92fc8cf45"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "dev",
+  "base_routing_source": "pr_base_ref",
+  "case_id": "CASE_74FE6518B1D8",
+  "executed_at": "2026-10-05T20:17:49.094989+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-09-11T09:49:25Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2023-10-10T09:28:50Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-10-10T09:28:50+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "f46f89a0b25d5ee61b98f81f5be71d397c3267db"
+        ],
+        "position": 1,
+        "pr_number": 878,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:47.186197+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/adobe/aem-core-forms-components/pulls/878/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:47.186197+00:00",
+          "sha256": "e17df021b9b2cfb6335b19bcecc5e789f1fe2b1cc90fae12af6ff42dfdc1534e",
+          "source": "https://api.github.com/repos/adobe/aem-core-forms-components/pulls/878/commits?per_page=100&page=1"
+        },
+        "repository": "adobe/aem-core-forms-components",
+        "sha": "0e3f5a29e065384bb2201e03c6c2b3181d2a44ab",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5edaf0cca52243474e154080b03b58a24cd02195"
+      },
+      {
+        "author_time": "2023-09-29T12:12:17Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2023-10-10T09:28:50Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-10-10T09:28:50+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "0e3f5a29e065384bb2201e03c6c2b3181d2a44ab"
+        ],
+        "position": 2,
+        "pr_number": 878,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:47.186197+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/adobe/aem-core-forms-components/pulls/878/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:47.186197+00:00",
+          "sha256": "e17df021b9b2cfb6335b19bcecc5e789f1fe2b1cc90fae12af6ff42dfdc1534e",
+          "source": "https://api.github.com/repos/adobe/aem-core-forms-components/pulls/878/commits?per_page=100&page=1"
+        },
+        "repository": "adobe/aem-core-forms-components",
+        "sha": "48f9c058d3dec3764f3e23cabf8f2952efec3def",
+        "temporal_basis": "committer_time",
+        "tree_sha": "35e6532fc404a9ac375259570beb00e505340958"
+      },
+      {
+        "author_time": "2023-10-09T06:29:44Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-10T09:28:50Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-10-10T09:28:50+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "48f9c058d3dec3764f3e23cabf8f2952efec3def"
+        ],
+        "position": 3,
+        "pr_number": 878,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:47.186197+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/adobe/aem-core-forms-components/pulls/878/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:47.186197+00:00",
+          "sha256": "e17df021b9b2cfb6335b19bcecc5e789f1fe2b1cc90fae12af6ff42dfdc1534e",
+          "source": "https://api.github.com/repos/adobe/aem-core-forms-components/pulls/878/commits?per_page=100&page=1"
+        },
+        "repository": "adobe/aem-core-forms-components",
+        "sha": "574e028038af37278d7383ba575a8de07d21dd27",
+        "temporal_basis": "committer_time",
+        "tree_sha": "f3661378c199fcad45886b792c0f8172c259ce0f"
+      },
+      {
+        "author_time": "2023-10-09T10:00:53Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-10T09:29:23Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-10-10T09:29:23+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "574e028038af37278d7383ba575a8de07d21dd27"
+        ],
+        "position": 4,
+        "pr_number": 878,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:47.186197+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/adobe/aem-core-forms-components/pulls/878/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:47.186197+00:00",
+          "sha256": "e17df021b9b2cfb6335b19bcecc5e789f1fe2b1cc90fae12af6ff42dfdc1534e",
+          "source": "https://api.github.com/repos/adobe/aem-core-forms-components/pulls/878/commits?per_page=100&page=1"
+        },
+        "repository": "adobe/aem-core-forms-components",
+        "sha": "0b8092200d8179eb4ef40b0aafcea44d080414f2",
+        "temporal_basis": "committer_time",
+        "tree_sha": "576c8684b711bcb375a2d2ca9a9a12e563566ae3"
+      },
+      {
+        "author_time": "2023-10-09T13:07:15Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-10T12:36:43Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-10-10T12:36:43+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "0b8092200d8179eb4ef40b0aafcea44d080414f2"
+        ],
+        "position": 5,
+        "pr_number": 878,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:17:47.186197+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/adobe/aem-core-forms-components/pulls/878/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:17:47.186197+00:00",
+          "sha256": "e17df021b9b2cfb6335b19bcecc5e789f1fe2b1cc90fae12af6ff42dfdc1534e",
+          "source": "https://api.github.com/repos/adobe/aem-core-forms-components/pulls/878/commits?per_page=100&page=1"
+        },
+        "repository": "adobe/aem-core-forms-components",
+        "sha": "d715a6f9a7759a9254971e3eeb71535a3ce534ea",
+        "temporal_basis": "committer_time",
+        "tree_sha": "e4e8c9ef92299ccd844c43c7f3d256437a36309c"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-09-11T09:49:25Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "crosses_tfg",
+      "committer_time": "2023-10-10T09:28:50Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-10-10T09:28:50+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "f46f89a0b25d5ee61b98f81f5be71d397c3267db"
+      ],
+      "position": 1,
+      "pr_number": 878,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:47.186197+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/adobe/aem-core-forms-components/pulls/878/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:47.186197+00:00",
+        "sha256": "e17df021b9b2cfb6335b19bcecc5e789f1fe2b1cc90fae12af6ff42dfdc1534e",
+        "source": "https://api.github.com/repos/adobe/aem-core-forms-components/pulls/878/commits?per_page=100&page=1"
+      },
+      "repository": "adobe/aem-core-forms-components",
+      "sha": "0e3f5a29e065384bb2201e03c6c2b3181d2a44ab",
+      "temporal_basis": "committer_time",
+      "tree_sha": "5edaf0cca52243474e154080b03b58a24cd02195"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "8fa9dbe3971e41172cab18aa019670c10e798932",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "e3f117c708cebbf9febb96ade7ab61fb2b99ca47"
+    ],
+    "recursive_tree_entry_count": 3105,
+    "recursive_tree_listing_sha256": "58cc155ddda5e80eac8ede936971aad489c6c46b17ff2fb43f98f9c63a17491e",
+    "retrieved_at": "2026-10-05T20:17:49.091790+00:00",
+    "source": "https://github.com/adobe/aem-core-forms-components.git",
+    "status": "materialized",
+    "tree_sha": "99e2aeae25c31b7e5d5a5c8ad8cda7d92fc8cf45"
+  },
+  "pr_number": 878,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:47.604372+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/adobe/aem-core-forms-components/git/ref/heads/dev"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:47.604372+00:00",
+        "sha256": "237f598cf4cd9ea13aac1b716fb5733fd8810e6922f28438b255c1ebf285c190",
+        "source": "https://api.github.com/repos/adobe/aem-core-forms-components/git/ref/heads/dev"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:48.087295+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/adobe/aem-core-forms-components/commits?sha=dev&until=2023-09-30T04%3A21%3A13.310784%2B00%3A00&per_page=1&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:48.087295+00:00",
+        "sha256": "091c28212c2573472fcf54ce0cde897e0a51de3fd6f3ca61724490409c4938e2",
+        "source": "https://api.github.com/repos/adobe/aem-core-forms-components/commits?sha=dev&until=2023-09-30T04%3A21%3A13.310784%2B00%3A00&per_page=1&page=1"
+      }
+    ],
+    "base_route_evidence": {
+      "ref_object_sha": "8be119c9a6e1269cf838ce207f2a88abc0dd9485",
+      "rule": "recorded_pr_base_ref_resolves"
+    },
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "f46f89a0b25d5ee61b98f81f5be71d397c3267db",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:17:47.186197+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/adobe/aem-core-forms-components/pulls/878/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:17:47.186197+00:00",
+        "sha256": "e17df021b9b2cfb6335b19bcecc5e789f1fe2b1cc90fae12af6ff42dfdc1534e",
+        "source": "https://api.github.com/repos/adobe/aem-core-forms-components/pulls/878/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:17:46.715259+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/adobe/aem-core-forms-components/pulls/878"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:17:46.715259+00:00",
+      "sha256": "5a4e18005478e4e248c4c04033f7a68d819448638d91956018fcd179cf246bff",
+      "source": "https://api.github.com/repos/adobe/aem-core-forms-components/pulls/878"
+    },
+    "recorded_pr_base_ref_resolves": true
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "adobe/aem-core-forms-components",
+  "selected_state": {
+    "author_time": "2023-09-27T11:20:24Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "8fa9dbe3971e41172cab18aa019670c10e798932",
+    "committer_time": "2023-09-27T11:20:24Z",
+    "effective_time": "2023-09-27T11:20:24+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "99e2aeae25c31b7e5d5a5c8ad8cda7d92fc8cf45"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-09-30T04:21:07.013909+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-09-30T04:21:13.310784+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}

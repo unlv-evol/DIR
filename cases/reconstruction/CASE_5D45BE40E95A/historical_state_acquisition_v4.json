@@ -1,0 +1,424 @@
+{
+  "base_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-09-28T22:08:48Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-09-28T22:08:48Z",
+        "committer_time_relation": "at_or_before_tfg",
+        "effective_time": "2023-09-28T22:08:48+00:00",
+        "effective_time_relation": "at_or_before_tfg",
+        "parent_shas": [
+          "71af6b54a77910923301863f8f70b583a2cd9b4a"
+        ],
+        "position": 1,
+        "pr_number": null,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:06:55.690919+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nylas/nylas-python/commits/17049b13476382126283480840150924050f0799"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:06:55.690919+00:00",
+          "sha256": "82560f13516bcde8a0127c544c07dd9314654545f415c65ec93dc2601f3452a8",
+          "source": "https://api.github.com/repos/nylas/nylas-python/commits/17049b13476382126283480840150924050f0799"
+        },
+        "repository": "nylas/nylas-python",
+        "sha": "17049b13476382126283480840150924050f0799",
+        "temporal_basis": "committer_time",
+        "tree_sha": "65a37def8b9572a0a43cf7b18af18c93615a462b"
+      }
+    ],
+    "first_post_tfg": null,
+    "reasons": [],
+    "selected": {
+      "author_time": "2023-09-28T22:08:48Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "same_side_of_tfg",
+      "committer_time": "2023-09-28T22:08:48Z",
+      "committer_time_relation": "at_or_before_tfg",
+      "effective_time": "2023-09-28T22:08:48+00:00",
+      "effective_time_relation": "at_or_before_tfg",
+      "parent_shas": [
+        "71af6b54a77910923301863f8f70b583a2cd9b4a"
+      ],
+      "position": 1,
+      "pr_number": null,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:06:55.690919+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/nylas/nylas-python/commits/17049b13476382126283480840150924050f0799"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:06:55.690919+00:00",
+        "sha256": "82560f13516bcde8a0127c544c07dd9314654545f415c65ec93dc2601f3452a8",
+        "source": "https://api.github.com/repos/nylas/nylas-python/commits/17049b13476382126283480840150924050f0799"
+      },
+      "repository": "nylas/nylas-python",
+      "sha": "17049b13476382126283480840150924050f0799",
+      "temporal_basis": "committer_time",
+      "tree_sha": "65a37def8b9572a0a43cf7b18af18c93615a462b"
+    },
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "base_lineage_ref": "v6.0.0-beta",
+  "base_routing_source": "other_explicitly_justified_route",
+  "case_id": "CASE_5D45BE40E95A",
+  "executed_at": "2026-10-05T20:06:56.286072+00:00",
+  "focal_lineage": {
+    "commits": [
+      {
+        "author_time": "2023-10-02T22:37:20Z",
+        "author_time_relation": "at_or_before_tfg",
+        "author_time_sensitivity": "crosses_tfg",
+        "committer_time": "2023-10-02T23:11:48Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-10-02T23:11:48+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "17049b13476382126283480840150924050f0799"
+        ],
+        "position": 1,
+        "pr_number": 279,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:06:54.649148+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nylas/nylas-python/pulls/279/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:06:54.649148+00:00",
+          "sha256": "b317699c6db8be2813be4f4e371a9efcdff3ca76a37c73c124cc3e05b8f98e94",
+          "source": "https://api.github.com/repos/nylas/nylas-python/pulls/279/commits?per_page=100&page=1"
+        },
+        "repository": "nylas/nylas-python",
+        "sha": "ba36d95138799b7db89e6940f178ad9e30a19a30",
+        "temporal_basis": "committer_time",
+        "tree_sha": "87b69bfbf2dd2e02a2a18836b089032724bd6be9"
+      },
+      {
+        "author_time": "2023-10-02T23:17:58Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-02T23:17:58Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-10-02T23:17:58+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "ba36d95138799b7db89e6940f178ad9e30a19a30"
+        ],
+        "position": 2,
+        "pr_number": 279,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:06:54.649148+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nylas/nylas-python/pulls/279/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:06:54.649148+00:00",
+          "sha256": "b317699c6db8be2813be4f4e371a9efcdff3ca76a37c73c124cc3e05b8f98e94",
+          "source": "https://api.github.com/repos/nylas/nylas-python/pulls/279/commits?per_page=100&page=1"
+        },
+        "repository": "nylas/nylas-python",
+        "sha": "c7d9b56c642b5081dffdc6df13a72e61374039ac",
+        "temporal_basis": "committer_time",
+        "tree_sha": "290daf0345e1c2a7b101bf0c97c9a9c647728567"
+      },
+      {
+        "author_time": "2023-10-02T23:19:39Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-02T23:19:39Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-10-02T23:19:39+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "c7d9b56c642b5081dffdc6df13a72e61374039ac"
+        ],
+        "position": 3,
+        "pr_number": 279,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:06:54.649148+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nylas/nylas-python/pulls/279/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:06:54.649148+00:00",
+          "sha256": "b317699c6db8be2813be4f4e371a9efcdff3ca76a37c73c124cc3e05b8f98e94",
+          "source": "https://api.github.com/repos/nylas/nylas-python/pulls/279/commits?per_page=100&page=1"
+        },
+        "repository": "nylas/nylas-python",
+        "sha": "89b35d71a1d3f8691676455b10813f2008b47463",
+        "temporal_basis": "committer_time",
+        "tree_sha": "5f2701c1d9ed2c7c02a3829946ee22d4ff0cec10"
+      },
+      {
+        "author_time": "2023-10-02T23:26:47Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-02T23:26:47Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-10-02T23:26:47+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "89b35d71a1d3f8691676455b10813f2008b47463"
+        ],
+        "position": 4,
+        "pr_number": 279,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:06:54.649148+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nylas/nylas-python/pulls/279/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:06:54.649148+00:00",
+          "sha256": "b317699c6db8be2813be4f4e371a9efcdff3ca76a37c73c124cc3e05b8f98e94",
+          "source": "https://api.github.com/repos/nylas/nylas-python/pulls/279/commits?per_page=100&page=1"
+        },
+        "repository": "nylas/nylas-python",
+        "sha": "83345c85569ed24d1a5d6beb7ad79ce1bcd304bc",
+        "temporal_basis": "committer_time",
+        "tree_sha": "b09bf7fd1e5f6545f367fd60228b22b1910b6ff1"
+      },
+      {
+        "author_time": "2023-10-02T23:50:00Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-02T23:50:00Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-10-02T23:50:00+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "83345c85569ed24d1a5d6beb7ad79ce1bcd304bc"
+        ],
+        "position": 5,
+        "pr_number": 279,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:06:54.649148+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nylas/nylas-python/pulls/279/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:06:54.649148+00:00",
+          "sha256": "b317699c6db8be2813be4f4e371a9efcdff3ca76a37c73c124cc3e05b8f98e94",
+          "source": "https://api.github.com/repos/nylas/nylas-python/pulls/279/commits?per_page=100&page=1"
+        },
+        "repository": "nylas/nylas-python",
+        "sha": "2223d02a708cfd566cd66c292a3bd9aa39dc954e",
+        "temporal_basis": "committer_time",
+        "tree_sha": "1e64b6c96c606e46abf144a33fbde21a085c99e6"
+      },
+      {
+        "author_time": "2023-10-10T18:42:33Z",
+        "author_time_relation": "after_tfg",
+        "author_time_sensitivity": "same_side_of_tfg",
+        "committer_time": "2023-10-10T18:42:33Z",
+        "committer_time_relation": "after_tfg",
+        "effective_time": "2023-10-10T18:42:33+00:00",
+        "effective_time_relation": "after_tfg",
+        "parent_shas": [
+          "2223d02a708cfd566cd66c292a3bd9aa39dc954e"
+        ],
+        "position": 6,
+        "pr_number": 279,
+        "provenance": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "retrieved_at": "2026-10-05T20:06:54.649148+00:00",
+              "status": "success",
+              "url": "https://api.github.com/repos/nylas/nylas-python/pulls/279/commits?per_page=100&page=1"
+            }
+          ],
+          "retrieved_at": "2026-10-05T20:06:54.649148+00:00",
+          "sha256": "b317699c6db8be2813be4f4e371a9efcdff3ca76a37c73c124cc3e05b8f98e94",
+          "source": "https://api.github.com/repos/nylas/nylas-python/pulls/279/commits?per_page=100&page=1"
+        },
+        "repository": "nylas/nylas-python",
+        "sha": "9bd61003f4ac5d6006a16f4400fee108af496441",
+        "temporal_basis": "committer_time",
+        "tree_sha": "649652fe6561ae599c9599d72d6788abaa2309ef"
+      }
+    ],
+    "first_post_tfg": {
+      "author_time": "2023-10-02T22:37:20Z",
+      "author_time_relation": "at_or_before_tfg",
+      "author_time_sensitivity": "crosses_tfg",
+      "committer_time": "2023-10-02T23:11:48Z",
+      "committer_time_relation": "after_tfg",
+      "effective_time": "2023-10-02T23:11:48+00:00",
+      "effective_time_relation": "after_tfg",
+      "parent_shas": [
+        "17049b13476382126283480840150924050f0799"
+      ],
+      "position": 1,
+      "pr_number": 279,
+      "provenance": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:06:54.649148+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/nylas/nylas-python/pulls/279/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:06:54.649148+00:00",
+        "sha256": "b317699c6db8be2813be4f4e371a9efcdff3ca76a37c73c124cc3e05b8f98e94",
+        "source": "https://api.github.com/repos/nylas/nylas-python/pulls/279/commits?per_page=100&page=1"
+      },
+      "repository": "nylas/nylas-python",
+      "sha": "ba36d95138799b7db89e6940f178ad9e30a19a30",
+      "temporal_basis": "committer_time",
+      "tree_sha": "87b69bfbf2dd2e02a2a18836b089032724bd6be9"
+    },
+    "reasons": [],
+    "selected": null,
+    "selected_to_first_post_relationship": "not_applicable",
+    "temporal_consistency": "consistent"
+  },
+  "historical_observability": "not_confirmed",
+  "lineage_source": "established_focal_pr",
+  "materialization": {
+    "commit_sha": "17049b13476382126283480840150924050f0799",
+    "complete_recursive_tree": true,
+    "deterministic_repeat": true,
+    "object_type": "commit",
+    "parent_shas": [
+      "71af6b54a77910923301863f8f70b583a2cd9b4a"
+    ],
+    "recursive_tree_entry_count": 51,
+    "recursive_tree_listing_sha256": "4982a8f182c9ff32ca6448b45783bda532cfa0abc7a15e1594d70432b0977af7",
+    "retrieved_at": "2026-10-05T20:06:56.275433+00:00",
+    "source": "https://github.com/nylas/nylas-python.git",
+    "status": "materialized",
+    "tree_sha": "65a37def8b9572a0a43cf7b18af18c93615a462b"
+  },
+  "pr_number": 279,
+  "procedure_version": "post-stage-c-git-lineage-v4",
+  "provenance": {
+    "base_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 404,
+            "retrieved_at": "2026-10-05T20:06:55.090018+00:00",
+            "status": "repository_unavailable",
+            "url": "https://api.github.com/repos/nylas/nylas-python/git/ref/heads/v6.0.0-beta"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:06:55.090018+00:00",
+        "source": "https://api.github.com/repos/nylas/nylas-python/git/ref/heads/v6.0.0-beta"
+      },
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:06:55.690919+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/nylas/nylas-python/commits/17049b13476382126283480840150924050f0799"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:06:55.690919+00:00",
+        "sha256": "82560f13516bcde8a0127c544c07dd9314654545f415c65ec93dc2601f3452a8",
+        "source": "https://api.github.com/repos/nylas/nylas-python/commits/17049b13476382126283480840150924050f0799"
+      }
+    ],
+    "base_route_evidence": {
+      "anchor_reason": "unique_focal_root_external_parent",
+      "anchor_sha": "17049b13476382126283480840150924050f0799",
+      "rule": "unique_focal_root_external_parent_ancestry"
+    },
+    "current_default_branch_candidate_used": false,
+    "current_pr_base_sha_provenance_only": "5c8de3c9ae7aa942992372f233538fd17aa5838d",
+    "focal_pages": [
+      {
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "retrieved_at": "2026-10-05T20:06:54.649148+00:00",
+            "status": "success",
+            "url": "https://api.github.com/repos/nylas/nylas-python/pulls/279/commits?per_page=100&page=1"
+          }
+        ],
+        "retrieved_at": "2026-10-05T20:06:54.649148+00:00",
+        "sha256": "b317699c6db8be2813be4f4e371a9efcdff3ca76a37c73c124cc3e05b8f98e94",
+        "source": "https://api.github.com/repos/nylas/nylas-python/pulls/279/commits?per_page=100&page=1"
+      }
+    ],
+    "outcome_inputs_enabled": false,
+    "post_tfg_content_admitted": false,
+    "pr": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "retrieved_at": "2026-10-05T20:06:54.078329+00:00",
+          "status": "success",
+          "url": "https://api.github.com/repos/nylas/nylas-python/pulls/279"
+        }
+      ],
+      "retrieved_at": "2026-10-05T20:06:54.078329+00:00",
+      "sha256": "cc4083049767b02475a6230a0f02c7ea96eee4106be554163d7861c941f95100",
+      "source": "https://api.github.com/repos/nylas/nylas-python/pulls/279"
+    },
+    "recorded_pr_base_ref_resolves": false
+  },
+  "reconstruction_contract": "post-stage-c-reconstruction-v4",
+  "reconstruction_path": "base",
+  "reconstruction_status": "reconstructed_base_state",
+  "record_version": "historical-state-acquisition-v4",
+  "repository": "nylas/nylas-python",
+  "selected_state": {
+    "author_time": "2023-09-28T22:08:48Z",
+    "author_time_sensitivity": "same_side_of_tfg",
+    "commit_sha": "17049b13476382126283480840150924050f0799",
+    "committer_time": "2023-09-28T22:08:48Z",
+    "effective_time": "2023-09-28T22:08:48+00:00",
+    "temporal_basis": "committer_time",
+    "tree_sha": "65a37def8b9572a0a43cf7b18af18c93615a462b"
+  },
+  "tC": {
+    "source": "first developer turn in parsed conversation; not a selection input",
+    "value": "2023-10-02T23:05:55.804377+00:00"
+  },
+  "tFG": {
+    "source": "cases/manifests/stage_c_post_resolution_authority.csv",
+    "value": "2023-10-02T23:06:13.290606+00:00"
+  },
+  "temporal_consistency": "consistent",
+  "unresolved_reasons": []
+}
