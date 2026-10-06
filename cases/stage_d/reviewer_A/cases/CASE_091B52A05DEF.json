@@ -1,0 +1,123 @@
+{
+  "case_id": "CASE_091B52A05DEF",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/d68981db-26e1-431c-841d-2bb31096c0c9",
+    "pr_url": "https://github.com/pokt-network/poktroll/pull/185"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_491465641d825d9e743d433f",
+      "family_label": "Go multiline-string leading-whitespace trimming implementation",
+      "artifact_refs": [
+        "GTC_000004_000360_000852_e1c6564915d9d9f6"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000004_000360_000852_e1c6564915d9d9f6",
+          "source_response_id": "turn_000004",
+          "artifact_type": "source_code",
+          "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"strings\"\n)\n\nfunc main() {\n\tfmt.Println(\"Hello, 世界\")\n\n\t// Multiline string with leading spaces for readability\n\trawString := `\n\t\tabc\n\t\tdef\n\t\t123\n\t\t456\n\t`\n\n\t// Split the string into lines\n\tlines := strings.Split(rawString, \"\\n\")\n\n\t// Trim leading spaces from each line\n\tfor i, line := range lines {\n\t\tlines[i] = strings.TrimLeft(line, \" \\t\")\n\t}\n\n\t// Join the lines back into a single string\n\tcleanString := strings.Join(lines, \"\\n\")\n\n\tfmt.Println(cleanString)\n}\n",
+          "language": "go"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000004",
+    "target_prompt_turn_id": "turn_000003",
+    "boundary": "exclusive_before:turn_000004",
+    "tFG": "2023-11-14T21:50:49.315735+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "user",
+    "text": "I have this simple golang program:\n\n```\n// You can edit this code!\n// Click here and start typing.\npackage main\n\nimport \"fmt\"\n\nfunc main() {\n\tfmt.Println(\"Hello, 世界\")\n\ts := `\n\tabc\n\tdef\n\t123\n\t456\n`\n\tfmt.Println(s)\n}\n```\n\nI want to avoid doing this:\n\n```\n\ts := `\nabc\ndef\n123\n456\n`\n```\n\nBecause it's hard to read.\n\nIs there a goland strings helper that'll strip the preceding spaces so I maintain readability in the source code?"
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000003",
+      "event_index": 3,
+      "role": "user",
+      "text": "I have this simple golang program:\n\n```\n// You can edit this code!\n// Click here and start typing.\npackage main\n\nimport \"fmt\"\n\nfunc main() {\n\tfmt.Println(\"Hello, 世界\")\n\ts := `\n\tabc\n\tdef\n\t123\n\t456\n`\n\tfmt.Println(s)\n}\n```\n\nI want to avoid doing this:\n\n```\n\ts := `\nabc\ndef\n123\n456\n`\n```\n\nBecause it's hard to read.\n\nIs there a goland strings helper that'll strip the preceding spaces so I maintain readability in the source code?"
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000004",
+    "event_index": 4,
+    "role": "assistant",
+    "text": "Yes, Go provides a way to handle this situation neatly. You can use the `strings` package, specifically the `TrimLeft` function or similar variants, to strip the preceding spaces from each line. This will allow you to maintain readability in the source code while avoiding unwanted leading spaces in the string.\n\nHere's how you can modify your program:\n\n```go\npackage main\n\nimport (\n\t\"fmt\"\n\t\"strings\"\n)\n\nfunc main() {\n\tfmt.Println(\"Hello, 世界\")\n\n\t// Multiline string with leading spaces for readability\n\trawString := `\n\t\tabc\n\t\tdef\n\t\t123\n\t\t456\n\t`\n\n\t// Split the string into lines\n\tlines := strings.Split(rawString, \"\\n\")\n\n\t// Trim leading spaces from each line\n\tfor i, line := range lines {\n\t\tlines[i] = strings.TrimLeft(line, \" \\t\")\n\t}\n\n\t// Join the lines back into a single string\n\tcleanString := strings.Join(lines, \"\\n\")\n\n\tfmt.Println(cleanString)\n}\n```\n\nIn this example:\n- `strings.Split` is used to divide the string into lines.\n- `strings.TrimLeft` removes leading spaces and tabs from each line.\n- `strings.Join` reassembles the lines into a single string.\n\nThis approach keeps your source code readable while ensuring the output string doesn't contain unwanted leading spaces."
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context_1",
+        "normalized_text": "The user has a simple Go program that assigns an indented multiline raw string to `s` and prints it with `fmt.Println(s)`.",
+        "source_turn_ids": [
+          "turn_000003"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "I have this simple golang program:",
+          "s := `\n\tabc\n\tdef\n\t123\n\t456\n`",
+          "\tfmt.Println(s)"
+        ]
+      },
+      {
+        "item_id": "context_2",
+        "normalized_text": "Writing the multiline string without indentation is hard for the user to read.",
+        "source_turn_ids": [
+          "turn_000003"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "I want to avoid doing this:\n\n```\n\ts := `\nabc\ndef\n123\n456\n`\n```",
+          "Because it's hard to read."
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "The user wants a Go string helper that removes preceding spaces from the multiline string while allowing the literal to remain indented and readable in the source code.",
+        "source_turn_ids": [
+          "turn_000003"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "Is there a goland strings helper that'll strip the preceding spaces so I maintain readability in the source code?"
+        ]
+      }
+    ],
+    "Verification": [
+      {
+        "item_id": "verification_1",
+        "normalized_text": "The preceding spaces should be stripped from the string while source-code readability is maintained.",
+        "source_turn_ids": [
+          "turn_000003"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "Is there a goland strings helper that'll strip the preceding spaces so I maintain readability in the source code?"
+        ]
+      }
+    ]
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "377005efe9c58ac1d781e07f60b714c0ed411c7208f139d459b5079043292887",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_A/cases/CASE_091B52A05DEF.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "case_id": "CASE_F13F98792012",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/f59d66c4-fe99-4ad3-83cf-cf4ffab427bd",
+    "pr_url": "https://github.com/polywrap/evo.ninja/pull/206"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_5fc96bcbc0d99e4be5f6e407",
+      "family_label": "Recursive JavaScript factorial function body",
+      "artifact_refs": [
+        "GTC_000003_001404_001766_f8c1187aeedded3d"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000003_001404_001766_f8c1187aeedded3d",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "// Check if the number is valid and non-negative\nif (number < 0) {\n    throw new Error(\"Number must be non-negative\");\n}\n\n// Define the recursive helper function\nfunction factorialHelper(n) {\n    if (n === 0) {\n        return 1;\n    }\n    return n * factorialHelper(n - 1);\n}\n\n// Call the helper function with the provided number\nreturn factorialHelper(number);\n",
+          "language": "javascript"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000003",
+    "target_prompt_turn_id": "turn_000002",
+    "boundary": "exclusive_before:turn_000003",
+    "tFG": "2023-09-25T11:59:29.032600+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000002",
+    "event_index": 2,
+    "role": "user",
+    "text": "Follow these prompts to complete the task of writing the javascript function \"math.factorial\" using recursion.\n\nINITIAL_PROMP = `You are an agent that writes JavaScript functions.\\n` +\n`Before writing any code think step by step about what you want to implement.\\n` +\n`Call the writeFunction function to submit the code of your JavaScript function.\\n` +\n`If the first try doesn't succeed, try again. Do not create mock functionality.\\n`;\n\nexport const GOAL_PROMPT = (namespace: string, description: string, args: string) => \n  `Your task is to write the body of an async JavaScript function.\\nFunction namepace: \"${namespace}\"\\nArguments: ${args}.\\nDescription: \"${description}\"\\n` +\n  `You must refer to function arguments as if they were locally defined variables, remember you're writing just the body of the function.\\n` +\n  `Use only the function arguments above, do not add new ones.\\n` +\n  `Since you are writing the body of the function, remember to use the return keyword if needed.\\n` +\n  `When using libraries, use the require function to import them.\\n` +\n  `Do not require libraries aside from 'fs' and 'axios'\\n` +\n  `Do not use external APIs that require authentication or an API key.\\n` +\n  `Do not recursively call the \"${namespace}\" function.\\n` +\n  `Example function body:\\n` +\n  `const fs = require('fs');\\n` +\n  `return fs.readFileSync(path, encoding);\\n`;\n\nSchema:\n```json\n{\n  \"name\": \"math.factorial\",\n  \"description\": \"Calculate the factorial of a number\",\n  \"arguments\": \"{ number: number }\",\n  \"code\": \"./math.factorial.js\"\n}\n```"
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000002",
+      "event_index": 2,
+      "role": "user",
+      "text": "Follow these prompts to complete the task of writing the javascript function \"math.factorial\" using recursion.\n\nINITIAL_PROMP = `You are an agent that writes JavaScript functions.\\n` +\n`Before writing any code think step by step about what you want to implement.\\n` +\n`Call the writeFunction function to submit the code of your JavaScript function.\\n` +\n`If the first try doesn't succeed, try again. Do not create mock functionality.\\n`;\n\nexport const GOAL_PROMPT = (namespace: string, description: string, args: string) => \n  `Your task is to write the body of an async JavaScript function.\\nFunction namepace: \"${namespace}\"\\nArguments: ${args}.\\nDescription: \"${description}\"\\n` +\n  `You must refer to function arguments as if they were locally defined variables, remember you're writing just the body of the function.\\n` +\n  `Use only the function arguments above, do not add new ones.\\n` +\n  `Since you are writing the body of the function, remember to use the return keyword if needed.\\n` +\n  `When using libraries, use the require function to import them.\\n` +\n  `Do not require libraries aside from 'fs' and 'axios'\\n` +\n  `Do not use external APIs that require authentication or an API key.\\n` +\n  `Do not recursively call the \"${namespace}\" function.\\n` +\n  `Example function body:\\n` +\n  `const fs = require('fs');\\n` +\n  `return fs.readFileSync(path, encoding);\\n`;\n\nSchema:\n```json\n{\n  \"name\": \"math.factorial\",\n  \"description\": \"Calculate the factorial of a number\",\n  \"arguments\": \"{ number: number }\",\n  \"code\": \"./math.factorial.js\"\n}\n```"
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "assistant",
+    "text": "You are an agent that writes JavaScript functions.\nBefore writing any code think step by step about what you want to implement.\nCall the writeFunction function to submit the code of your JavaScript function.\nIf the first try doesn't succeed, try again. Do not create mock functionality.\n\nYour task is to write the body of an async JavaScript function.\nFunction namepace: \"math.factorial\"\nArguments: { number: number }.\nDescription: \"Calculate the factorial of a number\"\nYou must refer to function arguments as if they were locally defined variables, remember you're writing just the body of the function.\nUse only the function arguments above, do not add new ones.\nSince you are writing the body of the function, remember to use the return keyword if needed.\nWhen using libraries, use the require function to import them.\nDo not require libraries aside from 'fs' and 'axios'\nDo not use external APIs that require authentication or an API key.\nDo not recursively call the \"math.factorial\" function.\nExample function body:\nconst fs = require('fs');\nreturn fs.readFileSync(path, encoding);\n\n---\n\nGiven the constraints, we need to write a function that calculates the factorial of a number using recursion. However, we are explicitly told not to recursively call the \"math.factorial\" function. This means we should create an inner helper function for the recursion.\n\nLet's write the function:\n\n```javascript\n// Check if the number is valid and non-negative\nif (number < 0) {\n    throw new Error(\"Number must be non-negative\");\n}\n\n// Define the recursive helper function\nfunction factorialHelper(n) {\n    if (n === 0) {\n        return 1;\n    }\n    return n * factorialHelper(n - 1);\n}\n\n// Call the helper function with the provided number\nreturn factorialHelper(number);\n```\n\nThis function first checks if the provided number is non-negative. If it is negative, it throws an error. Then, it defines a helper function `factorialHelper` that calculates the factorial using recursion. Finally, it calls this helper function with the provided number and returns the result."
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context_1",
+        "normalized_text": "The supplied schema identifies the target as `math.factorial`, describes it as calculating the factorial of a number, declares the arguments as `{ number: number }`, and associates it with `./math.factorial.js`.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "\"name\": \"math.factorial\",\n  \"description\": \"Calculate the factorial of a number\",\n  \"arguments\": \"{ number: number }\",\n  \"code\": \"./math.factorial.js\""
+        ]
+      },
+      {
+        "item_id": "context_2",
+        "normalized_text": "The task is framed as writing only the body of an async JavaScript function, with function arguments referenced as locally defined variables.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "`Your task is to write the body of an async JavaScript function.\\nFunction namepace: \"${namespace}\"\\nArguments: ${args}.\\nDescription: \"${description}\"\\n`",
+          "`You must refer to function arguments as if they were locally defined variables, remember you're writing just the body of the function.\\n`"
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "Implement the JavaScript function `math.factorial` to calculate the factorial of a number using recursion.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "Follow these prompts to complete the task of writing the javascript function \"math.factorial\" using recursion.",
+          "\"description\": \"Calculate the factorial of a number\""
+        ]
+      },
+      {
+        "item_id": "specificity_2",
+        "normalized_text": "Use only the supplied `{ number: number }` argument and do not add arguments.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "\"arguments\": \"{ number: number }\"",
+          "`Use only the function arguments above, do not add new ones.\\n`"
+        ]
+      },
+      {
+        "item_id": "specificity_3",
+        "normalized_text": "Write only the function body, refer to arguments as local variables, and use `return` when needed.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "`Your task is to write the body of an async JavaScript function.\\nFunction namepace: \"${namespace}\"\\nArguments: ${args}.\\nDescription: \"${description}\"\\n`",
+          "`You must refer to function arguments as if they were locally defined variables, remember you're writing just the body of the function.\\n`",
+          "`Since you are writing the body of the function, remember to use the return keyword if needed.\\n`"
+        ]
+      },
+      {
+        "item_id": "specificity_4",
+        "normalized_text": "Do not recursively call the namespace function itself.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "`Do not recursively call the \"${namespace}\" function.\\n`"
+        ]
+      },
+      {
+        "item_id": "specificity_5",
+        "normalized_text": "If libraries are used, import them with `require`, and do not require libraries other than `fs` and `axios`.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "`When using libraries, use the require function to import them.\\n`",
+          "`Do not require libraries aside from 'fs' and 'axios'\\n`"
+        ]
+      },
+      {
+        "item_id": "specificity_6",
+        "normalized_text": "Do not use external APIs requiring authentication or an API key.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "`Do not use external APIs that require authentication or an API key.\\n`"
+        ]
+      },
+      {
+        "item_id": "specificity_7",
+        "normalized_text": "Think through the implementation before coding, submit it through `writeFunction`, retry if the first attempt fails, and do not create mock functionality.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "`Before writing any code think step by step about what you want to implement.\\n`",
+          "`Call the writeFunction function to submit the code of your JavaScript function.\\n`",
+          "`If the first try doesn't succeed, try again. Do not create mock functionality.\\n`"
+        ]
+      }
+    ],
+    "Verification": [
+      {
+        "item_id": "verification_1",
+        "normalized_text": "The submitted function body must calculate the factorial of the supplied number using recursion.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "Follow these prompts to complete the task of writing the javascript function \"math.factorial\" using recursion.",
+          "\"description\": \"Calculate the factorial of a number\""
+        ]
+      },
+      {
+        "item_id": "verification_2",
+        "normalized_text": "The result must be a function body rather than a complete function declaration, use only the supplied argument, and include a return when needed.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "`Your task is to write the body of an async JavaScript function.\\nFunction namepace: \"${namespace}\"\\nArguments: ${args}.\\nDescription: \"${description}\"\\n`",
+          "`Use only the function arguments above, do not add new ones.\\n`",
+          "`Since you are writing the body of the function, remember to use the return keyword if needed.\\n`"
+        ]
+      },
+      {
+        "item_id": "verification_3",
+        "normalized_text": "The implementation must not recursively invoke `math.factorial` itself.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "`Do not recursively call the \"${namespace}\" function.\\n`",
+          "\"name\": \"math.factorial\""
+        ]
+      },
+      {
+        "item_id": "verification_4",
+        "normalized_text": "Any library imports must use `require` and be limited to `fs` or `axios`; authenticated or API-key-dependent external APIs are disallowed.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "`When using libraries, use the require function to import them.\\n`",
+          "`Do not require libraries aside from 'fs' and 'axios'\\n`",
+          "`Do not use external APIs that require authentication or an API key.\\n`"
+        ]
+      },
+      {
+        "item_id": "verification_5",
+        "normalized_text": "If the first submission does not succeed, another attempt is required, and mock functionality is not acceptable.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "`If the first try doesn't succeed, try again. Do not create mock functionality.\\n`"
+        ]
+      }
+    ]
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "db79fa3f5dbb567567226604ff7022c06519fe277abdb5335fa348a0ce69a2d8",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_A/cases/CASE_F13F98792012.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

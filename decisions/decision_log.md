@@ -402,3 +402,10 @@ Suggested fields:
 - **Criteria:** Preserve the existing first-generation-boundary and historical-state-reconstructibility criteria. Require authoritative Stage C boundary/`tFG`, valid final acquisition and boundary records, temporal/topological consistency, exact selected commit/tree, and complete recursive materialization. Historical observability, routing source, and PA/PN are not eligibility criteria.
 - **Result:** All 111 authoritative Stage-C-processable cases satisfy the retained criteria. Stage D and Stage E remain separate operations.
 - **Owner:** Study team. **Status:** Adopted and applied.
+
+## 2026-10-05 — Adopt the Stage D stratified human-validation sample
+
+- **Decision:** Validate authoritative Stage C extraction on a reproducible 33-case sample drawn from the 111 final eligible cases. Use proportional stratified random sampling without replacement with fixed integer seed `20261005`: 20 of 68 PA cases and 13 of 43 PN cases. Sort case IDs within each stratum before seeded selection and apply a deterministic seeded review-order shuffle.
+- **Blinding:** PA/PN is used only for sampling. Both reviewers receive the same cases, order, and Stage C evidence through separate blank one-row-per-case CSVs and reviewer-safe JSON. Reviewer files omit strata, Post-C results, downstream outcomes, and turns after the first-generation response. The selected response is separated from admissible pre-boundary C/S/V evidence.
+- **Scope:** Package preparation does not constitute human annotation, reconciliation, adjudication, agreement analysis, Stage E freeze, or Stage F execution. Authoritative Stage C, Post-C, and eligibility records remain unchanged.
+- **Owner:** Study team. **Status:** Adopted and package prepared; human review not started.

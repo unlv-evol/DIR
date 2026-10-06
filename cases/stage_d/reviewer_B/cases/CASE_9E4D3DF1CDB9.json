@@ -1,0 +1,79 @@
+{
+  "case_id": "CASE_9E4D3DF1CDB9",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/e9555822-4ffb-4845-8e40-0bc6cbbc658d",
+    "pr_url": "https://github.com/laravel-json-api/core/pull/12"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_2ed1af79251af1c7598aafc0",
+      "family_label": "ULID format validation regular expression",
+      "artifact_refs": [
+        "GTC_000003_000151_000176_1f005585c7b14e7c"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000003_000151_000176_1f005585c7b14e7c",
+          "source_response_id": "turn_000003",
+          "artifact_type": "unclassified_technical",
+          "content": "^[0-9A-HJKMNP-TV-Z]{26}$\n",
+          "language": "regex"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000003",
+    "target_prompt_turn_id": "turn_000002",
+    "boundary": "exclusive_before:turn_000003",
+    "tFG": "2023-07-13T21:17:21.868937+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000002",
+    "event_index": 2,
+    "role": "user",
+    "text": "Hello can you give me a regex to match ULID format ?"
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000002",
+      "event_index": 2,
+      "role": "user",
+      "text": "Hello can you give me a regex to match ULID format ?"
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "assistant",
+    "text": "Certainly! The following regular expression can be used to match the ULID (Universally Unique Lexicographically Sortable Identifier) format:\n\n```regex\n^[0-9A-HJKMNP-TV-Z]{26}$\n```\n\nExplanation:\n- `^` asserts the start of the string.\n- `[0-9A-HJKMNP-TV-Z]` matches any character in the range 0-9, A-H, J-K, M-N, P-T, or V-Z.\n- `{26}` specifies that the preceding character class should occur exactly 26 times (the length of a ULID).\n- `$` asserts the end of the string.\n\nNote that ULIDs are case-sensitive and use a modified base32 encoding, excluding the characters I, L, O, and Q to avoid confusion with numerals."
+  },
+  "stage_c_extraction": {
+    "Context": [],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "Provide a regular expression that matches the ULID format.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "Hello can you give me a regex to match ULID format ?"
+        ]
+      }
+    ],
+    "Verification": []
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "56e0ab58702ebeb8a2dccc5b9c8a681996184fcf3318005d275da687ee46a49a",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_B/cases/CASE_9E4D3DF1CDB9.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

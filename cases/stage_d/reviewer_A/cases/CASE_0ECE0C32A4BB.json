@@ -1,0 +1,117 @@
+{
+  "case_id": "CASE_0ECE0C32A4BB",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/1e410029-c111-4fde-be74-6c4e792d0722",
+    "pr_url": "https://github.com/StuartGavidia/businessapp/pull/35"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_fadc124764d3480adf3f2dd9",
+      "family_label": "React Context-based global loading state and reusable spinner components",
+      "artifact_refs": [
+        "GTC_000003_000377_000950_66456e025d709dd7",
+        "GTC_000003_001027_001270_3a2b4d9ef1f91cb9",
+        "GTC_000003_001334_001862_22def98baab0f151",
+        "GTC_000003_002093_002322_3082910bf378909f"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000003_000377_000950_66456e025d709dd7",
+          "source_response_id": "turn_000003",
+          "artifact_type": "shell_sequence",
+          "content": "// LoadingContext.js\nimport React, { createContext, useState, useContext } from 'react';\n\nconst LoadingContext = createContext();\n\nexport const LoadingProvider = ({ children }) => {\n  const [isLoading, setLoading] = useState(false);\n\n  const startLoading = () => {\n    setLoading(true);\n  };\n\n  const stopLoading = () => {\n    setLoading(false);\n  };\n\n  return (\n    <LoadingContext.Provider value={{ isLoading, startLoading, stopLoading }}>\n      {children}\n    </LoadingContext.Provider>\n  );\n};\n\nexport const useLoading = () => {\n  return useContext(LoadingContext);\n};\n",
+          "language": "jsx"
+        },
+        {
+          "artifact_id": "GTC_000003_001027_001270_3a2b4d9ef1f91cb9",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "// App.js\nimport React from 'react';\nimport { LoadingProvider } from './LoadingContext';\nimport Routes from './Routes';\n\nconst App = () => {\n  return (\n    <LoadingProvider>\n      <Routes />\n    </LoadingProvider>\n  );\n};\n\nexport default App;\n",
+          "language": "jsx"
+        },
+        {
+          "artifact_id": "GTC_000003_001334_001862_22def98baab0f151",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "// YourComponent.js\nimport React, { useEffect } from 'react';\nimport { useLoading } from './LoadingContext';\n\nconst YourComponent = () => {\n  const { startLoading, stopLoading } = useLoading();\n\n  useEffect(() => {\n    // Simulate an asynchronous operation (e.g., API call)\n    startLoading();\n    setTimeout(() => {\n      // Your actual logic here\n      stopLoading();\n    }, 2000);\n  }, [startLoading, stopLoading]);\n\n  return (\n    <div>\n      {/* Your component content */}\n    </div>\n  );\n};\n\nexport default YourComponent;\n",
+          "language": "jsx"
+        },
+        {
+          "artifact_id": "GTC_000003_002093_002322_3082910bf378909f",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "// Spinner.js\nimport React from 'react';\n\nconst Spinner = () => {\n  return (\n    <div className=\"spinner\">\n      {/* Your spinner content (e.g., loading animation) */}\n      Loading...\n    </div>\n  );\n};\n\nexport default Spinner;\n",
+          "language": "jsx"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000003",
+    "target_prompt_turn_id": "turn_000002",
+    "boundary": "exclusive_before:turn_000003",
+    "tFG": "2024-03-04T09:15:38.260049+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000002",
+    "event_index": 2,
+    "role": "user",
+    "text": "is there a way how to show a spinner on react on every page"
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000002",
+      "event_index": 2,
+      "role": "user",
+      "text": "is there a way how to show a spinner on react on every page"
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "assistant",
+    "text": "Yes, you can create a spinner or loading indicator in a React application to show loading state on every page. One common approach is to use a global state management solution, such as React Context or Redux, to manage the loading state across the entire application. Here's a basic example using React Context:\n\n1. **Create a context for managing the loading state:**\n\n```jsx\n// LoadingContext.js\nimport React, { createContext, useState, useContext } from 'react';\n\nconst LoadingContext = createContext();\n\nexport const LoadingProvider = ({ children }) => {\n  const [isLoading, setLoading] = useState(false);\n\n  const startLoading = () => {\n    setLoading(true);\n  };\n\n  const stopLoading = () => {\n    setLoading(false);\n  };\n\n  return (\n    <LoadingContext.Provider value={{ isLoading, startLoading, stopLoading }}>\n      {children}\n    </LoadingContext.Provider>\n  );\n};\n\nexport const useLoading = () => {\n  return useContext(LoadingContext);\n};\n```\n\n2. **Wrap your entire application with the `LoadingProvider`:**\n\n```jsx\n// App.js\nimport React from 'react';\nimport { LoadingProvider } from './LoadingContext';\nimport Routes from './Routes';\n\nconst App = () => {\n  return (\n    <LoadingProvider>\n      <Routes />\n    </LoadingProvider>\n  );\n};\n\nexport default App;\n```\n\n3. **Use the loading context in your components:**\n\n```jsx\n// YourComponent.js\nimport React, { useEffect } from 'react';\nimport { useLoading } from './LoadingContext';\n\nconst YourComponent = () => {\n  const { startLoading, stopLoading } = useLoading();\n\n  useEffect(() => {\n    // Simulate an asynchronous operation (e.g., API call)\n    startLoading();\n    setTimeout(() => {\n      // Your actual logic here\n      stopLoading();\n    }, 2000);\n  }, [startLoading, stopLoading]);\n\n  return (\n    <div>\n      {/* Your component content */}\n    </div>\n  );\n};\n\nexport default YourComponent;\n```\n\n4. **Create a Spinner component:**\n\nYou can create a reusable Spinner component that you can use in different parts of your application. You can find many pre-built spinner components or create a simple one using CSS.\n\n```jsx\n// Spinner.js\nimport React from 'react';\n\nconst Spinner = () => {\n  return (\n    <div className=\"spinner\">\n      {/* Your spinner content (e.g., loading animation) */}\n      Loading...\n    </div>\n  );\n};\n\nexport default Spinner;\n```\n\nNow, whenever you want to indicate a loading state in your components, you can use the `useLoading` hook to access the loading context and show the spinner accordingly."
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context_1",
+        "normalized_text": "The task concerns displaying a spinner in a React application.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "is there a way how to show a spinner on react"
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "The spinner is intended to be shown on every page.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "on every page"
+        ]
+      }
+    ],
+    "Verification": []
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "847dee135334feb22cd7b0a10ce83735c5693ed501e0747172d165b331ec76fa",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_A/cases/CASE_0ECE0C32A4BB.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "case_id": "CASE_188C69620856",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/d0692ab8-4656-44bd-b06e-3c99511ac1fc",
+    "pr_url": "https://github.com/Northeastern-Electric-Racing/FinishLine/pull/2021"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_7fbd13c864cf23c9958c9708",
+      "family_label": "SQL statements for adding and populating a new table column",
+      "artifact_refs": [
+        "GTC_000003_000594_000658_95c7424ea106d997",
+        "GTC_000003_000785_000835_c3f97b5e11a36bf9",
+        "GTC_000003_001066_001106_199827fd4dc8b057"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000003_000594_000658_95c7424ea106d997",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "ALTER TABLE table_name\nADD column_name data_type [constraints];\n",
+          "language": "sql"
+        },
+        {
+          "artifact_id": "GTC_000003_000785_000835_c3f97b5e11a36bf9",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "ALTER TABLE employees\nADD department VARCHAR(50);\n",
+          "language": "sql"
+        },
+        {
+          "artifact_id": "GTC_000003_001066_001106_199827fd4dc8b057",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "UPDATE employees\nSET department = 'IT';\n",
+          "language": "sql"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000003",
+    "target_prompt_turn_id": "turn_000002",
+    "boundary": "exclusive_before:turn_000003",
+    "tFG": "2024-02-08T04:42:19.499871+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000002",
+    "event_index": 2,
+    "role": "user",
+    "text": "how do I assign new property to an existing column in SQL?"
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000002",
+      "event_index": 2,
+      "role": "user",
+      "text": "how do I assign new property to an existing column in SQL?"
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "assistant",
+    "text": "In SQL, you cannot directly assign a new property to an existing column as you would in some object-oriented programming languages. However, you can alter the table to add new columns or modify existing ones.\n\nIf you want to add a new property to an existing column, you typically have to:\n\n1. **Add a new column**: You can add a new column to the table using the `ALTER TABLE` statement.\n\n2. **Update existing data**: You may need to populate the new column with data from existing columns or with default values.\n\nHere's the basic syntax for adding a new column to an existing table:\n\n```sql\nALTER TABLE table_name\nADD column_name data_type [constraints];\n```\n\nFor example, let's say you have a table named `employees` and you want to add a new property called `department`:\n\n```sql\nALTER TABLE employees\nADD department VARCHAR(50);\n```\n\nThis will add a new column named `department` to the `employees` table of type VARCHAR with a maximum length of 50 characters.\n\nAfter adding the column, you might want to update the new column with appropriate values:\n\n```sql\nUPDATE employees\nSET department = 'IT';\n```\n\nThis is a simple example, and in a real-world scenario, you may need to perform more complex data transformations or provide default values for the new column. Always remember to handle data migration and integrity carefully when altering tables in a production environment."
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context_1",
+        "normalized_text": "The task concerns an existing column in SQL.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "how do I assign new property to an existing column in SQL?"
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "The intended goal is to assign a new property to the existing column.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "how do I assign new property to an existing column in SQL?"
+        ]
+      }
+    ],
+    "Verification": []
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "d75982eb85b0ed9eb34604b992da2ec466dad923a0eedfe7b3ff71d97c200c12",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_B/cases/CASE_188C69620856.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

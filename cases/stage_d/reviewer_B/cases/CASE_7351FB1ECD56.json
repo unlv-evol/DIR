@@ -1,0 +1,110 @@
+{
+  "case_id": "CASE_7351FB1ECD56",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee",
+    "pr_url": "https://github.com/dust-tt/dust/pull/508"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_b47f48499a2415f5b894c3da",
+      "family_label": "TypeScript exhaustive switch checking with an assertNever helper",
+      "artifact_refs": [
+        "GTC_000003_000432_000968_09ca7446101f26e5"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000003_000432_000968_09ca7446101f26e5",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "export function getProviderLogoPathForDataSource(\n  ds: DataSourceType\n): string | null {\n  const provider = ds.connectorProvider;\n\n  if (!provider) {\n    return null;\n  }\n\n  switch (provider) {\n    case \"notion\":\n      return `/static/notion_32x32.png`;\n\n    case \"slack\":\n      return `/static/slack_32x32.png`;\n\n    case \"github\":\n      return `/static/github_black_32x32.png`;\n\n    default:\n      return assertNever(provider);\n  }\n}\n\nfunction assertNever(value: never): never {\n    throw new Error(`Unexpected value '${value}'`);\n}\n",
+          "language": "typescript"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000003",
+    "target_prompt_turn_id": "turn_000002",
+    "boundary": "exclusive_before:turn_000003",
+    "tFG": "2023-06-05T08:19:36.723423+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000002",
+    "event_index": 2,
+    "role": "user",
+    "text": "I have the following code:\n```\nexport function getProviderLogoPathForDataSource(\n  ds: DataSourceType\n): string | null {\n  const provider = ds.connectorProvider;\n\n  if (!provider) {\n    return null;\n  }\n\n  switch (provider) {\n    case \"notion\":\n      return `/static/notion_32x32.png`;\n\n    case \"slack\":\n      return `/static/slack_32x32.png`;\n\n    case \"github\":\n      return `/static/github_black_32x32.png`;\n\n    default:\n      // eslint-disable-next-line @typescript-eslint/no-unused-vars\n      ((_provider: never) => {\n        // cannot happen\n        // this is to make sure we handle all cases\n      })(provider);\n      return null;\n  }\n}\n```\n\nI use this `never` case to make sure all enum values are handled. Is there a more idiomatic way to do this ?"
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000002",
+      "event_index": 2,
+      "role": "user",
+      "text": "I have the following code:\n```\nexport function getProviderLogoPathForDataSource(\n  ds: DataSourceType\n): string | null {\n  const provider = ds.connectorProvider;\n\n  if (!provider) {\n    return null;\n  }\n\n  switch (provider) {\n    case \"notion\":\n      return `/static/notion_32x32.png`;\n\n    case \"slack\":\n      return `/static/slack_32x32.png`;\n\n    case \"github\":\n      return `/static/github_black_32x32.png`;\n\n    default:\n      // eslint-disable-next-line @typescript-eslint/no-unused-vars\n      ((_provider: never) => {\n        // cannot happen\n        // this is to make sure we handle all cases\n      })(provider);\n      return null;\n  }\n}\n```\n\nI use this `never` case to make sure all enum values are handled. Is there a more idiomatic way to do this ?"
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "assistant",
+    "text": "The way you are handling this is generally correct and idiomatic. The `never` type is used to ensure that all cases are handled and that new cases aren't forgotten. The technique is called Exhaustiveness checking in TypeScript.\n\nHowever, instead of using an inline arrow function, you could use a helper function to assert exhaustiveness. This would improve readability and remove the necessity for eslint disabling:\n\n```typescript\nexport function getProviderLogoPathForDataSource(\n  ds: DataSourceType\n): string | null {\n  const provider = ds.connectorProvider;\n\n  if (!provider) {\n    return null;\n  }\n\n  switch (provider) {\n    case \"notion\":\n      return `/static/notion_32x32.png`;\n\n    case \"slack\":\n      return `/static/slack_32x32.png`;\n\n    case \"github\":\n      return `/static/github_black_32x32.png`;\n\n    default:\n      return assertNever(provider);\n  }\n}\n\nfunction assertNever(value: never): never {\n    throw new Error(`Unexpected value '${value}'`);\n}\n```\nIn the `assertNever` function, we are throwing an error if an unexpected value is encountered. This could be useful during development because it would crash your application at the source of the problem if you forget to add a case when extending your `provider`. Of course, the thrown error would be a problem in a production application, so you need to make sure that your switch is exhaustive during testing and before deployment."
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context_1",
+        "normalized_text": "The TypeScript function `getProviderLogoPathForDataSource(ds: DataSourceType): string | null` reads `ds.connectorProvider`, returns `null` when it is absent, maps the `notion`, `slack`, and `github` providers to static logo paths, and uses a `default` switch branch containing a `never`-typed callback before returning `null`.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "export function getProviderLogoPathForDataSource(\n  ds: DataSourceType\n): string | null {",
+          "const provider = ds.connectorProvider;\n\n  if (!provider) {\n    return null;\n  }",
+          "case \"notion\":\n      return `/static/notion_32x32.png`;\n\n    case \"slack\":\n      return `/static/slack_32x32.png`;\n\n    case \"github\":\n      return `/static/github_black_32x32.png`;",
+          "default:\n      // eslint-disable-next-line @typescript-eslint/no-unused-vars\n      ((_provider: never) => {\n        // cannot happen\n        // this is to make sure we handle all cases\n      })(provider);\n      return null;"
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "The user wants a more idiomatic TypeScript approach than the inline `never` callback used in the switch's default branch.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "I use this `never` case to make sure all enum values are handled. Is there a more idiomatic way to do this ?"
+        ]
+      }
+    ],
+    "Verification": [
+      {
+        "item_id": "verification_1",
+        "normalized_text": "The approach should ensure that all enum values are handled exhaustively.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "I use this `never` case to make sure all enum values are handled."
+        ]
+      }
+    ]
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "21e608b5f5ae00aea53e0bc76f9c411a6d1ce0d1165de25a7e3c9c4c76faa1de",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_B/cases/CASE_7351FB1ECD56.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "case_id": "CASE_34D14D6B0BB7",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/2bd66613-5dc1-427e-9277-fb45b317438a",
+    "pr_url": "https://github.com/pyspark-ai/pyspark-ai/pull/157"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_5e192cc9bfbff86a36032596",
+      "family_label": "Python LRU file cache class",
+      "artifact_refs": [
+        "GTC_000003_000088_002153_7be022cdf5590444"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000003_000088_002153_7be022cdf5590444",
+          "source_response_id": "turn_000003",
+          "artifact_type": "configuration_properties",
+          "content": "import os\nfrom collections import OrderedDict\n\nclass LRUFileCache:\n    def __init__(self, file_path: str, max_size: int):\n        self.file_path = file_path\n        self.max_size = max_size\n        self.current_size = 0\n        self.files = OrderedDict()  # {filename: size}\n\n        # initialize the file cache\n        for file in os.listdir(file_path):\n            file_full_path = os.path.join(file_path, file)\n            file_size = os.path.getsize(file_full_path)\n            self.current_size += file_size\n            self.files[file] = file_size\n\n    def _evict_files(self):\n        while self.current_size > self.max_size:\n            _, evicted_size = self.files.popitem(last=False)  # pop the least recently accessed item\n            self.current_size -= evicted_size\n\n    def read_file(self, filename: str) -> str:\n        file_full_path = os.path.join(self.file_path, filename)\n        if not os.path.exists(file_full_path):\n            raise ValueError(f\"{filename} doesn't exist!\")\n\n        with open(file_full_path, 'r') as f:\n            content = f.read()\n\n        # Move accessed file to the end to maintain LRU order\n        file_size = self.files.pop(filename)\n        self.files[filename] = file_size\n\n        return content\n\n    def create_file(self, filename: str, content: str):\n        file_full_path = os.path.join(self.file_path, filename)\n        with open(file_full_path, 'w') as f:\n            f.write(content)\n\n        file_size = os.path.getsize(file_full_path)\n        self.current_size += file_size\n        self.files[filename] = file_size\n\n        self._evict_files()\n\n    def delete_file(self, filename: str):\n        if filename in self.files:\n            file_full_path = os.path.join(self.file_path, filename)\n            os.remove(file_full_path)\n            size = self.files.pop(filename)\n            self.current_size -= size\n\n# Usage\nfile_cache = LRUFileCache(\"path/to/files\", 5000)  # max_size in bytes, for example: 5 KB\nfile_cache.create_file(\"sample.txt\", \"Hello World\")\ncontent = file_cache.read_file(\"sample.txt\")\n",
+          "language": "python"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000003",
+    "target_prompt_turn_id": "turn_000002",
+    "boundary": "exclusive_before:turn_000003",
+    "tFG": "2023-10-09T17:53:50.509201+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000002",
+    "event_index": 2,
+    "role": "user",
+    "text": "help me write a python class. It takes a file_path and max_size for init.\nthere is APIs to read or create new files under the file_path. When the total size exceeds max_size, evict the least recent accessed file (LRU policy)."
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000002",
+      "event_index": 2,
+      "role": "user",
+      "text": "help me write a python class. It takes a file_path and max_size for init.\nthere is APIs to read or create new files under the file_path. When the total size exceeds max_size, evict the least recent accessed file (LRU policy)."
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "assistant",
+    "text": "Certainly! Below is a Python class that fulfills the described requirements:\n\n```python\nimport os\nfrom collections import OrderedDict\n\nclass LRUFileCache:\n    def __init__(self, file_path: str, max_size: int):\n        self.file_path = file_path\n        self.max_size = max_size\n        self.current_size = 0\n        self.files = OrderedDict()  # {filename: size}\n\n        # initialize the file cache\n        for file in os.listdir(file_path):\n            file_full_path = os.path.join(file_path, file)\n            file_size = os.path.getsize(file_full_path)\n            self.current_size += file_size\n            self.files[file] = file_size\n\n    def _evict_files(self):\n        while self.current_size > self.max_size:\n            _, evicted_size = self.files.popitem(last=False)  # pop the least recently accessed item\n            self.current_size -= evicted_size\n\n    def read_file(self, filename: str) -> str:\n        file_full_path = os.path.join(self.file_path, filename)\n        if not os.path.exists(file_full_path):\n            raise ValueError(f\"{filename} doesn't exist!\")\n\n        with open(file_full_path, 'r') as f:\n            content = f.read()\n\n        # Move accessed file to the end to maintain LRU order\n        file_size = self.files.pop(filename)\n        self.files[filename] = file_size\n\n        return content\n\n    def create_file(self, filename: str, content: str):\n        file_full_path = os.path.join(self.file_path, filename)\n        with open(file_full_path, 'w') as f:\n            f.write(content)\n\n        file_size = os.path.getsize(file_full_path)\n        self.current_size += file_size\n        self.files[filename] = file_size\n\n        self._evict_files()\n\n    def delete_file(self, filename: str):\n        if filename in self.files:\n            file_full_path = os.path.join(self.file_path, filename)\n            os.remove(file_full_path)\n            size = self.files.pop(filename)\n            self.current_size -= size\n\n# Usage\nfile_cache = LRUFileCache(\"path/to/files\", 5000)  # max_size in bytes, for example: 5 KB\nfile_cache.create_file(\"sample.txt\", \"Hello World\")\ncontent = file_cache.read_file(\"sample.txt\")\n```\n\nHere's how the class works:\n\n- It uses an `OrderedDict` to keep track of the files and their sizes. When a file is accessed (read or created), it is moved to the end of the `OrderedDict`. The least recently accessed file is always at the beginning.\n  \n- When the total size exceeds `max_size`, the `_evict_files` method is called, which keeps evicting the least recently accessed files until the current size is within limits.\n\n- The `read_file` method lets you read a file's content. After reading, the file is considered accessed and is moved to the end of the `OrderedDict`.\n  \n- The `create_file` method lets you create (or overwrite) a file with the specified content. After creation, the file is considered accessed.\n\n- The `delete_file` method lets you delete a file from the directory and cache.\n\nNote: Ensure to handle possible exceptions when interacting with file operations in a real-world use case. This example is kept simple for clarity."
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context_1",
+        "normalized_text": "The requested implementation is a Python class that manages files under a specified file path.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "help me write a python class.",
+          "there is APIs to read or create new files under the file_path."
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "The class initializer takes `file_path` and `max_size`.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "It takes a file_path and max_size for init."
+        ]
+      },
+      {
+        "item_id": "specificity_2",
+        "normalized_text": "The class provides APIs to read files or create new files under `file_path`.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "there is APIs to read or create new files under the file_path."
+        ]
+      },
+      {
+        "item_id": "specificity_3",
+        "normalized_text": "The managed capacity is based on the total file size, with `max_size` as the threshold.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "When the total size exceeds max_size"
+        ]
+      },
+      {
+        "item_id": "specificity_4",
+        "normalized_text": "Eviction uses a least-recently-accessed-file (LRU) policy.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "evict the least recent accessed file (LRU policy)."
+        ]
+      }
+    ],
+    "Verification": [
+      {
+        "item_id": "verification_1",
+        "normalized_text": "When the total size exceeds `max_size`, the least recently accessed file is evicted.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "When the total size exceeds max_size, evict the least recent accessed file (LRU policy)."
+        ]
+      }
+    ]
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "a74771e26609d67f2b738ab7807cbcf45f6468fc1dc85fa0ada6d27ce0f30d31",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_B/cases/CASE_34D14D6B0BB7.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

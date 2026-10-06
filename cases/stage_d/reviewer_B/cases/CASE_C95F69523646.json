@@ -1,0 +1,106 @@
+{
+  "case_id": "CASE_C95F69523646",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/9437d9ca-6365-4070-b11b-9c31cede7a2a",
+    "pr_url": "https://github.com/codeigniter4/CodeIgniter4/pull/8230"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_8f245d63a3f17ae5d68c261e",
+      "family_label": "PHP User repository-pattern implementation and usage example",
+      "artifact_refs": [
+        "GTC_000003_000780_002714_f95de1f971e15109"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000003_000780_002714_f95de1f971e15109",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "// User model representing a user entity\nclass User {\n    public $id;\n    public $username;\n    public $email;\n\n    // Additional properties and methods can be added as needed\n}\n\n// UserRepository interface defining the contract for data access\ninterface UserRepositoryInterface {\n    public function getById($id);\n    public function getByUsername($username);\n    public function save(User $user);\n    public function update(User $user);\n    public function delete(User $user);\n}\n\n// UserRepository implementing the Repository Pattern\nclass UserRepository implements UserRepositoryInterface {\n    private $db;\n\n    public function __construct(PDO $db) {\n        $this->db = $db;\n    }\n\n    public function getById($id) {\n        // Logic to fetch a user by ID from the database\n    }\n\n    public function getByUsername($username) {\n        // Logic to fetch a user by username from the database\n    }\n\n    public function save(User $user) {\n        // Logic to save a new user to the database\n    }\n\n    public function update(User $user) {\n        // Logic to update an existing user in the database\n    }\n\n    public function delete(User $user) {\n        // Logic to delete a user from the database\n    }\n}\n\n// Example of how the UserRepository might be used in your application\n$db = new PDO('mysql:host=localhost;dbname=mydatabase', 'username', 'password');\n$userRepository = new UserRepository($db);\n\n// Example of fetching a user by ID\n$user = $userRepository->getById(1);\n\n// Example of saving a new user\n$newUser = new User();\n$newUser->username = 'john_doe';\n$newUser->email = 'john@example.com';\n$userRepository->save($newUser);\n\n// Example of updating an existing user\n$userToUpdate = $userRepository->getById(2);\n$userToUpdate->email = 'updated_email@example.com';\n$userRepository->update($userToUpdate);\n\n// Example of deleting a user\n$userToDelete = $userRepository->getById(3);\n$userRepository->delete($userToDelete);\n",
+          "language": "php"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000003",
+    "target_prompt_turn_id": "turn_000002",
+    "boundary": "exclusive_before:turn_000003",
+    "tFG": "2023-11-24T00:47:52.143178+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000002",
+    "event_index": 2,
+    "role": "user",
+    "text": "You are an expert in programming and PHP.\nWhat is \"Repository Pattern\" in the context of PHP development?\nAnd can you show simple sample code of it?"
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000002",
+      "event_index": 2,
+      "role": "user",
+      "text": "You are an expert in programming and PHP.\nWhat is \"Repository Pattern\" in the context of PHP development?\nAnd can you show simple sample code of it?"
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "assistant",
+    "text": "Certainly! The Repository Pattern is a design pattern commonly used in software development to abstract the data access logic from the rest of the application. In the context of PHP development, the Repository Pattern is often applied to manage database interactions.\n\nThe main idea behind the Repository Pattern is to create a layer of abstraction that sits between the application's business logic and the data source (usually a database). This layer, known as the repository, provides a set of methods for performing CRUD (Create, Read, Update, Delete) operations on the data without exposing the underlying database details to the rest of the application.\n\nHere's a simple example of how you might implement a basic UserRepository in PHP using the Repository Pattern:\n\n```php\n// User model representing a user entity\nclass User {\n    public $id;\n    public $username;\n    public $email;\n\n    // Additional properties and methods can be added as needed\n}\n\n// UserRepository interface defining the contract for data access\ninterface UserRepositoryInterface {\n    public function getById($id);\n    public function getByUsername($username);\n    public function save(User $user);\n    public function update(User $user);\n    public function delete(User $user);\n}\n\n// UserRepository implementing the Repository Pattern\nclass UserRepository implements UserRepositoryInterface {\n    private $db;\n\n    public function __construct(PDO $db) {\n        $this->db = $db;\n    }\n\n    public function getById($id) {\n        // Logic to fetch a user by ID from the database\n    }\n\n    public function getByUsername($username) {\n        // Logic to fetch a user by username from the database\n    }\n\n    public function save(User $user) {\n        // Logic to save a new user to the database\n    }\n\n    public function update(User $user) {\n        // Logic to update an existing user in the database\n    }\n\n    public function delete(User $user) {\n        // Logic to delete a user from the database\n    }\n}\n\n// Example of how the UserRepository might be used in your application\n$db = new PDO('mysql:host=localhost;dbname=mydatabase', 'username', 'password');\n$userRepository = new UserRepository($db);\n\n// Example of fetching a user by ID\n$user = $userRepository->getById(1);\n\n// Example of saving a new user\n$newUser = new User();\n$newUser->username = 'john_doe';\n$newUser->email = 'john@example.com';\n$userRepository->save($newUser);\n\n// Example of updating an existing user\n$userToUpdate = $userRepository->getById(2);\n$userToUpdate->email = 'updated_email@example.com';\n$userRepository->update($userToUpdate);\n\n// Example of deleting a user\n$userToDelete = $userRepository->getById(3);\n$userRepository->delete($userToDelete);\n```\n\nIn this example, the `UserRepository` class provides methods for fetching users by ID or username, saving new users, updating existing users, and deleting users. The actual database interactions are encapsulated within the repository, allowing the rest of the application to work with user objects without having to know the details of how the data is stored or retrieved from the database."
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context_1",
+        "normalized_text": "The topic is the Repository Pattern in the context of PHP development.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "What is \"Repository Pattern\" in the context of PHP development?"
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "Explain what the Repository Pattern is in PHP development.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "What is \"Repository Pattern\" in the context of PHP development?"
+        ]
+      },
+      {
+        "item_id": "specificity_2",
+        "normalized_text": "Provide simple sample code demonstrating the Repository Pattern.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "And can you show simple sample code of it?"
+        ]
+      }
+    ],
+    "Verification": []
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "9f494eb386a5e01ab677ca8c3db6229d7524f5479d338080ccecac5aed027d2b",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_B/cases/CASE_C95F69523646.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

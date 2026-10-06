@@ -1,0 +1,115 @@
+{
+  "case_id": "CASE_8A756AAC10B8",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/e49e67a1-6caf-4448-abca-474b10e34acc",
+    "pr_url": "https://github.com/itpplasma/libneo/pull/21"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_b599612c546b96bdd65521f0",
+      "family_label": "Minimal Python package and pytest test example",
+      "artifact_refs": [
+        "GTC_000003_000187_000289_795225d70ff3d7af",
+        "GTC_000003_000368_000416_dd0905105bb9ab4f",
+        "GTC_000003_000558_000712_a10bb4c7a29032d1",
+        "GTC_000003_001370_001377_8004a972c3d5c274"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000003_000187_000289_795225d70ff3d7af",
+          "source_response_id": "turn_000003",
+          "artifact_type": "unclassified_technical",
+          "content": "my_package/\n    ├── my_module.py\n    ├── tests/\n        ├── __init__.py\n        └── test_my_module.py\n"
+        },
+        {
+          "artifact_id": "GTC_000003_000368_000416_dd0905105bb9ab4f",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "# my_module.py\n\ndef add(a, b):\n    return a + b\n",
+          "language": "python"
+        },
+        {
+          "artifact_id": "GTC_000003_000558_000712_a10bb4c7a29032d1",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "# test_my_module.py\n\nfrom my_package.my_module import add\n\ndef test_add():\n    assert add(2, 3) == 5\n    assert add(0, 0) == 0\n    assert add(-1, 1) == 0\n",
+          "language": "python"
+        },
+        {
+          "artifact_id": "GTC_000003_001370_001377_8004a972c3d5c274",
+          "source_response_id": "turn_000003",
+          "artifact_type": "unclassified_technical",
+          "content": "pytest\n"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000003",
+    "target_prompt_turn_id": "turn_000002",
+    "boundary": "exclusive_before:turn_000003",
+    "tFG": "2024-01-24T12:29:52.633607+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000002",
+    "event_index": 2,
+    "role": "user",
+    "text": "minimal example for a pytest test in the directory structure of a python package"
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000002",
+      "event_index": 2,
+      "role": "user",
+      "text": "minimal example for a pytest test in the directory structure of a python package"
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "assistant",
+    "text": "Sure, here's a minimal example of a pytest test within the directory structure of a Python package:\n\nLet's assume you have the following directory structure for your Python package:\n\n```\nmy_package/\n    ├── my_module.py\n    ├── tests/\n        ├── __init__.py\n        └── test_my_module.py\n```\n\nInside the `my_module.py`, you have a simple function to test:\n\n```python\n# my_module.py\n\ndef add(a, b):\n    return a + b\n```\n\nNow, you want to write a pytest test for this `add` function. Create a `test_my_module.py` file inside the `tests` directory:\n\n```python\n# test_my_module.py\n\nfrom my_package.my_module import add\n\ndef test_add():\n    assert add(2, 3) == 5\n    assert add(0, 0) == 0\n    assert add(-1, 1) == 0\n```\n\nHere's what this example does:\n\n1. The test file is named `test_my_module.py`, and it's located within the `tests` directory.\n2. We import the `add` function from `my_package.my_module`, assuming that your package is properly structured and that `my_module.py` contains the `add` function.\n3. We define a test function called `test_add`, where we use assertions to check if the `add` function behaves as expected for various inputs.\n\nTo run the tests using pytest, make sure you have pytest installed (you can install it using `pip install pytest`). Then, from the root directory of your package (where the `my_package` directory is located), run:\n\n```\npytest\n```\n\nThis command will discover and run all the tests in the `tests` directory and its subdirectories. In this case, it will execute the `test_add` function in `test_my_module.py` and report the results."
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context_1",
+        "normalized_text": "The task concerns a pytest test within the directory structure of a Python package.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "minimal example for a pytest test in the directory structure of a python package"
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "Provide a minimal example.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "minimal example for a pytest test in the directory structure of a python package"
+        ]
+      }
+    ],
+    "Verification": []
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "1e5a700197e6a3dfd7769a3a95093f939506ae394fe39c929adf9e9447f65422",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_A/cases/CASE_8A756AAC10B8.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

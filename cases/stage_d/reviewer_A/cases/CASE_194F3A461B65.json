@@ -1,0 +1,134 @@
+{
+  "case_id": "CASE_194F3A461B65",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/88524905-a324-4a6c-b54e-96d26ad06def",
+    "pr_url": "https://github.com/VOICEVOX/voicevox/pull/1836"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_621b8f1c8cc890a39cedc23f",
+      "family_label": "TypeScript refactoring for retrieving the latest undo-command timestamp",
+      "artifact_refs": [
+        "GTC_000003_000090_000602_342239ace5773bc6"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000003_000090_000602_342239ace5773bc6",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "function getLastCommandTime(state: any): number | null {\n  const getLastTime = (commands: any[]): number | null => {\n    const lastCommand = commands[commands.length - 1];\n    return lastCommand ? lastCommand.unixMillisec : null;\n  };\n\n  const lastCommandTime = getLastTime(state.undoCommands);\n  const lastSongCommandTime = getLastTime(state.undoSongCommands);\n\n  return lastCommandTime && lastSongCommandTime\n    ? Math.max(lastCommandTime, lastSongCommandTime)\n    : lastCommandTime || lastSongCommandTime;\n}\n",
+          "language": "typescript"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000003",
+    "target_prompt_turn_id": "turn_000002",
+    "boundary": "exclusive_before:turn_000003",
+    "tFG": "2024-02-18T18:17:35.190572+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000002",
+    "event_index": 2,
+    "role": "user",
+    "text": "こちらのコードを、シンプルながら読みやすいコードにリファクタリングしてください。\n\n      let lastCommandTime: number | null = null;\n      let lastSongCommandTime: number | null = null;\n      if (state.undoCommands.length !== 0) {\n        lastCommandTime =\n          state.undoCommands[state.undoCommands.length - 1].unixMillisec;\n      }\n      if (state.undoSongCommands.length !== 0) {\n        lastSongCommandTime =\n          state.undoSongCommands[state.undoSongCommands.length - 1]\n            .unixMillisec;\n      }\n      if (lastCommandTime != null && lastSongCommandTime != null) {\n        return Math.max(lastCommandTime, lastSongCommandTime);\n      } else if (lastCommandTime != null) {\n        return lastCommandTime;\n      } else if (lastSongCommandTime != null) {\n        return lastSongCommandTime;\n      }\n      return null;"
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000002",
+      "event_index": 2,
+      "role": "user",
+      "text": "こちらのコードを、シンプルながら読みやすいコードにリファクタリングしてください。\n\n      let lastCommandTime: number | null = null;\n      let lastSongCommandTime: number | null = null;\n      if (state.undoCommands.length !== 0) {\n        lastCommandTime =\n          state.undoCommands[state.undoCommands.length - 1].unixMillisec;\n      }\n      if (state.undoSongCommands.length !== 0) {\n        lastSongCommandTime =\n          state.undoSongCommands[state.undoSongCommands.length - 1]\n            .unixMillisec;\n      }\n      if (lastCommandTime != null && lastSongCommandTime != null) {\n        return Math.max(lastCommandTime, lastSongCommandTime);\n      } else if (lastCommandTime != null) {\n        return lastCommandTime;\n      } else if (lastSongCommandTime != null) {\n        return lastSongCommandTime;\n      }\n      return null;"
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "assistant",
+    "text": "以下のコードは、指定されたコードをよりシンプルかつ読みやすくリファクタリングしたものです。ここでは、繰り返しを避け、コードの意図を明確にしています。\n\n```typescript\nfunction getLastCommandTime(state: any): number | null {\n  const getLastTime = (commands: any[]): number | null => {\n    const lastCommand = commands[commands.length - 1];\n    return lastCommand ? lastCommand.unixMillisec : null;\n  };\n\n  const lastCommandTime = getLastTime(state.undoCommands);\n  const lastSongCommandTime = getLastTime(state.undoSongCommands);\n\n  return lastCommandTime && lastSongCommandTime\n    ? Math.max(lastCommandTime, lastSongCommandTime)\n    : lastCommandTime || lastSongCommandTime;\n}\n```\n\nこのリファクタリングにより、次の改善が行われています：\n\n1. **関数の導入**：コードの重複を避けるために、共通のロジックを扱う`getLastTime`関数を導入しました。これにより、`undoCommands`と`undoSongCommands`の最後のコマンド時間を取得する処理を簡素化しています。\n\n2. **条件式の簡素化**：最後のコマンド時間と最後の曲コマンド時間の比較に三項演算子を使用し、コードの可読性を高めています。また、`||`演算子を用いて、どちらかの値が`null`ではない場合にその値を返すようにしています。\n\nこのリファクタリングにより、コードはより簡潔で読みやすくなり、同じ機能を保持しながらメンテナンスしやすくなります。"
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context-1",
+        "normalized_text": "対象は、`state.undoCommands` と `state.undoSongCommands` の各末尾要素から `unixMillisec` を取得するコードである。",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "state.undoCommands[state.undoCommands.length - 1].unixMillisec",
+          "state.undoSongCommands[state.undoSongCommands.length - 1]\n            .unixMillisec"
+        ]
+      },
+      {
+        "item_id": "context-2",
+        "normalized_text": "既存コードは、両方の時刻が存在する場合は `Math.max` の結果を返し、片方だけ存在する場合はその値を返し、どちらも存在しない場合は `null` を返す。",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "if (lastCommandTime != null && lastSongCommandTime != null) {\n        return Math.max(lastCommandTime, lastSongCommandTime);\n      } else if (lastCommandTime != null) {\n        return lastCommandTime;\n      } else if (lastSongCommandTime != null) {\n        return lastSongCommandTime;\n      }\n      return null;"
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity-1",
+        "normalized_text": "提示されたコードをリファクタリングする。",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "こちらのコードを、シンプルながら読みやすいコードにリファクタリングしてください。"
+        ]
+      },
+      {
+        "item_id": "specificity-2",
+        "normalized_text": "リファクタリング後のコードは、シンプルでありながら読みやすいものとする。",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "シンプルながら読みやすいコードにリファクタリングしてください。"
+        ]
+      }
+    ],
+    "Verification": [
+      {
+        "item_id": "verification-1",
+        "normalized_text": "結果がシンプルかつ読みやすいコードになっていること。",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "シンプルながら読みやすいコードにリファクタリングしてください。"
+        ]
+      }
+    ]
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "5fb79ea655178bbafc1144c2b6e8248acf579abebad1784a90012b9d2c85a7a4",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_A/cases/CASE_194F3A461B65.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "case_id": "CASE_50556C8D545F",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/ea95f20d-b69c-47e3-96cc-5f7872077d53",
+    "pr_url": "https://github.com/VOICEVOX/voicevox_core/pull/655"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_d702475ae7d87b961889d97a",
+      "family_label": "Bash check for Git diff presence using git diff --quiet",
+      "artifact_refs": [
+        "GTC_000003_000285_000354_3e437587a4b0a2a1"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000003_000285_000354_3e437587a4b0a2a1",
+          "source_response_id": "turn_000003",
+          "artifact_type": "shell_sequence",
+          "content": "if git diff --quiet; then\n  echo \"差分はありません\"\nelse\n  echo \"差分があります\"\nfi\n",
+          "language": "bash"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000003",
+    "target_prompt_turn_id": "turn_000002",
+    "boundary": "exclusive_before:turn_000003",
+    "tFG": "2023-10-23T20:10:13.700623+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000002",
+    "event_index": 2,
+    "role": "user",
+    "text": "git diffは違いがあった場合のステータスコードは何でしょうか"
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000002",
+      "event_index": 2,
+      "role": "user",
+      "text": "git diffは違いがあった場合のステータスコードは何でしょうか"
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "assistant",
+    "text": "`git diff`コマンドを実行したときの終了ステータスコードは、内容の差分そのものには基づいていません。通常、`git diff`は正常に終了した場合にステータスコード`0`を返します。差分があった場合もなかった場合も、ステータスコードは`0`です。\n\nもし差分があるかどうかを確認したい場合、終了ステータスコードを利用するのではなく、`git diff`の出力内容をチェックする方法が考えられます。たとえば、出力が空でない場合には差分があると判断できます。bashシェルのスクリプトで差分の有無を確認する場合は、以下のような方法が考えられます：\n\n```bash\nif git diff --quiet; then\n  echo \"差分はありません\"\nelse\n  echo \"差分があります\"\nfi\n```\n\n上記のスクリプトでは、`--quiet`オプションを使用して`git diff`を実行します。このオプションを指定すると、差分がある場合に非ゼロのステータスコードを返します。これにより、差分の有無をシェルスクリプト内で簡単に確認できます。"
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context_1",
+        "normalized_text": "対象のコマンドは `git diff` であり、差分がある場合について質問している。",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "git diffは違いがあった場合のステータスコードは何でしょうか"
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "`git diff` で差分があった場合のステータスコードを知りたい。",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "git diffは違いがあった場合のステータスコードは何でしょうか"
+        ]
+      }
+    ],
+    "Verification": []
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "87b32bc1584cab422fcdae4c6bd9374d02203ac58f3982b3a1ee0b64ee71bcdb",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_B/cases/CASE_50556C8D545F.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "case_id": "CASE_B9E914A3762C",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/b85618ff-b1c3-4c28-b36f-44d35556216c",
+    "pr_url": "https://github.com/ory/elements/pull/171"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_0937c6914e23980ce1600bf2",
+      "family_label": "HTML form and JavaScript submit handler that disables the submit button",
+      "artifact_refs": [
+        "GTC_000003_000252_000390_75a4aada5ddf12a1",
+        "GTC_000003_000633_000945_4d67890362e3c6ea"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000003_000252_000390_75a4aada5ddf12a1",
+          "source_response_id": "turn_000003",
+          "artifact_type": "structured_xml_markup",
+          "content": "    <form id=\"myForm\">\n        <!-- Your form inputs here -->\n        <button type=\"submit\" id=\"submitButton\">Submit</button>\n    </form>\n",
+          "language": "html"
+        },
+        {
+          "artifact_id": "GTC_000003_000633_000945_4d67890362e3c6ea",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "    document.getElementById('myForm').addEventListener('submit', function(event) {\n        // Disable the submit button\n        document.getElementById('submitButton').disabled = true;\n\n        // Optional: Prevent form from submitting if you need to do something else\n        // event.preventDefault();\n    });\n",
+          "language": "javascript"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000003",
+    "target_prompt_turn_id": "turn_000002",
+    "boundary": "exclusive_before:turn_000003",
+    "tFG": "2023-12-21T13:45:06.739286+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000002",
+    "event_index": 2,
+    "role": "user",
+    "text": "How do i disable a submit button in html via javascript after the form has been submitted?"
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000002",
+      "event_index": 2,
+      "role": "user",
+      "text": "How do i disable a submit button in html via javascript after the form has been submitted?"
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "assistant",
+    "text": "To disable a submit button in HTML using JavaScript after the form has been submitted, you can follow these steps:\n\n1. **HTML Setup**: First, ensure your submit button has an identifiable attribute, like an `id` or a `class`. For example:\n\n    ```html\n    <form id=\"myForm\">\n        <!-- Your form inputs here -->\n        <button type=\"submit\" id=\"submitButton\">Submit</button>\n    </form>\n    ```\n\n2. **JavaScript Logic**: You need to add an event listener to your form that triggers when the form is submitted. Inside this event, you can disable the submit button.\n\n    Here's an example using plain JavaScript:\n\n    ```javascript\n    document.getElementById('myForm').addEventListener('submit', function(event) {\n        // Disable the submit button\n        document.getElementById('submitButton').disabled = true;\n\n        // Optional: Prevent form from submitting if you need to do something else\n        // event.preventDefault();\n    });\n    ```\n\n    This script listens for the `submit` event on the form and, when triggered, disables the submit button.\n\n3. **Placement of JavaScript**: Make sure your JavaScript is placed after the HTML form in your document, or run it after the document has loaded. This is important to ensure that the elements exist in the DOM when your script tries to access them.\n\nBy following these steps, the submit button will be disabled immediately when the form is submitted, preventing multiple submissions and indicating to the user that their submission is being processed."
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context_1",
+        "normalized_text": "The task concerns an HTML form submit button controlled via JavaScript.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "How do i disable a submit button in html via javascript after the form has been submitted?"
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "Disable the submit button after the form has been submitted.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "How do i disable a submit button in html via javascript after the form has been submitted?"
+        ]
+      }
+    ],
+    "Verification": [
+      {
+        "item_id": "verification_1",
+        "normalized_text": "After form submission, the submit button is disabled.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "How do i disable a submit button in html via javascript after the form has been submitted?"
+        ]
+      }
+    ]
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "5203a4a9bb45453e0e129ceb04f43ae4c7d5c148e3da50d003114ee3093e9321",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_A/cases/CASE_B9E914A3762C.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

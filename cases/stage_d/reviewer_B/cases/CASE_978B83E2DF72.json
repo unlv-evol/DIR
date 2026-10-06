@@ -1,0 +1,152 @@
+{
+  "case_id": "CASE_978B83E2DF72",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/f7b28f24-d71f-4502-9fa9-0b79b0e7cc20",
+    "pr_url": "https://github.com/BitBoxSwiss/bitbox-wallet-app/pull/2368"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_fde7d182bef24d1d50cb0245",
+      "family_label": "One-time LiveData authentication event wrapper and observer",
+      "artifact_refs": [
+        "GTC_000004_000465_000933_46a0aca90becfa67",
+        "GTC_000004_001026_001322_e03de9908c9470fc",
+        "GTC_000004_001429_001837_d662819b422a5a15"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000004_000465_000933_46a0aca90becfa67",
+          "source_response_id": "turn_000004",
+          "artifact_type": "source_code",
+          "content": "   public class Event<T> {\n       private T content;\n       private boolean hasBeenHandled = false;\n\n       public Event(T content) {\n           this.content = content;\n       }\n\n       public T getContentIfNotHandled() {\n           if (hasBeenHandled) {\n               return null;\n           } else {\n               hasBeenHandled = true;\n               return content;\n           }\n       }\n\n       public T peekContent() {\n           return content;\n       }\n   }\n",
+          "language": "java"
+        },
+        {
+          "artifact_id": "GTC_000004_001026_001322_e03de9908c9470fc",
+          "source_response_id": "turn_000004",
+          "artifact_type": "source_code",
+          "content": "   private MutableLiveData<Event<Boolean>> requestAuth = new MutableLiveData<>();\n\n   public MutableLiveData<Event<Boolean>> getRequestAuth() {\n       return requestAuth;\n   }\n\n   public void setRequestAuth(Boolean requestAuth) {\n       this.requestAuth.postValue(new Event<>(requestAuth));\n   }\n",
+          "language": "java"
+        },
+        {
+          "artifact_id": "GTC_000004_001429_001837_d662819b422a5a15",
+          "source_response_id": "turn_000004",
+          "artifact_type": "source_code",
+          "content": "   goViewModel.getRequestAuth().observe(this, new Observer<Event<Boolean>>() {\n       @Override\n       public void onChanged(Event<Boolean> requestAuthEvent) {\n           Boolean requestAuth = requestAuthEvent.getContentIfNotHandled();\n           if (requestAuth != null && requestAuth) {\n               Util.log(\"Requested Auth: \" + requestAuth);\n               // do something\n           }\n       }\n   });\n",
+          "language": "java"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000004",
+    "target_prompt_turn_id": "turn_000003",
+    "boundary": "exclusive_before:turn_000004",
+    "tFG": "2023-11-23T04:34:55.099208+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "user",
+    "text": "MainActivity:\n```\n\n        goViewModel.getRequestAuth().observe(this, new Observer<Boolean>() {\n            @Override\n            public void onChanged(Boolean requestAuth) {\n                Util.log(\"requested Auth: \" + requestAuth);\n                if (requestAuth) {\n                    goViewModel.setRequestAuth(false);\n                    // do something\n                }\n            }\n        });\n\n```\n\nin GoViewModel\n\n```\nprivate MutableLiveData<Boolean> requestAuth = new MutableLiveData<>();\n\n    public MutableLiveData<Boolean> getRequestAuth() {\n        return requestAuth;\n    }\n\n    public void setRequestAuth(Boolean requestAuth) {\n        this.requestAuth.postValue(requestAuth);\n    }\n\n```\n\nthis seems to be a hack to trigger a callback when authentication is requested. what is the correct way of achieving the same?"
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000003",
+      "event_index": 3,
+      "role": "user",
+      "text": "MainActivity:\n```\n\n        goViewModel.getRequestAuth().observe(this, new Observer<Boolean>() {\n            @Override\n            public void onChanged(Boolean requestAuth) {\n                Util.log(\"requested Auth: \" + requestAuth);\n                if (requestAuth) {\n                    goViewModel.setRequestAuth(false);\n                    // do something\n                }\n            }\n        });\n\n```\n\nin GoViewModel\n\n```\nprivate MutableLiveData<Boolean> requestAuth = new MutableLiveData<>();\n\n    public MutableLiveData<Boolean> getRequestAuth() {\n        return requestAuth;\n    }\n\n    public void setRequestAuth(Boolean requestAuth) {\n        this.requestAuth.postValue(requestAuth);\n    }\n\n```\n\nthis seems to be a hack to trigger a callback when authentication is requested. what is the correct way of achieving the same?"
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000004",
+    "event_index": 4,
+    "role": "assistant",
+    "text": "Right, this code uses a `MutableLiveData<Boolean>` in `GoViewModel` to trigger a callback in `MainActivity` when authentication is needed. It's a bit hacky since it uses a boolean flag for triggering. A cleaner approach is to use a more event-driven pattern. Here's a way to do it:\n\n1. **Define an Event Wrapper:**\n   Create a generic `Event` class to wrap around your data. This helps in handling one-time events like navigation or showing a Snackbar.\n\n   ```java\n   public class Event<T> {\n       private T content;\n       private boolean hasBeenHandled = false;\n\n       public Event(T content) {\n           this.content = content;\n       }\n\n       public T getContentIfNotHandled() {\n           if (hasBeenHandled) {\n               return null;\n           } else {\n               hasBeenHandled = true;\n               return content;\n           }\n       }\n\n       public T peekContent() {\n           return content;\n       }\n   }\n   ```\n\n2. **Update ViewModel:**\n   Change `requestAuth` to use `Event` wrapper.\n\n   ```java\n   private MutableLiveData<Event<Boolean>> requestAuth = new MutableLiveData<>();\n\n   public MutableLiveData<Event<Boolean>> getRequestAuth() {\n       return requestAuth;\n   }\n\n   public void setRequestAuth(Boolean requestAuth) {\n       this.requestAuth.postValue(new Event<>(requestAuth));\n   }\n   ```\n\n3. **Update Observer in Activity:**\n   Modify the observer to handle the `Event` type.\n\n   ```java\n   goViewModel.getRequestAuth().observe(this, new Observer<Event<Boolean>>() {\n       @Override\n       public void onChanged(Event<Boolean> requestAuthEvent) {\n           Boolean requestAuth = requestAuthEvent.getContentIfNotHandled();\n           if (requestAuth != null && requestAuth) {\n               Util.log(\"Requested Auth: \" + requestAuth);\n               // do something\n           }\n       }\n   });\n   ```\n\nThis approach ensures that the `requestAuth` event is only handled once and avoids the potential issue of being triggered multiple times due to configuration changes (like device rotation). It's more in line with the event-driven nature of LiveData."
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context_1",
+        "normalized_text": "MainActivity observes `goViewModel.getRequestAuth()` and, when the observed Boolean is true, logs the request, resets it to false, and performs an authentication-related action.",
+        "source_turn_ids": [
+          "turn_000003"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "goViewModel.getRequestAuth().observe(this, new Observer<Boolean>() {",
+          "if (requestAuth) {\n                    goViewModel.setRequestAuth(false);\n                    // do something\n                }"
+        ]
+      },
+      {
+        "item_id": "context_2",
+        "normalized_text": "`GoViewModel` stores the authentication-request signal in a `MutableLiveData<Boolean>`, exposes it through `getRequestAuth()`, and updates it asynchronously with `postValue`.",
+        "source_turn_ids": [
+          "turn_000003"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "private MutableLiveData<Boolean> requestAuth = new MutableLiveData<>();",
+          "public MutableLiveData<Boolean> getRequestAuth() {\n        return requestAuth;\n    }",
+          "public void setRequestAuth(Boolean requestAuth) {\n        this.requestAuth.postValue(requestAuth);\n    }"
+        ]
+      },
+      {
+        "item_id": "context_3",
+        "normalized_text": "The user characterizes the Boolean LiveData/reset pattern as a hack used to trigger a callback when authentication is requested.",
+        "source_turn_ids": [
+          "turn_000003"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "this seems to be a hack to trigger a callback when authentication is requested."
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "The requested solution is the correct way to trigger a callback when authentication is requested while achieving the same purpose as the existing Boolean LiveData/reset pattern.",
+        "source_turn_ids": [
+          "turn_000003"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "this seems to be a hack to trigger a callback when authentication is requested. what is the correct way of achieving the same?"
+        ]
+      }
+    ],
+    "Verification": [
+      {
+        "item_id": "verification_1",
+        "normalized_text": "The replacement should trigger the callback when authentication is requested and achieve the same behavior as the current mechanism.",
+        "source_turn_ids": [
+          "turn_000003"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "this seems to be a hack to trigger a callback when authentication is requested. what is the correct way of achieving the same?"
+        ]
+      }
+    ]
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "7d34b3b7eefece5c8623ad03b405fe5e1092427c32e96e61ad3228d34b42481f",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_B/cases/CASE_978B83E2DF72.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

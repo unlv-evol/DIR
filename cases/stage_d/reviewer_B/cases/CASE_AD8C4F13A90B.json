@@ -1,0 +1,107 @@
+{
+  "case_id": "CASE_AD8C4F13A90B",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/08933117-0064-4de0-ae71-747550c00c55",
+    "pr_url": "https://github.com/WordPress/gutenberg/pull/54172"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_2904f39775d7eba9edbe27bd",
+      "family_label": "HTML/CSS/JavaScript scrollbar-width measurement example",
+      "artifact_refs": [
+        "GTC_000003_000548_001847_eca4895a8d914a68"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000003_000548_001847_eca4895a8d914a68",
+          "source_response_id": "turn_000003",
+          "artifact_type": "structured_xml_markup",
+          "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Get Scrollbar Width</title>\n    <style>\n        /* Hide the scrollbar in normal elements */\n        .hidden-scrollbar {\n            overflow: hidden;\n        }\n        \n        /* Force the scrollbar to appear in this element */\n        .scrollbar-measure {\n            width: 100px;\n            height: 100px;\n            overflow: scroll;\n            visibility: hidden;\n            position: absolute;\n        }\n    </style>\n</head>\n<body>\n    <div class=\"hidden-scrollbar\">\n        Content here\n    </div>\n\n    <div class=\"scrollbar-measure\" id=\"scrollbar-measure\"></div>\n\n    <script>\n        // Function to get the scrollbar width\n        function getScrollbarWidth() {\n            const scrollbarMeasure = document.getElementById('scrollbar-measure');\n            return scrollbarMeasure.offsetWidth - scrollbarMeasure.clientWidth;\n        }\n\n        // Call the function to get the scrollbar width\n        const scrollbarWidth = getScrollbarWidth();\n        console.log(`Scrollbar Width: ${scrollbarWidth}px`);\n\n        // Remove the scrollbar-measure element from the DOM\n        scrollbarMeasure.remove();\n    </script>\n</body>\n</html>\n",
+          "language": "html"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000003",
+    "target_prompt_turn_id": "turn_000002",
+    "boundary": "exclusive_before:turn_000003",
+    "tFG": "2023-09-05T05:08:56.471521+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000002",
+    "event_index": 2,
+    "role": "user",
+    "text": "How to get the width of the scrollbar with JavaScript, even when the scrollbar is not displayed in the browser"
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000002",
+      "event_index": 2,
+      "role": "user",
+      "text": "How to get the width of the scrollbar with JavaScript, even when the scrollbar is not displayed in the browser"
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "assistant",
+    "text": "To get the width of the scrollbar with JavaScript, even when the scrollbar is not displayed in the browser, you can follow these steps:\n\n1. Create a hidden element that has an overflow property set to `scroll`. This will force the scrollbar to appear, even if the content doesn't overflow.\n\n2. Measure the width of the scrollbar by calculating the difference in width between the container's client width and its scroll width.\n\n3. Remove the hidden element from the DOM if you no longer need it.\n\nHere's an example of how you can do this:\n\n```html\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Get Scrollbar Width</title>\n    <style>\n        /* Hide the scrollbar in normal elements */\n        .hidden-scrollbar {\n            overflow: hidden;\n        }\n        \n        /* Force the scrollbar to appear in this element */\n        .scrollbar-measure {\n            width: 100px;\n            height: 100px;\n            overflow: scroll;\n            visibility: hidden;\n            position: absolute;\n        }\n    </style>\n</head>\n<body>\n    <div class=\"hidden-scrollbar\">\n        Content here\n    </div>\n\n    <div class=\"scrollbar-measure\" id=\"scrollbar-measure\"></div>\n\n    <script>\n        // Function to get the scrollbar width\n        function getScrollbarWidth() {\n            const scrollbarMeasure = document.getElementById('scrollbar-measure');\n            return scrollbarMeasure.offsetWidth - scrollbarMeasure.clientWidth;\n        }\n\n        // Call the function to get the scrollbar width\n        const scrollbarWidth = getScrollbarWidth();\n        console.log(`Scrollbar Width: ${scrollbarWidth}px`);\n\n        // Remove the scrollbar-measure element from the DOM\n        scrollbarMeasure.remove();\n    </script>\n</body>\n</html>\n```\n\nIn this example, we create a hidden `div` with the class `scrollbar-measure` and set its `overflow` property to `scroll`. We then calculate the scrollbar width by subtracting the client width from the offset width of this element. Finally, we remove the `scrollbar-measure` element from the DOM.\n\nThis approach should give you the scrollbar width even when the scrollbar is not displayed in the browser."
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context_1",
+        "normalized_text": "The task concerns determining browser scrollbar width using JavaScript in a situation where the scrollbar is not displayed.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "How to get the width of the scrollbar with JavaScript, even when the scrollbar is not displayed in the browser"
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "Obtain the scrollbar width using JavaScript even when the browser does not display the scrollbar.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "How to get the width of the scrollbar with JavaScript, even when the scrollbar is not displayed in the browser"
+        ]
+      }
+    ],
+    "Verification": [
+      {
+        "item_id": "verification_1",
+        "normalized_text": "The method must work when the scrollbar is not displayed in the browser.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "even when the scrollbar is not displayed in the browser"
+        ]
+      }
+    ]
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "e6770ee2b0eb7a0d0d01f519c1301db4a1224e12a6cc7d6a6311bfdc551f28d6",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_B/cases/CASE_AD8C4F13A90B.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

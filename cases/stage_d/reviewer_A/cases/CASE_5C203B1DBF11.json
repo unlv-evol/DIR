@@ -1,0 +1,96 @@
+{
+  "case_id": "CASE_5C203B1DBF11",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/fad5f67a-2f7e-45a4-a759-18e5b9aa44cb",
+    "pr_url": "https://github.com/sveltejs/learn.svelte.dev/pull/522"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_cf1ccac64f5d5e8eee72c453",
+      "family_label": "Svelte SVG pointer with an ARIA role on the circle",
+      "artifact_refs": [
+        "GTC_000003_000765_001096_9561c8734025d35f"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000003_000765_001096_9561c8734025d35f",
+          "source_response_id": "turn_000003",
+          "artifact_type": "unclassified_technical",
+          "content": "<svg\n    on:mousemove={(e) => {\n        coords.set({ x: e.clientX, y: e.clientY });\n    }}\n    on:mousedown={() => size.set(30)}\n    on:mouseup={() => size.set(10)}\n>\n    <circle\n        cx={$coords.x}\n        cy={$coords.y}\n        r={$size}\n        role=\"button\" <!-- or \"link\", \"image\", or an appropriate role -->\n    />\n</svg>\n",
+          "language": "svelte"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000003",
+    "target_prompt_turn_id": "turn_000002",
+    "boundary": "exclusive_before:turn_000003",
+    "tFG": "2023-10-26T14:03:17.028444+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000002",
+    "event_index": 2,
+    "role": "user",
+    "text": "What is the correct aria-role for this svg which acts as a pointer?\n```svelte\n<svg\n\ton:mousemove={(e) => {\n\t\tcoords.set({ x: e.clientX, y: e.clientY });\n\t}}\n\ton:mousedown={() => size.set(30)}\n\ton:mouseup={() => size.set(10)}\n>\n\t<circle\n\t\tcx={$coords.x}\n\t\tcy={$coords.y}\n\t\tr={$size}\n\t/>\n</svg>\n```"
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000002",
+      "event_index": 2,
+      "role": "user",
+      "text": "What is the correct aria-role for this svg which acts as a pointer?\n```svelte\n<svg\n\ton:mousemove={(e) => {\n\t\tcoords.set({ x: e.clientX, y: e.clientY });\n\t}}\n\ton:mousedown={() => size.set(30)}\n\ton:mouseup={() => size.set(10)}\n>\n\t<circle\n\t\tcx={$coords.x}\n\t\tcy={$coords.y}\n\t\tr={$size}\n\t/>\n</svg>\n```"
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "assistant",
+    "text": "In the context of your Svelte code, the `<svg>` element you're using to create a pointer isn't necessarily an interactive component with an ARIA role by itself. ARIA roles are typically used to provide information to screen readers about the role or purpose of an element, especially when the default semantics of the element may not be sufficient.\n\nIn your case, the SVG is acting as a pointer, and you want to make it accessible. You should consider adding an ARIA role to the `<circle>` element inside the SVG to provide additional information to assistive technologies. You can use the `role` attribute on the `<circle>` element to indicate its role as a pointer.\n\nHere's an example of how you can add the `role` attribute to the `<circle>` element:\n\n```svelte\n<svg\n    on:mousemove={(e) => {\n        coords.set({ x: e.clientX, y: e.clientY });\n    }}\n    on:mousedown={() => size.set(30)}\n    on:mouseup={() => size.set(10)}\n>\n    <circle\n        cx={$coords.x}\n        cy={$coords.y}\n        r={$size}\n        role=\"button\" <!-- or \"link\", \"image\", or an appropriate role -->\n    />\n</svg>\n```\n\nIn this example, I've used the \"button\" role as an example because it behaves like an interactive element, but you can choose an appropriate role based on the purpose of your pointer. The \"link\" role might also be suitable if the pointer represents a link or an action.\n\nRemember to choose the ARIA role that best describes the functionality of your SVG element to enhance its accessibility for users of assistive technologies."
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context_1",
+        "normalized_text": "A Svelte SVG acts as a pointer and handles mouse movement and button events; mouse movement updates `coords`, mouse down sets `size` to 30, and mouse up sets `size` to 10.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "What is the correct aria-role for this svg which acts as a pointer?",
+          "on:mousemove={(e) => {\n\t\tcoords.set({ x: e.clientX, y: e.clientY });\n\t}}",
+          "on:mousedown={() => size.set(30)}",
+          "on:mouseup={() => size.set(10)}"
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "Determine the correct ARIA role for the SVG that acts as a pointer.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "What is the correct aria-role for this svg which acts as a pointer?"
+        ]
+      }
+    ],
+    "Verification": []
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "9c43ceb3890a291ed5534f80edd54ef2244b2d62df4cce5df547e8dd6b91b2e9",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_A/cases/CASE_5C203B1DBF11.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

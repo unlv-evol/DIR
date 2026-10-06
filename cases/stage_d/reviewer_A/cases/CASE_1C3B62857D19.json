@@ -1,0 +1,101 @@
+{
+  "case_id": "CASE_1C3B62857D19",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/d7dbe641-4d5c-48db-8887-4260b04fa18e",
+    "pr_url": "https://github.com/langroid/langroid/pull/301"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_f09c166c00919f38bc5135c1",
+      "family_label": "PyGithub installation and script for retrieving a repository's latest tagged version",
+      "artifact_refs": [
+        "GTC_000003_000349_000373_62c5c45530b13afc",
+        "GTC_000003_000510_001076_ecdda82134a6d8b9"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000003_000349_000373_62c5c45530b13afc",
+          "source_response_id": "turn_000003",
+          "artifact_type": "shell_sequence",
+          "content": "   pip install PyGithub\n",
+          "language": "bash"
+        },
+        {
+          "artifact_id": "GTC_000003_000510_001076_ecdda82134a6d8b9",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "   from github import Github\n\n   # Replace with your GitHub access token\n   access_token = \"YOUR_ACCESS_TOKEN\"\n\n   # Replace with the repository you're interested in, e.g., \"owner/repo\"\n   repo_name = \"owner/repo\"\n\n   # Create a Github instance:\n   g = Github(access_token)\n\n   # Get the repository\n   repo = g.get_repo(repo_name)\n\n   # List all tags\n   tags = repo.get_tags()\n\n   # Assuming the most recent tag is the latest version\n   latest_version = tags[0].name if tags.totalCount > 0 else \"No version tags found\"\n\n   print(f\"Latest version: {latest_version}\")\n",
+          "language": "python"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000003",
+    "target_prompt_turn_id": "turn_000002",
+    "boundary": "exclusive_before:turn_000003",
+    "tFG": "2024-01-15T00:03:53.295269+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000002",
+    "event_index": 2,
+    "role": "user",
+    "text": "given a github lib of the form owner/repo, use the pygithub lib to get version number"
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000002",
+      "event_index": 2,
+      "role": "user",
+      "text": "given a github lib of the form owner/repo, use the pygithub lib to get version number"
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "assistant",
+    "text": "To get the version number of a GitHub repository using the `PyGithub` library in Python, you typically need to check the tags or releases of the repository, as that's where version numbers are often stored. Here's a basic example of how you might do this:\n\n1. First, install `PyGithub` if you haven't already. You can do this using pip:\n\n   ```bash\n   pip install PyGithub\n   ```\n\n2. Then, use the following script as a starting point. Note that you'll need a GitHub access token to use the API:\n\n   ```python\n   from github import Github\n\n   # Replace with your GitHub access token\n   access_token = \"YOUR_ACCESS_TOKEN\"\n\n   # Replace with the repository you're interested in, e.g., \"owner/repo\"\n   repo_name = \"owner/repo\"\n\n   # Create a Github instance:\n   g = Github(access_token)\n\n   # Get the repository\n   repo = g.get_repo(repo_name)\n\n   # List all tags\n   tags = repo.get_tags()\n\n   # Assuming the most recent tag is the latest version\n   latest_version = tags[0].name if tags.totalCount > 0 else \"No version tags found\"\n\n   print(f\"Latest version: {latest_version}\")\n   ```\n\n3. In this script, replace `\"YOUR_ACCESS_TOKEN\"` with your personal access token and `\"owner/repo\"` with the GitHub repository's owner and name.\n\n4. Run the script to get the latest version number.\n\nRemember, this script assumes the latest tag corresponds to the latest version, which is a common practice but might not always be the case for every repository. You might need to adjust the logic depending on the specific repository's versioning system."
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context_1",
+        "normalized_text": "The task concerns a GitHub repository identified in owner/repo form and uses the PyGithub library.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "given a github lib of the form owner/repo, use the pygithub lib"
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "Given a GitHub repository in owner/repo form, retrieve its version number using PyGithub.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "given a github lib of the form owner/repo, use the pygithub lib to get version number"
+        ]
+      }
+    ],
+    "Verification": []
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "76caf8d9adcaeef619944d955416d706ba363c9750cf1e6038f26a767582bc7e",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_A/cases/CASE_1C3B62857D19.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

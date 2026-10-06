@@ -1,0 +1,153 @@
+{
+  "case_id": "CASE_3A639B473AED",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/99718495-28d0-4382-ab5e-6a4a733c1ccb",
+    "pr_url": "https://github.com/PrivateBin/PrivateBin/pull/1134"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_0252c8a403f026b5c7cad502",
+      "family_label": "PrivateBin GitHub discussion template conversion",
+      "artifact_refs": [
+        "GTC_000003_000195_001855_65be5216164e29fa"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000003_000195_001855_65be5216164e29fa",
+          "source_response_id": "turn_000003",
+          "artifact_type": "unclassified_technical",
+          "content": "---\nname: Question and support\nabout: Your setup is not working and you need help or you have a question regarding PrivateBin\ntitle: 'Your Title Here'\nlabels: question/support\nassignees: ''\n\n---\n\n## Describe the problem/question\n\nA clear and concise description of what the bug is.\n\n<!-- Please tick this to confirm, you did it.-->\n* [ ] Yes, I have read [the FAQ](https://github.com/PrivateBin/PrivateBin/wiki/FAQ) and I found no solution/answer there.\n\n## What you did\n\nTell us how to reproduce the problem.\n\n1. Step 1\n2. Step 2\n\n### What happens\n\nDescribe what currently happens when you follow the steps mentioned above.\n\n### What should happen\n\nDescribe what you expect to happen when you follow the steps mentioned above.\n\n## Additional information\n\n<!-- Here you can add screenshots. If the issue is e.g. a client-side issue (= an issue, which happens in your browser) press F12 and copy and paste the console output or add a screenshot.\nIf you have access to the server log files, also copy them here. -->\n\n## Basic information\n\n<!-- If you use a public server enter the address of it here. -->\n**Server address**: \n\n<!-- The Operating System of your server -->\n**Server OS**: \n\n<!-- The webserver running on your server, preferably including the version -->\n**Webserver**: \n\n<!-- The version of your browser (when it is a client-side issue) -->\n**Browser**: \n\n<!-- The version of PrivateBin, if you use an unstable version paste the commit hash or the GitHub link to the commit here (you can get it by running `git rev-parse HEAD`) -->\n**PrivateBin version**: \n\nI can reproduce this issue on [https://privatebin.net](https://privatebin.net): Yes / No\n",
+          "language": "markdown"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000003",
+    "target_prompt_turn_id": "turn_000002",
+    "boundary": "exclusive_before:turn_000003",
+    "tFG": "2023-08-07T17:40:16.134775+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000002",
+    "event_index": 2,
+    "role": "user",
+    "text": "Convert this Markdown file to a GitHub discussion category form:\n\n```md\n---\nname: Question and support\nabout: Your setup is not working and you need help or you have a question regarding\n  PrivateBin\ntitle: ''\nlabels: question/support\nassignees: ''\n\n---\n\n<-- Describe the problem/question: A clear and concise description of what the bug is. -->\n\n<!-- Please tick this to confirm, you did it.-->\n* [ ] Yes I have read [the FAQ](https://github.com/PrivateBin/PrivateBin/wiki/FAQ) and I found no solution/answer there.\n\n## What you did\n<!-- Tell us how to reproduce the problem. -->\n1.\n2.\n\n### What happens\n\n\n### What should happen\n\n\n## Additional information\n<!--\nHere you can add screenshots. If the issue is e.g. a client-side issue (= an issue, which happens in your browser) press F12 and copy and paste the console output or add a screenshot.\nIf you have access to the server log files, also copy them here.\n-->\n\n## Basic information\n\n<!-- If you use a public server enter the address of it here. -->\n**Server address**:\n\n<!-- The Operation System of your server -->\n**Server OS:**\n\n<!-- The webserver running on your server, preferably including the version -->\n**Webserver:**\n\n<!-- The version of your browser (when it is a client-side issue) -->\n**Browser:**\n\n<!-- The version of PrivateBin, if you use an unstable version paste the commit hash or the GitHub link to the commit here (you can get it by running `git rev-parse HEAD`) -->\n**PrivateBin version:**\n\nI can reproduce this issue on <https://privatebin.net>: Yes / No\n```"
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000002",
+      "event_index": 2,
+      "role": "user",
+      "text": "Convert this Markdown file to a GitHub discussion category form:\n\n```md\n---\nname: Question and support\nabout: Your setup is not working and you need help or you have a question regarding\n  PrivateBin\ntitle: ''\nlabels: question/support\nassignees: ''\n\n---\n\n<-- Describe the problem/question: A clear and concise description of what the bug is. -->\n\n<!-- Please tick this to confirm, you did it.-->\n* [ ] Yes I have read [the FAQ](https://github.com/PrivateBin/PrivateBin/wiki/FAQ) and I found no solution/answer there.\n\n## What you did\n<!-- Tell us how to reproduce the problem. -->\n1.\n2.\n\n### What happens\n\n\n### What should happen\n\n\n## Additional information\n<!--\nHere you can add screenshots. If the issue is e.g. a client-side issue (= an issue, which happens in your browser) press F12 and copy and paste the console output or add a screenshot.\nIf you have access to the server log files, also copy them here.\n-->\n\n## Basic information\n\n<!-- If you use a public server enter the address of it here. -->\n**Server address**:\n\n<!-- The Operation System of your server -->\n**Server OS:**\n\n<!-- The webserver running on your server, preferably including the version -->\n**Webserver:**\n\n<!-- The version of your browser (when it is a client-side issue) -->\n**Browser:**\n\n<!-- The version of PrivateBin, if you use an unstable version paste the commit hash or the GitHub link to the commit here (you can get it by running `git rev-parse HEAD`) -->\n**PrivateBin version:**\n\nI can reproduce this issue on <https://privatebin.net>: Yes / No\n```"
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "assistant",
+    "text": "To convert your Markdown file into a GitHub discussion category form, you can follow the GitHub-flavored Markdown syntax and structure for discussions. Here's the converted version:\n\n```markdown\n---\nname: Question and support\nabout: Your setup is not working and you need help or you have a question regarding PrivateBin\ntitle: 'Your Title Here'\nlabels: question/support\nassignees: ''\n\n---\n\n## Describe the problem/question\n\nA clear and concise description of what the bug is.\n\n<!-- Please tick this to confirm, you did it.-->\n* [ ] Yes, I have read [the FAQ](https://github.com/PrivateBin/PrivateBin/wiki/FAQ) and I found no solution/answer there.\n\n## What you did\n\nTell us how to reproduce the problem.\n\n1. Step 1\n2. Step 2\n\n### What happens\n\nDescribe what currently happens when you follow the steps mentioned above.\n\n### What should happen\n\nDescribe what you expect to happen when you follow the steps mentioned above.\n\n## Additional information\n\n<!-- Here you can add screenshots. If the issue is e.g. a client-side issue (= an issue, which happens in your browser) press F12 and copy and paste the console output or add a screenshot.\nIf you have access to the server log files, also copy them here. -->\n\n## Basic information\n\n<!-- If you use a public server enter the address of it here. -->\n**Server address**: \n\n<!-- The Operating System of your server -->\n**Server OS**: \n\n<!-- The webserver running on your server, preferably including the version -->\n**Webserver**: \n\n<!-- The version of your browser (when it is a client-side issue) -->\n**Browser**: \n\n<!-- The version of PrivateBin, if you use an unstable version paste the commit hash or the GitHub link to the commit here (you can get it by running `git rev-parse HEAD`) -->\n**PrivateBin version**: \n\nI can reproduce this issue on [https://privatebin.net](https://privatebin.net): Yes / No\n```\n\nNote that GitHub Discussions do not directly support custom forms like the one you provided, but you can structure your post using the available Markdown elements to capture the necessary information. Also, make sure to replace `'Your Title Here'` with an appropriate title for your discussion post."
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context_1",
+        "normalized_text": "The source is a Markdown question-and-support template for PrivateBin with YAML metadata: name “Question and support,” a support-oriented description, an empty title, the label “question/support,” and empty assignees.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "---\nname: Question and support\nabout: Your setup is not working and you need help or you have a question regarding\n  PrivateBin\ntitle: ''\nlabels: question/support\nassignees: ''\n\n---"
+        ]
+      },
+      {
+        "item_id": "context_2",
+        "normalized_text": "The source template asks users to describe the problem or question and confirm that they read the PrivateBin FAQ without finding a solution.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "<-- Describe the problem/question: A clear and concise description of what the bug is. -->",
+          "<!-- Please tick this to confirm, you did it.-->\n* [ ] Yes I have read [the FAQ](https://github.com/PrivateBin/PrivateBin/wiki/FAQ) and I found no solution/answer there."
+        ]
+      },
+      {
+        "item_id": "context_3",
+        "normalized_text": "The source contains sections for reproduction steps, actual behavior, expected behavior, additional diagnostic information, and basic environment information.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "## What you did\n<!-- Tell us how to reproduce the problem. -->\n1.\n2.\n\n### What happens\n\n\n### What should happen",
+          "## Additional information",
+          "## Basic information"
+        ]
+      },
+      {
+        "item_id": "context_4",
+        "normalized_text": "The requested environment details include server address, server OS, webserver, browser, PrivateBin version or commit, and whether the issue is reproducible on privatebin.net.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "**Server address**:",
+          "**Server OS:**",
+          "**Webserver:**",
+          "**Browser:**",
+          "**PrivateBin version:**",
+          "I can reproduce this issue on <https://privatebin.net>: Yes / No"
+        ]
+      },
+      {
+        "item_id": "context_5",
+        "normalized_text": "The source guidance permits screenshots, browser console output for client-side issues, and server logs when available.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "Here you can add screenshots. If the issue is e.g. a client-side issue (= an issue, which happens in your browser) press F12 and copy and paste the console output or add a screenshot.\nIf you have access to the server log files, also copy them here."
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "Convert the supplied Markdown file into a GitHub discussion category form.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "Convert this Markdown file to a GitHub discussion category form:"
+        ]
+      }
+    ],
+    "Verification": []
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "e464de7609d7be8af9a9371abe5e67ff1fd5a23d7afbb438a222365e55027acf",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_B/cases/CASE_3A639B473AED.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

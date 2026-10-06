@@ -1,0 +1,120 @@
+{
+  "case_id": "CASE_A0301CC135FC",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/be37cf76-8d76-4db7-a056-129e216f0fad",
+    "pr_url": "https://github.com/jaoafa/VCSpeaker.kt/pull/70"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_08f9f44b1ec2d7c0656ff98c",
+      "family_label": "Kotlin Scrimage code for drawing white text with a black outline",
+      "artifact_refs": [
+        "GTC_000003_000086_001141_a16944e92eaaa33d"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000003_000086_001141_a16944e92eaaa33d",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "import com.sksamuel.scrimage.ImmutableImage\nimport com.sksamuel.scrimage.color.RGBColor\n\nfun main() {\n    // 画像の幅と高さを設定\n    val width = 400\n    val height = 200\n\n    // 画像を生成し、背景を白色で塗りつぶす\n    val image = ImmutableImage.filled(width, height, RGBColor.WHITE)\n\n    // 描画する文字列とフォントサイズを設定\n    val text = \"Hello, World!\"\n    val fontSize = 24f\n\n    // 文字列を描画する位置を設定\n    val x = 50\n    val y = 100\n\n    // 文字列の色と縁取りの色を設定\n    val textColor = RGBColor.WHITE\n    val outlineColor = RGBColor.BLACK\n\n    // 文字列を画像上に描画\n    image.awt().graphics.apply {\n        font = font.deriveFont(fontSize)\n        color = textColor.toAWTColor()\n        drawString(text, x, y)\n    }\n\n    // 文字列に縁取りを追加\n    val outlinedImage = image.awt().graphics.apply {\n        color = outlineColor.toAWTColor()\n        font = font.deriveFont(fontSize)\n        drawString(text, x - 1, y - 1)\n        drawString(text, x + 1, y - 1)\n        drawString(text, x - 1, y + 1)\n        drawString(text, x + 1, y + 1)\n    }\n\n    // 画像を保存\n    outlinedImage.dispose()\n    image.output(\"outlined_text.png\")\n}\n",
+          "language": "kotlin"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000003",
+    "target_prompt_turn_id": "turn_000002",
+    "boundary": "exclusive_before:turn_000003",
+    "tFG": "2024-03-06T09:48:39.965068+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000002",
+    "event_index": 2,
+    "role": "user",
+    "text": "Kotlinのsksamuel/scrimageライブラリで、画像上に文字列を描画し、文字列の縁取りをするコードを生成してください。\n文字の色は白、縁は黒で描画します。"
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000002",
+      "event_index": 2,
+      "role": "user",
+      "text": "Kotlinのsksamuel/scrimageライブラリで、画像上に文字列を描画し、文字列の縁取りをするコードを生成してください。\n文字の色は白、縁は黒で描画します。"
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "assistant",
+    "text": "以下は、Kotlinで文字列を画像に描画し、縁取りをするコード例です。このコードは`sksamuel/scrimage`ライブラリを使用しています。\n\n```kotlin\nimport com.sksamuel.scrimage.ImmutableImage\nimport com.sksamuel.scrimage.color.RGBColor\n\nfun main() {\n    // 画像の幅と高さを設定\n    val width = 400\n    val height = 200\n\n    // 画像を生成し、背景を白色で塗りつぶす\n    val image = ImmutableImage.filled(width, height, RGBColor.WHITE)\n\n    // 描画する文字列とフォントサイズを設定\n    val text = \"Hello, World!\"\n    val fontSize = 24f\n\n    // 文字列を描画する位置を設定\n    val x = 50\n    val y = 100\n\n    // 文字列の色と縁取りの色を設定\n    val textColor = RGBColor.WHITE\n    val outlineColor = RGBColor.BLACK\n\n    // 文字列を画像上に描画\n    image.awt().graphics.apply {\n        font = font.deriveFont(fontSize)\n        color = textColor.toAWTColor()\n        drawString(text, x, y)\n    }\n\n    // 文字列に縁取りを追加\n    val outlinedImage = image.awt().graphics.apply {\n        color = outlineColor.toAWTColor()\n        font = font.deriveFont(fontSize)\n        drawString(text, x - 1, y - 1)\n        drawString(text, x + 1, y - 1)\n        drawString(text, x - 1, y + 1)\n        drawString(text, x + 1, y + 1)\n    }\n\n    // 画像を保存\n    outlinedImage.dispose()\n    image.output(\"outlined_text.png\")\n}\n```\n\nこのコードは、指定された幅と高さの空の画像を作成し、指定された文字列を描画します。その後、縁取りを追加し、画像を保存します。"
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context_1",
+        "normalized_text": "Kotlinのsksamuel/scrimageライブラリを使用する画像描画タスクである。",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "Kotlinのsksamuel/scrimageライブラリで"
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "画像上に縁取りされた文字列を描画するコードを生成する。",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "画像上に文字列を描画し、文字列の縁取りをするコードを生成してください。"
+        ]
+      },
+      {
+        "item_id": "specificity_2",
+        "normalized_text": "文字色は白、縁取りは黒とする。",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "文字の色は白、縁は黒で描画します。"
+        ]
+      }
+    ],
+    "Verification": [
+      {
+        "item_id": "verification_1",
+        "normalized_text": "生成されるコードは、文字を白色、縁を黒色で描画すること。",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "文字の色は白、縁は黒で描画します。"
+        ]
+      }
+    ]
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "98bfd31bdc4c80ca46972ebf18352ac3d2eea04c9bd4ab1152290725238c5116",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_B/cases/CASE_A0301CC135FC.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

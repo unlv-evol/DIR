@@ -1,0 +1,149 @@
+{
+  "case_id": "CASE_6C2918844CE5",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/e3e3871f-4acd-4959-94a3-d260c84f8ede",
+    "pr_url": "https://github.com/uchicago-cs/chigame/pull/265"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_49035a0764a03dd4bbf23e30",
+      "family_label": "Django monthly user-token model, view, and URL configuration",
+      "artifact_refs": [
+        "GTC_000003_000373_000725_4b86d47b3200900e",
+        "GTC_000003_000904_001907_5ef1cb729d9e3e5a",
+        "GTC_000003_002019_002236_4671361b8d5bb0d1"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000003_000373_000725_4b86d47b3200900e",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "# models.py\nfrom django.db import models\nfrom django.contrib.auth.models import User\n\nclass UserProfile(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    token_count = models.IntegerField(default=0)\n    last_token_addition = models.DateField(auto_now_add=True)\n\n    def __str__(self):\n        return self.user.username\n",
+          "language": "python"
+        },
+        {
+          "artifact_id": "GTC_000003_000904_001907_5ef1cb729d9e3e5a",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "# views.py\nfrom django.shortcuts import get_object_or_404\nfrom django.http import HttpResponse\nfrom django.views import View\nfrom datetime import datetime, timedelta\nfrom .models import UserProfile\n\nclass AddTokenMonthlyView(View):\n    def get(self, request, *args, **kwargs):\n        # Retrieve all user profiles\n        user_profiles = UserProfile.objects.all()\n\n        # Iterate through user profiles and add a token to each if a month has passed\n        for profile in user_profiles:\n            if self._is_month_passed(profile.last_token_addition):\n                profile.token_count += 1\n                profile.last_token_addition = datetime.now().date()\n                profile.save()\n\n        return HttpResponse(\"Tokens added successfully!\")\n\n    def _is_month_passed(self, last_date):\n        # Check if a month has passed since the last token addition\n        current_date = datetime.now().date()\n        return (current_date.year, current_date.month) > (last_date.year, last_date.month)\n",
+          "language": "python"
+        },
+        {
+          "artifact_id": "GTC_000003_002019_002236_4671361b8d5bb0d1",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "# urls.py\nfrom django.urls import path\nfrom .views import AddTokenMonthlyView\n\nurlpatterns = [\n    path('add_token_monthly/', AddTokenMonthlyView.as_view(), name='add_token_monthly'),\n    # Add other URLs as needed\n]\n",
+          "language": "python"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000003",
+    "target_prompt_turn_id": "turn_000002",
+    "boundary": "exclusive_before:turn_000003",
+    "tFG": "2023-11-14T20:33:19.478217+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000002",
+    "event_index": 2,
+    "role": "user",
+    "text": "how to add a token to the user every month? we are using django, and make sure to use django models/views to impelemtn this"
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000002",
+      "event_index": 2,
+      "role": "user",
+      "text": "how to add a token to the user every month? we are using django, and make sure to use django models/views to impelemtn this"
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "assistant",
+    "text": "To implement a system that adds a token to a user every month in Django, you can use Django's built-in features such as models, views, and signals. Here's a step-by-step guide:\n\n### Step 1: Create a Model\n\nCreate a model to represent the user and their tokens. Add a field to store the token count and another field to store the date of the last token addition.\n\n```python\n# models.py\nfrom django.db import models\nfrom django.contrib.auth.models import User\n\nclass UserProfile(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    token_count = models.IntegerField(default=0)\n    last_token_addition = models.DateField(auto_now_add=True)\n\n    def __str__(self):\n        return self.user.username\n```\n\n### Step 2: Create a View\n\nCreate a view that will handle the logic for adding tokens to users. This view will be triggered by a monthly task, such as a cron job.\n\n```python\n# views.py\nfrom django.shortcuts import get_object_or_404\nfrom django.http import HttpResponse\nfrom django.views import View\nfrom datetime import datetime, timedelta\nfrom .models import UserProfile\n\nclass AddTokenMonthlyView(View):\n    def get(self, request, *args, **kwargs):\n        # Retrieve all user profiles\n        user_profiles = UserProfile.objects.all()\n\n        # Iterate through user profiles and add a token to each if a month has passed\n        for profile in user_profiles:\n            if self._is_month_passed(profile.last_token_addition):\n                profile.token_count += 1\n                profile.last_token_addition = datetime.now().date()\n                profile.save()\n\n        return HttpResponse(\"Tokens added successfully!\")\n\n    def _is_month_passed(self, last_date):\n        # Check if a month has passed since the last token addition\n        current_date = datetime.now().date()\n        return (current_date.year, current_date.month) > (last_date.year, last_date.month)\n```\n\n### Step 3: Set Up a URL\n\nCreate a URL pattern for the view you created in your `urls.py` file.\n\n```python\n# urls.py\nfrom django.urls import path\nfrom .views import AddTokenMonthlyView\n\nurlpatterns = [\n    path('add_token_monthly/', AddTokenMonthlyView.as_view(), name='add_token_monthly'),\n    # Add other URLs as needed\n]\n```\n\n### Step 4: Set Up a Cron Job (Optional)\n\nYou can use external tools like Celery or cron jobs to periodically trigger the `AddTokenMonthlyView`. Configure a cron job to make an HTTP GET request to the URL associated with this view at a specific interval (e.g., once a month).\n\n### Step 5: Test\n\nRun your Django development server and test the functionality by visiting the URL associated with the `AddTokenMonthlyView`. Verify that tokens are added to users whose last token addition was more than a month ago.\n\nRemember to handle security considerations and error cases based on your specific requirements and use cases."
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context_1",
+        "normalized_text": "The application uses Django.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "we are using django"
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "Add a token to the user every month.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "how to add a token to the user every month?"
+        ]
+      },
+      {
+        "item_id": "specificity_2",
+        "normalized_text": "Implement the solution using Django models and views.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "make sure to use django models/views to impelemtn this"
+        ]
+      }
+    ],
+    "Verification": [
+      {
+        "item_id": "verification_1",
+        "normalized_text": "The implementation must add a token to the user every month.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "how to add a token to the user every month?"
+        ]
+      },
+      {
+        "item_id": "verification_2",
+        "normalized_text": "The implementation must use Django models and views.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "make sure to use django models/views to impelemtn this"
+        ]
+      }
+    ]
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "a7770a72fc244398de4c49a5c5fc566a323e71f29ec7342715c0dca6e19e9a80",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_A/cases/CASE_6C2918844CE5.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

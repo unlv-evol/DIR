@@ -1,0 +1,93 @@
+{
+  "case_id": "CASE_1FEA1F5DE7C1",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/4f37cdd1-acdb-4539-b134-9d7a54393a45",
+    "pr_url": "https://github.com/box/developer.box.com/pull/533"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_6dc1866c8d0d0ee67dd68446",
+      "family_label": "TypeScript method deprecation using the JSDoc @deprecated tag",
+      "artifact_refs": [
+        "GTC_000003_000155_000532_08f8a91266132a5b"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000003_000155_000532_08f8a91266132a5b",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "class MyClass {\n    /**\n     * @deprecated This method is deprecated. Use myNewMethod instead.\n     */\n    oldMethod() {\n        // Deprecated method implementation\n    }\n\n    myNewMethod() {\n        // New method implementation\n    }\n}\n\nconst obj = new MyClass();\n\n// Using the deprecated method\nobj.oldMethod(); // This will generate a warning in most IDEs and linting tools\n",
+          "language": "typescript"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000003",
+    "target_prompt_turn_id": "turn_000002",
+    "boundary": "exclusive_before:turn_000003",
+    "tFG": "2024-04-16T11:15:01.694532+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000002",
+    "event_index": 2,
+    "role": "user",
+    "text": "Give example of standard way of deprecating method in TypeScript"
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000002",
+      "event_index": 2,
+      "role": "user",
+      "text": "Give example of standard way of deprecating method in TypeScript"
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "assistant",
+    "text": "Sure, deprecating a method in TypeScript involves marking it as deprecated using a JSDoc comment with `@deprecated` tag. Here's an example:\n\n```typescript\nclass MyClass {\n    /**\n     * @deprecated This method is deprecated. Use myNewMethod instead.\n     */\n    oldMethod() {\n        // Deprecated method implementation\n    }\n\n    myNewMethod() {\n        // New method implementation\n    }\n}\n\nconst obj = new MyClass();\n\n// Using the deprecated method\nobj.oldMethod(); // This will generate a warning in most IDEs and linting tools\n```\n\nIn this example, the `oldMethod()` is marked as deprecated using the `@deprecated` JSDoc comment. When developers use this method, they will receive a warning indicating that it's deprecated and should be replaced with `myNewMethod()`."
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context_1",
+        "normalized_text": "The task concerns method deprecation in TypeScript.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "Give example of standard way of deprecating method in TypeScript"
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "Provide an example showing the standard way to deprecate a method.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "Give example of standard way of deprecating method in TypeScript"
+        ]
+      }
+    ],
+    "Verification": []
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "fda0f8bd42ff43bb6e24fbfda482dc0d886e86c685ec7b2a88b38277b6d87889",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_A/cases/CASE_1FEA1F5DE7C1.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

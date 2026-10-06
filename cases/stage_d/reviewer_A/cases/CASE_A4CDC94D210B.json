@@ -1,0 +1,133 @@
+{
+  "case_id": "CASE_A4CDC94D210B",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/48bd44b4-13a7-4ff8-9938-2214f0b17f6b",
+    "pr_url": "https://github.com/viets-software-club/truffle-ai-backend/pull/52"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_15d40c7bcb57ba6374e20f1e",
+      "family_label": "TypeScript software project category enum and enum-typed arrays",
+      "artifact_refs": [
+        "GTC_000003_000211_000817_b516b48daea3955f"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000003_000211_000817_b516b48daea3955f",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "enum ProjectCategory {\n  Web = 'Web Development',\n  Mobile = 'Mobile Development',\n  AI = 'Artificial Intelligence',\n  Data = 'Data Analysis',\n  Security = 'Security'\n}\n\nconst project1: ProjectCategory[] = [ProjectCategory.Web, ProjectCategory.Data];\nconst project2: ProjectCategory[] = [ProjectCategory.Mobile];\nconst project3: ProjectCategory[] = [ProjectCategory.AI, ProjectCategory.Security];\n\nconsole.log(project1); // Output: [ 'Web Development', 'Data Analysis' ]\nconsole.log(project2); // Output: [ 'Mobile Development' ]\nconsole.log(project3); // Output: [ 'Artificial Intelligence', 'Security' ]\n",
+          "language": "typescript"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000003",
+    "target_prompt_turn_id": "turn_000002",
+    "boundary": "exclusive_before:turn_000003",
+    "tFG": "2023-06-12T18:08:24.454929+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000002",
+    "event_index": 2,
+    "role": "user",
+    "text": "in typescript: could you create an enum consisting of 5 categories, which are used to categorize software projects? Could you then initialize variables which have as a type a list of this enum."
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000002",
+      "event_index": 2,
+      "role": "user",
+      "text": "in typescript: could you create an enum consisting of 5 categories, which are used to categorize software projects? Could you then initialize variables which have as a type a list of this enum."
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "assistant",
+    "text": "Certainly! Here's an example of how you can create an enum in TypeScript representing five categories for software projects, and then initialize variables with a type that is a list of this enum:\n\n```typescript\nenum ProjectCategory {\n  Web = 'Web Development',\n  Mobile = 'Mobile Development',\n  AI = 'Artificial Intelligence',\n  Data = 'Data Analysis',\n  Security = 'Security'\n}\n\nconst project1: ProjectCategory[] = [ProjectCategory.Web, ProjectCategory.Data];\nconst project2: ProjectCategory[] = [ProjectCategory.Mobile];\nconst project3: ProjectCategory[] = [ProjectCategory.AI, ProjectCategory.Security];\n\nconsole.log(project1); // Output: [ 'Web Development', 'Data Analysis' ]\nconsole.log(project2); // Output: [ 'Mobile Development' ]\nconsole.log(project3); // Output: [ 'Artificial Intelligence', 'Security' ]\n```\n\nIn the example above, we define an enum `ProjectCategory` that represents the five categories for software projects. Each category has a corresponding string value.\n\nWe then initialize three variables (`project1`, `project2`, and `project3`) with types that are lists (`[]`) of `ProjectCategory` enum values. Each variable can hold an array of elements from the `ProjectCategory` enum.\n\nWhen we log these variables to the console, you can see the respective enum values displayed as output.\n\nNote that in TypeScript, enums can have string values assigned explicitly like in the example above, or they can be assigned numeric values by default if not specified."
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context_1",
+        "normalized_text": "The requested code is to be written in TypeScript.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "in typescript"
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "Create an enum containing five categories used to categorize software projects.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "could you create an enum consisting of 5 categories, which are used to categorize software projects?"
+        ]
+      },
+      {
+        "item_id": "specificity_2",
+        "normalized_text": "Initialize variables whose type is a list of the enum.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "Could you then initialize variables which have as a type a list of this enum."
+        ]
+      }
+    ],
+    "Verification": [
+      {
+        "item_id": "verification_1",
+        "normalized_text": "The enum must consist of five software-project categories.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "an enum consisting of 5 categories, which are used to categorize software projects"
+        ]
+      },
+      {
+        "item_id": "verification_2",
+        "normalized_text": "The initialized variables must be typed as lists of the created enum.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "initialize variables which have as a type a list of this enum"
+        ]
+      }
+    ]
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "33a1c50bce0ad9d6acd7bb7e78f4512524d149da6416c171371903b75c3b3542",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_A/cases/CASE_A4CDC94D210B.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}

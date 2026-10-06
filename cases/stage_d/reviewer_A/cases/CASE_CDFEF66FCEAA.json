@@ -1,0 +1,109 @@
+{
+  "case_id": "CASE_CDFEF66FCEAA",
+  "source_links": {
+    "conversation_url": "https://chat.openai.com/share/ca2eab25-4e1e-4688-9be5-43a179a0ec4f",
+    "pr_url": "https://github.com/SSWConsulting/SSW.Website/pull/931"
+  },
+  "evidence_boundary": {
+    "pre_boundary_conversation": "admissible_for_context_specificity_verification_validation",
+    "resolved_first_generation_artifacts": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "first_generation_response": "visible_only_for_first_generation_target_prompt_and_boundary_validation",
+    "turns_after_first_generation_response": "excluded"
+  },
+  "first_generation": {
+    "family": {
+      "family_id": "FGF_1f4bfb6a898cd8373ed33e51",
+      "family_label": "DayJS date-formatting example equivalent to the Moment.js expression",
+      "artifact_refs": [
+        "GTC_000003_000342_000563_1c1e1652d686ad50"
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "GTC_000003_000342_000563_1c1e1652d686ad50",
+          "source_response_id": "turn_000003",
+          "artifact_type": "source_code",
+          "content": "const dayjs = require('dayjs');\nrequire('dayjs/locale/en'); // Import the locale you want to use (e.g., 'en' for English)\n\nconst formattedDate = dayjs(event.date).format(\"Do (ddd) MMMM YYYY\");\nconsole.log(formattedDate);\n",
+          "language": "javascript"
+        }
+      ]
+    },
+    "response_turn_id": "turn_000003",
+    "target_prompt_turn_id": "turn_000002",
+    "boundary": "exclusive_before:turn_000003",
+    "tFG": "2023-07-05T01:12:41.129201+00:00"
+  },
+  "target_prompt": {
+    "turn_id": "turn_000002",
+    "event_index": 2,
+    "role": "user",
+    "text": "Can i replicate this functionality with DayJS?\n\nmoment(event.date).format(\"Do (ddd) MMMM YYYY\")"
+  },
+  "pre_boundary_conversation": [
+    {
+      "turn_id": "turn_000002",
+      "event_index": 2,
+      "role": "user",
+      "text": "Can i replicate this functionality with DayJS?\n\nmoment(event.date).format(\"Do (ddd) MMMM YYYY\")"
+    }
+  ],
+  "first_generation_response": {
+    "turn_id": "turn_000003",
+    "event_index": 3,
+    "role": "assistant",
+    "text": "Yes, you can replicate the functionality of formatting a date using the \"Do (ddd) MMMM YYYY\" format with DayJS. DayJS is a lightweight JavaScript library for parsing, manipulating, and formatting dates.\n\nTo achieve the same result as the moment.js code you provided, you can use DayJS's `format()` function. Here's an example:\n\n```javascript\nconst dayjs = require('dayjs');\nrequire('dayjs/locale/en'); // Import the locale you want to use (e.g., 'en' for English)\n\nconst formattedDate = dayjs(event.date).format(\"Do (ddd) MMMM YYYY\");\nconsole.log(formattedDate);\n```\n\nMake sure you have DayJS installed in your project by running `npm install dayjs`. Also, don't forget to import the locale you want to use if you need to localize the output.\n\nThis code snippet will format the `event.date` using the specified format string and store the result in the `formattedDate` variable. Finally, it will log the formatted date to the console."
+  },
+  "stage_c_extraction": {
+    "Context": [
+      {
+        "item_id": "context_1",
+        "normalized_text": "The existing date-formatting expression is `moment(event.date).format(\"Do (ddd) MMMM YYYY\")`.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "moment(event.date).format(\"Do (ddd) MMMM YYYY\")"
+        ]
+      }
+    ],
+    "Specificity": [
+      {
+        "item_id": "specificity_1",
+        "normalized_text": "The user wants to replicate the Moment.js formatting functionality with DayJS for `event.date`, using the format `Do (ddd) MMMM YYYY`.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "Can i replicate this functionality with DayJS?",
+          "moment(event.date).format(\"Do (ddd) MMMM YYYY\")"
+        ]
+      }
+    ],
+    "Verification": [
+      {
+        "item_id": "verification_1",
+        "normalized_text": "The DayJS approach is expected to replicate the functionality of the supplied Moment.js formatting expression.",
+        "source_turn_ids": [
+          "turn_000002"
+        ],
+        "source_roles": [
+          "user"
+        ],
+        "evidence_spans": [
+          "Can i replicate this functionality with DayJS?",
+          "moment(event.date).format(\"Do (ddd) MMMM YYYY\")"
+        ]
+      }
+    ]
+  },
+  "provenance": {
+    "authoritative_stage_c_record_sha256": "5594cf6b7aaf508e2f0387d23c27052eaad7a988c04c9986174f076bef9c981b",
+    "repository_relative_evidence_path": "cases/stage_d/reviewer_A/cases/CASE_CDFEF66FCEAA.json",
+    "checkpoint_commit": "assigned_after_reviewed_preparation_is_committed"
+  }
+}
