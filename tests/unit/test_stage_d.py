@@ -9,7 +9,7 @@ from developer_intent.stage_d import (ELIGIBILITY, JUDGMENT_FIELDS, MANIFEST,
                                       REVIEW_FIELDS, SAMPLE_COUNTS, STAGE_C_AUTHORITY,
                                       eligible_population, generate_sample,
                                       prepare_review, sample_population, sha256,
-                                      validate)
+                                      validate, validate_workbook)
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -98,3 +98,7 @@ class StageDTests(unittest.TestCase):
             rows = list(csv.DictReader(stream))
         self.assertTrue(all(row["eligibility_source_sha256"] == eligibility for row in rows))
         self.assertTrue(all(row["stage_c_authority_sha256"] == authority for row in rows))
+
+    def test_frozen_xlsx_instruments_match_canonical_csvs(self):
+        self.assertEqual(validate_workbook(ROOT, "A"), {"rows": 33, "columns": 15, "dropdowns": 9})
+        self.assertEqual(validate_workbook(ROOT, "B"), {"rows": 33, "columns": 15, "dropdowns": 9})

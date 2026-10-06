@@ -22,3 +22,14 @@ Python's seeded `random.Random.sample` without replacement.
 The internal manifest records the configured Git remote and repository-relative
 evidence paths. After review, commit, and push, the checkpoint commit SHA can be
 combined with those values; files do not attempt to contain their own commit.
+
+Each reviewer package intentionally versions both `stage_d_review.csv` and
+`stage_d_review.xlsx`. The CSV is the canonical machine-readable annotation
+representation. The XLSX is the frozen human-review instrument generated from
+that CSV, adding dropdown controls, clickable source URLs, formatting, and
+review instructions without replacing the CSV's scientific authority.
+
+Generate the workbooks with the preserved `build_review_workbooks.mjs` script
+in an environment providing `@oai/artifact-tool`, then run `--validate` before
+committing them. Completed human annotations must later be stored as versioned
+review outputs; they must not erase this committed blank checkpoint.

@@ -69,3 +69,16 @@ problem requiring correction. `incorrect` means it is materially wrong.
 
 Reviewers work independently. Do not consult or copy the other reviewer's
 answers. Reconciliation and adjudication occur only in a later authorized step.
+
+## Version-controlled review instruments
+
+Both `stage_d_review.csv` and `stage_d_review.xlsx` are intentionally committed.
+The CSV is the canonical machine-readable annotation representation used for
+validation and later analysis. The XLSX is the frozen reviewer-facing instrument
+generated from that CSV, with dropdowns, clickable source URLs, formatting, and
+instructions. The XLSX does not replace the CSV as scientific authority.
+
+The committed blank files are the original pre-review instruments. Later human
+annotations must be preserved as subsequent versioned review outputs rather
+than overwriting repository history or presenting a populated workbook as the
+original blank instrument.

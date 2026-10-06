@@ -5,7 +5,10 @@ import csv
 import hashlib
 import json
 import random
+import re
 import subprocess
+import zipfile
+from xml.etree import ElementTree
 from pathlib import Path
 
 SEED = 20261005
@@ -24,6 +27,17 @@ JUDGMENT_FIELDS = (
     "correction_notes", "reviewer_notes",
 )
 REVIEW_FIELDS = ("case_id", "case_details", "conversation_url", "pr_url", *JUDGMENT_FIELDS)
+VALIDATION_VALUES = {
+    "E2:E34": ("yes", "no", "uncertain"),
+    "F2:F34": ("yes", "no", "uncertain"),
+    "G2:G34": ("yes", "no", "uncertain"),
+    "H2:H34": ("correct", "partially_correct", "incorrect", "uncertain"),
+    "I2:I34": ("correct", "partially_correct", "incorrect", "uncertain"),
+    "J2:J34": ("correct", "partially_correct", "incorrect", "uncertain"),
+    "K2:K34": ("none", "context", "specificity", "verification", "multiple", "uncertain"),
+    "L2:L34": ("no", "yes", "uncertain"),
+    "M2:M34": ("correct", "needs_correction", "uncertain"),
+}
 MANIFEST_FIELDS = (
     "case_id", "stratum", "selection_order", "reviewer_order", "random_seed",
     "sampling_method", "population_size", "stratum_population_size",
@@ -278,6 +292,76 @@ def prepare_review(root: Path) -> None:
                    REVIEW_FIELDS, review_rows)
 
 
+def _xlsx_cells(archive: zipfile.ZipFile, sheet_name: str) -> tuple[dict[str, str], dict[str, str], dict[str, tuple[str, ...]]]:
+    ns = {"x": "http://schemas.openxmlformats.org/spreadsheetml/2006/main",
+          "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+          "p": "http://schemas.openxmlformats.org/package/2006/relationships"}
+    workbook = ElementTree.fromstring(archive.read("xl/workbook.xml"))
+    relationship_id = next(sheet.attrib[f"{{{ns['r']}}}id"] for sheet in workbook.findall("x:sheets/x:sheet", ns)
+                           if sheet.attrib["name"] == sheet_name)
+    rels = ElementTree.fromstring(archive.read("xl/_rels/workbook.xml.rels"))
+    target = next(rel.attrib["Target"] for rel in rels.findall("p:Relationship", ns)
+                  if rel.attrib["Id"] == relationship_id)
+    target = target.lstrip("/")
+    if not target.startswith("xl/"):
+        target = "xl/" + target
+    sheet = ElementTree.fromstring(archive.read(target))
+    values, formulas = {}, {}
+    for cell in sheet.findall(".//x:c", ns):
+        address = cell.attrib["r"]
+        value = cell.find("x:v", ns); formula = cell.find("x:f", ns)
+        values[address] = "" if value is None or value.text is None else value.text
+        if formula is not None and formula.text is not None:
+            formulas[address] = formula.text
+    validations = {}
+    for item in sheet.findall("x:dataValidations/x:dataValidation", ns):
+        formula = item.find("x:formula1", ns)
+        raw = "" if formula is None or formula.text is None else formula.text.strip('"')
+        validations[item.attrib["sqref"]] = tuple(raw.split(",")) if raw else ()
+    return values, formulas, validations
+
+
+def validate_workbook(root: Path, reviewer: str) -> dict[str, int]:
+    csv_path = root / OUTPUT / f"reviewer_{reviewer}" / "stage_d_review.csv"
+    xlsx_path = root / OUTPUT / f"reviewer_{reviewer}" / "stage_d_review.xlsx"
+    rows = read_csv(csv_path)
+    if not xlsx_path.is_file():
+        raise ValueError(f"missing reviewer {reviewer} XLSX")
+    with zipfile.ZipFile(xlsx_path) as archive:
+        values, formulas, validations = _xlsx_cells(archive, "Review")
+        instructions, _, instruction_validations = _xlsx_cells(archive, "Instructions")
+        names = set(archive.namelist())
+    if tuple(values.get(f"{chr(65 + index)}1", "") for index in range(15)) != REVIEW_FIELDS:
+        raise ValueError(f"reviewer {reviewer} XLSX columns differ from CSV")
+    if len(rows) != 33 or any(re.match(r"^[A-O](?:3[5-9]|[4-9]\d)", address) for address in values):
+        raise ValueError(f"reviewer {reviewer} XLSX row count is not 33")
+    for row_number, row in enumerate(rows, 2):
+        expected = [row[field] for field in REVIEW_FIELDS]
+        actual = [values.get(f"{chr(65 + index)}{row_number}", "") for index in range(15)]
+        if actual != expected:
+            raise ValueError(f"reviewer {reviewer} XLSX/CSV mismatch at row {row_number}")
+        for column, field in (("C", "conversation_url"), ("D", "pr_url")):
+            formula = formulas.get(f"{column}{row_number}", "")
+            if formula != f'HYPERLINK("{row[field]}","{row[field]}")':
+                raise ValueError(f"reviewer {reviewer} hyperlink mismatch at {column}{row_number}")
+    if validations != VALIDATION_VALUES or instruction_validations:
+        raise ValueError(f"reviewer {reviewer} dropdown validation mismatch")
+    if any(range_name.startswith(("N", "O")) for range_name in validations):
+        raise ValueError(f"reviewer {reviewer} free-text columns have dropdowns")
+    instruction_text = " ".join(instructions.values())
+    for phrase in ("case_details is the primary Stage D evidence package",
+                   "Only pre-boundary conversation information is admissible",
+                   "PR content is not admissible evidence"):
+        if phrase not in instruction_text:
+            raise ValueError(f"reviewer {reviewer} workbook guidance is incomplete")
+    serialized = " ".join(values.values()) + " " + instruction_text
+    if "/Users/" in serialized or "\\Users\\" in serialized:
+        raise ValueError(f"reviewer {reviewer} workbook contains an absolute local path")
+    if "xl/worksheets/sheet1.xml" not in names or "xl/worksheets/sheet2.xml" not in names:
+        raise ValueError(f"reviewer {reviewer} workbook structure is incomplete")
+    return {"rows": len(rows), "columns": len(REVIEW_FIELDS), "dropdowns": len(validations)}
+
+
 def validate(root: Path, seed: int = SEED) -> dict[str, int]:
     expected = generate_sample(root, seed)
     actual = read_csv(root / MANIFEST)
@@ -340,5 +424,10 @@ def validate(root: Path, seed: int = SEED) -> dict[str, int]:
         raise ValueError("eligibility ledger changed")
     if sha256(root / STAGE_C_AUTHORITY) != first["stage_c_authority_sha256"]:
         raise ValueError("Stage C authority changed")
+    workbook_a = validate_workbook(root, "A")
+    workbook_b = validate_workbook(root, "B")
+    if workbook_a != workbook_b:
+        raise ValueError("reviewer workbook structures differ")
     return {"eligible": 111, "PA_population": 68, "PN_population": 43,
-            "sample": 33, "PA_sample": 20, "PN_sample": 13}
+            "sample": 33, "PA_sample": 20, "PN_sample": 13,
+            "reviewer_workbooks": 2}
