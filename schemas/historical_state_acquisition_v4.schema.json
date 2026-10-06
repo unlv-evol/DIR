@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "historical-state-acquisition-v4",
+  "title": "Post-Stage-C v4 exact Git-lineage acquisition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["record_version", "reconstruction_contract", "procedure_version", "case_id", "repository", "pr_number", "tFG", "tC", "reconstruction_path", "reconstruction_status", "unresolved_reasons", "selected_state", "temporal_consistency", "lineage_source", "base_routing_source", "base_lineage_ref", "focal_lineage", "base_lineage", "materialization", "historical_observability", "provenance", "executed_at"],
+  "properties": {
+    "record_version": {"const": "historical-state-acquisition-v4"},
+    "reconstruction_contract": {"const": "post-stage-c-reconstruction-v4"},
+    "procedure_version": {"const": "post-stage-c-git-lineage-v4"},
+    "case_id": {"pattern": "^CASE_[0-9A-F]{12}$"},
+    "repository": {"pattern": "^[^/]+/[^/]+$"},
+    "pr_number": {"type": "integer", "minimum": 1},
+    "tFG": {"type": "object"}, "tC": {"type": "object"},
+    "reconstruction_path": {"enum": ["focal", "base"]},
+    "reconstruction_status": {"enum": ["reconstructed_focal_state", "reconstructed_base_state", "unresolved"]},
+    "unresolved_reasons": {"type": "array", "items": {"enum": ["applicable_base_lineage_unresolved", "no_usable_temporal_information", "temporal_or_lineage_ambiguous", "commit_validation_failed", "tree_materialization_failed", "acquisition_failed"]}},
+    "selected_state": {"type": "object"}, "temporal_consistency": {"enum": ["consistent", "temporal_or_lineage_ambiguous"]},
+    "lineage_source": {"const": "established_focal_pr"},
+    "base_routing_source": {"enum": ["", "pr_base_ref", "current_default_branch_substitution", "other_explicitly_justified_route"]},
+    "base_lineage_ref": {"type": "string"},
+    "focal_lineage": {"type": "object"}, "base_lineage": {"type": ["object", "null"]}, "materialization": {"type": "object"},
+    "historical_observability": {"enum": ["confirmed", "not_confirmed"]}, "provenance": {"type": "object"}, "executed_at": {"type": "string"}
+  }
+}

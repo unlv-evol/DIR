@@ -1,9 +1,0 @@
-{
-  "base_sha": "9e3357efa8b09dd586c9836650557df4168a59c5",
-  "created_at": "2023-07-06T15:28:20Z",
-  "pr_number": 25432,
-  "raw_response_sha256": "053ee9db8e12329dee5c87a5110455fa8c0c9872caeacdba8226178ff1dc6ac7",
-  "repository": "dotCMS/core",
-  "retrieved_at": "2026-10-02T14:34:48.024834+00:00",
-  "source_url": "https://api.github.com/repos/dotCMS/core/pulls/25432"
-}

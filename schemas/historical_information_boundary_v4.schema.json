@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "historical-information-boundary-v4",
+  "title": "Post-Stage-C v4 reconstructed S_i(tFG) boundary",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["boundary_record_version", "reconstruction_contract", "case_id", "repository", "tFG", "reconstruction_status", "reconstruction_path", "selected_state", "temporal_consistency", "base_routing_source", "base_lineage_ref", "materialization", "historical_observability", "unresolved_reasons", "provenance_references"],
+  "properties": {
+    "boundary_record_version": {"const": "historical-information-boundary-v4"},
+    "reconstruction_contract": {"const": "post-stage-c-reconstruction-v4"},
+    "case_id": {"pattern": "^CASE_[0-9A-F]{12}$"}, "repository": {"type": "string"}, "tFG": {"type": "object"},
+    "reconstruction_status": {"enum": ["reconstructed_focal_state", "reconstructed_base_state", "unresolved"]},
+    "reconstruction_path": {"enum": ["focal", "base"]}, "selected_state": {"type": "object"},
+    "temporal_consistency": {"enum": ["consistent", "temporal_or_lineage_ambiguous"]}, "base_routing_source": {"type": "string"}, "base_lineage_ref": {"type": "string"},
+    "materialization": {"type": "object"}, "historical_observability": {"enum": ["confirmed", "not_confirmed"]},
+    "unresolved_reasons": {"type": "array"}, "provenance_references": {"type": "array", "items": {"type": "string"}}
+  }
+}

@@ -1,9 +1,0 @@
-{
-  "base_sha": "67e4123c9e50aa2e56c25ef89136b75219348b04",
-  "created_at": "2024-01-19T16:29:19Z",
-  "pr_number": 338,
-  "raw_response_sha256": "2e4b8a507e99825da41901583b75c3040c9dc2e0bf89380c2d833ca55659d4c2",
-  "repository": "pokt-network/poktroll",
-  "retrieved_at": "2026-10-02T14:34:51.920538+00:00",
-  "source_url": "https://api.github.com/repos/pokt-network/poktroll/pulls/338"
-}

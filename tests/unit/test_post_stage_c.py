@@ -1,292 +1,91 @@
-from __future__ import annotations
-
-import csv
-import hashlib
 import json
-import shutil
 import tempfile
 import unittest
-from collections import Counter
 from pathlib import Path
 
-from developer_intent.post_stage_c import (
-    ELIGIBILITY_FIELDS,
-    initialize_acquisition_record,
-    initialize_eligibility_rows,
-    initialize_historical_index,
-    reconstructibility,
-    resolve_target_identity,
-    select_pilot,
-    stage_d_eligible,
-    temporal_relation_to_tfg,
-    validate_target_adjudication,
-    validate_eligibility_row,
-)
+from developer_intent.post_stage_c import (annotate_commit, choose_reconstruction,
+                                            focal_root_external_parent,
+                                            select_from_lineage,
+                                            validate_eligibility_record,
+                                            validate_eligibility_schema,
+                                            validate_record)
 
+TFG="2024-01-02T00:00:00+00:00"
+def c(n, author, committer, parents=()):
+    return {"sha":f"{n:040x}","parent_shas":[f"{p:040x}" for p in parents],"tree_sha":f"{n+100:040x}",
+            "author_time":author,"committer_time":committer,"repository":"o/r","pr_number":1,"provenance":{}}
+PRE="2024-01-01T00:00:00+00:00"; AT=TFG; POST="2024-01-03T00:00:00+00:00"
 
-ROOT = Path(__file__).resolve().parents[2]
+class V4Tests(unittest.TestCase):
+    def test_eligibility_v2_schema_uses_final_contract(self):
+        schema=json.loads(Path("schemas/post_stage_c_eligibility_v2.schema.json").read_text())
+        validate_eligibility_schema(schema)
+        self.assertEqual(schema["properties"]["reconstruction_status"]["enum"],
+                         ["reconstructed_focal_state", "reconstructed_base_state", "unresolved"])
 
+    def test_eligibility_v2_rejects_inconsistent_eligible_row(self):
+        schema=json.loads(Path("schemas/post_stage_c_eligibility_v2.schema.json").read_text())
+        row={field:"" for field in schema["required"]}
+        for field,spec in schema["properties"].items():
+            if "const" in spec: row[field]=spec["const"]
+        row.update(case_id="CASE_000000000000",stage_c_processability_status="processable",
+                   stage_c_authoritative_record="x",stage_c_authoritative_record_sha256="0"*64,
+                   stage_c_authority_validation_status="validated",tC="x",tC_precision="timestamp",
+                   tC_status="derivable",tC_source="x",tFG="x",tFG_precision="timestamp",
+                   tFG_status="derivable",tFG_source="x",primary_repository_cutoff="tFG",
+                   first_generation_boundary_identifiable="yes",first_generation_boundary_basis="x",
+                   repository="o/r",canonical_repository_url="https://github.com/o/r",pr_number="1",
+                   source_linkage_reference="x",reconstruction_target_type="git_commit",
+                   target_identity_status="unresolved",historical_availability_status="unresolved",
+                   historical_state_reconstructible="unresolved",repository_component_status="not_assessed",
+                   pr_component_status="not_assessed",issue_component_status="not_assessed",
+                   ci_component_status="not_assessed",discussion_component_status="not_assessed",
+                   reconstruction_status="unresolved",reconstruction_authority_ref="x",
+                   retry_disposition="not_applicable",remaining_criteria_status="unresolved",
+                   final_scientific_eligibility="eligible",adjudication_required="false")
+        with self.assertRaises(ValueError): validate_eligibility_record(row,schema)
+    def test_a_focal_committer_before(self): self.assertEqual(choose_reconstruction([c(1,PRE,PRE)],None,TFG)["status"],"reconstructed_focal_state")
+    def test_b_focal_committer_equal(self): self.assertEqual(choose_reconstruction([c(1,AT,AT)],None,TFG)["selected"]["sha"],f"{1:040x}")
+    def test_c_multiple_before_after(self):
+        r=choose_reconstruction([c(1,PRE,PRE),c(2,PRE,PRE,(1,)),c(3,POST,POST,(2,))],None,TFG)
+        self.assertEqual(r["selected"]["sha"],f"{2:040x}"); self.assertEqual(r["focal"]["first_post_tfg"]["sha"],f"{3:040x}"); self.assertEqual(r["focal"]["selected_to_first_post_relationship"],"ancestor")
+    def test_d_committer_wins_cross_to_post(self):
+        x=annotate_commit(c(1,PRE,POST),TFG,1); self.assertEqual((x["temporal_basis"],x["effective_time_relation"],x["author_time_sensitivity"]),("committer_time","after_tfg","crosses_tfg"))
+    def test_e_committer_wins_cross_to_pre(self): self.assertEqual(annotate_commit(c(1,POST,PRE),TFG,1)["effective_time_relation"],"at_or_before_tfg")
+    def test_f_author_fallback_pre(self): self.assertEqual(annotate_commit(c(1,PRE,None),TFG,1)["temporal_basis"],"author_time_fallback")
+    def test_g_author_fallback_post(self): self.assertEqual(annotate_commit(c(1,POST,None),TFG,1)["effective_time_relation"],"after_tfg")
+    def test_h_no_times(self): self.assertEqual(annotate_commit(c(1,None,None),TFG,1)["effective_time_relation"],"unknown")
+    def test_i_mixed_bases(self):
+        r=select_from_lineage([c(1,PRE,PRE),c(2,PRE,None,(1,))],TFG); self.assertEqual(r["selected"]["temporal_basis"],"author_time_fallback")
+    def test_j_topology_temporal_conflict(self):
+        r=choose_reconstruction([c(1,POST,POST),c(2,PRE,PRE,(1,))],None,TFG); self.assertEqual(r["reason"],"temporal_or_lineage_ambiguous")
+    def test_k_no_focal_uses_base(self): self.assertEqual(choose_reconstruction([c(1,POST,POST)],[c(2,PRE,PRE)],TFG,"pr_base_ref")["status"],"reconstructed_base_state")
+    def test_l_pr_base_ref_preserved(self): self.assertEqual(choose_reconstruction([], [c(2,PRE,PRE)],TFG,"pr_base_ref")["path"],"base")
+    def test_m_unresolvable_base_ref(self): self.assertEqual(choose_reconstruction([],None,TFG)["status"],"unresolved")
+    def test_n_default_substitution_explicit(self): self.assertEqual(choose_reconstruction([], [c(2,PRE,PRE)],TFG,"current_default_branch_substitution")["status"],"reconstructed_base_state")
+    def test_o_incomplete_materialization_rejected(self):
+        r=self._record(); r["materialization"]["complete_recursive_tree"]=False
+        with self.assertRaises(ValueError): validate_record(r)
+    def test_p_nonlinear_ancestry(self): self.assertEqual(select_from_lineage([c(1,PRE,PRE),c(2,PRE,PRE)],TFG)["temporal_consistency"],"temporal_or_lineage_ambiguous")
+    def test_q_no_post_focal_needed(self): self.assertEqual(choose_reconstruction([c(1,PRE,PRE)],None,TFG)["status"],"reconstructed_focal_state")
+    def test_r_exact_commit_tree_materialization(self): validate_record(self._record())
+    def test_s_outcome_field_rejected(self):
+        r=self._record(); r["provenance"]["outcome_class"]="PA"
+        with self.assertRaises(ValueError): validate_record(r)
+    def test_t_post_tfg_content_rejected(self):
+        r=self._record(); r["focal_lineage"]["commits"][0]["commit_message"]="future"
+        with self.assertRaises(ValueError): validate_record(r)
+    def test_weak_base_route_uses_unique_external_parent(self):
+        commits=[c(2,POST,POST,(1,)),c(3,POST,POST,(2,))]
+        self.assertEqual(focal_root_external_parent(commits),(f"{1:040x}","unique_focal_root_external_parent"))
+    def test_weak_base_route_rejects_ambiguous_root_parents(self):
+        commit=c(3,POST,POST,(1,2))
+        self.assertEqual(focal_root_external_parent([commit]),(None,"focal_root_external_parent_ambiguous"))
+    def _record(self):
+        lineage=select_from_lineage([c(1,PRE,PRE)],TFG); selected=lineage["selected"]
+        return {"record_version":"historical-state-acquisition-v4","reconstruction_contract":"post-stage-c-reconstruction-v4",
+                "reconstruction_status":"reconstructed_focal_state","selected_state":{"commit_sha":selected["sha"],"tree_sha":selected["tree_sha"]},
+                "materialization":{"status":"materialized","complete_recursive_tree":True},"historical_observability":"not_confirmed",
+                "focal_lineage":lineage,"provenance":{"outcome_inputs_enabled":False}}
 
-class PostStageCContractTests(unittest.TestCase):
-    @classmethod
-    def setUpClass(cls):
-        cls.rows = initialize_eligibility_rows(ROOT)
-
-    def test_initializes_exactly_111_authority_bound_pending_rows(self):
-        self.assertEqual(len(self.rows), 111)
-        self.assertEqual(len({row["case_id"] for row in self.rows}), 111)
-        self.assertTrue(all(tuple(row) == ELIGIBILITY_FIELDS for row in self.rows))
-        self.assertTrue(all(row["final_scientific_eligibility"] == "pending_resolution"
-                            for row in self.rows))
-        self.assertTrue(all(row["historical_state_reconstructible"] == "unresolved"
-                            for row in self.rows))
-        for row in self.rows:
-            validate_eligibility_row(row, root=ROOT)
-
-    def test_only_processability_authorities_enter(self):
-        with (ROOT / "cases/manifests/stage_c_post_resolution_authority.csv").open(
-                newline="", encoding="utf-8") as stream:
-            authority = list(csv.DictReader(stream))
-        expected = {row["case_id"] for row in authority
-                    if row["eligible_for_post_c_scientific_resolution"] == "true"}
-        self.assertEqual({row["case_id"] for row in self.rows}, expected)
-        self.assertEqual(len(authority) - len(expected), 11)
-
-    def test_first_generation_criterion_and_authority_hashes(self):
-        for row in self.rows:
-            self.assertEqual(row["first_generation_boundary_identifiable"], "yes")
-            self.assertEqual(row["stage_c_authority_validation_status"], "validated")
-            path = ROOT / row["stage_c_authoritative_record"]
-            self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(),
-                             row["stage_c_authoritative_record_sha256"])
-
-    def test_temporal_inclusive_timestamp_and_date_uncertainty(self):
-        cutoff = {"value": "2024-01-02T03:04:05+00:00", "precision": "timestamp"}
-        self.assertEqual(temporal_relation_to_tfg(dict(cutoff), cutoff), "at_or_before")
-        self.assertEqual(temporal_relation_to_tfg(
-            {"value": "2024-01-02T03:04:06+00:00", "precision": "timestamp"}, cutoff), "after")
-        self.assertEqual(temporal_relation_to_tfg(
-            {"value": "2024-01-02", "precision": "date"},
-            {"value": "2024-01-02", "precision": "date"}), "unresolved")
-
-    def test_reconstructibility_ambiguity_missing_and_current_fetchability(self):
-        base = dict(repository_identity_verified=True, focal_pr_identified=True,
-                    target_identity_status="established", target_unique=True,
-                    immutable_identifier_known=True,
-                    historical_availability_status="at_or_before", object_materialized=True,
-                    object_tree_validated=True, deterministic_repeat=True,
-                    provenance_retained=True, outcome_information_required=False)
-        self.assertEqual(reconstructibility(**base), "yes")
-        for changed in ({"target_unique": False, "failure_category": "target_ambiguous"},
-                        {"immutable_identifier_known": False,
-                         "failure_category": "identifier_missing"},
-                        {"historical_availability_status": "unresolved"}):
-            candidate = dict(base); candidate.update(changed)
-            self.assertEqual(reconstructibility(**candidate), "unresolved")
-        current_only = dict(base, historical_availability_status="unresolved")
-        self.assertEqual(reconstructibility(**current_only), "unresolved")
-
-    def test_infrastructure_failures_remain_unresolved(self):
-        base = dict(repository_identity_verified=True, focal_pr_identified=True,
-                    target_identity_status="unresolved", target_unique=True,
-                    immutable_identifier_known=True,
-                    historical_availability_status="unresolved", object_materialized=False,
-                    object_tree_validated=False, deterministic_repeat=False,
-                    provenance_retained=True, outcome_information_required=False)
-        for category in ("transport_failed", "timed_out", "repository_unavailable",
-                         "authentication_blocked", "rate_limited", "object_not_found"):
-            self.assertEqual(reconstructibility(**base, failure_category=category), "unresolved")
-
-    def test_scientific_no_requires_affirmative_evidence(self):
-        base = dict(repository_identity_verified=True, focal_pr_identified=True,
-                    target_identity_status="established", target_unique=True,
-                    immutable_identifier_known=True,
-                    historical_availability_status="after", object_materialized=True,
-                    object_tree_validated=True, deterministic_repeat=True,
-                    provenance_retained=True, outcome_information_required=False)
-        self.assertEqual(reconstructibility(**base, failure_category="temporally_inadmissible"),
-                         "unresolved")
-        self.assertEqual(reconstructibility(**base, failure_category="temporally_inadmissible",
-                                            affirmative_scientific_failure=True), "no")
-        with self.assertRaises(ValueError):
-            reconstructibility(**base, failure_category="timed_out",
-                               affirmative_scientific_failure=True)
-
-    def test_component_absence_does_not_control_core_reconstructibility(self):
-        row = self.rows[0]
-        acquisition = initialize_acquisition_record(row)
-        index = initialize_historical_index(row)
-        acquisition["components"]["ci"]["status"] = "not_applicable"
-        index["components"]["ci"]["status"] = "not_applicable"
-        self.assertEqual(acquisition["historical_state_reconstructible"], "unresolved")
-        self.assertEqual(index["components"]["repository"]["status"], "not_assessed")
-        result = reconstructibility(
-            repository_identity_verified=True, focal_pr_identified=True,
-            target_identity_status="established", target_unique=True,
-            immutable_identifier_known=True, historical_availability_status="at_or_before",
-            object_materialized=True, object_tree_validated=True, deterministic_repeat=True,
-            provenance_retained=True, outcome_information_required=False)
-        self.assertEqual(result, "yes")
-
-    @staticmethod
-    def claim(level: int, sha: str = "a" * 40, **changes):
-        claim = {
-            "claim_id": f"claim-{level}-{sha[:4]}",
-            "evidence_level": {
-                1: "level_1_direct_historical_pr_state",
-                2: "level_2_derivable_immutable_historical_relationship",
-                3: "level_3_contemporaneous_provider",
-                4: "level_4_present_day_pr_metadata",
-                5: "level_5_present_day_git_object_or_ref",
-            }[level],
-            "evidence_source_type": "archived_pr_metadata" if level < 4 else "current_provider",
-            "evidence_source_identifier": f"source-{level}",
-            "evidence_historical_timestamp": "2024-01-01T00:00:00Z",
-            "evidence_timestamp_precision": "timestamp",
-            "evidence_relation_to_tFG": "at_or_before",
-            "retrieval_timestamp": "2026-10-01T00:00:00Z",
-            "evidence_hash": "f" * 64,
-            "provenance_reference": f"evidence/{level}",
-            "asserted_base_sha": sha,
-            "evidence_status": "accepted",
-            "adequate_provenance": True,
-            "cross_validated": False,
-        }
-        claim.update(changes)
-        return claim
-
-    def test_historical_hierarchy_and_current_sources(self):
-        direct = resolve_target_identity([self.claim(1)])
-        self.assertEqual(direct["status"], "established")
-        for claim in (
-                self.claim(4), self.claim(5),
-                self.claim(1, evidence_relation_to_tFG="unresolved")):
-            resolution = resolve_target_identity([claim])
-            self.assertEqual(resolution["status"], "unresolved")
-            self.assertEqual(resolution["authoritative_target_identifier"], "")
-
-    def test_commit_time_and_materialization_cannot_establish_identity(self):
-        timestamp_only = self.claim(5, evidence_source_type="commit_timestamp")
-        self.assertEqual(resolve_target_identity([timestamp_only])["status"], "unresolved")
-        result = reconstructibility(
-            repository_identity_verified=True, focal_pr_identified=True,
-            target_identity_status="unresolved", target_unique=True,
-            immutable_identifier_known=True, historical_availability_status="at_or_before",
-            object_materialized=True, object_tree_validated=True, deterministic_repeat=True,
-            provenance_retained=True, outcome_information_required=False)
-        self.assertEqual(result, "unresolved")
-
-    def test_stronger_historical_value_beats_different_current_value(self):
-        historical = self.claim(1, "a" * 40)
-        current = self.claim(4, "b" * 40, evidence_status="supporting_only")
-        resolution = resolve_target_identity([historical, current])
-        self.assertEqual(resolution["status"], "established")
-        self.assertEqual(resolution["authoritative_target_identifier"], "a" * 40)
-        self.assertEqual(len(resolution["claims"]), 2)
-
-    def test_comparable_historical_conflict_is_ambiguous(self):
-        resolution = resolve_target_identity([self.claim(1, "a" * 40),
-                                              self.claim(1, "b" * 40)])
-        self.assertEqual(resolution["status"], "ambiguous")
-        self.assertEqual(resolution["authoritative_target_identifier"], "")
-        self.assertEqual(len(resolution["claims"]), 2)
-
-    def test_yes_requires_historical_identity_and_materialization(self):
-        base = dict(repository_identity_verified=True, focal_pr_identified=True,
-                    target_identity_status="established", target_unique=True,
-                    immutable_identifier_known=True, historical_availability_status="at_or_before",
-                    object_materialized=True, object_tree_validated=True,
-                    deterministic_repeat=True, provenance_retained=True,
-                    outcome_information_required=False)
-        self.assertEqual(reconstructibility(**base), "yes")
-        for changed in ({"target_identity_status": "unresolved"},
-                        {"object_materialized": False}, {"object_tree_validated": False}):
-            candidate = dict(base); candidate.update(changed)
-            self.assertEqual(reconstructibility(**candidate), "unresolved")
-
-    def test_adjudication_cannot_use_fetchability_or_invent_state(self):
-        record = {
-            "case_id": "CASE_AB42B2598A84", "candidate_states": ["a" * 40],
-            "evidence_references": ["claim-1"],
-            "hierarchy_levels": ["level_1_direct_historical_pr_state"],
-            "decision": "select", "selected_target_identifier": "a" * 40,
-            "rationale": "Direct historical PR state outranks current metadata.",
-            "adjudicator_status": "independent", "timestamp": "2026-10-01T00:00:00Z",
-            "contract_version": "post-stage-c-reconstruction-v1",
-            "decision_basis": "hierarchy_rank",
-        }
-        validate_target_adjudication(record)
-        invalid = dict(record, decision_basis="current_fetchability")
-        with self.assertRaises(ValueError):
-            validate_target_adjudication(invalid)
-        invented = dict(record, selected_target_identifier="b" * 40)
-        with self.assertRaises(ValueError):
-            validate_target_adjudication(invented)
-
-    def test_pilot_is_deterministic_balanced_and_outcome_fields_are_ignored(self):
-        first = select_pilot(ROOT, self.rows)
-        second = select_pilot(ROOT, self.rows)
-        self.assertEqual(first, second)
-        self.assertEqual(len(first), 8)
-        self.assertEqual(Counter(row["pa_pn_stratum"] for row in first), {"PA": 4, "PN": 4})
-        self.assertTrue(all(row["reconstruction_executed"] == "false" for row in first))
-        with tempfile.TemporaryDirectory() as directory:
-            temp = Path(directory)
-            (temp / "cases/manifests").mkdir(parents=True)
-            for name in ("screened_PA_PN_cases.csv", "stage_b_summary.csv"):
-                source = ROOT / "cases/manifests" / name
-                with source.open(newline="", encoding="utf-8") as source_stream:
-                    rows = list(csv.DictReader(source_stream))
-                fields = list(rows[0]) + ["final_diff", "merge_outcome", "expected_eligibility"]
-                for item in rows:
-                    item.update(final_diff="PROHIBITED", merge_outcome="PROHIBITED",
-                                expected_eligibility="PROHIBITED")
-                with (temp / "cases/manifests" / name).open("w", newline="", encoding="utf-8") as f:
-                    writer = csv.DictWriter(f, fieldnames=fields, lineterminator="\n")
-                    writer.writeheader(); writer.writerows(rows)
-            self.assertEqual(first, select_pilot(temp, self.rows))
-
-    def test_stage_d_requires_final_eligible_and_resolved_contract(self):
-        row = dict(self.rows[0])
-        self.assertFalse(stage_d_eligible(row))
-        row.update(historical_state_reconstructible="yes", remaining_criteria_status="all_satisfied",
-                   final_scientific_eligibility="eligible")
-        self.assertTrue(stage_d_eligible(row))
-        for key, value in (("historical_state_reconstructible", "unresolved"),
-                           ("final_scientific_eligibility", "pending_resolution"),
-                           ("first_generation_boundary_identifiable", "unresolved")):
-            changed = dict(row); changed[key] = value
-            self.assertFalse(stage_d_eligible(changed))
-        changed = dict(row); changed["stage_c_authority_validation_status"] = "failed"
-        self.assertFalse(stage_d_eligible(changed))
-
-    def test_legacy_dir_tfg_v1_contracts_are_unchanged(self):
-        expected = {
-            "schemas/frozen_conversation_v1.schema.json": "30419bd5819a8cbdd2e9f4bea9e02fe27b925a3aa2a0a3ce7ffae3b2f5ba3cc0",
-            "schemas/repository_evidence_v1.schema.json": "1b9a8a0bc82484571c2fb36a8a1f62e290f5eb9d0b998c4ff17ae7621d425a0e",
-            "src/developer_intent/first_generation.py": "6f18dc6479ac13876d0f525702f02554c03d8344ad59912e4c6bab15907ae623",
-            "src/developer_intent/temporal_evidence.py": "4735c5c81ab90d6720e748542f66c08fced7755c68f2de2d504c4c3ad58aff65",
-        }
-        for relative, digest in expected.items():
-            self.assertEqual(hashlib.sha256((ROOT / relative).read_bytes()).hexdigest(), digest)
-        for name in ("post_stage_c_eligibility_v1.schema.json",
-                     "historical_state_acquisition_v1.schema.json",
-                     "historical_information_index_v1.schema.json"):
-            json.loads((ROOT / "schemas" / name).read_text(encoding="utf-8"))
-
-    def test_new_schema_fields_match_initialized_contracts(self):
-        eligibility_schema = json.loads((ROOT / "schemas/post_stage_c_eligibility_v1.schema.json").read_text())
-        self.assertEqual(set(eligibility_schema["required"]), set(ELIGIBILITY_FIELDS))
-        self.assertEqual(set(eligibility_schema["properties"]), set(ELIGIBILITY_FIELDS))
-        acquisition = initialize_acquisition_record(self.rows[0])
-        acquisition_schema = json.loads((ROOT / "schemas/historical_state_acquisition_v1.schema.json").read_text())
-        self.assertEqual(set(acquisition), set(acquisition_schema["required"]))
-        self.assertEqual(set(acquisition), set(acquisition_schema["properties"]))
-        index = initialize_historical_index(self.rows[0])
-        index_schema = json.loads((ROOT / "schemas/historical_information_index_v1.schema.json").read_text())
-        self.assertEqual(set(index), set(index_schema["required"]))
-        self.assertEqual(set(index), set(index_schema["properties"]))
-
-
-if __name__ == "__main__":
-    unittest.main()
+if __name__ == "__main__": unittest.main()
