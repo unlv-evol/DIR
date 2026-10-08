@@ -23,6 +23,14 @@ observability, downstream outcomes, and later conversation turns. Each CSV has
 one row per case and links to a reviewer-safe JSON containing the target prompt,
 ordered pre-boundary conversation, selected first-generation response, and the
 authoritative Context, Specificity, and Verification items with provenance.
+Each JSON is accompanied by a deterministic standalone HTML rendering for
+human review. The HTML contains no additional evidence: it preserves the JSON
+content, ordering, evidence restrictions, and provenance while making source
+URLs, turns, artifacts, and Stage C items easier to inspect. Reviewer workbook
+`case_details` cells retain the displayed JSON path and open the sibling HTML
+page through a repository-relative link. JSON remains the structured evidence
+authority, CSV remains the canonical annotation representation, and XLSX is
+the frozen reviewer-facing instrument.
 
 The first-generation response is displayed only to validate first-generation,
 target-prompt, boundary, and `tFG` identification. It is explicitly separated

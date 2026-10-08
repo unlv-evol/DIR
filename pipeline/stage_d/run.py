@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src"))
 
 from developer_intent.stage_d import (SEED, generate_sample, prepare_review,
-                                      repository_remote, validate)
+                                      prepare_review_html, repository_remote, validate)
 
 
 def main() -> None:
@@ -17,6 +17,7 @@ def main() -> None:
     action.add_argument("--check-config", action="store_true")
     action.add_argument("--generate-sample", action="store_true")
     action.add_argument("--prepare-review", action="store_true")
+    action.add_argument("--prepare-review-html", action="store_true")
     action.add_argument("--validate", action="store_true")
     args = parser.parse_args()
     if args.check_config:
@@ -27,6 +28,8 @@ def main() -> None:
     elif args.prepare_review:
         prepare_review(ROOT)
         print(json.dumps({"reviewer_packages_prepared": 2, "cases_per_reviewer": 33}, indent=2))
+    elif args.prepare_review_html:
+        print(json.dumps(prepare_review_html(ROOT), indent=2))
     else:
         print(json.dumps(validate(ROOT), indent=2))
 

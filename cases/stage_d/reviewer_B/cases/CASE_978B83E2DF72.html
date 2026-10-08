@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stage D evidence package · CASE_978B83E2DF72</title>
+<style>
+:root { color-scheme: light; --navy:#17365d; --blue:#d9eaf7; --gold:#fff4cc; --ink:#1f2937; --line:#cbd5e1; --muted:#52606d; }
+* { box-sizing:border-box; } body { margin:0; font:16px/1.5 Arial,sans-serif; color:var(--ink); background:#f6f8fa; }
+main { max-width:1120px; margin:auto; padding:24px; } h1,h2,h3,h4 { color:var(--navy); } h1 { margin-bottom:.25rem; }
+section,.turn,.artifact,.extraction-item { background:white; border:1px solid var(--line); border-radius:8px; margin:16px 0; padding:18px; }
+.restriction { background:var(--gold); border-left:6px solid #b58105; } .admissible { background:#e8f5e9; border-left:6px solid #2e7d32; }
+dl { display:grid; grid-template-columns:minmax(180px,1fr) 3fr; gap:6px 16px; } dt { font-weight:bold; } dd { margin:0; overflow-wrap:anywhere; }
+pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#f3f4f6; border:1px solid #e5e7eb; border-radius:5px; padding:14px; font:14px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace; }
+.artifact-content { white-space:pre; overflow:auto; } .metadata,.empty { color:var(--muted); } a { color:#0563c1; } ul.evidence-spans { padding-left:22px; }
+</style>
+</head>
+<body><main>
+<header><p>Stage D reviewer evidence package</p><h1>CASE_978B83E2DF72</h1><p>Human-readable companion to the authoritative reviewer-safe JSON.</p></header>
+<section id="source-links"><h2>Source URLs</h2><p><a href="https://chat.openai.com/share/f7b28f24-d71f-4502-9fa9-0b79b0e7cc20" rel="noopener noreferrer">Authoritative conversation</a></p><p><a href="https://github.com/BitBoxSwiss/bitbox-wallet-app/pull/2368" rel="noopener noreferrer">Authoritative pull request</a> — provenance only; PR content is inadmissible for independent Context/Specificity/Verification validation.</p></section>
+<section id="evidence-boundary"><h2>Evidence boundary</h2><div class="admissible"><strong>Admissible C/S/V evidence:</strong> only the pre-boundary conversation shown below.</div><div class="restriction"><strong>Restricted:</strong> resolved artifacts and the full first-generation response are visible only to validate first-generation identity, target prompt, boundary, and tFG. Turns after the response are excluded. The PR URL is provenance only.</div><dl><dt>pre_boundary_conversation</dt><dd>admissible_for_context_specificity_verification_validation</dd><dt>resolved_first_generation_artifacts</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>first_generation_response</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>turns_after_first_generation_response</dt><dd>excluded</dd></dl></section>
+<section id="first-generation"><h2>First-generation family and boundary</h2><dl><dt>Family ID</dt><dd>FGF_fde7d182bef24d1d50cb0245</dd><dt>Family label</dt><dd>One-time LiveData authentication event wrapper and observer</dd><dt>Artifact references</dt><dd>GTC_000004_000465_000933_46a0aca90becfa67, GTC_000004_001026_001322_e03de9908c9470fc, GTC_000004_001429_001837_d662819b422a5a15</dd><dt>Response turn ID</dt><dd>turn_000004</dd><dt>Target prompt turn ID</dt><dd>turn_000003</dd><dt>Boundary</dt><dd>exclusive_before:turn_000004</dd><dt>tFG</dt><dd>2023-11-23T04:34:55.099208+00:00</dd></dl></section>
+<section id="target-prompt"><h2>Target prompt</h2><article class="target-prompt" data-turn-id="turn_000003" data-event-index="3"><h3>User · turn turn_000003</h3><p class="metadata">Event index: 3</p><pre class="turn-text">MainActivity:
+```
+
+        goViewModel.getRequestAuth().observe(this, new Observer&lt;Boolean&gt;() {
+            @Override
+            public void onChanged(Boolean requestAuth) {
+                Util.log(&quot;requested Auth: &quot; + requestAuth);
+                if (requestAuth) {
+                    goViewModel.setRequestAuth(false);
+                    // do something
+                }
+            }
+        });
+
+```
+
+in GoViewModel
+
+```
+private MutableLiveData&lt;Boolean&gt; requestAuth = new MutableLiveData&lt;&gt;();
+
+    public MutableLiveData&lt;Boolean&gt; getRequestAuth() {
+        return requestAuth;
+    }
+
+    public void setRequestAuth(Boolean requestAuth) {
+        this.requestAuth.postValue(requestAuth);
+    }
+
+```
+
+this seems to be a hack to trigger a callback when authentication is requested. what is the correct way of achieving the same?</pre></article></section>
+<section id="pre-boundary-conversation"><h2>Pre-boundary conversation</h2><p class="admissible">These ordered turns are the only admissible conversation evidence for C/S/V validation.</p><article class="turn" data-turn-id="turn_000003" data-event-index="3"><h3>User · turn turn_000003</h3><p class="metadata">Event index: 3</p><pre class="turn-text">MainActivity:
+```
+
+        goViewModel.getRequestAuth().observe(this, new Observer&lt;Boolean&gt;() {
+            @Override
+            public void onChanged(Boolean requestAuth) {
+                Util.log(&quot;requested Auth: &quot; + requestAuth);
+                if (requestAuth) {
+                    goViewModel.setRequestAuth(false);
+                    // do something
+                }
+            }
+        });
+
+```
+
+in GoViewModel
+
+```
+private MutableLiveData&lt;Boolean&gt; requestAuth = new MutableLiveData&lt;&gt;();
+
+    public MutableLiveData&lt;Boolean&gt; getRequestAuth() {
+        return requestAuth;
+    }
+
+    public void setRequestAuth(Boolean requestAuth) {
+        this.requestAuth.postValue(requestAuth);
+    }
+
+```
+
+this seems to be a hack to trigger a callback when authentication is requested. what is the correct way of achieving the same?</pre></article></section>
+<section id="selected-artifacts"><h2>Selected first-generation artifacts</h2><p class="restriction">Use only for first-generation, target-prompt, boundary, and tFG validation.</p><article class="artifact" data-artifact-id="GTC_000004_000465_000933_46a0aca90becfa67"><h3>Artifact 1: GTC_000004_000465_000933_46a0aca90becfa67</h3><dl><dt>Artifact ID</dt><dd>GTC_000004_000465_000933_46a0aca90becfa67</dd><dt>Order</dt><dd>1</dd><dt>Source response</dt><dd>turn_000004</dd><dt>Type</dt><dd>source_code</dd><dt>Language</dt><dd>java</dd></dl><pre class="artifact-content"><code>   public class Event&lt;T&gt; {
+       private T content;
+       private boolean hasBeenHandled = false;
+
+       public Event(T content) {
+           this.content = content;
+       }
+
+       public T getContentIfNotHandled() {
+           if (hasBeenHandled) {
+               return null;
+           } else {
+               hasBeenHandled = true;
+               return content;
+           }
+       }
+
+       public T peekContent() {
+           return content;
+       }
+   }
+</code></pre></article><article class="artifact" data-artifact-id="GTC_000004_001026_001322_e03de9908c9470fc"><h3>Artifact 2: GTC_000004_001026_001322_e03de9908c9470fc</h3><dl><dt>Artifact ID</dt><dd>GTC_000004_001026_001322_e03de9908c9470fc</dd><dt>Order</dt><dd>2</dd><dt>Source response</dt><dd>turn_000004</dd><dt>Type</dt><dd>source_code</dd><dt>Language</dt><dd>java</dd></dl><pre class="artifact-content"><code>   private MutableLiveData&lt;Event&lt;Boolean&gt;&gt; requestAuth = new MutableLiveData&lt;&gt;();
+
+   public MutableLiveData&lt;Event&lt;Boolean&gt;&gt; getRequestAuth() {
+       return requestAuth;
+   }
+
+   public void setRequestAuth(Boolean requestAuth) {
+       this.requestAuth.postValue(new Event&lt;&gt;(requestAuth));
+   }
+</code></pre></article><article class="artifact" data-artifact-id="GTC_000004_001429_001837_d662819b422a5a15"><h3>Artifact 3: GTC_000004_001429_001837_d662819b422a5a15</h3><dl><dt>Artifact ID</dt><dd>GTC_000004_001429_001837_d662819b422a5a15</dd><dt>Order</dt><dd>3</dd><dt>Source response</dt><dd>turn_000004</dd><dt>Type</dt><dd>source_code</dd><dt>Language</dt><dd>java</dd></dl><pre class="artifact-content"><code>   goViewModel.getRequestAuth().observe(this, new Observer&lt;Event&lt;Boolean&gt;&gt;() {
+       @Override
+       public void onChanged(Event&lt;Boolean&gt; requestAuthEvent) {
+           Boolean requestAuth = requestAuthEvent.getContentIfNotHandled();
+           if (requestAuth != null &amp;&amp; requestAuth) {
+               Util.log(&quot;Requested Auth: &quot; + requestAuth);
+               // do something
+           }
+       }
+   });
+</code></pre></article></section>
+<section id="first-generation-response"><h2>Full first-generation response</h2><p class="restriction">This response cannot supply C/S/V evidence.</p><article class="first-generation-response" data-turn-id="turn_000004" data-event-index="4"><h3>Assistant · turn turn_000004</h3><p class="metadata">Event index: 4</p><pre class="turn-text">Right, this code uses a `MutableLiveData&lt;Boolean&gt;` in `GoViewModel` to trigger a callback in `MainActivity` when authentication is needed. It&#x27;s a bit hacky since it uses a boolean flag for triggering. A cleaner approach is to use a more event-driven pattern. Here&#x27;s a way to do it:
+
+1. **Define an Event Wrapper:**
+   Create a generic `Event` class to wrap around your data. This helps in handling one-time events like navigation or showing a Snackbar.
+
+   ```java
+   public class Event&lt;T&gt; {
+       private T content;
+       private boolean hasBeenHandled = false;
+
+       public Event(T content) {
+           this.content = content;
+       }
+
+       public T getContentIfNotHandled() {
+           if (hasBeenHandled) {
+               return null;
+           } else {
+               hasBeenHandled = true;
+               return content;
+           }
+       }
+
+       public T peekContent() {
+           return content;
+       }
+   }
+   ```
+
+2. **Update ViewModel:**
+   Change `requestAuth` to use `Event` wrapper.
+
+   ```java
+   private MutableLiveData&lt;Event&lt;Boolean&gt;&gt; requestAuth = new MutableLiveData&lt;&gt;();
+
+   public MutableLiveData&lt;Event&lt;Boolean&gt;&gt; getRequestAuth() {
+       return requestAuth;
+   }
+
+   public void setRequestAuth(Boolean requestAuth) {
+       this.requestAuth.postValue(new Event&lt;&gt;(requestAuth));
+   }
+   ```
+
+3. **Update Observer in Activity:**
+   Modify the observer to handle the `Event` type.
+
+   ```java
+   goViewModel.getRequestAuth().observe(this, new Observer&lt;Event&lt;Boolean&gt;&gt;() {
+       @Override
+       public void onChanged(Event&lt;Boolean&gt; requestAuthEvent) {
+           Boolean requestAuth = requestAuthEvent.getContentIfNotHandled();
+           if (requestAuth != null &amp;&amp; requestAuth) {
+               Util.log(&quot;Requested Auth: &quot; + requestAuth);
+               // do something
+           }
+       }
+   });
+   ```
+
+This approach ensures that the `requestAuth` event is only handled once and avoids the potential issue of being triggered multiple times due to configuration changes (like device rotation). It&#x27;s more in line with the event-driven nature of LiveData.</pre></article></section>
+<section id="stage-c-extraction"><h2>Authoritative Stage C extraction</h2><p>Review each supplied item against admissible pre-boundary evidence and its recorded provenance.</p><section class="extraction"><h2>Context</h2><article class="extraction-item" data-item-id="context_1"><h3>context_1</h3><p class="normalized-text">MainActivity observes `goViewModel.getRequestAuth()` and, when the observed Boolean is true, logs the request, resets it to false, and performs an authentication-related action.</p><dl><dt>Source turn IDs</dt><dd>turn_000003</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">goViewModel.getRequestAuth().observe(this, new Observer&lt;Boolean&gt;() {</pre></li><li><pre class="evidence-span">if (requestAuth) {
+                    goViewModel.setRequestAuth(false);
+                    // do something
+                }</pre></li></ul></article><article class="extraction-item" data-item-id="context_2"><h3>context_2</h3><p class="normalized-text">`GoViewModel` stores the authentication-request signal in a `MutableLiveData&lt;Boolean&gt;`, exposes it through `getRequestAuth()`, and updates it asynchronously with `postValue`.</p><dl><dt>Source turn IDs</dt><dd>turn_000003</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">private MutableLiveData&lt;Boolean&gt; requestAuth = new MutableLiveData&lt;&gt;();</pre></li><li><pre class="evidence-span">public MutableLiveData&lt;Boolean&gt; getRequestAuth() {
+        return requestAuth;
+    }</pre></li><li><pre class="evidence-span">public void setRequestAuth(Boolean requestAuth) {
+        this.requestAuth.postValue(requestAuth);
+    }</pre></li></ul></article><article class="extraction-item" data-item-id="context_3"><h3>context_3</h3><p class="normalized-text">The user characterizes the Boolean LiveData/reset pattern as a hack used to trigger a callback when authentication is requested.</p><dl><dt>Source turn IDs</dt><dd>turn_000003</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">this seems to be a hack to trigger a callback when authentication is requested.</pre></li></ul></article></section><section class="extraction"><h2>Specificity</h2><article class="extraction-item" data-item-id="specificity_1"><h3>specificity_1</h3><p class="normalized-text">The requested solution is the correct way to trigger a callback when authentication is requested while achieving the same purpose as the existing Boolean LiveData/reset pattern.</p><dl><dt>Source turn IDs</dt><dd>turn_000003</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">this seems to be a hack to trigger a callback when authentication is requested. what is the correct way of achieving the same?</pre></li></ul></article></section><section class="extraction"><h2>Verification</h2><article class="extraction-item" data-item-id="verification_1"><h3>verification_1</h3><p class="normalized-text">The replacement should trigger the callback when authentication is requested and achieve the same behavior as the current mechanism.</p><dl><dt>Source turn IDs</dt><dd>turn_000003</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">this seems to be a hack to trigger a callback when authentication is requested. what is the correct way of achieving the same?</pre></li></ul></article></section></section>
+<section id="provenance"><h2>Provenance</h2><dl><dt>Authoritative Stage C record SHA-256</dt><dd>7d34b3b7eefece5c8623ad03b405fe5e1092427c32e96e61ad3228d34b42481f</dd><dt>Reviewer-safe JSON</dt><dd>cases/stage_d/reviewer_B/cases/CASE_978B83E2DF72.json</dd><dt>Checkpoint commit</dt><dd>assigned_after_reviewed_preparation_is_committed</dd></dl></section>
+</main></body></html>

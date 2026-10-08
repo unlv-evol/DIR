@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stage D evidence package · CASE_5C203B1DBF11</title>
+<style>
+:root { color-scheme: light; --navy:#17365d; --blue:#d9eaf7; --gold:#fff4cc; --ink:#1f2937; --line:#cbd5e1; --muted:#52606d; }
+* { box-sizing:border-box; } body { margin:0; font:16px/1.5 Arial,sans-serif; color:var(--ink); background:#f6f8fa; }
+main { max-width:1120px; margin:auto; padding:24px; } h1,h2,h3,h4 { color:var(--navy); } h1 { margin-bottom:.25rem; }
+section,.turn,.artifact,.extraction-item { background:white; border:1px solid var(--line); border-radius:8px; margin:16px 0; padding:18px; }
+.restriction { background:var(--gold); border-left:6px solid #b58105; } .admissible { background:#e8f5e9; border-left:6px solid #2e7d32; }
+dl { display:grid; grid-template-columns:minmax(180px,1fr) 3fr; gap:6px 16px; } dt { font-weight:bold; } dd { margin:0; overflow-wrap:anywhere; }
+pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#f3f4f6; border:1px solid #e5e7eb; border-radius:5px; padding:14px; font:14px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace; }
+.artifact-content { white-space:pre; overflow:auto; } .metadata,.empty { color:var(--muted); } a { color:#0563c1; } ul.evidence-spans { padding-left:22px; }
+</style>
+</head>
+<body><main>
+<header><p>Stage D reviewer evidence package</p><h1>CASE_5C203B1DBF11</h1><p>Human-readable companion to the authoritative reviewer-safe JSON.</p></header>
+<section id="source-links"><h2>Source URLs</h2><p><a href="https://chat.openai.com/share/fad5f67a-2f7e-45a4-a759-18e5b9aa44cb" rel="noopener noreferrer">Authoritative conversation</a></p><p><a href="https://github.com/sveltejs/learn.svelte.dev/pull/522" rel="noopener noreferrer">Authoritative pull request</a> — provenance only; PR content is inadmissible for independent Context/Specificity/Verification validation.</p></section>
+<section id="evidence-boundary"><h2>Evidence boundary</h2><div class="admissible"><strong>Admissible C/S/V evidence:</strong> only the pre-boundary conversation shown below.</div><div class="restriction"><strong>Restricted:</strong> resolved artifacts and the full first-generation response are visible only to validate first-generation identity, target prompt, boundary, and tFG. Turns after the response are excluded. The PR URL is provenance only.</div><dl><dt>pre_boundary_conversation</dt><dd>admissible_for_context_specificity_verification_validation</dd><dt>resolved_first_generation_artifacts</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>first_generation_response</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>turns_after_first_generation_response</dt><dd>excluded</dd></dl></section>
+<section id="first-generation"><h2>First-generation family and boundary</h2><dl><dt>Family ID</dt><dd>FGF_cf1ccac64f5d5e8eee72c453</dd><dt>Family label</dt><dd>Svelte SVG pointer with an ARIA role on the circle</dd><dt>Artifact references</dt><dd>GTC_000003_000765_001096_9561c8734025d35f</dd><dt>Response turn ID</dt><dd>turn_000003</dd><dt>Target prompt turn ID</dt><dd>turn_000002</dd><dt>Boundary</dt><dd>exclusive_before:turn_000003</dd><dt>tFG</dt><dd>2023-10-26T14:03:17.028444+00:00</dd></dl></section>
+<section id="target-prompt"><h2>Target prompt</h2><article class="target-prompt" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">What is the correct aria-role for this svg which acts as a pointer?
+```svelte
+&lt;svg
+	on:mousemove={(e) =&gt; {
+		coords.set({ x: e.clientX, y: e.clientY });
+	}}
+	on:mousedown={() =&gt; size.set(30)}
+	on:mouseup={() =&gt; size.set(10)}
+&gt;
+	&lt;circle
+		cx={$coords.x}
+		cy={$coords.y}
+		r={$size}
+	/&gt;
+&lt;/svg&gt;
+```</pre></article></section>
+<section id="pre-boundary-conversation"><h2>Pre-boundary conversation</h2><p class="admissible">These ordered turns are the only admissible conversation evidence for C/S/V validation.</p><article class="turn" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">What is the correct aria-role for this svg which acts as a pointer?
+```svelte
+&lt;svg
+	on:mousemove={(e) =&gt; {
+		coords.set({ x: e.clientX, y: e.clientY });
+	}}
+	on:mousedown={() =&gt; size.set(30)}
+	on:mouseup={() =&gt; size.set(10)}
+&gt;
+	&lt;circle
+		cx={$coords.x}
+		cy={$coords.y}
+		r={$size}
+	/&gt;
+&lt;/svg&gt;
+```</pre></article></section>
+<section id="selected-artifacts"><h2>Selected first-generation artifacts</h2><p class="restriction">Use only for first-generation, target-prompt, boundary, and tFG validation.</p><article class="artifact" data-artifact-id="GTC_000003_000765_001096_9561c8734025d35f"><h3>Artifact 1: GTC_000003_000765_001096_9561c8734025d35f</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_000765_001096_9561c8734025d35f</dd><dt>Order</dt><dd>1</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>unclassified_technical</dd><dt>Language</dt><dd>svelte</dd></dl><pre class="artifact-content"><code>&lt;svg
+    on:mousemove={(e) =&gt; {
+        coords.set({ x: e.clientX, y: e.clientY });
+    }}
+    on:mousedown={() =&gt; size.set(30)}
+    on:mouseup={() =&gt; size.set(10)}
+&gt;
+    &lt;circle
+        cx={$coords.x}
+        cy={$coords.y}
+        r={$size}
+        role=&quot;button&quot; &lt;!-- or &quot;link&quot;, &quot;image&quot;, or an appropriate role --&gt;
+    /&gt;
+&lt;/svg&gt;
+</code></pre></article></section>
+<section id="first-generation-response"><h2>Full first-generation response</h2><p class="restriction">This response cannot supply C/S/V evidence.</p><article class="first-generation-response" data-turn-id="turn_000003" data-event-index="3"><h3>Assistant · turn turn_000003</h3><p class="metadata">Event index: 3</p><pre class="turn-text">In the context of your Svelte code, the `&lt;svg&gt;` element you&#x27;re using to create a pointer isn&#x27;t necessarily an interactive component with an ARIA role by itself. ARIA roles are typically used to provide information to screen readers about the role or purpose of an element, especially when the default semantics of the element may not be sufficient.
+
+In your case, the SVG is acting as a pointer, and you want to make it accessible. You should consider adding an ARIA role to the `&lt;circle&gt;` element inside the SVG to provide additional information to assistive technologies. You can use the `role` attribute on the `&lt;circle&gt;` element to indicate its role as a pointer.
+
+Here&#x27;s an example of how you can add the `role` attribute to the `&lt;circle&gt;` element:
+
+```svelte
+&lt;svg
+    on:mousemove={(e) =&gt; {
+        coords.set({ x: e.clientX, y: e.clientY });
+    }}
+    on:mousedown={() =&gt; size.set(30)}
+    on:mouseup={() =&gt; size.set(10)}
+&gt;
+    &lt;circle
+        cx={$coords.x}
+        cy={$coords.y}
+        r={$size}
+        role=&quot;button&quot; &lt;!-- or &quot;link&quot;, &quot;image&quot;, or an appropriate role --&gt;
+    /&gt;
+&lt;/svg&gt;
+```
+
+In this example, I&#x27;ve used the &quot;button&quot; role as an example because it behaves like an interactive element, but you can choose an appropriate role based on the purpose of your pointer. The &quot;link&quot; role might also be suitable if the pointer represents a link or an action.
+
+Remember to choose the ARIA role that best describes the functionality of your SVG element to enhance its accessibility for users of assistive technologies.</pre></article></section>
+<section id="stage-c-extraction"><h2>Authoritative Stage C extraction</h2><p>Review each supplied item against admissible pre-boundary evidence and its recorded provenance.</p><section class="extraction"><h2>Context</h2><article class="extraction-item" data-item-id="context_1"><h3>context_1</h3><p class="normalized-text">A Svelte SVG acts as a pointer and handles mouse movement and button events; mouse movement updates `coords`, mouse down sets `size` to 30, and mouse up sets `size` to 10.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">What is the correct aria-role for this svg which acts as a pointer?</pre></li><li><pre class="evidence-span">on:mousemove={(e) =&gt; {
+		coords.set({ x: e.clientX, y: e.clientY });
+	}}</pre></li><li><pre class="evidence-span">on:mousedown={() =&gt; size.set(30)}</pre></li><li><pre class="evidence-span">on:mouseup={() =&gt; size.set(10)}</pre></li></ul></article></section><section class="extraction"><h2>Specificity</h2><article class="extraction-item" data-item-id="specificity_1"><h3>specificity_1</h3><p class="normalized-text">Determine the correct ARIA role for the SVG that acts as a pointer.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">What is the correct aria-role for this svg which acts as a pointer?</pre></li></ul></article></section><section class="extraction"><h2>Verification</h2><p class="empty">No items extracted.</p></section></section>
+<section id="provenance"><h2>Provenance</h2><dl><dt>Authoritative Stage C record SHA-256</dt><dd>9c43ceb3890a291ed5534f80edd54ef2244b2d62df4cce5df547e8dd6b91b2e9</dd><dt>Reviewer-safe JSON</dt><dd>cases/stage_d/reviewer_A/cases/CASE_5C203B1DBF11.json</dd><dt>Checkpoint commit</dt><dd>assigned_after_reviewed_preparation_is_committed</dd></dl></section>
+</main></body></html>

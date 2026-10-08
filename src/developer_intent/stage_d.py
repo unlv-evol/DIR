@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import csv
+import html
 import hashlib
 import json
 import random
@@ -10,6 +11,7 @@ import subprocess
 import zipfile
 from xml.etree import ElementTree
 from pathlib import Path
+from urllib.parse import urlparse
 
 SEED = 20261005
 PROCEDURE = "stage-d-stratified-validation-v1"
@@ -292,6 +294,149 @@ def prepare_review(root: Path) -> None:
                    REVIEW_FIELDS, review_rows)
 
 
+def _html_text(value: object) -> str:
+    return html.escape(str(value), quote=True)
+
+
+def _safe_link(value: object) -> str:
+    url = str(value)
+    parsed = urlparse(url)
+    if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+        raise ValueError(f"unsafe source URL: {url!r}")
+    return _html_text(url)
+
+
+def _definition_rows(values: dict[str, object]) -> str:
+    return "".join(
+        f"<dt>{_html_text(label)}</dt><dd>{_html_text(value)}</dd>"
+        for label, value in values.items()
+    )
+
+
+def _turn_html(turn: dict, css_class: str = "turn") -> str:
+    return (
+        f'<article class="{css_class}" data-turn-id="{_html_text(turn["turn_id"])}" '
+        f'data-event-index="{_html_text(turn["event_index"])}">'
+        f'<h3>{_html_text(turn["role"].title())} · turn {_html_text(turn["turn_id"])}</h3>'
+        f'<p class="metadata">Event index: {_html_text(turn["event_index"])}</p>'
+        f'<pre class="turn-text">{_html_text(turn["text"])}</pre></article>'
+    )
+
+
+def render_review_html(record: dict) -> str:
+    """Render one reviewer-safe JSON record as deterministic standalone HTML."""
+    case_id = record["case_id"]
+    links = record["source_links"]
+    first = record["first_generation"]
+    family = first["family"]
+    boundary = record["evidence_boundary"]
+    artifacts = []
+    for position, artifact in enumerate(family["artifacts"], 1):
+        metadata = {
+            "Artifact ID": artifact["artifact_id"],
+            "Order": position,
+            "Source response": artifact["source_response_id"],
+            "Type": artifact["artifact_type"],
+            "Language": artifact.get("language", "not supplied"),
+        }
+        artifacts.append(
+            f'<article class="artifact" data-artifact-id="{_html_text(artifact["artifact_id"])}">'
+            f'<h3>Artifact {position}: {_html_text(artifact["artifact_id"])}</h3>'
+            f'<dl>{_definition_rows(metadata)}</dl>'
+            f'<pre class="artifact-content"><code>{_html_text(artifact["content"])}</code></pre>'
+            '</article>'
+        )
+    extraction_sections = []
+    for category in ("Context", "Specificity", "Verification"):
+        items = []
+        for item in record["stage_c_extraction"][category]:
+            spans = "".join(
+                f'<li><pre class="evidence-span">{_html_text(span)}</pre></li>'
+                for span in item["evidence_spans"]
+            ) or "<li>No evidence spans supplied.</li>"
+            items.append(
+                f'<article class="extraction-item" data-item-id="{_html_text(item["item_id"])}">'
+                f'<h3>{_html_text(item["item_id"])}</h3>'
+                f'<p class="normalized-text">{_html_text(item["normalized_text"])}</p>'
+                f'<dl>{_definition_rows({"Source turn IDs": ", ".join(map(str, item["source_turn_ids"])), "Source roles": ", ".join(item["source_roles"])})}</dl>'
+                f'<h4>Evidence spans</h4><ul class="evidence-spans">{spans}</ul></article>'
+            )
+        body = "".join(items) if items else '<p class="empty">No items extracted.</p>'
+        extraction_sections.append(f'<section class="extraction"><h2>{category}</h2>{body}</section>')
+    prior_turns = "".join(_turn_html(turn) for turn in record["pre_boundary_conversation"])
+    boundary_rows = {key: value for key, value in boundary.items()}
+    provenance = record["provenance"]
+    return f'''<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stage D evidence package · {_html_text(case_id)}</title>
+<style>
+:root {{ color-scheme: light; --navy:#17365d; --blue:#d9eaf7; --gold:#fff4cc; --ink:#1f2937; --line:#cbd5e1; --muted:#52606d; }}
+* {{ box-sizing:border-box; }} body {{ margin:0; font:16px/1.5 Arial,sans-serif; color:var(--ink); background:#f6f8fa; }}
+main {{ max-width:1120px; margin:auto; padding:24px; }} h1,h2,h3,h4 {{ color:var(--navy); }} h1 {{ margin-bottom:.25rem; }}
+section,.turn,.artifact,.extraction-item {{ background:white; border:1px solid var(--line); border-radius:8px; margin:16px 0; padding:18px; }}
+.restriction {{ background:var(--gold); border-left:6px solid #b58105; }} .admissible {{ background:#e8f5e9; border-left:6px solid #2e7d32; }}
+dl {{ display:grid; grid-template-columns:minmax(180px,1fr) 3fr; gap:6px 16px; }} dt {{ font-weight:bold; }} dd {{ margin:0; overflow-wrap:anywhere; }}
+pre {{ white-space:pre-wrap; overflow-wrap:anywhere; background:#f3f4f6; border:1px solid #e5e7eb; border-radius:5px; padding:14px; font:14px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace; }}
+.artifact-content {{ white-space:pre; overflow:auto; }} .metadata,.empty {{ color:var(--muted); }} a {{ color:#0563c1; }} ul.evidence-spans {{ padding-left:22px; }}
+</style>
+</head>
+<body><main>
+<header><p>Stage D reviewer evidence package</p><h1>{_html_text(case_id)}</h1><p>Human-readable companion to the authoritative reviewer-safe JSON.</p></header>
+<section id="source-links"><h2>Source URLs</h2><p><a href="{_safe_link(links["conversation_url"])}" rel="noopener noreferrer">Authoritative conversation</a></p><p><a href="{_safe_link(links["pr_url"])}" rel="noopener noreferrer">Authoritative pull request</a> — provenance only; PR content is inadmissible for independent Context/Specificity/Verification validation.</p></section>
+<section id="evidence-boundary"><h2>Evidence boundary</h2><div class="admissible"><strong>Admissible C/S/V evidence:</strong> only the pre-boundary conversation shown below.</div><div class="restriction"><strong>Restricted:</strong> resolved artifacts and the full first-generation response are visible only to validate first-generation identity, target prompt, boundary, and tFG. Turns after the response are excluded. The PR URL is provenance only.</div><dl>{_definition_rows(boundary_rows)}</dl></section>
+<section id="first-generation"><h2>First-generation family and boundary</h2><dl>{_definition_rows({"Family ID": family["family_id"], "Family label": family["family_label"], "Artifact references": ", ".join(family["artifact_refs"]), "Response turn ID": first["response_turn_id"], "Target prompt turn ID": first["target_prompt_turn_id"], "Boundary": first["boundary"], "tFG": first["tFG"]})}</dl></section>
+<section id="target-prompt"><h2>Target prompt</h2>{_turn_html(record["target_prompt"], "target-prompt")}</section>
+<section id="pre-boundary-conversation"><h2>Pre-boundary conversation</h2><p class="admissible">These ordered turns are the only admissible conversation evidence for C/S/V validation.</p>{prior_turns}</section>
+<section id="selected-artifacts"><h2>Selected first-generation artifacts</h2><p class="restriction">Use only for first-generation, target-prompt, boundary, and tFG validation.</p>{''.join(artifacts)}</section>
+<section id="first-generation-response"><h2>Full first-generation response</h2><p class="restriction">This response cannot supply C/S/V evidence.</p>{_turn_html(record["first_generation_response"], "first-generation-response")}</section>
+<section id="stage-c-extraction"><h2>Authoritative Stage C extraction</h2><p>Review each supplied item against admissible pre-boundary evidence and its recorded provenance.</p>{''.join(extraction_sections)}</section>
+<section id="provenance"><h2>Provenance</h2><dl>{_definition_rows({"Authoritative Stage C record SHA-256": provenance["authoritative_stage_c_record_sha256"], "Reviewer-safe JSON": provenance["repository_relative_evidence_path"], "Checkpoint commit": provenance["checkpoint_commit"]})}</dl></section>
+</main></body></html>
+'''
+
+
+def prepare_review_html(root: Path) -> dict[str, int]:
+    result: dict[str, int] = {}
+    for reviewer in ("A", "B"):
+        directory = root / OUTPUT / f"reviewer_{reviewer}"
+        rows = read_csv(directory / "stage_d_review.csv")
+        if len(rows) != 33:
+            raise ValueError(f"reviewer {reviewer} CSV must contain 33 rows")
+        expected = set()
+        for row in rows:
+            json_path = root / row["case_details"]
+            record = json.loads(json_path.read_text(encoding="utf-8"))
+            if record["case_id"] != row["case_id"]:
+                raise ValueError(f"reviewer {reviewer} CSV/JSON case mismatch")
+            html_path = json_path.with_suffix(".html")
+            html_path.write_text(render_review_html(record), encoding="utf-8")
+            expected.add(html_path)
+        actual = set((directory / "cases").glob("*.html"))
+        if actual != expected:
+            raise ValueError(f"reviewer {reviewer} HTML set differs from reviewer JSON set")
+        result[f"reviewer_{reviewer}"] = len(actual)
+    return result
+
+
+def validate_review_html(root: Path, reviewer: str) -> int:
+    directory = root / OUTPUT / f"reviewer_{reviewer}"
+    rows = read_csv(directory / "stage_d_review.csv")
+    expected_paths = {(root / row["case_details"]).with_suffix(".html") for row in rows}
+    actual_paths = set((directory / "cases").glob("*.html"))
+    if len(rows) != 33 or actual_paths != expected_paths:
+        raise ValueError(f"reviewer {reviewer} HTML package is not the expected 33-case set")
+    for row in rows:
+        json_path = root / row["case_details"]
+        record = json.loads(json_path.read_text(encoding="utf-8"))
+        html_path = json_path.with_suffix(".html")
+        if html_path.read_text(encoding="utf-8") != render_review_html(record):
+            raise ValueError(f"reviewer {reviewer} HTML differs from reviewer-safe JSON: {row['case_id']}")
+    return len(actual_paths)
+
+
 def _xlsx_cells(archive: zipfile.ZipFile, sheet_name: str) -> tuple[dict[str, str], dict[str, str], dict[str, tuple[str, ...]]]:
     ns = {"x": "http://schemas.openxmlformats.org/spreadsheetml/2006/main",
           "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
@@ -340,6 +485,9 @@ def validate_workbook(root: Path, reviewer: str) -> dict[str, int]:
         actual = [values.get(f"{chr(65 + index)}{row_number}", "") for index in range(15)]
         if actual != expected:
             raise ValueError(f"reviewer {reviewer} XLSX/CSV mismatch at row {row_number}")
+        html_relative = f'cases/{row["case_id"]}.html'
+        if formulas.get(f"B{row_number}", "") != f'HYPERLINK("{html_relative}","{row["case_details"]}")':
+            raise ValueError(f"reviewer {reviewer} case-details hyperlink mismatch at B{row_number}")
         for column, field in (("C", "conversation_url"), ("D", "pr_url")):
             formula = formulas.get(f"{column}{row_number}", "")
             if formula != f'HYPERLINK("{row[field]}","{row[field]}")':
@@ -417,8 +565,10 @@ def validate(root: Path, seed: int = SEED) -> dict[str, int]:
             raise ValueError(f"reviewer source links differ for {row_a['case_id']}")
         case_a = json.loads((root / row_a["case_details"]).read_text())
         case_b = json.loads((root / row_b["case_details"]).read_text())
-        if case_a["first_generation"]["family"]["artifacts"] != case_b["first_generation"]["family"]["artifacts"]:
-            raise ValueError(f"reviewer artifact evidence differs for {row_a['case_id']}")
+        scientific_a = {key: value for key, value in case_a.items() if key != "provenance"}
+        scientific_b = {key: value for key, value in case_b.items() if key != "provenance"}
+        if scientific_a != scientific_b:
+            raise ValueError(f"reviewer scientific evidence differs for {row_a['case_id']}")
     first = actual[0]
     if sha256(root / ELIGIBILITY) != first["eligibility_source_sha256"]:
         raise ValueError("eligibility ledger changed")
@@ -428,6 +578,8 @@ def validate(root: Path, seed: int = SEED) -> dict[str, int]:
     workbook_b = validate_workbook(root, "B")
     if workbook_a != workbook_b:
         raise ValueError("reviewer workbook structures differ")
+    html_count = validate_review_html(root, "A") + validate_review_html(root, "B")
     return {"eligible": 111, "PA_population": 68, "PN_population": 43,
             "sample": 33, "PA_sample": 20, "PN_sample": 13,
-            "reviewer_workbooks": 2}
+            "reviewer_workbooks": 2,
+            "reviewer_html_files": html_count}

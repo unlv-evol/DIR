@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stage D evidence package · CASE_EE7F13CD9FB7</title>
+<style>
+:root { color-scheme: light; --navy:#17365d; --blue:#d9eaf7; --gold:#fff4cc; --ink:#1f2937; --line:#cbd5e1; --muted:#52606d; }
+* { box-sizing:border-box; } body { margin:0; font:16px/1.5 Arial,sans-serif; color:var(--ink); background:#f6f8fa; }
+main { max-width:1120px; margin:auto; padding:24px; } h1,h2,h3,h4 { color:var(--navy); } h1 { margin-bottom:.25rem; }
+section,.turn,.artifact,.extraction-item { background:white; border:1px solid var(--line); border-radius:8px; margin:16px 0; padding:18px; }
+.restriction { background:var(--gold); border-left:6px solid #b58105; } .admissible { background:#e8f5e9; border-left:6px solid #2e7d32; }
+dl { display:grid; grid-template-columns:minmax(180px,1fr) 3fr; gap:6px 16px; } dt { font-weight:bold; } dd { margin:0; overflow-wrap:anywhere; }
+pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#f3f4f6; border:1px solid #e5e7eb; border-radius:5px; padding:14px; font:14px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace; }
+.artifact-content { white-space:pre; overflow:auto; } .metadata,.empty { color:var(--muted); } a { color:#0563c1; } ul.evidence-spans { padding-left:22px; }
+</style>
+</head>
+<body><main>
+<header><p>Stage D reviewer evidence package</p><h1>CASE_EE7F13CD9FB7</h1><p>Human-readable companion to the authoritative reviewer-safe JSON.</p></header>
+<section id="source-links"><h2>Source URLs</h2><p><a href="https://chat.openai.com/share/809df2ba-1509-44a0-a231-e986a8a99321" rel="noopener noreferrer">Authoritative conversation</a></p><p><a href="https://github.com/darklang/dark/pull/5058" rel="noopener noreferrer">Authoritative pull request</a> — provenance only; PR content is inadmissible for independent Context/Specificity/Verification validation.</p></section>
+<section id="evidence-boundary"><h2>Evidence boundary</h2><div class="admissible"><strong>Admissible C/S/V evidence:</strong> only the pre-boundary conversation shown below.</div><div class="restriction"><strong>Restricted:</strong> resolved artifacts and the full first-generation response are visible only to validate first-generation identity, target prompt, boundary, and tFG. Turns after the response are excluded. The PR URL is provenance only.</div><dl><dt>pre_boundary_conversation</dt><dd>admissible_for_context_specificity_verification_validation</dd><dt>resolved_first_generation_artifacts</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>first_generation_response</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>turns_after_first_generation_response</dt><dd>excluded</dd></dl></section>
+<section id="first-generation"><h2>First-generation family and boundary</h2><dl><dt>Family ID</dt><dd>FGF_a1897814529043c722e28af2</dd><dt>Family label</dt><dd>List.filter implementations using right folds in Haskell, OCaml, and F#</dd><dt>Artifact references</dt><dd>GTC_000005_000179_000284_95a4f2969ff20ed6, GTC_000005_000309_000398_f73b8e8a4deb3151, GTC_000005_000421_000510_a8f9f5dfc8a7d29e</dd><dt>Response turn ID</dt><dd>turn_000005</dd><dt>Target prompt turn ID</dt><dd>turn_000004</dd><dt>Boundary</dt><dd>exclusive_before:turn_000005</dd><dt>tFG</dt><dd>2023-09-05T01:44:25.726944+00:00</dd></dl></section>
+<section id="target-prompt"><h2>Target prompt</h2><article class="target-prompt" data-turn-id="turn_000004" data-event-index="4"><h3>User · turn turn_000004</h3><p class="metadata">Event index: 4</p><pre class="turn-text">How would I implement List.filter using List.fold?</pre></article></section>
+<section id="pre-boundary-conversation"><h2>Pre-boundary conversation</h2><p class="admissible">These ordered turns are the only admissible conversation evidence for C/S/V validation.</p><article class="turn" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">If I implement a List.filter function in a functional programming language, what are the relative merits of using a recursive implementation, vs using List.fold?</pre></article><article class="turn" data-turn-id="turn_000003" data-event-index="3"><h3>Assistant · turn turn_000003</h3><p class="metadata">Event index: 3</p><pre class="turn-text">Both recursion and `List.fold` are commonly used approaches to implementing operations like `List.filter` in functional programming languages. Each method has its own merits and potential downsides. Here&#x27;s a breakdown of each:
+
+### Recursive Implementation
+
+#### Advantages:
+
+1. **Readability**: Recursive implementations can often be more readable and intuitive, especially for operations that are inherently recursive like tree traversals.
+  
+2. **Simplicity**: No need to understand the semantics of higher-order functions like `List.fold`. This makes it easier for someone unfamiliar with these functions to understand the code.
+  
+3. **Tail-Recursion**: Some functional programming languages can optimize tail-recursive functions, which can offer performance benefits.
+
+#### Disadvantages:
+
+1. **Error-Prone**: It&#x27;s easy to make mistakes in recursive implementations like forgetting a base case, which can lead to infinite recursion or stack overflows.
+  
+2. **Potential for Non-Tail-Recursion**: Not all recursive functions can be written in a tail-recursive manner, which could lead to stack overflow errors for large lists.
+
+### Using `List.fold`
+
+#### Advantages:
+
+1. **Abstraction**: `List.fold` abstracts away the pattern of iterating over a list and accumulating a result. This can make the code easier to understand once you&#x27;re familiar with folding.
+  
+2. **Code Reuse**: Using a standard library function like `List.fold` reduces the amount of custom code you need to write and test.
+  
+3. **Functional Idiom**: `List.fold` is a functional idiom that many functional programmers will recognize and understand quickly.
+  
+4. **Potential for Optimization**: Standard library functions like `List.fold` are often highly optimized. Additionally, using such standard functions can enable further compiler optimizations.
+
+#### Disadvantages:
+
+1. **Learning Curve**: Understanding `List.fold` can be difficult for newcomers to functional programming.
+  
+2. **Debugging**: Debugging can be more difficult when using higher-order functions like `List.fold` because you&#x27;re adding another layer of abstraction.
+
+3. **Readability**: For very simple filtering criteria, using `List.fold` might appear as overkill and actually hamper readability.
+
+4. **Performance Overheads**: While generally optimized, the use of a higher-order function can introduce slight performance overhead due to function calls, though this is usually negligible.
+
+### Conclusion
+
+Both methods are valid and can be used effectively to implement `List.filter`. The choice between them often comes down to the specific needs of your project and your team&#x27;s familiarity with functional programming concepts.</pre></article><article class="turn" data-turn-id="turn_000004" data-event-index="4"><h3>User · turn turn_000004</h3><p class="metadata">Event index: 4</p><pre class="turn-text">How would I implement List.filter using List.fold?</pre></article></section>
+<section id="selected-artifacts"><h2>Selected first-generation artifacts</h2><p class="restriction">Use only for first-generation, target-prompt, boundary, and tFG validation.</p><article class="artifact" data-artifact-id="GTC_000005_000179_000284_95a4f2969ff20ed6"><h3>Artifact 1: GTC_000005_000179_000284_95a4f2969ff20ed6</h3><dl><dt>Artifact ID</dt><dd>GTC_000005_000179_000284_95a4f2969ff20ed6</dd><dt>Order</dt><dd>1</dd><dt>Source response</dt><dd>turn_000005</dd><dt>Type</dt><dd>unclassified_technical</dd><dt>Language</dt><dd>haskell</dd></dl><pre class="artifact-content"><code>filter&#x27; :: (a -&gt; Bool) -&gt; [a] -&gt; [a]
+filter&#x27; f xs = foldr (\x acc -&gt; if f x then x : acc else acc) [] xs
+</code></pre></article><article class="artifact" data-artifact-id="GTC_000005_000309_000398_f73b8e8a4deb3151"><h3>Artifact 2: GTC_000005_000309_000398_f73b8e8a4deb3151</h3><dl><dt>Artifact ID</dt><dd>GTC_000005_000309_000398_f73b8e8a4deb3151</dd><dt>Order</dt><dd>2</dd><dt>Source response</dt><dd>turn_000005</dd><dt>Type</dt><dd>unclassified_technical</dd><dt>Language</dt><dd>ocaml</dd></dl><pre class="artifact-content"><code>let filter f lst =
+  List.fold_right (fun x acc -&gt; if f x then x :: acc else acc) lst []
+</code></pre></article><article class="artifact" data-artifact-id="GTC_000005_000421_000510_a8f9f5dfc8a7d29e"><h3>Artifact 3: GTC_000005_000421_000510_a8f9f5dfc8a7d29e</h3><dl><dt>Artifact ID</dt><dd>GTC_000005_000421_000510_a8f9f5dfc8a7d29e</dd><dt>Order</dt><dd>3</dd><dt>Source response</dt><dd>turn_000005</dd><dt>Type</dt><dd>unclassified_technical</dd><dt>Language</dt><dd>fsharp</dd></dl><pre class="artifact-content"><code>let filter f lst =
+    List.foldBack (fun x acc -&gt; if f x then x :: acc else acc) lst []
+</code></pre></article></section>
+<section id="first-generation-response"><h2>Full first-generation response</h2><p class="restriction">This response cannot supply C/S/V evidence.</p><article class="first-generation-response" data-turn-id="turn_000005" data-event-index="5"><h3>Assistant · turn turn_000005</h3><p class="metadata">Event index: 5</p><pre class="turn-text">Certainly! In functional programming languages like Haskell, OCaml, or F#, you can implement `List.filter` using `List.fold`. Here&#x27;s how you could do it:
+
+### Haskell
+
+```haskell
+filter&#x27; :: (a -&gt; Bool) -&gt; [a] -&gt; [a]
+filter&#x27; f xs = foldr (\x acc -&gt; if f x then x : acc else acc) [] xs
+```
+
+### OCaml
+
+```ocaml
+let filter f lst =
+  List.fold_right (fun x acc -&gt; if f x then x :: acc else acc) lst []
+```
+
+### F#
+
+```fsharp
+let filter f lst =
+    List.foldBack (fun x acc -&gt; if f x then x :: acc else acc) lst []
+```
+
+#### Explanation:
+
+In each of these implementations, we use the `fold` function to iterate through the list, applying a function that takes an element and an accumulator (`acc`). 
+
+- If the element satisfies the filter condition `f x`, it is added to the front of the accumulator.
+- If it doesn&#x27;t satisfy the condition, the accumulator is returned as-is.
+
+The `fold` function effectively iterates through the list, building up a new list (`acc`) that contains only the elements that satisfy the condition.
+
+Note: I used `foldr` and `foldBack` for Haskell and F#, respectively, which are right folds, and `List.fold_right` for OCaml. These right folds make it easier to preserve the order of the list while filtering. You could also use left folds (`foldl`, `List.fold_left`, `List.fold` in F#) but you would need to reverse the accumulator list at the end if you want to maintain the original order of elements.</pre></article></section>
+<section id="stage-c-extraction"><h2>Authoritative Stage C extraction</h2><p>Review each supplied item against admissible pre-boundary evidence and its recorded provenance.</p><section class="extraction"><h2>Context</h2><article class="extraction-item" data-item-id="ctx_001"><h3>ctx_001</h3><p class="normalized-text">Recursion and `List.fold` are both commonly used, valid approaches for implementing operations such as `List.filter` in functional programming languages.</p><dl><dt>Source turn IDs</dt><dd>turn_000003</dd><dt>Source roles</dt><dd>assistant</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">Both recursion and `List.fold` are commonly used approaches to implementing operations like `List.filter` in functional programming languages.</pre></li><li><pre class="evidence-span">Both methods are valid and can be used effectively to implement `List.filter`.</pre></li></ul></article><article class="extraction-item" data-item-id="ctx_002"><h3>ctx_002</h3><p class="normalized-text">A recursive implementation may be readable and simple, and tail-recursive functions may be optimized, but mistakes such as missing a base case or non-tail recursion can cause infinite recursion or stack overflows.</p><dl><dt>Source turn IDs</dt><dd>turn_000003</dd><dt>Source roles</dt><dd>assistant</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">Recursive implementations can often be more readable and intuitive</pre></li><li><pre class="evidence-span">No need to understand the semantics of higher-order functions like `List.fold`.</pre></li><li><pre class="evidence-span">Some functional programming languages can optimize tail-recursive functions, which can offer performance benefits.</pre></li><li><pre class="evidence-span">It&#x27;s easy to make mistakes in recursive implementations like forgetting a base case, which can lead to infinite recursion or stack overflows.</pre></li><li><pre class="evidence-span">Not all recursive functions can be written in a tail-recursive manner, which could lead to stack overflow errors for large lists.</pre></li></ul></article><article class="extraction-item" data-item-id="ctx_003"><h3>ctx_003</h3><p class="normalized-text">`List.fold` abstracts list iteration and result accumulation, reduces custom code through standard-library reuse, and is a recognizable functional idiom.</p><dl><dt>Source turn IDs</dt><dd>turn_000003</dd><dt>Source roles</dt><dd>assistant</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">`List.fold` abstracts away the pattern of iterating over a list and accumulating a result.</pre></li><li><pre class="evidence-span">Using a standard library function like `List.fold` reduces the amount of custom code you need to write and test.</pre></li><li><pre class="evidence-span">`List.fold` is a functional idiom that many functional programmers will recognize and understand quickly.</pre></li></ul></article><article class="extraction-item" data-item-id="ctx_004"><h3>ctx_004</h3><p class="normalized-text">Potential drawbacks of `List.fold` include a learning curve, more difficult debugging due to abstraction, reduced readability for simple filters, and usually negligible higher-order function-call overhead.</p><dl><dt>Source turn IDs</dt><dd>turn_000003</dd><dt>Source roles</dt><dd>assistant</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">Understanding `List.fold` can be difficult for newcomers to functional programming.</pre></li><li><pre class="evidence-span">Debugging can be more difficult when using higher-order functions like `List.fold` because you&#x27;re adding another layer of abstraction.</pre></li><li><pre class="evidence-span">For very simple filtering criteria, using `List.fold` might appear as overkill and actually hamper readability.</pre></li><li><pre class="evidence-span">the use of a higher-order function can introduce slight performance overhead due to function calls, though this is usually negligible.</pre></li></ul></article></section><section class="extraction"><h2>Specificity</h2><article class="extraction-item" data-item-id="spec_001"><h3>spec_001</h3><p class="normalized-text">The initial scope is to compare the relative merits of a recursive `List.filter` implementation with an implementation using `List.fold` in a functional programming language.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">If I implement a List.filter function in a functional programming language, what are the relative merits of using a recursive implementation, vs using List.fold?</pre></li></ul></article><article class="extraction-item" data-item-id="spec_002"><h3>spec_002</h3><p class="normalized-text">The requested implementation approach is specifically to implement `List.filter` using `List.fold`.</p><dl><dt>Source turn IDs</dt><dd>turn_000004</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">How would I implement List.filter using List.fold?</pre></li></ul></article></section><section class="extraction"><h2>Verification</h2><p class="empty">No items extracted.</p></section></section>
+<section id="provenance"><h2>Provenance</h2><dl><dt>Authoritative Stage C record SHA-256</dt><dd>5cd287d54384a63894db9b75369dcae747f79f9e50e7c9a57432cafc25e5fe5d</dd><dt>Reviewer-safe JSON</dt><dd>cases/stage_d/reviewer_A/cases/CASE_EE7F13CD9FB7.json</dd><dt>Checkpoint commit</dt><dd>assigned_after_reviewed_preparation_is_committed</dd></dl></section>
+</main></body></html>

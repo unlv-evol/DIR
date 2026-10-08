@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stage D evidence package · CASE_5FC257622E18</title>
+<style>
+:root { color-scheme: light; --navy:#17365d; --blue:#d9eaf7; --gold:#fff4cc; --ink:#1f2937; --line:#cbd5e1; --muted:#52606d; }
+* { box-sizing:border-box; } body { margin:0; font:16px/1.5 Arial,sans-serif; color:var(--ink); background:#f6f8fa; }
+main { max-width:1120px; margin:auto; padding:24px; } h1,h2,h3,h4 { color:var(--navy); } h1 { margin-bottom:.25rem; }
+section,.turn,.artifact,.extraction-item { background:white; border:1px solid var(--line); border-radius:8px; margin:16px 0; padding:18px; }
+.restriction { background:var(--gold); border-left:6px solid #b58105; } .admissible { background:#e8f5e9; border-left:6px solid #2e7d32; }
+dl { display:grid; grid-template-columns:minmax(180px,1fr) 3fr; gap:6px 16px; } dt { font-weight:bold; } dd { margin:0; overflow-wrap:anywhere; }
+pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#f3f4f6; border:1px solid #e5e7eb; border-radius:5px; padding:14px; font:14px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace; }
+.artifact-content { white-space:pre; overflow:auto; } .metadata,.empty { color:var(--muted); } a { color:#0563c1; } ul.evidence-spans { padding-left:22px; }
+</style>
+</head>
+<body><main>
+<header><p>Stage D reviewer evidence package</p><h1>CASE_5FC257622E18</h1><p>Human-readable companion to the authoritative reviewer-safe JSON.</p></header>
+<section id="source-links"><h2>Source URLs</h2><p><a href="https://chat.openai.com/share/944c67d3-555e-4524-b2f0-81481f9cd5ba" rel="noopener noreferrer">Authoritative conversation</a></p><p><a href="https://github.com/MrNeRF/gaussian-splatting-cuda/pull/23" rel="noopener noreferrer">Authoritative pull request</a> — provenance only; PR content is inadmissible for independent Context/Specificity/Verification validation.</p></section>
+<section id="evidence-boundary"><h2>Evidence boundary</h2><div class="admissible"><strong>Admissible C/S/V evidence:</strong> only the pre-boundary conversation shown below.</div><div class="restriction"><strong>Restricted:</strong> resolved artifacts and the full first-generation response are visible only to validate first-generation identity, target prompt, boundary, and tFG. Turns after the response are excluded. The PR URL is provenance only.</div><dl><dt>pre_boundary_conversation</dt><dd>admissible_for_context_specificity_verification_validation</dd><dt>resolved_first_generation_artifacts</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>first_generation_response</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>turns_after_first_generation_response</dt><dd>excluded</dd></dl></section>
+<section id="first-generation"><h2>First-generation family and boundary</h2><dl><dt>Family ID</dt><dd>FGF_9ecbbd7e8aa952c90a20e10b</dd><dt>Family label</dt><dd>Git command sequence for rebasing a feature branch onto master, handling conflicts, and force-pushing</dd><dt>Artifact references</dt><dd>GTC_000003_000420_000456_bb95405470e0f350, GTC_000003_000636_000656_64096931097fbc5a, GTC_000003_000753_000781_fd6c95edf606add9, GTC_000003_001035_001064_e2606e662106f75e, GTC_000003_001151_001178_f9978f9c2efe3c6c, GTC_000003_001282_001306_ab8b108e8ba5a250, GTC_000003_001632_001679_4f821415debcd21d</dd><dt>Response turn ID</dt><dd>turn_000003</dd><dt>Target prompt turn ID</dt><dd>turn_000002</dd><dt>Boundary</dt><dd>exclusive_before:turn_000003</dd><dt>tFG</dt><dd>2023-08-23T10:06:56.662222+00:00</dd></dl></section>
+<section id="target-prompt"><h2>Target prompt</h2><article class="target-prompt" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">How to rebase on master?</pre></article></section>
+<section id="pre-boundary-conversation"><h2>Pre-boundary conversation</h2><p class="admissible">These ordered turns are the only admissible conversation evidence for C/S/V validation.</p><article class="turn" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">How to rebase on master?</pre></article></section>
+<section id="selected-artifacts"><h2>Selected first-generation artifacts</h2><p class="restriction">Use only for first-generation, target-prompt, boundary, and tFG validation.</p><article class="artifact" data-artifact-id="GTC_000003_000420_000456_bb95405470e0f350"><h3>Artifact 1: GTC_000003_000420_000456_bb95405470e0f350</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_000420_000456_bb95405470e0f350</dd><dt>Order</dt><dd>1</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>shell_sequence</dd><dt>Language</dt><dd>bash</dd></dl><pre class="artifact-content"><code>   git checkout your-feature-branch
+</code></pre></article><article class="artifact" data-artifact-id="GTC_000003_000636_000656_64096931097fbc5a"><h3>Artifact 2: GTC_000003_000636_000656_64096931097fbc5a</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_000636_000656_64096931097fbc5a</dd><dt>Order</dt><dd>2</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>shell_sequence</dd><dt>Language</dt><dd>bash</dd></dl><pre class="artifact-content"><code>   git fetch origin
+</code></pre></article><article class="artifact" data-artifact-id="GTC_000003_000753_000781_fd6c95edf606add9"><h3>Artifact 3: GTC_000003_000753_000781_fd6c95edf606add9</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_000753_000781_fd6c95edf606add9</dd><dt>Order</dt><dd>3</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>shell_sequence</dd><dt>Language</dt><dd>bash</dd></dl><pre class="artifact-content"><code>   git rebase origin/master
+</code></pre></article><article class="artifact" data-artifact-id="GTC_000003_001035_001064_e2606e662106f75e"><h3>Artifact 4: GTC_000003_001035_001064_e2606e662106f75e</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_001035_001064_e2606e662106f75e</dd><dt>Order</dt><dd>4</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>shell_sequence</dd><dt>Language</dt><dd>bash</dd></dl><pre class="artifact-content"><code>     git add &lt;resolved-file&gt;
+</code></pre></article><article class="artifact" data-artifact-id="GTC_000003_001151_001178_f9978f9c2efe3c6c"><h3>Artifact 5: GTC_000003_001151_001178_f9978f9c2efe3c6c</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_001151_001178_f9978f9c2efe3c6c</dd><dt>Order</dt><dd>5</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>shell_sequence</dd><dt>Language</dt><dd>bash</dd></dl><pre class="artifact-content"><code>     git rebase --continue
+</code></pre></article><article class="artifact" data-artifact-id="GTC_000003_001282_001306_ab8b108e8ba5a250"><h3>Artifact 6: GTC_000003_001282_001306_ab8b108e8ba5a250</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_001282_001306_ab8b108e8ba5a250</dd><dt>Order</dt><dd>6</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>shell_sequence</dd><dt>Language</dt><dd>bash</dd></dl><pre class="artifact-content"><code>     git rebase --abort
+</code></pre></article><article class="artifact" data-artifact-id="GTC_000003_001632_001679_4f821415debcd21d"><h3>Artifact 7: GTC_000003_001632_001679_4f821415debcd21d</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_001632_001679_4f821415debcd21d</dd><dt>Order</dt><dd>7</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>shell_sequence</dd><dt>Language</dt><dd>bash</dd></dl><pre class="artifact-content"><code>   git push origin your-feature-branch --force
+</code></pre></article></section>
+<section id="first-generation-response"><h2>Full first-generation response</h2><p class="restriction">This response cannot supply C/S/V evidence.</p><article class="first-generation-response" data-turn-id="turn_000003" data-event-index="3"><h3>Assistant · turn turn_000003</h3><p class="metadata">Event index: 3</p><pre class="turn-text">If you want to rebase a feature branch onto `master`, you&#x27;re effectively moving the base of the feature branch to the latest commit in the `master` branch, and reapplying your changes from the feature branch on top of that. Here&#x27;s a step-by-step guide to doing this with Git:
+
+1. **Ensure you&#x27;re on the feature branch**: Before you start the rebase, make sure you&#x27;re on the feature branch you want to rebase.
+   ```bash
+   git checkout your-feature-branch
+   ```
+
+2. **Fetch the latest changes from the remote repository**: Before rebasing, it&#x27;s a good idea to make sure you have the latest changes from the `master` branch.
+   ```bash
+   git fetch origin
+   ```
+
+3. **Start the rebase process**: Now, you can start the rebase onto `master`.
+   ```bash
+   git rebase origin/master
+   ```
+
+4. **Resolve conflicts, if any**: During the rebase process, you might encounter conflicts. If so:
+
+   - Edit the conflicting files to resolve the issues.
+   - After resolving the conflict in a file, mark the file as resolved using:
+     ```bash
+     git add &lt;resolved-file&gt;
+     ```
+
+   - Once all conflicts are resolved, continue the rebase with:
+     ```bash
+     git rebase --continue
+     ```
+
+   - If you want to abort the rebase and go back to where you were, you can use:
+     ```bash
+     git rebase --abort
+     ```
+
+5. **Push the rebased branch to the remote repository**: Once the rebase is complete and you&#x27;re satisfied with the changes, you can push the rebased branch to the remote repository. Since the history of the branch has changed due to the rebase, you&#x27;ll need to use the `--force` option (use with caution).
+   ```bash
+   git push origin your-feature-branch --force
+   ```
+
+**Note**: Rebasing rewrites the history of your commits. This can lead to problems if other people are also working on the same branch, as their history will differ from yours. It&#x27;s usually a good idea to communicate with your team before doing a rebase and force push, especially on branches that are shared.</pre></article></section>
+<section id="stage-c-extraction"><h2>Authoritative Stage C extraction</h2><p>Review each supplied item against admissible pre-boundary evidence and its recorded provenance.</p><section class="extraction"><h2>Context</h2><p class="empty">No items extracted.</p></section><section class="extraction"><h2>Specificity</h2><article class="extraction-item" data-item-id="specificity_1"><h3>specificity_1</h3><p class="normalized-text">The requested task is to explain how to rebase on the master branch.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">How to rebase on master?</pre></li></ul></article></section><section class="extraction"><h2>Verification</h2><p class="empty">No items extracted.</p></section></section>
+<section id="provenance"><h2>Provenance</h2><dl><dt>Authoritative Stage C record SHA-256</dt><dd>2a34ef8cfca3164f4034aae527f963a49008b0f861f763f6c4a72af6ae90e40b</dd><dt>Reviewer-safe JSON</dt><dd>cases/stage_d/reviewer_B/cases/CASE_5FC257622E18.json</dd><dt>Checkpoint commit</dt><dd>assigned_after_reviewed_preparation_is_committed</dd></dl></section>
+</main></body></html>

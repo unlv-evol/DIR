@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stage D evidence package · CASE_0ECE0C32A4BB</title>
+<style>
+:root { color-scheme: light; --navy:#17365d; --blue:#d9eaf7; --gold:#fff4cc; --ink:#1f2937; --line:#cbd5e1; --muted:#52606d; }
+* { box-sizing:border-box; } body { margin:0; font:16px/1.5 Arial,sans-serif; color:var(--ink); background:#f6f8fa; }
+main { max-width:1120px; margin:auto; padding:24px; } h1,h2,h3,h4 { color:var(--navy); } h1 { margin-bottom:.25rem; }
+section,.turn,.artifact,.extraction-item { background:white; border:1px solid var(--line); border-radius:8px; margin:16px 0; padding:18px; }
+.restriction { background:var(--gold); border-left:6px solid #b58105; } .admissible { background:#e8f5e9; border-left:6px solid #2e7d32; }
+dl { display:grid; grid-template-columns:minmax(180px,1fr) 3fr; gap:6px 16px; } dt { font-weight:bold; } dd { margin:0; overflow-wrap:anywhere; }
+pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#f3f4f6; border:1px solid #e5e7eb; border-radius:5px; padding:14px; font:14px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace; }
+.artifact-content { white-space:pre; overflow:auto; } .metadata,.empty { color:var(--muted); } a { color:#0563c1; } ul.evidence-spans { padding-left:22px; }
+</style>
+</head>
+<body><main>
+<header><p>Stage D reviewer evidence package</p><h1>CASE_0ECE0C32A4BB</h1><p>Human-readable companion to the authoritative reviewer-safe JSON.</p></header>
+<section id="source-links"><h2>Source URLs</h2><p><a href="https://chat.openai.com/share/1e410029-c111-4fde-be74-6c4e792d0722" rel="noopener noreferrer">Authoritative conversation</a></p><p><a href="https://github.com/StuartGavidia/businessapp/pull/35" rel="noopener noreferrer">Authoritative pull request</a> — provenance only; PR content is inadmissible for independent Context/Specificity/Verification validation.</p></section>
+<section id="evidence-boundary"><h2>Evidence boundary</h2><div class="admissible"><strong>Admissible C/S/V evidence:</strong> only the pre-boundary conversation shown below.</div><div class="restriction"><strong>Restricted:</strong> resolved artifacts and the full first-generation response are visible only to validate first-generation identity, target prompt, boundary, and tFG. Turns after the response are excluded. The PR URL is provenance only.</div><dl><dt>pre_boundary_conversation</dt><dd>admissible_for_context_specificity_verification_validation</dd><dt>resolved_first_generation_artifacts</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>first_generation_response</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>turns_after_first_generation_response</dt><dd>excluded</dd></dl></section>
+<section id="first-generation"><h2>First-generation family and boundary</h2><dl><dt>Family ID</dt><dd>FGF_fadc124764d3480adf3f2dd9</dd><dt>Family label</dt><dd>React Context-based global loading state and reusable spinner components</dd><dt>Artifact references</dt><dd>GTC_000003_000377_000950_66456e025d709dd7, GTC_000003_001027_001270_3a2b4d9ef1f91cb9, GTC_000003_001334_001862_22def98baab0f151, GTC_000003_002093_002322_3082910bf378909f</dd><dt>Response turn ID</dt><dd>turn_000003</dd><dt>Target prompt turn ID</dt><dd>turn_000002</dd><dt>Boundary</dt><dd>exclusive_before:turn_000003</dd><dt>tFG</dt><dd>2024-03-04T09:15:38.260049+00:00</dd></dl></section>
+<section id="target-prompt"><h2>Target prompt</h2><article class="target-prompt" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">is there a way how to show a spinner on react on every page</pre></article></section>
+<section id="pre-boundary-conversation"><h2>Pre-boundary conversation</h2><p class="admissible">These ordered turns are the only admissible conversation evidence for C/S/V validation.</p><article class="turn" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">is there a way how to show a spinner on react on every page</pre></article></section>
+<section id="selected-artifacts"><h2>Selected first-generation artifacts</h2><p class="restriction">Use only for first-generation, target-prompt, boundary, and tFG validation.</p><article class="artifact" data-artifact-id="GTC_000003_000377_000950_66456e025d709dd7"><h3>Artifact 1: GTC_000003_000377_000950_66456e025d709dd7</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_000377_000950_66456e025d709dd7</dd><dt>Order</dt><dd>1</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>shell_sequence</dd><dt>Language</dt><dd>jsx</dd></dl><pre class="artifact-content"><code>// LoadingContext.js
+import React, { createContext, useState, useContext } from &#x27;react&#x27;;
+
+const LoadingContext = createContext();
+
+export const LoadingProvider = ({ children }) =&gt; {
+  const [isLoading, setLoading] = useState(false);
+
+  const startLoading = () =&gt; {
+    setLoading(true);
+  };
+
+  const stopLoading = () =&gt; {
+    setLoading(false);
+  };
+
+  return (
+    &lt;LoadingContext.Provider value={{ isLoading, startLoading, stopLoading }}&gt;
+      {children}
+    &lt;/LoadingContext.Provider&gt;
+  );
+};
+
+export const useLoading = () =&gt; {
+  return useContext(LoadingContext);
+};
+</code></pre></article><article class="artifact" data-artifact-id="GTC_000003_001027_001270_3a2b4d9ef1f91cb9"><h3>Artifact 2: GTC_000003_001027_001270_3a2b4d9ef1f91cb9</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_001027_001270_3a2b4d9ef1f91cb9</dd><dt>Order</dt><dd>2</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>source_code</dd><dt>Language</dt><dd>jsx</dd></dl><pre class="artifact-content"><code>// App.js
+import React from &#x27;react&#x27;;
+import { LoadingProvider } from &#x27;./LoadingContext&#x27;;
+import Routes from &#x27;./Routes&#x27;;
+
+const App = () =&gt; {
+  return (
+    &lt;LoadingProvider&gt;
+      &lt;Routes /&gt;
+    &lt;/LoadingProvider&gt;
+  );
+};
+
+export default App;
+</code></pre></article><article class="artifact" data-artifact-id="GTC_000003_001334_001862_22def98baab0f151"><h3>Artifact 3: GTC_000003_001334_001862_22def98baab0f151</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_001334_001862_22def98baab0f151</dd><dt>Order</dt><dd>3</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>source_code</dd><dt>Language</dt><dd>jsx</dd></dl><pre class="artifact-content"><code>// YourComponent.js
+import React, { useEffect } from &#x27;react&#x27;;
+import { useLoading } from &#x27;./LoadingContext&#x27;;
+
+const YourComponent = () =&gt; {
+  const { startLoading, stopLoading } = useLoading();
+
+  useEffect(() =&gt; {
+    // Simulate an asynchronous operation (e.g., API call)
+    startLoading();
+    setTimeout(() =&gt; {
+      // Your actual logic here
+      stopLoading();
+    }, 2000);
+  }, [startLoading, stopLoading]);
+
+  return (
+    &lt;div&gt;
+      {/* Your component content */}
+    &lt;/div&gt;
+  );
+};
+
+export default YourComponent;
+</code></pre></article><article class="artifact" data-artifact-id="GTC_000003_002093_002322_3082910bf378909f"><h3>Artifact 4: GTC_000003_002093_002322_3082910bf378909f</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_002093_002322_3082910bf378909f</dd><dt>Order</dt><dd>4</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>source_code</dd><dt>Language</dt><dd>jsx</dd></dl><pre class="artifact-content"><code>// Spinner.js
+import React from &#x27;react&#x27;;
+
+const Spinner = () =&gt; {
+  return (
+    &lt;div className=&quot;spinner&quot;&gt;
+      {/* Your spinner content (e.g., loading animation) */}
+      Loading...
+    &lt;/div&gt;
+  );
+};
+
+export default Spinner;
+</code></pre></article></section>
+<section id="first-generation-response"><h2>Full first-generation response</h2><p class="restriction">This response cannot supply C/S/V evidence.</p><article class="first-generation-response" data-turn-id="turn_000003" data-event-index="3"><h3>Assistant · turn turn_000003</h3><p class="metadata">Event index: 3</p><pre class="turn-text">Yes, you can create a spinner or loading indicator in a React application to show loading state on every page. One common approach is to use a global state management solution, such as React Context or Redux, to manage the loading state across the entire application. Here&#x27;s a basic example using React Context:
+
+1. **Create a context for managing the loading state:**
+
+```jsx
+// LoadingContext.js
+import React, { createContext, useState, useContext } from &#x27;react&#x27;;
+
+const LoadingContext = createContext();
+
+export const LoadingProvider = ({ children }) =&gt; {
+  const [isLoading, setLoading] = useState(false);
+
+  const startLoading = () =&gt; {
+    setLoading(true);
+  };
+
+  const stopLoading = () =&gt; {
+    setLoading(false);
+  };
+
+  return (
+    &lt;LoadingContext.Provider value={{ isLoading, startLoading, stopLoading }}&gt;
+      {children}
+    &lt;/LoadingContext.Provider&gt;
+  );
+};
+
+export const useLoading = () =&gt; {
+  return useContext(LoadingContext);
+};
+```
+
+2. **Wrap your entire application with the `LoadingProvider`:**
+
+```jsx
+// App.js
+import React from &#x27;react&#x27;;
+import { LoadingProvider } from &#x27;./LoadingContext&#x27;;
+import Routes from &#x27;./Routes&#x27;;
+
+const App = () =&gt; {
+  return (
+    &lt;LoadingProvider&gt;
+      &lt;Routes /&gt;
+    &lt;/LoadingProvider&gt;
+  );
+};
+
+export default App;
+```
+
+3. **Use the loading context in your components:**
+
+```jsx
+// YourComponent.js
+import React, { useEffect } from &#x27;react&#x27;;
+import { useLoading } from &#x27;./LoadingContext&#x27;;
+
+const YourComponent = () =&gt; {
+  const { startLoading, stopLoading } = useLoading();
+
+  useEffect(() =&gt; {
+    // Simulate an asynchronous operation (e.g., API call)
+    startLoading();
+    setTimeout(() =&gt; {
+      // Your actual logic here
+      stopLoading();
+    }, 2000);
+  }, [startLoading, stopLoading]);
+
+  return (
+    &lt;div&gt;
+      {/* Your component content */}
+    &lt;/div&gt;
+  );
+};
+
+export default YourComponent;
+```
+
+4. **Create a Spinner component:**
+
+You can create a reusable Spinner component that you can use in different parts of your application. You can find many pre-built spinner components or create a simple one using CSS.
+
+```jsx
+// Spinner.js
+import React from &#x27;react&#x27;;
+
+const Spinner = () =&gt; {
+  return (
+    &lt;div className=&quot;spinner&quot;&gt;
+      {/* Your spinner content (e.g., loading animation) */}
+      Loading...
+    &lt;/div&gt;
+  );
+};
+
+export default Spinner;
+```
+
+Now, whenever you want to indicate a loading state in your components, you can use the `useLoading` hook to access the loading context and show the spinner accordingly.</pre></article></section>
+<section id="stage-c-extraction"><h2>Authoritative Stage C extraction</h2><p>Review each supplied item against admissible pre-boundary evidence and its recorded provenance.</p><section class="extraction"><h2>Context</h2><article class="extraction-item" data-item-id="context_1"><h3>context_1</h3><p class="normalized-text">The task concerns displaying a spinner in a React application.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">is there a way how to show a spinner on react</pre></li></ul></article></section><section class="extraction"><h2>Specificity</h2><article class="extraction-item" data-item-id="specificity_1"><h3>specificity_1</h3><p class="normalized-text">The spinner is intended to be shown on every page.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">on every page</pre></li></ul></article></section><section class="extraction"><h2>Verification</h2><p class="empty">No items extracted.</p></section></section>
+<section id="provenance"><h2>Provenance</h2><dl><dt>Authoritative Stage C record SHA-256</dt><dd>847dee135334feb22cd7b0a10ce83735c5693ed501e0747172d165b331ec76fa</dd><dt>Reviewer-safe JSON</dt><dd>cases/stage_d/reviewer_B/cases/CASE_0ECE0C32A4BB.json</dd><dt>Checkpoint commit</dt><dd>assigned_after_reviewed_preparation_is_committed</dd></dl></section>
+</main></body></html>

@@ -11,6 +11,7 @@ Run, in order:
 python3 pipeline/stage_d/run.py --check-config
 python3 pipeline/stage_d/run.py --generate-sample
 python3 pipeline/stage_d/run.py --prepare-review
+python3 pipeline/stage_d/run.py --prepare-review-html
 python3 pipeline/stage_d/run.py --validate
 ```
 
@@ -28,6 +29,14 @@ Each reviewer package intentionally versions both `stage_d_review.csv` and
 representation. The XLSX is the frozen human-review instrument generated from
 that CSV, adding dropdown controls, clickable source URLs, formatting, and
 review instructions without replacing the CSV's scientific authority.
+
+Each reviewer-safe JSON has a deterministic, standalone HTML companion in the
+same `cases/` directory. The JSON remains the structured evidence authority;
+the HTML presents the same fields for human reading with embedded styling and
+no network dependencies. The XLSX `case_details` cell displays the canonical
+JSON path and links to the corresponding relative HTML page. Regenerate these
+pages with `--prepare-review-html`; generation reads only the reviewer-safe
+JSON files referenced by the canonical reviewer CSV.
 
 Generate the workbooks with the preserved `build_review_workbooks.mjs` script
 in an environment providing `@oai/artifact-tool`, then run `--validate` before

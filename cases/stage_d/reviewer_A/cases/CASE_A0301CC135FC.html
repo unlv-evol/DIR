@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stage D evidence package · CASE_A0301CC135FC</title>
+<style>
+:root { color-scheme: light; --navy:#17365d; --blue:#d9eaf7; --gold:#fff4cc; --ink:#1f2937; --line:#cbd5e1; --muted:#52606d; }
+* { box-sizing:border-box; } body { margin:0; font:16px/1.5 Arial,sans-serif; color:var(--ink); background:#f6f8fa; }
+main { max-width:1120px; margin:auto; padding:24px; } h1,h2,h3,h4 { color:var(--navy); } h1 { margin-bottom:.25rem; }
+section,.turn,.artifact,.extraction-item { background:white; border:1px solid var(--line); border-radius:8px; margin:16px 0; padding:18px; }
+.restriction { background:var(--gold); border-left:6px solid #b58105; } .admissible { background:#e8f5e9; border-left:6px solid #2e7d32; }
+dl { display:grid; grid-template-columns:minmax(180px,1fr) 3fr; gap:6px 16px; } dt { font-weight:bold; } dd { margin:0; overflow-wrap:anywhere; }
+pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#f3f4f6; border:1px solid #e5e7eb; border-radius:5px; padding:14px; font:14px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace; }
+.artifact-content { white-space:pre; overflow:auto; } .metadata,.empty { color:var(--muted); } a { color:#0563c1; } ul.evidence-spans { padding-left:22px; }
+</style>
+</head>
+<body><main>
+<header><p>Stage D reviewer evidence package</p><h1>CASE_A0301CC135FC</h1><p>Human-readable companion to the authoritative reviewer-safe JSON.</p></header>
+<section id="source-links"><h2>Source URLs</h2><p><a href="https://chat.openai.com/share/be37cf76-8d76-4db7-a056-129e216f0fad" rel="noopener noreferrer">Authoritative conversation</a></p><p><a href="https://github.com/jaoafa/VCSpeaker.kt/pull/70" rel="noopener noreferrer">Authoritative pull request</a> — provenance only; PR content is inadmissible for independent Context/Specificity/Verification validation.</p></section>
+<section id="evidence-boundary"><h2>Evidence boundary</h2><div class="admissible"><strong>Admissible C/S/V evidence:</strong> only the pre-boundary conversation shown below.</div><div class="restriction"><strong>Restricted:</strong> resolved artifacts and the full first-generation response are visible only to validate first-generation identity, target prompt, boundary, and tFG. Turns after the response are excluded. The PR URL is provenance only.</div><dl><dt>pre_boundary_conversation</dt><dd>admissible_for_context_specificity_verification_validation</dd><dt>resolved_first_generation_artifacts</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>first_generation_response</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>turns_after_first_generation_response</dt><dd>excluded</dd></dl></section>
+<section id="first-generation"><h2>First-generation family and boundary</h2><dl><dt>Family ID</dt><dd>FGF_08f9f44b1ec2d7c0656ff98c</dd><dt>Family label</dt><dd>Kotlin Scrimage code for drawing white text with a black outline</dd><dt>Artifact references</dt><dd>GTC_000003_000086_001141_a16944e92eaaa33d</dd><dt>Response turn ID</dt><dd>turn_000003</dd><dt>Target prompt turn ID</dt><dd>turn_000002</dd><dt>Boundary</dt><dd>exclusive_before:turn_000003</dd><dt>tFG</dt><dd>2024-03-06T09:48:39.965068+00:00</dd></dl></section>
+<section id="target-prompt"><h2>Target prompt</h2><article class="target-prompt" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">Kotlinのsksamuel/scrimageライブラリで、画像上に文字列を描画し、文字列の縁取りをするコードを生成してください。
+文字の色は白、縁は黒で描画します。</pre></article></section>
+<section id="pre-boundary-conversation"><h2>Pre-boundary conversation</h2><p class="admissible">These ordered turns are the only admissible conversation evidence for C/S/V validation.</p><article class="turn" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">Kotlinのsksamuel/scrimageライブラリで、画像上に文字列を描画し、文字列の縁取りをするコードを生成してください。
+文字の色は白、縁は黒で描画します。</pre></article></section>
+<section id="selected-artifacts"><h2>Selected first-generation artifacts</h2><p class="restriction">Use only for first-generation, target-prompt, boundary, and tFG validation.</p><article class="artifact" data-artifact-id="GTC_000003_000086_001141_a16944e92eaaa33d"><h3>Artifact 1: GTC_000003_000086_001141_a16944e92eaaa33d</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_000086_001141_a16944e92eaaa33d</dd><dt>Order</dt><dd>1</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>source_code</dd><dt>Language</dt><dd>kotlin</dd></dl><pre class="artifact-content"><code>import com.sksamuel.scrimage.ImmutableImage
+import com.sksamuel.scrimage.color.RGBColor
+
+fun main() {
+    // 画像の幅と高さを設定
+    val width = 400
+    val height = 200
+
+    // 画像を生成し、背景を白色で塗りつぶす
+    val image = ImmutableImage.filled(width, height, RGBColor.WHITE)
+
+    // 描画する文字列とフォントサイズを設定
+    val text = &quot;Hello, World!&quot;
+    val fontSize = 24f
+
+    // 文字列を描画する位置を設定
+    val x = 50
+    val y = 100
+
+    // 文字列の色と縁取りの色を設定
+    val textColor = RGBColor.WHITE
+    val outlineColor = RGBColor.BLACK
+
+    // 文字列を画像上に描画
+    image.awt().graphics.apply {
+        font = font.deriveFont(fontSize)
+        color = textColor.toAWTColor()
+        drawString(text, x, y)
+    }
+
+    // 文字列に縁取りを追加
+    val outlinedImage = image.awt().graphics.apply {
+        color = outlineColor.toAWTColor()
+        font = font.deriveFont(fontSize)
+        drawString(text, x - 1, y - 1)
+        drawString(text, x + 1, y - 1)
+        drawString(text, x - 1, y + 1)
+        drawString(text, x + 1, y + 1)
+    }
+
+    // 画像を保存
+    outlinedImage.dispose()
+    image.output(&quot;outlined_text.png&quot;)
+}
+</code></pre></article></section>
+<section id="first-generation-response"><h2>Full first-generation response</h2><p class="restriction">This response cannot supply C/S/V evidence.</p><article class="first-generation-response" data-turn-id="turn_000003" data-event-index="3"><h3>Assistant · turn turn_000003</h3><p class="metadata">Event index: 3</p><pre class="turn-text">以下は、Kotlinで文字列を画像に描画し、縁取りをするコード例です。このコードは`sksamuel/scrimage`ライブラリを使用しています。
+
+```kotlin
+import com.sksamuel.scrimage.ImmutableImage
+import com.sksamuel.scrimage.color.RGBColor
+
+fun main() {
+    // 画像の幅と高さを設定
+    val width = 400
+    val height = 200
+
+    // 画像を生成し、背景を白色で塗りつぶす
+    val image = ImmutableImage.filled(width, height, RGBColor.WHITE)
+
+    // 描画する文字列とフォントサイズを設定
+    val text = &quot;Hello, World!&quot;
+    val fontSize = 24f
+
+    // 文字列を描画する位置を設定
+    val x = 50
+    val y = 100
+
+    // 文字列の色と縁取りの色を設定
+    val textColor = RGBColor.WHITE
+    val outlineColor = RGBColor.BLACK
+
+    // 文字列を画像上に描画
+    image.awt().graphics.apply {
+        font = font.deriveFont(fontSize)
+        color = textColor.toAWTColor()
+        drawString(text, x, y)
+    }
+
+    // 文字列に縁取りを追加
+    val outlinedImage = image.awt().graphics.apply {
+        color = outlineColor.toAWTColor()
+        font = font.deriveFont(fontSize)
+        drawString(text, x - 1, y - 1)
+        drawString(text, x + 1, y - 1)
+        drawString(text, x - 1, y + 1)
+        drawString(text, x + 1, y + 1)
+    }
+
+    // 画像を保存
+    outlinedImage.dispose()
+    image.output(&quot;outlined_text.png&quot;)
+}
+```
+
+このコードは、指定された幅と高さの空の画像を作成し、指定された文字列を描画します。その後、縁取りを追加し、画像を保存します。</pre></article></section>
+<section id="stage-c-extraction"><h2>Authoritative Stage C extraction</h2><p>Review each supplied item against admissible pre-boundary evidence and its recorded provenance.</p><section class="extraction"><h2>Context</h2><article class="extraction-item" data-item-id="context_1"><h3>context_1</h3><p class="normalized-text">Kotlinのsksamuel/scrimageライブラリを使用する画像描画タスクである。</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">Kotlinのsksamuel/scrimageライブラリで</pre></li></ul></article></section><section class="extraction"><h2>Specificity</h2><article class="extraction-item" data-item-id="specificity_1"><h3>specificity_1</h3><p class="normalized-text">画像上に縁取りされた文字列を描画するコードを生成する。</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">画像上に文字列を描画し、文字列の縁取りをするコードを生成してください。</pre></li></ul></article><article class="extraction-item" data-item-id="specificity_2"><h3>specificity_2</h3><p class="normalized-text">文字色は白、縁取りは黒とする。</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">文字の色は白、縁は黒で描画します。</pre></li></ul></article></section><section class="extraction"><h2>Verification</h2><article class="extraction-item" data-item-id="verification_1"><h3>verification_1</h3><p class="normalized-text">生成されるコードは、文字を白色、縁を黒色で描画すること。</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">文字の色は白、縁は黒で描画します。</pre></li></ul></article></section></section>
+<section id="provenance"><h2>Provenance</h2><dl><dt>Authoritative Stage C record SHA-256</dt><dd>98bfd31bdc4c80ca46972ebf18352ac3d2eea04c9bd4ab1152290725238c5116</dd><dt>Reviewer-safe JSON</dt><dd>cases/stage_d/reviewer_A/cases/CASE_A0301CC135FC.json</dd><dt>Checkpoint commit</dt><dd>assigned_after_reviewed_preparation_is_committed</dd></dl></section>
+</main></body></html>

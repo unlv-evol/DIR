@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stage D evidence package · CASE_091B52A05DEF</title>
+<style>
+:root { color-scheme: light; --navy:#17365d; --blue:#d9eaf7; --gold:#fff4cc; --ink:#1f2937; --line:#cbd5e1; --muted:#52606d; }
+* { box-sizing:border-box; } body { margin:0; font:16px/1.5 Arial,sans-serif; color:var(--ink); background:#f6f8fa; }
+main { max-width:1120px; margin:auto; padding:24px; } h1,h2,h3,h4 { color:var(--navy); } h1 { margin-bottom:.25rem; }
+section,.turn,.artifact,.extraction-item { background:white; border:1px solid var(--line); border-radius:8px; margin:16px 0; padding:18px; }
+.restriction { background:var(--gold); border-left:6px solid #b58105; } .admissible { background:#e8f5e9; border-left:6px solid #2e7d32; }
+dl { display:grid; grid-template-columns:minmax(180px,1fr) 3fr; gap:6px 16px; } dt { font-weight:bold; } dd { margin:0; overflow-wrap:anywhere; }
+pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#f3f4f6; border:1px solid #e5e7eb; border-radius:5px; padding:14px; font:14px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace; }
+.artifact-content { white-space:pre; overflow:auto; } .metadata,.empty { color:var(--muted); } a { color:#0563c1; } ul.evidence-spans { padding-left:22px; }
+</style>
+</head>
+<body><main>
+<header><p>Stage D reviewer evidence package</p><h1>CASE_091B52A05DEF</h1><p>Human-readable companion to the authoritative reviewer-safe JSON.</p></header>
+<section id="source-links"><h2>Source URLs</h2><p><a href="https://chat.openai.com/share/d68981db-26e1-431c-841d-2bb31096c0c9" rel="noopener noreferrer">Authoritative conversation</a></p><p><a href="https://github.com/pokt-network/poktroll/pull/185" rel="noopener noreferrer">Authoritative pull request</a> — provenance only; PR content is inadmissible for independent Context/Specificity/Verification validation.</p></section>
+<section id="evidence-boundary"><h2>Evidence boundary</h2><div class="admissible"><strong>Admissible C/S/V evidence:</strong> only the pre-boundary conversation shown below.</div><div class="restriction"><strong>Restricted:</strong> resolved artifacts and the full first-generation response are visible only to validate first-generation identity, target prompt, boundary, and tFG. Turns after the response are excluded. The PR URL is provenance only.</div><dl><dt>pre_boundary_conversation</dt><dd>admissible_for_context_specificity_verification_validation</dd><dt>resolved_first_generation_artifacts</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>first_generation_response</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>turns_after_first_generation_response</dt><dd>excluded</dd></dl></section>
+<section id="first-generation"><h2>First-generation family and boundary</h2><dl><dt>Family ID</dt><dd>FGF_491465641d825d9e743d433f</dd><dt>Family label</dt><dd>Go multiline-string leading-whitespace trimming implementation</dd><dt>Artifact references</dt><dd>GTC_000004_000360_000852_e1c6564915d9d9f6</dd><dt>Response turn ID</dt><dd>turn_000004</dd><dt>Target prompt turn ID</dt><dd>turn_000003</dd><dt>Boundary</dt><dd>exclusive_before:turn_000004</dd><dt>tFG</dt><dd>2023-11-14T21:50:49.315735+00:00</dd></dl></section>
+<section id="target-prompt"><h2>Target prompt</h2><article class="target-prompt" data-turn-id="turn_000003" data-event-index="3"><h3>User · turn turn_000003</h3><p class="metadata">Event index: 3</p><pre class="turn-text">I have this simple golang program:
+
+```
+// You can edit this code!
+// Click here and start typing.
+package main
+
+import &quot;fmt&quot;
+
+func main() {
+	fmt.Println(&quot;Hello, 世界&quot;)
+	s := `
+	abc
+	def
+	123
+	456
+`
+	fmt.Println(s)
+}
+```
+
+I want to avoid doing this:
+
+```
+	s := `
+abc
+def
+123
+456
+`
+```
+
+Because it&#x27;s hard to read.
+
+Is there a goland strings helper that&#x27;ll strip the preceding spaces so I maintain readability in the source code?</pre></article></section>
+<section id="pre-boundary-conversation"><h2>Pre-boundary conversation</h2><p class="admissible">These ordered turns are the only admissible conversation evidence for C/S/V validation.</p><article class="turn" data-turn-id="turn_000003" data-event-index="3"><h3>User · turn turn_000003</h3><p class="metadata">Event index: 3</p><pre class="turn-text">I have this simple golang program:
+
+```
+// You can edit this code!
+// Click here and start typing.
+package main
+
+import &quot;fmt&quot;
+
+func main() {
+	fmt.Println(&quot;Hello, 世界&quot;)
+	s := `
+	abc
+	def
+	123
+	456
+`
+	fmt.Println(s)
+}
+```
+
+I want to avoid doing this:
+
+```
+	s := `
+abc
+def
+123
+456
+`
+```
+
+Because it&#x27;s hard to read.
+
+Is there a goland strings helper that&#x27;ll strip the preceding spaces so I maintain readability in the source code?</pre></article></section>
+<section id="selected-artifacts"><h2>Selected first-generation artifacts</h2><p class="restriction">Use only for first-generation, target-prompt, boundary, and tFG validation.</p><article class="artifact" data-artifact-id="GTC_000004_000360_000852_e1c6564915d9d9f6"><h3>Artifact 1: GTC_000004_000360_000852_e1c6564915d9d9f6</h3><dl><dt>Artifact ID</dt><dd>GTC_000004_000360_000852_e1c6564915d9d9f6</dd><dt>Order</dt><dd>1</dd><dt>Source response</dt><dd>turn_000004</dd><dt>Type</dt><dd>source_code</dd><dt>Language</dt><dd>go</dd></dl><pre class="artifact-content"><code>package main
+
+import (
+	&quot;fmt&quot;
+	&quot;strings&quot;
+)
+
+func main() {
+	fmt.Println(&quot;Hello, 世界&quot;)
+
+	// Multiline string with leading spaces for readability
+	rawString := `
+		abc
+		def
+		123
+		456
+	`
+
+	// Split the string into lines
+	lines := strings.Split(rawString, &quot;\n&quot;)
+
+	// Trim leading spaces from each line
+	for i, line := range lines {
+		lines[i] = strings.TrimLeft(line, &quot; \t&quot;)
+	}
+
+	// Join the lines back into a single string
+	cleanString := strings.Join(lines, &quot;\n&quot;)
+
+	fmt.Println(cleanString)
+}
+</code></pre></article></section>
+<section id="first-generation-response"><h2>Full first-generation response</h2><p class="restriction">This response cannot supply C/S/V evidence.</p><article class="first-generation-response" data-turn-id="turn_000004" data-event-index="4"><h3>Assistant · turn turn_000004</h3><p class="metadata">Event index: 4</p><pre class="turn-text">Yes, Go provides a way to handle this situation neatly. You can use the `strings` package, specifically the `TrimLeft` function or similar variants, to strip the preceding spaces from each line. This will allow you to maintain readability in the source code while avoiding unwanted leading spaces in the string.
+
+Here&#x27;s how you can modify your program:
+
+```go
+package main
+
+import (
+	&quot;fmt&quot;
+	&quot;strings&quot;
+)
+
+func main() {
+	fmt.Println(&quot;Hello, 世界&quot;)
+
+	// Multiline string with leading spaces for readability
+	rawString := `
+		abc
+		def
+		123
+		456
+	`
+
+	// Split the string into lines
+	lines := strings.Split(rawString, &quot;\n&quot;)
+
+	// Trim leading spaces from each line
+	for i, line := range lines {
+		lines[i] = strings.TrimLeft(line, &quot; \t&quot;)
+	}
+
+	// Join the lines back into a single string
+	cleanString := strings.Join(lines, &quot;\n&quot;)
+
+	fmt.Println(cleanString)
+}
+```
+
+In this example:
+- `strings.Split` is used to divide the string into lines.
+- `strings.TrimLeft` removes leading spaces and tabs from each line.
+- `strings.Join` reassembles the lines into a single string.
+
+This approach keeps your source code readable while ensuring the output string doesn&#x27;t contain unwanted leading spaces.</pre></article></section>
+<section id="stage-c-extraction"><h2>Authoritative Stage C extraction</h2><p>Review each supplied item against admissible pre-boundary evidence and its recorded provenance.</p><section class="extraction"><h2>Context</h2><article class="extraction-item" data-item-id="context_1"><h3>context_1</h3><p class="normalized-text">The user has a simple Go program that assigns an indented multiline raw string to `s` and prints it with `fmt.Println(s)`.</p><dl><dt>Source turn IDs</dt><dd>turn_000003</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">I have this simple golang program:</pre></li><li><pre class="evidence-span">s := `
+	abc
+	def
+	123
+	456
+`</pre></li><li><pre class="evidence-span">	fmt.Println(s)</pre></li></ul></article><article class="extraction-item" data-item-id="context_2"><h3>context_2</h3><p class="normalized-text">Writing the multiline string without indentation is hard for the user to read.</p><dl><dt>Source turn IDs</dt><dd>turn_000003</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">I want to avoid doing this:
+
+```
+	s := `
+abc
+def
+123
+456
+`
+```</pre></li><li><pre class="evidence-span">Because it&#x27;s hard to read.</pre></li></ul></article></section><section class="extraction"><h2>Specificity</h2><article class="extraction-item" data-item-id="specificity_1"><h3>specificity_1</h3><p class="normalized-text">The user wants a Go string helper that removes preceding spaces from the multiline string while allowing the literal to remain indented and readable in the source code.</p><dl><dt>Source turn IDs</dt><dd>turn_000003</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">Is there a goland strings helper that&#x27;ll strip the preceding spaces so I maintain readability in the source code?</pre></li></ul></article></section><section class="extraction"><h2>Verification</h2><article class="extraction-item" data-item-id="verification_1"><h3>verification_1</h3><p class="normalized-text">The preceding spaces should be stripped from the string while source-code readability is maintained.</p><dl><dt>Source turn IDs</dt><dd>turn_000003</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">Is there a goland strings helper that&#x27;ll strip the preceding spaces so I maintain readability in the source code?</pre></li></ul></article></section></section>
+<section id="provenance"><h2>Provenance</h2><dl><dt>Authoritative Stage C record SHA-256</dt><dd>377005efe9c58ac1d781e07f60b714c0ed411c7208f139d459b5079043292887</dd><dt>Reviewer-safe JSON</dt><dd>cases/stage_d/reviewer_A/cases/CASE_091B52A05DEF.json</dd><dt>Checkpoint commit</dt><dd>assigned_after_reviewed_preparation_is_committed</dd></dl></section>
+</main></body></html>

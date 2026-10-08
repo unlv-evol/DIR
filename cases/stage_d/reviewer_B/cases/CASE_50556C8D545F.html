@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stage D evidence package · CASE_50556C8D545F</title>
+<style>
+:root { color-scheme: light; --navy:#17365d; --blue:#d9eaf7; --gold:#fff4cc; --ink:#1f2937; --line:#cbd5e1; --muted:#52606d; }
+* { box-sizing:border-box; } body { margin:0; font:16px/1.5 Arial,sans-serif; color:var(--ink); background:#f6f8fa; }
+main { max-width:1120px; margin:auto; padding:24px; } h1,h2,h3,h4 { color:var(--navy); } h1 { margin-bottom:.25rem; }
+section,.turn,.artifact,.extraction-item { background:white; border:1px solid var(--line); border-radius:8px; margin:16px 0; padding:18px; }
+.restriction { background:var(--gold); border-left:6px solid #b58105; } .admissible { background:#e8f5e9; border-left:6px solid #2e7d32; }
+dl { display:grid; grid-template-columns:minmax(180px,1fr) 3fr; gap:6px 16px; } dt { font-weight:bold; } dd { margin:0; overflow-wrap:anywhere; }
+pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#f3f4f6; border:1px solid #e5e7eb; border-radius:5px; padding:14px; font:14px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace; }
+.artifact-content { white-space:pre; overflow:auto; } .metadata,.empty { color:var(--muted); } a { color:#0563c1; } ul.evidence-spans { padding-left:22px; }
+</style>
+</head>
+<body><main>
+<header><p>Stage D reviewer evidence package</p><h1>CASE_50556C8D545F</h1><p>Human-readable companion to the authoritative reviewer-safe JSON.</p></header>
+<section id="source-links"><h2>Source URLs</h2><p><a href="https://chat.openai.com/share/ea95f20d-b69c-47e3-96cc-5f7872077d53" rel="noopener noreferrer">Authoritative conversation</a></p><p><a href="https://github.com/VOICEVOX/voicevox_core/pull/655" rel="noopener noreferrer">Authoritative pull request</a> — provenance only; PR content is inadmissible for independent Context/Specificity/Verification validation.</p></section>
+<section id="evidence-boundary"><h2>Evidence boundary</h2><div class="admissible"><strong>Admissible C/S/V evidence:</strong> only the pre-boundary conversation shown below.</div><div class="restriction"><strong>Restricted:</strong> resolved artifacts and the full first-generation response are visible only to validate first-generation identity, target prompt, boundary, and tFG. Turns after the response are excluded. The PR URL is provenance only.</div><dl><dt>pre_boundary_conversation</dt><dd>admissible_for_context_specificity_verification_validation</dd><dt>resolved_first_generation_artifacts</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>first_generation_response</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>turns_after_first_generation_response</dt><dd>excluded</dd></dl></section>
+<section id="first-generation"><h2>First-generation family and boundary</h2><dl><dt>Family ID</dt><dd>FGF_d702475ae7d87b961889d97a</dd><dt>Family label</dt><dd>Bash check for Git diff presence using git diff --quiet</dd><dt>Artifact references</dt><dd>GTC_000003_000285_000354_3e437587a4b0a2a1</dd><dt>Response turn ID</dt><dd>turn_000003</dd><dt>Target prompt turn ID</dt><dd>turn_000002</dd><dt>Boundary</dt><dd>exclusive_before:turn_000003</dd><dt>tFG</dt><dd>2023-10-23T20:10:13.700623+00:00</dd></dl></section>
+<section id="target-prompt"><h2>Target prompt</h2><article class="target-prompt" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">git diffは違いがあった場合のステータスコードは何でしょうか</pre></article></section>
+<section id="pre-boundary-conversation"><h2>Pre-boundary conversation</h2><p class="admissible">These ordered turns are the only admissible conversation evidence for C/S/V validation.</p><article class="turn" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">git diffは違いがあった場合のステータスコードは何でしょうか</pre></article></section>
+<section id="selected-artifacts"><h2>Selected first-generation artifacts</h2><p class="restriction">Use only for first-generation, target-prompt, boundary, and tFG validation.</p><article class="artifact" data-artifact-id="GTC_000003_000285_000354_3e437587a4b0a2a1"><h3>Artifact 1: GTC_000003_000285_000354_3e437587a4b0a2a1</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_000285_000354_3e437587a4b0a2a1</dd><dt>Order</dt><dd>1</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>shell_sequence</dd><dt>Language</dt><dd>bash</dd></dl><pre class="artifact-content"><code>if git diff --quiet; then
+  echo &quot;差分はありません&quot;
+else
+  echo &quot;差分があります&quot;
+fi
+</code></pre></article></section>
+<section id="first-generation-response"><h2>Full first-generation response</h2><p class="restriction">This response cannot supply C/S/V evidence.</p><article class="first-generation-response" data-turn-id="turn_000003" data-event-index="3"><h3>Assistant · turn turn_000003</h3><p class="metadata">Event index: 3</p><pre class="turn-text">`git diff`コマンドを実行したときの終了ステータスコードは、内容の差分そのものには基づいていません。通常、`git diff`は正常に終了した場合にステータスコード`0`を返します。差分があった場合もなかった場合も、ステータスコードは`0`です。
+
+もし差分があるかどうかを確認したい場合、終了ステータスコードを利用するのではなく、`git diff`の出力内容をチェックする方法が考えられます。たとえば、出力が空でない場合には差分があると判断できます。bashシェルのスクリプトで差分の有無を確認する場合は、以下のような方法が考えられます：
+
+```bash
+if git diff --quiet; then
+  echo &quot;差分はありません&quot;
+else
+  echo &quot;差分があります&quot;
+fi
+```
+
+上記のスクリプトでは、`--quiet`オプションを使用して`git diff`を実行します。このオプションを指定すると、差分がある場合に非ゼロのステータスコードを返します。これにより、差分の有無をシェルスクリプト内で簡単に確認できます。</pre></article></section>
+<section id="stage-c-extraction"><h2>Authoritative Stage C extraction</h2><p>Review each supplied item against admissible pre-boundary evidence and its recorded provenance.</p><section class="extraction"><h2>Context</h2><article class="extraction-item" data-item-id="context_1"><h3>context_1</h3><p class="normalized-text">対象のコマンドは `git diff` であり、差分がある場合について質問している。</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">git diffは違いがあった場合のステータスコードは何でしょうか</pre></li></ul></article></section><section class="extraction"><h2>Specificity</h2><article class="extraction-item" data-item-id="specificity_1"><h3>specificity_1</h3><p class="normalized-text">`git diff` で差分があった場合のステータスコードを知りたい。</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">git diffは違いがあった場合のステータスコードは何でしょうか</pre></li></ul></article></section><section class="extraction"><h2>Verification</h2><p class="empty">No items extracted.</p></section></section>
+<section id="provenance"><h2>Provenance</h2><dl><dt>Authoritative Stage C record SHA-256</dt><dd>87b32bc1584cab422fcdae4c6bd9374d02203ac58f3982b3a1ee0b64ee71bcdb</dd><dt>Reviewer-safe JSON</dt><dd>cases/stage_d/reviewer_B/cases/CASE_50556C8D545F.json</dd><dt>Checkpoint commit</dt><dd>assigned_after_reviewed_preparation_is_committed</dd></dl></section>
+</main></body></html>

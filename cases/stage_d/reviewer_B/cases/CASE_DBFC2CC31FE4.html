@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stage D evidence package · CASE_DBFC2CC31FE4</title>
+<style>
+:root { color-scheme: light; --navy:#17365d; --blue:#d9eaf7; --gold:#fff4cc; --ink:#1f2937; --line:#cbd5e1; --muted:#52606d; }
+* { box-sizing:border-box; } body { margin:0; font:16px/1.5 Arial,sans-serif; color:var(--ink); background:#f6f8fa; }
+main { max-width:1120px; margin:auto; padding:24px; } h1,h2,h3,h4 { color:var(--navy); } h1 { margin-bottom:.25rem; }
+section,.turn,.artifact,.extraction-item { background:white; border:1px solid var(--line); border-radius:8px; margin:16px 0; padding:18px; }
+.restriction { background:var(--gold); border-left:6px solid #b58105; } .admissible { background:#e8f5e9; border-left:6px solid #2e7d32; }
+dl { display:grid; grid-template-columns:minmax(180px,1fr) 3fr; gap:6px 16px; } dt { font-weight:bold; } dd { margin:0; overflow-wrap:anywhere; }
+pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#f3f4f6; border:1px solid #e5e7eb; border-radius:5px; padding:14px; font:14px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace; }
+.artifact-content { white-space:pre; overflow:auto; } .metadata,.empty { color:var(--muted); } a { color:#0563c1; } ul.evidence-spans { padding-left:22px; }
+</style>
+</head>
+<body><main>
+<header><p>Stage D reviewer evidence package</p><h1>CASE_DBFC2CC31FE4</h1><p>Human-readable companion to the authoritative reviewer-safe JSON.</p></header>
+<section id="source-links"><h2>Source URLs</h2><p><a href="https://chat.openai.com/share/16789f4e-aa4b-4baa-bef3-eab3170ab67d" rel="noopener noreferrer">Authoritative conversation</a></p><p><a href="https://github.com/VOICEVOX/voicevox_engine/pull/1122" rel="noopener noreferrer">Authoritative pull request</a> — provenance only; PR content is inadmissible for independent Context/Specificity/Verification validation.</p></section>
+<section id="evidence-boundary"><h2>Evidence boundary</h2><div class="admissible"><strong>Admissible C/S/V evidence:</strong> only the pre-boundary conversation shown below.</div><div class="restriction"><strong>Restricted:</strong> resolved artifacts and the full first-generation response are visible only to validate first-generation identity, target prompt, boundary, and tFG. Turns after the response are excluded. The PR URL is provenance only.</div><dl><dt>pre_boundary_conversation</dt><dd>admissible_for_context_specificity_verification_validation</dd><dt>resolved_first_generation_artifacts</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>first_generation_response</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>turns_after_first_generation_response</dt><dd>excluded</dd></dl></section>
+<section id="first-generation"><h2>First-generation family and boundary</h2><dl><dt>Family ID</dt><dd>FGF_17336e89a208b0c023248a57</dd><dt>Family label</dt><dd>ShellCheck SC2193を回避するGitHub Actions向けシェルコード修正</dd><dt>Artifact references</dt><dd>GTC_000003_000625_000866_14175f12b39d5990</dd><dt>Response turn ID</dt><dd>turn_000003</dd><dt>Target prompt turn ID</dt><dd>turn_000002</dd><dt>Boundary</dt><dd>exclusive_before:turn_000003</dd><dt>tFG</dt><dd>2024-03-20T20:23:14.283596+00:00</dd></dl></section>
+<section id="target-prompt"><h2>Target prompt</h2><article class="target-prompt" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">このSC2193のshellcheck disableをしないように、コードを修正する方法はありますか？
+
+          mkdir -p download/cuda/bin
+          # Lint disabled because of actionlint&#x27;s implicit `________________` replacement
+          # shellcheck disable=SC2193
+          if [[ ${{ matrix.os }} == windows-* ]]; then
+            mv &quot;${CUDA_ROOT}/bin/&quot;*.dll download/cuda/bin/
+            # remove CUDA to reduce disk usage
+            rm -rf &quot;${CUDA_ROOT}&quot;</pre></article></section>
+<section id="pre-boundary-conversation"><h2>Pre-boundary conversation</h2><p class="admissible">These ordered turns are the only admissible conversation evidence for C/S/V validation.</p><article class="turn" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">このSC2193のshellcheck disableをしないように、コードを修正する方法はありますか？
+
+          mkdir -p download/cuda/bin
+          # Lint disabled because of actionlint&#x27;s implicit `________________` replacement
+          # shellcheck disable=SC2193
+          if [[ ${{ matrix.os }} == windows-* ]]; then
+            mv &quot;${CUDA_ROOT}/bin/&quot;*.dll download/cuda/bin/
+            # remove CUDA to reduce disk usage
+            rm -rf &quot;${CUDA_ROOT}&quot;</pre></article></section>
+<section id="selected-artifacts"><h2>Selected first-generation artifacts</h2><p class="restriction">Use only for first-generation, target-prompt, boundary, and tFG validation.</p><article class="artifact" data-artifact-id="GTC_000003_000625_000866_14175f12b39d5990"><h3>Artifact 1: GTC_000003_000625_000866_14175f12b39d5990</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_000625_000866_14175f12b39d5990</dd><dt>Order</dt><dd>1</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>shell_sequence</dd><dt>Language</dt><dd>sh</dd></dl><pre class="artifact-content"><code>mkdir -p download/cuda/bin
+# GitHub Actionsの変数を直接比較するのではなく、シェル変数に代入してから比較
+os=&quot;${{ matrix.os }}&quot;
+if [[ $os == windows-* ]]; then
+  mv &quot;${CUDA_ROOT}/bin/&quot;*.dll download/cuda/bin/
+  # remove CUDA to reduce disk usage
+  rm -rf &quot;${CUDA_ROOT}&quot;
+fi
+</code></pre></article></section>
+<section id="first-generation-response"><h2>Full first-generation response</h2><p class="restriction">This response cannot supply C/S/V evidence.</p><article class="first-generation-response" data-turn-id="turn_000003" data-event-index="3"><h3>Assistant · turn turn_000003</h3><p class="metadata">Event index: 3</p><pre class="turn-text">`shellcheck`の警告SC2193は、`[[ ... == ... ]]`の比較で文字列の比較を行う際に発生する可能性があります。この特定のケースでは、GitHub Actionsのワークフローファイル内で`matrix.os`変数の値をチェックしている部分が問題です。
+
+`shellcheck`がこの警告を出す理由は、通常、比較対象の一方または両方が間違って変数展開されていない（つまり、リテラルの文字列として解釈されてしまう）場合です。しかし、このコードのコンテキストでは、`${{ matrix.os }}`はGitHub Actionsのシンタックスによって、実行時に適切なOS名の文字列に置き換えられるため、`shellcheck`のこの警告は誤検出と考えられます。
+
+ただし、`shellcheck disable=SC2193`を削除しても`shellcheck`が正しく動作するようにする方法はあります。このケースでは、GitHub Actionsのコンテキスト外でシェルスクリプトが正しく解釈されるようにするために、少しトリッキーな方法を使う必要があります。`shellcheck`にGitHub Actionsの変数が実行時に置き換えられることを&quot;理解&quot;させるのではなく、シェルスクリプト自体を`shellcheck`が解析できる形に書き換えることを目指します。
+
+具体的には、以下のように修正できます：
+
+```sh
+mkdir -p download/cuda/bin
+# GitHub Actionsの変数を直接比較するのではなく、シェル変数に代入してから比較
+os=&quot;${{ matrix.os }}&quot;
+if [[ $os == windows-* ]]; then
+  mv &quot;${CUDA_ROOT}/bin/&quot;*.dll download/cuda/bin/
+  # remove CUDA to reduce disk usage
+  rm -rf &quot;${CUDA_ROOT}&quot;
+fi
+```
+
+この変更により、`shellcheck`は`${{ matrix.os }}`がシェルスクリプトの一部としてどのように機能するかについて混乱することなく、`os`変数の比較を正しく解析できるようになります。ただし、実際にはこのコードはGitHub Actionsのワークフロー内で実行されるため、実際の実行時には`os`変数が適切に置き換えられます。
+
+なお、この方法は`shellcheck`の警告を回避するための一つのアプローチであり、GitHub Actionsの文脈では`shellcheck disable=SC2193`を使用しても問題ない場合が多いです。特に、GitHub Actionsのワークフローでは、このような特殊な置換が頻繁に行われるため、`shellcheck`の警告を無効にすることが現実的な解決策となることがあります。</pre></article></section>
+<section id="stage-c-extraction"><h2>Authoritative Stage C extraction</h2><p>Review each supplied item against admissible pre-boundary evidence and its recorded provenance.</p><section class="extraction"><h2>Context</h2><article class="extraction-item" data-item-id="context_1"><h3>context_1</h3><p class="normalized-text">対象は、GitHub Actions式 `${{ matrix.os }}` を `windows-*` と比較し、Windowsの場合にCUDAのDLLを移動してCUDAルートを削除するシェルコードである。</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">if [[ ${{ matrix.os }} == windows-* ]]; then
+            mv &quot;${CUDA_ROOT}/bin/&quot;*.dll download/cuda/bin/
+            # remove CUDA to reduce disk usage
+            rm -rf &quot;${CUDA_ROOT}&quot;</pre></li></ul></article><article class="extraction-item" data-item-id="context_2"><h3>context_2</h3><p class="normalized-text">現状では、actionlintによる暗黙の `________________` 置換を理由に、ShellCheckのSC2193が無効化されている。</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span"># Lint disabled because of actionlint&#x27;s implicit `________________` replacement
+          # shellcheck disable=SC2193</pre></li></ul></article></section><section class="extraction"><h2>Specificity</h2><article class="extraction-item" data-item-id="specificity_1"><h3>specificity_1</h3><p class="normalized-text">SC2193のShellCheck無効化を使わずに済むよう、提示されたコードを修正したい。</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">このSC2193のshellcheck disableをしないように、コードを修正する方法はありますか？</pre></li></ul></article></section><section class="extraction"><h2>Verification</h2><article class="extraction-item" data-item-id="verification_1"><h3>verification_1</h3><p class="normalized-text">修正後のコードでは、`# shellcheck disable=SC2193` を使用しないことが望まれている。</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">このSC2193のshellcheck disableをしないように、コードを修正する方法はありますか？</pre></li><li><pre class="evidence-span"># shellcheck disable=SC2193</pre></li></ul></article></section></section>
+<section id="provenance"><h2>Provenance</h2><dl><dt>Authoritative Stage C record SHA-256</dt><dd>1a31643a3c6b2e5dad978c4f6223b88f7c8ef170808d324a58e2493bea383ae7</dd><dt>Reviewer-safe JSON</dt><dd>cases/stage_d/reviewer_B/cases/CASE_DBFC2CC31FE4.json</dd><dt>Checkpoint commit</dt><dd>assigned_after_reviewed_preparation_is_committed</dd></dl></section>
+</main></body></html>

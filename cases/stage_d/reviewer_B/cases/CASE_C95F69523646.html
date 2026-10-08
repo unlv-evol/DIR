@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stage D evidence package · CASE_C95F69523646</title>
+<style>
+:root { color-scheme: light; --navy:#17365d; --blue:#d9eaf7; --gold:#fff4cc; --ink:#1f2937; --line:#cbd5e1; --muted:#52606d; }
+* { box-sizing:border-box; } body { margin:0; font:16px/1.5 Arial,sans-serif; color:var(--ink); background:#f6f8fa; }
+main { max-width:1120px; margin:auto; padding:24px; } h1,h2,h3,h4 { color:var(--navy); } h1 { margin-bottom:.25rem; }
+section,.turn,.artifact,.extraction-item { background:white; border:1px solid var(--line); border-radius:8px; margin:16px 0; padding:18px; }
+.restriction { background:var(--gold); border-left:6px solid #b58105; } .admissible { background:#e8f5e9; border-left:6px solid #2e7d32; }
+dl { display:grid; grid-template-columns:minmax(180px,1fr) 3fr; gap:6px 16px; } dt { font-weight:bold; } dd { margin:0; overflow-wrap:anywhere; }
+pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#f3f4f6; border:1px solid #e5e7eb; border-radius:5px; padding:14px; font:14px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace; }
+.artifact-content { white-space:pre; overflow:auto; } .metadata,.empty { color:var(--muted); } a { color:#0563c1; } ul.evidence-spans { padding-left:22px; }
+</style>
+</head>
+<body><main>
+<header><p>Stage D reviewer evidence package</p><h1>CASE_C95F69523646</h1><p>Human-readable companion to the authoritative reviewer-safe JSON.</p></header>
+<section id="source-links"><h2>Source URLs</h2><p><a href="https://chat.openai.com/share/9437d9ca-6365-4070-b11b-9c31cede7a2a" rel="noopener noreferrer">Authoritative conversation</a></p><p><a href="https://github.com/codeigniter4/CodeIgniter4/pull/8230" rel="noopener noreferrer">Authoritative pull request</a> — provenance only; PR content is inadmissible for independent Context/Specificity/Verification validation.</p></section>
+<section id="evidence-boundary"><h2>Evidence boundary</h2><div class="admissible"><strong>Admissible C/S/V evidence:</strong> only the pre-boundary conversation shown below.</div><div class="restriction"><strong>Restricted:</strong> resolved artifacts and the full first-generation response are visible only to validate first-generation identity, target prompt, boundary, and tFG. Turns after the response are excluded. The PR URL is provenance only.</div><dl><dt>pre_boundary_conversation</dt><dd>admissible_for_context_specificity_verification_validation</dd><dt>resolved_first_generation_artifacts</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>first_generation_response</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>turns_after_first_generation_response</dt><dd>excluded</dd></dl></section>
+<section id="first-generation"><h2>First-generation family and boundary</h2><dl><dt>Family ID</dt><dd>FGF_8f245d63a3f17ae5d68c261e</dd><dt>Family label</dt><dd>PHP User repository-pattern implementation and usage example</dd><dt>Artifact references</dt><dd>GTC_000003_000780_002714_f95de1f971e15109</dd><dt>Response turn ID</dt><dd>turn_000003</dd><dt>Target prompt turn ID</dt><dd>turn_000002</dd><dt>Boundary</dt><dd>exclusive_before:turn_000003</dd><dt>tFG</dt><dd>2023-11-24T00:47:52.143178+00:00</dd></dl></section>
+<section id="target-prompt"><h2>Target prompt</h2><article class="target-prompt" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">You are an expert in programming and PHP.
+What is &quot;Repository Pattern&quot; in the context of PHP development?
+And can you show simple sample code of it?</pre></article></section>
+<section id="pre-boundary-conversation"><h2>Pre-boundary conversation</h2><p class="admissible">These ordered turns are the only admissible conversation evidence for C/S/V validation.</p><article class="turn" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">You are an expert in programming and PHP.
+What is &quot;Repository Pattern&quot; in the context of PHP development?
+And can you show simple sample code of it?</pre></article></section>
+<section id="selected-artifacts"><h2>Selected first-generation artifacts</h2><p class="restriction">Use only for first-generation, target-prompt, boundary, and tFG validation.</p><article class="artifact" data-artifact-id="GTC_000003_000780_002714_f95de1f971e15109"><h3>Artifact 1: GTC_000003_000780_002714_f95de1f971e15109</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_000780_002714_f95de1f971e15109</dd><dt>Order</dt><dd>1</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>source_code</dd><dt>Language</dt><dd>php</dd></dl><pre class="artifact-content"><code>// User model representing a user entity
+class User {
+    public $id;
+    public $username;
+    public $email;
+
+    // Additional properties and methods can be added as needed
+}
+
+// UserRepository interface defining the contract for data access
+interface UserRepositoryInterface {
+    public function getById($id);
+    public function getByUsername($username);
+    public function save(User $user);
+    public function update(User $user);
+    public function delete(User $user);
+}
+
+// UserRepository implementing the Repository Pattern
+class UserRepository implements UserRepositoryInterface {
+    private $db;
+
+    public function __construct(PDO $db) {
+        $this-&gt;db = $db;
+    }
+
+    public function getById($id) {
+        // Logic to fetch a user by ID from the database
+    }
+
+    public function getByUsername($username) {
+        // Logic to fetch a user by username from the database
+    }
+
+    public function save(User $user) {
+        // Logic to save a new user to the database
+    }
+
+    public function update(User $user) {
+        // Logic to update an existing user in the database
+    }
+
+    public function delete(User $user) {
+        // Logic to delete a user from the database
+    }
+}
+
+// Example of how the UserRepository might be used in your application
+$db = new PDO(&#x27;mysql:host=localhost;dbname=mydatabase&#x27;, &#x27;username&#x27;, &#x27;password&#x27;);
+$userRepository = new UserRepository($db);
+
+// Example of fetching a user by ID
+$user = $userRepository-&gt;getById(1);
+
+// Example of saving a new user
+$newUser = new User();
+$newUser-&gt;username = &#x27;john_doe&#x27;;
+$newUser-&gt;email = &#x27;john@example.com&#x27;;
+$userRepository-&gt;save($newUser);
+
+// Example of updating an existing user
+$userToUpdate = $userRepository-&gt;getById(2);
+$userToUpdate-&gt;email = &#x27;updated_email@example.com&#x27;;
+$userRepository-&gt;update($userToUpdate);
+
+// Example of deleting a user
+$userToDelete = $userRepository-&gt;getById(3);
+$userRepository-&gt;delete($userToDelete);
+</code></pre></article></section>
+<section id="first-generation-response"><h2>Full first-generation response</h2><p class="restriction">This response cannot supply C/S/V evidence.</p><article class="first-generation-response" data-turn-id="turn_000003" data-event-index="3"><h3>Assistant · turn turn_000003</h3><p class="metadata">Event index: 3</p><pre class="turn-text">Certainly! The Repository Pattern is a design pattern commonly used in software development to abstract the data access logic from the rest of the application. In the context of PHP development, the Repository Pattern is often applied to manage database interactions.
+
+The main idea behind the Repository Pattern is to create a layer of abstraction that sits between the application&#x27;s business logic and the data source (usually a database). This layer, known as the repository, provides a set of methods for performing CRUD (Create, Read, Update, Delete) operations on the data without exposing the underlying database details to the rest of the application.
+
+Here&#x27;s a simple example of how you might implement a basic UserRepository in PHP using the Repository Pattern:
+
+```php
+// User model representing a user entity
+class User {
+    public $id;
+    public $username;
+    public $email;
+
+    // Additional properties and methods can be added as needed
+}
+
+// UserRepository interface defining the contract for data access
+interface UserRepositoryInterface {
+    public function getById($id);
+    public function getByUsername($username);
+    public function save(User $user);
+    public function update(User $user);
+    public function delete(User $user);
+}
+
+// UserRepository implementing the Repository Pattern
+class UserRepository implements UserRepositoryInterface {
+    private $db;
+
+    public function __construct(PDO $db) {
+        $this-&gt;db = $db;
+    }
+
+    public function getById($id) {
+        // Logic to fetch a user by ID from the database
+    }
+
+    public function getByUsername($username) {
+        // Logic to fetch a user by username from the database
+    }
+
+    public function save(User $user) {
+        // Logic to save a new user to the database
+    }
+
+    public function update(User $user) {
+        // Logic to update an existing user in the database
+    }
+
+    public function delete(User $user) {
+        // Logic to delete a user from the database
+    }
+}
+
+// Example of how the UserRepository might be used in your application
+$db = new PDO(&#x27;mysql:host=localhost;dbname=mydatabase&#x27;, &#x27;username&#x27;, &#x27;password&#x27;);
+$userRepository = new UserRepository($db);
+
+// Example of fetching a user by ID
+$user = $userRepository-&gt;getById(1);
+
+// Example of saving a new user
+$newUser = new User();
+$newUser-&gt;username = &#x27;john_doe&#x27;;
+$newUser-&gt;email = &#x27;john@example.com&#x27;;
+$userRepository-&gt;save($newUser);
+
+// Example of updating an existing user
+$userToUpdate = $userRepository-&gt;getById(2);
+$userToUpdate-&gt;email = &#x27;updated_email@example.com&#x27;;
+$userRepository-&gt;update($userToUpdate);
+
+// Example of deleting a user
+$userToDelete = $userRepository-&gt;getById(3);
+$userRepository-&gt;delete($userToDelete);
+```
+
+In this example, the `UserRepository` class provides methods for fetching users by ID or username, saving new users, updating existing users, and deleting users. The actual database interactions are encapsulated within the repository, allowing the rest of the application to work with user objects without having to know the details of how the data is stored or retrieved from the database.</pre></article></section>
+<section id="stage-c-extraction"><h2>Authoritative Stage C extraction</h2><p>Review each supplied item against admissible pre-boundary evidence and its recorded provenance.</p><section class="extraction"><h2>Context</h2><article class="extraction-item" data-item-id="context_1"><h3>context_1</h3><p class="normalized-text">The topic is the Repository Pattern in the context of PHP development.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">What is &quot;Repository Pattern&quot; in the context of PHP development?</pre></li></ul></article></section><section class="extraction"><h2>Specificity</h2><article class="extraction-item" data-item-id="specificity_1"><h3>specificity_1</h3><p class="normalized-text">Explain what the Repository Pattern is in PHP development.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">What is &quot;Repository Pattern&quot; in the context of PHP development?</pre></li></ul></article><article class="extraction-item" data-item-id="specificity_2"><h3>specificity_2</h3><p class="normalized-text">Provide simple sample code demonstrating the Repository Pattern.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">And can you show simple sample code of it?</pre></li></ul></article></section><section class="extraction"><h2>Verification</h2><p class="empty">No items extracted.</p></section></section>
+<section id="provenance"><h2>Provenance</h2><dl><dt>Authoritative Stage C record SHA-256</dt><dd>9f494eb386a5e01ab677ca8c3db6229d7524f5479d338080ccecac5aed027d2b</dd><dt>Reviewer-safe JSON</dt><dd>cases/stage_d/reviewer_B/cases/CASE_C95F69523646.json</dd><dt>Checkpoint commit</dt><dd>assigned_after_reviewed_preparation_is_committed</dd></dl></section>
+</main></body></html>

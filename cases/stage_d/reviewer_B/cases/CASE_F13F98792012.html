@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stage D evidence package · CASE_F13F98792012</title>
+<style>
+:root { color-scheme: light; --navy:#17365d; --blue:#d9eaf7; --gold:#fff4cc; --ink:#1f2937; --line:#cbd5e1; --muted:#52606d; }
+* { box-sizing:border-box; } body { margin:0; font:16px/1.5 Arial,sans-serif; color:var(--ink); background:#f6f8fa; }
+main { max-width:1120px; margin:auto; padding:24px; } h1,h2,h3,h4 { color:var(--navy); } h1 { margin-bottom:.25rem; }
+section,.turn,.artifact,.extraction-item { background:white; border:1px solid var(--line); border-radius:8px; margin:16px 0; padding:18px; }
+.restriction { background:var(--gold); border-left:6px solid #b58105; } .admissible { background:#e8f5e9; border-left:6px solid #2e7d32; }
+dl { display:grid; grid-template-columns:minmax(180px,1fr) 3fr; gap:6px 16px; } dt { font-weight:bold; } dd { margin:0; overflow-wrap:anywhere; }
+pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#f3f4f6; border:1px solid #e5e7eb; border-radius:5px; padding:14px; font:14px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace; }
+.artifact-content { white-space:pre; overflow:auto; } .metadata,.empty { color:var(--muted); } a { color:#0563c1; } ul.evidence-spans { padding-left:22px; }
+</style>
+</head>
+<body><main>
+<header><p>Stage D reviewer evidence package</p><h1>CASE_F13F98792012</h1><p>Human-readable companion to the authoritative reviewer-safe JSON.</p></header>
+<section id="source-links"><h2>Source URLs</h2><p><a href="https://chat.openai.com/share/f59d66c4-fe99-4ad3-83cf-cf4ffab427bd" rel="noopener noreferrer">Authoritative conversation</a></p><p><a href="https://github.com/polywrap/evo.ninja/pull/206" rel="noopener noreferrer">Authoritative pull request</a> — provenance only; PR content is inadmissible for independent Context/Specificity/Verification validation.</p></section>
+<section id="evidence-boundary"><h2>Evidence boundary</h2><div class="admissible"><strong>Admissible C/S/V evidence:</strong> only the pre-boundary conversation shown below.</div><div class="restriction"><strong>Restricted:</strong> resolved artifacts and the full first-generation response are visible only to validate first-generation identity, target prompt, boundary, and tFG. Turns after the response are excluded. The PR URL is provenance only.</div><dl><dt>pre_boundary_conversation</dt><dd>admissible_for_context_specificity_verification_validation</dd><dt>resolved_first_generation_artifacts</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>first_generation_response</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>turns_after_first_generation_response</dt><dd>excluded</dd></dl></section>
+<section id="first-generation"><h2>First-generation family and boundary</h2><dl><dt>Family ID</dt><dd>FGF_5fc96bcbc0d99e4be5f6e407</dd><dt>Family label</dt><dd>Recursive JavaScript factorial function body</dd><dt>Artifact references</dt><dd>GTC_000003_001404_001766_f8c1187aeedded3d</dd><dt>Response turn ID</dt><dd>turn_000003</dd><dt>Target prompt turn ID</dt><dd>turn_000002</dd><dt>Boundary</dt><dd>exclusive_before:turn_000003</dd><dt>tFG</dt><dd>2023-09-25T11:59:29.032600+00:00</dd></dl></section>
+<section id="target-prompt"><h2>Target prompt</h2><article class="target-prompt" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">Follow these prompts to complete the task of writing the javascript function &quot;math.factorial&quot; using recursion.
+
+INITIAL_PROMP = `You are an agent that writes JavaScript functions.\n` +
+`Before writing any code think step by step about what you want to implement.\n` +
+`Call the writeFunction function to submit the code of your JavaScript function.\n` +
+`If the first try doesn&#x27;t succeed, try again. Do not create mock functionality.\n`;
+
+export const GOAL_PROMPT = (namespace: string, description: string, args: string) =&gt; 
+  `Your task is to write the body of an async JavaScript function.\nFunction namepace: &quot;${namespace}&quot;\nArguments: ${args}.\nDescription: &quot;${description}&quot;\n` +
+  `You must refer to function arguments as if they were locally defined variables, remember you&#x27;re writing just the body of the function.\n` +
+  `Use only the function arguments above, do not add new ones.\n` +
+  `Since you are writing the body of the function, remember to use the return keyword if needed.\n` +
+  `When using libraries, use the require function to import them.\n` +
+  `Do not require libraries aside from &#x27;fs&#x27; and &#x27;axios&#x27;\n` +
+  `Do not use external APIs that require authentication or an API key.\n` +
+  `Do not recursively call the &quot;${namespace}&quot; function.\n` +
+  `Example function body:\n` +
+  `const fs = require(&#x27;fs&#x27;);\n` +
+  `return fs.readFileSync(path, encoding);\n`;
+
+Schema:
+```json
+{
+  &quot;name&quot;: &quot;math.factorial&quot;,
+  &quot;description&quot;: &quot;Calculate the factorial of a number&quot;,
+  &quot;arguments&quot;: &quot;{ number: number }&quot;,
+  &quot;code&quot;: &quot;./math.factorial.js&quot;
+}
+```</pre></article></section>
+<section id="pre-boundary-conversation"><h2>Pre-boundary conversation</h2><p class="admissible">These ordered turns are the only admissible conversation evidence for C/S/V validation.</p><article class="turn" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">Follow these prompts to complete the task of writing the javascript function &quot;math.factorial&quot; using recursion.
+
+INITIAL_PROMP = `You are an agent that writes JavaScript functions.\n` +
+`Before writing any code think step by step about what you want to implement.\n` +
+`Call the writeFunction function to submit the code of your JavaScript function.\n` +
+`If the first try doesn&#x27;t succeed, try again. Do not create mock functionality.\n`;
+
+export const GOAL_PROMPT = (namespace: string, description: string, args: string) =&gt; 
+  `Your task is to write the body of an async JavaScript function.\nFunction namepace: &quot;${namespace}&quot;\nArguments: ${args}.\nDescription: &quot;${description}&quot;\n` +
+  `You must refer to function arguments as if they were locally defined variables, remember you&#x27;re writing just the body of the function.\n` +
+  `Use only the function arguments above, do not add new ones.\n` +
+  `Since you are writing the body of the function, remember to use the return keyword if needed.\n` +
+  `When using libraries, use the require function to import them.\n` +
+  `Do not require libraries aside from &#x27;fs&#x27; and &#x27;axios&#x27;\n` +
+  `Do not use external APIs that require authentication or an API key.\n` +
+  `Do not recursively call the &quot;${namespace}&quot; function.\n` +
+  `Example function body:\n` +
+  `const fs = require(&#x27;fs&#x27;);\n` +
+  `return fs.readFileSync(path, encoding);\n`;
+
+Schema:
+```json
+{
+  &quot;name&quot;: &quot;math.factorial&quot;,
+  &quot;description&quot;: &quot;Calculate the factorial of a number&quot;,
+  &quot;arguments&quot;: &quot;{ number: number }&quot;,
+  &quot;code&quot;: &quot;./math.factorial.js&quot;
+}
+```</pre></article></section>
+<section id="selected-artifacts"><h2>Selected first-generation artifacts</h2><p class="restriction">Use only for first-generation, target-prompt, boundary, and tFG validation.</p><article class="artifact" data-artifact-id="GTC_000003_001404_001766_f8c1187aeedded3d"><h3>Artifact 1: GTC_000003_001404_001766_f8c1187aeedded3d</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_001404_001766_f8c1187aeedded3d</dd><dt>Order</dt><dd>1</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>source_code</dd><dt>Language</dt><dd>javascript</dd></dl><pre class="artifact-content"><code>// Check if the number is valid and non-negative
+if (number &lt; 0) {
+    throw new Error(&quot;Number must be non-negative&quot;);
+}
+
+// Define the recursive helper function
+function factorialHelper(n) {
+    if (n === 0) {
+        return 1;
+    }
+    return n * factorialHelper(n - 1);
+}
+
+// Call the helper function with the provided number
+return factorialHelper(number);
+</code></pre></article></section>
+<section id="first-generation-response"><h2>Full first-generation response</h2><p class="restriction">This response cannot supply C/S/V evidence.</p><article class="first-generation-response" data-turn-id="turn_000003" data-event-index="3"><h3>Assistant · turn turn_000003</h3><p class="metadata">Event index: 3</p><pre class="turn-text">You are an agent that writes JavaScript functions.
+Before writing any code think step by step about what you want to implement.
+Call the writeFunction function to submit the code of your JavaScript function.
+If the first try doesn&#x27;t succeed, try again. Do not create mock functionality.
+
+Your task is to write the body of an async JavaScript function.
+Function namepace: &quot;math.factorial&quot;
+Arguments: { number: number }.
+Description: &quot;Calculate the factorial of a number&quot;
+You must refer to function arguments as if they were locally defined variables, remember you&#x27;re writing just the body of the function.
+Use only the function arguments above, do not add new ones.
+Since you are writing the body of the function, remember to use the return keyword if needed.
+When using libraries, use the require function to import them.
+Do not require libraries aside from &#x27;fs&#x27; and &#x27;axios&#x27;
+Do not use external APIs that require authentication or an API key.
+Do not recursively call the &quot;math.factorial&quot; function.
+Example function body:
+const fs = require(&#x27;fs&#x27;);
+return fs.readFileSync(path, encoding);
+
+---
+
+Given the constraints, we need to write a function that calculates the factorial of a number using recursion. However, we are explicitly told not to recursively call the &quot;math.factorial&quot; function. This means we should create an inner helper function for the recursion.
+
+Let&#x27;s write the function:
+
+```javascript
+// Check if the number is valid and non-negative
+if (number &lt; 0) {
+    throw new Error(&quot;Number must be non-negative&quot;);
+}
+
+// Define the recursive helper function
+function factorialHelper(n) {
+    if (n === 0) {
+        return 1;
+    }
+    return n * factorialHelper(n - 1);
+}
+
+// Call the helper function with the provided number
+return factorialHelper(number);
+```
+
+This function first checks if the provided number is non-negative. If it is negative, it throws an error. Then, it defines a helper function `factorialHelper` that calculates the factorial using recursion. Finally, it calls this helper function with the provided number and returns the result.</pre></article></section>
+<section id="stage-c-extraction"><h2>Authoritative Stage C extraction</h2><p>Review each supplied item against admissible pre-boundary evidence and its recorded provenance.</p><section class="extraction"><h2>Context</h2><article class="extraction-item" data-item-id="context_1"><h3>context_1</h3><p class="normalized-text">The supplied schema identifies the target as `math.factorial`, describes it as calculating the factorial of a number, declares the arguments as `{ number: number }`, and associates it with `./math.factorial.js`.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">&quot;name&quot;: &quot;math.factorial&quot;,
+  &quot;description&quot;: &quot;Calculate the factorial of a number&quot;,
+  &quot;arguments&quot;: &quot;{ number: number }&quot;,
+  &quot;code&quot;: &quot;./math.factorial.js&quot;</pre></li></ul></article><article class="extraction-item" data-item-id="context_2"><h3>context_2</h3><p class="normalized-text">The task is framed as writing only the body of an async JavaScript function, with function arguments referenced as locally defined variables.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">`Your task is to write the body of an async JavaScript function.\nFunction namepace: &quot;${namespace}&quot;\nArguments: ${args}.\nDescription: &quot;${description}&quot;\n`</pre></li><li><pre class="evidence-span">`You must refer to function arguments as if they were locally defined variables, remember you&#x27;re writing just the body of the function.\n`</pre></li></ul></article></section><section class="extraction"><h2>Specificity</h2><article class="extraction-item" data-item-id="specificity_1"><h3>specificity_1</h3><p class="normalized-text">Implement the JavaScript function `math.factorial` to calculate the factorial of a number using recursion.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">Follow these prompts to complete the task of writing the javascript function &quot;math.factorial&quot; using recursion.</pre></li><li><pre class="evidence-span">&quot;description&quot;: &quot;Calculate the factorial of a number&quot;</pre></li></ul></article><article class="extraction-item" data-item-id="specificity_2"><h3>specificity_2</h3><p class="normalized-text">Use only the supplied `{ number: number }` argument and do not add arguments.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">&quot;arguments&quot;: &quot;{ number: number }&quot;</pre></li><li><pre class="evidence-span">`Use only the function arguments above, do not add new ones.\n`</pre></li></ul></article><article class="extraction-item" data-item-id="specificity_3"><h3>specificity_3</h3><p class="normalized-text">Write only the function body, refer to arguments as local variables, and use `return` when needed.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">`Your task is to write the body of an async JavaScript function.\nFunction namepace: &quot;${namespace}&quot;\nArguments: ${args}.\nDescription: &quot;${description}&quot;\n`</pre></li><li><pre class="evidence-span">`You must refer to function arguments as if they were locally defined variables, remember you&#x27;re writing just the body of the function.\n`</pre></li><li><pre class="evidence-span">`Since you are writing the body of the function, remember to use the return keyword if needed.\n`</pre></li></ul></article><article class="extraction-item" data-item-id="specificity_4"><h3>specificity_4</h3><p class="normalized-text">Do not recursively call the namespace function itself.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">`Do not recursively call the &quot;${namespace}&quot; function.\n`</pre></li></ul></article><article class="extraction-item" data-item-id="specificity_5"><h3>specificity_5</h3><p class="normalized-text">If libraries are used, import them with `require`, and do not require libraries other than `fs` and `axios`.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">`When using libraries, use the require function to import them.\n`</pre></li><li><pre class="evidence-span">`Do not require libraries aside from &#x27;fs&#x27; and &#x27;axios&#x27;\n`</pre></li></ul></article><article class="extraction-item" data-item-id="specificity_6"><h3>specificity_6</h3><p class="normalized-text">Do not use external APIs requiring authentication or an API key.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">`Do not use external APIs that require authentication or an API key.\n`</pre></li></ul></article><article class="extraction-item" data-item-id="specificity_7"><h3>specificity_7</h3><p class="normalized-text">Think through the implementation before coding, submit it through `writeFunction`, retry if the first attempt fails, and do not create mock functionality.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">`Before writing any code think step by step about what you want to implement.\n`</pre></li><li><pre class="evidence-span">`Call the writeFunction function to submit the code of your JavaScript function.\n`</pre></li><li><pre class="evidence-span">`If the first try doesn&#x27;t succeed, try again. Do not create mock functionality.\n`</pre></li></ul></article></section><section class="extraction"><h2>Verification</h2><article class="extraction-item" data-item-id="verification_1"><h3>verification_1</h3><p class="normalized-text">The submitted function body must calculate the factorial of the supplied number using recursion.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">Follow these prompts to complete the task of writing the javascript function &quot;math.factorial&quot; using recursion.</pre></li><li><pre class="evidence-span">&quot;description&quot;: &quot;Calculate the factorial of a number&quot;</pre></li></ul></article><article class="extraction-item" data-item-id="verification_2"><h3>verification_2</h3><p class="normalized-text">The result must be a function body rather than a complete function declaration, use only the supplied argument, and include a return when needed.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">`Your task is to write the body of an async JavaScript function.\nFunction namepace: &quot;${namespace}&quot;\nArguments: ${args}.\nDescription: &quot;${description}&quot;\n`</pre></li><li><pre class="evidence-span">`Use only the function arguments above, do not add new ones.\n`</pre></li><li><pre class="evidence-span">`Since you are writing the body of the function, remember to use the return keyword if needed.\n`</pre></li></ul></article><article class="extraction-item" data-item-id="verification_3"><h3>verification_3</h3><p class="normalized-text">The implementation must not recursively invoke `math.factorial` itself.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">`Do not recursively call the &quot;${namespace}&quot; function.\n`</pre></li><li><pre class="evidence-span">&quot;name&quot;: &quot;math.factorial&quot;</pre></li></ul></article><article class="extraction-item" data-item-id="verification_4"><h3>verification_4</h3><p class="normalized-text">Any library imports must use `require` and be limited to `fs` or `axios`; authenticated or API-key-dependent external APIs are disallowed.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">`When using libraries, use the require function to import them.\n`</pre></li><li><pre class="evidence-span">`Do not require libraries aside from &#x27;fs&#x27; and &#x27;axios&#x27;\n`</pre></li><li><pre class="evidence-span">`Do not use external APIs that require authentication or an API key.\n`</pre></li></ul></article><article class="extraction-item" data-item-id="verification_5"><h3>verification_5</h3><p class="normalized-text">If the first submission does not succeed, another attempt is required, and mock functionality is not acceptable.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">`If the first try doesn&#x27;t succeed, try again. Do not create mock functionality.\n`</pre></li></ul></article></section></section>
+<section id="provenance"><h2>Provenance</h2><dl><dt>Authoritative Stage C record SHA-256</dt><dd>db79fa3f5dbb567567226604ff7022c06519fe277abdb5335fa348a0ce69a2d8</dd><dt>Reviewer-safe JSON</dt><dd>cases/stage_d/reviewer_B/cases/CASE_F13F98792012.json</dd><dt>Checkpoint commit</dt><dd>assigned_after_reviewed_preparation_is_committed</dd></dl></section>
+</main></body></html>

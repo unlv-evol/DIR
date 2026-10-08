@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stage D evidence package · CASE_34D14D6B0BB7</title>
+<style>
+:root { color-scheme: light; --navy:#17365d; --blue:#d9eaf7; --gold:#fff4cc; --ink:#1f2937; --line:#cbd5e1; --muted:#52606d; }
+* { box-sizing:border-box; } body { margin:0; font:16px/1.5 Arial,sans-serif; color:var(--ink); background:#f6f8fa; }
+main { max-width:1120px; margin:auto; padding:24px; } h1,h2,h3,h4 { color:var(--navy); } h1 { margin-bottom:.25rem; }
+section,.turn,.artifact,.extraction-item { background:white; border:1px solid var(--line); border-radius:8px; margin:16px 0; padding:18px; }
+.restriction { background:var(--gold); border-left:6px solid #b58105; } .admissible { background:#e8f5e9; border-left:6px solid #2e7d32; }
+dl { display:grid; grid-template-columns:minmax(180px,1fr) 3fr; gap:6px 16px; } dt { font-weight:bold; } dd { margin:0; overflow-wrap:anywhere; }
+pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#f3f4f6; border:1px solid #e5e7eb; border-radius:5px; padding:14px; font:14px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace; }
+.artifact-content { white-space:pre; overflow:auto; } .metadata,.empty { color:var(--muted); } a { color:#0563c1; } ul.evidence-spans { padding-left:22px; }
+</style>
+</head>
+<body><main>
+<header><p>Stage D reviewer evidence package</p><h1>CASE_34D14D6B0BB7</h1><p>Human-readable companion to the authoritative reviewer-safe JSON.</p></header>
+<section id="source-links"><h2>Source URLs</h2><p><a href="https://chat.openai.com/share/2bd66613-5dc1-427e-9277-fb45b317438a" rel="noopener noreferrer">Authoritative conversation</a></p><p><a href="https://github.com/pyspark-ai/pyspark-ai/pull/157" rel="noopener noreferrer">Authoritative pull request</a> — provenance only; PR content is inadmissible for independent Context/Specificity/Verification validation.</p></section>
+<section id="evidence-boundary"><h2>Evidence boundary</h2><div class="admissible"><strong>Admissible C/S/V evidence:</strong> only the pre-boundary conversation shown below.</div><div class="restriction"><strong>Restricted:</strong> resolved artifacts and the full first-generation response are visible only to validate first-generation identity, target prompt, boundary, and tFG. Turns after the response are excluded. The PR URL is provenance only.</div><dl><dt>pre_boundary_conversation</dt><dd>admissible_for_context_specificity_verification_validation</dd><dt>resolved_first_generation_artifacts</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>first_generation_response</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>turns_after_first_generation_response</dt><dd>excluded</dd></dl></section>
+<section id="first-generation"><h2>First-generation family and boundary</h2><dl><dt>Family ID</dt><dd>FGF_5e192cc9bfbff86a36032596</dd><dt>Family label</dt><dd>Python LRU file cache class</dd><dt>Artifact references</dt><dd>GTC_000003_000088_002153_7be022cdf5590444</dd><dt>Response turn ID</dt><dd>turn_000003</dd><dt>Target prompt turn ID</dt><dd>turn_000002</dd><dt>Boundary</dt><dd>exclusive_before:turn_000003</dd><dt>tFG</dt><dd>2023-10-09T17:53:50.509201+00:00</dd></dl></section>
+<section id="target-prompt"><h2>Target prompt</h2><article class="target-prompt" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">help me write a python class. It takes a file_path and max_size for init.
+there is APIs to read or create new files under the file_path. When the total size exceeds max_size, evict the least recent accessed file (LRU policy).</pre></article></section>
+<section id="pre-boundary-conversation"><h2>Pre-boundary conversation</h2><p class="admissible">These ordered turns are the only admissible conversation evidence for C/S/V validation.</p><article class="turn" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">help me write a python class. It takes a file_path and max_size for init.
+there is APIs to read or create new files under the file_path. When the total size exceeds max_size, evict the least recent accessed file (LRU policy).</pre></article></section>
+<section id="selected-artifacts"><h2>Selected first-generation artifacts</h2><p class="restriction">Use only for first-generation, target-prompt, boundary, and tFG validation.</p><article class="artifact" data-artifact-id="GTC_000003_000088_002153_7be022cdf5590444"><h3>Artifact 1: GTC_000003_000088_002153_7be022cdf5590444</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_000088_002153_7be022cdf5590444</dd><dt>Order</dt><dd>1</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>configuration_properties</dd><dt>Language</dt><dd>python</dd></dl><pre class="artifact-content"><code>import os
+from collections import OrderedDict
+
+class LRUFileCache:
+    def __init__(self, file_path: str, max_size: int):
+        self.file_path = file_path
+        self.max_size = max_size
+        self.current_size = 0
+        self.files = OrderedDict()  # {filename: size}
+
+        # initialize the file cache
+        for file in os.listdir(file_path):
+            file_full_path = os.path.join(file_path, file)
+            file_size = os.path.getsize(file_full_path)
+            self.current_size += file_size
+            self.files[file] = file_size
+
+    def _evict_files(self):
+        while self.current_size &gt; self.max_size:
+            _, evicted_size = self.files.popitem(last=False)  # pop the least recently accessed item
+            self.current_size -= evicted_size
+
+    def read_file(self, filename: str) -&gt; str:
+        file_full_path = os.path.join(self.file_path, filename)
+        if not os.path.exists(file_full_path):
+            raise ValueError(f&quot;{filename} doesn&#x27;t exist!&quot;)
+
+        with open(file_full_path, &#x27;r&#x27;) as f:
+            content = f.read()
+
+        # Move accessed file to the end to maintain LRU order
+        file_size = self.files.pop(filename)
+        self.files[filename] = file_size
+
+        return content
+
+    def create_file(self, filename: str, content: str):
+        file_full_path = os.path.join(self.file_path, filename)
+        with open(file_full_path, &#x27;w&#x27;) as f:
+            f.write(content)
+
+        file_size = os.path.getsize(file_full_path)
+        self.current_size += file_size
+        self.files[filename] = file_size
+
+        self._evict_files()
+
+    def delete_file(self, filename: str):
+        if filename in self.files:
+            file_full_path = os.path.join(self.file_path, filename)
+            os.remove(file_full_path)
+            size = self.files.pop(filename)
+            self.current_size -= size
+
+# Usage
+file_cache = LRUFileCache(&quot;path/to/files&quot;, 5000)  # max_size in bytes, for example: 5 KB
+file_cache.create_file(&quot;sample.txt&quot;, &quot;Hello World&quot;)
+content = file_cache.read_file(&quot;sample.txt&quot;)
+</code></pre></article></section>
+<section id="first-generation-response"><h2>Full first-generation response</h2><p class="restriction">This response cannot supply C/S/V evidence.</p><article class="first-generation-response" data-turn-id="turn_000003" data-event-index="3"><h3>Assistant · turn turn_000003</h3><p class="metadata">Event index: 3</p><pre class="turn-text">Certainly! Below is a Python class that fulfills the described requirements:
+
+```python
+import os
+from collections import OrderedDict
+
+class LRUFileCache:
+    def __init__(self, file_path: str, max_size: int):
+        self.file_path = file_path
+        self.max_size = max_size
+        self.current_size = 0
+        self.files = OrderedDict()  # {filename: size}
+
+        # initialize the file cache
+        for file in os.listdir(file_path):
+            file_full_path = os.path.join(file_path, file)
+            file_size = os.path.getsize(file_full_path)
+            self.current_size += file_size
+            self.files[file] = file_size
+
+    def _evict_files(self):
+        while self.current_size &gt; self.max_size:
+            _, evicted_size = self.files.popitem(last=False)  # pop the least recently accessed item
+            self.current_size -= evicted_size
+
+    def read_file(self, filename: str) -&gt; str:
+        file_full_path = os.path.join(self.file_path, filename)
+        if not os.path.exists(file_full_path):
+            raise ValueError(f&quot;{filename} doesn&#x27;t exist!&quot;)
+
+        with open(file_full_path, &#x27;r&#x27;) as f:
+            content = f.read()
+
+        # Move accessed file to the end to maintain LRU order
+        file_size = self.files.pop(filename)
+        self.files[filename] = file_size
+
+        return content
+
+    def create_file(self, filename: str, content: str):
+        file_full_path = os.path.join(self.file_path, filename)
+        with open(file_full_path, &#x27;w&#x27;) as f:
+            f.write(content)
+
+        file_size = os.path.getsize(file_full_path)
+        self.current_size += file_size
+        self.files[filename] = file_size
+
+        self._evict_files()
+
+    def delete_file(self, filename: str):
+        if filename in self.files:
+            file_full_path = os.path.join(self.file_path, filename)
+            os.remove(file_full_path)
+            size = self.files.pop(filename)
+            self.current_size -= size
+
+# Usage
+file_cache = LRUFileCache(&quot;path/to/files&quot;, 5000)  # max_size in bytes, for example: 5 KB
+file_cache.create_file(&quot;sample.txt&quot;, &quot;Hello World&quot;)
+content = file_cache.read_file(&quot;sample.txt&quot;)
+```
+
+Here&#x27;s how the class works:
+
+- It uses an `OrderedDict` to keep track of the files and their sizes. When a file is accessed (read or created), it is moved to the end of the `OrderedDict`. The least recently accessed file is always at the beginning.
+  
+- When the total size exceeds `max_size`, the `_evict_files` method is called, which keeps evicting the least recently accessed files until the current size is within limits.
+
+- The `read_file` method lets you read a file&#x27;s content. After reading, the file is considered accessed and is moved to the end of the `OrderedDict`.
+  
+- The `create_file` method lets you create (or overwrite) a file with the specified content. After creation, the file is considered accessed.
+
+- The `delete_file` method lets you delete a file from the directory and cache.
+
+Note: Ensure to handle possible exceptions when interacting with file operations in a real-world use case. This example is kept simple for clarity.</pre></article></section>
+<section id="stage-c-extraction"><h2>Authoritative Stage C extraction</h2><p>Review each supplied item against admissible pre-boundary evidence and its recorded provenance.</p><section class="extraction"><h2>Context</h2><article class="extraction-item" data-item-id="context_1"><h3>context_1</h3><p class="normalized-text">The requested implementation is a Python class that manages files under a specified file path.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">help me write a python class.</pre></li><li><pre class="evidence-span">there is APIs to read or create new files under the file_path.</pre></li></ul></article></section><section class="extraction"><h2>Specificity</h2><article class="extraction-item" data-item-id="specificity_1"><h3>specificity_1</h3><p class="normalized-text">The class initializer takes `file_path` and `max_size`.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">It takes a file_path and max_size for init.</pre></li></ul></article><article class="extraction-item" data-item-id="specificity_2"><h3>specificity_2</h3><p class="normalized-text">The class provides APIs to read files or create new files under `file_path`.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">there is APIs to read or create new files under the file_path.</pre></li></ul></article><article class="extraction-item" data-item-id="specificity_3"><h3>specificity_3</h3><p class="normalized-text">The managed capacity is based on the total file size, with `max_size` as the threshold.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">When the total size exceeds max_size</pre></li></ul></article><article class="extraction-item" data-item-id="specificity_4"><h3>specificity_4</h3><p class="normalized-text">Eviction uses a least-recently-accessed-file (LRU) policy.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">evict the least recent accessed file (LRU policy).</pre></li></ul></article></section><section class="extraction"><h2>Verification</h2><article class="extraction-item" data-item-id="verification_1"><h3>verification_1</h3><p class="normalized-text">When the total size exceeds `max_size`, the least recently accessed file is evicted.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">When the total size exceeds max_size, evict the least recent accessed file (LRU policy).</pre></li></ul></article></section></section>
+<section id="provenance"><h2>Provenance</h2><dl><dt>Authoritative Stage C record SHA-256</dt><dd>a74771e26609d67f2b738ab7807cbcf45f6468fc1dc85fa0ada6d27ce0f30d31</dd><dt>Reviewer-safe JSON</dt><dd>cases/stage_d/reviewer_A/cases/CASE_34D14D6B0BB7.json</dd><dt>Checkpoint commit</dt><dd>assigned_after_reviewed_preparation_is_committed</dd></dl></section>
+</main></body></html>

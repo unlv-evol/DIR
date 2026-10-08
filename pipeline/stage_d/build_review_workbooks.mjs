@@ -46,8 +46,8 @@ async function repairHyperlinkCaches(filePath) {
   const sheetPath = "xl/worksheets/sheet1.xml";
   let sheetXml = await zip.file(sheetPath).async("string");
   sheetXml = sheetXml.replace(
-    /<x:c r="([CD]\d+)" s="(\d+)" t="e"><x:f>HYPERLINK\("([^"]+)","[^"]+"\)<\/x:f><x:v>[^<]*<\/x:v><\/x:c>/g,
-    (_, cell, style, url) => `<x:c r="${cell}" s="${style}" t="str"><x:f>HYPERLINK(&quot;${xmlEscape(url)}&quot;,&quot;${xmlEscape(url)}&quot;)</x:f><x:v>${xmlEscape(url)}</x:v></x:c>`,
+    /<x:c r="([BCD]\d+)" s="(\d+)" t="e"><x:f>HYPERLINK\("([^"]+)","([^"]+)"\)<\/x:f><x:v>[^<]*<\/x:v><\/x:c>/g,
+    (_, cell, style, url, label) => `<x:c r="${cell}" s="${style}" t="str"><x:f>HYPERLINK(&quot;${xmlEscape(url)}&quot;,&quot;${xmlEscape(label)}&quot;)</x:f><x:v>${xmlEscape(label)}</x:v></x:c>`,
   );
   zip.file(sheetPath, sheetXml);
   let workbookXml = await zip.file("xl/workbook.xml").async("string");
@@ -116,6 +116,9 @@ for (const reviewer of reviewers) {
   // after the generator's Python validation has confirmed the canonical schema.
   for (let index = 0; index < rows.length; index++) {
     const cells = rows[index].split(",");
+    const caseId = cells[0];
+    const caseDetails = cells[1];
+    review.getRange(`B${index + 2}`).formulas = [[`=HYPERLINK("cases/${caseId}.html","${caseDetails}")`]];
     for (const column of ["C", "D"]) {
       const url = cells[column === "C" ? 2 : 3];
       review.getRange(`${column}${index + 2}`).formulas = [[`=HYPERLINK("${url}","${url}")`]];

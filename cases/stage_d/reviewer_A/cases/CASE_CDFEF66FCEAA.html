@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stage D evidence package · CASE_CDFEF66FCEAA</title>
+<style>
+:root { color-scheme: light; --navy:#17365d; --blue:#d9eaf7; --gold:#fff4cc; --ink:#1f2937; --line:#cbd5e1; --muted:#52606d; }
+* { box-sizing:border-box; } body { margin:0; font:16px/1.5 Arial,sans-serif; color:var(--ink); background:#f6f8fa; }
+main { max-width:1120px; margin:auto; padding:24px; } h1,h2,h3,h4 { color:var(--navy); } h1 { margin-bottom:.25rem; }
+section,.turn,.artifact,.extraction-item { background:white; border:1px solid var(--line); border-radius:8px; margin:16px 0; padding:18px; }
+.restriction { background:var(--gold); border-left:6px solid #b58105; } .admissible { background:#e8f5e9; border-left:6px solid #2e7d32; }
+dl { display:grid; grid-template-columns:minmax(180px,1fr) 3fr; gap:6px 16px; } dt { font-weight:bold; } dd { margin:0; overflow-wrap:anywhere; }
+pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#f3f4f6; border:1px solid #e5e7eb; border-radius:5px; padding:14px; font:14px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace; }
+.artifact-content { white-space:pre; overflow:auto; } .metadata,.empty { color:var(--muted); } a { color:#0563c1; } ul.evidence-spans { padding-left:22px; }
+</style>
+</head>
+<body><main>
+<header><p>Stage D reviewer evidence package</p><h1>CASE_CDFEF66FCEAA</h1><p>Human-readable companion to the authoritative reviewer-safe JSON.</p></header>
+<section id="source-links"><h2>Source URLs</h2><p><a href="https://chat.openai.com/share/ca2eab25-4e1e-4688-9be5-43a179a0ec4f" rel="noopener noreferrer">Authoritative conversation</a></p><p><a href="https://github.com/SSWConsulting/SSW.Website/pull/931" rel="noopener noreferrer">Authoritative pull request</a> — provenance only; PR content is inadmissible for independent Context/Specificity/Verification validation.</p></section>
+<section id="evidence-boundary"><h2>Evidence boundary</h2><div class="admissible"><strong>Admissible C/S/V evidence:</strong> only the pre-boundary conversation shown below.</div><div class="restriction"><strong>Restricted:</strong> resolved artifacts and the full first-generation response are visible only to validate first-generation identity, target prompt, boundary, and tFG. Turns after the response are excluded. The PR URL is provenance only.</div><dl><dt>pre_boundary_conversation</dt><dd>admissible_for_context_specificity_verification_validation</dd><dt>resolved_first_generation_artifacts</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>first_generation_response</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>turns_after_first_generation_response</dt><dd>excluded</dd></dl></section>
+<section id="first-generation"><h2>First-generation family and boundary</h2><dl><dt>Family ID</dt><dd>FGF_1f4bfb6a898cd8373ed33e51</dd><dt>Family label</dt><dd>DayJS date-formatting example equivalent to the Moment.js expression</dd><dt>Artifact references</dt><dd>GTC_000003_000342_000563_1c1e1652d686ad50</dd><dt>Response turn ID</dt><dd>turn_000003</dd><dt>Target prompt turn ID</dt><dd>turn_000002</dd><dt>Boundary</dt><dd>exclusive_before:turn_000003</dd><dt>tFG</dt><dd>2023-07-05T01:12:41.129201+00:00</dd></dl></section>
+<section id="target-prompt"><h2>Target prompt</h2><article class="target-prompt" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">Can i replicate this functionality with DayJS?
+
+moment(event.date).format(&quot;Do (ddd) MMMM YYYY&quot;)</pre></article></section>
+<section id="pre-boundary-conversation"><h2>Pre-boundary conversation</h2><p class="admissible">These ordered turns are the only admissible conversation evidence for C/S/V validation.</p><article class="turn" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">Can i replicate this functionality with DayJS?
+
+moment(event.date).format(&quot;Do (ddd) MMMM YYYY&quot;)</pre></article></section>
+<section id="selected-artifacts"><h2>Selected first-generation artifacts</h2><p class="restriction">Use only for first-generation, target-prompt, boundary, and tFG validation.</p><article class="artifact" data-artifact-id="GTC_000003_000342_000563_1c1e1652d686ad50"><h3>Artifact 1: GTC_000003_000342_000563_1c1e1652d686ad50</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_000342_000563_1c1e1652d686ad50</dd><dt>Order</dt><dd>1</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>source_code</dd><dt>Language</dt><dd>javascript</dd></dl><pre class="artifact-content"><code>const dayjs = require(&#x27;dayjs&#x27;);
+require(&#x27;dayjs/locale/en&#x27;); // Import the locale you want to use (e.g., &#x27;en&#x27; for English)
+
+const formattedDate = dayjs(event.date).format(&quot;Do (ddd) MMMM YYYY&quot;);
+console.log(formattedDate);
+</code></pre></article></section>
+<section id="first-generation-response"><h2>Full first-generation response</h2><p class="restriction">This response cannot supply C/S/V evidence.</p><article class="first-generation-response" data-turn-id="turn_000003" data-event-index="3"><h3>Assistant · turn turn_000003</h3><p class="metadata">Event index: 3</p><pre class="turn-text">Yes, you can replicate the functionality of formatting a date using the &quot;Do (ddd) MMMM YYYY&quot; format with DayJS. DayJS is a lightweight JavaScript library for parsing, manipulating, and formatting dates.
+
+To achieve the same result as the moment.js code you provided, you can use DayJS&#x27;s `format()` function. Here&#x27;s an example:
+
+```javascript
+const dayjs = require(&#x27;dayjs&#x27;);
+require(&#x27;dayjs/locale/en&#x27;); // Import the locale you want to use (e.g., &#x27;en&#x27; for English)
+
+const formattedDate = dayjs(event.date).format(&quot;Do (ddd) MMMM YYYY&quot;);
+console.log(formattedDate);
+```
+
+Make sure you have DayJS installed in your project by running `npm install dayjs`. Also, don&#x27;t forget to import the locale you want to use if you need to localize the output.
+
+This code snippet will format the `event.date` using the specified format string and store the result in the `formattedDate` variable. Finally, it will log the formatted date to the console.</pre></article></section>
+<section id="stage-c-extraction"><h2>Authoritative Stage C extraction</h2><p>Review each supplied item against admissible pre-boundary evidence and its recorded provenance.</p><section class="extraction"><h2>Context</h2><article class="extraction-item" data-item-id="context_1"><h3>context_1</h3><p class="normalized-text">The existing date-formatting expression is `moment(event.date).format(&quot;Do (ddd) MMMM YYYY&quot;)`.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">moment(event.date).format(&quot;Do (ddd) MMMM YYYY&quot;)</pre></li></ul></article></section><section class="extraction"><h2>Specificity</h2><article class="extraction-item" data-item-id="specificity_1"><h3>specificity_1</h3><p class="normalized-text">The user wants to replicate the Moment.js formatting functionality with DayJS for `event.date`, using the format `Do (ddd) MMMM YYYY`.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">Can i replicate this functionality with DayJS?</pre></li><li><pre class="evidence-span">moment(event.date).format(&quot;Do (ddd) MMMM YYYY&quot;)</pre></li></ul></article></section><section class="extraction"><h2>Verification</h2><article class="extraction-item" data-item-id="verification_1"><h3>verification_1</h3><p class="normalized-text">The DayJS approach is expected to replicate the functionality of the supplied Moment.js formatting expression.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">Can i replicate this functionality with DayJS?</pre></li><li><pre class="evidence-span">moment(event.date).format(&quot;Do (ddd) MMMM YYYY&quot;)</pre></li></ul></article></section></section>
+<section id="provenance"><h2>Provenance</h2><dl><dt>Authoritative Stage C record SHA-256</dt><dd>5594cf6b7aaf508e2f0387d23c27052eaad7a988c04c9986174f076bef9c981b</dd><dt>Reviewer-safe JSON</dt><dd>cases/stage_d/reviewer_A/cases/CASE_CDFEF66FCEAA.json</dd><dt>Checkpoint commit</dt><dd>assigned_after_reviewed_preparation_is_committed</dd></dl></section>
+</main></body></html>

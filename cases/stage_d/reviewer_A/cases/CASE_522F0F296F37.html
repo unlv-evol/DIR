@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stage D evidence package · CASE_522F0F296F37</title>
+<style>
+:root { color-scheme: light; --navy:#17365d; --blue:#d9eaf7; --gold:#fff4cc; --ink:#1f2937; --line:#cbd5e1; --muted:#52606d; }
+* { box-sizing:border-box; } body { margin:0; font:16px/1.5 Arial,sans-serif; color:var(--ink); background:#f6f8fa; }
+main { max-width:1120px; margin:auto; padding:24px; } h1,h2,h3,h4 { color:var(--navy); } h1 { margin-bottom:.25rem; }
+section,.turn,.artifact,.extraction-item { background:white; border:1px solid var(--line); border-radius:8px; margin:16px 0; padding:18px; }
+.restriction { background:var(--gold); border-left:6px solid #b58105; } .admissible { background:#e8f5e9; border-left:6px solid #2e7d32; }
+dl { display:grid; grid-template-columns:minmax(180px,1fr) 3fr; gap:6px 16px; } dt { font-weight:bold; } dd { margin:0; overflow-wrap:anywhere; }
+pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#f3f4f6; border:1px solid #e5e7eb; border-radius:5px; padding:14px; font:14px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace; }
+.artifact-content { white-space:pre; overflow:auto; } .metadata,.empty { color:var(--muted); } a { color:#0563c1; } ul.evidence-spans { padding-left:22px; }
+</style>
+</head>
+<body><main>
+<header><p>Stage D reviewer evidence package</p><h1>CASE_522F0F296F37</h1><p>Human-readable companion to the authoritative reviewer-safe JSON.</p></header>
+<section id="source-links"><h2>Source URLs</h2><p><a href="https://chat.openai.com/share/1489a07a-5d1d-47f0-b35c-c7ba4138f2ff" rel="noopener noreferrer">Authoritative conversation</a></p><p><a href="https://github.com/netdata/netdata/pull/15485" rel="noopener noreferrer">Authoritative pull request</a> — provenance only; PR content is inadmissible for independent Context/Specificity/Verification validation.</p></section>
+<section id="evidence-boundary"><h2>Evidence boundary</h2><div class="admissible"><strong>Admissible C/S/V evidence:</strong> only the pre-boundary conversation shown below.</div><div class="restriction"><strong>Restricted:</strong> resolved artifacts and the full first-generation response are visible only to validate first-generation identity, target prompt, boundary, and tFG. Turns after the response are excluded. The PR URL is provenance only.</div><dl><dt>pre_boundary_conversation</dt><dd>admissible_for_context_specificity_verification_validation</dd><dt>resolved_first_generation_artifacts</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>first_generation_response</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>turns_after_first_generation_response</dt><dd>excluded</dd></dl></section>
+<section id="first-generation"><h2>First-generation family and boundary</h2><dl><dt>Family ID</dt><dd>FGF_c211554c4f4948c9cc85ae6b</dd><dt>Family label</dt><dd>Bash guard for a missing md5sum command</dd><dt>Artifact references</dt><dd>GTC_000003_001380_001456_3f1d418c89baa5fe</dd><dt>Response turn ID</dt><dd>turn_000003</dd><dt>Target prompt turn ID</dt><dd>turn_000002</dd><dt>Boundary</dt><dd>exclusive_before:turn_000003</dd><dt>tFG</dt><dd>2023-07-21T13:02:53.574420+00:00</dd></dl></section>
+<section id="target-prompt"><h2>Target prompt</h2><article class="target-prompt" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">will this handle or what will happen if md5sum does not exist?
+
+MD5_PATH=&quot;$(exec &lt;&amp;- 2&gt;&amp;-; which md5sum || command -v md5sum || type md5sum)&quot;</pre></article></section>
+<section id="pre-boundary-conversation"><h2>Pre-boundary conversation</h2><p class="admissible">These ordered turns are the only admissible conversation evidence for C/S/V validation.</p><article class="turn" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">will this handle or what will happen if md5sum does not exist?
+
+MD5_PATH=&quot;$(exec &lt;&amp;- 2&gt;&amp;-; which md5sum || command -v md5sum || type md5sum)&quot;</pre></article></section>
+<section id="selected-artifacts"><h2>Selected first-generation artifacts</h2><p class="restriction">Use only for first-generation, target-prompt, boundary, and tFG validation.</p><article class="artifact" data-artifact-id="GTC_000003_001380_001456_3f1d418c89baa5fe"><h3>Artifact 1: GTC_000003_001380_001456_3f1d418c89baa5fe</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_001380_001456_3f1d418c89baa5fe</dd><dt>Order</dt><dd>1</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>shell_sequence</dd><dt>Language</dt><dd>bash</dd></dl><pre class="artifact-content"><code>if [[ -z &quot;$MD5_PATH&quot; ]]; then
+  echo &quot;md5sum command not found&quot;
+  exit 1
+fi
+</code></pre></article></section>
+<section id="first-generation-response"><h2>Full first-generation response</h2><p class="restriction">This response cannot supply C/S/V evidence.</p><article class="first-generation-response" data-turn-id="turn_000003" data-event-index="3"><h3>Assistant · turn turn_000003</h3><p class="metadata">Event index: 3</p><pre class="turn-text">The command you&#x27;ve provided is attempting to determine the path of the `md5sum` command on a UNIX-based system. 
+
+```bash
+MD5_PATH=&quot;$(exec &lt;&amp;- 2&gt;&amp;-; which md5sum || command -v md5sum || type md5sum)&quot;
+```
+
+The `exec &lt;&amp;- 2&gt;&amp;-;` part is closing the stdin and stderr file descriptors, meaning the command that follows won&#x27;t be able to read from stdin or write to stderr.
+
+The `which md5sum` will search for the `md5sum` command in the system&#x27;s PATH.
+
+If `md5sum` is not found by `which`, then `command -v md5sum` is executed. This is another way to get the path of a command. 
+
+If `md5sum` is still not found, `type md5sum` is executed. This command is used to describe how its argument would be interpreted if used as a command.
+
+This script effectively tries three different ways to find `md5sum`. If `md5sum` does not exist on the system, all three of these commands would fail, and `MD5_PATH` would be set to an empty string. 
+
+Please note that the script is designed in such a way to suppress error outputs from individual commands in the chain, so you won&#x27;t see any error messages if `md5sum` doesn&#x27;t exist on your system.
+
+Also note, this script won&#x27;t automatically handle the case where `md5sum` doesn&#x27;t exist. If you use `MD5_PATH` later in your script, you should check that it&#x27;s not empty before using it, and handle the error appropriately if it is. For example:
+
+```bash
+if [[ -z &quot;$MD5_PATH&quot; ]]; then
+  echo &quot;md5sum command not found&quot;
+  exit 1
+fi
+```
+
+In this example, `-z &quot;$MD5_PATH&quot;` will be true if `MD5_PATH` is empty (i.e., `md5sum` was not found), and the script will print an error message and exit with a non-zero status code.</pre></article></section>
+<section id="stage-c-extraction"><h2>Authoritative Stage C extraction</h2><p>Review each supplied item against admissible pre-boundary evidence and its recorded provenance.</p><section class="extraction"><h2>Context</h2><article class="extraction-item" data-item-id="context_1"><h3>context_1</h3><p class="normalized-text">The shell code assigns MD5_PATH from a command substitution that closes standard input and standard error, then tries `which md5sum`, `command -v md5sum`, and `type md5sum` in sequence using `||`.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">MD5_PATH=&quot;$(exec &lt;&amp;- 2&gt;&amp;-; which md5sum || command -v md5sum || type md5sum)&quot;</pre></li></ul></article></section><section class="extraction"><h2>Specificity</h2><article class="extraction-item" data-item-id="specificity_1"><h3>specificity_1</h3><p class="normalized-text">Determine whether the snippet handles the case where `md5sum` does not exist and explain what happens in that case.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">will this handle or what will happen if md5sum does not exist?</pre></li></ul></article></section><section class="extraction"><h2>Verification</h2><p class="empty">No items extracted.</p></section></section>
+<section id="provenance"><h2>Provenance</h2><dl><dt>Authoritative Stage C record SHA-256</dt><dd>97467c39345b575965c076994394815eedc5a46f3e5f740c20f984bdc37af2c7</dd><dt>Reviewer-safe JSON</dt><dd>cases/stage_d/reviewer_A/cases/CASE_522F0F296F37.json</dd><dt>Checkpoint commit</dt><dd>assigned_after_reviewed_preparation_is_committed</dd></dl></section>
+</main></body></html>

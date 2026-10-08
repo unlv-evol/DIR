@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stage D evidence package · CASE_7351FB1ECD56</title>
+<style>
+:root { color-scheme: light; --navy:#17365d; --blue:#d9eaf7; --gold:#fff4cc; --ink:#1f2937; --line:#cbd5e1; --muted:#52606d; }
+* { box-sizing:border-box; } body { margin:0; font:16px/1.5 Arial,sans-serif; color:var(--ink); background:#f6f8fa; }
+main { max-width:1120px; margin:auto; padding:24px; } h1,h2,h3,h4 { color:var(--navy); } h1 { margin-bottom:.25rem; }
+section,.turn,.artifact,.extraction-item { background:white; border:1px solid var(--line); border-radius:8px; margin:16px 0; padding:18px; }
+.restriction { background:var(--gold); border-left:6px solid #b58105; } .admissible { background:#e8f5e9; border-left:6px solid #2e7d32; }
+dl { display:grid; grid-template-columns:minmax(180px,1fr) 3fr; gap:6px 16px; } dt { font-weight:bold; } dd { margin:0; overflow-wrap:anywhere; }
+pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#f3f4f6; border:1px solid #e5e7eb; border-radius:5px; padding:14px; font:14px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace; }
+.artifact-content { white-space:pre; overflow:auto; } .metadata,.empty { color:var(--muted); } a { color:#0563c1; } ul.evidence-spans { padding-left:22px; }
+</style>
+</head>
+<body><main>
+<header><p>Stage D reviewer evidence package</p><h1>CASE_7351FB1ECD56</h1><p>Human-readable companion to the authoritative reviewer-safe JSON.</p></header>
+<section id="source-links"><h2>Source URLs</h2><p><a href="https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee" rel="noopener noreferrer">Authoritative conversation</a></p><p><a href="https://github.com/dust-tt/dust/pull/508" rel="noopener noreferrer">Authoritative pull request</a> — provenance only; PR content is inadmissible for independent Context/Specificity/Verification validation.</p></section>
+<section id="evidence-boundary"><h2>Evidence boundary</h2><div class="admissible"><strong>Admissible C/S/V evidence:</strong> only the pre-boundary conversation shown below.</div><div class="restriction"><strong>Restricted:</strong> resolved artifacts and the full first-generation response are visible only to validate first-generation identity, target prompt, boundary, and tFG. Turns after the response are excluded. The PR URL is provenance only.</div><dl><dt>pre_boundary_conversation</dt><dd>admissible_for_context_specificity_verification_validation</dd><dt>resolved_first_generation_artifacts</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>first_generation_response</dt><dd>visible_only_for_first_generation_target_prompt_and_boundary_validation</dd><dt>turns_after_first_generation_response</dt><dd>excluded</dd></dl></section>
+<section id="first-generation"><h2>First-generation family and boundary</h2><dl><dt>Family ID</dt><dd>FGF_b47f48499a2415f5b894c3da</dd><dt>Family label</dt><dd>TypeScript exhaustive switch checking with an assertNever helper</dd><dt>Artifact references</dt><dd>GTC_000003_000432_000968_09ca7446101f26e5</dd><dt>Response turn ID</dt><dd>turn_000003</dd><dt>Target prompt turn ID</dt><dd>turn_000002</dd><dt>Boundary</dt><dd>exclusive_before:turn_000003</dd><dt>tFG</dt><dd>2023-06-05T08:19:36.723423+00:00</dd></dl></section>
+<section id="target-prompt"><h2>Target prompt</h2><article class="target-prompt" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">I have the following code:
+```
+export function getProviderLogoPathForDataSource(
+  ds: DataSourceType
+): string | null {
+  const provider = ds.connectorProvider;
+
+  if (!provider) {
+    return null;
+  }
+
+  switch (provider) {
+    case &quot;notion&quot;:
+      return `/static/notion_32x32.png`;
+
+    case &quot;slack&quot;:
+      return `/static/slack_32x32.png`;
+
+    case &quot;github&quot;:
+      return `/static/github_black_32x32.png`;
+
+    default:
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      ((_provider: never) =&gt; {
+        // cannot happen
+        // this is to make sure we handle all cases
+      })(provider);
+      return null;
+  }
+}
+```
+
+I use this `never` case to make sure all enum values are handled. Is there a more idiomatic way to do this ?</pre></article></section>
+<section id="pre-boundary-conversation"><h2>Pre-boundary conversation</h2><p class="admissible">These ordered turns are the only admissible conversation evidence for C/S/V validation.</p><article class="turn" data-turn-id="turn_000002" data-event-index="2"><h3>User · turn turn_000002</h3><p class="metadata">Event index: 2</p><pre class="turn-text">I have the following code:
+```
+export function getProviderLogoPathForDataSource(
+  ds: DataSourceType
+): string | null {
+  const provider = ds.connectorProvider;
+
+  if (!provider) {
+    return null;
+  }
+
+  switch (provider) {
+    case &quot;notion&quot;:
+      return `/static/notion_32x32.png`;
+
+    case &quot;slack&quot;:
+      return `/static/slack_32x32.png`;
+
+    case &quot;github&quot;:
+      return `/static/github_black_32x32.png`;
+
+    default:
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      ((_provider: never) =&gt; {
+        // cannot happen
+        // this is to make sure we handle all cases
+      })(provider);
+      return null;
+  }
+}
+```
+
+I use this `never` case to make sure all enum values are handled. Is there a more idiomatic way to do this ?</pre></article></section>
+<section id="selected-artifacts"><h2>Selected first-generation artifacts</h2><p class="restriction">Use only for first-generation, target-prompt, boundary, and tFG validation.</p><article class="artifact" data-artifact-id="GTC_000003_000432_000968_09ca7446101f26e5"><h3>Artifact 1: GTC_000003_000432_000968_09ca7446101f26e5</h3><dl><dt>Artifact ID</dt><dd>GTC_000003_000432_000968_09ca7446101f26e5</dd><dt>Order</dt><dd>1</dd><dt>Source response</dt><dd>turn_000003</dd><dt>Type</dt><dd>source_code</dd><dt>Language</dt><dd>typescript</dd></dl><pre class="artifact-content"><code>export function getProviderLogoPathForDataSource(
+  ds: DataSourceType
+): string | null {
+  const provider = ds.connectorProvider;
+
+  if (!provider) {
+    return null;
+  }
+
+  switch (provider) {
+    case &quot;notion&quot;:
+      return `/static/notion_32x32.png`;
+
+    case &quot;slack&quot;:
+      return `/static/slack_32x32.png`;
+
+    case &quot;github&quot;:
+      return `/static/github_black_32x32.png`;
+
+    default:
+      return assertNever(provider);
+  }
+}
+
+function assertNever(value: never): never {
+    throw new Error(`Unexpected value &#x27;${value}&#x27;`);
+}
+</code></pre></article></section>
+<section id="first-generation-response"><h2>Full first-generation response</h2><p class="restriction">This response cannot supply C/S/V evidence.</p><article class="first-generation-response" data-turn-id="turn_000003" data-event-index="3"><h3>Assistant · turn turn_000003</h3><p class="metadata">Event index: 3</p><pre class="turn-text">The way you are handling this is generally correct and idiomatic. The `never` type is used to ensure that all cases are handled and that new cases aren&#x27;t forgotten. The technique is called Exhaustiveness checking in TypeScript.
+
+However, instead of using an inline arrow function, you could use a helper function to assert exhaustiveness. This would improve readability and remove the necessity for eslint disabling:
+
+```typescript
+export function getProviderLogoPathForDataSource(
+  ds: DataSourceType
+): string | null {
+  const provider = ds.connectorProvider;
+
+  if (!provider) {
+    return null;
+  }
+
+  switch (provider) {
+    case &quot;notion&quot;:
+      return `/static/notion_32x32.png`;
+
+    case &quot;slack&quot;:
+      return `/static/slack_32x32.png`;
+
+    case &quot;github&quot;:
+      return `/static/github_black_32x32.png`;
+
+    default:
+      return assertNever(provider);
+  }
+}
+
+function assertNever(value: never): never {
+    throw new Error(`Unexpected value &#x27;${value}&#x27;`);
+}
+```
+In the `assertNever` function, we are throwing an error if an unexpected value is encountered. This could be useful during development because it would crash your application at the source of the problem if you forget to add a case when extending your `provider`. Of course, the thrown error would be a problem in a production application, so you need to make sure that your switch is exhaustive during testing and before deployment.</pre></article></section>
+<section id="stage-c-extraction"><h2>Authoritative Stage C extraction</h2><p>Review each supplied item against admissible pre-boundary evidence and its recorded provenance.</p><section class="extraction"><h2>Context</h2><article class="extraction-item" data-item-id="context_1"><h3>context_1</h3><p class="normalized-text">The TypeScript function `getProviderLogoPathForDataSource(ds: DataSourceType): string | null` reads `ds.connectorProvider`, returns `null` when it is absent, maps the `notion`, `slack`, and `github` providers to static logo paths, and uses a `default` switch branch containing a `never`-typed callback before returning `null`.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">export function getProviderLogoPathForDataSource(
+  ds: DataSourceType
+): string | null {</pre></li><li><pre class="evidence-span">const provider = ds.connectorProvider;
+
+  if (!provider) {
+    return null;
+  }</pre></li><li><pre class="evidence-span">case &quot;notion&quot;:
+      return `/static/notion_32x32.png`;
+
+    case &quot;slack&quot;:
+      return `/static/slack_32x32.png`;
+
+    case &quot;github&quot;:
+      return `/static/github_black_32x32.png`;</pre></li><li><pre class="evidence-span">default:
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      ((_provider: never) =&gt; {
+        // cannot happen
+        // this is to make sure we handle all cases
+      })(provider);
+      return null;</pre></li></ul></article></section><section class="extraction"><h2>Specificity</h2><article class="extraction-item" data-item-id="specificity_1"><h3>specificity_1</h3><p class="normalized-text">The user wants a more idiomatic TypeScript approach than the inline `never` callback used in the switch&#x27;s default branch.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">I use this `never` case to make sure all enum values are handled. Is there a more idiomatic way to do this ?</pre></li></ul></article></section><section class="extraction"><h2>Verification</h2><article class="extraction-item" data-item-id="verification_1"><h3>verification_1</h3><p class="normalized-text">The approach should ensure that all enum values are handled exhaustively.</p><dl><dt>Source turn IDs</dt><dd>turn_000002</dd><dt>Source roles</dt><dd>user</dd></dl><h4>Evidence spans</h4><ul class="evidence-spans"><li><pre class="evidence-span">I use this `never` case to make sure all enum values are handled.</pre></li></ul></article></section></section>
+<section id="provenance"><h2>Provenance</h2><dl><dt>Authoritative Stage C record SHA-256</dt><dd>21e608b5f5ae00aea53e0bc76f9c411a6d1ce0d1165de25a7e3c9c4c76faa1de</dd><dt>Reviewer-safe JSON</dt><dd>cases/stage_d/reviewer_B/cases/CASE_7351FB1ECD56.json</dd><dt>Checkpoint commit</dt><dd>assigned_after_reviewed_preparation_is_committed</dd></dl></section>
+</main></body></html>
