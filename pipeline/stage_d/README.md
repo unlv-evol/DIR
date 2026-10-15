@@ -42,3 +42,17 @@ Generate the workbooks with the preserved `build_review_workbooks.mjs` script
 in an environment providing `@oai/artifact-tool`, then run `--validate` before
 committing them. Completed human annotations must later be stored as versioned
 review outputs; they must not erase this committed blank checkpoint.
+
+After both independent reviews are complete, generate agreement and separate
+adjudication documentation with:
+
+```text
+python3 -B pipeline/stage_d/run_agreement.py
+```
+
+The analysis reads the designated completed XLSX workbooks directly, matches
+cases by stable Case ID in frozen reviewer order, retains `uncertain` as an
+observed category, and computes exact agreement plus unweighted Cohen's kappa
+for the nine categorical fields. It never substitutes adjudicated decisions
+for the original independent judgments. Outputs live under
+`cases/stage_d/analysis/`.

@@ -1,0 +1,92 @@
+{
+  "analysis_version": "stage-d-inter-reviewer-agreement-v1",
+  "analysis_date": "2026-10-15",
+  "method": {
+    "matching_key": "case_id",
+    "categorical_fields": [
+      "first_generation_correct",
+      "target_prompt_correct",
+      "boundary_tFG_correct",
+      "context_extraction",
+      "specificity_extraction",
+      "verification_extraction",
+      "missing_information",
+      "post_boundary_leakage",
+      "overall_extraction"
+    ],
+    "uncertain_handling": "retained_as_observed_category",
+    "agreement": "exact_pairwise_agreement",
+    "cohens_kappa": "unweighted_nominal; NA when 1-expected_agreement is zero",
+    "free_text": "preserved_in_disagreement_inventory_not_scored"
+  },
+  "inputs": {
+    "cases/stage_d/reviewer_A/stage_d_review_completed.xlsx": "f7120c50677f600411f939444ba0cf7501130d9aab730e23fe1b647f53fc537a",
+    "cases/stage_d/reviewer_B/stage_d_review.xlsx": "9f70abf50cf6538f9e45a3ea7e51de1e0471fc1a0555e52b8411702924817f83",
+    "cases/stage_d/stage_d_sampling_manifest.csv": "75c7c022471f91fd004690a9a31f4c39dabe13e0ae4279ae39bdb382d73b8630",
+    "cases/manifests/stage_c_post_resolution_authority.csv": "03682e1d5071e5e0cf5219fd647cf7311ee581feb44f07d13e0c863c95a171cb",
+    "cases/manifests/post_stage_c_eligibility.csv": "53fd64e0a1dc86cedaa99a088e9b2bc48d45716e01189a3a63ca96a2d786f366"
+  },
+  "design": {
+    "eligible_population": 111,
+    "PA_population": 68,
+    "PN_population": 43,
+    "sample": 33,
+    "PA_sample": 20,
+    "PN_sample": 13,
+    "seed": 20261005,
+    "paired_categorical_judgments": 297
+  },
+  "results": {
+    "agreements": 289,
+    "disagreements": 8,
+    "disagreement_cases": [
+      "CASE_188C69620856",
+      "CASE_522F0F296F37",
+      "CASE_AD8C4F13A90B",
+      "CASE_EE7F13CD9FB7"
+    ],
+    "pooled_exact_agreement_percent": 97.31
+  },
+  "supplementary_provenance_audit": {
+    "eligible_cases": 111,
+    "total_items": 480,
+    "by_provenance": {
+      "assistant_only": 13,
+      "both": 3,
+      "developer_only": 464
+    },
+    "by_category_and_provenance": {
+      "context": {
+        "assistant_only": 13,
+        "both": 3,
+        "developer_only": 213
+      },
+      "specificity": {
+        "developer_only": 161
+      },
+      "verification": {
+        "developer_only": 90
+      }
+    },
+    "assistant_supported_items": 16,
+    "assistant_supported_cases": [
+      "CASE_34CAAE296942",
+      "CASE_6C65BC36BF60",
+      "CASE_EE7F13CD9FB7",
+      "CASE_F7BED13B8119"
+    ]
+  },
+  "implementation": {
+    "library": "src/developer_intent/stage_d_analysis.py",
+    "runner": "pipeline/stage_d/run_agreement.py"
+  },
+  "outputs": {
+    "cases/stage_d/analysis/inter_reviewer_agreement.csv": "e5abe04b4ed7a0ce5b78bf1a47dc53962f130cac78b3f81b7c3c6d5ddd033747",
+    "cases/stage_d/analysis/reviewer_disagreements.csv": "fa874ae3c96aae67592da545e31b4f28f96de67da05fbe93ce51f20cee291c6d",
+    "cases/stage_d/analysis/reviewer_category_distributions.csv": "cbcf9ae3e3bcf504114b0fad4dd58ce32ee357a4146766aadf4d8ce051b5cc02",
+    "cases/stage_d/analysis/inter_reviewer_agreement.md": "bc2e76d3385c2226aa329de5bcfe1ffa1032511bef9bd593c838443c2fa12e76",
+    "cases/stage_d/analysis/adjudication_findings.md": "a962ce88ec9beb0f7d8f3b9cbb58c1997a51631c81dfde3cf666cc1c82a8aa56",
+    "cases/stage_d/analysis/adjudication_decisions.md": "ccf979e459aaab736b910ee7173b0ef4737b6163a96a06235837c95a29cb4c4f"
+  },
+  "manifest_self_hash": "omitted_to_avoid_recursive_self-reference"
+}

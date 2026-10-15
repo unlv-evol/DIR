@@ -409,3 +409,11 @@ Suggested fields:
 - **Blinding:** PA/PN is used only for sampling. Both reviewers receive the same cases, order, and Stage C evidence through separate blank one-row-per-case CSVs and reviewer-safe JSON. Reviewer files omit strata, Post-C results, downstream outcomes, and turns after the first-generation response. The selected response is separated from admissible pre-boundary C/S/V evidence.
 - **Scope:** Package preparation does not constitute human annotation, reconciliation, adjudication, agreement analysis, Stage E freeze, or Stage F execution. Authoritative Stage C, Post-C, and eligibility records remain unchanged.
 - **Owner:** Study team. **Status:** Adopted and package prepared; human review not started.
+
+## 2026-10-15 — Close Stage D and freeze Stage E conversation records
+
+- **Stage D result:** Two independent PhD reviewers completed the frozen 33-case sample. Agreement was 289 of 297 categorical judgments (97.31%), with eight disagreements across four cases. The independent annotations remain unchanged; findings and six adjudication decisions are retained separately.
+- **Decision:** Close procedure validation without revising authoritative Stage C. Retain the pre-`tFG` conversation-state policy, including provenance-preserved assistant evidence before `tFG`. No systematic extraction defect requiring regeneration was found.
+- **Stage E freeze:** Freeze exactly the 111 final eligible and processable cases (68 PA, 43 PN) under `stage-e-frozen-conversation-v1`. Preserve `tC` and `tFG` independently, retain authoritative Stage C item text and provenance, distinguish sampled/adjudicated/not-sampled case status, and immutably reference Post-C `S_i(tFG)` for later Stage F use.
+- **Boundary:** Stage E does not construct `H_i(tFG)`, fetch evidence, split the corpus, or begin Stage F. Corrections require a versioned replacement or amendment retaining the original freeze.
+- **Owner:** Study team. **Status:** Adopted and executed.

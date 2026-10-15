@@ -23,6 +23,8 @@ developer-intent-reconstruction/
 │   ├── manifests/                   # stable IDs and study-role assignments
 │   ├── conversations/               # isolated conversation-only packages
 │   ├── reconstruction/              # Post-C acquisition records, not Stage C input
+│   ├── stage_d/                     # Human validation, agreement, and closure
+│   ├── stage_e/                     # Frozen authoritative conversation records
 │   └── raw/                         # historical audit packages, never SAFE
 ├── pilot_analysis/
 │   └── conversation/               # location for versioned conversation records
@@ -33,6 +35,8 @@ developer-intent-reconstruction/
 │   ├── extraction/                 # conversation-first acquisition foundation
 │   ├── stage_c/                    # two-pass conversation extraction CLI
 │   ├── post_stage_c/               # offline eligibility/reconstruction contracts
+│   ├── stage_d/                     # reviewer packaging and agreement analysis
+│   ├── stage_e/                     # immutable freeze and read-only verification
 │   ├── partitioning/
 │   ├── family_construction/
 │   ├── snapshot/
@@ -84,6 +88,13 @@ Stage B corpus orchestration writes operational `cases/manifests/stage_b_summary
 Current Stage C execution reads `cases/conversations/<case_id>/stage_c_model_view_v2.json` and writes `stage_c_extraction_v6.json` beside immutable historical outputs. Version-controlled prompts live under `prompts/stage_c/`; response and final-record schemas live under `schemas/`. Extraction-v6 uses `stage-c-pass2-v2` positional provenance and `conversation-draft-v4` with an independent Pass 2 outcome. Runtime configuration is centralized in `src/developer_intent/stage_c_config.py`; extraction, validation, deterministic family identity, temporal derivation, and the tool-free OpenAI Responses adapter live in `src/developer_intent/stage_c.py`.
 
 The accepted Post-C corpus output is indexed by `cases/manifests/post_stage_c_v4_corpus_authority.csv`. The active runner is `pipeline/post_stage_c/run.py`, backed by the unversioned `src/developer_intent/post_stage_c*.py` modules. It writes scientifically versioned `historical_state_acquisition_v4.json` and `historical_information_boundary_v4.json` records. These files establish exact Git state `S_i(tFG)`; Stage F later constructs `H_i(tFG)`.
+
+Stage D outputs live under `cases/stage_d/`, including the frozen sample,
+reviewer materials, independent agreement analysis, separate adjudication
+findings and decisions, and the machine-readable closure gate. Stage E writes
+one immutable canonical record per eligible case under
+`cases/stage_e/frozen_records/`, indexed by `cases/stage_e/stage_e_manifest.json`.
+`pipeline/stage_e/run.py --verify` validates the freeze without regenerating it.
 
 ## Historical information, traces, and evidence
 

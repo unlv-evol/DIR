@@ -1,0 +1,10 @@
+field,field_label,paired_judgments,agreements,disagreements,exact_agreement_percent,cohens_kappa,kappa_status
+first_generation_correct,First-generation identification,33,33,0,100.00,NA,undefined_single_identical_category
+target_prompt_correct,Target prompt,33,33,0,100.00,NA,undefined_single_identical_category
+boundary_tFG_correct,tFG boundary,33,30,3,90.91,0.000000,defined
+context_extraction,Context,33,33,0,100.00,NA,undefined_single_identical_category
+specificity_extraction,Specificity,33,33,0,100.00,NA,undefined_single_identical_category
+verification_extraction,Verification,33,33,0,100.00,NA,undefined_single_identical_category
+missing_information,Missing information,33,32,1,96.97,0.000000,defined
+post_boundary_leakage,Post-boundary leakage,33,33,0,100.00,NA,undefined_single_identical_category
+overall_extraction,Overall extraction,33,29,4,87.88,-0.047619,defined

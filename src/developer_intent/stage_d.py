@@ -451,18 +451,38 @@ def _xlsx_cells(archive: zipfile.ZipFile, sheet_name: str) -> tuple[dict[str, st
     if not target.startswith("xl/"):
         target = "xl/" + target
     sheet = ElementTree.fromstring(archive.read(target))
+    shared_strings = []
+    if "xl/sharedStrings.xml" in archive.namelist():
+        shared = ElementTree.fromstring(archive.read("xl/sharedStrings.xml"))
+        shared_strings = ["".join(node.text or "" for node in item.iter()
+                                  if node.tag.rsplit("}", 1)[-1] == "t")
+                          for item in shared.findall("x:si", ns)]
     values, formulas = {}, {}
     for cell in sheet.findall(".//x:c", ns):
         address = cell.attrib["r"]
         value = cell.find("x:v", ns); formula = cell.find("x:f", ns)
-        values[address] = "" if value is None or value.text is None else value.text
+        raw = "" if value is None or value.text is None else value.text
+        if cell.attrib.get("t") == "s" and raw:
+            raw = shared_strings[int(raw)]
+        elif cell.attrib.get("t") == "inlineStr":
+            raw = "".join(node.text or "" for node in cell.iter()
+                          if node.tag.rsplit("}", 1)[-1] == "t")
+        values[address] = raw
         if formula is not None and formula.text is not None:
             formulas[address] = formula.text
     validations = {}
     for item in sheet.findall("x:dataValidations/x:dataValidation", ns):
         formula = item.find("x:formula1", ns)
         raw = "" if formula is None or formula.text is None else formula.text.strip('"')
-        validations[item.attrib["sqref"]] = tuple(raw.split(",")) if raw else ()
+        options = tuple(raw.split(",")) if raw else ()
+        cell_range = item.attrib["sqref"]
+        match = re.fullmatch(r"([A-Z]+)(\d+):([A-Z]+)(\d+)", cell_range)
+        if match and len(match.group(1)) == len(match.group(3)) == 1:
+            first, last = ord(match.group(1)), ord(match.group(3))
+            for column in range(first, last + 1):
+                validations[f"{chr(column)}{match.group(2)}:{chr(column)}{match.group(4)}"] = options
+        else:
+            validations[cell_range] = options
     return values, formulas, validations
 
 
@@ -483,8 +503,14 @@ def validate_workbook(root: Path, reviewer: str) -> dict[str, int]:
     for row_number, row in enumerate(rows, 2):
         expected = [row[field] for field in REVIEW_FIELDS]
         actual = [values.get(f"{chr(65 + index)}{row_number}", "") for index in range(15)]
-        if actual != expected:
-            raise ValueError(f"reviewer {reviewer} XLSX/CSV mismatch at row {row_number}")
+        if actual[:4] != expected[:4]:
+            raise ValueError(f"reviewer {reviewer} XLSX/CSV source mismatch at row {row_number}")
+        for index, field in enumerate(JUDGMENT_FIELDS[:9], 4):
+            allowed = VALIDATION_VALUES[f"{chr(65 + index)}2:{chr(65 + index)}34"]
+            if actual[index] and actual[index] not in allowed:
+                raise ValueError(
+                    f"reviewer {reviewer} XLSX has invalid {field} at row {row_number}"
+                )
         html_relative = f'cases/{row["case_id"]}.html'
         if formulas.get(f"B{row_number}", "") != f'HYPERLINK("{html_relative}","{row["case_details"]}")':
             raise ValueError(f"reviewer {reviewer} case-details hyperlink mismatch at B{row_number}")

@@ -1,0 +1,67 @@
+field,field_label,reviewer,category,count,percentage
+first_generation_correct,First-generation identification,A,yes,33,100.00
+first_generation_correct,First-generation identification,A,no,0,0.00
+first_generation_correct,First-generation identification,A,uncertain,0,0.00
+first_generation_correct,First-generation identification,B,yes,33,100.00
+first_generation_correct,First-generation identification,B,no,0,0.00
+first_generation_correct,First-generation identification,B,uncertain,0,0.00
+target_prompt_correct,Target prompt,A,yes,33,100.00
+target_prompt_correct,Target prompt,A,no,0,0.00
+target_prompt_correct,Target prompt,A,uncertain,0,0.00
+target_prompt_correct,Target prompt,B,yes,33,100.00
+target_prompt_correct,Target prompt,B,no,0,0.00
+target_prompt_correct,Target prompt,B,uncertain,0,0.00
+boundary_tFG_correct,tFG boundary,A,yes,33,100.00
+boundary_tFG_correct,tFG boundary,A,no,0,0.00
+boundary_tFG_correct,tFG boundary,A,uncertain,0,0.00
+boundary_tFG_correct,tFG boundary,B,yes,30,90.91
+boundary_tFG_correct,tFG boundary,B,no,3,9.09
+boundary_tFG_correct,tFG boundary,B,uncertain,0,0.00
+context_extraction,Context,A,correct,33,100.00
+context_extraction,Context,A,partially_correct,0,0.00
+context_extraction,Context,A,incorrect,0,0.00
+context_extraction,Context,A,uncertain,0,0.00
+context_extraction,Context,B,correct,33,100.00
+context_extraction,Context,B,partially_correct,0,0.00
+context_extraction,Context,B,incorrect,0,0.00
+context_extraction,Context,B,uncertain,0,0.00
+specificity_extraction,Specificity,A,correct,33,100.00
+specificity_extraction,Specificity,A,partially_correct,0,0.00
+specificity_extraction,Specificity,A,incorrect,0,0.00
+specificity_extraction,Specificity,A,uncertain,0,0.00
+specificity_extraction,Specificity,B,correct,33,100.00
+specificity_extraction,Specificity,B,partially_correct,0,0.00
+specificity_extraction,Specificity,B,incorrect,0,0.00
+specificity_extraction,Specificity,B,uncertain,0,0.00
+verification_extraction,Verification,A,correct,33,100.00
+verification_extraction,Verification,A,partially_correct,0,0.00
+verification_extraction,Verification,A,incorrect,0,0.00
+verification_extraction,Verification,A,uncertain,0,0.00
+verification_extraction,Verification,B,correct,33,100.00
+verification_extraction,Verification,B,partially_correct,0,0.00
+verification_extraction,Verification,B,incorrect,0,0.00
+verification_extraction,Verification,B,uncertain,0,0.00
+missing_information,Missing information,A,none,32,96.97
+missing_information,Missing information,A,context,0,0.00
+missing_information,Missing information,A,specificity,0,0.00
+missing_information,Missing information,A,verification,0,0.00
+missing_information,Missing information,A,multiple,0,0.00
+missing_information,Missing information,A,uncertain,1,3.03
+missing_information,Missing information,B,none,33,100.00
+missing_information,Missing information,B,context,0,0.00
+missing_information,Missing information,B,specificity,0,0.00
+missing_information,Missing information,B,verification,0,0.00
+missing_information,Missing information,B,multiple,0,0.00
+missing_information,Missing information,B,uncertain,0,0.00
+post_boundary_leakage,Post-boundary leakage,A,no,33,100.00
+post_boundary_leakage,Post-boundary leakage,A,yes,0,0.00
+post_boundary_leakage,Post-boundary leakage,A,uncertain,0,0.00
+post_boundary_leakage,Post-boundary leakage,B,no,33,100.00
+post_boundary_leakage,Post-boundary leakage,B,yes,0,0.00
+post_boundary_leakage,Post-boundary leakage,B,uncertain,0,0.00
+overall_extraction,Overall extraction,A,correct,31,93.94
+overall_extraction,Overall extraction,A,needs_correction,1,3.03
+overall_extraction,Overall extraction,A,uncertain,1,3.03
+overall_extraction,Overall extraction,B,correct,31,93.94
+overall_extraction,Overall extraction,B,needs_correction,2,6.06
+overall_extraction,Overall extraction,B,uncertain,0,0.00

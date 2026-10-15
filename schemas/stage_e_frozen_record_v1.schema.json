@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "stage_e_frozen_record_v1.schema.json",
+  "title": "Stage E Frozen Conversation Record v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "methodology_version", "record_status",
+    "primary_repository_cutoff", "identity", "temporal",
+    "conversation_evidence", "csv_extraction", "scientific_provenance"
+  ],
+  "properties": {
+    "schema_version": {"const": "stage-e-frozen-conversation-v1"},
+    "methodology_version": {"const": "dir-tfg-v2"},
+    "record_status": {"const": "frozen"},
+    "primary_repository_cutoff": {"const": "tFG"},
+    "identity": {"type": "object"},
+    "temporal": {"type": "object"},
+    "conversation_evidence": {"type": "object"},
+    "csv_extraction": {"type": "object"},
+    "scientific_provenance": {"type": "object"}
+  },
+  "x-cross-field-validation": "src/developer_intent/stage_e.py:validate_frozen_record"
+}

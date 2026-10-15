@@ -48,7 +48,7 @@ into the broader study. See
 [`docs/repository_structure.md`](docs/repository_structure.md) for the
 corresponding output locations.
 
-Current infrastructure includes Stage A screening, Stage B lossless packaging, two-pass Stage C extraction, and Post-Stage-C historical repository reconstruction. Stage C derives authoritative `tFG` from the isolated conversation. Post-C reconstructs exact repository state `S_i(tFG)` from the established focal PR Git lineage or, when no focal commit qualifies, its deterministically established applicable base lineage. Final Post-C eligibility is resolved for the 111 authoritative processable cases. Stage D has not started. Stage F later uses the fixed state to construct `H_i(tFG)` and separates discovery from held-out evaluation.
+Current infrastructure includes Stage A screening, Stage B lossless packaging, two-pass Stage C extraction, Post-Stage-C historical repository reconstruction, completed Stage D human validation, and the Stage E authoritative conversation-record freeze. Stage C derives authoritative `tFG` from the isolated conversation. Post-C reconstructs exact repository state `S_i(tFG)` from the established focal PR Git lineage or, when no focal commit qualifies, its deterministically established applicable base lineage. Final Post-C eligibility is resolved for 111 authoritative processable cases. Stage D validated the extraction procedure on the frozen 33-case sample, and Stage E froze all 111 eligible records while retaining sampled versus unsampled validation status. Stage F has not started; it later uses the fixed state to construct `H_i(tFG)` and separates discovery from held-out evaluation.
 
 ## Core Validity Boundary
 
